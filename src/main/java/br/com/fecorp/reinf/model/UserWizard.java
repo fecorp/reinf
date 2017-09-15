@@ -9,22 +9,22 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import org.primefaces.event.FlowEvent;
 import org.primefaces.event.FlowEvent;
-import br.com.fecorp.reinf.control.User;
+import br.com.fecorp.reinf.control.Usuario;
 
  
 @ManagedBean
 @ViewScoped
 public class UserWizard implements Serializable {
  
-    private User user = new User();
+    private Usuario user = new Usuario();
      
     private boolean skip;
      
-    public User getUser() {
+    public Usuario getUser() {
         return user;
     }
  
-    public void setUser(User user) {
+    public void setUser(Usuario user) {
         this.user = user;
     }
      
