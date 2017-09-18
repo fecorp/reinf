@@ -4,7 +4,7 @@ package br.com.fecorp.reinf.control;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class Usuario implements Serializable {
  
     private String empresa;
      
