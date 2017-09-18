@@ -1,98 +1,51 @@
 package br.com.fecorp.reinf.control;
 
+import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
-import java.io.Serializable;
+@Entity
+public class Usuario {
 
-public class Usuario implements Serializable {
- 
-    private String empresa;
-     
-    private String filial;
-     
-    private Integer dataatualizacao;
-     
-    private String street;
-     
-    private String city;
-     
-    private String postalCode;
-     
-    private String info;
-     
-    private String email;
-     
-    private String phone;
- 
-    public String getEmpresa() {
-        return empresa;
-    }
- 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
-    }
- 
-    public String getFilial() {
-        return filial;
-    }
- 
-    public void setFilial(String filial) {
-        this.filial = filial;
-    }
- 
-    public Integer getDataatualizacao() {
-        return dataatualizacao;
-    }
- 
-    public void setDataatualizacao(Integer dataatualizacao) {
-        this.dataatualizacao = dataatualizacao;
-    }
- 
-    public String getStreet() {
-        return street;
-    }
- 
-    public void setStreet(String street) {
-        this.street = street;
-    }
- 
-    public String getCity() {
-        return city;
-    }
- 
-    public void setCity(String city) {
-        this.city = city;
-    }
- 
-    public String getPostalCode() {
-        return postalCode;
-    }
- 
-    public void setPostalCode(String postalCode) {
-        this.postalCode = postalCode;
-    }
- 
-    public String getInfo() {
-        return info;
-    }
- 
-    public void setInfo(String info) {
-        this.info = info;
-    }
-     
-    public String getEmail() {
-        return email;
-    }
- 
-    public void setEmail(String email) {
-        this.email = email;
-    }
- 
-    public String getPhone() {
-        return phone;
-    }
- 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+	@Id
+	@Column(name = "id", nullable = false, unique = true)
+	private int u_id;
+
+	@Column(name = "userName", nullable = false, unique = true)
+	private String nomeUsuario;
+
+	@Column(name = "password", nullable = false, unique = false)
+	private String senha;
+
+	@Column(name = "lastAccess", unique = true)
+	@Temporal(TemporalType.DATE)
+	private Date ultimoAcesso;
+
+	public String getNomeUsuario() {
+		return nomeUsuario;
+	}
+
+	public void setNomeUsuario(String nomeUsuario) {
+		this.nomeUsuario = nomeUsuario;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public Date getUltimoAcesso() {
+		return ultimoAcesso;
+	}
+
+	public void setUltimoAcesso(Date ultimoAcesso) {
+		this.ultimoAcesso = ultimoAcesso;
+	}
 }

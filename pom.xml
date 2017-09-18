@@ -5,14 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
-			<!-- Mojarra (implementação do JSF 2) -->
-			<dependency>
-				<groupId>org.glassfish</groupId>
-				<artifactId>javax.faces</artifactId>
-				<version>2.2.8-03</version>
-				<scope>compile</scope>
-			</dependency>
- 
+						 
 			<!-- PrimeFaces (biblioteca de componentes) -->
 			<dependency>
 				<groupId>org.primefaces</groupId>
@@ -46,8 +39,61 @@
 					
 			<!-- Tema do PrimeFaces -->		
 			
+			<dependency>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-validator</artifactId>
+                    <version>4.2.0.Final</version>
+              </dependency>
+              <dependency>
+                    <groupId>org.hibernate.common</groupId>
+                    <artifactId>hibernate-commons-annotations</artifactId>
+                    <version>4.0.1.Final</version>
+                    <classifier>tests</classifier>
+              </dependency>
+              <dependency>
+                    <groupId>org.hibernate.javax.persistence</groupId>
+                    <artifactId>hibernate-jpa-2.0-api</artifactId>
+                    <version>1.0.1.Final</version>
+              </dependency>
+              <dependency>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-entitymanager</artifactId>
+                    <version>4.0.1.Final</version>
+              </dependency>
+              
+              <dependency>
+                    <groupId>org.primefaces</groupId>
+                    <artifactId>primefaces</artifactId>
+                    <version>5.1</version>
+                    <scope>compile</scope>
+              </dependency>
+              
+          <dependency>
+                    <groupId>commons-io</groupId>
+                    <artifactId>commons-io</artifactId>
+                    <version>2.4</version>
+              </dependency>
+        <dependency>      
+                  <groupId>org.ajax4jsf</groupId>
+		    <artifactId>ajax4jsf</artifactId>
+		    <version>1.0.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+        </dependencies>
+        
+        <repositories>
+              <repository>
+                    <id>prime-repo</id>
+                    <name>PrimeFaces Maven Repository</name>
+                    <url>http://repository.primefaces.org</url>
+                    <layout>default</layout>
+         </repository>
+         
+	 </repositories>					
 			
-						
-			
-		</dependencies>
-  </project>
+</project>
