@@ -19,21 +19,155 @@
 </p:breadCrumb>
 <br />
 <div>
-<h:outputText value="Empresa: *" />
-<h:inputText value=" " />
+<h:outputText value="Empresa:*" />
+<h:inputText value="" />
 
-<h:outputText value=" Filial: *" />
-<h:inputText value=" " />
+<h:outputText value="Filial:*" />
+<h:inputText value="" />
 
-<h:outputText value=" Data de atualização: *" />
-<h:inputText value=" " />
+<h:outputText value="Data de atualização:*" />
+<h:inputText value="" />
 
-<h:outputText value="* Categoria PF/PJ: " />
-<h:inputText value=" " />
+<h:outputText value="Categoria PF/PJ:" />
+<h:inputText value="" />
 
-<h:outputText value="* Código PF/PJ: " />
-<h:inputText value=" " />
+<h:outputText value="Código PF/PJ: *" />
+<h:inputText value="" />
 </div>
+
+<div>
+<br></br>
+<h:outputText value="Ind. Pessoa" /> 
+        <p:selectOneRadio id="console" value="#{radioView.console}">
+            <f:selectItem itemLabel="Estrangeiro" itemValue="estrangeiro" />
+            <f:selectItem itemLabel="Isento" itemValue="isento" />
+        </p:selectOneRadio>
+
+<br></br>
+<h:outputText value=" Inscrição Estadual: " />
+<h:inputText value="" />
+
+<h:outputText value="  Inscrição Estadual Centralizadora: " />
+<h:inputText value="" />
+
+<h:outputText value="  Inscrição Municipal: " />
+<h:inputText value="" />
+<br></br>
+<br />
+<h:outputText value="Razão Social: " />
+<h:inputText value="" />
+
+<h:outputText value="  Nome Fantasia: " />
+<h:inputText value="" />
+
+<h:outputText value="  Endereço: " />
+<h:inputText value="" />
+
+<h:outputText value="  Número: " />
+<h:inputText value="" />
+
+<br></br>
+<br></br>
+<h:outputText value="Complemento do endereço: " />
+<h:inputText value="" />
+
+<h:outputText value="  Bairro: " />
+<h:inputText value="" />
+
+<h:outputText value="  Município: " />
+<h:inputText value="" />
+
+<h:outputText value="  Unidade Federativa: " />
+<h:inputText value="" />
+
+<br></br>
+<br></br>
+<h:outputText value="CEP: " />
+<h:inputText value="" />
+
+<h:outputText value="  Ind. Equipar. Prod. Rural: " />
+<h:inputText value="" />
+
+<h:outputText value="  País de Origem da PF/PJ: " />
+<h:inputText value="" />
+
+<h:outputText value="  Ind Empresa Coligada: " />
+<h:inputText value="" />
+
+<br></br>
+<br />
+<h:outputText value="  Inscrição SUFRAMA: " />
+<h:inputText value="" />
+
+<h:outputText value="  Tipo de Localidade: " />
+<h:inputText value="" />
+
+<h:outputText value="  CEI – Cadastro Específico do INSS: " />
+<h:inputText value="" />
+
+<h:outputText value="  NIT: " />
+<h:inputText value="" />
+
+<br />
+<br />
+<h:outputText value="  Caixa Postal: " />
+<h:inputText value="" />
+
+<h:outputText value="  CEP da Caixa Postal: " />
+<h:inputText value="" />
+
+<h:outputText value="  DDD do Telefone: " />
+<h:inputText value="" />
+
+<h:outputText value="  Número do Telefone: " />
+<h:inputText value="" />
+<br>
+</br>
+<h:outputText value="  DDD do Fax: " />
+<h:inputText value="" />
+
+<h:outputText value="  Número do Fax: " />
+<h:inputText value="" />
+
+<h:outputText value="  Classificação do Retentor do Imposto: " />
+<h:inputText value="" />
+
+<h:outputText value="  Código Município IBGE: " />
+<h:inputText value="" />
+<br></br>
+<br />
+<h:outputText value="  Classificação Fiscal: " />
+<h:inputText value="" />
+
+<h:outputText value="  Situação da Pessoa Jurídica: " />
+<h:inputText value="" />
+
+<h:outputText value="  Número de Inscrição CNO: " />
+<h:inputText value="" />
+
+<h:outputText value="  Data de criação: " />
+<h:inputText value="" />
+<br />
+<br />
+<h:outputText value="  Indicativo da Pessoa Jurídica: " />
+<h:inputText value="" />
+
+<h:outputText value="  CNAE: " />
+<h:inputText value="" />
+
+<h:outputText value="  Data de Encerramento: " />
+<h:inputText value="" />
+
+<h:form>               
+ 
+    <h3>Observações:</h3>
+    <p:inputTextarea rows="6" cols="33" />
+ 
+   
+</h:form>
+
+</div>
+
 
 </body> 
 </html>
