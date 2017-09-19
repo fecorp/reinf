@@ -44,9 +44,20 @@
 				<scope>test</scope>
 			</dependency>
 					
-			<!-- Tema do PrimeFaces -->		
+			<!-- Bootstrap -->		
 			
-			
+			<dependency>
+			    <groupId>org.webjars</groupId>
+			    <artifactId>bootstrap</artifactId>
+			    <version>4.0.0-alpha.6-1</version>
+			</dependency>
+						
+						<!-- https://mvnrepository.com/artifact/io.takari.m2e.workspace/org.eclipse.m2e.workspace.cli -->
+<dependency>
+    <groupId>io.takari.m2e.workspace</groupId>
+    <artifactId>org.eclipse.m2e.workspace.cli</artifactId>
+    <version>0.4.0</version>
+</dependency>
 						
 			
 		</dependencies>
