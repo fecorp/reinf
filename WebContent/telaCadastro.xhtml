@@ -1,210 +1,253 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-<h:head></h:head> 
-<body> 
-<h1><center>Cadastro de Empresas </center></h1>
+<h:head></h:head>
+<body>
+	<h1>
+		<center>Cadastro de Empresas</center>
+	</h1>
 
-<p:breadCrumb>
+	<p:breadCrumb>
 
-	<p:menuitem value="Basketball" url="#" />
-    <p:menuitem value="Parametrização" url="#" />
-    <p:menuitem value="Geração" url="#" />
-    <p:menuitem value="Relatórios" url="#" />
-   
-</p:breadCrumb>
+		<p:menuitem value="Basketball" url="#" />
+		<p:menuitem value="Parametrização" url="#" />
+		<p:menuitem value="Geração" url="#" />
+		<p:menuitem value="Relatórios" url="#" />
 
-<br />
-<h:form>
-    <p:growl autoUpdate="true"/>
- 
-    <p:panelMenu style="width:300px">
-        <p:submenu label="Cadastros">
-            <p:menuitem value="Empresa" actionListener="#{redirecionamentoPaginas.changePage(1)}" icon="ui-icon-disk" />
-            <p:menuitem value="Filial" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-            <p:menuitem value="Cliente Fornecedor" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-            <p:menuitem value="Serviços" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-        </p:submenu>
-        
-        <p:submenu label="Movimentação - Nota Fiscal">
-            <p:menuitem value="Serviços Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Impostos Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Serviços Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Impostos Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-         
-        </p:submenu>
-        <p:separator />
-        <p:submenu label="Reinf" >
-           
-        			<p:menuitem value="Doc. Não Fiscais" url="http://www.primefaces.org" icon="ui-icon-home" />
-                    <p:menuitem value="Recebimento" url="http://www.primefaces.org/documentation" icon="ui-icon-document" />
-                    <p:menuitem value="Pagamento" url="http://www.primefaces.org/downloads" icon="ui-icon-arrowthick-1-s" />
-                    <p:menuitem value="Associação Desp" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="Eventos Desp" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="CPRB" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="Vendas para Agro Indústria" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-        </p:submenu>
-        <p:submenu label="Interface Tabelas" >
-        </p:submenu>
-    </p:panelMenu>
-</h:form>
+	</p:breadCrumb>
 
-<br />
-<div style="horizontal-align:center">
-<h:outputText value="Empresa:* " style="font-size:20px"/>
-<h:inputText  value="" />
+	<br />
+	<h:form>
+		<p:growl autoUpdate="true" />
 
-<h:outputText value=" Filial:* " style="font-size:20px" />
-<h:inputText value="" />
+		<p:panelMenu style="width:300px">
+			<p:submenu label="Cadastros">
+				<p:menuitem value="Empresa"
+					
+					icon="ui-icon-disk" />
+				<p:menuitem value="Filial" actionListener="#{menuView.update}"
+					icon="ui-icon-arrowrefresh-1-w" />
+				<p:menuitem value="Cliente Fornecedor"
+					actionListener="#{menuView.update}" icon="ui-icon-arrowrefresh-1-w" />
+				<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+					icon="ui-icon-arrowrefresh-1-w" />
+			</p:submenu>
 
-<h:outputText value=" Data de atualização:*" style="font-size:20px" />
-<h:inputText value="" />
+			<p:submenu label="Movimentação - Nota Fiscal">
+				<p:menuitem value="Serviços Entrada"
+					actionListener="#{menuView.delete}" ajax="false"
+					icon="ui-icon-close" />
+				<p:menuitem value="Impostos Entrada"
+					actionListener="#{menuView.delete}" ajax="false"
+					icon="ui-icon-close" />
+				<p:menuitem value="Serviços Saída"
+					actionListener="#{menuView.delete}" ajax="false"
+					icon="ui-icon-close" />
+				<p:menuitem value="Impostos Saída"
+					actionListener="#{menuView.delete}" ajax="false"
+					icon="ui-icon-close" />
 
-<h:outputText value=" Categoria PF/PJ: * " style="font-size:20px" />
-<h:inputText value="" />
+			</p:submenu>
+			<p:separator />
+			<p:submenu label="Reinf">
+
+				<p:menuitem value="Doc. Não Fiscais" url="http://www.primefaces.org"
+					icon="ui-icon-home" />
+				<p:menuitem value="Recebimento"
+					url="http://www.primefaces.org/documentation"
+					icon="ui-icon-document" />
+				<p:menuitem value="Pagamento"
+					url="http://www.primefaces.org/downloads"
+					icon="ui-icon-arrowthick-1-s" />
+				<p:menuitem value="Associação Desp"
+					url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+				<p:menuitem value="Eventos Desp"
+					url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+				<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+					icon="ui-icon-wrench" />
+				<p:menuitem value="Vendas para Agro Indústria"
+					url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+			</p:submenu>
+			<p:submenu label="Interface Tabelas">
+			</p:submenu>
+		</p:panelMenu>
+	</h:form>
+
+	<br />
+	<div style="margin-left: 320px; margin-top: -170px">
+		<h:outputText value="Empresa:* " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value=" Filial:* " style="font-size:20px" />
+		<h:inputText value=""/>
+
+		<h:outputText value=" Data de atualização:* " style="font-size:20px" />
+		<h:inputText value="" />
+		<br></br> <br />
+		<h:outputText value=" Categoria PF/PJ: * " style="font-size:20px" />
+		<h:inputText value=" " />
+
+		<h:outputText value=" Código PF/PJ: * " style="font-size:20px" />
+		<h:inputText value="" />
+	</div>
+	<br></br>
+	<h:panelGrid columns="2" cellpadding="0">
+		<h:outputLabel value="Ind. Pessoa"
+			style="font-size:20px; margin-left:320px" />
+		<p:selectOneRadio id="console" value="#{radioView.console}"
+			style="font-size:20px">
+			<f:selectItem style="width: 500px;" itemLabel="Estrangeiro"
+				itemValue="estrangeiro" />
+			<f:selectItem style="font-size:10px" itemLabel="Isento"
+				itemValue="isento" />
+		</p:selectOneRadio>
+
+	</h:panelGrid>
+	<div style="margin-left: 320px; margin-top: 15px">
+		<h:outputText value=" Inscrição Estadual: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="     Inscrição Estadual Centralizadora: "
+			style="font-size:20px" />
+		<h:inputText value="" />
+		<br></br> <br></br>
+		<h:outputText value="  Inscrição Municipal : " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value=" Razão Social : " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  Nome Fantasia : " style="font-size:20px" />
+		<h:inputText value="" />
+		<br></br> <br></br>
+		<h:outputText value="  Endereço: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  Número: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  Bairro: " style="font-size:20px" />
+		<h:inputText value="" />
+
+	</div>
+	<br></br>
+	<div style="margin-left: 320px">
+		<h:outputText value="Complemento: " style="font-size:20px" />
+		<h:inputText value="" />
+
+
+		<h:outputText value="  Município: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  Unidade Federativa: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<br></br> <br></br>
+		<h:outputText value="CEP: " style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  Ind. Equipar. Prod. Rural: "
+			style="font-size:20px" />
+		<h:inputText value="" />
+
+		<h:outputText value="  País de Origem da PF/PJ: "
+			style="font-size:20px" />
+		<h:inputText value="" />
+
+	</div>
+	<br></br>
+	<div style="margin-left: 320px">
+		<h:outputText value="  Ind Empresa Coligada: " style="font-size:20px" />
+		<h:inputText value="" />
+
+			<h:outputText value="  Inscrição SUFRAMA: " style="font-size:20px" />
+			<h:inputText value="" />
 <br></br>
-<br />
-<h:outputText value="Código PF/PJ: *" style="font-size:20px" />
-<h:inputText value="" />
-</div>
 <br></br>
-		<h:panelGrid columns="2" cellpadding="0">
-		<h:outputLabel value="Ind. Pessoa" style="font-size:20px" />
-        <p:selectOneRadio id="console" value="#{radioView.console}" style="font-size:20px">
-            <f:selectItem style="width: 500px;" itemLabel="Estrangeiro" itemValue="estrangeiro" />
-            <f:selectItem style="font-size:10px" itemLabel="Isento" itemValue="isento" />
-        </p:selectOneRadio>
-        
-</h:panelGrid>
-<br></br>
-<h:outputText value=" Inscrição Estadual: " style="font-size:22px" />
-<h:inputText value="" />
+			<h:outputText value="  Tipo de Localidade: " style="font-size:20px" />
+			<h:inputText value="" />
 
-<h:outputText value="  Inscrição Estadual Centralizadora: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Inscrição Municipal: " style="font-size:22px" />
-<h:inputText value="" />
-<br></br>
-<br />
-<h:outputText value="Razão Social: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Nome Fantasia: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Endereço: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Número: " style="font-size:22px" />
-<h:inputText value="" />
-
-<br></br>
-<br></br>
-<h:outputText value="Complemento do endereço: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Bairro: " style="font-size:22px"/>
-<h:inputText value="" />
-
-<h:outputText value="  Município: " style="font-size:22px"/>
-<h:inputText value="" />
-
-<h:outputText value="  Unidade Federativa: " style="font-size:22px" />
-<h:inputText value="" />
-
-<br></br>
-<br></br>
-<h:outputText value="CEP: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Ind. Equipar. Prod. Rural: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  País de Origem da PF/PJ: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Ind Empresa Coligada: " style="font-size:22px"/>
-<h:inputText value="" />
-
-<br></br>
-<br />
-<h:outputText value="  Inscrição SUFRAMA: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Tipo de Localidade: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  CEI – Cadastro Específico do INSS: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  NIT: " style="font-size:22px" />
-<h:inputText value="" />
-
-<br />
-<br />
-<h:outputText value="  Caixa Postal: " style="font-size:22px"  />
-<h:inputText value="" />
-
-<h:outputText value="  CEP da Caixa Postal: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  DDD do Telefone: " style="font-size:22px" />
-<h:inputText value="" />
-
-<h:outputText value="  Número do Telefone: " style="font-size:22px"  />
-<h:inputText value="" />
+			<h:outputText value="  CEI – Cadastro Específico do INSS: "
+				style="font-size:20px" />
+			<h:inputText value="" />
 <br>
 </br>
-<h:outputText value="  DDD do Fax: " style="font-size:22px" />
-<h:inputText value="" />
+			<h:outputText value="  NIT: " style="font-size:20px" />
+			<h:inputText value="" />
 
-<h:outputText value="  Número do Fax: " style="font-size:22px" />
-<h:inputText value="" />
+			<h:outputText value="  Caixa Postal: " style="font-size:20px" />
+			<h:inputText value="" />
 
-<h:outputText value="  Classificação do Retentor do Imposto: " style="font-size:22px" />
-<h:inputText value="" />
+			<h:outputText value="  CEP da Caixa Postal: " style="font-size:20px" />
+			<h:inputText value="" />
 
-<h:outputText value="  Código Município IBGE: " style="font-size:22px" />
-<h:inputText value="" />
+
+			<br></br> <br />
+			<h:outputText value="  DDD do Telefone: " style="font-size:20px" />
+			<h:inputText value="" />
+
+			<h:outputText value="  Número do Telefone: " style="font-size:20px" />
+			<h:inputText value="" />
+			
+			<h:outputText value="  DDD do Fax: " style="font-size:20px" />
+			<h:inputText value="" />
+		</div>
+		<br></br>
+		<div style="margin-left:320px">
+		<h:outputText value="  Número do Fax: " style="font-size:20px" />
+		<h:inputText value="" />
+
+	<h:outputText value="  Classificação do Retentor do Imposto: "
+		style="font-size:20px" />
+	<h:inputText value="" />
 <br></br>
-<br />
-<h:outputText value="  Classificação Fiscal: " style="font-size:22px" />
-<h:inputText value="" />
+<br></br>
+	<h:outputText value="  Código Município IBGE: " style="font-size:20px" />
+	<h:inputText value="" />
+	
+	<h:outputText value="  Classificação Fiscal: " style="font-size:20px" />
+	<h:inputText value="" />
+<br></br>
+<br></br>
+	<h:outputText value="  Situação da Pessoa Jurídica: "
+		style="font-size:20px" />
+	<h:inputText value="" />
 
-<h:outputText value="  Situação da Pessoa Jurídica: " style="font-size:22px" />
-<h:inputText value="" />
+	<h:outputText value="  Número de Inscrição CNO: "
+		style="font-size:20px" />
+	<h:inputText value="" />
+<br></br>
+<br></br>
+	<h:outputText value="  Data de criação: " style="font-size:20px" />
+	<h:inputText value="" />
 
-<h:outputText value="  Número de Inscrição CNO: " style="font-size:22px" />
-<h:inputText value="" />
+	<h:outputText value="  Indicativo da Pessoa Jurídica: "
+		style="font-size:20px" />
+	<h:inputText value="" />
+<br></br>
+<br></br>
+	<h:outputText value="  CNAE: " style="font-size:20px" />
+	<h:inputText value="" />
 
-<h:outputText value="  Data de criação: " style="font-size:22px" />
-<h:inputText value="" />
-<br />
-<br />
-<h:outputText value="  Indicativo da Pessoa Jurídica: " style="font-size:22px" />
-<h:inputText value="" />
+	<h:outputText value="  Data de Encerramento: " style="font-size:20px" />
+	<h:inputText value="" />
 
-<h:outputText value="  CNAE: " style="font-size:22px" />
-<h:inputText value="" />
+	<h:form>
 
-<h:outputText value="  Data de Encerramento: " style="font-size:22px" />
-<h:inputText value="" />
+		<h3 style="margin-left:5px">Observações:</h3>
+		<p:inputTextarea rows="6" cols="33" />
 
-<h:form>               
- 
-    <h3>Observações:</h3>
-    <p:inputTextarea rows="6" cols="33" />
- 
-   
-</h:form>
+	<button style="margin-left:100px" type="button">Cadastrar!</button>
+	<button style="margin-left:100px" type="button">Excluir!</button>
+	
+	</h:form>
 
+</div>
 
 
-
-</body> 
-</html>
+</body>
+</ui>
