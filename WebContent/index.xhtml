@@ -22,17 +22,18 @@
  
     <p:panelMenu style="width:300px">
         <p:submenu label="Cadastros">
-            <p:menuitem value="Empresa" actionListener="#{menuView.save}" icon="ui-icon-disk" />
+            <p:menuitem value="Empresa" actionListener="#{redirecionamentoPaginas.changePage(1)}" icon="ui-icon-disk" />
             <p:menuitem value="Filial" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
             <p:menuitem value="Cliente Fornecedor" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
             <p:menuitem value="Serviços" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
         </p:submenu>
+        
         <p:submenu label="Movimentação - Nota Fiscal">
             <p:menuitem value="Serviços Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
             <p:menuitem value="Impostos Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
             <p:menuitem value="Serviços Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
             <p:menuitem value="Impostos Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            
+         
         </p:submenu>
         <p:separator />
         <p:submenu label="Reinf" >

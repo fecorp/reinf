@@ -84,7 +84,26 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>3.6.10.Final</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>9.4-1206-jdbc42</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.wildfly</groupId>
+		    <artifactId>wildfly-feature-pack</artifactId>
+		    <version>9.0.0.Final</version>
+		    <type>pom</type>
+		    <scope>provided</scope>
+		</dependency>
+		
         </dependencies>
+        
+        <!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-feature-pack -->
+		
+        
         
         <repositories>
               <repository>
@@ -93,7 +112,6 @@
                     <url>http://repository.primefaces.org</url>
                     <layout>default</layout>
          </repository>
-         
-	 </repositories>					
+       </repositories>					
 			
 </project>
