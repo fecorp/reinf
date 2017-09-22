@@ -22,7 +22,7 @@
 		</p:layoutUnit>
 		<p:layoutUnit position="west">
 			<h:form>
-				<p:panelMenu style="width:300px">
+				<p:panelMenu style="width:250px">
 					<p:submenu label="Cadastros">
 						<p:menuitem value="Empresa"
 							actionListener="#{redirecionamentoPaginas.changePage(1)}"
@@ -77,11 +77,10 @@
 			</h:form>
 		</p:layoutUnit>
 		
-		<p:layoutUnit position="footer">
-		HELLO DARKNESS MY OLD FRIEND</p:layoutUnit>
 
 		<p:layoutUnit position="center">
 			<div style="horizontal-align: center">
+			<p:fieldset legend="Dados cadastrais ">
 				<h:outputText value="Empresa:*" />
 				<h:inputText value="" />
 
@@ -96,10 +95,9 @@
 				<br></br> <br />
 				<h:outputText value="Código PF/PJ: *" />
 				<h:inputText value="" />
+				</p:fieldset>
 			</div>
-
-			
-				<br></br>
+<p:fieldset legend="Endereço">
 				<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="0">
 					<h:outputLabel value="Ind. Pessoa" />
 					<p:selectOneRadio id="console" value="#{radioView.console}">
@@ -161,6 +159,8 @@
 
 				<h:outputText value="  Tipo de Localidade: " />
 				<h:inputText value="" />
+				
+				</p:fieldset>
 
 				<h:outputText value="  CEI – Cadastro Específico do INSS: " />
 				<h:inputText value="" />
