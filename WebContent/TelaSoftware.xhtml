@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body style="background-color:#E0EEF6;border:0px;">
+
+	<p:layout>
+		<p:layoutUnit style="background-color:#F2f2f2" position="north">
+
+			<p:graphicImage url="\Reinf\images\logo.jpg" width="454px"
+				height="340px" />
+
+		</p:layoutUnit>
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+
+			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
+				url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
+				url="#" />
+		</p:breadCrumb>
+
+		<p:layoutUnit position="west" style="background-color:#F2f2f2">
+			<h:form>
+				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros">
+						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável"
+							url="\Reinf\faces\telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+					<p:submenu label="Movimentação - Nota Fiscal">
+						<p:menuitem value="Serviços Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf">
+
+						<p:menuitem value="Doc. Não Fiscais"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+						<p:menuitem value="Recebimento"
+							url="http://www.primefaces.org/documentation"
+							icon="ui-icon-document" />
+						<p:menuitem value="Pagamento"
+							url="http://www.primefaces.org/downloads"
+							icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="Associação Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="Eventos Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+							icon="ui-icon-wrench" />
+						<p:menuitem value="Vendas para Agro Indústria"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					</p:submenu>
+					<p:submenu label="Interface ">
+						<p:menuitem value="Gerenciamento de Arquivos"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
+
+					<p:submenu label="Lotes">
+						<p:menuitem value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
+
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+
+
+
+	
+
+	<p:layoutUnit style="background-color:#F4F0F0" position="center">
+
+		<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			legend="Dados cadastrais ">
+
+			<h:outputText style="font-size: 12px" value=" CNPJ: *     " />
+			<p:inputMask style="width: 12%" value="" mask="99.999.999/9999-99" />
+
+			<h:outputText style="font-size: 12px" value=" Razão Social: *     " />
+			<p:inputText style="width: 25%" value="" />
+
+			<h:outputText style="font-size: 12px"
+				value=" Nome do contato: *     " />
+			<p:inputText style="width: 25%" value="" />
+			<br />
+			<br />
+			<h:outputText style="font-size: 12px" value=" Filial: *     " />
+			<p:inputText style="width: 15%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" Telefone: *     " />
+			<p:inputMask style="width: 9%" value="" mask="(99)99999-9999" />
+
+			<h:outputText style="font-size: 12px" value=" E-mail: *     " />
+			<p:inputText style="width: 18%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" Nome Fantasia:      " />
+			<p:inputText style="width: 19%" value="" />
+			<br />
+			<br />
+			<h:outputText style="font-size: 12px" value=" Qualificação :      " />
+			<p:inputText style="width: 17%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" Bairro :      " />
+			<p:inputText style="width: 14%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" Município :      " />
+			<p:inputText style="width: 20%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" UF :      " />
+			<p:inputText style="width: 2%" value="" />
+
+			<h:outputText style="font-size: 12px" value=" CEP :      " />
+			<p:inputMask style="width: 6%" value="" mask="99999-999" />
+			<br />
+			<br />
+			<h:outputText style="font-size: 12px" value=" CPF :      " />
+			<p:inputMask style="width: 9%" value="" mask="999.999.999-99" />
+
+			<h:outputText style="font-size: 12px" value=" Endereço :       " />
+			<p:inputText style="width: 20%" value="" />
+
+		</p:fieldset>
+		<br />
+
+		<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			legend="Openflex">
+			<h:outputText style="font-size: 12px" value="  Openflex 01: " />
+			<p:inputText style="width: 20%" value="" />
+
+			<h:outputText style="font-size: 12px" value="  Openflex 02: " />
+			<p:inputText style="width: 20%" value="" />
+		</p:fieldset>
+		<br />
+		<center>
+			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+				value="Salvar Dados  " icon="ui-icon-star">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+
+			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+				value="  Limpar Dados  " icon="ui-icon-star">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+		</center>
+	</p:layoutUnit>
+	</p:layout>
+</h:body>
+</html>

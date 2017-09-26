@@ -11,40 +11,48 @@
 
 
 </h:head>
-<body>
+
+<h:body style="background-color:#E0EEF6;border:0px;">
+
 
 
 	<p:layout>
-		<p:layoutUnit position="north">
-
-
-			<p:breadCrumb style="background-color:#6092FD; font-size:14px">
-
-				<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
-					url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
-					url="#" />
-			</p:breadCrumb>
-
+		<p:layoutUnit style="background-color:#F2f2f2" position="north">
 			<center>
 				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
 					height="340px" />
 			</center>
 		</p:layoutUnit>
 
-		<p:layoutUnit position="west">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+
+			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
+				url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
+				url="#" />
+		</p:breadCrumb>
+
+
+
+		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
 				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros">
 						<p:menuitem value="Empresa"
-							actionListener="#{redirecionamentoPaginas.changePage(1)}"
+							url="\Reinf\faces\telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" actionListener="#{menuView.update}"
+						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							actionListener="#{menuView.update}"
+							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+							<p:menuitem value="Responsável"
+							url="\Reinf\faces\telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+							<p:menuitem value="Software"
+							url="\Reinf\faces\TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -100,9 +108,9 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit style="background-color:#F2f2f2" position="center">
 
-			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
 				legend="Dados cadastrais ">
 				<div>
 					<h:outputText style="font-size: 12px" value=" Empresa : *     " />
@@ -153,19 +161,27 @@
 				<br />
 				<br />
 				<center>
-					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+					<!-- <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 						<p:outputLabel for="console" value="Indicador: " />
 						<p:selectOneRadio id="console" value="#{radioView.console}">
 							<f:selectItem itemLabel="Isento" itemValue="isento" />
 							<f:selectItem itemLabel="Estrangeiro" itemValue="estrangeiro" />
 
 						</p:selectOneRadio>
-					</h:panelGrid>
+					</h:panelGrid> -->
+
+					<h3 style="margin-top: 0px">Indicador</h3>
+					<p:selectManyCheckbox id="basic"
+						value="#{checkboxView.selectedConsoles}">
+						<f:selectItem itemLabel="Nacional" itemValue="Xbox One" />
+						<f:selectItem itemLabel="Estrangeiro" itemValue="PS4" />
+						<f:selectItem itemLabel="Isento" itemValue="Wii U" />
+					</p:selectManyCheckbox>
 				</center>
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#E0EEF6; font-size: 12px "
+			<p:fieldset style="background-color:#F2f2f2; font-size: 12px "
 				legend="Endereço">
 				<h:outputText style="font-size: 12px" value="  Endereço: " />
 				<p:inputText style="width: 28%" value="" />
@@ -227,7 +243,7 @@
 
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
 				legend="Dados complementares">
 
 				<h:outputText style="font-size: 12px"
@@ -313,7 +329,7 @@
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
 				legend="Openflex">
 				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
 				<p:inputText style="width: 20%" value="" />
@@ -323,20 +339,20 @@
 			</p:fieldset>
 			<br />
 
-
-			<p:button style="background-color:#6092FD" outcome="acoesBotao"
+<center>
+			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 				value="Salvar Dados  " icon="ui-icon-star">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
 
-			<p:button style="background-color:#6092FD" outcome="acoesBotao"
+			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 				value="  Limpar Dados  " icon="ui-icon-star">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-
+</center>
 		</p:layoutUnit>
 	</p:layout>
 
 
-</body>
+</h:body>
 </html>

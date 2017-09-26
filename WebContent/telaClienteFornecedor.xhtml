@@ -1,168 +1,308 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui"> 
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-<h:head></h:head> 
-<body> 
-
-</body> 
-<h2>Cadastro de Cliente Fornecedor </h2>
-
-<p:breadCrumb>
-
-	<p:menuitem value="Basketball" url="#" />
-    <p:menuitem value="Parametrização" url="#" />
-    <p:menuitem value="Geração" url="#" />
-    <p:menuitem value="Relatórios" url="#" />
-   
-</p:breadCrumb>
-
-<br></br>
-<div style="horizontal-align:center">
-<h:outputText value=" Empresa: * " />
-<h:inputText value="" />
-
-<h:outputText value=" Filial: * " />
-<h:inputText value="" />
-
-<h:outputText value=" Data de atualização: * " />
-<h:inputText value="" />
-
-<h:outputText value=" Categoria PF/PJ: * " />
-<h:inputText value="" />
-<br></br>
-<br />
-<h:outputText value="Código PF/PJ: * " />
-<h:inputText value="" />
-</div>
-
-<div>
-<br></br>
-		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="0">
-		<h:outputLabel value="Ind. Pessoa" />
-        <p:selectOneRadio id="console" value="#{radioView.console}">
-            <f:selectItem itemLabel="Estrangeiro" itemValue="estrangeiro" />
-            <f:selectItem itemLabel="Isento" itemValue="isento" />
-        </p:selectOneRadio>
-</h:panelGrid>
-<br></br>
-<h:outputText value=" Inscrição Estadual: " />
-<h:inputText value="" />
+<h:head>
 
 
-<h:outputText value="  Inscrição Municipal: " />
-<h:inputText value="" />
-<br></br>
-<br />
-<h:outputText value="Razão Social: " />
-<h:inputText value="" />
 
-<h:outputText value="  Nome Fantasia: " />
-<h:inputText value="" />
 
-<h:outputText value="  Endereço: " />
-<h:inputText value="" />
+</h:head>
 
-<h:outputText value="  Número: " />
-<h:inputText value="" />
+<h:body style="background-color:#F2f2f2;border:0px;">
 
-<br></br>
-<br></br>
-<h:outputText value="Complemento do endereço: " />
-<h:inputText value="" />
 
-<h:outputText value="  Bairro: " />
-<h:inputText value="" />
 
-<h:outputText value="  Município: " />
-<h:inputText value="" />
+	<p:layout>
+		<p:layoutUnit position="north">
 
-<h:outputText value="  Unidade Federativa: " />
-<h:inputText value="" />
 
-<br></br>
-<br></br>
-<h:outputText value="CEP: " />
-<h:inputText value="" />
+			<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
 
-<h:outputText value="  Ind. Equipar. Prod. Rural: " />
-<h:inputText value="" />
+				<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
+					url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
+					url="#" />
+			</p:breadCrumb>
 
-<h:outputText value="  País de Origem da PF/PJ: " />
-<h:inputText value="" />
+			<center>
+				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
+					height="340px" />
+			</center>
+		</p:layoutUnit>
 
-<h:outputText value="  Ind Empresa Coligada: " />
-<h:inputText value="" />
+		<p:layoutUnit position="west">
+			<h:form>
+				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros">
+						<p:menuitem value="Empresa"
+							url="\Reinf\faces\telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+							<p:menuitem value="Responsável"
+							url="\Reinf\faces\telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+							<p:menuitem value="Software"
+							url="\Reinf\faces\TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+					<p:submenu label="Movimentação - Nota Fiscal">
+						<p:menuitem value="Serviços Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
 
-<br></br>
-<br />
-<h:outputText value="  Inscrição SUFRAMA: " />
-<h:inputText value="" />
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf">
 
-<h:outputText value="  Tipo de Localidade: " />
-<h:inputText value="" />
+						<p:menuitem value="Doc. Não Fiscais"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+						<p:menuitem value="Recebimento"
+							url="http://www.primefaces.org/documentation"
+							icon="ui-icon-document" />
+						<p:menuitem value="Pagamento"
+							url="http://www.primefaces.org/downloads"
+							icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="Associação Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="Eventos Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+							icon="ui-icon-wrench" />
+						<p:menuitem value="Vendas para Agro Indústria"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					</p:submenu>
+					<p:submenu label="Interface ">
+						<p:menuitem value="Gerenciamento de Arquivos"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
 
-<h:outputText value="  Código da LocalidadeS: " />
-<h:inputText value="" />
+					<p:submenu label="Lotes">
+						<p:menuitem value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
 
-<h:outputText value="  CEI – Cadastro Específico do INSS: " />
-<h:inputText value="" />
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
 
-<h:outputText value="  NIT: " />
-<h:inputText value="" />
 
-<br />
-<br />
-<h:outputText value="  Caixa Postal: " />
-<h:inputText value="" />
+		<p:layoutUnit position="center">
 
-<h:outputText value="  CEP da Caixa Postal: " />
-<h:inputText value="" />
+			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+				legend="Dados cadastrais ">
+				<div>
+					<h:outputText style="font-size: 12px" value=" Empresa : *     " />
+					<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
 
-<h:outputText value="  DDD do Telefone: " />
-<h:inputText value="" />
+					<h:outputText style="font-size: 12px" value="      Filial :  * " />
+					<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
 
-<h:outputText value="  Número do Telefone: " />
-<h:inputText value="" />
-<br>
-</br>
-<h:outputText value="  DDD do Fax: " />
-<h:inputText value="" />
+					<h:outputText style="font-size: 12px"
+						value="      Razão Social :   " />
+					<p:inputText style="width: 26%" value="" />
 
-<h:outputText value="  Número do Fax: " />
-<h:inputText value="" />
+					<h:outputLabel style="font-size: 12px" value="  Nome Fantasia: " />
+					<p:inputText style="width: 17%" value="" />
+					<br /> <br />
 
-<h:outputText value="  Classificação do Retentor do Imposto: " />
-<h:inputText value="" />
 
-<h:outputText value="  Código Município IBGE: " />
-<h:inputText value="" />
-<br></br>
-<br />
-<h:outputText value="  Classificação Fiscal: " />
-<h:inputText value="" />
+					<p:outputLabel style="width: 12%" width="10px"
+						value="    Data de atualização: * " />
+					<p:calendar style="font-size:13px; background-color: #F2F2F2"
+						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+						id="popup" value="#{calendarView.date2}" locale="pt"
+						pattern="dd/MM/yyyy" />
 
-<br />
-<br />
-<h:outputText value="  Indicativo da Pessoa Jurídica: " />
-<h:inputText value="" />
+					<h:outputText style="font-size: 12px"
+						value="               Categoria PF/PJ: * " />
+					<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
 
-<h:outputText value="  Situação da Pessoa Jurídica: " />
-<h:inputText value="" />
+					<h:outputText style="font-size: 12px" value=" Código PF/PJ: * " />
+					<p:inputText style="width: 14%; background-color: #F2F2F2" value="" />
 
-<h:outputText value="  Número de Inscrição CNO: " />
-<h:inputText value="" />
 
-<h:form>               
- 
-    <h3>Observações:</h3>
-    <p:inputTextarea rows="6" cols="33" />
- 
-   
-</h:form>
 
-</div>
+					<h:outputText style="font-size: 12px"
+						value="    Inscrição Estadual: " />
+					<p:inputText style="width: 18%" value="" />
+				</div>
+
+				<br />
+
+				<h:outputText style="font-size: 12px"
+					value="  Inscrição Municipal: " />
+				<p:inputText style="width: 18%" value="" />
+				<br />
+				<br />
+				<center>
+					<!-- <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+						<p:outputLabel for="console" value="Indicador: " />
+						<p:selectOneRadio id="console" value="#{radioView.console}">
+							<f:selectItem itemLabel="Isento" itemValue="isento" />
+							<f:selectItem itemLabel="Estrangeiro" itemValue="estrangeiro" />
+
+						</p:selectOneRadio>
+					</h:panelGrid> -->
+
+					<h3 style="margin-top: 0px">Indicador</h3>
+					<p:selectManyCheckbox id="basic"
+						value="#{checkboxView.selectedConsoles}">
+						<f:selectItem itemLabel="Nacional" itemValue="Xbox One" />
+						<f:selectItem itemLabel="Estrangeiro" itemValue="PS4" />
+						<f:selectItem itemLabel="Isento" itemValue="Wii U" />
+					</p:selectManyCheckbox>
+				</center>
+			</p:fieldset>
+
+			<br />
+			<p:fieldset style="background-color:#E0EEF6; font-size: 12px "
+				legend="Endereço">
+				<h:outputText style="font-size: 12px" value="  Endereço: " />
+				<p:inputText style="width: 28%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Número: " />
+				<p:inputText style="width: 4%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Complemento do endereço:   " />
+				<p:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Bairro: " />
+				<p:inputText style="width: 15%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  Município: " />
+				<p:inputText style="width: 25%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Unidade Federativa: " />
+				<p:inputText style="width: 3%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  CEP: " />
+				<p:inputMask id="cep" style="width: 9%" value=""
+					mask="999.999.999-99" />
+
+				<h:outputText style="font-size: 12px" value="  Caixa Postal: " />
+				<p:inputText style="width: 8%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  CEP da Caixa Postal: " />
+				<p:inputMask style="width: 9%" value="" mask="999.999.999-99" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  País de Origem : " />
+				<p:inputText style="width: 15%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  DDD do Telefone: " />
+				<p:inputMask style="width: 3%" value="" mask="(999)" />
+
+				<h:outputText style="font-size: 12px" value="  Número do Telefone: " />
+				<p:inputMask id="telefone" style="width: 9%" value=""
+					mask="9999-9999" />
+
+				<h:outputText style="font-size: 12px" value="  DDD do Fax: " />
+				<p:inputMask style="width: 3%" value="" mask="(999)" />
+
+				<h:outputText style="font-size: 12px" value="  Número do Fax: " />
+				<p:inputMask style="width: 9%" value="" mask="9999-9999" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  Tipo de Localidade: " />
+				<p:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Código Município IBGE: " />
+				<p:inputText style="width: 17%" value="" />
+
+
+
+			</p:fieldset>
+			<br />
+			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+				legend="Dados complementares">
+
+				<h:outputText style="font-size: 12px"
+					value="  Indicador Equipar. Produção Rural:  " />
+				<p:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  SUFRAMA: " />
+				<p:inputText style="width: 19%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Cadastro Específico do INSS: " />
+				<p:inputText style="width: 17%" value="" />
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 12px"
+					value="  Classificação Fiscal: " />
+				<p:inputText style="width: 22%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  NIT: " />
+				<p:inputText style="width: 26%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Situação da Pessoa Jurídica: " />
+				<p:inputText style="width: 18%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="  Número de Inscrição CNO: " />
+				<p:inputText style="width: 4%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Ind. da Pessoa Jurídica: " />
+				<p:inputText style="width: 15%" value="" />
+				<br />
+				<br />
+
+			</p:fieldset>
+			<br />
+			<p:fieldset style="background-color:#E0EEF6; font-size: 12px"
+				legend="Openflex">
+				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
+				<p:inputText style="width: 20%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
+				<p:inputText style="width: 20%" value="" />
+			</p:fieldset>
+			<br />
+
+
+			<center>
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="Salvar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="  Limpar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</center>
+		</p:layoutUnit>
+	</p:layout>
+
+
+</h:body>
 </html>

@@ -7,7 +7,7 @@
 
 <h:head></h:head> 
 <h:body> 
-<h2>Reinf</h2>
+
 <p:breadCrumb>
 
 	<p:menuitem value="Basketball" url="#" />
@@ -20,34 +20,38 @@
 <h:form>
     <p:growl autoUpdate="true"/>
  
-    <p:panelMenu style="width:300px">
-        <p:submenu label="Cadastros">
-            <p:menuitem value="Empresa" actionListener="#{redirecionamentoPaginas.changePage(1)}" icon="ui-icon-disk" />
-            <p:menuitem value="Filial" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-            <p:menuitem value="Cliente Fornecedor" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-            <p:menuitem value="Serviços" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-        </p:submenu>
-        
-        <p:submenu label="Movimentação - Nota Fiscal">
-            <p:menuitem value="Serviços Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Impostos Entrada" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Serviços Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-            <p:menuitem value="Impostos Saída" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-         
-        </p:submenu>
-        <p:separator />
-        <p:submenu label="Reinf" >
-           
-        			<p:menuitem value="Doc. Não Fiscais" url="http://www.primefaces.org" icon="ui-icon-home" />
-                    <p:menuitem value="Recebimento" url="http://www.primefaces.org/documentation" icon="ui-icon-document" />
-                    <p:menuitem value="Pagamento" url="http://www.primefaces.org/downloads" icon="ui-icon-arrowthick-1-s" />
-                    <p:menuitem value="Associação Desp" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="Eventos Desp" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="CPRB" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                    <p:menuitem value="Vendas para Agro Indústria" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-        </p:submenu>
-        <p:submenu label="Interface Tabelas" >
-        </p:submenu>
+				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros">
+						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável"
+							url="\Reinf\faces\telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+					<p:submenu label="Movimentação - Nota Fiscal">
+						<p:menuitem value="Serviços Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+
+					</p:submenu>
     </p:panelMenu>
 </h:form>
 </h:body> 
