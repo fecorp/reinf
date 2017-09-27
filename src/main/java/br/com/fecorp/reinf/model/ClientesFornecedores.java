@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
-public class Empresa {
+public class ClientesFornecedores {
+	
+	
 	public String empresa;
 	public String filial;
 	public String dataAtualizacao;
@@ -9,7 +11,6 @@ public class Empresa {
 	public String cnpj_cpf;
 	public String indPessoa;
 	public String insEstadual;
-	public String insEstadualC;
 	public String insMunicipal;
 	public String nomeRazaoSocial;
 	public String nomeFantasia;
@@ -39,13 +40,28 @@ public class Empresa {
 	public String numeroCNO;
 	public String dataCriacao;
 	public String indicativoPJ;
-	public String cnae;
 	public String dataEncerramento;
 	public String openflex_01;
 	public String openflex_02;
 	
-	
-	
+	public String getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+	public String getFilial() {
+		return filial;
+	}
+	public void setFilial(String filial) {
+		this.filial = filial;
+	}
+	public String getDataAtualizacao() {
+		return dataAtualizacao;
+	}
+	public void setDataAtualizacao(String dataAtualizacao) {
+		this.dataAtualizacao = dataAtualizacao;
+	}
 	public String getCategoriaPFPJ() {
 		return categoriaPFPJ;
 	}
@@ -75,12 +91,6 @@ public class Empresa {
 	}
 	public void setInsEstadual(String insEstadual) {
 		this.insEstadual = insEstadual;
-	}
-	public String getInsEstadualC() {
-		return insEstadualC;
-	}
-	public void setInsEstadualC(String insEstadualC) {
-		this.insEstadualC = insEstadualC;
 	}
 	public String getInsMunicipal() {
 		return insMunicipal;
@@ -274,31 +284,5 @@ public class Empresa {
 	public void setOpenflex_02(String openflex_02) {
 		this.openflex_02 = openflex_02;
 	}
-	public String getEmpresa() {
-		return empresa;
-	}
-	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
-	}
-	public String getFilial() {
-		return filial;
-	}
-	public void setFilial(String filial) {
-		this.filial = filial;
-	}
-	public String getDataAtualizacao() {
-		return dataAtualizacao;
-	}
-	public void setDataAtualizacao(String dataAtualizacao) {
-		this.dataAtualizacao = dataAtualizacao;
-	}
-	public String getCnae() {
-		return cnae;
-	}
-	public void setCnae(String cnae) {
-		this.cnae = cnae;
-	}
-	
-	
 
 }
