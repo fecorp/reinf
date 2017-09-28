@@ -40,22 +40,21 @@
 			<h:form>
 				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros">
-						<p:menuitem value="Empresa"
-							url="\Reinf\faces\telaCadastro.xhtml"
+						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
 							url="\Reinf\faces\telaClienteFornecedor.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-							<p:menuitem value="Responsável"
+						<p:menuitem value="Responsável"
 							url="\Reinf\faces\telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-							<p:menuitem value="Software"
-							url="\Reinf\faces\TelaSoftware.xhtml"
+						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
+
 					</p:submenu>
 
 					<p:submenu label="Movimentação - Nota Fiscal">
@@ -70,6 +69,13 @@
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída"
 							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+
+						<p:menuitem value="Complemento Entrada"
+							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
+							url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false"
 							icon="ui-icon-close" />
 
 					</p:submenu>
@@ -339,17 +345,17 @@
 			</p:fieldset>
 			<br />
 
-<center>
-			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-				value="Salvar Dados  " icon="ui-icon-star">
-				<f:param name="productId" value="turubom?" />
-			</p:button>
+			<center>
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="Salvar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 
-			<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-				value="  Limpar Dados  " icon="ui-icon-star">
-				<f:param name="productId" value="turubom?" />
-			</p:button>
-</center>
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="  Limpar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</center>
 		</p:layoutUnit>
 	</p:layout>
 
