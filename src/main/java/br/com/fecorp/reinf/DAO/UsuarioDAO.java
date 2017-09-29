@@ -9,7 +9,7 @@ import br.com.fecorp.reinf.control.Usuario;
 
 public class UsuarioDAO {
 
-	private EntityManagerFactory factory = Persistence.createEntityManagerFactory("usuarios");
+	private EntityManagerFactory factory = Persistence.createEntityManagerFactory("usuario");
 	private EntityManager em = factory.createEntityManager();
 
 	public Usuario getUsuario(String nomeUsuario, String senha) {

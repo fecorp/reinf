@@ -99,6 +99,13 @@
 		    <scope>provided</scope>
 		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec -->
+		<dependency>
+		    <groupId>org.jboss.spec.javax.transaction</groupId>
+		    <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+		    <version>1.0.1.Final</version>
+		</dependency>
+		
         </dependencies>
         
         <!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-feature-pack -->
