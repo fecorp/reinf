@@ -145,107 +145,142 @@
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
 				legend="Valores e Alíquotas">
 				<h:outputText style="font-size: 12px"
-					value="  	Valor do serviço :   " />
-				<p:inputMask style="width: 4%" value="" />
-
-
+					value="  Valor do serviço :   " />
+				<p:inputMask style="width: 10%" value="" />
 
 				<h:outputText style="font-size: 12px"
-					value="  	Valor do Material Aplicado: " />
-				<p:inputText style="width: 4%" value="" />
+					value="  Valor do Material Aplicado: " />
+				<p:inputText style="width: 10%" value="" />
 
 				<h:outputText style="font-size: 12px"
-					value="  	Valor do desconto:   " />
-				<p:inputText style="width: 3%" value="" />
+					value="  Valor do desconto:   " />
+				<p:inputText style="width: 10%" value="" />
 
 				<h:outputText style="font-size: 12px"
-					value="  	Valor total do documento: " />
-				<p:inputText style="width: 5%" value="" />
+					value="  Valor total do documento: " />
+				<p:inputText style="width: 10%" value="" />
 				<br />
 				<br />
+				<div>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
 
-				<h3>Bases de Cálculo:</h3>
+					<h:outputText style="font-size: 12px; font-weight: bold;"
+						value=" BASE: " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp;&nbsp; &nbsp;
 
-				<h:outputText style="font-size: 12px"
-					value=" Base de Cálculo de IRRF: " />
-				<p:inputText id="basecalculoinss" style="width: 5%" value="" />
+					<h:outputText style="font-size: 12px; font-weight: bold;"
+						value=" ALÍQUOTA: " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
-				<h:outputText style="font-size: 12px"
-					value=" Base de Cálculo da Retenção INSS: " />
-				<p:inputText id="basecalculoretencaoinss" style="width: 5%" value="" />
+					<h:outputText style="font-size: 12px; font-weight: bold;"
+						value=" VALOR " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					
+					<h:outputText style="font-size: 12px; font-weight: bold;"
+						value=" CÓDIGO " />
+					<br /> <br />
+					<h:outputText style="font-size: 12px" value=" IRRF: " />
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
+					<p:inputText style="font-size: 12px" value="" />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<br /> <br />
+					<h:outputText style="font-size: 12px" value=" INSS: " />
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 12px" value=" PIS :  " />
+		
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
-				<h3>Alíquota :</h3>
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 12px" value=" CONFIS: " />
+					&nbsp; &nbsp;
+					
 
-				<h:outputText style="font-size: 12px" value=" Alíquota do IRRF  : " />
-				<p:inputText id="aliquotairrf" style="width: 5%" value="" />
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 12px" value=" SSL: " />
+					
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
-				<h:outputText style="font-size: 12px" value="  Alíquota do INSS : " />
-				<p:inputText style="width: 3%" value="" />
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 12px" value=" ISS: " />
+					
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					
+					<p:inputText style="font-size: 12px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 12px" value=" " />
+					<p class="ident" />
+					
+					&nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; 
 
-				<h:outputText style="font-size: 12px" value="  Alíquota do ISS : " />
-				<p:inputText style="width: 3%" value="" />
+					
 
-				<h:outputText style="font-size: 12px" value="  Alíquota do PIS : " />
-				<p:inputText style="width: 3%" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Alíquota do COFINS : " />
-				<p:inputText style="width: 3%" value="" />
-
-				<h:outputText style="font-size: 12px" value="  Alíquota do CSLL : " />
-				<p:inputText style="width: 3%" value="" />
-
-
-				<h3>Valor:</h3>
-
-
-				<h:outputText style="font-size: 12px" value=" Valor do IRRF : " />
-				<p:inputText id="valorirrf" style="width: 5%" value="" />
-
-
-
-				<h:outputText style="font-size: 12px" value="  Valor do ISS : " />
-				<p:inputText style="width: 3%" value="" />
-
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor do ISS Retido : " />
-				<p:inputText style="width: 3%" value="" />
-
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor da Retenção do INSS: " />
-				<p:inputText style="width: 5%" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor da Base de Cálculo - ISS : " />
-				<p:inputText style="width: 5%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Valor da Base de Cálculo do PIS : " />
-				<p:inputText style="width: 5%" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor da Base de Cálculo do COFINS : " />
-				<p:inputText style="width: 5%" value="" />
-
-				<h:outputText style="font-size: 12px" value="  Valor do PIS : " />
-				<p:inputText style="width: 5%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px" value="  Valor do COFINS : " />
-				<p:inputText style="width: 5%" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor da base de Calc do CSLL: " />
-				<p:inputText style="width: 5%" value="" />
-
-				<h:outputText style="font-size: 12px" value="  Valor do CSLL : " />
-				<p:inputText style="width: 5%" value="" />
+				</div>
 			</p:fieldset>
 
 
