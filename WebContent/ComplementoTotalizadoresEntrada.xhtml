@@ -122,36 +122,80 @@ p.ident {
 					value="      Código da Filial:  * " />
 				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
 
+
+				<h:outputText style="font-size: 12px"
+					value="      Série da Nota Fiscal:  * " />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Número da Nota Fiscal:  * " />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 12px"
+					value="     Data de Emissão :  * " />
+				<p:calendar style="font-size:13px; background-color: #F2F2F2"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
+					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Categoria PF/PJ:  * " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Código PF/PJ:  * " />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Sequência de Itens:  * " />
+				<p:inputText style="width: 13%; background-color: #FFFFFF" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="     Valor total do Documento:  * " />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Valor do Serviço:  * " />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="     Valor do Material Aplicado :  * " />
+				<p:inputText style="width: 14%; background-color: #FFFFFF" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="      Valor  do desconto :  * " />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Soma das Retenções :  * " />
+				<p:inputText style="width: 4%; background-color: #FFFFFF" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Soma adicional :  * " />
+				<p:inputText style="width: 4%; background-color: #FFFFFF" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="      Valor da Retenção Principal :  * " />
+				<p:inputText style="width: 4%; background-color: #FFFFFF" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="     Valor da Retenção Adicional :  * " />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+			
 			</p:fieldset>
 
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
-				legend="Processos">
-				<h:outputText style="font-size: 12px" value="  Tipo de Processo:   " />
-				<p class="ident" />
-				<p:selectManyCheckbox id="basic"
-					value="#{checkboxView.selectedConsoles}">
-					<f:selectItem itemLabel="Administrativo do Tomador"
-						itemValue=" Administrativo do Tomador" />
-					<f:selectItem itemLabel="Judicial do Tomador"
-						itemValue=" Judicial do Tomador" />
-					<f:selectItem itemLabel="Judicial do Prestador"
-						itemValue="Judicial do Prestador" />
-				</p:selectManyCheckbox>
-				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Número de Processo ADM Judicial : " />
-				<p:inputText style="width: 9%" value="" />
+				legend="Openflex">
+				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
+				<p:inputText style="width: 20%" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value=" Indicativo de Suspensão:   " />
-				<p:inputText style="width: 9%" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Valor da retenção Principal: " />
-				<p:inputText style="width: 5%" value="" />
-				<br />
-				<br />
+				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
+				<p:inputText style="width: 20%" value="" />
 			</p:fieldset>
 			<br />
 			<center>
