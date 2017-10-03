@@ -1,0 +1,110 @@
+
+ago 28, 2017 17:23:21.90 NEW SESSION
+ago 28, 2017 17:23:21.90 [7520:4928:0828/172321.883:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+ago 28, 2017 17:23:42.37 [7520:4928:0828/172342.376:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+ago 28, 2017 17:24:41.79 [7520:4928:0828/172441.790:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+ago 28, 2017 17:25:03.22 [7520:4928:0828/172503.219:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 28, 2017 17:25:15.54 [7520:4928:0828/172515.540:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+ago 28, 2017 17:25:35.35 [7520:4928:0828/172535.355:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+ago 28, 2017 17:35:35.35 [7520:4928:0828/173535.357:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -105
+ago 28, 2017 17:42:22.94 [7520:4928:0828/174222.945:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 28, 2017 17:45:00.76 [7520:9388:0828/174500.760:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+ago 28, 2017 17:45:28.79 [7520:9388:0828/174528.790:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+ago 28, 2017 17:46:26.18 [7520:9388:0828/174626.183:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+ago 28, 2017 17:48:04.55 [7520:9388:0828/174804.553:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+ago 28, 2017 17:51:39.50 [7520:9388:0828/175139.509:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+ago 28, 2017 17:52:22.94 [7520:4928:0828/175222.949:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 28, 2017 18:05:51.10 [7520:4928:0828/180551.100:ERROR:socket_stream.cc(210)] Closing stream with result -101
+ago 28, 2017 18:05:51.31 [7520:4928:0828/180551.316:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21
+ago 28, 2017 18:05:53.33 [7520:4928:0828/180553.330:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 28, 2017 18:06:43.57 [7520:4928:0828/180643.575:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 28, 2017 18:08:10.08 [7520:4928:0828/180810.080:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+
+set 19, 2017 09:39:27.10 NEW SESSION
+set 19, 2017 09:39:27.10 [13796:8540:0919/093927.096:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -100
+
+set 21, 2017 09:00:19.38 NEW SESSION
+set 21, 2017 09:00:19.38 [10136:4248:0921/090019.384:ERROR:CONSOLE(147)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.primefaces.org') does not match the recipient window's origin ('https://www.google.com.br').", source: chrome-search://most-visited/single.js (147)
+set 21, 2017 09:32:32.52 [10136:2440:0921/093232.528:ERROR:ssl_client_socket_impl.cc(1072)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 21, 2017 13:06:42.24 [10136:4248:0921/130642.095:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+set 22, 2017 12:11:20.32 NEW SESSION
+set 22, 2017 12:11:20.32 [11648:2904:0922/121120.308:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+set 22, 2017 13:46:46.89 [11648:6476:0922/134646.893:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+set 22, 2017 15:13:30.43 [11648:6476:0922/151330.436:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:30.44 [11648:6476:0922/151330.440:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:30.45 [11648:6476:0922/151330.443:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:38.78 [11648:6476:0922/151338.788:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:38.79 [11648:6476:0922/151338.791:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:38.79 [11648:6476:0922/151338.793:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.82 [11648:6476:0922/151339.821:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.82 [11648:6476:0922/151339.824:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.82 [11648:6476:0922/151339.828:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.83 [11648:6476:0922/151339.831:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.83 [11648:6476:0922/151339.834:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.83 [11648:6476:0922/151339.836:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.84 [11648:6476:0922/151339.840:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:39.84 [11648:6476:0922/151339.843:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.48 [11648:6476:0922/151340.480:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.48 [11648:6476:0922/151340.483:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.48 [11648:6476:0922/151340.486:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.49 [11648:6476:0922/151340.493:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.49 [11648:6476:0922/151340.493:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.64 [11648:6476:0922/151340.641:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.64 [11648:6476:0922/151340.644:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:40.64 [11648:6476:0922/151340.646:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:42.55 [11648:6476:0922/151342.552:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:42.55 [11648:6476:0922/151342.557:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:42.56 [11648:6476:0922/151342.560:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.08 [11648:6476:0922/151343.080:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.08 [11648:6476:0922/151343.082:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.08 [11648:6476:0922/151343.084:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.24 [11648:6476:0922/151343.239:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.24 [11648:6476:0922/151343.243:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.24 [11648:6476:0922/151343.245:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.58 [11648:6476:0922/151343.583:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.58 [11648:6476:0922/151343.586:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.59 [11648:6476:0922/151343.590:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.59 [11648:6476:0922/151343.593:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.59 [11648:6476:0922/151343.595:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.59 [11648:6476:0922/151343.597:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.60 [11648:6476:0922/151343.599:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.60 [11648:6476:0922/151343.601:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.83 [11648:6476:0922/151343.839:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.84 [11648:6476:0922/151343.842:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:43.84 [11648:6476:0922/151343.844:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.01 [11648:6476:0922/151344.010:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.01 [11648:6476:0922/151344.012:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.01 [11648:6476:0922/151344.015:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.54 [11648:6476:0922/151344.546:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.55 [11648:6476:0922/151344.550:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.55 [11648:6476:0922/151344.552:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.71 [11648:6476:0922/151344.709:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.71 [11648:6476:0922/151344.711:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:44.71 [11648:6476:0922/151344.713:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.06 [11648:6476:0922/151345.068:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.07 [11648:6476:0922/151345.072:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.07 [11648:6476:0922/151345.073:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.70 [11648:6476:0922/151345.700:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.72 [11648:6476:0922/151345.723:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.73 [11648:6476:0922/151345.731:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.89 [11648:6476:0922/151345.894:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.89 [11648:6476:0922/151345.898:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:13:45.90 [11648:6476:0922/151345.902:ERROR:CONSOLE(281)] "Error: Empty event listener's location", source: chrome-devtools://devtools/bundled/inspector.js (281)
+set 22, 2017 15:15:54.46 [11648:6476:0922/151554.464:ERROR:CONSOLE(0)] "null", source:  (0)
+
+set 26, 2017 13:02:43.83 NEW SESSION
+set 26, 2017 13:02:44.53 [8972:396:0926/130241.319:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+set 28, 2017 09:47:04.89 NEW SESSION
+set 28, 2017 09:47:04.91 [6552:10772:0928/094704.721:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 09:48:20.19 [6552:10772:0928/094820.194:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 09:49:02.44 [6552:10772:0928/094902.447:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 09:51:08.76 [6552:10772:0928/095108.769:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 09:54:27.63 [6552:10772:0928/095427.634:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 11:21:06.57 [6552:10772:0928/112106.573:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 11:21:31.43 [6552:10772:0928/112131.434:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 11:22:08.20 [6552:10772:0928/112208.201:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 11:22:36.89 [6552:10772:0928/112236.898:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 11:24:37.00 [6552:10772:0928/112437.002:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -100
+set 28, 2017 13:15:40.18 [6552:15588:0928/131540.183:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
