@@ -1,0 +1,1361 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-15 10:13:49.276
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-15 10:13:53.917
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-15 10:13:59.221
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-15 10:23:16.605
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-15 10:23:17.302
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-15 10:39:05.082
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-15 10:39:06.215
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-15 10:39:11.934
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-15 11:52:16.121
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-15 11:54:33.891
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-15 11:54:35.557
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-15 11:54:43.690
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-15 11:54:43.714
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-18 09:09:15.168
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-18 09:09:19.681
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-18 09:09:50.902
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-19 09:16:41.960
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-19 09:16:47.081
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-19 09:17:14.961
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-19 09:59:22.177
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-19 09:59:23.849
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-19 09:59:31.612
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-19 16:00:15.585
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:00:15.632
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-19 16:01:36.600
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\control\User.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\model\UserWizard.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\MenuWiew.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:01:36.600
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\persistence.xml. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-19 16:02:24.611
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\control\User.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\br\com\fecorp\reinf\model\UserWizard.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\MenuWiew.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-19 16:02:24.611
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\persistence.xml. May be locked by another process.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 09:50:35.536
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 09:50:38.747
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 09:50:59.960
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:17:26.639
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:17:28.549
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:17:47.433
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-20 13:19:18.780
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-20 13:19:19.103
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:19:19.128
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:19:20.158
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:19:24.882
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-20 13:27:13.142
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-20 13:27:13.475
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:27:13.590
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:27:14.707
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:27:23.432
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-20 13:27:56.315
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-20 13:27:56.585
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:28:14.998
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:28:16.033
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:28:20.964
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-20 13:30:02.223
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-20 13:30:02.511
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:30:11.535
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:30:12.675
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:30:17.391
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:41:58.265
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:42:03.409
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:42:13.548
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-20 13:45:24.958
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-09-20 13:45:25.426
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 13:45:43.273
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 13:45:44.318
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 13:45:49.739
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-20 14:27:52.219
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-20 14:27:53.766
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-20 14:27:59.669
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-20 14:27:59.684
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-21 08:50:58.926
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-21 08:51:01.218
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-21 08:51:11.712
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2017-09-21 16:13:02.996
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2017-09-21 16:13:06.537
+!MESSAGE Server Shutdown Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-22 09:32:45.223
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-22 09:32:48.564
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-22 09:33:08.713
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-22 09:38:15.942
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.942
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 09:38:15.943
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target. May be locked by another process.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-22 09:55:11.401
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-22 09:55:13.873
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-22 09:55:18.915
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-22 10:01:34.221
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-22 10:03:42.470
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:42.470
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-22 10:03:43.833
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\.jsdtscope. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.m2e.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.m2e.wtp.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.project.facet.core.prefs.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.jsdt.ui.superType.container. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.jsdt.ui.superType.name. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.hibernate.eclipse.console.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\META-INF\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\bootstrap-3.3.7-1.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\hibernate-core-5.2.11.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\postgresql-9.4-1206-jdbc42.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\primefaces-5.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\faces-config.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/WEB-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\index.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\login.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaCadastro.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaClienteFornecedor.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaFilial.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\.jsdtscope. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.m2e.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.m2e.wtp.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.project.facet.core.prefs.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.833
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.jsdt.ui.superType.container. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.jsdt.ui.superType.name. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.hibernate.eclipse.console.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.tern-project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\META-INF\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\faces-config.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\bootstrap-3.3.7-1.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\hibernate-core-5.2.11.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\postgresql-9.4-1206-jdbc42.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\primefaces-5.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/WEB-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\index.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\login.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaCadastro.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaClienteFornecedor.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaFilial.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\org\primefaces\showcase\view\input\MenuView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\resources\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/resources/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.834
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\org\primefaces\showcase\view\input\MenuView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\resources\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/resources/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/test-classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.tern-project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:03:43.835
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\pom.xml. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2017-09-22 10:08:11.383
+!MESSAGE Error occurred while checking module state for Reinf on server WildFly  9.x 
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:601)
+	at org.eclipse.wst.server.core.internal.Server.loadAdapter(Server.java:1620)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getExtendedProperties(AbstractJBossDeploymentOptionsController.java:185)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalDeploymentOptionsController.getDeployFolder(LocalDeploymentOptionsController.java:68)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getDeploymentsRootFolder(AbstractJBossDeploymentOptionsController.java:78)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDefaultDeployFolder(ModuleDeployPathController.java:71)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDeployDirectory(ModuleDeployPathController.java:114)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getModuleDeployRoot(JBoss7FSModuleStateVerifier.java:69)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getRootModuleState(JBoss7FSModuleStateVerifier.java:97)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:66)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:172)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.getModuleState(UpdateModuleStateJob.java:130)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:94)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2017-09-22 10:09:29.767
+!MESSAGE Incremental publish failed for module Reinf
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\.jsdtscope. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.m2e.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.m2e.wtp.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.project.facet.core.prefs.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.jsdt.ui.superType.container. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.eclipse.wst.jsdt.ui.superType.name. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.settings\org.hibernate.eclipse.console.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\META-INF\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\bootstrap-3.3.7-1.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\hibernate-core-5.2.11.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\postgresql-9.4-1206-jdbc42.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\lib\primefaces-5.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\WEB-INF\faces-config.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/WEB-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.767
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\index.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\login.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaCadastro.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaClienteFornecedor.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\WebContent\telaFilial.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/WebContent. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\.jsdtscope. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.m2e.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.m2e.wtp.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.project.facet.core.prefs.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.jsdt.ui.superType.container. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.eclipse.wst.jsdt.ui.superType.name. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.settings\org.hibernate.eclipse.console.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\.tern-project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\META-INF\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\faces-config.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\bootstrap-3.3.7-1.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\hibernate-core-5.2.11.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\postgresql-9.4-1206-jdbc42.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\WEB-INF\lib\primefaces-5.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/WEB-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\index.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\login.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaCadastro.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.768
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaClienteFornecedor.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\WebContent\telaFilial.xhtml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/WebContent. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com/fecorp. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br/com. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/br. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\java\org\primefaces\showcase\view\input\MenuView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces/showcase. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org/primefaces. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.769
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\src\main\resources\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/resources/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/main. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src/test. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/src. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven/br.com.fecorp.reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\bin\target\classes\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/bin/target/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.770
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.771
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\java\org\primefaces\showcase\view\input\MenuView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/java/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\src\main\resources\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/main/resources/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test/java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/src/test/resources. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\maven\br.com.fecorp.reinf\reinf\pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/META-INF/maven/br.com.fecorp.reinf/reinf. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\META-INF\persistence.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\Bean\LoginBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/Bean. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\DAO\UsuarioDAO.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/DAO. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\control\Usuario.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.772
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\control\ValidaCPF.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/control. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\model\Pessoa.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\view\RedirecionamentoPaginas.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\br\com\fecorp\reinf\view\TelaInicial.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/br/com/fecorp/reinf/view. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\managedbeans\LoginManagedBean.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/managedbeans. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.773
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\target\classes\org\primefaces\showcase\view\input\InputTextareaView.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/classes/org/primefaces/showcase/view/input. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:/Users/CALVES/wildfly-9.0.0.Final/standalone/deployments/Reinf.war/WEB-INF/classes/target/test-classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\.tern-project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2017-09-22 10:09:29.774
+!MESSAGE Could not delete C:\Users\CALVES\wildfly-9.0.0.Final\standalone\deployments\Reinf.war\WEB-INF\classes\pom.xml. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-22 10:09:30.108
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-22 10:09:33.433
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-22 10:09:39.264
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-22 10:10:55.003
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-25 08:55:40.223
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-25 08:55:42.657
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-25 08:55:53.800
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-25 09:00:21.958
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-26 08:53:30.842
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-26 08:53:33.552
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-26 08:53:46.838
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-27 15:17:41.561
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-27 15:17:43.827
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-27 15:17:59.609
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-27 15:18:00.079
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2017-09-27 15:18:21.914
+!MESSAGE Module Reinf on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-28 09:06:51.295
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-28 09:06:58.516
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-09-28 09:07:12.343
+!MESSAGE Module Reinf on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-28 09:07:12.392
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2017-09-28 09:07:32.365
+!MESSAGE Module Reinf on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-09-28 15:10:51.152
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_144 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-09-28 15:10:54.071
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-09-28 15:11:07.663
+!MESSAGE Server Startup Succeeded

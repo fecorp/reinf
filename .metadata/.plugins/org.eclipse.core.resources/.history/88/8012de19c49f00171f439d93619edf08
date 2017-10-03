@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+	<h2>Cadastro de Empresas</h2>
+
+
+	<p:layout>
+		<p:layoutUnit position="north">
+			<p:breadCrumb>
+
+				<p:menuitem value="" url="#" />
+				<p:menuitem value="Parametrização" url="#" />
+				<p:menuitem value="Geração" url="#" />
+				<p:menuitem value="Relatórios" url="#" />
+			</p:breadCrumb>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west">
+			<h:form>
+				<p:panelMenu style="width:265px">
+					<p:submenu label="Cadastros">
+						<p:menuitem value="Empresa"
+							actionListener="#{redirecionamentoPaginas.changePage(1)}"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+
+					<p:submenu label="Movimentação - Nota Fiscal">
+						<p:menuitem value="Serviços Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf">
+
+						<p:menuitem value="Doc. Não Fiscais"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+						<p:menuitem value="Recebimento"
+							url="http://www.primefaces.org/documentation"
+							icon="ui-icon-document" />
+						<p:menuitem value="Pagamento"
+							url="http://www.primefaces.org/downloads"
+							icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="Associação Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="Eventos Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+							icon="ui-icon-wrench" />
+						<p:menuitem value="Vendas para Agro Indústria"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					</p:submenu>
+					<p:submenu label="Interface Tabelas">
+					</p:submenu>
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+
+
+		<p:layoutUnit position="center">
+
+			<p:fieldset style="font-size:13px" legend="Dados cadastrais ">
+				<div>
+					<h:outputText style="font-size: 12px" value=" Empresa : *     " />
+					<h:inputText style="width: 12%" value="" />
+
+					<h:outputText style="font-size: 12px" value="      Filial :  * " />
+					<h:inputText style="width: 12%" value="" />
+
+					<h:outputText style="font-size: 12px"
+						value="      Razão Social :   " />
+					<h:inputText style="width: 26%" value="" />
+
+					<h:outputLabel style="font-size: 12px" value="  Nome Fantasia: " />
+					<h:inputText style="width: 15%" value="" />
+					<br /> <br />
+
+
+					<p:outputLabel style="width: 12%" width="10px"
+						value="    Data de atualização: * " />
+					<p:calendar style="font-size:13px" maxlength="10"
+						mindate="01/01/1970" maxdate="31/12/2099" id="popup"
+						value="#{calendarView.date2}" />
+
+					<h:outputText style="font-size: 12px"
+						value="               Categoria PF/PJ: " />
+					<h:inputText style="width: 4%" value="" />
+
+					<h:outputText style="font-size: 12px" value=" Código PF/PJ: * " />
+					<h:inputText style="width: 14%" value="" />
+
+
+					<h:outputText style="margin-top: 0"/>
+					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+						<p:outputLabel for="console" value="Indicador: " />
+						<p:selectOneRadio id="console" value="#{radioView.console}">
+							<f:selectItem itemLabel="Estrangeiro" itemValue="Xbox One" />
+							<f:selectItem itemLabel="Isento" itemValue="PS4" />
+							<f:selectItem itemLabel="Wii U" itemValue="Wii U" />
+						</p:selectOneRadio>
+					</h:panelGrid>
+				</div>
+				<br></br>
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="    Inscrição Estadual: " />
+				<h:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="     Inscrição Estadual Centralizadora: " />
+				<h:inputText style="width: 18%" value="" />
+
+
+				<h:outputText style="font-size: 12px"
+					value="  Inscrição Municipal: " />
+				<h:inputText style="width: 18%" value="" />
+				<br />
+				<br />
+
+
+			</p:fieldset>
+
+			<br />
+			<p:fieldset style="font-size:13px" align-horizontal="center"
+				legend="Endereço">
+				<h:outputText style="font-size: 12px" value="  Endereço: " />
+				<h:inputText style="width: 28%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Número: " />
+				<h:inputText style="width: 2%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Complemento do endereço:   " />
+				<h:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Bairro: " />
+				<h:inputText style="width: 14%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  Município: " />
+				<h:inputText style="width: 25%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Unidade Federativa: " />
+				<h:inputText style="width: 2%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  CEP: " />
+				<h:inputText style="width: 7%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Caixa Postal: " />
+				<h:inputText style="width: 8%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  CEP da Caixa Postal: " />
+				<h:inputText style="width: 7%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  País de Origem : " />
+				<h:inputText style="width: 15%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  DDD do Telefone: " />
+				<h:inputText style="width: 2%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Número do Telefone: " />
+				<h:inputText style="width: 9%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  DDD do Fax: " />
+				<h:inputText style="width: 2%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  Número do Fax: " />
+				<h:inputText style="width: 9%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  Tipo de Localidade: " />
+				<h:inputText style="width: 7%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Código Município IBGE: " />
+				<h:inputText style="width: 18%" value="" />
+
+
+
+			</p:fieldset>
+			<br />
+			<p:fieldset style="font-size:13px" legend="Dados complementares">
+
+				<h:outputText style="font-size: 12px"
+					value="  Indicador Equipar. Produção Rural:  " />
+				<h:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  SUFRAMA: " />
+				<h:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Cadastro Específico do INSS: " />
+				<h:inputText style="width: 15%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  NIT: " />
+				<h:inputText style="width: 18%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Classificação do Retentor do Imposto: " />
+				<h:inputText style="width: 20%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Classificação Fiscal: " />
+				<h:inputText style="width: 20%" value="" />
+
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="  Situação da Pessoa Jurídica: " />
+				<h:inputText style="width: 20%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Número de Inscrição CNO: " />
+				<h:inputText style="width: 4%" value="" />
+
+				<h:outputText style="font-size: 12px" value="  CNAE: " />
+				<h:inputText style="width: 5%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Ind. da Pessoa Jurídica: " />
+				<h:inputText style="width: 15%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 12px" value="  Data de criação: " />
+				<h:inputText style="width: 7%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Data de Encerramento: " />
+				<h:inputText style="width: 7%" value="" />
+			</p:fieldset>
+
+
+		</p:layoutUnit>
+	</p:layout>
+
+</body>
+</html>
