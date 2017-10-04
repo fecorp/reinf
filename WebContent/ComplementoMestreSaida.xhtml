@@ -153,6 +153,41 @@ p.ident {
 				<br />
 				<br />
 			</p:fieldset>
+
+
+			<br />
+			<br />
+			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
+				legend="Processos Adicionais">
+				<h:outputText style="font-size: 12px" value="  Tipo de Processo:   " />
+				<p class="ident" />
+				<p:selectManyCheckbox id="lalala"
+					value="#{checkboxView.selectedConsoles}">
+					<f:selectItem itemLabel="Administrativo do Tomador"
+						itemValue=" Administrativo do Tomador" />
+					<f:selectItem itemLabel="Judicial do Tomador"
+						itemValue=" Judicial do Tomador" />
+					<f:selectItem itemLabel="Judicial do Prestador"
+						itemValue="Judicial do Prestador" />
+				</p:selectManyCheckbox>
+				<br />
+				<h:outputText style="font-size: 12px"
+					value="  Número de Processo ADM Judicial : " />
+				<p:inputText style="width: 9%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value=" Indicativo de Suspensão:   " />
+				<p:inputText style="width: 9%" value="" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Valor da retenção Adicional: " />
+				<p:inputText style="width: 5%" value="" />
+				<br />
+				<br />
+
+
+			</p:fieldset>
+
 			<br />
 			<center>
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"

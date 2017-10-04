@@ -176,6 +176,7 @@
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
 				legend="Valores">
+
 				<h:outputText style="font-size: 12px"
 					value="  Valor do serviço :   " />
 				<p:inputMask style="width: 6%" value="" />
@@ -205,6 +206,39 @@
 
 				<br />
 				<br />
+
+
+				<center>
+					<h:outputText style="font-size: 12px"
+						value="  Valor do serviço :   " />
+					<p:inputMask style="width: 6%" value="" />
+					&nbsp; &nbsp; &nbsp;
+
+
+					<h:outputText style="font-size: 12px"
+						value="  Valor do Material Aplicado: " />
+					<p:inputText style="width: 6%" value="" />
+
+					&nbsp; &nbsp; &nbsp;
+					<h:outputText style="font-size: 12px"
+						value="  Valor do desconto:   " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="width: 6%" value="" />
+					<br /> <br />
+					<h:outputText style="font-size: 12px" value="  Valor documento: " />
+					<p:inputText style="width: 6%" value="" />
+					&nbsp; &nbsp; &nbsp;
+					<h:outputText style="font-size: 12px"
+						value="  Valor da Subempreitada: " />
+					&nbsp; &nbsp;
+					<p:inputText style="width: 6%" value="" />
+					&nbsp; &nbsp; &nbsp;
+					<h:outputText style="font-size: 12px"
+						value="  Número  do Contrato Serviço: " />
+					<p:inputText style="width: 6%" value="" />
+				</center>
+				<br />
+				<br />
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
@@ -222,9 +256,29 @@
 					value="  ALÍQUOTA  " /> 
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
+
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
+
+
+
+
+				<h:outputText style="font-size: 12px; font-weight:bold "
+					value="  BASE DE CALCULO  " /> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp;
+
+					<h:outputText style="font-size: 12px; font-weight:bold "
+					value="  ALÍQUOTA  " /> 
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+
 
 
 
@@ -316,6 +370,7 @@
 				<br />
 				<br />
 
+
 				<h:outputText style="font-size: 12px" value="  PCC: " />
 				&nbsp;
 				&nbsp;
@@ -341,6 +396,28 @@
 
 
 
+
+				<h:outputText style="font-size: 12px" value="  PCC: " />
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				<p:inputText style="width: 14%" value="" />
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+			
+				<p:inputText style="width: 5%" value="" />
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				<p:inputText style="width: 8%" value="" />
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				<p:inputText style="width: 8%" value="" />
 			</p:fieldset>
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
@@ -353,7 +430,11 @@
 
 				<h:outputText style="font-size: 12px" value="  Localidade : " />
 				&nbsp; &nbsp; &nbsp;
+
 				<p:inputText style="width: 20%" value=""  />
+
+				<p:inputText style="width: 20%" value="" />
+
 
 				<h:outputText style="font-size: 12px"
 					value="  Tipo de Documento p/ Município: " />
@@ -397,7 +478,11 @@
 					value="Salvar Dados  " icon="ui-icon-star">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
+
 &nbsp;
+
+				&nbsp;
+
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 					value="  Limpar Dados  " icon="ui-icon-star">
 					<f:param name="productId" value="turubom?" />
@@ -407,6 +492,7 @@
 			<p:fieldset legend="Específico Reinf ">
 
 				<center>
+
 					<p:button style="background-color:#E0EEF6"
 						value="  Complemento Entrada " icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
@@ -416,14 +502,31 @@
 					<p:button style="background-color:#E0EEF6"
 						value="  Complemento Alimentício" icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
+
+					<h:button style="background-color:#E0EEF6"
+						value="  Complemento Entrada " icon="ui-icon-star"
+						url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false" />
+
+					&nbsp; &nbsp;
+
+					<p:button style="background-color:#E0EEF6"
+						value="  Complemento Alimentício " icon="ui-icon-star"
+						url="\Reinf\faces\ComplementoAlimeEntrada.xhtml" ajax="false">
+
 					</p:button>
 
 
 					&nbsp; &nbsp;
 
 					<p:button style="background-color:#E0EEF6"
+
 						value="  Complemento Totalizadores" icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
+
+						value="  Complemento Totalizadores " icon="ui-icon-star"
+						url="\Reinf\faces\ComplementoTotalizadoresEntrada.xhtml"
+						ajax="false">
+
 					</p:button>
 				</center>
 

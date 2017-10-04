@@ -1,0 +1,9 @@
+configured=true
+eclipse.preferences.version=1
+reporterEmail=alex@fecorp.com.br
+reporterName=alex
+resetSendMode=KEEP
+resetSendModeOn=0
+sendMode=NOTIFY
+servers/org.eclipse.epp.logging.aeri.ide.server/configured=true
+servers/org.jboss.tools/configured=true
