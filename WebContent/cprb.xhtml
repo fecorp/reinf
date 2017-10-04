@@ -3,14 +3,19 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui"
+	>
 
 <h:head>
 	<style>
 p.ident {
 	padding-left: 10.0em
 }
+
+
 </style>
+
+<h:outputStylesheet name="webjars/font-awesome/4.4.0/css/font-awesome.css"/>
 </h:head>
 <body>
 	<p:layout>
@@ -21,7 +26,7 @@ p.ident {
 			</center>
 		</p:layoutUnit>
 
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -35,8 +40,8 @@ p.ident {
 
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
 						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
@@ -53,8 +58,9 @@ p.ident {
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - Nota Fiscal">
-						<p:menuitem value="Serviços Entrada"
+					<p:submenu label="Movimentação - Nota Fiscal"
+						style="font-size:12px">
+						<p:menuitem value="Serviços Entrada "
 							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada"
@@ -70,7 +76,7 @@ p.ident {
 
 					</p:submenu>
 					<p:separator />
-					<p:submenu label="Reinf">
+					<p:submenu label="Reinf" style="font-size:12px">
 
 						<p:menuitem value="Doc. Não Fiscais"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
@@ -88,12 +94,12 @@ p.ident {
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
-					<p:submenu label="Interface ">
+					<p:submenu label="Interface " style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Arquivos"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
-					<p:submenu label="Lotes">
+					<p:submenu label="Lotes" style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -104,113 +110,120 @@ p.ident {
 
 
 		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		
+		
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value=" Código da Empresa: *     " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
-					value="   Código da conta Analítica Contábil: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Código do Indicativo da Suspensão : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Código Indicador  Atividade Comercial: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Valores ">
 
-				<h:outputText style="font-size: 12px"
-					value="      Receita Bruta Total do Estabelecimento no Período:   " />
+				<h:outputText style="font-size: 10px"
+					value="      VL Receita Bruta:   " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
 
-				<h:outputText style="font-size: 12px"
-					value="  CPRB  Estabelecimento no Período: " />
+				<h:outputText style="font-size: 10px" value="  VL CPRB Apurada: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="    Adições  da Receita Bruta: " />
+				<h:outputText style="font-size: 10px"
+					value="  Cont. Prev. Exigibilidade Susp.: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+
+
+
+				<h:outputText style="font-size: 10px" value="    Cod Processo : " />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px" value="  Num Processo : " />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 10px"
+					value="  Cod. Ind. Suspensão : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px"
+					value="  Cod. Ind. Atividade Comercial: " />
+				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="" />
+
+
+				<h:outputText style="font-size: 10px"
+					value="  VL Receita da Atividade: " />
+				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px" value="  VL Exclusões RB : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px" value="  VL Adições RB : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Contribuição Previdenciária com Exigibilidade Suspensa : " />
+				<h:outputText style="font-size: 10px" value="   VL Cálculo CPRB : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px"
+					value="   VL Cont. S/ Prev. RB: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px"
+					value="   Base Cálculo Cont. S/ Prev. RB : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
 
-
-				<h:outputText style="font-size: 12px"
-					value="  Receita da Atividade: " />
+				<h:outputText style="font-size: 10px"
+					value="   Cod. Analítica Contábil: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Exclusões da Receita Bruta  : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				<br />
-				<br />
 
-				<h:outputText style="font-size: 12px"
-					value="   Cálculo da Contribuição Previdenciária sobre a Receita Bruta : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="   Contribuição Previdenciária sobre a Receita Bruta  " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				<br />
-				<br />
-
-				<h:outputText style="font-size: 12px"
-					value="   Número de série da nota Fiscal/Fatura " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="   Número da Nota Fiscal/Fatura " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="   Data de Emissão da Nota Fiscal/Fatura " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<h:outputText style="font-size: 10px" value="   NF: " />
+				<p:inputText style="width: 7%; background-color: #FFFFFFF" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
-					value="   Bruto da Nota Fiscal: " />
+				<h:outputText style="font-size: 10px" value="   Série:  " />
+				<p:inputText style="width: 4%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px"
+					value="   Data de Emissão NF: " />
+				<p:inputMask style="width: 6%; background-color: #FFFFFFF" value=""
+					mask="99/99/9999" />
+
+				<h:outputText style="font-size: 10px" value="   VL NF: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px" value="   Tipo de Ajustes: " />
+				<h:outputText style="font-size: 10px" value="   Tipo de Ajustes: " />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px" value="   Cod. Ajuste : " />
+				<p:inputText style="width: 3%; background-color: #FFFFFFF" value="" />
+
+				<h:outputText style="font-size: 10px" value="   VL Ajuste: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px" value="   Código de Ajuste : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-
-				<h:outputText style="font-size: 12px" value="   Valor do Ajuste: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<h:outputText style="font-size: 10px" value="   Mês/Ano do Ajuste: " />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
+
+				<h:outputText style="font-size: 10px"
 					value="   Descrição Resumida do Ajuste:  " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 16%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="   Mês/Ano de Referência do Ajuste: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
 				<script>
             PrimeFaces.locales['pt'] = {
@@ -248,12 +261,13 @@ p.ident {
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
 				legend="Openflex">
-				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="" />
+				<center>
+					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+					<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="" />
-
+					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+					<p:inputText style="width: 15%" value="" />
+				</center>
 			</p:fieldset>
 
 			<br />
@@ -262,14 +276,11 @@ p.ident {
 					value="Salvar Dados  " icon="ui-icon-star">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
+			
+				
+				
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="  Limpar Dados  " icon="ui-icon-star">
+					value="  Limpar Dados  " icon="fa fa-user-plus">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
 			</center>

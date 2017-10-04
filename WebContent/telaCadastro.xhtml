@@ -12,19 +12,19 @@
 
 </h:head>
 
-<h:body style="background-color:#E0EEF6;border:0px;">
+<h:body style="background-color:#FFFFFFF;border:0px;">
 
 
 
 	<p:layout>
-		<p:layoutUnit style="background-color:#F2f2f2" position="north">
+		<p:layoutUnit position="north">
 			<center>
 				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
 					height="340px" />
 			</center>
 		</p:layoutUnit>
 
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -36,10 +36,10 @@
 
 
 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2">
+		<p:layoutUnit position="west">
 			<h:form>
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
 						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
@@ -57,12 +57,15 @@
 
 					</p:submenu>
 
-					<p:submenu label="Movimentação - Nota Fiscal">
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
 							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
+							icon="ui-icon-close" style="font-size:12px" />
+						<p:menuitem value="Impostos Entrada" style="font-size:12px"
 							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Entrada"
+							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Serviços Saída"
 							actionListener="#{menuView.delete}" ajax="false"
@@ -70,17 +73,13 @@
 						<p:menuitem value="Impostos Saída"
 							actionListener="#{menuView.delete}" ajax="false"
 							icon="ui-icon-close" />
-
-						<p:menuitem value="Complemento Entrada"
-							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
 						<p:menuitem value="Complemento Saída"
 							url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false"
 							icon="ui-icon-close" />
 
 					</p:submenu>
 					<p:separator />
-					<p:submenu label="Reinf">
+					<p:submenu label="Reinf" style="font-size:12px">
 
 						<p:menuitem value="Doc. Não Fiscais"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
@@ -99,12 +98,12 @@
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
-					<p:submenu label="Interface ">
+					<p:submenu label="Interface " style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Arquivos"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
-					<p:submenu label="Lotes">
+					<p:submenu label="Lotes" style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -114,71 +113,67 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		<p:layoutUnit position="center">
 
-			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Dados cadastrais ">
-				<div>
-					<h:outputText style="font-size: 12px" value=" Empresa : *     " />
-					<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
 
-					<h:outputText style="font-size: 12px" value="      Filial :  * " />
-					<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
 
-					<h:outputText style="font-size: 12px"
-						value="      Razão Social :   " />
-					<p:inputText style="width: 26%" value="" />
+				<h:outputText style="font-size: 10px" value="      Filial :  * " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
 
-					<h:outputLabel style="font-size: 12px" value="  Nome Fantasia: " />
-					<p:inputText style="width: 17%" value="" />
-					<br /> <br />
+				<h:outputText style="font-size: 10px"
+					value="      Razão Social :   " />
+				<p:inputText style="width: 26%" value="" />
 
-
-					<p:outputLabel style="width: 12%" width="10px"
-						value="    Data de atualização: * " />
-					<p:calendar style="font-size:13px; background-color: #F2F2F2"
-						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-						id="popup" value="#{calendarView.date2}" locale="pt"
-						pattern="dd/MM/yyyy" />
-
-					<h:outputText style="font-size: 12px"
-						value="               Categoria PF/PJ: * " />
-					<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
-
-					<h:outputText style="font-size: 12px" value=" Código PF/PJ: * " />
-					<p:inputText style="width: 14%; background-color: #F2F2F2" value="" />
+				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
+				<p:inputText style="width: 17%" value="" />
 
 
 
-					<h:outputText style="font-size: 12px"
-						value="    Inscrição Estadual: " />
-					<p:inputText style="width: 18%" value="" />
-				</div>
-
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de atualização: * " />
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
+					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 				<br />
-				<h:outputText style="font-size: 12px"
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value="               Categoria PF/PJ: * " />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+
+				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
+				<p:inputText style="width: 10%; background-color: #F2F2F2" value="" />
+
+				<h:outputText style="font-size: 10px"
+					value="    Inscrição Estadual: " />
+				<p:inputText style="width: 10%" value="" />
+
+
+				<h:outputText style="font-size: 10px"
 					value="     Inscrição Estadual Centralizadora: " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 10%" value="" />
 
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Inscrição Municipal: " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 10%" value="" />
+
+
+
 				<br />
 				<br />
+
 				<center>
-					<!-- <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
-						<p:outputLabel for="console" value="Indicador: " />
-						<p:selectOneRadio id="console" value="#{radioView.console}">
-							<f:selectItem itemLabel="Isento" itemValue="isento" />
-							<f:selectItem itemLabel="Estrangeiro" itemValue="estrangeiro" />
 
-						</p:selectOneRadio>
-					</h:panelGrid> -->
 
-					<h3 style="margin-top: 0px">Indicador</h3>
+
 					<p:selectManyCheckbox id="basic"
 						value="#{checkboxView.selectedConsoles}">
+
 						<f:selectItem itemLabel="Nacional" itemValue="Xbox One" />
 						<f:selectItem itemLabel="Estrangeiro" itemValue="PS4" />
 						<f:selectItem itemLabel="Isento" itemValue="Wii U" />
@@ -187,114 +182,101 @@
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#F2f2f2; font-size: 12px "
+			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
 				legend="Endereço">
-				<h:outputText style="font-size: 12px" value="  Endereço: " />
+				<h:outputText style="font-size: 10px" value="  Endereço: " />
 				<p:inputText style="width: 28%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Número: " />
+				<h:outputText style="font-size: 10px" value="  Número: " />
 				<p:inputText style="width: 4%" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Complemento do endereço:   " />
 				<p:inputText style="width: 18%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Bairro: " />
+				<h:outputText style="font-size: 10px" value="  Bairro: " />
 				<p:inputText style="width: 15%" value="" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  Município: " />
-				<p:inputText style="width: 25%" value="" />
+				<h:outputText style="font-size: 10px" value="  Município: " />
+				<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Unidade Federativa: " />
-				<p:inputText style="width: 3%" value="" />
+				<h:outputText style="font-size: 10px" value="  UF: " />
+				<p:inputText style="width: 2%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  CEP: " />
-				<p:inputMask id="cep" style="width: 9%" value=""
-					mask="999.999.999-99" />
+				<h:outputText style="font-size: 10px" value="  CEP: " />
+				<p:inputMask id="cep" style="width: 5%" value="" mask="99999-999" />
 
-				<h:outputText style="font-size: 12px" value="  Caixa Postal: " />
-				<p:inputText style="width: 8%" value="" />
+				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
+				<p:inputText style="width: 10%" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 9%" value="" mask="999.999.999-99" />
+				<p:inputMask style="width: 5%" value="" mask="99999-999" />
+
+				<h:outputText style="font-size: 10px" value="  País de Origem : " />
+				<p:inputText style="width: 10%" value="" />
+
+				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
+				<p:inputMask style="width: 2%" value="" mask="(999)" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  País de Origem : " />
-				<p:inputText style="width: 15%" value="" />
+				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
+				<p:inputMask id="telefone" style="width: 6%" value=""
+					mask="99999-9999" />
 
-				<h:outputText style="font-size: 12px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 3%" value="" mask="(999)" />
+				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
+				<p:inputMask style="width: 2%" value="" mask="(999)" />
 
-				<h:outputText style="font-size: 12px" value="  Número do Telefone: " />
-				<p:inputMask id="telefone" style="width: 9%" value=""
-					mask="9999-9999" />
+				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
+				<p:inputMask style="width: 6%" value="" mask="99999-9999" />
 
-				<h:outputText style="font-size: 12px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 3%" value="" mask="(999)" />
+				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
+				<p:inputText style="width: 2%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Número do Fax: " />
-				<p:inputMask style="width: 9%" value="" mask="9999-9999" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px" value="  Tipo de Localidade: " />
-				<p:inputText style="width: 18%" value="" />
+				<h:outputText style="font-size: 10px" value="  Cod Localidade: " />
+				<p:inputText style="width: 6%" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Código Município IBGE: " />
-				<p:inputText style="width: 17%" value="" />
+				<h:outputText style="font-size: 10px" value="  Cod IBGE: " />
+				<p:inputText style="width: 5%" value="" />
 
 
 
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
+			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
 				legend="Dados complementares">
 
-				<h:outputText style="font-size: 12px"
-					value="  Indicador Equipar. Produção Rural:  " />
-				<p:inputText style="width: 18%" value="" />
+				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
+				<p:inputText style="width: 2%" value="COLOCAR RADIOBUTTON" />
 
-				<h:outputText style="font-size: 12px" value="  SUFRAMA: " />
-				<p:inputText style="width: 19%" value="" />
+				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
+				<p:inputText style="width: 8%" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Cadastro Específico do INSS: " />
-				<p:inputText style="width: 17%" value="" />
-				<br />
-				<br />
+				<p:inputText style="width: 8%" value="" />
 
-<!-- teste git3-->
-				<h:outputText style="font-size: 12px"
-					value="  Classificação do Retentor do Imposto: " />
-				<p:inputText style="width: 18%" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 22%" value="" />
+				<p:inputText style="width: 2%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  NIT: " />
-				<p:inputText style="width: 21%" value="" />
+				<h:outputText style="font-size: 10px" value="  NIT: " />
+				<p:inputText style="width: 8%" value="" />
 
+				<h:outputText style="font-size: 10px" value="  Situação PJ: " />
+				<p:inputText style="width: 9%" value="ADICIONAR COMBOBOX" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Situação da Pessoa Jurídica: " />
-				<p:inputText style="width: 18%" value="" />
-
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 8%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  CNAE: " />
-				<p:inputText style="width: 5%" value="" />
+				<h:outputText style="font-size: 10px" value="  CNAE: " />
+				<p:inputMask style="width: 5%" value="" mask="9999-9/99" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Ind. da Pessoa Jurídica: " />
-				<p:inputText style="width: 15%" value="" />
-				<br />
-				<br />
+
 				<script>
             PrimeFaces.locales['pt'] = {
                 closeText: 'Fechar',
@@ -323,39 +305,75 @@
                 allDayText: 'Todo o Dia'
             };
         </script>
-				<h:outputText style="font-size: 12px" value="  Data de criação: " />
+				<h:outputText style="font-size: 10px" value="  Data de criação: " />
 				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="rockup" value="#{calendarView.date2}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Data de Encerramento: " />
 				<p:calendar style="font-size:13px" maxlength="10"
 					mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#F2f2f2; font-size: 12px"
+			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
 				legend="Openflex">
-				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="" />
+				<center>
+					<h:outputText style="font-size: 12px" value="  Openflex 01: " />
+					<p:inputText style="width: 20%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="" />
+					<h:outputText style="font-size: 12px" value="  Openflex 02: " />
+					<p:inputText style="width: 20%" value="" />
+				</center>
 			</p:fieldset>
 			<br />
+			<p:fieldset style="background-color: #F2F2F2">
+				<center>
 
-			<center>
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
 
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="  Limpar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
-			</center>
+					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						value="Incluir" icon="fa-backward" type="button">
+					</p:commandButton>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="fa-backward">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+
+
+					<br />
+
+
+
+				</center>
+			</p:fieldset>
+
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Sair " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
 		</p:layoutUnit>
 	</p:layout>
 
