@@ -44,7 +44,7 @@ public class Usuario {
 	public Date getUltimoAcesso() {
 		return ultimoAcesso;
 	}
-
+//teste comentario
 	public void setUltimoAcesso(Date ultimoAcesso) {
 		this.ultimoAcesso = ultimoAcesso;
 	}
