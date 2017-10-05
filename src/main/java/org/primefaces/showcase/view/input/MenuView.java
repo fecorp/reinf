@@ -5,6 +5,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 
 public class MenuView {
+	
 	public void save() {
         addMessage("Success", "Data saved");
     }
