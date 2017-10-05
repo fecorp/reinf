@@ -15,7 +15,7 @@
 			</center>
 		</p:layoutUnit>
 
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -29,7 +29,7 @@
 
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros">
 						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
 							icon="ui-icon-disk" />
@@ -47,7 +47,7 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - Nota Fiscal">
+					<p:submenu label="Movimentação - NF" style="font-size:10px">
 						<p:menuitem value="Serviços Entrada"
 							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
@@ -63,7 +63,7 @@
 
 					</p:submenu>
 					<p:separator />
-					<p:submenu label="Reinf">
+					<p:submenu label="Reinf" style="font-size:10px">
 
 						<p:menuitem value="Doc. Não Fiscais"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
@@ -82,12 +82,12 @@
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
-					<p:submenu label="Interface ">
+					<p:submenu label="Interface " style="font-size:10px">
 						<p:menuitem value="Gerenciamento de Arquivos"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
-					<p:submenu label="Lotes">
+					<p:submenu label="Lotes" style="font-size:10px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -99,112 +99,92 @@
 
 		<p:layoutUnit style="background-color:#F2f2f2" position="center">
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value=" Código da empresa: *     " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
-
-				<h:outputText style="font-size: 12px"
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
-
-				<h:outputText style="font-size: 12px"
-					value="      Série da Nota Fiscal:   " />
-				<p:inputText style="width: 16%" value="" />
-
-				<h:outputLabel style="font-size: 12px"
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+&nbsp;
+				<h:outputLabel style="font-size: 10px"
 					value="  Número da Nota Fiscal: " />
-				<p:inputText style="width: 5%" value="" />
-				<br />
-				<br />
+				<p:inputText style="width: 10%" value="" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
+					value="      Série da Nota Fiscal:   " />
+				<p:inputText style="width: 3%" value="" />
+&nbsp;
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
-
-				<h:outputText style="font-size: 12px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 14%; background-color: #F2F2F2" value="" />
-
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+&nbsp;
+				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<br />
+				<br />
 
 				<p:outputLabel style="width: 12%" width="10px"
 					value="    Data de Emissão: * " />
-				<p:calendar style="font-size:13px; background-color: #F2F2F2"
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataemissao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-
-				<h:outputText style="font-size: 12px" value="     Data de Entrada: " />
-				<p:calendar style="font-size:13px; background-color: #F2F2F2"
+&nbsp;
+				<h:outputText style="font-size: 10px" value="     Data de Entrada: " />
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataentrada" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
+&nbsp;
+				<h:outputText style="font-size: 10px"
 					value="  Data de Execução/Conclusão: " />
-				<p:calendar style="font-size:13px; background-color: #F2F2F2"
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-
-
-
-				<h:outputText style="font-size: 12px"
-					value="    Quantidade de itens: " />
-				<p:inputText style="width: 4%" value="" />
-
-				<h:outputText style="font-size: 12px" value="  Tipo de documento: " />
-				<p:inputText style="width: 8%" value="" />
-
-				<h:outputText style="font-size: 12px" value="  Código do Serviço: " />
-				<p:inputText style="width: 12%" value="" />
+&nbsp;
+				<h:outputText style="font-size: 10px" value="  Sequencia Itens:   " />
+				<p:inputMask style="width: 4%" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Descrição do Serviço: " />
-				<p:inputText style="width: 26%" value="" />
 
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Valores">
-				<center><h:outputText style="font-size: 12px"
-					value="  Valor do serviço :   " />
-				<p:inputMask style="width: 6%" value="" />
-&nbsp; &nbsp; &nbsp;
+				<center>
+					<h:outputText style="font-size: 10px" value="  VL Serviço :   " />
+					<p:inputMask style="width: 2%" value="" />
+					&nbsp;
+					<h:outputText style="font-size: 10px"
+						value="  VL Material Aplicado: " />
+					<p:inputText style="width: 2%" value="" />
+					&nbsp;
+
+					<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
+					<p:inputText style="width: 2%" value="" />
+					&nbsp;
+
+					<h:outputText style="font-size: 10px" value="  VL Documento: " />
+					<p:inputText style="width: 2%" value="" />
+					&nbsp;
+
+					<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
+					<p:inputText style="width: 2%" value="" />
+					&nbsp;
 
 
-				<h:outputText style="font-size: 12px"
-					value="  Valor do Material Aplicado: " />
-				<p:inputText style="width: 6%" value="" />
 
-				&nbsp; &nbsp; &nbsp;<h:outputText style="font-size: 12px"
-					value="  Valor do desconto:   " />
-				&nbsp; &nbsp; &nbsp; <p:inputText
-					style="width: 6%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px" value="  Valor documento: " />
-				<p:inputText style="width: 6%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				<h:outputText style="font-size: 12px"
-					value="  Valor ISS Devido: " />
-				&nbsp; &nbsp; <p:inputText style="width: 6%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				<h:outputText style="font-size: 12px"
-					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 6%" value="" />
-				<br/>
-				<br/>
-				<h:outputText style="font-size: 12px"
-					value="  Valor Líquido: " />
-				<p:inputText style="width: 6%" value="" />
-</center>
+					<h:outputText style="font-size: 10px" value="  VL Líquido: " />
+					<p:inputText style="width: 2%" value="" />
+				</center>
 				<br />
 				<br />
 &nbsp; &nbsp; &nbsp;
@@ -213,14 +193,14 @@
 
 
 
-				<h:outputText style="font-size: 12px; font-weight:bold "
+				<h:outputText style="font-size: 10px; font-weight:bold "
 					value="  BASE DE CÁLCULO  " /> 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp; 
 &nbsp; &nbsp; &nbsp;
 
-					<h:outputText style="font-size: 12px; font-weight:bold "
+					<h:outputText style="font-size: 10px; font-weight:bold "
 					value="  ALÍQUOTA  " /> 
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
@@ -230,7 +210,7 @@
 
 
 
-					<h:outputText style="font-size: 12px; font-weight:bold "
+					<h:outputText style="font-size: 10px; font-weight:bold "
 					value="  VALORES RETIDOS  " />
 					
 &nbsp; &nbsp; &nbsp; 
@@ -238,281 +218,307 @@
 &nbsp; &nbsp; &nbsp;
 
 
-					<h:outputText style="font-size: 12px; font-weight:bold "
+					<h:outputText style="font-size: 10px; font-weight:bold "
 					value="  CÓDIGO DE RETENÇÃO IRRF " />
 				<br />
 				<br />
 
-				<h:outputText style="font-size: 12px" value=" ISS: " />
+				<h:outputText style="font-size: 10px" value=" ISS: " />
 				&nbsp; &nbsp; &nbsp;
 				
-				<p:inputText style="width: 14%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp; &nbsp;
-			
-			
-				<p:inputText style="width: 5%" value="" />
-			
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				
-				
-				
-				<p:inputText style="width: 8%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px" value="  INSS: " />
-				&nbsp;
-				&nbsp;
-				
-				
-		<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp; 
 			
-				<p:inputText style="width: 5%" value="" />
+			
+				<p:inputText style="width: 2%" value="" />
+			
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				
+				
+				
+				<p:inputText style="width: 10%" value="" />
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				<p:inputText style="width: 10%" value="" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 10px" value="  INSS: " />
+				&nbsp;
+				&nbsp;
+				
+				
+		<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp; 
-				<p:inputText style="width: 8%" value="" />
+			
+				<p:inputText style="width: 2%" value="" />
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; 
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  IRRF : " />
+				<h:outputText style="font-size: 10px" value="  IRRF : " />
 &nbsp;
 &nbsp;
-<p:inputText style="width: 14%" value="" />
+<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 
 				<br />
 				<br />
 
-				<h:outputText style="font-size: 12px" value="  PCC: " />
+				<h:outputText style="font-size: 10px" value="  PCC: " />
 				&nbsp;
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 			
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  PIS: " />
+				<h:outputText style="font-size: 10px" value="  PIS: " />
 				
 				&nbsp;
 				&nbsp;
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 			
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  COFINS: " />
+				<h:outputText style="font-size: 10px" value="  COFINS: " />
 
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 			
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  CSLL: " />
+				<h:outputText style="font-size: 10px" value="  CSLL: " />
 			
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 			
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 10%" value="" />
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Dados Complementares">
-
-				<h:outputText style="font-size: 12px"
+				
+				<h:outputText style="font-size: 10px"
+					value="  Número  do Contrato Serviço: " />
+				<p:inputText style="width: 3%" value="" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
 					value="  Tipo da localidade : " />
-				<p:inputMask id="telefone" style="width: 18%" value=""
-					mask="9999-9999" />
-&nbsp;
-&nbsp;
-&nbsp;
-				<h:outputText style="font-size: 12px" value="  Localidade : " />
-				<p:inputText style="width: 20%" value="" />
-&nbsp;
-&nbsp;
-				<h:outputText style="font-size: 12px"
-					value="  Tipo de Documento p/ Município: " />
-				<p:inputText style="width: 15%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px" value="  Conta contábil : " />
-				&nbsp;
-				&nbsp;
-				<p:inputText style="width: 18%" value="" />
-&nbsp;
-&nbsp;
-&nbsp;
-				<h:outputText style="font-size: 12px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 17%" value="" />
-&nbsp;
+				<p:inputText id="telefone" style="width: 2%" value="" />
 &nbsp;
 
+				<h:outputText style="font-size: 10px" value="  Localidade : " />
+				<p:inputText style="width: 6%" value="" />
+&nbsp;
 
-				<h:outputText style="font-size: 12px" value="  Chave da NFS-e: " />
-				<p:inputText style="width: 17%" value="" />
+				<h:outputText style="font-size: 10px"
+					value="  Tipo Doc p/ Município: " />
+				<p:inputText style="width: 3%" value="" />
+				
+&nbsp;
+				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
+				<p:inputText style="width: 2%" value="" />
+&nbsp;
 
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
-					value="  Indicador Tipo Pagamento: " />
+				<h:outputText style="font-size: 10px" value="  Tipo de Serviço: " />
+				<p:inputText style="width: 2%" value="" />
+&nbsp;				
+				
+				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
 				<p:inputText style="width: 13%" value="" />
 &nbsp;
+<br />
+				<br />
+				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
+				<p:inputText style="width: 14%" value="" />
+
 &nbsp;
-&nbsp;
-				<h:outputText style="font-size: 12px" value="  Tipo de Serviço: " />
-				
-&nbsp;
-&nbsp;
-				<p:inputText style="width: 17%" value="" />
+				<h:outputText style="font-size: 10px" value="  NFS-e: " />
+				<p:inputText style="width: 26%" value="" />
+
+
 
 			</p:fieldset>
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Openflex">
-				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="" />
+				<center>
+				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+				<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="" />
+				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+				<p:inputText style="width: 15%" value="" />
+				</center>
 			</p:fieldset>
 			<br />
 			<br />
-			<center>
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
-		&nbsp;
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="  Limpar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
-			</center>
-
-			<p:fieldset legend="Específico Reinf ">
+			<p:fieldset style="background-color: #F2F2F2">
 				<center>
-					<p:button style="background-color:#E0EEF6"
+
+
+					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						value="Incluir" icon="fa-backward" type="button">
+					</p:commandButton>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="fa-backward">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+
+
+					<br />
+
+
+
+				</center>
+			</p:fieldset>
+<br/>
+			<p:fieldset legend="Específico Reinf " style="font-size:10px">
+				<center>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Saída " icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
 					</p:button>
 					&nbsp; &nbsp;
 
-					<p:button style="background-color:#E0EEF6"
+					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Alimentício" icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
 					</p:button>
 					&nbsp; &nbsp;
 
-					<p:button style="background-color:#E0EEF6"
+					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Totalizadores" icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false">
 					</p:button>
 				</center>
 			</p:fieldset>
-			
+
 		</p:layoutUnit>
 	</p:layout>
 </body>
