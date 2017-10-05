@@ -101,37 +101,44 @@
 
 
 		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		
+		<center>
+				<h5>Movimentação Entrada Nota Fiscal</h5>
+			</center>
+		
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px"
-					value=" Código da empresa: *     " />
+					value=" Cod. Empresa: *     " />
 				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
-					value="      Código da Filial:  * " />
+					value="      Cod. Filial:  * " />
 				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
-
-
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
 				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
 				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Série da Nota Fiscal:   " />
 				<p:inputText style="width: 8%" value="" />
+				&nbsp;
+			
 
 				<h:outputLabel style="font-size: 10px"
 					value="  Número da Nota Fiscal: " />
 				<p:inputText style="width: 5%" value="" />
-
-				<br />
-				<br />
+			
+				<br/>
+				<br/>	
 
 				<p:outputLabel style="width: 10%" width="10px"
 					value="    Data de Emissão: * " />
@@ -139,12 +146,14 @@
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataemissao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px" value="     Data de Entrada: " />
 				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataentrada" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Data de Execução/Conclusão: " />
@@ -152,12 +161,13 @@
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-
-
+					
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="    Quantidade de itens: " />
 				<p:inputText style="width: 3%" value="" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Tipo de documento: " />
 				<p:inputText style="width: 2%" value="" />
@@ -166,7 +176,7 @@
 				<br />
 				<h:outputText style="font-size: 10px" value="  Código do Serviço: " />
 				<p:inputText style="width: 12%" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Descrição do Serviço: " />
 				<p:inputText style="width: 26%" value="" />
@@ -252,7 +262,7 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 4%" value="" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  INSS: " />
@@ -288,7 +298,7 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 4%" value="" />
 
 				<br />
 				<br />
@@ -309,7 +319,7 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 4%" value="" />
 			</p:fieldset>
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
