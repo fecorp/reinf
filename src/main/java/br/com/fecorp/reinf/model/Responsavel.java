@@ -134,17 +134,17 @@ public class Responsavel {
 	public void setDataFinalVigencia(String dataFinalVigencia) {
 		this.dataFinalVigencia = dataFinalVigencia;
 	}
-	public String getOpenflex_01() {
-		return openflex_01;
+	public String getOpenflex01() {
+		return openflex01;
 	}
-	public void setOpenflex_01(String openflex_01) {
-		this.openflex_01 = openflex_01;
+	public void setOpenflex01(String openflex01) {
+		this.openflex01 = openflex01;
 	}
-	public String getOpenflex_02() {
-		return openflex_02;
+	public String getOpenflex02() {
+		return openflex02;
 	}
-	public void setOpenflex_02(String openflex_02) {
-		this.openflex_02 = openflex_02;
+	public void setOpenflex_02(String openflex02) {
+		this.openflex02 = openflex02;
 	}
 	public String nomeContato;
 	public String cpfContato;
@@ -169,8 +169,8 @@ public class Responsavel {
 	public String qualificacao;
 	public String crc;
 	public String dataFinalVigencia;
-	public String openflex_01;
-	public String openflex_02;
+	public String openflex01;
+	public String openflex02;
 	
 
 }

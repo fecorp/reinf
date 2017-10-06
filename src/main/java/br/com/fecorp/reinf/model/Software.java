@@ -15,8 +15,8 @@ public class Software {
 	public String cep;
 	public String cpf;
 	public String endereco;
-	public String openflex_01;
-	public String openflex_02;
+	public String openflex01;
+	public String openflex02;
 	
 	public String cnpj;
 	public String getCnpj() {
@@ -103,20 +103,17 @@ public class Software {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getOpenflex_01() {
-		return openflex_01;
+	public String getOpenflex01() {
+		return openflex01;
 	}
-	public void setOpenflex_01(String openflex_01) {
-		this.openflex_01 = openflex_01;
+	public void setOpenflex_01(String openflex01) {
+		this.openflex01 = openflex01;
 	}
-	public String getOpenflex_02() {
-		return openflex_02;
+	public String getOpenflex02() {
+		return openflex02;
 	}
-	public void setOpenflex_02(String openflex_02) {
-		this.openflex_02 = openflex_02;
+	public void setOpenflex02(String openflex02) {
+		this.openflex02 = openflex02;
 	}
-
-	
-	
 
 }

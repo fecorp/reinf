@@ -8,7 +8,8 @@ public class ClientesFornecedores {
 	public String dataAtualizacao;
 	public String categoriaPFPJ;
 	public String codigoPFPJ;
-	public String cnpj_cpf;
+	public String cnpj;
+	public String cpf;
 	public String indPessoa;
 	public String insEstadual;
 	public String insMunicipal;
@@ -21,7 +22,7 @@ public class ClientesFornecedores {
 	public String municipio;
 	public String unidadeFederativa;
 	public String cep;
-	public String ind_equipar_prod_rural;
+	public String indProdRural;
 	public String pais;
 	public String insSuframa;
 	public String tipoLocalidade;
@@ -41,8 +42,8 @@ public class ClientesFornecedores {
 	public String dataCriacao;
 	public String indicativoPJ;
 	public String dataEncerramento;
-	public String openflex_01;
-	public String openflex_02;
+	public String openflex01;
+	public String openflex02;
 	
 	public String getEmpresa() {
 		return empresa;
@@ -74,11 +75,17 @@ public class ClientesFornecedores {
 	public void setCodigoPFPJ(String codigoPFPJ) {
 		this.codigoPFPJ = codigoPFPJ;
 	}
-	public String getCnpj_cpf() {
-		return cnpj_cpf;
+	public String getCnpj() {
+		return cnpj;
 	}
-	public void setCnpj_cpf(String cnpj_cpf) {
-		this.cnpj_cpf = cnpj_cpf;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 	public String getIndPessoa() {
 		return indPessoa;
@@ -152,11 +159,11 @@ public class ClientesFornecedores {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	public String getInd_equipar_prod_rural() {
-		return ind_equipar_prod_rural;
+	public String getIndProdRural() {
+		return indProdRural;
 	}
-	public void setInd_equipar_prod_rural(String ind_equipar_prod_rural) {
-		this.ind_equipar_prod_rural = ind_equipar_prod_rural;
+	public void setIndProdRural(String indProdRural) {
+		this.indProdRural = indProdRural;
 	}
 	public String getPais() {
 		return pais;
@@ -272,17 +279,17 @@ public class ClientesFornecedores {
 	public void setDataEncerramento(String dataEncerramento) {
 		this.dataEncerramento = dataEncerramento;
 	}
-	public String getOpenflex_01() {
-		return openflex_01;
+	public String getOpenflex01() {
+		return openflex01;
 	}
-	public void setOpenflex_01(String openflex_01) {
-		this.openflex_01 = openflex_01;
+	public void setOpenflex01(String openflex01) {
+		this.openflex01 = openflex01;
 	}
-	public String getOpenflex_02() {
-		return openflex_02;
+	public String getOpenflex02() {
+		return openflex02;
 	}
-	public void setOpenflex_02(String openflex_02) {
-		this.openflex_02 = openflex_02;
+	public void setOpenflex02(String openflex02) {
+		this.openflex02 = openflex02;
 	}
 
 }
