@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+
+
+
+</h:head>
+
+<h:body style="background-color:#FFFFFFF;border:0px;">
+
+
+
+	<p:layout>
+		<p:layoutUnit position="north">
+			<center>
+				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
+					height="340px" />
+			</center>
+		</p:layoutUnit>
+
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
+
+			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
+				url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
+			<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
+				url="#" />
+		</p:breadCrumb>
+
+
+
+		<p:layoutUnit position="west">
+			<h:form>
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável"
+							url="\Reinf\faces\telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+							icon="ui-icon-arrowrefresh-1-w" />
+
+					</p:submenu>
+
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Serviços Entrada"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" style="font-size:12px" />
+						<p:menuitem value="Impostos Entrada" style="font-size:12px"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Entrada"
+							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída"
+							actionListener="#{menuView.delete}" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
+							url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false"
+							icon="ui-icon-close" />
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf" style="font-size:12px">
+
+						<p:menuitem value="Doc. Não Fiscais"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+						<p:menuitem value="Recebimento"
+							url="http://www.primefaces.org/documentation"
+							icon="ui-icon-document" />
+						<p:menuitem value="Pagamento"
+							url="http://www.primefaces.org/downloads"
+							icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="Associação Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="Eventos Desp"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+							icon="ui-icon-wrench" />
+						<p:menuitem value="Vendas para Agro Indústria"
+							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					</p:submenu>
+					<p:submenu label="Interface " style="font-size:12px">
+						<p:menuitem value="Importação de arquivos" url="Interface.xhtml"
+							icon="ui-icon-home" />
+
+					</p:submenu>
+
+					<p:submenu label="Lotes" style="font-size:12px">
+						<p:menuitem value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
+
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+
+
+		<p:layoutUnit position="center">
+			<center>
+				<h5>
+					<a>Importação de arquivo</a>
+				</h5>
+			</center>
+			<hr></hr>
+
+			<div align="left">
+				<h:outputText style="font-size: 15px" value=" &nbsp; Filial :      " />
+				<br></br>
+				<h:outputText style="font-size: 15px"
+					value=" &nbsp; Cliente / Fornecedor :      " />
+				<br></br>
+				<h:outputText style="font-size: 15px"
+					value=" &nbsp; Serviços :      " />
+
+				<h:form enctype="multipart/form-data">
+					<p:growl id="messages" showDetail="true" />
+
+
+					&nbsp; <p:fileUpload value="#{fileUploadView.file}"
+						style="font-size:10px" mode="simple" skinSimple="true" />
+					<p:commandButton value="Importar arquivo" style="font-size:10px"
+						ajax="false" actionListener="#{fileUploadView.upload}"
+						disabled="true" />
+				</h:form>
+
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<div>
+					<h:outputText style="font-size: 15px "
+						value=" &nbsp; Entrada Nota Fiscal :      " />
+
+					<br></br>
+					<h:outputText style="font-size: 15px"
+						value=" &nbsp; Saida Nota Fiscal :      " />
+					<br></br>
+					<h:outputText style="font-size: 15px"
+						value=" &nbsp; Entrada Impostos :      " />
+					<br></br>
+					<h:outputText style="font-size: 15px"
+						value="&nbsp; Saída Impostos:         " />
+
+					<h:form enctype="multipart/form-data">
+						<p:growl id="messages" showDetail="true" />
+
+
+					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
+							style="font-size:10px" mode="simple" skinSimple="true" />
+						<p:commandButton value="Importar arquivo" style="font-size:10px"
+							ajax="false" actionListener="#{fileUploadView.upload}"
+							disabled="true" />
+					</h:form>
+				</div>
+			</div>
+
+
+			<br></br>
+			<p:dataTable var="car" value="#{dtBasicView.cars}">
+				<p:column headerText="Id">
+					<h:outputText value="#{car.id}" />
+				</p:column>
+
+				<p:column headerText="Year">
+					<h:outputText value="#{car.year}" />
+				</p:column>
+
+				<p:column headerText="Brand">
+					<h:outputText value="#{car.brand}" />
+				</p:column>
+
+				<p:column headerText="Color">
+					<h:outputText value="#{car.color}" />
+				</p:column>
+			</p:dataTable>
+
+		</p:layoutUnit>
+
+	</p:layout>
+
+
+</h:body>
+</html>
