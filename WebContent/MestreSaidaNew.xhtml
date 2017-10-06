@@ -30,40 +30,43 @@
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							url="telaClienteFornecedor.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
+							url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - NF" style="font-size:10px">
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
+							url="MestreEntradaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada"
-							url="\Reinf\faces\ImpostoEntrada.xhtml" ajax="false"
+							url="ImpostoEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Serviços Saída"
-							url="\Reinf\faces\MestreSaida.xhtml" ajax="false"
+							url="MestreSaidaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída"
-							url="\Reinf\faces\ImpostoSaida.xhtml" ajax="false"
+							url="ImpostoSaida.xhtml" ajax="false"
 							icon="ui-icon-close" />
+
+
+
 
 					</p:submenu>
 					<p:separator />
-					<p:submenu label="Reinf" style="font-size:10px">
+					<p:submenu label="Reinf" style="font-size:12px">
 
 						<p:menuitem value="Doc. Não Fiscais"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
@@ -77,17 +80,17 @@
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 						<p:menuitem value="Eventos Desp"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+						<p:menuitem value="CPRB" url="cprb.xhtml"
 							icon="ui-icon-wrench" />
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
-					<p:submenu label="Interface " style="font-size:10px">
+					<p:submenu label="Interface " style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Arquivos"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
-					<p:submenu label="Lotes" style="font-size:10px">
+					<p:submenu label="Lotes" style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -97,7 +100,11 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		<p:layoutUnit style="background-color:#F2f2f2; height:215px" position="center">
+		<center>
+				<h5>Saída Nota Fiscal</h5>
+			</center>
+		
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
@@ -176,7 +183,6 @@
 					<p:inputText style="width: 2%" value="" />
 					&nbsp;
 
-
 					<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
 					<p:inputText style="width: 2%" value="" />
 					&nbsp;
@@ -186,49 +192,9 @@
 					<h:outputText style="font-size: 10px" value="  VL Líquido: " />
 					<p:inputText style="width: 2%" value="" />
 				</center>
-
-				&nbsp; &nbsp; &nbsp;<h:outputText style="font-size: 12px"
-					value="  Valor do desconto:   " />
-				&nbsp; &nbsp; &nbsp; <p:inputText
-					style="width: 6%" value="" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  Valor documento: " />
-				<p:inputText style="width: 6%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				<h:outputText style="font-size: 12px"
 
-					value="  Valor ISS Retido: " />
-
-					value="  Valor ISS Devido: " />
-
-				&nbsp; &nbsp; <p:inputText style="width: 6%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				<h:outputText style="font-size: 12px"
-					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 6%" value="" />
-
-
-
-				<br/>
-				<br/>
-				<h:outputText style="font-size: 12px"
-					value="  Valor Líquido: " />
-				<p:inputText style="width: 6%" value="" />
-<center>
-
-
-				<br />
-				<br />
-&nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;
-
-
-
-				<h:outputText style="font-size: 10px; font-weight:bold "
-					value="  BASE DE CÁLCULO  " /> 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp; 
 &nbsp; &nbsp; &nbsp;
@@ -240,59 +206,29 @@
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 
-&nbsp; &nbsp; &nbsp;
-
-&nbsp; &nbsp; &nbsp;
 
 
 
-
-
-
-
-					<h:outputText style="font-size: 10px; font-weight:bold "/>
-
-					<h:outputText style="font-size: 12px; font-weight:bold "/>
-
-					
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;
-
-
-
-					
+					<h:outputText style="font-size: 10px; font-weight:bold "
+					value="  VALORES RETIDOS  " />
 					
 &nbsp; &nbsp; &nbsp; 
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 
 
-
-					<h:outputText style="font-size: 10px; font-weight:bold ">
-
-					<h:outputText style="font-size: 12px; font-weight:bold ">
-
-				
+					<h:outputText style="font-size: 10px; font-weight:bold "
+					value="  CÓDIGO DE RETENÇÃO IRRF " />
 				<br />
 				<br />
 
 				<h:outputText style="font-size: 10px" value=" ISS: " />
 				&nbsp; &nbsp; &nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
 				
-				<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; &nbsp; &nbsp; 
-
-
-				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; &nbsp; &nbsp; &nbsp;
-
+				
 			
 				<p:inputText style="width: 2%" value="" />
 			
@@ -300,11 +236,7 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; 
-
 				
-
 				
 				
 				<p:inputText style="width: 10%" value="" />
@@ -318,31 +250,21 @@
 				<br />
 				<h:outputText style="font-size: 10px" value="  INSS: " />
 				&nbsp;
+				
+				&nbsp;
+				&nbsp;
+				&nbsp;
 				&nbsp;
 				
 				
-		<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; &nbsp; &nbsp; 
+		
 			
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
-
-				&nbsp; &nbsp; &nbsp;
-
-
+				&nbsp; &nbsp; &nbsp; 
 				<p:inputText style="width: 10%" value="" />
-
-
-				<p:inputText style="width: 8%" value="" />
-
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -354,11 +276,10 @@
 				<h:outputText style="font-size: 10px" value="  IRRF : " />
 &nbsp;
 &nbsp;
-<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
+&nbsp;
+&nbsp;
+				
+
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -379,11 +300,10 @@
 				&nbsp;
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
+				&nbsp;
+				&nbsp;
+				
+				
 			
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
@@ -406,11 +326,10 @@
 				&nbsp;
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
+				&nbsp;
+				&nbsp;
+				
+				
 			
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
@@ -428,12 +347,11 @@
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  COFINS: " />
-
-				<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
+				&nbsp;
+				&nbsp;
+				
+					
+				
 			
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
@@ -450,16 +368,15 @@
 
 				<br />
 				<br />
+				
 				<h:outputText style="font-size: 10px" value="  CSLL: " />
 			
 				&nbsp;
 				&nbsp;
-				<p:inputText style="width: 10%" value="" />
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-				&nbsp; &nbsp; &nbsp;
-			
+				&nbsp;
+				&nbsp;
+				
+				
 				<p:inputText style="width: 2%" value="" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -472,11 +389,7 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				<p:inputText style="width: 10%" value="" />
-				</h:outputText>
-				</h:outputText>
-				</center>
 			</p:fieldset>
-			
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Dados Complementares">
