@@ -15,7 +15,7 @@
 				height="340px" />
 
 		</p:layoutUnit>
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:12px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -25,38 +25,38 @@
 				url="#" />
 		</p:breadCrumb>
 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2">
+		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:350px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							url="telaClienteFornecedor.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
+							url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
+							url="MestreEntradaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w"  />
 						<p:menuitem value="Impostos Entrada"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
+							url="ImpostoEntrada.xhtml"
+							icon="ui-icon-arrowrefresh-1-w"  />
 						<p:menuitem value="Serviços Saída"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
+							url="MestreSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w"  />
 						<p:menuitem value="Impostos Saída"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
+							url="ImpostoSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
 
 						<p:menuitem value="Complemento Entrada"
 							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
@@ -104,8 +104,8 @@
 
 
 
-		<p:layoutUnit style="background-color:#F4F0F0" position="center">
-		<center><h5>Software</h5></center>
+		<p:layoutUnit style="background-color:#F4F0F0; height:200px" position="center">
+			<center><h5>Software</h5></center>
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
@@ -185,18 +185,45 @@
 
 				</center>
 			</p:fieldset>
+			
 			<br />
-			<center>
-				<p:button style="background-color:#E0EEF6; font-size:12px"
-					outcome="acoesBotao" value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
-				&nbsp;
-				<p:button style="background-color:#E0EEF6; font-size:12px"
-					outcome="acoesBotao" value="  Limpar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
-			</center>
+			<p:fieldset style="background-color: #F2F2F2">
+				<center>
+
+
+					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						value="Incluir" icon="fa-backward" type="button">
+					</p:commandButton>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="fa-backward">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<br />
+
+				</center>
+			</p:fieldset>
 		</p:layoutUnit>
 	</p:layout>
 </h:body>
