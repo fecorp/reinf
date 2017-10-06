@@ -1,5 +1,7 @@
 package br.com.fecorp.reinf.impl;
 
+import br.com.fecorp.reinf.persistencia.util.Conexao;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,7 +14,6 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAO<T, I> {
 
 	private Conexao conexao;
 
-	@Override
 	public T save(T entity) {
 
 		T saved = null;
@@ -24,7 +25,6 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAO<T, I> {
 		return saved;
 	}
 
-	@Override
 	public void remove(T entity) {
 		getEntityManager().getTransaction().begin();
 		getEntityManager().remove(entity);
@@ -32,7 +32,6 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAO<T, I> {
 
 	}
 
-	@Override
 	public T getById(Class<T> classe, I pk) {
 
 		try {
@@ -44,13 +43,11 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAO<T, I> {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public List<T> getAll(Class<T> classe) {
 
 		return getEntityManager().createQuery("select o from " + classe.getSimpleName() + " o").getResultList();
 	}
 
-	@Override
 	public EntityManager getEntityManager() {
 
 		if (conexao == null) {
