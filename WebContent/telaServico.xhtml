@@ -5,17 +5,24 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<h:head></h:head>
-<h:body style="background-color:#E0EEF6;border:0px;">
+<h:head>
+
+
+
+
+</h:head>
+
+<h:body style="background-color:#FFFFFFF;border:0px;">
 
 	<p:layout>
-		<p:layoutUnit style="background-color:#F2f2f2" position="north">
-
-			<p:graphicImage url="\Reinf\images\logo.jpg" width="454px"
-				height="340px" />
-
+		<p:layoutUnit position="north">
+			<center>
+				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
+					height="340px" />
+			</center>
 		</p:layoutUnit>
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:12px">
+
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -25,7 +32,9 @@
 				url="#" />
 		</p:breadCrumb>
 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:350px" fullPage="true">
+
+
+		<p:layoutUnit position="west" style="height: 200px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -43,27 +52,19 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
-					</p:submenu>
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntrada.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
 
-						<p:menuitem value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
+					</p:submenu>
+
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
-						<p:menuitem value="Complemento Saída"
-							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+
 
 					</p:submenu>
 					<p:separator />
@@ -101,91 +102,60 @@
 		</p:layoutUnit>
 
 
+		<p:layoutUnit position="center" style="height: 200px" fullPage="true">
+		
+		
+		<center><h5>Serviços</h5></center>
 
-
-
-		<p:layoutUnit style="background-color:#F4F0F0; height:200px" position="center">
-			<center><h5>Software</h5></center>
-
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Dados cadastrais ">
-
-				<h:outputText style="font-size: 10px" value=" CNPJ: *     " />
-				<p:inputMask style="width: 10%" value="" mask="99.999.999/9999-99" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Razão Social: *     " />
-				<p:inputText style="width: 15%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px"
-					value=" Nome do contato: *     " />
-				<p:inputText style="width: 18%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Filial: *     " />
-				<p:inputText style="width: 7%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Telefone: *     " />
-				<p:inputMask style="width:10%" value="" mask="(99)99999-9999" />
-				<br />
-				<br />
-				
-				&nbsp;
-				<h:outputText style="font-size: 10px" value=" E-mail: *     " />
-				<p:inputText style="width: 15%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Nome Fantasia:      " />
-				<p:inputText style="width: 12%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Qualificação :      " />
-				<p:inputText style="width: 14%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Bairro :      " />
-				<p:inputText style="width: 10%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Município :      " />
-				<p:inputText style="width: 8%" value="" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" UF :      " />
-				<p:inputText style="width: 2%" value="" />
-				<br />
-				<br />
-				
-				&nbsp;
-				<h:outputText style="font-size: 10px" value=" CEP :      " /> &nbsp;
-				<p:inputMask style="width: 6%" value="" mask="99999-999" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" CPF :      " />
-				<p:inputMask style="width: 9%" value="" mask="999.999.999-99" />
-
-                &nbsp;
-				<h:outputText style="font-size: 10px" value=" Endereço :       " />
-				<p:inputText style="width: 20%" value="" />
 
 			</p:fieldset>
 			<br />
+			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
+				legend="Dados complementares">
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+				
+				<script>
+            PrimeFaces.locales['pt'] = {
+                closeText: 'Fechar',
+                prevText: 'Anterior',
+                nextText: 'Próximo',
+                currentText: 'Começo',
+                monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+                monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+                dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+                dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+                weekHeader: 'Semana',
+                firstDay: 0,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: '',
+                timeOnlyTitle: 'Só Horas',
+                timeText: 'Tempo',
+                hourText: 'Hora',
+                minuteText: 'Minuto',
+                secondText: 'Segundo',
+                ampm: false,
+                month: 'Mês',
+                week: 'Semana',
+                day: 'Dia',
+                allDayText: 'Todo o Dia'
+            };
+        </script>
+			</p:fieldset>
+			<br />
+			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
 					<p:inputText style="width: 20%" value="" />
 
-                    &nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
 					<p:inputText style="width: 20%" value="" />
-
 				</center>
 			</p:fieldset>
-			
 			<br />
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
@@ -224,7 +194,11 @@
 
 				</center>
 			</p:fieldset>
+
 		</p:layoutUnit>
+		
 	</p:layout>
+
+
 </h:body>
 </html>

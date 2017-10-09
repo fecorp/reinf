@@ -34,17 +34,17 @@
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							url="telaClienteFornecedor.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
+							url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -52,16 +52,16 @@
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
+							url="MestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada"
-							url="\Reinf\faces\ImpostoEntrada.xhtml" ajax="false"
+							url="ImpostoEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Serviços Saída"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
+							url="MestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída"
-							url="\Reinf\faces\ImpostoSaida.xhtml" ajax="false"
+							url="ImpostoSaida.xhtml" ajax="false"
 							icon="ui-icon-close" />
 
 					</p:submenu>
@@ -80,7 +80,7 @@
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 						<p:menuitem value="Eventos Desp"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+						<p:menuitem value="CPRB" url="cprb.xhtml"
 							icon="ui-icon-wrench" />
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
@@ -100,7 +100,7 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		<p:layoutUnit style="height:450px" fullPage="true" position="center">
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
@@ -180,7 +180,7 @@
 				<h:outputText style="font-size: 12px"
 					value="  Valor do serviço :   " />
 				<p:inputMask style="width: 6%" value="" />
-&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
 
 
 				<h:outputText style="font-size: 12px"
@@ -195,7 +195,7 @@
 				<br />
 				<h:outputText style="font-size: 12px" value="  Valor documento: " />
 				<p:inputText style="width: 6%" value="" />
-&nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
 				<h:outputText style="font-size: 12px"
 					value="  Valor da Subempreitada: " />
 				&nbsp; &nbsp; <p:inputText style="width: 6%" value="" />
@@ -394,7 +394,7 @@
 
 
 				&nbsp;
->>>>>>> Mariane
+
 				&nbsp;
 				&nbsp;
 				
@@ -457,7 +457,7 @@
 
 				<p:inputText style="width: 14%" value="" />
 
->>>>>>> Mariane
+
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
 				<p:inputText style="width: 2%" value="" />
 &nbsp;
@@ -529,6 +529,9 @@
 					<f:param name="productId" value="turubom?" />
 				</p:button>
 
+
+
+			
 
 
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
