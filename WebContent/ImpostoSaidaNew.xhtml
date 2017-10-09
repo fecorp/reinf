@@ -15,7 +15,7 @@
 			</center>
 		</p:layoutUnit>
 
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:12px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -31,17 +31,17 @@
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							url="telaClienteFornecedor.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
+							url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -49,23 +49,23 @@
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
+							url="MestreEntradaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada"
-							url="\Reinf\faces\ImpostoEntrada.xhtml" ajax="false"
+							url="ImpostoEntradaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Serviços Saída"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
+							url="MestreSaidaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída"
-							url="\Reinf\faces\ImpostoSaida.xhtml" ajax="false"
+							url="ImpostoSaidaNew.xhtml" ajax="false"
 							icon="ui-icon-close" />
 
 						<p:menuitem value="Complemento Entrada"
-							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
+							url="ComplementoMestreEntrada.xhtml" ajax="false"
 							icon="ui-icon-close" />
 						<p:menuitem value="Complemento Saída"
-							url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false"
+							url="ComplementoMestreSaida.xhtml" ajax="false"
 							icon="ui-icon-close" />
 
 					</p:submenu>
@@ -84,7 +84,7 @@
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 						<p:menuitem value="Eventos Desp"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
+						<p:menuitem value="CPRB" url="cprb.xhtml"
 							icon="ui-icon-wrench" />
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
@@ -104,10 +104,10 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+		<p:layoutUnit style="background-color:#F2f2f2; height:150px" position="center">
 		
 		<center>
-				<h5>CPRB - Contribuição Provisória Receita Bruta</h5>
+				<h5><b>Impostos Saída</b></h5>
 			</center>
 		
 
