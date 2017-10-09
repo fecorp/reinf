@@ -21,7 +21,7 @@ p.ident {
 			</center>
 		</p:layoutUnit>
 
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
+		<p:breadCrumb style="background-color:#F2f2f2; font-size:12px">
 
 			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
 			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
@@ -35,42 +35,36 @@ p.ident {
 
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+						<p:menuitem value="Serviços" url="telaServico.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - Nota Fiscal">
-						<p:menuitem value="Serviços Entrada"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
-							url="\Reinf\faces\ImpostoEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							url="\Reinf\faces\ImpostoSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
 
 
 					</p:submenu>
 					<p:separator />
-					<p:submenu label="Reinf">
+					<p:submenu label="Reinf" style="font-size:12px">
 
 						<p:menuitem value="Doc. Não Fiscais"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
@@ -84,17 +78,16 @@ p.ident {
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 						<p:menuitem value="Eventos Desp"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="cprb.xhtml"
-							icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="cprb.xhtml" icon="ui-icon-wrench" />
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
-					<p:submenu label="Interface ">
+					<p:submenu label="Interface " style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Arquivos"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
-					<p:submenu label="Lotes">
+					<p:submenu label="Lotes" style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -104,26 +97,24 @@ p.ident {
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
-
+		<p:layoutUnit style="background-color:#F2f2f2; height:250px" fullPage="true" position="center">
+		<center><h5>Processos Administrativos Judiciais</h5></center>
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 12px" value=" Empresa: *     " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<h:outputText style="font-size: 10px" value=" Empresa: *     " />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px" value="      Filial:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<h:outputText style="font-size: 10px" value="      Filial:  * " />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="      Número do processo Adm/Jud:  * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 18%; background-color: #F2F2F2" value="" />
 
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Data de Decisão/Sentença: " />
-				<p:calendar style="font-size:13px; background-color: #F2F2F2"
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
@@ -159,81 +150,107 @@ p.ident {
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  Tipo de Processo:   " />
-				<p:selectManyCheckbox id="banana"
-					value="#{checkboxView.selectedConsoles}">
-					<f:selectItem itemLabel="Administrativo "
-						itemValue=" Administrativo do Tomador" />
-					<f:selectItem itemLabel="Judicial "
-						itemValue=" Judicial do Tomador" />
-				</p:selectManyCheckbox>
-
+				<center>
+					<h:outputText style="font-size: 10px"
+						value="  Tipo de Processo:   " />
+					<p:selectManyCheckbox id="banana"
+						value="#{checkboxView.selectedConsoles}" style="font-size: 10px">
+						<f:selectItem itemLabel="Administrativo "
+							itemValue=" Administrativo do Tomador" />
+						<f:selectItem itemLabel="Judicial "
+							itemValue=" Judicial do Tomador" />
+					</p:selectManyCheckbox>
+				</center>
 			</p:fieldset>
 
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
 				legend="Processos">
 
-				<h:outputText style="font-size: 12px"
-					value="  Código do indicativo da Suspensão: " />
-				<p:inputText style="width: 9%" value="" />
+				<h:outputText style="font-size: 10px" value="  Cód.Ind. Suspensão: " />
+				<p:inputText style="width: 7%" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value=" Indicativo da Suspensão da exigibilidade :   " />
-				<p:inputText style="width: 9%" value="" />
+				<h:outputText style="font-size: 10px"
+					value=" Ind. Susp. Exigibilidade :   " />
+				<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Indicativo de Depósito do Montante Integral: " />
-				<p:inputText style="width: 5%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
+					value="  Ind. Depósito Montante Integral: " />
+				<p:inputText style="width: 15%" value="" />
+
+				<h:outputText style="font-size: 10px"
 					value="  UF da Sessão Judiciária: " />
+				<p:inputText style="width: 2%" value="" />
+
+
+				<h:outputText style="font-size: 10px" value="  Cód. Município: " />
 				<p:inputText style="width: 5%" value="" />
 
-
-				<h:outputText style="font-size: 12px"
-					value="  Código do Município: " />
-				<p:inputText style="width: 5%" value="" />
-
-
-				<h:outputText style="font-size: 12px"
+				<br />
+				<br />
+				<h:outputText style="font-size: 10px"
 					value="  Código de identificação da Vara : " />
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 2%" value="" />
+				<br />
+				<center>
 
-
-				<h:outputText style="font-size: 12px"
-					value="  Indicativo da autoria da ação judiciária: " />
-				<p:inputText style="width: 5%" value="" />
+					<h:outputText style="font-size: 10px"
+						value="  Ind. Autoria Judiciária: " />
+					<p:selectManyCheckbox id="hey"
+						value="#{checkboxView.selectedConsoles}" style="font-size: 10px">
+						<f:selectItem itemLabel="Próprio Contribuinte"
+							itemValue=" Próprio Contribuinte" />
+						<f:selectItem itemLabel="Outra Entidade"
+							itemValue=" Outra Entidade	" />
+					</p:selectManyCheckbox>
+				</center>
 			</p:fieldset>
 			<br />
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
 				legend="Openflex">
-				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="" />
+				<center>
+					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+					<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="" />
-
+					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+					<p:inputText style="width: 15%" value="" />
+				</center>
 			</p:fieldset>
 
 			<br />
+
 			<center>
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="Salvar Dados  " icon="ui-icon-star">
+
+				<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+					value="Incluir" icon="fa-backward" type="button">
+				</p:commandButton>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Excluir" icon="fa-backward">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="  Limpar Dados  " icon="ui-icon-star">
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Editar " icon="ui-icon-star">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
 			</center>
 		</p:layoutUnit>
 	</p:layout>

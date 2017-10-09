@@ -39,10 +39,8 @@
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -51,18 +49,14 @@
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							url="MestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
 
 					</p:submenu>
 					<p:separator />
@@ -100,22 +94,21 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
-		
-		<center>
-				<h5> Entrada Nota Fiscal </h5>
+		<p:layoutUnit style="background-color:#F2f2f2; height: 140px"
+			fullPage="true" position="center">
+
+			<center>
+				<h5>Entrada Nota Fiscal</h5>
 			</center>
-		
+
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 10px"
-					value=" Cod. Empresa: *     " />
+				<h:outputText style="font-size: 10px" value=" Cod. Empresa: *     " />
 				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 				&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="      Cod. Filial:  * " />
+				<h:outputText style="font-size: 10px" value="      Cod. Filial:  * " />
 				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 				&nbsp;
 				<h:outputText style="font-size: 10px"
@@ -136,9 +129,9 @@
 				<h:outputLabel style="font-size: 10px"
 					value="  Número da Nota Fiscal: " />
 				<p:inputText style="width: 5%" value="" />
-			
-				<br/>
-				<br/>	
+
+				<br />
+				<br />
 
 				<p:outputLabel style="width: 10%" width="10px"
 					value="    Data de Emissão: * " />
@@ -408,23 +401,22 @@
 			<p:fieldset legend="Específico Reinf " style="font-size:10px">
 
 				<center>
-					<h:button style="background-color:#E0EEF6; font-size:12px"
+					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Entrada " icon="ui-icon-star"
-						url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false" />
+						outcome="ComplementoMestreEntrada.xhtml" ajax="false" />
 
 					&nbsp; &nbsp;
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Alimentício " icon="ui-icon-star"
-						url="\Reinf\faces\ComplementoAlimeEntrada.xhtml" ajax="false">
-					</p:button>
-
-
+						outcome="ComplementoAlimeEntrada.xhtml" ajax="false"/>
+				
+						
 					&nbsp; &nbsp;
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						value="  Complemento Totalizadores " icon="ui-icon-star"
-						url="\Reinf\faces\ComplementoTotalizadoresEntrada.xhtml"
+						outcome="ComplementoTotalizadoresEntrada.xhtml"
 						ajax="false">
 					</p:button>
 				</center>
