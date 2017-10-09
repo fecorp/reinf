@@ -2,20 +2,26 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import br.com.fecorp.reinf.DAO.EntidadeBase;
-import br.com.fecorp.reinf.DAO.EmpresaDAO;
-import br.com.fecorp.reinf.model.Empresa;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
 
-@Entity
+import br.com.fecorp.reinf.DAO.EntidadeBase;
+
+@Entity 
 public class Empresa implements Serializable, EntidadeBase {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Empresa")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	long id;
+	
 	public String empresa;
 	public String filial;
 	public String dataAtualizacao;
