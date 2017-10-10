@@ -146,46 +146,53 @@
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
 				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 10px" value="      Filial :  * " />
+                &nbsp;
+				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
 				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 10px"
+                &nbsp; 
+ 				<h:outputText style="font-size: 10px"
 					value="      Razão Social :   " />
 				<p:inputText style="width: 26%" value="" />
-
+                &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
 				<p:inputText style="width: 17%" value="" />
+                <br/> <br/>
 
-
-
+                &nbsp;
 				<p:outputLabel style="font-size: 10px"
 					value="    Data de atualização: * " />
 				<p:calendar style="font-size:10px; background-color: #F2F2F2"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
-				<br />
-				<br />
+				
+				
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
 				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
-
+				
+                &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 10%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="    Inscrição Estadual: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 7%" value="" />
 
-
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="     Inscrição Estadual Centralizadora: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 7%" value="" />
 
-
+                &nbsp;
+                <br/>
+                <br/>
 				<h:outputText style="font-size: 10px"
 					value="  Inscrição Municipal: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 8%" value="" />
 
 
 
@@ -193,7 +200,6 @@
 				<br />
 
 				<center>
-
 
 
 					<p:selectManyCheckbox id="basic"
@@ -207,18 +213,23 @@
 			</p:fieldset>
 
 			<br />
+			
+			&nbsp;
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
 				legend="Endereço">
 				<h:outputText style="font-size: 10px" value="  Endereço: " />
 				<p:inputText style="width: 28%" value="" />
-
+                
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número: " />
 				<p:inputText style="width: 4%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Complemento do endereço:   " />
 				<p:inputText style="width: 18%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
 				<p:inputText style="width: 15%" value="" />
 				<br />
@@ -226,42 +237,55 @@
 				<h:outputText style="font-size: 10px" value="  Município: " />
 				<p:inputText style="width: 15%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
 				<p:inputText style="width: 2%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
 				<p:inputMask id="cep" style="width: 5%" value="" mask="99999-999" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
 				<p:inputText style="width: 10%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
 				<p:inputMask style="width: 5%" value="" mask="99999-999" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 8%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
 				<p:inputMask style="width: 2%" value="" mask="(999)" />
 				<br />
 				<br />
+				
+				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
 				<p:inputMask id="telefone" style="width: 6%" value=""
 					mask="99999-9999" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
 				<p:inputMask style="width: 2%" value="" mask="(999)" />
-
+             
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
 				<p:inputMask style="width: 6%" value="" mask="99999-9999" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
 				<p:inputText style="width: 2%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod Localidade: " />
 				<p:inputText style="width: 6%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod IBGE: " />
 				<p:inputText style="width: 5%" value="" />
 
@@ -284,28 +308,34 @@
 					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
 				</p:selectOneMenu>
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 7%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Cadastro Específico do INSS: " />
 				<p:inputText style="width: 8%" value="" />
 
-
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
 				<p:inputText style="width: 2%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
 				<p:inputText style="width: 8%" value="" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Situação PJ: " />
 				<p:inputText style="width: 9%" value="ADICIONAR COMBOBOX" />
 				<br />
 				<br />
+				
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
 				<p:inputText style="width: 8%" value="" />
 
+                &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />
 				<p:inputMask style="width: 5%" value="" mask="9999-9/99" />
 
@@ -338,11 +368,14 @@
                 allDayText: 'Todo o Dia'
             };
         </script>
+        
+                &nbsp;
 				<h:outputText style="font-size: 10px" value="  Data de criação: " />
 				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="rockup" value="#{calendarView.date2}" />
 
+                &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Data de Encerramento: " />
 				<p:calendar style="font-size:13px" maxlength="10"
@@ -353,10 +386,11 @@
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
 				legend="Openflex">
 				<center>
-					<h:outputText style="font-size: 12px" value="  Openflex 01: " />
+					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
 					<p:inputText style="width: 20%" value="" />
 
-					<h:outputText style="font-size: 12px" value="  Openflex 02: " />
+                    &nbsp;
+					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
 					<p:inputText style="width: 20%" value="" />
 				</center>
 			</p:fieldset>

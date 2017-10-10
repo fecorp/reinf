@@ -246,6 +246,7 @@
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 
+
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
@@ -276,7 +277,11 @@
 					<h:outputText style="font-size: 10px; font-weight:bold "/>
 
 
+					<h:outputText style="font-size: 10px; font-weight:bold "
+
+
 					<h:outputText style="font-size: 12px; font-weight:bold "
+
 
 					value="  VALORES  " />
 					
@@ -356,6 +361,9 @@
 				<h:outputText style="font-size: 10px" value="  PCC: " />
 
 
+				<h:outputText style="font-size: 10px" value="  PCC: " />
+
+
 				<h:outputText style="font-size: 12px" value="  PCC: " />
 				&nbsp;
 				&nbsp;
@@ -384,8 +392,9 @@
 
 				<h:outputText style="font-size: 12px" value="  PCC: " />
 
+
 				&nbsp;
->>>>>>> Mariane
+
 				&nbsp;
 				&nbsp;
 				
@@ -440,6 +449,7 @@
 
 				<h:outputText style="font-size: 12px"
 
+
 					value="  Tipo de Documento p/ Município: " />
 				<p:inputMask style="width: 5%" value="" mask="9999-9999" />
 
@@ -447,7 +457,7 @@
 
 				<p:inputText style="width: 14%" value="" />
 
->>>>>>> Mariane
+
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
 				<p:inputText style="width: 2%" value="" />
 &nbsp;
@@ -520,7 +530,24 @@
 				</p:button>
 
 
+
 			
+
+
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="Salvar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+&nbsp;
+
+				&nbsp;
+
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="  Limpar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
 			</center>
 
 			<p:fieldset legend="Específico Reinf " style="font-size:10px">
@@ -528,6 +555,9 @@
 				<center>
 
 					<h:button style="background-color:#E0EEF6; font-size:12px"/>
+
+
+					<h:button style="background-color:#E0EEF6; font-size:12px"
 
 
 					<p:button style="background-color:#E0EEF6"
@@ -541,6 +571,7 @@
 						url="\Reinf\faces\ComplementoMestreSaida.xhtml" ajax="false"/>
 
 					<h:button style="background-color:#E0EEF6"
+
 
 						value="  Complemento Entrada " icon="ui-icon-star"
 						url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false" />
@@ -558,6 +589,9 @@
 
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"/>
+
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
 
 					<p:button style="background-color:#E0EEF6"
 						value="  Complemento Totalizadores" icon="ui-icon-star"
