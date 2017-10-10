@@ -6,81 +6,82 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
+	
 	<style>
 p.ident {
 	padding-left: 10.0em
 }
-
-.ui-layout-center {
-	background-color: rgb(5, 5, 5);
-}
 </style>
 
-	<h:outputStylesheet
-		name="webjars/font-awesome/4.4.0/css/font-awesome.css" />
+	
 </h:head>
-<body>
+<h:body style="background-color:#EFF2F6;border:0px;">
+
+	<div>
+		<center>
+			<h5
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">EFD- Reinf</h5>
+		</center>
+	</div>
+	
+	<h:form>
+				<p:growl id="messages" />
+
+				<p:menubar style="font-size:12px; color: #d15">
+					<p:submenu label="Parametrização" icon="ui-icon-document">
+						<p:submenu label="New" icon="ui-icon-contact">
+							<p:menuitem value="Project" url="#" />
+							<p:menuitem value="Other" url="#" />
+						</p:submenu>
+						<p:menuitem value="Open" url="#" />
+						<p:separator />
+						<p:menuitem value="Quit" url="#" />
+					</p:submenu>
+
+					<p:submenu label="Geração" icon="ui-icon-pencil">
+						<p:menuitem value="Undo" url="#"
+							icon="ui-icon-arrowreturnthick-1-w" />
+						<p:menuitem value="Redo" url="#"
+							icon="ui-icon-arrowreturnthick-1-e" />
+					</p:submenu>
+
+					<p:submenu label="Relatórios" icon="ui-icon-help">
+						<p:menuitem value="Contents" url="#" />
+						<p:submenu label="Search" icon="ui-icon-search">
+							<p:submenu label="Text">
+								<p:menuitem value="Workspace" url="#" />
+							</p:submenu>
+							<p:menuitem value="File" url="#" />
+						</p:submenu>
+					</p:submenu>
+
+					<p:submenu label="Reinf" icon="ui-icon-gear">
+						<p:submenu label="Ajax" icon="ui-icon-refresh">
+							<p:menuitem value="Save" actionListener="#{menuView.save}"
+								icon="ui-icon-disk" update="messages" />
+							<p:menuitem value="Update" actionListener="#{menuView.update}"
+								icon="ui-icon-arrowrefresh-1-w" update="messages" />
+						</p:submenu>
+						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+								icon="ui-icon-close" update="messages" ajax="false" />
+						</p:submenu>
+					</p:submenu>
+
+					<p:menuitem value="Lotes" url="http://www.primefaces.org"
+						icon="ui-icon-close" />
+
+					<f:facet name="options">
+						<p:inputText style="margin-right:10px" placeholder="Search" />
+						<p:commandButton type="button" value="Logout"
+							icon="ui-icon-extlink" />
+					</f:facet>
+				</p:menubar>
+				</h:form>
+<br/>
 	<p:layout>
-		<p:layoutUnit position="north" height="80px"
-			style="background-color:#FFFFFFF">
-			<p:breadCrumb
-				style="background-color:#FFFFFFF; font-size:12px; height:20px">
-
-				<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
-					url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
-				<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
-					url="#" />
-			</p:breadCrumb>
-			
-			<b:navBar brand="Brand" brandHref="#">
-     <b:navbarLinks>
-         <b:navLink value="Link" href="#"></b:navLink>
-         <b:navLink value="Link" href="#"></b:navLink>
-         <b:dropMenu value="Dropdown" iconAwesome="birthday-cake">
-             <b:navLink value="Action" href="#"></b:navLink>
-						<b:navLink value="Another action" href="#"></b:navLink>
-						<b:navLink value="Something else here" href="#"></b:navLink>
-             <b:navLink></b:navLink>
-             <b:navLink header="Nav header"></b:navLink>
-             <b:navLink value="Separated link" href="#"></b:navLink>
-             <b:dropMenu value="Nested submenu" iconAwesome="birthday-cake" iconAlign="right">
-                 <b:navLink value="You can nest menus" href="#"></b:navLink>
-                 <b:dropMenu value="Nested sub-submenu">
-                     <b:navLink value="... as deep as ..." href="#"></b:navLink>
-                     <b:dropMenu value="Nested sub-sub-submenu">
-                         <b:navLink value="... you want!" href="#"></b:navLink>
-                     </b:dropMenu>
-                 </b:dropMenu>
- 
-             </b:dropMenu>
-             <b:navLink value="One more separated link" href="#"></b:navLink>
-         </b:dropMenu>
-     </b:navbarLinks>
-     <form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
-         <div class="form-group">
-             <input type="text" class="form-control" ng:placeholder="Search"/>
-         </div>
-         <button type="submit" class="btn btn-default">Submit</button>
-     </form>
-     <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
-     <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
-       <b:navbarLinks pull="right" styleClass="hidden-xs">
-         <b:navLink value="Link" href="#"></b:navLink>
-         <b:dropMenu value="Dropdown">
-             <b:navLink value="Action" href="#"></b:navLink>
-             <b:navLink value="Another action" href="#"></b:navLink>
-             <b:navLink value="Something else here" href="#"></b:navLink>
-             <b:navLink></b:navLink>
-             <b:navLink header="Nav header"></b:navLink>
-             <b:navLink value="Separated link" href="#"></b:navLink>
-             <b:navLink value="One more separated link" href="#"></b:navLink>
-         </b:dropMenu>
-     </b:navbarLinks>
- </b:navBar>
-		</p:layoutUnit>
-
+		
+		
 
 
 		<p:layoutUnit position="west" height="80px"
@@ -153,11 +154,11 @@ p.ident {
 		</p:layoutUnit>
 
 		<br />
-		<p:layoutUnit style="background-color:#F2f2f2; height:580px "
+		<p:layoutUnit style="backgroud-color:  #555; height:580px "
 			class="ui-layout-center" position="center" fullPage="true">
 
 			<center>
-				<h5>Hello Reinf! =)</h5>
+				<h5 style="color: #555">Hello Reinf! =)</h5>
 
 			</center>
 
@@ -166,5 +167,5 @@ p.ident {
 
 
 
-</body>
+</h:body>
 </html>

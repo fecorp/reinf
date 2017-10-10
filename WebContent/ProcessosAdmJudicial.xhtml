@@ -5,16 +5,22 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
+
+
+
 <h:head>
 	<style>
 p.ident {
 	padding-left: 10.0em
 }
 </style>
+
+
 </h:head>
 <body>
 	<p:layout>
-		<p:layoutUnit style="background-color:#F2f2f2" position="north">
+		<p:layoutUnit style="background-color:#F2f2f2" position="north"
+			height="250px" fullPage="true">
 			<center>
 				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
 					height="340px" />
@@ -97,21 +103,24 @@ p.ident {
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2; height:250px" fullPage="true" position="center">
-		<center><h5>Processos Administrativos Judiciais</h5></center>
+		<p:layoutUnit style="background-color:#F2f2f2; height:400px"
+			fullPage="true" position="center">
+			<center>
+				<h5>Processos Administrativos Judiciais</h5>
+			</center>
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa: *     " />
 				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial:  * " />
 				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Número do processo Adm/Jud:  * " />
 				<p:inputText style="width: 18%; background-color: #F2F2F2" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Data de Decisão/Sentença: " />
 				<p:calendar style="font-size:10px; background-color: #F2F2F2"
@@ -169,25 +178,27 @@ p.ident {
 
 				<h:outputText style="font-size: 10px" value="  Cód.Ind. Suspensão: " />
 				<p:inputText style="width: 7%" value="" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value=" Ind. Susp. Exigibilidade :   " />
 				<p:inputText style="width: 15%" value="" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Ind. Depósito Montante Integral: " />
 				<p:inputText style="width: 15%" value="" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  UF da Sessão Judiciária: " />
 				<p:inputText style="width: 2%" value="" />
-
+				&nbsp;
+				<br />
+				<br />
 
 				<h:outputText style="font-size: 10px" value="  Cód. Município: " />
 				<p:inputText style="width: 5%" value="" />
-
-				<br />
-				<br />
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Código de identificação da Vara : " />
 				<p:inputText style="width: 2%" value="" />

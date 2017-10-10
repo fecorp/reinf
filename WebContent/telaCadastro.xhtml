@@ -7,34 +7,71 @@
 
 <h:head>
 
-
-
-
 </h:head>
 
-<h:body style="background-color:#FFFFFFF;border:0px;">
+<h:body style="background-color:#EFF2F6;border:0px;">
+	<div>
+		<center>
+			<h5
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Empresa</h5>
+		</center>
+	</div>
 
+	<h:form>
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+				<p:submenu label="New" icon="ui-icon-contact">
+					<p:menuitem value="Project" url="#" />
+					<p:menuitem value="Other" url="#" />
+				</p:submenu>
+				<p:menuitem value="Open" url="#" />
+				<p:separator />
+				<p:menuitem value="Quit" url="#" />
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+				<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
+					</p:submenu>
+					<p:menuitem value="File" url="#" />
+				</p:submenu>
+			</p:submenu>
+
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+			</p:submenu>
+
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
+
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
+	<br />
 	<p:layout>
-		<p:layoutUnit position="north">
-			<center>
-				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
-					height="340px" />
-			</center>
-		</p:layoutUnit>
-
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:10px">
-
-			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
-				url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
-				url="#" />
-		</p:breadCrumb>
-
-
-
-		<p:layoutUnit position="west">
+		<p:layoutUnit position="west" style="height: 430px; widht:10px"
+			fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -43,14 +80,12 @@
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços"  url="telaServico.xhtml"
+						<p:menuitem value="Serviços" url="telaServico.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 
 					</p:submenu>
@@ -60,8 +95,8 @@
 							ajax="false" icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
+						<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
 
@@ -103,9 +138,7 @@
 
 
 		<p:layoutUnit position="center" style="height: 80px" fullPage="true">
-		
-		
-		<center><h5>Empresa</h5></center>
+
 
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Dados cadastrais ">
@@ -240,8 +273,16 @@
 				legend="Dados complementares">
 
 				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
-				<p:inputText style="width: 2%" value="COLOCAR RADIOBUTTON" />
-
+				&nsbp;
+				<p:selectOneMenu id="country"  
+					style="width:150px">
+					/>
+					<f:selectItem itemLabel="Selecione" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+				</p:selectOneMenu>
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
 				<p:inputText style="width: 8%" value="" />
 
@@ -359,7 +400,7 @@
 			</p:fieldset>
 
 		</p:layoutUnit>
-		
+
 	</p:layout>
 
 
