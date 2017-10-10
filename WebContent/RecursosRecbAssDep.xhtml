@@ -36,7 +36,7 @@
 
 
 
-		<p:layoutUnit  position = "west">
+		<p:layoutUnit position="west">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -89,8 +89,7 @@
 						<p:menuitem value="" url="http://www.primefaces.org" />
 						<p:menuitem
 							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="http://www.primefaces.org/documentation"
-							icon="ui-icon-document" />
+							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
 						<p:menuitem
 							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
 							url="http://www.primefaces.org/downloads"
@@ -131,12 +130,12 @@
 					<a> Recursos Recebidos Por Associação Desportiva </a>
 				</h5>
 			</center>
-			
+
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
 				legend=" Dados Cadastrais ">
-				
+
 				<h:outputText style="font-size: 10px"
-					value=" Código da Empresa: *     "  />
+					value=" Código da Empresa: *     " />
 				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
 	            &nbsp;		
 			
@@ -148,14 +147,25 @@
 					value="      CNPJ Empresa Repassadora Recursos:    " />
 				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
 			    
+			    &nbsp;
+			<h:outputText style="font-size: 10px"
+					value="      Número de Processos Adm/Judiciais:    " />
+				<p:inputText style="width: 15%; background-color: #FFFFFFF" value="" />
+				<br></br>
+				<br></br>
 			    
+			    &nbsp;
+			<h:outputText style="font-size: 10px"
+					value="      Código de Conta Analítica Contábil:    " />
+				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="" />
+
 			</p:fieldset>
 			<br></br>
-			
+
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
 				legend=" Valores ">
-			
-			  <h:outputText style="font-size: 10px"
+
+				<h:outputText style="font-size: 10px"
 					value="      VL Bruto Recursos Recebidos:   " />
 				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
 				&nbsp;
@@ -172,45 +182,82 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      Código Correspondente Tipo Processo:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
 				&nbsp;
 				<br></br>
-                <br></br>			   
-			   
-			   <h:outputText style="font-size: 10px"
+				<br></br>
+
+				<h:outputText style="font-size: 10px"
 					value="      Código Indicativo da Suspensão:   " />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				&nbsp;
+				
+				<h:outputText style="font-size: 10px"
+					value="      Tipo de Repasse:   " />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
+				&nbsp;
+				
+				<h:outputText style="font-size: 10px"
+					value="      VL Bruto de Repasse Efetuado:   " />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				&nbsp;
+				
+				<h:outputText style="font-size: 10px"
+					value="      VL Apuração a Sofrer Associação Desportiva:   " />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				&nbsp;
+				<br></br>
+				<br></br>
+
+				<h:outputText style="font-size: 10px"
+					value="      VL Retenção Deixou ser Feita pela Empresa:   " />
 				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
 				&nbsp;
 			
 		   </p:fieldset>
-		    <br></br>
-		   
-		   
-		   <p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
-				legend=" OpenFlex ">
-			    <center>	
-				
-			
-				<h:outputText style="font-size: 10px"
-					value="      OpenFlex 02:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      OpenFlex 01:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
-				&nbsp;
-				</center>
-				
-				
-			</p:fieldset>	
-		   
-		   <br></br>	
-           </p:layoutUnit>
-           </p:layout>
-           
+			<br></br>
 
-			
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
+				legend=" OpenFlex ">
+				<center>
+
+
+					<h:outputText style="font-size: 10px" value="      OpenFlex 01:   " />
+					<p:inputText style="width: 20%; background-color: #FFFFFFF"
+						value="" />
+					&nbsp;
+
+					<h:outputText style="font-size: 10px" value="      OpenFlex 02:   " />
+					<p:inputText style="width: 20%; background-color: #FFFFFFF"
+						value="" />
+					&nbsp;
+				</center>
+
+
+			</p:fieldset>
+
+			<br></br>
+
+			<center>
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="Salvar Dados  " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+
+
+				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
+					value="  Limpar Dados  " icon="fa fa-user-plus">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</center>
+
+		</p:layoutUnit>
+	</p:layout>
+
+
+
 
 
 </h:body>
