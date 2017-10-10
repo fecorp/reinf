@@ -1,58 +1,170 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<h:html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-<h:head></h:head> 
-<h:body> 
-<!-- Teste Git -->
-<p:breadCrumb>
+<h:head>
+	<style>
+p.ident {
+	padding-left: 10.0em
+}
 
-	<p:menuitem value="Basketball" url="#" />
-    <p:menuitem value="Parametrização" url="#" />
-    <p:menuitem value="Geração" url="#" />
-    <p:menuitem value="Relatórios" url="#" />
-   
-</p:breadCrumb>
-<br />
-<h:form>
-    <p:growl autoUpdate="true"/>
+.ui-layout-center {
+	background-color: rgb(5, 5, 5);
+}
+</style>
+
+	<h:outputStylesheet
+		name="webjars/font-awesome/4.4.0/css/font-awesome.css" />
+</h:head>
+<body>
+	<p:layout>
+		<p:layoutUnit position="north" height="80px"
+			style="background-color:#FFFFFFF">
+			<p:breadCrumb
+				style="background-color:#FFFFFFF; font-size:12px; height:20px">
+
+				<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
+					url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
+				<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
+					url="#" />
+			</p:breadCrumb>
+			
+			<b:navBar brand="Brand" brandHref="#">
+     <b:navbarLinks>
+         <b:navLink value="Link" href="#"></b:navLink>
+         <b:navLink value="Link" href="#"></b:navLink>
+         <b:dropMenu value="Dropdown" iconAwesome="birthday-cake">
+             <b:navLink value="Action" href="#"></b:navLink>
+						<b:navLink value="Another action" href="#"></b:navLink>
+						<b:navLink value="Something else here" href="#"></b:navLink>
+             <b:navLink></b:navLink>
+             <b:navLink header="Nav header"></b:navLink>
+             <b:navLink value="Separated link" href="#"></b:navLink>
+             <b:dropMenu value="Nested submenu" iconAwesome="birthday-cake" iconAlign="right">
+                 <b:navLink value="You can nest menus" href="#"></b:navLink>
+                 <b:dropMenu value="Nested sub-submenu">
+                     <b:navLink value="... as deep as ..." href="#"></b:navLink>
+                     <b:dropMenu value="Nested sub-sub-submenu">
+                         <b:navLink value="... you want!" href="#"></b:navLink>
+                     </b:dropMenu>
+                 </b:dropMenu>
  
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
-							icon="ui-icon-arrowrefresh-1-w" />
-					</p:submenu>
-					<p:submenu label="Movimentação - Nota Fiscal">
-						<p:menuitem value="Serviços Entrada"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							actionListener="#{menuView.delete}" ajax="false"
-							icon="ui-icon-close" />
+             </b:dropMenu>
+             <b:navLink value="One more separated link" href="#"></b:navLink>
+         </b:dropMenu>
+     </b:navbarLinks>
+     <form class="navbar-form navbar-left hidden-md hidden-sm hidden-xs" role="search">
+         <div class="form-group">
+             <input type="text" class="form-control" ng:placeholder="Search"/>
+         </div>
+         <button type="submit" class="btn btn-default">Submit</button>
+     </form>
+     <!-- Following line is needed for TBS 3.0.1 (panel content overflow issue) -->
+     <b:navbarLinks pull="right"><b:navLink value="    " href="#"></b:navLink></b:navbarLinks>
+       <b:navbarLinks pull="right" styleClass="hidden-xs">
+         <b:navLink value="Link" href="#"></b:navLink>
+         <b:dropMenu value="Dropdown">
+             <b:navLink value="Action" href="#"></b:navLink>
+             <b:navLink value="Another action" href="#"></b:navLink>
+             <b:navLink value="Something else here" href="#"></b:navLink>
+             <b:navLink></b:navLink>
+             <b:navLink header="Nav header"></b:navLink>
+             <b:navLink value="Separated link" href="#"></b:navLink>
+             <b:navLink value="One more separated link" href="#"></b:navLink>
+         </b:dropMenu>
+     </b:navbarLinks>
+ </b:navBar>
+		</p:layoutUnit>
 
-					</p:submenu>
-    </p:panelMenu>
-</h:form>
-</h:body> 
-</h:html>
+
+
+		<p:layoutUnit position="west" height="80px"
+			style="background-color:#FFFFFFF">
+
+			<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+				<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Empresa" url="telaCadastro.xhtml"
+						icon="ui-icon-disk" />
+					<p:menuitem value="Filial" url="telaFilial.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Cliente Fornecedor"
+						url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Software" url="TelaSoftware.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Serviços" url="telaServico.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+				</p:submenu>
+
+				<p:submenu label="Movimentação - NF" style="font-size:12px">
+					<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+
+
+				</p:submenu>
+				<p:separator />
+				<p:submenu label="Reinf" style="font-size:12px">
+
+					<p:menuitem value="Doc. Não Fiscais"
+						url="http://www.primefaces.org" icon="ui-icon-home" />
+					<p:menuitem value="Recebimento"
+						url="http://www.primefaces.org/documentation"
+						icon="ui-icon-document" />
+					<p:menuitem value="Pagamento"
+						url="http://www.primefaces.org/downloads"
+						icon="ui-icon-arrowthick-1-s" />
+					<p:menuitem value="Associação Desp"
+						url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					<p:menuitem value="Eventos Desp"
+						url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+					<p:menuitem value="CPRB" url="cprb.xhtml" icon="ui-icon-wrench" />
+					<p:menuitem value="Vendas para Agro Indústria"
+						url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+				</p:submenu>
+				<p:submenu label="Interface " style="font-size:12px">
+					<p:menuitem value="Gerenciamento de Arquivos"
+						url="http://www.primefaces.org" icon="ui-icon-home" />
+
+					<p:menuitem value="Entrada NF" url="http://www.primefaces.org"
+						icon="ui-icon-home" />
+					<p:menuitem value="Impostos Entrada"
+						url="http://www.primefaces.org" icon="ui-icon-home" />
+				</p:submenu>
+
+				<p:submenu label="Lotes" style="font-size:12px">
+					<p:menuitem value="Gerenciamento de Lotes"
+						url="http://www.primefaces.org" icon="ui-icon-home" />
+				</p:submenu>
+
+			</p:panelMenu>
+
+		</p:layoutUnit>
+
+		<br />
+		<p:layoutUnit style="background-color:#F2f2f2; height:580px "
+			class="ui-layout-center" position="center" fullPage="true">
+
+			<center>
+				<h5>Hello Reinf! =)</h5>
+
+			</center>
+
+		</p:layoutUnit>
+	</p:layout>
+
+
+
+</body>
+</html>
