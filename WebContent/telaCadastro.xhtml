@@ -119,10 +119,8 @@
  				<h:outputText style="font-size: 10px"
 					value="      Razão Social :   " />
 				<p:inputText style="width: 26%" value="" />
-                &nbsp;
-				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
-				<p:inputText style="width: 17%" value="" />
-                <br/> <br/>
+               
+               
 
                 &nbsp;
 				<p:outputLabel style="font-size: 10px"
@@ -137,7 +135,11 @@
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
 				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<br/> <br/>
 				
+				 &nbsp;
+				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
+				<p:inputText style="width: 17%" value="" />	
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
 				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
@@ -153,32 +155,30 @@
 				<p:inputText style="width: 7%" value="" />
 
                 &nbsp;
-                <br/>
-                <br/>
+ 
 				<h:outputText style="font-size: 10px"
 					value="  Inscrição Municipal: " />
 				<p:inputText style="width: 8%" value="" />
 
 
 
-				<br />
-				<br />
+				
 
 				<center>
 
 
-					<p:selectManyCheckbox id="basic"
-						value="#{checkboxView.selectedConsoles}">
-
-						<f:selectItem itemLabel="Nacional" itemValue="Xbox One" />
-						<f:selectItem itemLabel="Estrangeiro" itemValue="PS4" />
-						<f:selectItem itemLabel="Isento" itemValue="Wii U" />
-					</p:selectManyCheckbox>
-				</center>
-			</p:fieldset>
+					<h3 style="margin-top:0"></h3>
+    <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+        <p:selectOneRadio id="console" value="#{radioView.console}">
+            <f:selectItem itemLabel="Brasileiro" itemValue="Brasileiro" />
+            <f:selectItem itemLabel="Estrangeiro" itemValue="Estrangeiro" />
+            <f:selectItem itemLabel="Isento" itemValue="Isento" />
+        </p:selectOneRadio>
+    </h:panelGrid>
 
 			<br />
-			
+			</center>
+			</p:fieldset>
 			&nbsp;
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
 				legend="Endereço">
@@ -261,8 +261,21 @@
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
 				legend="Dados complementares">
 
+				
 				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
-				<p:inputText style="width: 2%" value="COLOCAR RADIOBUTTON" />
+    <p:growl id="msgs" showDetail="true" />
+ 
+   
+            
+            <p:selectOneMenu id="country" value="#{dropdownView.country}" style="width:150px">
+                <p:ajax listener="#{dropdownView.onCountryChange}"  />
+                <f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
+                <f:selectItem itemLabel="Sim" itemValue="" noSelectionOption="false" />
+                <f:selectItem itemLabel="Não" itemValue="" noSelectionOption="false" />
+                <f:selectItems value="#{dropdownView.countries}" />
+            </p:selectOneMenu>
+   
+
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
@@ -284,7 +297,24 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Situação PJ: " />
-				<p:inputText style="width: 9%" value="ADICIONAR COMBOBOX" />
+				
+				 <p:growl id="msg" showDetail="true" />
+ 
+   
+            
+            <p:selectOneMenu id="PJ" value="#{dropdownView.country}" style="width:150px">
+                <p:ajax listener="#{dropdownView.onCountryChange}"  />
+                
+                <f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
+                <f:selectItem itemLabel="Situação" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Normal" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Extinção" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Fusão" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Cisão" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Incorporação" itemValue="" noSelectionOption="true" />
+                <f:selectItems value="#{dropdownView.countries}" />
+            </p:selectOneMenu>
+				
 				<br />
 				<br />
 				
@@ -391,6 +421,11 @@
 				</center>
 			</p:fieldset>
 
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Sair " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+		
 		</p:layoutUnit>
 		
 	</p:layout>

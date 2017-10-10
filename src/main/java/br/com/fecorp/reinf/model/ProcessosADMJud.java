@@ -11,8 +11,8 @@ public class ProcessosADMJud {
 	public String indiSuspeExigi;
 	public String indiDepMonteIntegral;
 	public String idUniFederacao_UFJud;
-	public double codigoMunicipio;
-	public String codigoIdVara;
+	public double codMunicipio;
+	public String codIdVara;
 	public double indiAutoriaJud;
 	public String openFlex01;
 	public String openFlex02;
@@ -71,17 +71,17 @@ public class ProcessosADMJud {
 	public void setIdUniFederacao_UFJud(String idUniFederacao_UFJud) {
 		this.idUniFederacao_UFJud = idUniFederacao_UFJud;
 	}
-	public double getCodigoMunicipio() {
-		return codigoMunicipio;
+	public double getCodMunicipio() {
+		return codMunicipio;
 	}
-	public void setCodigoMunicipio(double codigoMunicipio) {
-		this.codigoMunicipio = codigoMunicipio;
+	public void setCodigoMunicipio(double codMunicipio) {
+		this.codMunicipio = codMunicipio;
 	}
-	public String getCodigoIdVara() {
-		return codigoIdVara;
+	public String getCodIdVara() {
+		return codIdVara;
 	}
-	public void setCodigoIdVara(String codigoIdVara) {
-		this.codigoIdVara = codigoIdVara;
+	public void setCodigoIdVara(String codIdVara) {
+		this.codIdVara = codIdVara;
 	}
 	public double getIndiAutoriaJud() {
 		return indiAutoriaJud;
