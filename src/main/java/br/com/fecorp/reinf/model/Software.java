@@ -16,7 +16,7 @@ public class Software {
 		@Id
 		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Software")
 
-
+		
 		private String razaoSocial;
 		private String nomeContato;
 		private String filial;
@@ -37,7 +37,6 @@ public class Software {
 		public Serializable getId() {
 			// TODO Auto-generated method stub
 			return null;
-
 
 		}
 

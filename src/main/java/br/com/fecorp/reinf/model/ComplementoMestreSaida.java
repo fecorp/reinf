@@ -16,11 +16,6 @@ public class ComplementoMestreSaida {
 	public class ComplementoMestreSaida_ implements Serializable, EntidadeBase {
 		private static final long serialVersionUID = 1L;
 
-		public Serializable getId() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
 		@Id
 		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ComplementoMestreSaida")
 		
@@ -272,6 +267,11 @@ public class ComplementoMestreSaida {
 		}
 		public long getSerialversionuid() {
 			return serialVersionUID;
+		}
+		
+		public Serializable getId() {
+			// TODO Auto-generated method stub
+			return null;
 		}
 		
 	}	
