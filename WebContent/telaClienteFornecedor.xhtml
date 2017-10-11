@@ -20,70 +20,67 @@
 				Fornecedores</h5>
 		</center>
 	</div>
-	
+
 	<h:form>
-				<p:growl id="messages" />
+		<p:growl id="messages" />
 
-				<p:menubar style="font-size:12px; color: #d15">
-					<p:submenu label="Parametrização" icon="ui-icon-document">
-						<p:submenu label="New" icon="ui-icon-contact">
-							<p:menuitem value="Project" url="#" />
-							<p:menuitem value="Other" url="#" />
-						</p:submenu>
-						<p:menuitem value="Open" url="#" />
-						<p:separator />
-						<p:menuitem value="Quit" url="#" />
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+				<p:submenu label="New" icon="ui-icon-contact">
+					<p:menuitem value="Project" url="#" />
+					<p:menuitem value="Other" url="#" />
+				</p:submenu>
+				<p:menuitem value="Open" url="#" />
+				<p:separator />
+				<p:menuitem value="Quit" url="#" />
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+				<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
 					</p:submenu>
+					<p:menuitem value="File" url="#" />
+				</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Undo" url="#"
-							icon="ui-icon-arrowreturnthick-1-w" />
-						<p:menuitem value="Redo" url="#"
-							icon="ui-icon-arrowreturnthick-1-e" />
-					</p:submenu>
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Relatórios" icon="ui-icon-help">
-						<p:menuitem value="Contents" url="#" />
-						<p:submenu label="Search" icon="ui-icon-search">
-							<p:submenu label="Text">
-								<p:menuitem value="Workspace" url="#" />
-							</p:submenu>
-							<p:menuitem value="File" url="#" />
-						</p:submenu>
-					</p:submenu>
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
-
-					<p:menuitem value="Lotes" url="http://www.primefaces.org"
-						icon="ui-icon-close" />
-
-					<f:facet name="options">
-						<p:inputText style="margin-right:10px" placeholder="Search" />
-						<p:commandButton type="button" value="Logout"
-							icon="ui-icon-extlink" />
-					</f:facet>
-				</p:menubar>
-				</h:form>
-<br/>
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
+	<br />
 
 	<p:layout>
-		
-		
 
 
 
-		<p:layoutUnit style="background-color:#F2F2F2" position="west">
+
+
+		<p:layoutUnit position="west">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -97,7 +94,7 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+						<p:menuitem value="Serviços" url="Servicos.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
@@ -117,26 +114,34 @@
 					<p:separator />
 					<p:submenu label="Reinf" style="font-size:12px">
 
-						<p:menuitem value="Doc. Não Fiscais"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
-						<p:menuitem value="Recebimento"
-							url="http://www.primefaces.org/documentation"
-							icon="ui-icon-document" />
-						<p:menuitem value="Pagamento"
-							url="http://www.primefaces.org/downloads"
-							icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem value="Associação Desp"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="Eventos Desp"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="http://www.primefaces.org/support"
-							icon="ui-icon-wrench" />
-						<p:menuitem value="Vendas para Agro Indústria"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+						<p:menuitem
+							value="R-1070 Tabela de Processos Administrativos - Judiciais"
+							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+
+						<p:menuitem value="" url="http://www.primefaces.org" />
+						<p:menuitem
+							value="R-2030 Recursos Recebidos Por Associação Desportiva"
+							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+						<p:menuitem
+							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="R-2050 Comercialização Agroindústria"
+							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem
+							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+							url="cprb.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+							url="dirf.xhtml" icon="ui-icon-wrench" />
+
+
+						<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
+							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+
 					</p:submenu>
 					<p:submenu label="Interface " style="font-size:12px">
-						<p:menuitem value="Gerenciamento de Arquivos"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
+						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
+							icon="ui-icon-home" />
+
 					</p:submenu>
 
 					<p:submenu label="Lotes" style="font-size:12px">
@@ -149,8 +154,7 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit position="center"
-			style="height:350px; background-color:#F4F0F0" fullPage="true">
+		<p:layoutUnit position="center" style="height:350px" fullPage="true">
 
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
@@ -266,8 +270,8 @@
 				<p:inputMask style="width: 3%" value="" mask="(999)" />
 
 
-                <br/>
-	            <br/>
+				<br />
+				<br />
 	            &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
 				<p:inputMask id="telefone" style="width: 6%" value=""
@@ -372,7 +376,7 @@
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
 					<p:inputText style="width: 20%" value="" />
 
-                    &nbsp;
+					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
 					<p:inputText style="width: 20%" value="" />
 				</center>
@@ -385,33 +389,44 @@
 
 
 					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="fa-backward" type="button">
+						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
 					</p:commandButton>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Excluir" icon="fa-backward">
+						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
+
+					<br />Cadastros <br />
+
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
 
 					<br />
 
