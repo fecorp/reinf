@@ -29,50 +29,31 @@ p.ident {
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
-			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:submenu label="New" icon="ui-icon-contact">
-					<p:menuitem value="Project" url="#" />
-					<p:menuitem value="Other" url="#" />
+				<p:submenu label="Parametrização" icon="ui-icon-contact">
+					<p:menuitem value="Tela de Parametrização" url="Parametrizacao.xhtml"
+						icon="ui-icon-folder-open" />
 				</p:submenu>
-				<p:menuitem value="Open" url="#" />
-				<p:separator />
-				<p:menuitem value="Quit" url="#" />
-			</p:submenu>
+		
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="Geracao.xhtml"
+					icon="ui-icon-folder-open" />
+
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
-				<p:menuitem value="Contents" url="#" />
-				<p:submenu label="Search" icon="ui-icon-search">
-					<p:submenu label="Text">
-						<p:menuitem value="Workspace" url="#" />
-					</p:submenu>
-					<p:menuitem value="File" url="#" />
-				</p:submenu>
+				<p:menuitem value="Tela de Relatórios" url="#" icon="ui-icon-folder-open" />
 			</p:submenu>
 
 			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
-			</p:submenu>
+							</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
 				icon="ui-icon-close" />
 
 			<f:facet name="options">
-				<p:inputText style="margin-right:10px" placeholder="Search" />
-				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
+				<p:commandButton type="button" value="Sair do Sistema" icon="ui-icon-extlink" />
 			</f:facet>
 		</p:menubar>
 	</h:form>
@@ -158,20 +139,7 @@ p.ident {
 		<p:layoutUnit style="backgroud-color:  #555; height:580px "
 			class="ui-layout-center" position="center" fullPage="true">
 
-			<center>
-				<h5 style="color: #555">Hello Reinf! =)</h5>
-			&nbsp;
-				<h:outputText style="font-size:10px" value="Retificação: " />
-				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
-					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
-					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
-					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
-					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
-				</p:selectOneMenu>
-
-
-			</center>
-
+			
 		</p:layoutUnit>
 	</p:layout>
 

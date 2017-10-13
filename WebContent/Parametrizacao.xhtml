@@ -30,15 +30,15 @@ p.ident {
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:menuitem value="Hello Reinf" icon="ui-icon-document"
+				<p:menuitem value="Tela de Parametrização" icon="ui-icon-document"
 					url="Parametrizacao.xhtml" />
 
 
 			</p:submenu>
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="Geracao.xhtml"
+					icon="ui-icon-document" />
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -152,12 +152,12 @@ p.ident {
 		</p:layoutUnit>
 
 		<br />
-		<p:layoutUnit style="backgroud-color:  #555; height:580px "
+		<p:layoutUnit style="backgroud-color:  #555; height:1200px "
 			class="ui-layout-center" position="center" fullPage="true">
 
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="R-1000 - Informações do Contribuinte ">
+				legend="Dados Iniciais">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
 				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
@@ -178,14 +178,16 @@ p.ident {
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="reggaeup" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
+			</p:fieldset>
+			<br/>
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+				legend="Questionário">
 
-
-			
 				<br />
-				<br/>
+				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Identificação do ambiente :      " />
+					value=" I -Identificação do ambiente :      " />
 				<p:selectOneRadio id="identificacao">
 					<f:selectItem itemLabel=" Produção" itemValue="producao" />
 					&nbsp;
@@ -199,7 +201,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Processo de Emissão do Evento :      " />
+					value=" II - Processo de Emissão do Evento :      " />
 				<p:selectOneRadio id="emissao">
 					<f:selectItem itemLabel=" Aplicativo do Contribuinte "
 						itemValue="contribuinte" />
@@ -212,14 +214,14 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Versão do processo de emissão do evento :      " />
+					value=" III - Versão do processo de emissão do evento :      " />
 				<p:inputText value="" style="font-size:10px;" />
 
 				<br />
-
+				<br/>
 				<br />
 				<h:outputText style="font-size: 10px"
-					value=" ECD - Escrituração Contábil Digital :      " />
+					value=" IV - ECD - Escrituração Contábil Digital :      " />
 				<p:selectOneRadio id="ecd">
 					<f:selectItem itemLabel=" Não Faz" itemValue="nfaz" />
 					<f:selectItem itemLabel=" Empresa entrega a ECD"
@@ -231,7 +233,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Desoneração da folha pela CPRB  : " />
+					value=" V - Desoneração da folha pela CPRB  : " />
 				<p:selectOneRadio id="desoneracao">
 					<f:selectItem itemLabel=" Não Aplicável" itemValue="naplicavel" />
 					<f:selectItem
@@ -243,7 +245,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Existência de acordo internacional para isenção de multa :      " />
+					value=" VI - Existência de acordo internacional para isenção de multa :      " />
 				<p:selectOneRadio id="acordo">
 					<f:selectItem itemLabel=" Sem Acordo" itemValue="sem" />
 					<f:selectItem itemLabel=" Com Acordo" itemValue="com" />
@@ -251,22 +253,23 @@ p.ident {
 				<br />
 				<br />
 
-				<h:outputText style="font-size: 10px" value=" EFR :      " />
+				<h:outputText style="font-size: 10px" value=" VII - Ente Federativo Responsável ?      " />
 				<p:selectOneRadio id="efr">
-					<f:selectItem itemLabel=" É EFR" itemValue="e" />
-					<f:selectItem itemLabel=" Não é EFR" itemValue="naoe" />
+					<f:selectItem itemLabel=" Sim " itemValue="e" />
+					<f:selectItem itemLabel=" Não" itemValue="naoe" />
 				</p:selectOneRadio>
 				<br />
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" CNPJ do Ente Federativo Responsável - EFR :      " />
+					value=" VIII - CNPJ do Ente Federativo Responsável - EFR :      " />
 				<p:inputMask value="" style="font-size:10px;"
 					mask="99.999.999/9999-99" />
 				<br />
 				<br />
+				<br/>
 				<h:outputText style="font-size: 10px"
-					value=" Prestação de Serviços em Obra de Construção Civil :      " />
+					value=" IX - Prestação de Serviços em Obra de Construção Civil :      " />
 				<p:selectOneRadio id="construcao">
 					<f:selectItem itemLabel=" Não está sujeita a matrícula de obra"
 						itemValue="naosujeito" />
@@ -280,7 +283,7 @@ p.ident {
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px"
-					value=" Prestador é contribuinte da Contribuição Previdenciária sobre a Receita Bruta (CPRB) :      " />
+					value=" X - Prestador é contribuinte da Contribuição Previdenciária sobre a Receita Bruta (CPRB) :      " />
 				<p:selectOneRadio id="prestadorcprb">
 					<f:selectItem itemLabel="  Não É   -   Retenção 11%"
 						itemValue="onze" />
@@ -290,7 +293,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Tipo de Inscrição :      " />
+					value=" XII - Tipo de Inscrição :      " />
 				<p:selectOneRadio id="tipoinscricao">
 					<f:selectItem itemLabel="  CNPJ" itemValue="cnpj" />
 					<f:selectItem itemLabel="  CNO " itemValue="cno" />
@@ -300,7 +303,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Contratou serviços sujeitos à retenção de contribuição previdenciária?      " />
+					value=" XIII - Contratou serviços sujeitos à retenção de contribuição previdenciária?      " />
 				<p:selectOneRadio id="pergunta1">
 					<f:selectItem itemLabel="  Sim" itemValue="sim" />
 					<f:selectItem itemLabel="  Não " itemValue="nao" />
@@ -310,7 +313,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" A associação desportiva que mantém equipe de futebol profissional, possui informações sobre recursos recebidos?     " />
+					value=" XIV - A associação desportiva que mantém equipe de futebol profissional, possui informações sobre recursos recebidos?     " />
 				<p:selectOneRadio id="pergunta2">
 					<f:selectItem itemLabel="  Sim" itemValue="sim" />
 					<f:selectItem itemLabel="  Não " itemValue="nao" />
@@ -320,7 +323,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" O produtor rural PJ/Agroindústria possui informações de comercialização de produção?" />
+					value=" XV - O produtor rural PJ/Agroindústria possui informações de comercialização de produção?" />
 				<p:selectOneRadio id="pergunta3">
 					<f:selectItem itemLabel="  Sim" itemValue="sim" />
 					<f:selectItem itemLabel="  Não " itemValue="nao" />
@@ -330,7 +333,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value="  Possui informações sobre a apuração da Contribuição Previdenciária sobre a Receita Bruta? " />
+					value="  XVI - Possui informações sobre a apuração da Contribuição Previdenciária sobre a Receita Bruta? " />
 				<p:selectOneRadio id="pergunta4">
 					<f:selectItem itemLabel="  Sim" itemValue="sim" />
 					<f:selectItem itemLabel="  Não " itemValue="nao" />
@@ -340,7 +343,7 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Possui informações de pagamentos diversos no período de apuração? " />
+					value=" XVII - Possui informações de pagamentos diversos no período de apuração? " />
 				<p:selectOneRadio id="pergunta5">
 					<f:selectItem itemLabel="  Sim" itemValue="sim" />
 					<f:selectItem itemLabel="  Não " itemValue="nao" />
@@ -350,28 +353,65 @@ p.ident {
 				<br />
 
 				<h:outputText style="font-size: 10px"
-					value=" Informar a primeira competência a partir da qual não houve movimento, cuja situação perdura até a competência atual:  " />
-				<br/>
-				<br/>
-				<p:inputText value="" style="font-size:15px"  />
-				<br/>
-				<br/>
-				<h:outputText style="font-size: 10px"
-					value=" Tipo Evento:  " />
-				<br/>
-				<br/>
-				<p:inputText value="" style="font-size:15px"  />
-				<br/>
-				<br/>
-				<h:outputText style="font-size: 10px"
-					value=" Número do recibo do evento que será excluido:  " />
-				<br/>
-				<br/>
-				<p:inputText value="" style="font-size:15px"  />
+					value=" XVIII - Informar a primeira competência a partir da qual não houve movimento, cuja situação perdura até a competência atual:  " />
+				<br />
+				<br />
+				<p:inputText value="" style="font-size:15px" />
+				<br />
+				<br />
+				
+				<br />
+				<br />
+				<br />
+				<br />
+				<center>
 
+
+					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
+					</p:commandButton>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<br /> <br />
+
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
+
+					<br />
+
+				</center>
 
 			</p:fieldset>
-
 		</p:layoutUnit>
 	</p:layout>
 
