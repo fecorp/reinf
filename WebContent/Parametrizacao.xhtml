@@ -30,9 +30,10 @@ p.ident {
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-document">
-			<p:menuitem value="Hello Reinf" icon="ui-icon-document" url="Parametrizacao.xhtml"/>
-					
-				
+				<p:menuitem value="Hello Reinf" icon="ui-icon-document"
+					url="Parametrizacao.xhtml" />
+
+
 			</p:submenu>
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
@@ -45,8 +46,8 @@ p.ident {
 				<p:submenu label="Search" icon="ui-icon-search">
 					<p:submenu label="Text">
 						<p:menuitem value="Workspace" url="#" />
+						<p:menuitem value="File" url="#" />
 					</p:submenu>
-					<p:menuitem value="File" url="#" />
 				</p:submenu>
 			</p:submenu>
 
@@ -114,8 +115,7 @@ p.ident {
 
 					<p:menuitem
 						value="R-1070 Tabela de Processos Administrativos - Judiciais"
-						url="ProcessosAdmJudicial.xhtml"
-						icon="ui-icon-document" />
+						url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
 
 					<p:menuitem value="" url="http://www.primefaces.org" />
 					<p:menuitem
@@ -134,12 +134,11 @@ p.ident {
 
 
 					<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
-						url="ReceitasEspetaculoDesp.xhtml"
-						icon="ui-icon-document" />
+						url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
 				</p:submenu>
 				<p:submenu label="Interface " style="font-size:12px">
-					<p:menuitem value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-home" />
+					<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
+						icon="ui-icon-home" />
 
 				</p:submenu>
 
@@ -156,10 +155,222 @@ p.ident {
 		<p:layoutUnit style="backgroud-color:  #555; height:580px "
 			class="ui-layout-center" position="center" fullPage="true">
 
-			<center>
-				<h5 style="color: #555">Hello Reinf! =)</h5>
 
-			</center>
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+				legend="R-1000 - Informações do Contribuinte ">
+
+				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
+
+                &nbsp;
+				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
+				 &nbsp;
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de Início : * " />  &nbsp;
+				<p:calendar style="font-size:10px; background-color: #F2F2F2"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
+					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+					  &nbsp;
+					<p:outputLabel style="font-size: 10px"
+					value="    Data de atualização: " />  &nbsp;
+				<p:calendar style="font-size:10px; background-color: #FFFFFFFF"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+					id="reggaeup" value="#{calendarView.date2}" locale="pt"
+					pattern="dd/MM/yyyy" />
+
+
+			
+				<br />
+				<br/>
+
+				<h:outputText style="font-size: 10px"
+					value=" Identificação do ambiente :      " />
+				<p:selectOneRadio id="identificacao">
+					<f:selectItem itemLabel=" Produção" itemValue="producao" />
+					&nbsp;
+					<f:selectItem itemLabel=" Produção restrita - Dados Reais"
+						itemValue="producao1" />
+					&nbsp;
+					<f:selectItem itemLabel=" Produção restrita - Dados Fictícios"
+						itemValue="producao2" />
+				</p:selectOneRadio>
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Processo de Emissão do Evento :      " />
+				<p:selectOneRadio id="emissao">
+					<f:selectItem itemLabel=" Aplicativo do Contribuinte "
+						itemValue="contribuinte" />
+					<f:selectItem itemLabel=" Aplicativo Governamental"
+						itemValue="governamental" />
+
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Versão do processo de emissão do evento :      " />
+				<p:inputText value="" style="font-size:10px;" />
+
+				<br />
+
+				<br />
+				<h:outputText style="font-size: 10px"
+					value=" ECD - Escrituração Contábil Digital :      " />
+				<p:selectOneRadio id="ecd">
+					<f:selectItem itemLabel=" Não Faz" itemValue="nfaz" />
+					<f:selectItem itemLabel=" Empresa entrega a ECD"
+						itemValue="entrega" />
+
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Desoneração da folha pela CPRB  : " />
+				<p:selectOneRadio id="desoneracao">
+					<f:selectItem itemLabel=" Não Aplicável" itemValue="naplicavel" />
+					<f:selectItem
+						itemLabel=" Empresa enquadrada nos termos da Lei 12.546/2011 e alterações."
+						itemValue="enquadrada" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Existência de acordo internacional para isenção de multa :      " />
+				<p:selectOneRadio id="acordo">
+					<f:selectItem itemLabel=" Sem Acordo" itemValue="sem" />
+					<f:selectItem itemLabel=" Com Acordo" itemValue="com" />
+				</p:selectOneRadio>
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px" value=" EFR :      " />
+				<p:selectOneRadio id="efr">
+					<f:selectItem itemLabel=" É EFR" itemValue="e" />
+					<f:selectItem itemLabel=" Não é EFR" itemValue="naoe" />
+				</p:selectOneRadio>
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" CNPJ do Ente Federativo Responsável - EFR :      " />
+				<p:inputMask value="" style="font-size:10px;"
+					mask="99.999.999/9999-99" />
+				<br />
+				<br />
+				<h:outputText style="font-size: 10px"
+					value=" Prestação de Serviços em Obra de Construção Civil :      " />
+				<p:selectOneRadio id="construcao">
+					<f:selectItem itemLabel=" Não está sujeita a matrícula de obra"
+						itemValue="naosujeito" />
+					<f:selectItem
+						itemLabel=" Obra de Construção Civil - Empreitada Total"
+						itemValue="empreitadatotal" />
+					<f:selectItem
+						itemLabel=" Obra de Construção Civil - Empreitada Parcial."
+						itemValue="empreitadaparcial" />
+				</p:selectOneRadio>
+				<br />
+				<br />
+				<h:outputText style="font-size: 10px"
+					value=" Prestador é contribuinte da Contribuição Previdenciária sobre a Receita Bruta (CPRB) :      " />
+				<p:selectOneRadio id="prestadorcprb">
+					<f:selectItem itemLabel="  Não É   -   Retenção 11%"
+						itemValue="onze" />
+					<f:selectItem itemLabel="  É   -   Retenção 3,5%" itemValue="tres" />
+				</p:selectOneRadio>
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Tipo de Inscrição :      " />
+				<p:selectOneRadio id="tipoinscricao">
+					<f:selectItem itemLabel="  CNPJ" itemValue="cnpj" />
+					<f:selectItem itemLabel="  CNO " itemValue="cno" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Contratou serviços sujeitos à retenção de contribuição previdenciária?      " />
+				<p:selectOneRadio id="pergunta1">
+					<f:selectItem itemLabel="  Sim" itemValue="sim" />
+					<f:selectItem itemLabel="  Não " itemValue="nao" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" A associação desportiva que mantém equipe de futebol profissional, possui informações sobre recursos recebidos?     " />
+				<p:selectOneRadio id="pergunta2">
+					<f:selectItem itemLabel="  Sim" itemValue="sim" />
+					<f:selectItem itemLabel="  Não " itemValue="nao" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" O produtor rural PJ/Agroindústria possui informações de comercialização de produção?" />
+				<p:selectOneRadio id="pergunta3">
+					<f:selectItem itemLabel="  Sim" itemValue="sim" />
+					<f:selectItem itemLabel="  Não " itemValue="nao" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value="  Possui informações sobre a apuração da Contribuição Previdenciária sobre a Receita Bruta? " />
+				<p:selectOneRadio id="pergunta4">
+					<f:selectItem itemLabel="  Sim" itemValue="sim" />
+					<f:selectItem itemLabel="  Não " itemValue="nao" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Possui informações de pagamentos diversos no período de apuração? " />
+				<p:selectOneRadio id="pergunta5">
+					<f:selectItem itemLabel="  Sim" itemValue="sim" />
+					<f:selectItem itemLabel="  Não " itemValue="nao" />
+				</p:selectOneRadio>
+
+				<br />
+				<br />
+
+				<h:outputText style="font-size: 10px"
+					value=" Informar a primeira competência a partir da qual não houve movimento, cuja situação perdura até a competência atual:  " />
+				<br/>
+				<br/>
+				<p:inputText value="" style="font-size:15px"  />
+				<br/>
+				<br/>
+				<h:outputText style="font-size: 10px"
+					value=" Tipo Evento:  " />
+				<br/>
+				<br/>
+				<p:inputText value="" style="font-size:15px"  />
+				<br/>
+				<br/>
+				<h:outputText style="font-size: 10px"
+					value=" Número do recibo do evento que será excluido:  " />
+				<br/>
+				<br/>
+				<p:inputText value="" style="font-size:15px"  />
+
+
+			</p:fieldset>
 
 		</p:layoutUnit>
 	</p:layout>

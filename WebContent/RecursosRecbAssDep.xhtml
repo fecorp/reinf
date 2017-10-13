@@ -186,6 +186,16 @@
 			<h:outputText style="font-size: 10px"
 					value="      Código de Conta Analítica Contábil:    " />
 				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="" />
+				&nbsp;
+				<h:outputText style="font-size:10px" value="Retificação: " />
+				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
+					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
+					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
+					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
+					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
+				</p:selectOneMenu>
+
+				
 
 			</p:fieldset>
 			<br></br>

@@ -210,7 +210,14 @@
 					<h:outputText style="font-size: 10px"
 					value="     Número Processo Adm/Judicial :    " />
 				<p:inputText style="width: 14%; background-color: #FFFFFFF" value="" />
-			    &nbsp;
+			   <br/> <br/>
+				<h:outputText style="font-size:10px" value="Retificação: " />
+				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
+					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
+					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
+					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
+					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
+				</p:selectOneMenu>
               
 			</p:fieldset>
 			<br></br>
