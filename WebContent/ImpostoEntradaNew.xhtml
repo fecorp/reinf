@@ -118,23 +118,23 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value=" Código da empresa: *     " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText id="codEmpresa" style="width: 8%; background-color: #F2F2F2" value="#{ImpostoEntrada.codEmpresa}" />
 				&nbsp;
 
 
 				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="#{ImpostoEntrada.codFilial}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="   Número da NF:      " />
-				<p:inputText style="width: 10%; background-color: #F2F2F2 " value="" />
+				<p:inputText style="width: 10%; background-color: #F2F2F2 " value="#{ImpostoEntrada.numNotaFiscal}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value=" 	Série da Nota Fiscal: " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ImpostoEntrada.serieNotaFiscal}" />
 				&nbsp;
 			
 
@@ -175,16 +175,16 @@ p.ident {
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{ImpostoEntrada.categoriaPfPj}" />
 <br/>
 <br/>
 				<h:outputText style="font-size: 10px" value=" Cod. PF/PJ: * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{ImpostoEntrada.codigoPfPj}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="    Sequência de itens: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 4%" value="#{ImpostoEntrada.sequenciaItens}" />
 
 
 			</p:fieldset>
@@ -195,22 +195,22 @@ p.ident {
 <center>
 				<h:outputText style="font-size: 10px"
 					value="  VL Serviço :   " />
-				<p:inputMask style="width: 6%" value="" />
+				<p:inputMask style="width: 6%" value="#{ImpostoEntrada.valorServico}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Material Aplicado: " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorMaterialApp}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Desconto:   " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorDesconto}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Documento: " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorTotalDocumento}" />
 &nbsp;		
 				<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorIssRetido}" />
 					</center>
 				
 				<br />

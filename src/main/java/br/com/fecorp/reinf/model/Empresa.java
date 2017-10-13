@@ -1,18 +1,26 @@
 package br.com.fecorp.reinf.model;
 
-import java.io.Serializable;
 
+
+
+import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
-import br.com.fecorp.reinf.DAO.EmpresaDAO;
-import br.com.fecorp.reinf.model.Empresa;
+
+@ManagedBean(name = "Empresa")
+@ViewScoped
 
 @Entity
 public class Empresa implements Serializable, EntidadeBase {
+	
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Empresa")
@@ -60,6 +68,7 @@ public class Empresa implements Serializable, EntidadeBase {
 	private String dataEncerramento;
 	private String openflex01;
 	private String openflex02;
+	private double numInscriCno;
 	
 	public String getEmpresa() {
 		return empresa;
@@ -84,6 +93,12 @@ public class Empresa implements Serializable, EntidadeBase {
 	}
 	public void setCategoriaPFPJ(String categoriaPFPJ) {
 		this.categoriaPFPJ = categoriaPFPJ;
+	}
+	public double getNumInscriCno() {
+		return numInscriCno;
+	}
+	public void setNumInscriCno(double numInscriCno) {
+		this.numInscriCno = numInscriCno;
 	}
 	public String getCodigoPFPJ() {
 		return codigoPFPJ;

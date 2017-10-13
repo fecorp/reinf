@@ -2,6 +2,8 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,14 +11,19 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class ClientesFornecedores {
-	
-	@Entity
-	public class ClienteFornecedore implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@ManagedBean(name = "Clientes Fornecedores")
+@ViewScoped
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Clientes Fornecedores")
+@Entity
+public class ClientesFornecedores implements Serializable, EntidadeBase {
+	private static final long serialVersionUID = 1L;
+	
+	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Clientes Fornecedores")
+		
+		
 	
 	private String empresa;
 	private String filial;
@@ -554,7 +561,7 @@ public class ClientesFornecedores {
 
 
 
-	public long getSerialversionuid() {
+	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
@@ -565,6 +572,6 @@ public class ClientesFornecedores {
 		return null;
 	}
   }	
-}	
+	
 
 

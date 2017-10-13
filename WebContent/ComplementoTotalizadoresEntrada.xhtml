@@ -111,19 +111,19 @@ p.ident {
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Cód. Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.codEmpresa}" />
 
 				<h:outputText style="font-size: 10px" value="      Cód. Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.codFilial}" />
 
 
 				<h:outputText style="font-size: 10px"
 					value="      Série da Nota Fiscal:  * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.serieNotaFiscal}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Número da Nota Fiscal:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.numNotaFiscal}" />
 
 				<h:outputText style="font-size: 10px"
 					value="     Data de Emissão :  * " />
@@ -132,15 +132,15 @@ p.ident {
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 
 				<h:outputText style="font-size: 10px" value="      PF/PJ:  * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.categoriaPfPj}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="      Cód. PF/PJ:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{ComplementoTotalizadorEntrada.codigoPfPj}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Sequência de Itens:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 2%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.sequenciaItens}" />
 
 
 
@@ -151,39 +151,39 @@ p.ident {
 				legend="Valores ">
 				<h:outputText style="font-size: 10px"
 					value="     Valor total do Documento:  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorTotalDoc}" />
 				&nsbp;
 				&nsbp;
 				&nsbp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor do Serviço:   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorServicos}" />
 
 				<h:outputText style="font-size: 10px"
 					value="     Valor do Material Aplicado :   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorMaterialApply}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor  do desconto :   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorDesconto}" />
 			
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor da Retenção Principal :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorRetencaoPrincipal}" />
 	<br />
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="     Valor da Retenção Adicional :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.valorRetencaoAdicional}" />
 				<h:outputText style="font-size: 10px"
 					value="      Soma das Retenções :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.somaRetencoes}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Soma adicional :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorEntrada.somaAdicional}" />
 
 			</p:fieldset>
 
@@ -192,10 +192,10 @@ p.ident {
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorEntrada.openFlex01}" />
 
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorEntrada.openFlex02}" />
 
 				</center>
 			</p:fieldset>

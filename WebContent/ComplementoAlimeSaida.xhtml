@@ -118,21 +118,21 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value=" Cód. Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.codEmpresa}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Cód. Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.codFilial}" />
 
 
 
 				<h:outputText style="font-size: 10px"
 					value="      Série da Nota Fiscal:  * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.serieNotaFiscal}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Número da Nota Fiscal:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.numNotaFiscal}" />
 
 				<h:outputText style="font-size: 10px"
 					value="     Data de Emissão :  * " />
@@ -143,50 +143,50 @@ p.ident {
  	<br/>
 				<h:outputText style="font-size: 10px"
 					value="      PF/PJ:  * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.categoriaPfPj}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Cód PF/PJ:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.codPfPj}" />
 				
 				<h:outputText style="font-size: 10px"
 					value="      Cód Ativ. Econômica:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.codAtividadeEconomica}" />
 				
 				<h:outputText style="font-size: 10px"
 					value="      Custo de Alim. Fornecida:  * " />
-				<p:inputText style="width: 12%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="{#{ComplementoAlimeSaida.custoAlimeForncContratada}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Custo de Forn. Transp. Fornecida:  * " />
-				<p:inputText style="width: 12%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="{#{ComplementoAlimeSaida.custoForncTransp}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="      VL Retenção Serviço SubContratados :  * " />
-				<p:inputText style="width: 12%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="{#{ComplementoAlimeSaida.valorRetencaoServicos}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Aposent.(15 anos):  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.contribuicao01}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Aposent(20 anos):  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.contribuicao02}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Aposent(25 anos):  * " />
 				
-				<p:inputText style="width: 11%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 11%; background-color: #FFFFFFF" value="{#{ComplementoAlimeSaida.contribuicao03}" />
 				<br />
 				<br />
 							<h:outputText style="font-size: 10px"
 					value="      Retenção em Condições Especiais:  * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.retencaoCondEspeciais}" />
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Retenção em Condições Especiais Adicional (Judicial/ADM):  * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="{#{ComplementoAlimeSaida.adicionalSobreRetencao}" />
 
 
 			</p:fieldset>
@@ -196,10 +196,10 @@ p.ident {
 				legend="Openflex">
 				<center>
 				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="{#{ComplementoAlimeSaida.openFlex01}" />
 
 				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{ComplementoAlimeSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />

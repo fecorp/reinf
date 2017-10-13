@@ -109,16 +109,16 @@
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="{#{Empresa.empresa}"/>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{Empresa.filial}" />
 
                 &nbsp; 
  				<h:outputText style="font-size: 10px"
 					value="      Razão Social :   " />
-				<p:inputText style="width: 26%" value="" />
+				<p:inputText style="width: 26%" value="#{Empresa.nomeRazaoSocial}" />
                
                
 
@@ -134,31 +134,31 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{Empresa.categoriaPFPJ}" />
 				<br/> <br/>
 				
 				 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
-				<p:inputText style="width: 17%" value="" />	
+				<p:inputText style="width: 17%" value="#{Empresa.nomeFantasia}" />	
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="#{Empresa.codigoPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="    Inscrição Estadual: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{Empresa.insEstadual}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="     Inscrição Estadual Centralizadora: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{Empresa.insEstadualC}" />
 
                 &nbsp;
  
 				<h:outputText style="font-size: 10px"
 					value="  Inscrição Municipal: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Empresa.insMunicipal}" />
 
 
 
@@ -183,28 +183,28 @@
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
 				legend="Endereço">
 				<h:outputText style="font-size: 10px" value="  Endereço: " />
-				<p:inputText style="width: 28%" value="" />
+				<p:inputText style="width: 28%" value="#{Empresa.endereco}" />
                 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 4%" value="#{Empresa.numero}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Complemento do endereço:   " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 18%" value="#{Empresa.complemento}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Empresa.bairro}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  Município: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Empresa.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Empresa.unidadeFederativa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
@@ -212,47 +212,47 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="#{Empresa.caixaPostal}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 5%" value="" mask="99999-999" />
+				<p:inputMask style="width: 5%" value="#{Empresa.cepCaixaPostal}" mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Empresa.pais}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 2%" value="" mask="(999)" />
+				<p:inputMask style="width: 2%" value="#{Empresa.dddTelefone}" mask="(999)" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
-				<p:inputMask id="telefone" style="width: 6%" value=""
+				<p:inputMask id="telefone" style="width: 6%" value="#{Empresa.numeroTelefone}"
 					mask="99999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 2%" value="" mask="(999)" />
+				<p:inputMask style="width: 2%" value="#{Empresa.dddFax}" mask="(999)" />
              
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
-				<p:inputMask style="width: 6%" value="" mask="99999-9999" />
+				<p:inputMask style="width: 6%" value="#{Empresa.numeroFax}" mask="99999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Empresa.tipoLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod Localidade: " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{Empresa.codLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod IBGE: " />
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 5%" value="#{Empresa.codMunIBGE}" />
 
 
 
@@ -279,21 +279,21 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Cadastro Específico do INSS: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Empresa.cadInss}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Empresa.classFical}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Empresa.nit}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Situação PJ: " />
@@ -321,7 +321,7 @@
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Empresa.numeroCNO}" />
 
                 &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />
@@ -375,11 +375,11 @@
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Empresa.openflex01}" />
 
                     &nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Empresa.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />

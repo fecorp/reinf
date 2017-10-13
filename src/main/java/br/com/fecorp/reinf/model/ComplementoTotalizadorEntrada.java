@@ -2,6 +2,8 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,15 +11,17 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class ComplementoTotalizadorEntrada {
+@ManagedBean(name = "ComplementoTotalizadorEntrada")
+@ViewScoped
 
-	@Entity
-	public class ComplementoTotalizadorEntrada_ implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@Entity
+public class ComplementoTotalizadorEntrada implements Serializable, EntidadeBase {
+	private static final long serialVersionUID = 1L;
+	
+	
 
-
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ComplementoTotalizadorEntrada")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ComplementoTotalizadorEntrada")
 
 		private String codEmpresa;
 		private String codFilial;
@@ -34,7 +38,31 @@ public class ComplementoTotalizadorEntrada {
 		private double somaAdicional;
 		private double valorRetencaoPrincipal;
 		private double valorRetencaoAdicional;
-		
+		private String openFlex01;
+		private String openFlex02;
+		private double numNotaFiscal;
+
+		public String getOpenFlex01() {
+			return openFlex01;
+		}
+		public void setOpenFlex01(String openFlex01) {
+			this.openFlex01 = openFlex01;
+		}
+		public String getOpenFlex02() {
+			return openFlex02;
+		}
+		public void setOpenFlex02(String openFlex02) {
+			this.openFlex02 = openFlex02;
+		}
+		public double getNumNotaFiscal() {
+			return numNotaFiscal;
+		}
+		public void setNumNotaFiscal(double numNotaFiscal) {
+			this.numNotaFiscal = numNotaFiscal;
+		}
+		public static long getSerialversionuid() {
+			return serialVersionUID;
+		}
 		public String getCodEmpresa() {
 			return codEmpresa;
 		}
@@ -125,7 +153,7 @@ public class ComplementoTotalizadorEntrada {
 		public void setValorRetencaoAdicional(double valorRetencaoAdicional) {
 			this.valorRetencaoAdicional = valorRetencaoAdicional;
 		}
-		public long getSiderialversionu() {
+		public static long getSiderialversionu() {
 			return serialVersionUID;
 		}
 		public Serializable getId() {
@@ -135,4 +163,4 @@ public class ComplementoTotalizadorEntrada {
 
 
 	}	
-}
+
