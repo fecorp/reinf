@@ -22,7 +22,7 @@ public class Responsavel implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Responsavel")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	
 	private String nomeContato;
 	private String cpfContato;

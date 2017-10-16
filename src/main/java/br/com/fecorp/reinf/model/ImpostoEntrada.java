@@ -20,7 +20,7 @@ public class ImpostoEntrada implements Serializable, EntidadeBase {
 
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ImpostoEntrada")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 	private String codEmpresa;
 	private String codFilial;

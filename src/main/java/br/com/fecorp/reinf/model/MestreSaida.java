@@ -21,7 +21,7 @@ public class MestreSaida implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MestreSaida")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private String codEmpresa;
 		private String codFilial;

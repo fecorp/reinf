@@ -22,7 +22,7 @@ public class ProcessosADMJud implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ProcessosAdmJud")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		private String empresa;
 		private String filial;

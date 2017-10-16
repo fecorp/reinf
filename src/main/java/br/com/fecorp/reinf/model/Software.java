@@ -21,7 +21,7 @@ public class Software implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Software")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		
 		private String razaoSocial;

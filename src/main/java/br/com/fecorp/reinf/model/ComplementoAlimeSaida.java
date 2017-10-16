@@ -23,7 +23,7 @@ public class ComplementoAlimeSaida implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ComplementoAlimeSaida")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 
 	private String codEmpresa;

@@ -21,7 +21,7 @@ public class ClientesFornecedores implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ClientesFornecedores")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		
 	

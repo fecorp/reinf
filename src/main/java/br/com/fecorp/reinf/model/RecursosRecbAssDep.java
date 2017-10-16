@@ -20,7 +20,7 @@ public class RecursosRecbAssDep implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRecbAssDep")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		private String codEmpresa;
 		private String codFilial;

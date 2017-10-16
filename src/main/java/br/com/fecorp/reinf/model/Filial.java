@@ -19,7 +19,7 @@ public class Filial implements Serializable, EntidadeBase {
 
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Filial")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 
 
