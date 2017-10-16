@@ -10,7 +10,7 @@ public class EmpresaTest {
 
 	public static void main(String[] args) {
 
-		Empresa empresa = new Empresa(null, null);
+		Empresa empresa = new Empresa();
 		empresa.setEmpresa("Fecorp");
 
 		EmpresaDAO empresaDAO = new EmpresaDAOImpl();

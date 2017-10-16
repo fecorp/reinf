@@ -20,7 +20,7 @@ public class ComplementoTotalizadorSaida implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ComplementoTotalizadorSaida")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PersistenciaPU")
 		
 		private String codEmpresa;
 		private String codFilial;
