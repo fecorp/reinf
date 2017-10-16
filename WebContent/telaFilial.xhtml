@@ -117,20 +117,20 @@
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{Filial.empresa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial :  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{Filial.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Razão Social :   " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Filial.nomeRazaoSocial}" />
 
                 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="{#{Filial.nomeFantasia}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
@@ -144,22 +144,22 @@
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="{#{Filial.categoriaPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 10%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 10%; background-color: #F2F2F2" value="{#{Filial.codigoPFPJ}" />
 
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="    Inscrição Estadual: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="{#{Filial.insEstadual}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Inscrição Municipal: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="#{Filial.insMunicipal}" />
 				<br />
 				<br />
 				<center>
@@ -177,77 +177,77 @@
 			<p:fieldset style="background-color:#E0EEF6; font-size: 10px "
 				legend="Endereço">
 				<h:outputText style="font-size: 10px" value="  Endereço: " />
-				<p:inputText style="width: 28%" value="" />
+				<p:inputText style="width: 28%" value="{#{Filial.endereco}" />
  
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 4%" value="{#{Filial.numero}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Complemento do endereço:   " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 18%" value="{#{Filial.complementoEnd}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 13%" value="" />
+				<p:inputText style="width: 13%" value="{#{Filial.bairro}" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Município: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="{#{Filial.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="{#{Filial.unidadeFederativa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask id="cep" style="width: 6%" value="" mask="99999-999" />
+				<p:inputMask id="cep" style="width: 6%" value="{#{Filial.cep}" mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="{#{Filial.caixaPostal}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 6%" value="" mask="99999-999" />
+				<p:inputMask style="width: 6%" value="{#{Filial.cepCaixaPostal}" mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				<p:inputText style="width: 8" value="" />
+				<p:inputText style="width: 8" value="{#{Filial.pais}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 3%" value="" mask="(999)" />
+				<p:inputMask style="width: 3%" value="{#{Filial.dddTelefone}" mask="(999)" />
 
                 <br />
 				<br />
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
-				<p:inputMask id="telefone" style="width: 6%" value=""
+				<p:inputMask id="telefone" style="width: 6%" value="{#{Filial.numeroTelefone}"
 					mask="99999-9999" />
 
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 3%" value="" mask="(999)" />
+				<p:inputMask style="width: 3%" value="{#{Filial.dddFax}" mask="(999)" />
                 
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
-				<p:inputMask style="width: 9%" value="" mask="9999-9999" />
+				<p:inputMask style="width: 9%" value="{#{Filial.numeroFax}" mask="9999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="{#{Filial.tipoLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Código Município IBGE: " />
-				<p:inputText style="width: 17%" value="" />
+				<p:inputText style="width: 17%" value="{#{Filial.codMunIBGE}" />
 
 
 
@@ -263,36 +263,36 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="{#{Filial.insSuframa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Cadastro Específico do INSS: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="{#{Filial.cadInss}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="{#{Filial.classFical}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="{#{Filial.nit}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. PJ: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="{#{Filial.indicativoPJ}" />
 
 				<br />
 				<br />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Situação da PJ: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="{#{Filial.situacaoPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 4%" value="{#{Filial.numeroCNO}" />
 
 				<script>
             PrimeFaces.locales['pt'] = {
@@ -341,11 +341,11 @@
 
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="{#{Filial.openflex01}" />
 
                     &nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="{#{Filial.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />

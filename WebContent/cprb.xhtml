@@ -118,18 +118,18 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value=" Código da Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{CPRB.codEmpresa}" />
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{CPRB.codFilial}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px" value="   NF: " />
-				<p:inputText style="width: 7%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 7%; background-color: #FFFFFFF" value="#{CPRB.NF}" />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="   Série:  " />
-				<p:inputText style="width: 4%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 4%; background-color: #FFFFFFF" value="#{CPRB.serie}" />
 				&nbsp;	
 				<h:outputText style="font-size: 10px"
 					value="   Data de Emissão NF: " />
@@ -137,22 +137,22 @@ p.ident {
 					mask="99/99/9999" />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="   VL NF: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorBrutoNotaFiscal}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Tipo de Ajustes: " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{CPRB.tipoReajuste}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Cod. Ajuste : " />
-				<p:inputText style="width: 3%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 3%; background-color: #FFFFFFF" value="#{CPRB.codAjuste}" />
 				<br/>
 				<br/>
 				<h:outputText style="font-size: 10px" value="   VL Ajuste: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorAjuste}" />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="   Mês/Ano do Ajuste: " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{CPRB.mesAnoReferenciaAjuste}" />
 
 			</p:fieldset>
 
@@ -163,73 +163,73 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value="      VL Receita Bruta:   " />
-				<p:inputText style="width: 9%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 9%; background-color: #FFFFFFF" value="#{CPRB.valorReceitaBrutaTotalEstabelecimento}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  VL CPRB Apurada: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorCprbApurada}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Cont. Prev. Exigibilidade Susp.: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorContribuicaoPrevExigiSusp}" />
 				&nbsp;
 
 
 
 				<h:outputText style="font-size: 10px" value="    Cod. Processo : " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{CPRB.codCorrespondenteProcesso}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Num Processo : " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{CPRB.numProcessoAdm}" />
 				
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="  Cod. Ind. Suspensão : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.codIndicativoSusp}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Cod. Ind. Atividade Comercial: " />
-				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="#{CPRB.codIndicadorCorrespComercial}" />
 				&nbsp;
 
 
 				<h:outputText style="font-size: 10px"
 					value="  VL Receita da Atividade: " />
-				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="#{CPRB.valorTotalReceitaAtividade}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  VL Exclusões RB : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorExclusaoreceitaBruta}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  VL Adições RB : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorTotalAdicoesReceitaBruta}" />
 				
 
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="   VL Cálculo CPRB : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorBaseCalculoContribuicaoPrevReceitaBruta}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="   VL Cont. S/ Prev. RB: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorContribuicaoPrevExigiSusp}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="   Base Cálculo Cont. S/ Prev. RB : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorBaseCalculoContribuicaoPrevReceitaBruta}" />
 				&nbsp;
 
 
 				<h:outputText style="font-size: 10px"
 					value="   Cod. Analítica Contábil: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.codContaAnaliticaContabil}" />
 
 
 
@@ -238,7 +238,7 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value="   Descrição Resumida do Ajuste:  " />
-				<p:inputText style="width: 16%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 16%; background-color: #FFFFFFF" value="#{CPRB.descResumidaAjuste}" />
 
 
 				<script>
@@ -279,10 +279,10 @@ p.ident {
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{CPRB.openFlex01}" />
 
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{CPRB.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br/> <br/>

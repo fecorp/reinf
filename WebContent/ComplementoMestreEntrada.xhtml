@@ -117,11 +117,11 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value=" Cód. Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="{#{ComplementoMestreEntrada.codEmpresa}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Cód. Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="{#{ComplementoMestreEntrada.codFilial}"/>
 
 			</p:fieldset>
 
@@ -142,15 +142,15 @@ p.ident {
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="  Número de Processo ADM Judicial : " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{ComplementoMestreEntrada.numProcessoAdm}" />
 
 				<h:outputText style="font-size: 10px"
 					value=" Indicativo de Suspensão:   " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{ComplementoMestreEntrada.indicativoSusp}" />
 
 				<h:outputText style="font-size: 10px"
 					value="  Valor da retenção Principal: " />
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 5%" value="#{ComplementoMestreEntrada.valorRetencaoPrincipal}" />
 			</p:fieldset>
 		
 			<br/>
@@ -170,15 +170,15 @@ p.ident {
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="  Número de Processo ADM Judicial : " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{ComplementoMestreEntrada.numProcessoAdm02}" />
 
 				<h:outputText style="font-size: 10px"
 					value=" Indicativo de Suspensão:   " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{ComplementoMestreEntrada.indicativoSusp02}" />
 
 				<h:outputText style="font-size: 10px"
 					value="  Valor da retenção Adicional: " />
-				<p:inputText style="width: 5%" value="" />
+				<p:inputText style="width: 5%" value="#{ComplementoMestreEntrada.valorRetencaoAdicional}" />
 				<br />
 				<br />
 
