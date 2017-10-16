@@ -2,6 +2,8 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,14 +11,18 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class ProcessosADMJud {
+@ManagedBean(name = "ProcessosAdmJud")
+@ViewScoped
 
-	@Entity
-	public class ProcessosAdmJud implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@Entity
+public class ProcessosADMJud implements Serializable, EntidadeBase {
+	
+	private static final long serialVersionUID = 1L;
+	
+	
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ProcessosADMJud")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ProcessosAdmJud")
 
 		private String empresa;
 		private String filial;
@@ -29,6 +35,7 @@ public class ProcessosADMJud {
 		private String idUniFederacao_UFJud;
 		private double codMunicipio;
 		private String codIdVara;
+		private String UFSessaoJud;
 		private double indiAutoriaJud;
 		private String openFlex01;
 		private String openFlex02;
@@ -43,6 +50,19 @@ public class ProcessosADMJud {
 
 		public void setEmpresa(String empresa) {
 			this.empresa = empresa;
+		}
+
+
+		
+
+		public String getUFSessaoJud() {
+			return UFSessaoJud;
+		}
+
+
+
+		public void setUFSessaoJud(String uFSessaoJud) {
+			UFSessaoJud = uFSessaoJud;
 		}
 
 
@@ -215,4 +235,4 @@ public class ProcessosADMJud {
 		}
 
 	}
-}
+

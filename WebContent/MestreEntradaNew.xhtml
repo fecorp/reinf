@@ -239,8 +239,7 @@
 
 				<h:outputText style="font-size: 10px" value=" ISS: " />
 				&nbsp; &nbsp; &nbsp;
-				
-			
+					
 				<p:inputText style="width: 3%" value="" />
 			
 				&nbsp; &nbsp; &nbsp;
@@ -264,7 +263,7 @@
 				
 		
 			
-				<p:inputText style="width: 3%" value="#{MestreEntrada.i}" />
+				<p:inputText style="width: 3%" value="#{MestreEntrada.valorTotalInss}" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -281,7 +280,7 @@
 &nbsp;
 &nbsp;
 
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="{#{MestreEntrada.valorTotalIrrf}" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -302,7 +301,7 @@
 				
 				
 			
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreEntrada.valorTotalPcc}" />
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -320,33 +319,33 @@
 
 				<h:outputText style="font-size: 10px"
 					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreEntrada.numContratoServicos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Localidade : " />
-				<p:inputText id="telefone" style="width: 2%" value="" />
+				<p:inputText id="telefone" style="width: 2%" value="#{MestreEntrada.tipoLocalidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Localidade : " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{MestreEntrada.localidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Tipo Doc p/ Município: " />
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreEntrada.tipoDocMunicipio}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{MestreEntrada.indicadorTipoPagamento}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Serviço: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{MestreEntrada.tipoServicoReinf}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="" />
+				<p:inputText style="width: 13%" value="#{MestreEntrada.contaContabil}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 14%" value="#{MestreEntrada.centroCustos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NFS-e: " />
-				<p:inputText style="width: 26%" value="" />
+				<p:inputText style="width: 26%" value="#{MestreEntrada.chaveNfs}" />
 
 
 
@@ -357,10 +356,10 @@
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{MestreEntrada.openFlex01}" />
 
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{MestreEntrada.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />
