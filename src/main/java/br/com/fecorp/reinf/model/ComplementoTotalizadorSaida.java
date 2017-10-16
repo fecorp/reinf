@@ -14,13 +14,13 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 @ViewScoped
 
 @Entity
-public class ComplementoTotalizadorSaida implements Serializable, EntidadeBase {
+public class ComplementoTotalizadorSaida implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PersistenciaPU")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private String codEmpresa;
 		private String codFilial;

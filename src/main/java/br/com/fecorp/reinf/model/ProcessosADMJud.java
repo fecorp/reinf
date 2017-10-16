@@ -15,14 +15,14 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 @ViewScoped
 
 @Entity
-public class ProcessosADMJud implements Serializable, EntidadeBase {
+public class ProcessosADMJud implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ProcessosAdmJud")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		private String empresa;
 		private String filial;

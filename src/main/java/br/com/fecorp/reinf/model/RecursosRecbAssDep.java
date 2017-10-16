@@ -7,14 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class RecursosRecbAssDep {
-
 	@Entity
-	public class RecursosRecbAssDep_ implements Serializable, EntidadeBase {
+	public class RecursosRecbAssDep implements Serializable{
 		private static final long serialVersionUID = 1L;
 
 		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRecbAssDep")
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		private String codEmpresa;
 		private String codFilial;
@@ -137,4 +135,4 @@ public class RecursosRecbAssDep {
 			return null;
 		}
 	}	
-}
+

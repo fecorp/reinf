@@ -7,15 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class ImpostoSaida {
-
 	@Entity
-	public class ImpostoSaida_ implements Serializable, EntidadeBase {
+	public class ImpostoSaida implements Serializable{
 		private static final long serialVersionUID = 1L;
 
 
 		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ImpostoSaida")
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private double valorIrrf;
 		private double baseCalculoRetencaoInss;
@@ -105,4 +103,4 @@ public class ImpostoSaida {
 		
 		
 	}	
-}
+

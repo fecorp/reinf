@@ -1,20 +1,20 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class Dirf {
-
 	@Entity
-	public class Dirf_ implements Serializable, EntidadeBase {
+	public class Dirf implements Serializable{
 		private static final long serialVersionUID = 1L;
 
 		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Dirf")
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private String codEmpresa;
 		private String codFilial;
@@ -257,4 +257,4 @@ public class Dirf {
 		}
 
 	}	
-}
+

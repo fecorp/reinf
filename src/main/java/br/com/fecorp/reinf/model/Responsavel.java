@@ -9,14 +9,12 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class Responsavel {
-	
 	@Entity
-	public class Responsavel_ implements Serializable, EntidadeBase {
+	public class Responsavel implements Serializable {
 		private static final long serialVersionUID = 1L;
 
 		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Responsavel")
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	
 	private String nomeContato;
 	private String cpfContato;
@@ -344,4 +342,4 @@ public class Responsavel {
 		return null;
 	}
   } 	
-}
+
