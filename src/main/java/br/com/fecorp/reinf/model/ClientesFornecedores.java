@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-@ManagedBean(name = "Clientes Fornecedores")
+@ManagedBean(name = "ClientesFornecedores")
 @ViewScoped
 
 @Entity

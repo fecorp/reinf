@@ -157,33 +157,36 @@
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Nome : *     " />
-				<p:inputText style="width: 25%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 25%; background-color: #F2F2F2"
+					value="#{Responsavel.nomeContato}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      CPF do contato :  * " />
-				<p:inputMask style="width: 9%; background-color: #F2F2F2" value=""
-					mask="999.999.999-99" />
+				<p:inputMask style="width: 9%; background-color: #F2F2F2"
+					value="#{Responsavel.cpfContato}" mask="999.999.999-99" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Telefone :   " />
-				<p:inputMask style="width: 8%; background-color: #F2F2F2" value=""
-					mask="(99)99999-9999" />
+				<p:inputMask style="width: 8%; background-color: #F2F2F2"
+					value="#{Responsavel.numeroTelefone}" mask="(99)99999-9999" />
 
                 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Celular : " />
-				<p:inputMask style="width: 8%; background-color: #F2F2F2" value=""
-					mask="(99)99999-9999" />
+				<p:inputMask style="width: 8%; background-color: #F2F2F2"
+					value="#{Responsavel.telefoneCelular}" mask="(99)99999-9999" />
 
                 &nbsp;
 				<p:outputLabel style="width: 10%" width="10px"
 					value="    Data de nascimento:   " />
-				<p:inputMask style="width: 6%" mask="99/99/9999" value="" />
+				<p:inputMask style="width: 6%" mask="99/99/9999"
+					value="#{Responsavel.dataNascimento}" />
 				<br />
 				<br />
 				
 				<h:outputLabel style="font-size: 10px" value="  E-mail : * " />
-				<p:inputText style="width: 15%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 15%; background-color: #F2F2F2"
+					value="#{Responsavel.email}" />
 
                 &nbsp;
 				<p:outputLabel style="width: 10px"
@@ -196,19 +199,20 @@
 
                 &nbsp;
 				<p:outputLabel style="width: 10%" width="10px" value="    RG:   " />
-				<p:inputMask style="width: 7%" value="" mask="99.999.999-*" />
+				<p:inputMask style="width: 7%" value="#{Responsavel.rg}"
+					mask="99.999.999-*" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 8%;" value="" />
+				<p:inputText style="width: 8%;" value="#{Responsavel.empresa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial :  * " />
-				<p:inputText style="width: 8%; " value="" />
+				<p:inputText style="width: 8%; " value="#{Responsavel.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" CRC: *     " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Responsavel.crc}" />
 
 
 				<h:panelGrid columns="2" cellpadding="0">
@@ -227,33 +231,34 @@
 				legend="Endereço">
 
 				<h:outputText style="font-size: 10px" value="  Endereço :  " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Responsavel.endereco}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Responsavel.bairro}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cidade: " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{Responsavel.cidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Estado: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Responsavel.estado}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask style="width: 7%" value="" mask="99999-999" />
+				<p:inputMask style="width: 7%" value="#{Responsavel.cep}"
+					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Qualificação: *     " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="#{Responsavel.qualificacao}" />
 
 				<br />
 				<br />
 				
 				<h:outputText style="font-size: 10px" value=" Observações: *     " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Responsavel.observacoes}" />
 
 
 
@@ -276,7 +281,7 @@
 
 					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Responsavel.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />
@@ -322,7 +327,7 @@
 					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-next" />
 					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-end" />
 
-					<br />
+						<br />
 
 				</center>
 				</p:fieldset>

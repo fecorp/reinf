@@ -1,8 +1,5 @@
 package br.com.fecorp.reinf.model;
 
-
-
-
 import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -72,6 +69,7 @@ public class Empresa implements Serializable{
 	private String openflex01;
 	private String openflex02;
 	private double numInscriCno;
+	
 	
 	public String getEmpresa() {
 		return empresa;

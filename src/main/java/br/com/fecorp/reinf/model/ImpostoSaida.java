@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +13,7 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 	public class ImpostoSaida implements Serializable{
 		private static final long serialVersionUID = 1L;
 
+	private static final long serialVersionUID = 1L;
 
 		@Id
 		@GeneratedValue(strategy = GenerationType.SEQUENCE)

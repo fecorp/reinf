@@ -160,34 +160,36 @@
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" CNPJ: *     " />
-				<p:inputMask style="width: 10%" value="" mask="99.999.999/9999-99" />
+				<p:inputMask style="width: 10%" value="#{Software.cnpj}"
+					mask="99.999.999/9999-99" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Razão Social: *     " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Software.razaoSocial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value=" Nome do contato: *     " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 18%" value="#{Software.nomeContato}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Filial: *     " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{Software.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Telefone: *     " />
-				<p:inputMask style="width:10%" value="" mask="(99)99999-9999" />
+				<p:inputMask style="width:10%" value="#{Software.telefone}"
+					mask="(99)99999-9999" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value=" E-mail: *     " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Software.telefone}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Nome Fantasia:      " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="#{Software.nomeFantasia}" />
 
                
 			</p:fieldset>
@@ -243,11 +245,11 @@
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Software.openflex01}" />
 
 					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Software.openflex02}" />
 
 				</center>
 			</p:fieldset>

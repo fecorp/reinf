@@ -161,36 +161,36 @@
 
 				<h:outputText style="font-size: 10px"
 					value=" Cod. Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ImpostoSaida.codEmpresa}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Cod. Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ImpostoSaida.codFilial}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Número NF:  " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2 " value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2 " value="#{ImpostoSaida.numNotaFiscal}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Série NF: 	 " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ImpostoSaida.serieNotaFiscal}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ImpostoSaida.categoriaPfPj}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value=" Cod PF/PJ: * " />
-				<p:inputText style="font-size:8px; background-color: #F2F2F2" value="" />
+				<p:inputText style="font-size:8px; background-color: #F2F2F2" value="#{ImpostoSaida.codigoPfPj}" />
 				&nbsp;
 			
 				<h:outputText style="font-size: 10px"
 					value="    Sequência de itens: " />
-				<p:inputText style="width: 4%" value="" />
+				<p:inputText style="width: 4%" value="#{ImpostoSaida.sequenciaItens}" />
 
 
 			</p:fieldset>
@@ -200,24 +200,24 @@
 				legend="Valores e Alíquotas">
 				<h:outputText style="font-size: 10px"
 					value="  VL Serviço :   " />
-				<p:inputMask style="width: 7%" value="" />
+				<p:inputMask style="width: 7%" value="#{ImpostoSaida.valorServico}" />
 				&nbsp; 
 				<h:outputText style="font-size: 10px"
 					value="  VL Material Aplicado: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorMaterialApp}" />
 				&nbsp; 
 
 				<h:outputText style="font-size: 10px"
 					value="  VL Desconto:   " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorDesconto}" />
 				&nbsp; 
 
 				<h:outputText style="font-size: 10px"
 					value="  VL Documento: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorTotalDocumento}" />
 				&nbsp; 
 				<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorIss}" />
 				<br />
 				<br />
 				<br/>
@@ -345,11 +345,11 @@
 
 				<h:outputText style="font-size: 10px"
 					value="  Código da Retenção IRRF p/ DIRF : " />
-				<p:inputText id="codigoretencao" style="width: 14%" value="" />
+				<p:inputText id="codigoretencao" style="width: 14%" value="#{ImpostoSaida.codRetencaoIrrfDirf}" />
 
 				<h:outputText style="font-size: 10px"
 					value="  Texto Complementar :  " />
-				<p:inputText id="textocomplementar" style="width: 24%" value="" />
+				<p:inputText id="textocomplementar" style="width: 24%" value="#{ImpostoSaida.textoComplementar}" />
 
 
 
@@ -359,10 +359,10 @@
 				legend="Openflex">
 				<center>
 				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
 
 				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />
@@ -377,27 +377,27 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="fa-backward">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 

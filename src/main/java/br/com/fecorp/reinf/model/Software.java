@@ -1,6 +1,9 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -168,4 +171,3 @@ public class Software implements Serializable {
 	public long getSerialversionuid() {
 		return serialVersionUID;
 	}
-}

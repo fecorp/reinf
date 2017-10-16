@@ -1,6 +1,9 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,17 +28,32 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 		private double codIndiSusp;
 		private String codContaAnaliticaContabil;
 		private double tipoRepasse;
+		private String cnpjEmpresaRepassadoraRec;
 		private double valorBrutoRepasseEfetuado;
 		private double valorApuracaoRetencaoSofrerAssociacao;
 		private double valorRetDeixouSerFeitaEmpresa;
+		private double valorBrutoRecRecebidos;
 		private String openFlex01;
 		private String openFlex02;
 
+		
 		public String getCodEmpresa() {
 			return codEmpresa;
 		}
 		public void setCodEmpresa(String codEmpresa) {
 			this.codEmpresa = codEmpresa;
+		}
+		public double getValorBrutoRecRecebidos() {
+			return valorBrutoRecRecebidos;
+		}
+		public void setValorBrutoRecRecebidos(double valorBrutoRecRecebidos) {
+			this.valorBrutoRecRecebidos = valorBrutoRecRecebidos;
+		}
+		public String getCnpjEmpresaRepassadoraRec() {
+			return cnpjEmpresaRepassadoraRec;
+		}
+		public void setCnpjEmpresaRepassadoraRec(String cnpjEmpresaRepassadoraRec) {
+			this.cnpjEmpresaRepassadoraRec = cnpjEmpresaRepassadoraRec;
 		}
 		public String getCodFilial() {
 			return codFilial;
