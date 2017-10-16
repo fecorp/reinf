@@ -158,15 +158,15 @@ p.ident {
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
-				&nbsp;
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ProcessosAdmJud.empresa}" />
+
 				<h:outputText style="font-size: 10px" value="      Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="" />
-				&nbsp;
+				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ProcessosAdmJud.filial}" />
+
 				<h:outputText style="font-size: 10px"
 					value="      Número do processo Adm/Jud:  * " />
-				<p:inputText style="width: 18%; background-color: #F2F2F2" value="" />
-				&nbsp;
+				<p:inputText style="width: 18%; background-color: #F2F2F2" value="#{ProcessosAdmJud.numProcAdmJud}" />
+
 				<h:outputText style="font-size: 10px"
 					value="  Data de Decisão/Sentença: " />
 				<p:calendar style="font-size:10px; background-color: #F2F2F2"
@@ -208,7 +208,7 @@ p.ident {
 				<center>
 					<h:outputText style="font-size: 10px"
 						value="  Tipo de Processo:   " />
-					<p:selectManyCheckbox id="banana"
+					<p:selectManyCheckbox id="null"
 						value="#{checkboxView.selectedConsoles}" style="font-size: 10px">
 						<f:selectItem itemLabel="Administrativo "
 							itemValue=" Administrativo do Tomador" />
@@ -223,31 +223,28 @@ p.ident {
 				legend="Processos">
 
 				<h:outputText style="font-size: 10px" value="  Cód.Ind. Suspensão: " />
-				<p:inputText style="width: 7%" value="" />
-				&nbsp;
+				<p:inputText style="width: 7%" value="#{ProcessosAdmJud.codIndicativoSuspe}" />
+
 				<h:outputText style="font-size: 10px"
 					value=" Ind. Susp. Exigibilidade :   " />
-				<p:inputText style="width: 15%" value="" />
-				&nbsp;
+				<p:inputText style="width: 15%" value="#{ProcessosAdmJud.indiSuspeExigi}" />
 
 				<h:outputText style="font-size: 10px"
 					value="  Ind. Depósito Montante Integral: " />
-				<p:inputText style="width: 15%" value="" />
-				&nbsp;
+				<p:inputText style="width: 15%" value="#{ProcessosAdmJud.indiDepMonteIntegral}" />
 
 				<h:outputText style="font-size: 10px"
 					value="  UF da Sessão Judiciária: " />
-				<p:inputText style="width: 2%" value="" />
-				&nbsp;
-				<br />
-				<br />
+				<p:inputText style="width: 2%" value="#{ProcessosAdmJud.UFSessaoJud}" />
 
 				<h:outputText style="font-size: 10px" value="  Cód. Município: " />
-				<p:inputText style="width: 5%" value="" />
-				&nbsp;
+				<p:inputText style="width: 5%" value="#{ProcessosAdmJud.codMunicipio}" />
+
+				<br />
+				<br />
 				<h:outputText style="font-size: 10px"
 					value="  Código de identificação da Vara : " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{ProcessosAdmJud.codIdVara}" />
 				<br />
 				<center>
 
@@ -268,10 +265,10 @@ p.ident {
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{ProcessosAdmJud.openFlex01}" />
 
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{ProcessosAdmJud.openFlex02}" />
 				</center>
 			</p:fieldset>
 

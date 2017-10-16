@@ -166,27 +166,27 @@
 
 				<h:outputText style="font-size: 10px"
 					value=" Código da empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{MestreSaida.codEmpresa}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{MestreSaida.codFilial}" />
 &nbsp;
 				<h:outputLabel style="font-size: 10px"
 					value="  Número da Nota Fiscal: " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="#{MestreSaida.numNotaFiscal}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Série da Nota Fiscal:   " />
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreSaida.serieNotaFiscal}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{MestreSaida.catPfPj}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{MestreSaida.codPfPj}" />
 				<br />
 				<br />
 
@@ -210,18 +210,8 @@
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
 &nbsp;
-				<h:outputText style="font-size: 10px" value="  Sequencia Itens:   " />
-				<p:inputMask style="width: 4%" value="" />
-				&nbsp;
-				&nbsp;
-				
-				<h:outputText style="font-size:10px" value="Retificação: " />
-				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
-					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
-					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
-					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
-					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
-				</p:selectOneMenu>
+				<h:outputText style="font-size: 10px" value="  Quantidade de Itens:   " />
+				<p:inputMask style="width: 4%" value="#{MestreSaida.qtdItens}" />
 
 				<br />
 				<br />
@@ -233,29 +223,29 @@
 				legend="Valores">
 				<center>
 					<h:outputText style="font-size: 10px" value="  VL Serviço :   " />
-					<p:inputMask style="width: 2%" value="" />
+					<p:inputMask style="width: 2%" value="#{MestreSaida.valorServico}" />
 					&nbsp;
 					<h:outputText style="font-size: 10px"
 						value="  VL Material Aplicado: " />
-					<p:inputText style="width: 2%" value="" />
+					<p:inputText style="width: 2%" value="#{MestreSaida.valorMaterialApply}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
-					<p:inputText style="width: 2%" value="" />
+					<p:inputText style="width: 2%" value="#{MestreSaida.valorDesconto}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  VL Documento: " />
-					<p:inputText style="width: 2%" value="" />
+					<p:inputText style="width: 2%" value="#{MestreSaida.valorTotalDocumento}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-					<p:inputText style="width: 2%" value="" />
+					<p:inputText style="width: 2%" value="#{MestreSaida.valorTotalIss}" />
 					&nbsp;
 
 
 
 					<h:outputText style="font-size: 10px" value="  VL Líquido: " />
-					<p:inputText style="width: 2%" value="" />
+					<p:inputText style="width: 2%" value="#{MestreSaida.valorLiquido}" />
 				</center>
 				<br />
 				<br />
@@ -295,7 +285,7 @@
 				
 				
 			
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{MestreSaida.valorTotalIss}" />
 			
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
@@ -461,41 +451,41 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreSaida.numContratoServicos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Tipo da localidade : " />
-				<p:inputText id="telefone" style="width: 2%" value="" />
+				<p:inputText id="telefone" style="width: 2%" value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Localidade : " />
-				<p:inputText style="width: 6%" value="" />
+				<p:inputText style="width: 6%" value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Tipo Doc p/ Município: " />
-				<p:inputText style="width: 3%" value="" />
+				<p:inputText style="width: 3%" value="#{MestreSaida.tipoDocMunicipio}" />
 				
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{MestreSaida.indicadorTipoPagamento}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Tipo de Serviço: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{MestreSaida.tipoServicoReinf}" />
 &nbsp;				
 				
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="" />
+				<p:inputText style="width: 13%" value="#{MestreSaida.contaContabil" />
 &nbsp;
 <br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
 
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NFS-e: " />
-				<p:inputText style="width: 26%" value="" />
+				<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
 
 
 
@@ -505,10 +495,10 @@
 				legend="Openflex">
 				<center>
 				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{MestreSaida.openFlex01}" />
 
 				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{MestreSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />
