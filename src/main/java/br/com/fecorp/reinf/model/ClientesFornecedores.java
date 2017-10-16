@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-@ManagedBean(name = "Clientes Fornecedores")
+@ManagedBean(name = "ClientesFornecedores")
 @ViewScoped
 
 @Entity
@@ -21,7 +21,7 @@ public class ClientesFornecedores implements Serializable, EntidadeBase {
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Clientes Fornecedores")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ClientesFornecedores")
 		
 		
 	

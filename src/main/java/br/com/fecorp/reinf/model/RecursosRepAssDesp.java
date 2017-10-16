@@ -1,20 +1,27 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class RecursosRepAssDesp {
+@ManagedBean(name = "RecursosRepAssDesp")
+@ViewScoped
 
-	@Entity
-	public class RecursosRepAssDesp_ implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@Entity
+public class RecursosRepAssDesp implements Serializable, EntidadeBase {
+	
+	private static final long serialVersionUID = 1L;
+	
+	
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRepAssDesp")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRepAssDesp")
 
 		private String codEmpresa;
 		private String codFilial;
@@ -27,17 +34,32 @@ public class RecursosRepAssDesp {
 		private double codIndiSusp;
 		private String codContaAnaliticaContabil;
 		private double tipoRepasse;
+		private String cnpjEmpresaRepassadoraRec;
 		private double valorBrutoRepasseEfetuado;
 		private double valorApuracaoRetencaoSofrerAssociacao;
 		private double valorRetDeixouSerFeitaEmpresa;
+		private double valorBrutoRecRecebidos;
 		private String openFlex01;
 		private String openFlex02;
 
+		
 		public String getCodEmpresa() {
 			return codEmpresa;
 		}
 		public void setCodEmpresa(String codEmpresa) {
 			this.codEmpresa = codEmpresa;
+		}
+		public double getValorBrutoRecRecebidos() {
+			return valorBrutoRecRecebidos;
+		}
+		public void setValorBrutoRecRecebidos(double valorBrutoRecRecebidos) {
+			this.valorBrutoRecRecebidos = valorBrutoRecRecebidos;
+		}
+		public String getCnpjEmpresaRepassadoraRec() {
+			return cnpjEmpresaRepassadoraRec;
+		}
+		public void setCnpjEmpresaRepassadoraRec(String cnpjEmpresaRepassadoraRec) {
+			this.cnpjEmpresaRepassadoraRec = cnpjEmpresaRepassadoraRec;
 		}
 		public String getCodFilial() {
 			return codFilial;
@@ -138,4 +160,4 @@ public class RecursosRepAssDesp {
 		}
 
 	}	
-}
+

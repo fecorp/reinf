@@ -28,7 +28,8 @@
 				url="#" />
 		</p:breadCrumb>
 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:600px" fullPage="true">
+		<p:layoutUnit position="west"
+			style="background-color:#F2f2f2; height:600px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -37,30 +38,23 @@
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
-					<p:submenu label="Movimentação - NF"
-						style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml"
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml"
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
 
 						<p:menuitem value="Complemento Entrada"
 							url="ComplementoMestreEntrada.xhtml" ajax="false"
@@ -85,8 +79,7 @@
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 						<p:menuitem value="Eventos Desp"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="cprb.xhtml"
-							icon="ui-icon-wrench" />
+						<p:menuitem value="CPRB" url="cprb.xhtml" icon="ui-icon-wrench" />
 						<p:menuitem value="Vendas para Agro Indústria"
 							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
 					</p:submenu>
@@ -105,39 +98,45 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F4F0F0; height:100px" position="center"  fullPage="true" >
-				<center><h5>Responsável Fabricante</h5></center>
+		<p:layoutUnit style="background-color:#F4F0F0; height:100px"
+			position="center" fullPage="true">
+			<center>
+				<h5>Responsável Fabricante</h5>
+			</center>
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Nome : *     " />
-				<p:inputText style="width: 25%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 25%; background-color: #F2F2F2"
+					value="#{Responsavel.nomeContato}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      CPF do contato :  * " />
-				<p:inputMask style="width: 9%; background-color: #F2F2F2" value=""
-					mask="999.999.999-99" />
+				<p:inputMask style="width: 9%; background-color: #F2F2F2"
+					value="#{Responsavel.cpfContato}" mask="999.999.999-99" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Telefone :   " />
-				<p:inputMask style="width: 8%; background-color: #F2F2F2" value=""
-					mask="(99)99999-9999" />
+				<p:inputMask style="width: 8%; background-color: #F2F2F2"
+					value="#{Responsavel.numeroTelefone}" mask="(99)99999-9999" />
 
                 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Celular : " />
-				<p:inputMask style="width: 8%; background-color: #F2F2F2" value=""
-					mask="(99)99999-9999" />
+				<p:inputMask style="width: 8%; background-color: #F2F2F2"
+					value="#{Responsavel.telefoneCelular}" mask="(99)99999-9999" />
 
                 &nbsp;
 				<p:outputLabel style="width: 10%" width="10px"
 					value="    Data de nascimento:   " />
-				<p:inputMask style="width: 6%" mask="99/99/9999" value="" />
+				<p:inputMask style="width: 6%" mask="99/99/9999"
+					value="#{Responsavel.dataNascimento}" />
 				<br />
 				<br />
 				&nbsp;
 				<h:outputLabel style="font-size: 10px" value="  E-mail : * " />
-				<p:inputText style="width: 15%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 15%; background-color: #F2F2F2"
+					value="#{Responsavel.email}" />
 
                 &nbsp;
 				<p:outputLabel style="width: 10px"
@@ -150,19 +149,20 @@
 
                 &nbsp;
 				<p:outputLabel style="width: 10%" width="10px" value="    RG:   " />
-				<p:inputMask style="width: 7%" value="" mask="99.999.999-*" />
+				<p:inputMask style="width: 7%" value="#{Responsavel.rg}"
+					mask="99.999.999-*" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 8%;" value="" />
+				<p:inputText style="width: 8%;" value="#{Responsavel.empresa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial :  * " />
-				<p:inputText style="width: 8%; " value="" />
+				<p:inputText style="width: 8%; " value="#{Responsavel.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" CRC: *     " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Responsavel.crc}" />
 
 
 				<h:panelGrid columns="2" cellpadding="0">
@@ -175,41 +175,42 @@
 
 
 				<h:outputText style="font-size: 10px" value="  Endereço :  " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Responsavel.endereco}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Responsavel.bairro}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cidade: " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{Responsavel.cidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Estado: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Responsavel.estado}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask style="width: 7%" value="" mask="99999-999" />
+				<p:inputMask style="width: 7%" value="#{Responsavel.cep}"
+					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Qualificação: *     " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="#{Responsavel.qualificacao}" />
 
 				<br />
 				<br />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value=" Nome da mãe: *     " />
-				<p:inputText style="width: 17%" value="" />
+				<p:inputText style="width: 17%" value="#{Responsavel.nomeMae}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Nome do pai: *     " />
-				<p:inputText style="width: 17%" value="" />
+				<p:inputText style="width: 17%" value="#{Responsavel.nomePai}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Observações: *     " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Responsavel.observacoes}" />
 
 
 
@@ -220,58 +221,58 @@
 				<p:calendar style="font-size:10px" maxlength="10"
 					mindate="01/01/1970" maxdate="31/12/2099" id="reggaeup"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
-				
+
 			</p:fieldset>
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="" />
-					
+					<p:inputText style="width: 20%" value="#{Responsavel.openflex01}" />
+
 					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Responsavel.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />
 			<center>
 				<p:fieldset style="background-color: #F2F2F2">
-				<center>
+					<center>
 
 
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="fa-backward" type="button">
-					</p:commandButton>
+						<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+							value="Incluir" icon="fa-backward" type="button">
+						</p:commandButton>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Excluir" icon="fa-backward">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Excluir" icon="fa-backward">
+							<f:param name="productId" value="null" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+							<f:param name="productId" value="null" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+							<f:param name="productId" value="null" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+							<f:param name="productId" value="null" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+							<f:param name="productId" value="null" />
+						</p:button>
 
-					<br />
+						<br />
 
-				</center>
-			</p:fieldset>
+					</center>
+				</p:fieldset>
 
 			</center>
 		</p:layoutUnit>

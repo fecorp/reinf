@@ -310,19 +310,19 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      Código Indicato da Suspensão:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.codIndiSusp}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL Total Dest. Clubes Participantes:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorTotalClubesParticipantes}" />
 				&nbsp;
 				<br></br>
 				<br></br>
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL Retido dos Clubes:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorRetido}" />
 				&nbsp;
 				
 		   </p:fieldset>
@@ -337,12 +337,12 @@
 
 					<h:outputText style="font-size: 10px" value="      OpenFlex 01:   " />
 					<p:inputText style="width: 20%; background-color: #FFFFFFF"
-						value="" />
+						value="#{ReceitaEspetaculoDesp.openFlex01}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="      OpenFlex 02:   " />
 					<p:inputText style="width: 20%; background-color: #FFFFFFF"
-						value="" />
+						value="#{ReceitaEspetaculoDesp.openFlex02}" />
 					&nbsp;
 				
 
@@ -354,14 +354,14 @@
 			<center>
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 					value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
+					<f:param name="productId" value="null" />
 				</p:button>
 
 
 
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 					value="  Limpar Dados  " icon="fa fa-user-plus">
-					<f:param name="productId" value="turubom?" />
+					<f:param name="productId" value="null" />
 				</p:button>
 			</center>
 

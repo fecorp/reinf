@@ -1,14 +1,12 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
-
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
 @ManagedBean(name = "Filial")
@@ -17,34 +15,16 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 @Entity
 public class Filial implements Serializable, EntidadeBase {
 	private static final long serialVersionUID = 1L;
-	
-	
+
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Filial")
-		
 
-	
+
+
 	private String empresa;
 	private String complementoEnd;
-	public String getComplementoEnd() {
-		return complementoEnd;
-	}
-
-
-
-
-	public void setComplementoEnd(String complementoEnd) {
-		this.complementoEnd = complementoEnd;
-	}
-
-
-
-
-
-
-
-
 	private String filial;
 	private String dataAtualizacao;
 	private String categoriaPFPJ;
@@ -84,10 +64,10 @@ public class Filial implements Serializable, EntidadeBase {
 	private String dataEncerramento;
 	private String openflex01; 
 	private String openflex02;
-	
-	
-	
-	
+
+
+
+
 	public String getEmpresa() {
 		return empresa;
 	}
@@ -100,6 +80,16 @@ public class Filial implements Serializable, EntidadeBase {
 	}
 
 
+	public String getComplementoEnd() {
+		return complementoEnd;
+	}
+
+
+
+
+	public void setComplementoEnd(String complementoEnd) {
+		this.complementoEnd = complementoEnd;
+	}
 
 
 	public String getFilial() {
@@ -652,12 +642,6 @@ public class Filial implements Serializable, EntidadeBase {
 		return serialVersionUID;
 	}
 
-
-
-
-
-
-	
 
 	public Serializable getId() {
 		// TODO Auto-generated method stub

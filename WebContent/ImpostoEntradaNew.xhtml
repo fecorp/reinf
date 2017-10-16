@@ -340,13 +340,13 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value="  Código da Retenção IRRF p/ DIRF : " />
-				<p:inputText id="codigoretencao" style="width: 18%" value="" />
+				<p:inputText id="codigoretencao" style="width: 18%" value="#{ImpostoEntrada.codRetencaoIrrfDirf}" />
 				
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Texto Complementar :  " />
-				<p:inputText id="textocomplementar" style="width: 24%" value="" />
+				<p:inputText id="textocomplementar" style="width: 24%" value="#{ImpostoEntrada.textoComplementar}" />
 
 
 
@@ -356,11 +356,11 @@ p.ident {
 				legend="Openflex">
 				<center>
 				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{ImpostoEntrada.openFlex01}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{ImpostoEntrada.openFlex02}" />
 			</center>
 			</p:fieldset>
 			<br />
@@ -375,27 +375,27 @@ p.ident {
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="fa-backward">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="" />
 					</p:button>
 
 

@@ -1,20 +1,27 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class Software {
+@ManagedBean(name = "Software")
+@ViewScoped
 
-	@Entity
-	public class Software_ implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@Entity
+public class Software implements Serializable, EntidadeBase {
+	
+	private static final long serialVersionUID = 1L;
+	
+	
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Software")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Software")
 
 		
 		private String razaoSocial;
@@ -172,5 +179,5 @@ public class Software {
 			return serialVersionUID;
 		}
 	}
-}
+
 

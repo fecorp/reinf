@@ -8,17 +8,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
-@ManagedBean(name = "Comercialização Agroindústria")
+
+@ManagedBean(name = "comercializacaoAgro")
 @ViewScoped
 
 @Entity
 public class comercializacaoAgro implements Serializable, EntidadeBase {
+	
 	private static final long serialVersionUID = 1L;
 	
 	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Comercialização Agroindústria")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comercializacaoAgro")
 		
 		private String codEmpresa;
 		private String codFilial;

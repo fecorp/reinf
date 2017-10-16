@@ -110,30 +110,37 @@ p.ident {
 
 				<h:outputText style="font-size: 12px"
 					value=" Código da Empresa: *     " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2"
+					value="#{Dirf.codEmpresa}" />
 
 				<h:outputText style="font-size: 12px"
 					value="      Código da Filial:  * " /> &nbsp;
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 12%; background-color: #F2F2F2"
+					value="#{Dirf.codFilial}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Número da Nota Fiscal: * " /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2"
+					value="#{Dirf.numNotaFiscal}" />
 
 				<h:outputText style="font-size: 12px" value="  Série Nota Fiscal: *" /> &nbsp;
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2"
+					value="#{Dirf.serieNotaFiscal}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 12px" value="  Data de Emissão : *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2"
+					value="#{Dirf.dataEmissao}" />
 
 				<h:outputText style="font-size: 12px" value="  Categoria PF/PJ: *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2"
+					value="#{Dirf.categoriaPfPj}" />
 
 				<h:outputText style="font-size: 12px" value=" Código PF/PJ : *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 8%; background-color: #F2F2F2"
+					value="#{Dirf.codigoPfPj}" />
 
-				
+
 			</p:fieldset>
 
 			<br />
@@ -142,103 +149,132 @@ p.ident {
 
 				<h:outputText style="font-size: 12px"
 					value="      Código do Participante :   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codParticipante}" />
 
 
 				<h:outputText style="font-size: 12px" value="  Código do item : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codItem}" />
 
 				<h:outputText style="font-size: 12px"
 					value="    Data da Operação : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.dataOperacao}" />
 
 				<br />
 				<br />
 				<h:outputText style="font-size: 12px"
 					value="  Valor da Operação/ Item : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.valorOperacao}" />
 
 				<h:outputText style="font-size: 12px"
 					value="  Código da Situação Tributária (PIS/PASEP): " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codSituacaoTributaria}" />
 
 				<h:outputText style="font-size: 12px"
 					value="  Base de cálculo do PIS/PASEP: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.baseCalculoPisPasep}" />
 				<br />
 				<br />
 
 				<h:outputText style="font-size: 12px"
 					value="   Alíquota do PIS/PASEP : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.aliquotaPisPasep}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Valor do PIS/PASEP : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.valorPisPasep}" />
 				<br />
 				<br />
 
 				<h:outputText style="font-size: 12px"
 					value="   Código da Situação Tributária (COFINS) " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codSituacaoTributariaCofins}" />
 
 				<h:outputText style="font-size: 12px" value="   Alíquota da COFINS " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.aliquotaCofins}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Base de cálculo da CSLL" />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.baseCalculoCsll}" />
 
 				<br />
 				<br />
 				<h:outputText style="font-size: 12px" value="   Alíquota da CSLL : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.aliquotaCsll}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Base de cálculo do IR : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.baseCalculoIr}" />
 
 				<h:outputText style="font-size: 12px" value="   Alíquota do IR: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.aliquotaIr}" />
 
 				<h:outputText style="font-size: 12px" value="   Valor do IR: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.valorIr}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Base de Cálculo do INSS: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.baseCalculoInss}" />
 
 				<h:outputText style="font-size: 12px" value="   Alíquota do INSS: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.aliquotaInss}" />
 
 				<h:outputText style="font-size: 12px" value="   Valor do ISS: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.valorIss}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Natureza da Base de Cálculo: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.naturezaBaseCalculo}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Código da Conta Analítica Contábil: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codContaAnaliticaContabil}" />
 
-				<h:outputText style="font-size: 12px" value="  Código do Centro de Custos : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				
-				<h:outputText style="font-size: 12px" value="  Descrição do Documento/Operação: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				
-				<h:outputText style="font-size: 12px" value="  Código do Pagamento: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				
+				<h:outputText style="font-size: 12px"
+					value="  Código do Centro de Custos : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codCentroCustos}" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Descrição do Documento/Operação: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.descricaoDocumento}" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Código do Pagamento: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.codPagamento}" />
+
 				<h:outputText style="font-size: 12px" value="  Tipo de Benefícios: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				
-				<h:outputText style="font-size: 12px" value="  Nome/Razão Social do Benefício: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
-				
-				
-				
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.tipoBeneficios}" />
+
+				<h:outputText style="font-size: 12px"
+					value="  Nome/Razão Social do Benefício: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.razaoSocialBeneficio}" />
+
+
+
 
 
 
@@ -247,11 +283,13 @@ p.ident {
 				<br />
 				<h:outputText style="font-size: 12px"
 					value="   Descrição Resumida do Ajuste:  " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.descricaoResumidaAjustes}" />
 
 				<h:outputText style="font-size: 12px"
 					value="   Mês/Ano de Referência do Ajuste: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
+					value="#{Dirf.mesAnoReferenciaAjustes}" />
 
 				<script>
             PrimeFaces.locales['pt'] = {
@@ -290,10 +328,10 @@ p.ident {
 			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
 				legend="Openflex">
 				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Dirf.openFlex01}" />
 
 				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Dirf.openFlex02}" />
 
 			</p:fieldset>
 
@@ -301,7 +339,7 @@ p.ident {
 			<center>
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 					value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
+					<f:param name="productId" value="null" />
 				</p:button>
 				&nsbp;
 				&nsbp;
@@ -311,7 +349,7 @@ p.ident {
 				&nsbp;
 				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
 					value="  Limpar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
+					<f:param name="productId" value="null" />
 				</p:button>
 			</center>
 		</p:layoutUnit>

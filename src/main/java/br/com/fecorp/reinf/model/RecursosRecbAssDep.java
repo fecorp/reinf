@@ -1,20 +1,26 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class RecursosRecbAssDep {
+@ManagedBean(name = "RecursosRecbAssDep")
+@ViewScoped
 
-	@Entity
-	public class RecursosRecbAssDep_ implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@Entity
+public class RecursosRecbAssDep implements Serializable, EntidadeBase {
+	
+	private static final long serialVersionUID = 1L;
+	
+	
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRecbAssDep")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "RecursosRecbAssDep")
 
 		private String codEmpresa;
 		private String codFilial;
@@ -137,4 +143,4 @@ public class RecursosRecbAssDep {
 			return null;
 		}
 	}	
-}
+

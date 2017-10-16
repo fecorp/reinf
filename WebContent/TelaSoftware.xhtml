@@ -25,7 +25,8 @@
 				url="#" />
 		</p:breadCrumb>
 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:350px" fullPage="true">
+		<p:layoutUnit position="west"
+			style="background-color:#F2f2f2; height:350px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -34,10 +35,8 @@
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -45,17 +44,13 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntrada.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml"
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntrada.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 
 						<p:menuitem value="Complemento Entrada"
@@ -104,71 +99,78 @@
 
 
 
-		<p:layoutUnit style="background-color:#F4F0F0; height:200px" position="center">
-			<center><h5>Software</h5></center>
+		<p:layoutUnit style="background-color:#F4F0F0; height:200px"
+			position="center">
+			<center>
+				<h5>Software</h5>
+			</center>
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" CNPJ: *     " />
-				<p:inputMask style="width: 10%" value="" mask="99.999.999/9999-99" />
+				<p:inputMask style="width: 10%" value="#{Software.cnpj}"
+					mask="99.999.999/9999-99" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Razão Social: *     " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Software.razaoSocial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value=" Nome do contato: *     " />
-				<p:inputText style="width: 18%" value="" />
+				<p:inputText style="width: 18%" value="#{Software.nomeContato}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Filial: *     " />
-				<p:inputText style="width: 7%" value="" />
+				<p:inputText style="width: 7%" value="#{Software.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Telefone: *     " />
-				<p:inputMask style="width:10%" value="" mask="(99)99999-9999" />
+				<p:inputMask style="width:10%" value="#{Software.telefone}"
+					mask="(99)99999-9999" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value=" E-mail: *     " />
-				<p:inputText style="width: 15%" value="" />
+				<p:inputText style="width: 15%" value="#{Software.telefone}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Nome Fantasia:      " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="#{Software.nomeFantasia}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Qualificação :      " />
-				<p:inputText style="width: 14%" value="" />
+				<p:inputText style="width: 14%" value="#{Software.qualificacao}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Bairro :      " />
-				<p:inputText style="width: 10%" value="" />
+				<p:inputText style="width: 10%" value="#{Software.bairro}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Município :      " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Software.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" UF :      " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Software.uf}" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value=" CEP :      " /> &nbsp;
-				<p:inputMask style="width: 6%" value="" mask="99999-999" />
+				<p:inputMask style="width: 6%" value="#{Software.cep}"
+					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" CPF :      " />
-				<p:inputMask style="width: 9%" value="" mask="999.999.999-99" />
+				<p:inputMask style="width: 9%" value="#{Software.cpf}"
+					mask="999.999.999-99" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Endereço :       " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Software.endereco}" />
 
 			</p:fieldset>
 			<br />
@@ -177,15 +179,15 @@
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Software.openflex01}" />
 
-                    &nbsp;
+					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="" />
+					<p:inputText style="width: 20%" value="#{Software.openflex02}" />
 
 				</center>
 			</p:fieldset>
-			
+
 			<br />
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
@@ -197,27 +199,27 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="fa-backward">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<br />

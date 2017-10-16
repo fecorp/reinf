@@ -2,6 +2,8 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,14 +11,18 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-public class Responsavel {
-	
-	@Entity
-	public class Responsavel_ implements Serializable, EntidadeBase {
-		private static final long serialVersionUID = 1L;
+@ManagedBean(name = "Responsavel")
+@ViewScoped
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Responsavel")
+@Entity
+public class Responsavel implements Serializable, EntidadeBase {
+	
+	private static final long serialVersionUID = 1L;
+	
+	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Responsavel")
 	
 	private String nomeContato;
 	private String cpfContato;
@@ -344,4 +350,4 @@ public class Responsavel {
 		return null;
 	}
   } 	
-}
+

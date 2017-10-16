@@ -41,10 +41,8 @@
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -52,20 +50,15 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - NF"
-						style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w"  />
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
 
 						<p:menuitem value="Complemento Entrada"
 							url="\Reinf\faces\ComplementoMestreEntrada.xhtml" ajax="false"
@@ -111,17 +104,21 @@
 
 
 		<p:layoutUnit position="center" style="height: 300px" fullPage="true">
-				<center><h5>Filial</h5></center>
+			<center>
+				<h5>Filial</h5>
+			</center>
 
 			<p:fieldset style="background-color:#E0EEF6; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{Filial.empresa}" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2"
+					value="#{Filial.empresa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial :  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{Filial.filial}" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2"
+					value="#{Filial.filial}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
@@ -144,11 +141,13 @@
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="{#{Filial.categoriaPFPJ}" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2"
+					value="{#{Filial.categoriaPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 10%; background-color: #F2F2F2" value="{#{Filial.codigoPFPJ}" />
+				<p:inputText style="width: 10%; background-color: #F2F2F2"
+					value="{#{Filial.codigoPFPJ}" />
 
 
                 &nbsp;
@@ -204,7 +203,8 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask id="cep" style="width: 6%" value="{#{Filial.cep}" mask="99999-999" />
+				<p:inputMask id="cep" style="width: 6%" value="{#{Filial.cep}"
+					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
@@ -213,7 +213,8 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 6%" value="{#{Filial.cepCaixaPostal}" mask="99999-999" />
+				<p:inputMask style="width: 6%" value="{#{Filial.cepCaixaPostal}"
+					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
@@ -221,24 +222,27 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 3%" value="{#{Filial.dddTelefone}" mask="(999)" />
+				<p:inputMask style="width: 3%" value="{#{Filial.dddTelefone}"
+					mask="(999)" />
 
-                <br />
+				<br />
 				<br />
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
-				<p:inputMask id="telefone" style="width: 6%" value="{#{Filial.numeroTelefone}"
-					mask="99999-9999" />
+				<p:inputMask id="telefone" style="width: 6%"
+					value="{#{Filial.numeroTelefone}" mask="99999-9999" />
 
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 3%" value="{#{Filial.dddFax}" mask="(999)" />
+				<p:inputMask style="width: 3%" value="{#{Filial.dddFax}"
+					mask="(999)" />
                 
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
-				<p:inputMask style="width: 9%" value="{#{Filial.numeroFax}" mask="9999-9999" />
+				<p:inputMask style="width: 9%" value="{#{Filial.numeroFax}"
+					mask="9999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
@@ -259,7 +263,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Ind. Equip. Prod Rural:  " />
-				<p:inputText style="width: 2%" value="CBOX" />
+				<p:inputText style="width: 2%" value="#{Filial.indProdRural}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
@@ -343,13 +347,13 @@
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
 					<p:inputText style="width: 20%" value="{#{Filial.openflex01}" />
 
-                    &nbsp;
+					&nbsp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
 					<p:inputText style="width: 20%" value="{#{Filial.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />
-		<br />
+			<br />
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
@@ -360,34 +364,34 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="fa-backward">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null]" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-						<f:param name="productId" value="turubom?" />
+						<f:param name="productId" value="null" />
 					</p:button>
 
 					<br />
 
 				</center>
 			</p:fieldset>
-			
+
 		</p:layoutUnit>
 	</p:layout>
 
