@@ -11,18 +11,12 @@ import javax.persistence.Id;
 
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-@ManagedBean(name = "Responsavel")
-@ViewScoped
+	@Entity
+	public class Responsavel implements Serializable {
+		private static final long serialVersionUID = 1L;
 
-@Entity
-public class Responsavel implements Serializable, EntidadeBase {
-	
-	private static final long serialVersionUID = 1L;
-	
-	
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+		@Id
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	
 	private String nomeContato;
 	private String cpfContato;

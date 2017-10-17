@@ -12,281 +12,302 @@ p.ident {
 }
 </style>
 </h:head>
-<body>
+<h:body style="background-color:#EFF2F6;border:0px;">
+
+	<div>
+		<center>
+			<h5
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Retençõees Pagamentos Diversos - DIRF</h5>
+		</center>
+	</div>
+
+	<h:form>
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+				<p:submenu label="New" icon="ui-icon-contact">
+					<p:menuitem value="Project" url="#" />
+					<p:menuitem value="Other" url="#" />
+				</p:submenu>
+				<p:menuitem value="Open" url="#" />
+				<p:separator />
+				<p:menuitem value="Quit" url="#" />
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+				<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
+					</p:submenu>
+					<p:menuitem value="File" url="#" />
+				</p:submenu>
+			</p:submenu>
+
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+			</p:submenu>
+
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
+
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
+	<br />
 	<p:layout>
-		<p:layoutUnit style="background-color:#F2f2f2" position="north">
-			<center>
-				<p:graphicImage url="C:\Users\CALVES\Desktop\logo.JPG" width="454px"
-					height="340px" />
-			</center>
-		</p:layoutUnit>
-
-		<p:breadCrumb style="background-color:#F2f2f2; font-size:14px">
-
-			<p:menuitem style="color:#E0EEF6" value="Hello" url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Parametrização"
-				url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Geração" url="#" />
-			<p:menuitem style="foreground-color:#E6F1F8" value="Relatórios"
-				url="#" />
-		</p:breadCrumb>
-
-
-
-		<p:layoutUnit position="west" style="background-color:#F2f2f2">
+		
+		<p:layoutUnit position="west" style="background-color:#F2f2f2; font-size:12px">
 			<h:form>
-				<p:panelMenu style="width:265px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros">
-						<p:menuitem value="Empresa" url="\Reinf\faces\telaCadastro.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="\Reinf\faces\telaFilial.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Cliente Fornecedor"
-							url="\Reinf\faces\telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="\Reinf\faces\telaResponsavel.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="\Reinf\faces\TelaSoftware.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
-							icon="ui-icon-arrowrefresh-1-w" />
-					</p:submenu>
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+				<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Empresa" url="telaCadastro.xhtml"
+						icon="ui-icon-disk" />
+					<p:menuitem value="Filial" url="telaFilial.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Cliente Fornecedor"
+						url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Software" url="TelaSoftware.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+					<p:menuitem value="Serviços" url="telaServico.xhtml"
+						icon="ui-icon-arrowrefresh-1-w" />
+				</p:submenu>
 
-					<p:submenu label="Movimentação - Nota Fiscal">
-						<p:menuitem value="Serviços Entrada"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
-							url="\Reinf\faces\ImpostoEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							url="\Reinf\faces\MestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							url="\Reinf\faces\ImpostoSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />
+				<p:submenu label="Movimentação - NF" style="font-size:12px">
+					<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
+					<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+						ajax="false" icon="ui-icon-close" />
 
 
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf">
+				</p:submenu>
+				<p:separator />
+				<p:submenu label="Reinf" style="font-size:12px">
 
-						<p:menuitem value="Doc. Não Fiscais"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
-						<p:menuitem value="Recebimento"
-							url="http://www.primefaces.org/documentation"
-							icon="ui-icon-document" />
-						<p:menuitem value="Pagamento"
-							url="http://www.primefaces.org/downloads"
-							icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem value="Associação Desp"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="Eventos Desp"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-						<p:menuitem value="CPRB" url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem value="Vendas para Agro Indústria"
-							url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-					</p:submenu>
-					<p:submenu label="Interface ">
-						<p:menuitem value="Gerenciamento de Arquivos"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
-					</p:submenu>
+					<p:menuitem
+						value="R-1070 Tabela de Processos Administrativos - Judiciais"
+						url="ProcessosAdmJudicial.xhtml"
+						icon="ui-icon-document" />
 
-					<p:submenu label="Lotes">
-						<p:menuitem value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
-					</p:submenu>
+					<p:menuitem value="" url="http://www.primefaces.org" />
+					<p:menuitem
+						value="R-2030 Recursos Recebidos Por Associação Desportiva"
+						url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+					<p:menuitem
+						value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+						url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+					<p:menuitem value="R-2050 Comercialização Agroindústria"
+						url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+					<p:menuitem
+						value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+						url="cprb.xhtml" icon="ui-icon-wrench" />
+					<p:menuitem value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+						url="dirf.xhtml" icon="ui-icon-wrench" />
 
-				</p:panelMenu>
+
+					<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
+						url="ReceitasEspetaculoDesp.xhtml"
+						icon="ui-icon-document" />
+				</p:submenu>
+				<p:submenu label="Interface " style="font-size:12px">
+					<p:menuitem value="Importação de Arquivos"
+						url="Interface.xhtml" icon="ui-icon-home" />
+
+				</p:submenu>
+
+				<p:submenu label="Lotes" style="font-size:12px">
+					<p:menuitem value="Gerenciamento de Lotes"
+						url="http://www.primefaces.org" icon="ui-icon-home" />
+				</p:submenu>
+
+			</p:panelMenu>
 			</h:form>
 		</p:layoutUnit>
 
 
 		<p:layoutUnit style="background-color:#F2f2f2" position="center">
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value=" Código da Empresa: *     " />
 				<p:inputText style="width: 12%; background-color: #F2F2F2"
 					value="#{Dirf.codEmpresa}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " /> &nbsp;
 				<p:inputText style="width: 12%; background-color: #F2F2F2"
 					value="#{Dirf.codFilial}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Número da Nota Fiscal: * " /> &nbsp;
 				<p:inputText style="width: 8%; background-color: #F2F2F2"
 					value="#{Dirf.numNotaFiscal}" />
 
-				<h:outputText style="font-size: 12px" value="  Série Nota Fiscal: *" /> &nbsp;
-				<p:inputText style="width: 4%; background-color: #F2F2F2"
-					value="#{Dirf.serieNotaFiscal}" />
+				<h:outputText style="font-size: 10px" value="  Série Nota Fiscal: *" /> &nbsp;
+				<p:inputText style="width: 4%; background-color: #F2F2F2" value="" />
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="  Data de Emissão : *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2"
-					value="#{Dirf.dataEmissao}" />
+				<h:outputText style="font-size: 10px" value="  Data de Emissão : *" /> &nbsp;
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Categoria PF/PJ: *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2"
-					value="#{Dirf.categoriaPfPj}" />
+				<h:outputText style="font-size: 10px" value="  Categoria PF/PJ: *" /> &nbsp;
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 
-				<h:outputText style="font-size: 12px" value=" Código PF/PJ : *" /> &nbsp;
-				<p:inputText style="width: 8%; background-color: #F2F2F2"
-					value="#{Dirf.codigoPfPj}" />
+				<h:outputText style="font-size: 10px" value=" Código PF/PJ : *" /> &nbsp;
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 
-
+				<h:outputText style="font-size: 10px" value=" Código PF/PJ : *" /> &nbsp;
+				<p:inputText style="width: 8%; background-color: #F2F2F2" value="" />
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Valores ">
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="      Código do Participante :   " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.codParticipante}" />
 
 
-				<h:outputText style="font-size: 12px" value="  Código do item : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.codItem}" />
+				<h:outputText style="font-size: 10px" value="  Código do item : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="    Data da Operação : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.dataOperacao}" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Valor da Operação/ Item : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.valorOperacao}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Código da Situação Tributária (PIS/PASEP): " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.codSituacaoTributaria}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="  Base de cálculo do PIS/PASEP: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.baseCalculoPisPasep}" />
 				<br />
 				<br />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Alíquota do PIS/PASEP : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.aliquotaPisPasep}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Valor do PIS/PASEP : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.valorPisPasep}" />
 				<br />
 				<br />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Código da Situação Tributária (COFINS) " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.codSituacaoTributariaCofins}" />
 
-				<h:outputText style="font-size: 12px" value="   Alíquota da COFINS " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.aliquotaCofins}" />
+				<h:outputText style="font-size: 10px" value="   Alíquota da COFINS " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Base de cálculo da CSLL" />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.baseCalculoCsll}" />
 
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px" value="   Alíquota da CSLL : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.aliquotaCsll}" />
+				<h:outputText style="font-size: 10px" value="   Alíquota da CSLL : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Base de cálculo do IR : " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.baseCalculoIr}" />
 
-				<h:outputText style="font-size: 12px" value="   Alíquota do IR: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.aliquotaIr}" />
+				<h:outputText style="font-size: 10px" value="   Alíquota do IR: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px" value="   Valor do IR: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.valorIr}" />
+				<h:outputText style="font-size: 10px" value="   Valor do IR: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Base de Cálculo do INSS: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.baseCalculoInss}" />
 
-				<h:outputText style="font-size: 12px" value="   Alíquota do INSS: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.aliquotaInss}" />
+				<h:outputText style="font-size: 10px" value="   Alíquota do INSS: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px" value="   Valor do ISS: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.valorIss}" />
+				<h:outputText style="font-size: 10px" value="   Valor do ISS: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Natureza da Base de Cálculo: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.naturezaBaseCalculo}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Código da Conta Analítica Contábil: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.codContaAnaliticaContabil}" />
 
-				<h:outputText style="font-size: 12px"
-					value="  Código do Centro de Custos : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.codCentroCustos}" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Descrição do Documento/Operação: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.descricaoDocumento}" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Código do Pagamento: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.codPagamento}" />
-
-				<h:outputText style="font-size: 12px" value="  Tipo de Benefícios: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.tipoBeneficios}" />
-
-				<h:outputText style="font-size: 12px"
-					value="  Nome/Razão Social do Benefício: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF"
-					value="#{Dirf.razaoSocialBeneficio}" />
-
-
-
-
-
-
-
+				<h:outputText style="font-size: 10px" value="  Código do Centro de Custos : " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				
+				<h:outputText style="font-size: 10px" value="  Descrição do Documento/Operação: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				
+				<h:outputText style="font-size: 10px" value="  Código do Pagamento: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				
+				<h:outputText style="font-size: 10px" value="  Tipo de Benefícios: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				
+				<h:outputText style="font-size: 10px" value="  Nome/Razão Social do Benefício: " />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				
 				<br />
 				<br />
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Descrição Resumida do Ajuste:  " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.descricaoResumidaAjustes}" />
 
-				<h:outputText style="font-size: 12px"
+				<h:outputText style="font-size: 10px"
 					value="   Mês/Ano de Referência do Ajuste: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{Dirf.mesAnoReferenciaAjustes}" />
@@ -325,35 +346,51 @@ p.ident {
 
 			<br />
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Openflex">
-				<h:outputText style="font-size: 12px" value="  Openflex 01: " />
-				<p:inputText style="width: 20%" value="#{Dirf.openFlex01}" />
+				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+				<p:inputText style="width: 15%" value="" />
 
-				<h:outputText style="font-size: 12px" value="  Openflex 02: " />
-				<p:inputText style="width: 20%" value="#{Dirf.openFlex02}" />
+				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+				<p:inputText style="width: 15%" value="" />
 
 			</p:fieldset>
 
 			<br />
 			<center>
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="Salvar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="null" />
+
+				<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+					value="Incluir" icon="fa-backward" type="button">
+				</p:commandButton>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Excluir" icon="fa-backward">
+					<f:param name="productId" value="turubom?" />
 				</p:button>
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				&nsbp;
-				<p:button style="background-color:#E0EEF6" outcome="acoesBotao"
-					value="  Limpar Dados  " icon="ui-icon-star">
-					<f:param name="productId" value="null" />
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Editar " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
 				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
 			</center>
 		</p:layoutUnit>
 	</p:layout>
 
-</body>
+</h:body>
 </html>

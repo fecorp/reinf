@@ -7,13 +7,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
+
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
 @ManagedBean(name = "Empresa")
 @ViewScoped
 
 @Entity
-public class Empresa implements Serializable, EntidadeBase {
+public class Empresa implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -21,7 +25,6 @@ public class Empresa implements Serializable, EntidadeBase {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	
 	private String empresa;
 	private String filial;
 	private String dataAtualizacao;

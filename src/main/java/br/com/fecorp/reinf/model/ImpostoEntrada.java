@@ -14,7 +14,7 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 @ViewScoped
 
 @Entity
-public class ImpostoEntrada implements Serializable, EntidadeBase {
+public class ImpostoEntrada implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 

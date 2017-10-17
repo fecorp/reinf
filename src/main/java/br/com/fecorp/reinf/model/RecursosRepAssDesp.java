@@ -10,18 +10,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-@ManagedBean(name = "RecursosRepAssDesp")
-@ViewScoped
+	@Entity
+	public class RecursosRepAssDesp implements Serializable {
+		private static final long serialVersionUID = 1L;
 
-@Entity
-public class RecursosRepAssDesp implements Serializable, EntidadeBase {
-	
-	private static final long serialVersionUID = 1L;
-	
-	
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+		@Id
+		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
 		private String codEmpresa;
 		private String codFilial;

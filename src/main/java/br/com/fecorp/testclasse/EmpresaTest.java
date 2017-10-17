@@ -17,6 +17,7 @@ public class EmpresaTest {
 
 		// salva uma Empresa
 		empresaDAO.save(empresa);
+		//empresaDAO.remove(empresa);
 
 		List<Empresa> listaEmpresaCadastrados = empresaDAO.getAll(Empresa.class);
 

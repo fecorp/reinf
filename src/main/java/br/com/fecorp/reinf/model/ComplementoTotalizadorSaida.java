@@ -14,7 +14,7 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 @ViewScoped
 
 @Entity
-public class ComplementoTotalizadorSaida implements Serializable, EntidadeBase {
+public class ComplementoTotalizadorSaida implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	
