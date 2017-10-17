@@ -13,8 +13,6 @@ import br.com.fecorp.reinf.DAO.EntidadeBase;
 	public class ImpostoSaida implements Serializable{
 		private static final long serialVersionUID = 1L;
 
-	private static final long serialVersionUID = 1L;
-
 		@Id
 		@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		

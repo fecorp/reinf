@@ -171,3 +171,4 @@ public class Software implements Serializable {
 	public long getSerialversionuid() {
 		return serialVersionUID;
 	}
+}

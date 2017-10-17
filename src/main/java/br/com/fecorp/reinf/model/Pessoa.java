@@ -10,7 +10,6 @@ import javax.persistence.Table;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
 @Entity
-@Table(name = "tb_pessoa")
 public class Pessoa implements EntidadeBase {
 
 	private Long id;
@@ -18,7 +17,6 @@ public class Pessoa implements EntidadeBase {
 	private int idade;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "id")
 	public Long getId() {
 		return id;

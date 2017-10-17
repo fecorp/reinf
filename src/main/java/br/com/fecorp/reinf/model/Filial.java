@@ -21,11 +21,6 @@ public class Filial implements Serializable {
 		
 
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-
-
-
 	private String empresa;
 	private String complementoEnd;
 	private String filial;
