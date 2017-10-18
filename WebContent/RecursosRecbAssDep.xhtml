@@ -14,14 +14,7 @@
 
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Recursos Recebidos Por Associação Desportiva</h5>
-		</center>
-	</div>
-
-	<h:form>
+<h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -72,6 +65,16 @@
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Recursos Recebidos Por Associação Desportiva</h1>
+		</center>
+	</div>
+
+	
 	<br />
 
 
@@ -189,7 +192,7 @@
 			    &nbsp;
 			<h:outputText style="font-size: 10px"
 					value="      Código de Conta Analítica Contábil:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{RecursosRecbAssDep.codContaAnaliticaContabil}" />
 				&nbsp;
 				<h:outputText style="font-size:10px" value="Retificação: " />
 				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
@@ -270,16 +273,16 @@
 
 
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
-				legend=" OpenFlex ">
+				legend=" Open Flex ">
 				<center>
 
 
-					<h:outputText style="font-size: 10px" value="      OpenFlex 01:   " />
+					<h:outputText style="font-size: 10px" value="      Open Flex 01:   " />
 					<p:inputText style="width: 20%; background-color: #FFFFFFF"
 						value="#{RecursosRecbAssDep.openFlex01}" />
 					&nbsp;
 
-					<h:outputText style="font-size: 10px" value="      OpenFlex 02:   " />
+					<h:outputText style="font-size: 10px" value="      Open Flex 02:   " />
 					<p:inputText style="width: 20%; background-color: #FFFFFFF"
 						value="#{RecursosRecbAssDep.openFlex02}" />
 					&nbsp;

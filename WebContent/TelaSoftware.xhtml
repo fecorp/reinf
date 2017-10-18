@@ -8,14 +8,8 @@
 <h:head></h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Software</h5>
-		</center>
-	</div>
 
-	<h:form>
+   <h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -66,6 +60,15 @@
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Software</h1>
+		</center>
+	</div>
+
+	
 	<br />
 
 
@@ -199,11 +202,11 @@
 				legend="Endereço">
 
 				<h:outputText style="font-size: 10px" value="  Endereço :  " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Software.endereco}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 8%" value="" />
+				<p:inputText style="width: 8%" value="#{Software.bairro}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cidade: " />
@@ -215,11 +218,11 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask style="width: 7%" value="" mask="99999-999" />
+				<p:inputMask style="width: 7%" value="#{Software.cep}" mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Qualificação: *     " />
-				<p:inputText style="width: 12%" value="" />
+				<p:inputText style="width: 12%" value="#{Software.qualificacao}" />
 
 				<br />
 				<br />
@@ -242,13 +245,13 @@
 			<br/>
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Openflex">
+				legend="Open Flex">
 				<center>
-					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
 					<p:inputText style="width: 20%" value="#{Software.openflex01}" />
 
 					&nbsp;
-					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
 					<p:inputText style="width: 20%" value="#{Software.openflex02}" />
 
 				</center>

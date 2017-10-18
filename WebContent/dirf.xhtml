@@ -14,14 +14,7 @@ p.ident {
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Retençõees Pagamentos Diversos - DIRF</h5>
-		</center>
-	</div>
-
-	<h:form>
+<h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -72,6 +65,15 @@ p.ident {
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Retençõees Pagamentos Diversos - DIRF</h1>
+		</center>
+	</div>
+
+	
 	<br />
 	<p:layout>
 		
@@ -286,19 +288,19 @@ p.ident {
 					value="#{Dirf.codContaAnaliticaContabil}" />
 
 				<h:outputText style="font-size: 10px" value="  Código do Centro de Custos : " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{Dirf.codCentroCustos}" />
 				
 				<h:outputText style="font-size: 10px" value="  Descrição do Documento/Operação: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{Dirf.descricaoDocumento}" />
 				
 				<h:outputText style="font-size: 10px" value="  Código do Pagamento: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{Dirf.codPagamento}" />
 				
 				<h:outputText style="font-size: 10px" value="  Tipo de Benefícios: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{Dirf.tipoBeneficios}" />
 				
 				<h:outputText style="font-size: 10px" value="  Nome/Razão Social do Benefício: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{Dirf.razaoSocialBeneficio}" />
 				
 				<br />
 				<br />
@@ -347,12 +349,12 @@ p.ident {
 			<br />
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Openflex">
-				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-				<p:inputText style="width: 15%" value="" />
+				legend="Open Flex">
+				<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+				<p:inputText style="width: 15%" value="#{Dirf.openFlex01}" />
 
-				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-				<p:inputText style="width: 15%" value="" />
+				<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+				<p:inputText style="width: 15%" value= "#{Dirf.openFlex02}" />
 
 			</p:fieldset>
 

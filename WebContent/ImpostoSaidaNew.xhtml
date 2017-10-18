@@ -8,14 +8,8 @@
 <h:head></h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos de Saída</h5>
-		</center>
-	</div>
-	
-	<h:form>
+
+<h:form>
 				<p:growl id="messages" />
 
 				<p:menubar style="font-size:12px; color: #d15">
@@ -69,6 +63,15 @@
 					</f:facet>
 				</p:menubar>
 				</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos de Saída</h1>
+		</center>
+	</div>
+	
+	
 <br/>
 
 
@@ -195,29 +198,29 @@
 
 			</p:fieldset>
 
-			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Valores e Alíquotas">
+<center>
 				<h:outputText style="font-size: 10px"
 					value="  VL Serviço :   " />
-				<p:inputMask style="width: 7%" value="#{ImpostoSaida.valorServico}" />
-				&nbsp; 
+				<p:inputMask style="width: 7%" value="#{ImpostoEntrada.valorServico}" />
+&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Material Aplicado: " />
-				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorMaterialApp}" />
-				&nbsp; 
-
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorMaterialApp}" />
+&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Desconto:   " />
-				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorDesconto}" />
-				&nbsp; 
-
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorDesconto}" />
+&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Documento: " />
-				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorTotalDocumento}" />
-				&nbsp; 
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorTotalDocumento}" />
+&nbsp;		
 				<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-				<p:inputText style="width: 7%" value="#{ImpostoSaida.valorIss}" />
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorIssRetido}" />
+					</center>
+				
 				<br />
 				<br />
 				<br/>
@@ -227,113 +230,117 @@
 
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
-						value=" BASE: " />
+						value=" BASE " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					
+					
+			
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
-						value=" ALÍQUOTA: " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						value=" ALÍQUOTA " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 					
 					<h:outputText style="font-size: 10px; font-weight: bold;"
-						value=" VALOR " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						value=" VALORES RETIDOS " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+				
+					
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
-						value=" CÓDIGO " />
+						value=" CÓDIGO DE RETENÇÃO " />
 					<br /> <br />
 					<h:outputText style="font-size: 10px" value=" IRRF: " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					
-					
 
-					<p:inputText style="width:10%" value="" />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width:2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width:4%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					<p:inputText style="width:10%" value=" " />
-					<br /> <br />
-					<h:outputText style="width:10%" value=" INSS: " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width:10%" value=" " />
+					<p:inputText style="font-size: 9px" value="" />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 2%" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-					<p:inputText style="width: 4%" value=" " />
+					<p:inputText style="width: 5%" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					
-					<p:inputText style="width: 10%" value=" " />
+					<p:inputText style="font-size: 10px" value=" " />
+					<br /> <br />
+					<h:outputText style="font-size: 10px" value=" INSS: " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="font-size: 9px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 2%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 5%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
 					<h:outputText style="font-size: 10px" value=" PIS :  " />
 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+					<p:inputText style="font-size: 9px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 2%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 5%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					<p:inputText style="font-size: 10px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 10px" value=" COFINS :  " />
+
+					&nbsp; &nbsp;
+
+					<p:inputText style="font-size: 9px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 2%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+					<p:inputText style="width: 5%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 10px" value=" " />
+					<p class="ident" />
+					<h:outputText style="font-size: 10px" value=" SSL: " />
+
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-					<p:inputText style="width: 10%" value=" " />
+					<p:inputText style="font-size: 9px" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 2%" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-					<p:inputText style="width: 4%" value=" " />
+					<p:inputText style="width: 5%" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					<p:inputText style="width: 10%" value=" " />
+					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" CONFIS: " />
-					&nbsp; &nbsp; &nbsp;
+					<h:outputText style="font-size: 10px" value=" ISS :  " />
 
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 
-					<p:inputText style="width: 10%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 9px" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
+					&nbsp;
 
 					<p:inputText style="width: 2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;
 
-					<p:inputText style="width: 4%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-					<p:inputText style="width: 10%" value=" " />
-					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" CSSL: " />
-
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-
-					<p:inputText style="width: 10%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-
-					<p:inputText style="width: 2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width: 4%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					<p:inputText style="width: 10%" value=" " />
-					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" ISS: " />
-
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width: 10%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width: 2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-					<p:inputText style="width: 4%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					<p:inputText style="width: 10%" value=" " />
+					<p:inputText style="width: 5%" value=" " />
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
 
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					 &nbsp; &nbsp; &nbsp; 
 
 
 
 				</div>
+			
 			</p:fieldset>
 
 
@@ -343,9 +350,7 @@
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Dados Complementares">
 
-				<h:outputText style="font-size: 10px"
-					value="  Código da Retenção IRRF p/ DIRF : " />
-				<p:inputText id="codigoretencao" style="width: 14%" value="#{ImpostoSaida.codRetencaoIrrfDirf}" />
+				
 
 				<h:outputText style="font-size: 10px"
 					value="  Texto Complementar :  " />
@@ -356,12 +361,13 @@
 			</p:fieldset>
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Openflex">
+				legend="Open Flex">
 				<center>
-				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+				<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
 				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
+				&nbsp;
 
-				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+				<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
 				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
