@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body style="background-color:#EFF2F6;border:0px;">
+	<div>
+		<center>
+			<h5
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Geração</h5>
+		</center>
+	</div>
+
+	<h:form>
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-contact">
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
+			</p:submenu>
+
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="Geracao.xhtml"
+					icon="ui-icon-folder-open" />
+
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Tela de Relatórios" url="#"
+					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+			</p:submenu>
+
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
+
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
+				<p:commandButton type="button" value="Sair do Sistema"
+					icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
+
+	<br />
+	<p:layout>
+		<p:layoutUnit position="west" style="height: 80px" fullPage="true">
+			<h:form>
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" url="telaServico.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+
+					</p:submenu>
+
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf" style="font-size:12px">
+
+						<p:menuitem
+							value="R-1070 Tabela de Processos Administrativos - Judiciais"
+							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+
+						<p:menuitem value="" url="http://www.primefaces.org" />
+						<p:menuitem
+							value="R-2030 Recursos Recebidos Por Associação Desportiva"
+							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+						<p:menuitem
+							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="R-2050 Comercialização Agroindústria"
+							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem
+							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+							url="cprb.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+							url="dirf.xhtml" icon="ui-icon-wrench" />
+
+
+						<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
+							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+					</p:submenu>
+					<p:submenu label="Interface " style="font-size:12px">
+						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
+							icon="ui-icon-home" />
+
+					</p:submenu>
+
+					<p:submenu label="Lotes" style="font-size:12px">
+						<p:menuitem value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
+
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+
+
+		<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+			<!--Cógigo geração central  -->
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Geração ">
+
+
+				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{TelaGeracao.empresa}" />
+
+                &nbsp;
+				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
+				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{TelaGeracao.filial}" />
+
+                &nbsp; 
+ 				<h:outputText style="font-size: 10px" value="      Período :   " />
+				<p:inputText style="width: 15%" value="#{TelaGeracao.periodo}" />
+
+				<br />
+			</p:fieldset>
+			<br></br>
+			<br></br>
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Opções ">
+
+
+				<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+					<p:selectOneRadio id="console" value="#{radioView.console}">
+						<f:selectItem itemLabel="Oficial" value="#{TelaGeracao.oficial}" itemValue="Oficial" />
+						<br></br>
+						<f:selectItem itemLabel="Retificação" value="#{TelaGeracao.retificacao}" itemValue="Retificação" />
+					</p:selectOneRadio>
+				</h:panelGrid>
+
+
+			</p:fieldset>
+			<br></br>
+			<br></br>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="Geracao.xhtml"
+					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Campos">
+				<br></br>
+				<br></br>
+
+
+
+				<p:growl id="msg" showDetail="true" />
+				<h:outputText style="font-size: 10px" value="  &nbsp; Ferramentas " />
+			    &nbsp; 
+
+				<p:selectOneMenu id="Reinf" value="#{dropdownView.country}"
+					style="width:150px">
+					<p:ajax listener="#{dropdownView.onCountryChange}" />
+
+					<f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
+					<f:selectItem itemLabel="Informações do Contribuinte" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Tabela de Processos Administrativos"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem
+						itemLabel="Retenção Contribuição Previdenciária - Serviços Tomados"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem
+						itemLabel="Retenção Contribuição Previdenciária - Serviços Prestados"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem
+						itemLabel="Recursos Recebidos por Associação Desportiva"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem
+						itemLabel="Recursos Repassados por Associação Desportiva"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem itemLabel="Comercialização Agroindústria"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem itemLabel="CPRB" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem
+						itemLabel="Retenções na Fonte(IR, CSLL, Cofins, PIS/PASEP)"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem itemLabel="Reabertura dos Eventos Periódicos"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem itemLabel="Fechamento dos Eventos Periódicos"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItem itemLabel="Receita de Espetáculo Desportivo"
+						itemValue="" noSelectionOption="true" />
+					<f:selectItems value="#{dropdownView.countries}" />
+				</p:selectOneMenu>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+            
+		        
+			
+           
+           &nbsp;
+				<h:outputText style="font-size: 10px"
+					value="      Quantidade  &nbsp; &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.quantidade}" />
+
+                &nbsp;
+				<h:outputLabel style="font-size: 10px" value="  Lotes &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.lotes}" />
+			    <br></br>
+                <br></br>
+
+				<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+					<h:outputLabel style="font-size: 10px" value="  Concluído " />
+					<p:selectOneRadio id="Amorim" value="#{radioView.console}">
+						<f:selectItem value="#{TelaGeracao.sim}" itemLabel="Sim" itemValue="Sim" />
+						<br></br>
+						<f:selectItem value="#{TelaGeracao.nao}" itemLabel="Não" itemValue="Não" />
+					</p:selectOneRadio>
+				</h:panelGrid>
+			</p:fieldset>
+			<br></br>
+			
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Lotes">
+
+				<h:outputLabel style="font-size: 10px"
+					value="  &nbsp; &nbsp; &nbsp;  1 - 99 &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.num01}" />
+				&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Enviar" >
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+				
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						 
+				<h:outputLabel style="font-size: 10px"
+					value="  &nbsp; &nbsp; &nbsp;  Recibo &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.recibo}" />	 
+			
+				&nbsp; &nbsp; &nbsp; 
+					
+				
+				<h:outputLabel style="font-size: 10px"
+					value="  &nbsp; &nbsp; &nbsp;  Recibo Anterior &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.reciboAnterior}" /> 
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				
+				
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Upload do Arquivo" >
+						<f:param name="productId" value="null" />
+					</p:button>	
+				 
+
+
+				<br></br>
+				<br></br>
+				<h:outputLabel style="font-size: 10px" value="  100 - 199 &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.num02}" />
+				&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Enviar" >
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+
+				<br></br>
+				<br></br>
+
+				<h:outputLabel style="font-size: 10px" value="  200 - 299 &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.num03}" />
+				&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Enviar" >
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+				<br></br>
+				<br></br>
+
+				<h:outputLabel style="font-size: 10px" value="  300 - 399 &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.num04}" />
+				&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Enviar" >
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+				<br></br>
+				<br></br>
+
+				<h:outputLabel style="font-size: 10px" value="  400 - 499 &nbsp; " />
+				<p:inputText style="width: 10%" value="#{TelaGeracao.num05}" />
+				&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Enviar" >
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+				
+				
+				
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp;
+				
+				
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Gerar Arquivo" >
+						<f:param name="productId" value="null" />
+					</p:button>		
+					
+				<br></br>
+				<br></br>
+
+
+			</p:fieldset>
+
+
+			<br></br>
+			<br></br>
+			<p:fieldset style="background-color: #F2F2F2">
+				<center>
+
+
+					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
+					</p:commandButton>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+
+					<br /> <br />
+
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
+
+					<br />
+
+				</center>
+			</p:fieldset>
+
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Sair " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+
+		</p:layoutUnit>
+
+	</p:layout>
+
+
+</h:body>
+</html>

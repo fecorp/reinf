@@ -25,6 +25,7 @@ public class Empresa implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	
 	private String empresa;
 	private String filial;
 	private String dataAtualizacao;

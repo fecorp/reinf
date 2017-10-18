@@ -18,14 +18,8 @@ public class Filial implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-		
 
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-
-
-
+	
 	private String empresa;
 	private String complementoEnd;
 	private String filial;
@@ -67,7 +61,6 @@ public class Filial implements Serializable {
 	private String dataEncerramento;
 	private String openflex01; 
 	private String openflex02;
-
 
 
 
