@@ -10,12 +10,6 @@
 </h:head>
 
 <h:body style="background-color:#EFF2F6;border:0px;">
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Geração</h5>
-		</center>
-	</div>
 
 	<h:form>
 		<p:growl id="messages" />
@@ -51,6 +45,15 @@
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Geração</h1>
+		</center>
+	</div>
+
+
 
 	<br />
 	<p:layout>
@@ -135,11 +138,13 @@
 
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{TelaGeracao.empresa}" />
+				<p:inputText style="width: 5%; background-color: #F2F2F2"
+					value="#{TelaGeracao.empresa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{TelaGeracao.filial}" />
+				<p:inputText style="width: 5%; background-color: #F2F2F2"
+					value="#{TelaGeracao.filial}" />
 
                 &nbsp; 
  				<h:outputText style="font-size: 10px" value="      Período :   " />
@@ -156,9 +161,11 @@
 
 				<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 					<p:selectOneRadio id="console" value="#{radioView.console}">
-						<f:selectItem itemLabel="Oficial" value="#{TelaGeracao.oficial}" itemValue="Oficial" />
+						<f:selectItem itemLabel="Oficial" value="#{TelaGeracao.oficial}"
+							itemValue="Oficial" />
 						<br></br>
-						<f:selectItem itemLabel="Retificação" value="#{TelaGeracao.retificacao}" itemValue="Retificação" />
+						<f:selectItem itemLabel="Retificação"
+							value="#{TelaGeracao.retificacao}" itemValue="Retificação" />
 					</p:selectOneRadio>
 				</h:panelGrid>
 
@@ -181,45 +188,42 @@
 
 
 				<p:growl id="msg" showDetail="true" />
-				<h:outputText style="font-size: 10px" value="  &nbsp; Ferramentas " />
+				<h:outputText style="font-size: 10px" value="  &nbsp; Eventos " />
 			    &nbsp; 
 
-				<p:selectOneMenu id="Reinf" value="#{dropdownView.country}"
-					style="width:150px">
-					<p:ajax listener="#{dropdownView.onCountryChange}" />
-
-					<f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
-					<f:selectItem itemLabel="Informações do Contribuinte" itemValue=""
-						noSelectionOption="true" />
+					<p:selectOneMenu style="font-size:10px" value="retificacao"
+					itemLabel="retificacao">
+					<f:selectItem itemLabel="Informações do Contribuinte"
+						itemValue="Informações do Contribuinte" />
 					<f:selectItem itemLabel="Tabela de Processos Administrativos"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Tabela de Processos Administrativos" />
 					<f:selectItem
 						itemLabel="Retenção Contribuição Previdenciária - Serviços Tomados"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Retenção Contribuição Previdenciária - Serviços Tomados" />
 					<f:selectItem
 						itemLabel="Retenção Contribuição Previdenciária - Serviços Prestados"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Retenção Contribuição Previdenciária - Serviços Prestados" />
 					<f:selectItem
 						itemLabel="Recursos Recebidos por Associação Desportiva"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Recursos Recebidos por Associação Desportiva" />
 					<f:selectItem
-						itemLabel="Recursos Repassados por Associação Desportiva"
-						itemValue="" noSelectionOption="true" />
+						itemLabel="Recursos Repassados por Associação Desportivas"
+						itemValue="Recursos Repassados por Associação Desportivas" />
 					<f:selectItem itemLabel="Comercialização Agroindústria"
-						itemValue="" noSelectionOption="true" />
-					<f:selectItem itemLabel="CPRB" itemValue=""
-						noSelectionOption="true" />
+						itemValue="Comercialização Agroindústria" />
+					<f:selectItem itemLabel="CPRB" itemValue="CPRB" />
 					<f:selectItem
-						itemLabel="Retenções na Fonte(IR, CSLL, Cofins, PIS/PASEP)"
-						itemValue="" noSelectionOption="true" />
+						itemLabel="Retenções na Fonte (IR, CSLL, COFINS, PIS/PASEP)"
+						itemValue="Retenções na Fonte (IR, CSLL, COFINS, PIS/PASEP)" />
 					<f:selectItem itemLabel="Reabertura dos Eventos Periódicos"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Reabertura dos Eventos Periódicos" />
 					<f:selectItem itemLabel="Fechamento dos Eventos Periódicos"
-						itemValue="" noSelectionOption="true" />
+						itemValue="Fechamentos dos Eventos Periódicos" />
 					<f:selectItem itemLabel="Receita de Espetáculo Desportivo"
-						itemValue="" noSelectionOption="true" />
-					<f:selectItems value="#{dropdownView.countries}" />
+						itemValue="Receita de Espetáculo Desportivo" />
 				</p:selectOneMenu>
+
+
 				<br></br>
 				<br></br>
 				<br></br>
@@ -236,20 +240,22 @@
                 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Lotes &nbsp; " />
 				<p:inputText style="width: 10%" value="#{TelaGeracao.lotes}" />
-			    <br></br>
-                <br></br>
+				<br></br>
+				<br></br>
 
 				<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 					<h:outputLabel style="font-size: 10px" value="  Concluído " />
 					<p:selectOneRadio id="Amorim" value="#{radioView.console}">
-						<f:selectItem value="#{TelaGeracao.sim}" itemLabel="Sim" itemValue="Sim" />
+						<f:selectItem value="#{TelaGeracao.sim}" itemLabel="Sim"
+							itemValue="Sim" />
 						<br></br>
-						<f:selectItem value="#{TelaGeracao.nao}" itemLabel="Não" itemValue="Não" />
+						<f:selectItem value="#{TelaGeracao.nao}" itemLabel="Não"
+							itemValue="Não" />
 					</p:selectOneRadio>
 				</h:panelGrid>
 			</p:fieldset>
 			<br></br>
-			
+
 
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Lotes">
@@ -259,9 +265,9 @@
 				<p:inputText style="width: 10%" value="#{TelaGeracao.num01}" />
 				&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Enviar" >
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+					outcome="acoesBotao" value="Enviar">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 				
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	
@@ -276,15 +282,16 @@
 				
 				<h:outputLabel style="font-size: 10px"
 					value="  &nbsp; &nbsp; &nbsp;  Recibo Anterior &nbsp; " />
-				<p:inputText style="width: 10%" value="#{TelaGeracao.reciboAnterior}" /> 
+				<p:inputText style="width: 10%"
+					value="#{TelaGeracao.reciboAnterior}" /> 
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 				
 				
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Upload do Arquivo" >
-						<f:param name="productId" value="null" />
-					</p:button>	
-				 
+					outcome="acoesBotao" value="Upload do Arquivo">
+					<f:param name="productId" value="null" />
+				</p:button>
+
 
 
 				<br></br>
@@ -293,9 +300,9 @@
 				<p:inputText style="width: 10%" value="#{TelaGeracao.num02}" />
 				&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Enviar" >
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+					outcome="acoesBotao" value="Enviar">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 
 
 				<br></br>
@@ -305,9 +312,9 @@
 				<p:inputText style="width: 10%" value="#{TelaGeracao.num03}" />
 				&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Enviar" >
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+					outcome="acoesBotao" value="Enviar">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 				<br></br>
 				<br></br>
 
@@ -315,9 +322,9 @@
 				<p:inputText style="width: 10%" value="#{TelaGeracao.num04}" />
 				&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Enviar" >
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+					outcome="acoesBotao" value="Enviar">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 				<br></br>
 				<br></br>
 
@@ -325,9 +332,9 @@
 				<p:inputText style="width: 10%" value="#{TelaGeracao.num05}" />
 				&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Enviar" >
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+					outcome="acoesBotao" value="Enviar">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
 				
 				
 				
@@ -349,10 +356,10 @@
 				
 				
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Gerar Arquivo" >
-						<f:param name="productId" value="null" />
-					</p:button>		
-					
+					outcome="acoesBotao" value="Gerar Arquivo">
+					<f:param name="productId" value="null" />
+				</p:button>
+
 				<br></br>
 				<br></br>
 
@@ -362,6 +369,7 @@
 
 			<br></br>
 			<br></br>
+			<p:fieldset style="background-color: #F2F2F2">
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
@@ -409,10 +417,12 @@
 					<br />
 
 				</center>
+			</p:fieldset>	 
+				 
 			</p:fieldset>
 
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Sair " icon="fa-backward">
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
 

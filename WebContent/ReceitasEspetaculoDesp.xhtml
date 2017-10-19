@@ -14,23 +14,20 @@
 
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-<h:form>
+	<h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:submenu label="New" icon="ui-icon-contact">
-					<p:menuitem value="Project" url="#" />
-					<p:menuitem value="Other" url="#" />
-				</p:submenu>
-				<p:menuitem value="Open" url="#" />
-				<p:separator />
-				<p:menuitem value="Quit" url="#" />
+				
+			<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />	
+				
 			</p:submenu>
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -74,7 +71,7 @@
 		</center>
 	</div>
 
-	
+
 	<br />
 
 
@@ -157,198 +154,232 @@
 		<p:layoutUnit position="center">
 
 
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend=" Dados Cadastrais ">
 
 				<h:outputText style="font-size: 10px"
 					value=" Código da Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ReceitaEspetaculoDesp.codEmpresa}" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2"
+					value="#{ReceitaEspetaculoDesp.codEmpresa}" />
 	            &nbsp;		
 			
 			    <h:outputText style="font-size: 10px"
 					value=" Código da Filial: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ReceitaEspetaculoDesp.codFilial}" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2"
+					value="#{ReceitaEspetaculoDesp.codFilial}" />
 				&nbsp;
 			
 			<h:outputText style="font-size: 10px"
 					value="      Número do Boletim Espetáculo Desportivo:    " />
-				<p:inputText style="width: 3%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.numBoletim}" /> 
+				<p:inputText style="width: 3%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.numBoletim}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Modalidade do Evento Desportivo:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.modalidadeEventoDesp}" /> 
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.modalidadeEventoDesp}" /> 
 			    &nbsp;
 			    <br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="     (Entre Outras):    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.entreOutras}" /> 
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.entreOutras}" /> 
 			    &nbsp;
 			 
 			     <h:outputText style="font-size: 10px"
 					value="      CNPJ do Clube Mandante:    " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.cnpjClubeMandante}" /> 
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.cnpjClubeMandante}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      CNPJ do Clube Visitante:    " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.cnpjClubeVisitante}" /> 
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.cnpjClubeVisitante}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Nome do Clube Visitante:    " />
-				<p:inputText style="width: 15%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.nomeClubeVisitante}" /> 
+				<p:inputText style="width: 15%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.nomeClubeVisitante}" /> 
 			    &nbsp;
 			    <br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      Praça Desportiva do Local do Evento:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.pracaDespLocalEvento}" /> 
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.pracaDespLocalEvento}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Sigla Unidade da Federação:    " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.siglaUniFederacao}" /> 
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.siglaUniFederacao}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Descrição do Tipo do Ingresso:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.descTipoIngresso}" /> 
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.descTipoIngresso}" /> 
 			    &nbsp;
 			    <br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      Descrição da Receita:    " />
-				<p:inputText style="width: 15%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.descReceita}" /> 
+				<p:inputText style="width: 15%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.descReceita}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Número do Processo Adm/Judicial:    " />
-				<p:inputText style="width: 15%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.numProcAdm}" /> 
+				<p:inputText style="width: 15%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.numProcAdm}" /> 
 			    &nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Código da Conta Analítica Contábil:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.codContaAnaliticaContabil}" /> 
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.codContaAnaliticaContabil}" /> 
 			    &nbsp;
 			
 			</p:fieldset>
 			<br></br>
 
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 11px"
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend=" Valores ">
 
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Competição:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.tipoCompeticao}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.tipoCompeticao}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Categoria do Evento:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.categoriaEvento}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.categoriaEvento}" />
 				&nbsp;
 			
 			    <h:outputText style="font-size: 10px"
 					value="      Código do Municipio:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.codMunicipio}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.codMunicipio}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Quantidade de Espectadores Pagantes:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.qtdEspecPagantesEvento}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.qtdEspecPagantesEvento}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Quantidade de Espectadores Não Pagantes:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.qtdEspecNaoPagantesEvento}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.qtdEspecNaoPagantesEvento}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Ingresso:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.tipoIngresso}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.tipoIngresso}" />
 				&nbsp;
 				<br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      Número de Ingressos Colocados à Venda:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.numIngressosColocVenda}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.numIngressosColocVenda}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Número de Ingressos Vendidos:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.numIngressosVendidos}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.numIngressosVendidos}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Número de Ingressos Devolvidos:   " />
-				<p:inputText style="width: 5%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.numIngressosDevolvidos}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.numIngressosDevolvidos}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Preço Individual do Ingresso:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.precoIngresso}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.precoIngresso}" />
 				&nbsp;
 				<br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor Total Arrecadado:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorTotalArrecadado}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorTotalArrecadado}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Receita:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.tipoReceita}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.tipoReceita}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Valor da Receita Auferida:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorReceitaAuferida}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorReceitaAuferida}" />
 				&nbsp;
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Valor da Receita Bruta Total:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorReceitaBruta}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorReceitaBruta}" />
 				&nbsp;
 				
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL da Contribuição Prev.:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorContribPrev}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorContribPrev}" />
 				&nbsp;
 				<br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      VL Contribuição Prev. Exigibilidade Suspensa:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorContribPrevExigiSusp}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorContribPrevExigiSusp}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Processo:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.tipoProcesso}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.tipoProcesso}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Código Indicato da Suspensão:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.codIndiSusp}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.codIndiSusp}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL Total Dest. Clubes Participantes:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorTotalClubesParticipantes}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorTotalClubesParticipantes}" />
 				&nbsp;
 				<br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      VL Retido dos Clubes:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.valorRetido}" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.valorRetido}" />
 				&nbsp;
 				
 		   </p:fieldset>
@@ -356,17 +387,20 @@
 
 
 
-			<p:fieldset style=" background-color:#F2F2F2;  font-size: 11px; "
+			<p:fieldset style=" background-color:#F2F2F2;  font-size: 10px; "
 				legend=" Open Flex ">
 
 
 
 				<h:outputText style="font-size: 10px" value="      Open Flex 01:   " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.openFlex01}" />
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.openFlex01}" />
 					&nbsp;
 
-					<h:outputText style="font-size: 10px" value="      Open Flex 02:   " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{ReceitaEspetaculoDesp.openFlex02}" />
+					<h:outputText style="font-size: 10px"
+					value="      Open Flex 02:   " />
+				<p:inputText style="width: 20%; background-color: #FFFFFFF"
+					value="#{ReceitaEspetaculoDesp.openFlex02}" />
 					&nbsp;
 				
 
@@ -375,7 +409,8 @@
 
 			<br></br>
 
-			<center>
+			<p:fieldset style="background-color: #F2F2F2">
+				<center>
 
 
 					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
@@ -421,6 +456,13 @@
 					<br />
 
 				</center>
+			</p:fieldset>
+
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+
 		</p:layoutUnit>
 	</p:layout>
 

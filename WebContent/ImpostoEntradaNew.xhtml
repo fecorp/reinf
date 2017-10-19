@@ -21,14 +21,12 @@ p.ident
 
 				<p:menubar style="font-size:12px; color: #d15">
 					<p:submenu label="Parametrização" icon="ui-icon-script">
-						<p:menuitem value="Param." icon="ui-icon-contact" url="Parametrizacao.xhtml">
-						</p:menuitem>
+					<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
 						</p:submenu>
 					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Undo" url="#"
-							icon="ui-icon-arrowreturnthick-1-w" />
-						<p:menuitem value="Redo" url="#"
-							icon="ui-icon-arrowreturnthick-1-e" />
+						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
 					</p:submenu>
 
 					<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -95,7 +93,7 @@ p.ident
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+						<p:menuitem value="Serviços" url="Servicos.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
@@ -414,6 +412,10 @@ p.ident
 			<center>
 
 
+					<p:fieldset style="background-color: #F2F2F2">
+				<center>
+
+
 					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
 						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
 					</p:commandButton>
@@ -442,18 +444,32 @@ p.ident
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
-					
-					<br/>
-					<br/>
-					
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-first" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-prev" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-next" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-end" />
+
+					<br /> <br />
+
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
 
 					<br />
 
 				</center>
+			</p:fieldset>
+
+				</center>
+				
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+			<br></br>
+			<br></br>  
+			  	
 		</p:layoutUnit>
 	</p:layout>
 

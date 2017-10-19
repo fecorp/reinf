@@ -7,9 +7,6 @@
 
 <h:head>
 
-
-
-
 </h:head>
 
 <h:body style="background-color:#EFF2F6;border:0px;">
@@ -18,68 +15,49 @@
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
-			<p:submenu label="Parametrização" icon="ui-icon-document">
-				
+			<p:submenu label="Parametrização" icon="ui-icon-contact">
 				<p:menuitem value="Tela de Parametrização"
 					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
-				
 			</p:submenu>
 
+
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+				<p:menuitem value="Tela de Geração" url="Geracao.xhtml"
 					icon="ui-icon-folder-open" />
+
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
-				<p:menuitem value="Contents" url="#" />
-				<p:submenu label="Search" icon="ui-icon-search">
-					<p:submenu label="Text">
-						<p:menuitem value="Workspace" url="#" />
-					</p:submenu>
-					<p:menuitem value="File" url="#" />
-				</p:submenu>
+				<p:menuitem value="Tela de Relatórios" url="#"
+					icon="ui-icon-folder-open" />
 			</p:submenu>
 
 			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
 				icon="ui-icon-close" />
 
 			<f:facet name="options">
-				<p:inputText style="margin-right:10px" placeholder="Search" />
-				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
+				<p:commandButton type="button" value="Sair do Sistema"
+					icon="ui-icon-extlink" />
 			</f:facet>
 		</p:menubar>
 	</h:form>
 
-
 	<div>
 		<center>
 			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Recursos
-				Recebidos Por Associação Desportiva</h1>
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Cadastrar Login</h1>
 		</center>
 	</div>
 
 
+
 	<br />
-
-
-
 	<p:layout>
-
-		<p:layoutUnit position="west">
+		<p:layoutUnit position="west" style="height: 80px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
@@ -95,6 +73,7 @@
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Serviços" url="telaServico.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
+
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
@@ -139,10 +118,6 @@
 						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
 							icon="ui-icon-home" />
 
-						<p:menuitem value="Entrada NF" url="http://www.primefaces.org"
-							icon="ui-icon-home" />
-						<p:menuitem value="Impostos Entrada"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
 
 					<p:submenu label="Lotes" style="font-size:12px">
@@ -151,147 +126,58 @@
 					</p:submenu>
 
 				</p:panelMenu>
-
 			</h:form>
 		</p:layoutUnit>
 
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+			<!--Cógigo geração central  -->
 
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-				legend=" Dados Cadastrais ">
+				legend="Usuário  ">
 
-				<h:outputText style="font-size: 10px"
-					value=" Código da Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2"
-					value="#{RecursosRecbAssDep.codEmpresa}" />
-	            &nbsp;		
+				<h:outputText style="font-size: 10px" value="  Nome :      " />
+				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				<p:inputText style="width: 15%; " value=""/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Departamento :&nbsp;     " />
+				<p:inputText style="width: 15%; " value=""/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Login :&nbsp;     " />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				<p:inputText style="width: 15%; " value=""/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Senha:&nbsp;     " />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				 <p:password id="senha" style="width: 15%; value=" required="true"/>
+				<br></br>
+				<br></br> 
+				
+				
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Limpar " icon="ui-icon-trash">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
 			
-			    <h:outputText style="font-size: 10px"
-					value=" Código da Filial: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2"
-					value="#{RecursosRecbAssDep.codFilial}" />
-				&nbsp;
-			<h:outputText style="font-size: 10px"
-					value="      CNPJ Empresa Repassadora Recursos:    " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.cnpjEmpresaRepasRecursos}" />
-			    
-			    &nbsp;
-			<h:outputText style="font-size: 10px"
-					value="      Número de Processos Adm/Judiciais:    " />
-				<p:inputText style="width: 15%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.numProcessoAdm}" />
-				<br></br>
-				<br></br>
-			    
-			    &nbsp;
-			<h:outputText style="font-size: 10px"
-					value="      Código de Conta Analítica Contábil:    " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.codContaAnaliticaContabil}" />
-				&nbsp;
-				<h:outputText style="font-size:10px" value="Retificação: " />
-				<p:selectOneMenu style="font-size:10px" value="retificacao"
-					itemLabel="retificacao">
-					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
-					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
-					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
-					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
-				</p:selectOneMenu>
-
-
-
-			</p:fieldset>
-			<br></br>
-
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-				legend=" Valores ">
-
-				<h:outputText style="font-size: 10px"
-					value="      VL Bruto Recursos Recebidos:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorBrutoRecursosRecebidos}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      VL Retenção Recursos Recebidos:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorRetencaoRecursosRecebidos}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      VL Retenção Deixou DS. Feita:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorRetencaoDeixouDeSerFeita}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      Código Correspondente Tipo Processo:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.codCorrespondenteTipoProc}" />
-				&nbsp;
-				<br></br>
-				<br></br>
-
-				<h:outputText style="font-size: 10px"
-					value="      Código Indicativo da Suspensão:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.codIndicativoSusp}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      Tipo de Repasse:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.tipoRepasse}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      VL Bruto de Repasse Efetuado:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorBrutoRepasseEfetuado}" />
-				&nbsp;
-				
-				<h:outputText style="font-size: 10px"
-					value="      VL Apuração a Sofrer Associação Desportiva:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorApuracaoRetencaoSofrerAssociacao}" />
-				&nbsp;
-				<br></br>
-				<br></br>
-
-				<h:outputText style="font-size: 10px"
-					value="      VL Retenção Deixou ser Feita pela Empresa:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{RecursosRecbAssDep.valorRetDeixouSerFeitaEmpresa}" />
-				&nbsp;
+			&nbsp; &nbsp;
 			
-		   </p:fieldset>
-			<br></br>
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Cadastrar " icon="ui-icon-arrowthick-1-n">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+            </p:fieldset>
+				
 
-
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-				legend=" Open Flex ">
-				<center>
-
-
-					<h:outputText style="font-size: 10px"
-						value="      Open Flex 01:   " />
-					<p:inputText style="width: 20%; background-color: #FFFFFFF"
-						value="#{RecursosRecbAssDep.openFlex01}" />
-					&nbsp;
-
-					<h:outputText style="font-size: 10px"
-						value="      Open Flex 02:   " />
-					<p:inputText style="width: 20%; background-color: #FFFFFFF"
-						value="#{RecursosRecbAssDep.openFlex02}" />
-					&nbsp;
-				</center>
-
-
-			</p:fieldset>
 
 			<br></br>
+			<br></br>
+			
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
@@ -339,8 +225,9 @@
 					<br />
 
 				</center>
-			</p:fieldset>
-
+			</p:fieldset>	 
+				 
+			
 
 			<p:button style="background-color:#E0EEF6; font-size:10px"
 				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
@@ -348,10 +235,8 @@
 			</p:button>
 
 		</p:layoutUnit>
+
 	</p:layout>
-
-
-
 
 
 </h:body>
