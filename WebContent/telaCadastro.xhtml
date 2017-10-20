@@ -32,11 +32,13 @@
 					icon="ui-icon-folder-open" />
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
-				icon="ui-icon-close" />
+				icon="" />
 
 			<f:facet name="options">
 				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
@@ -219,7 +221,7 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Complemento do endereço:   " />
+					value="  Complemento do Endereço:   " />
 				<p:inputText style="width: 18%" value="#{Empresa.complemento}" />
 
                 &nbsp;
@@ -321,30 +323,17 @@
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
 				
+                <p:selectOneMenu style="font-size:10px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="Situação" itemValue="Situação" />
+					<f:selectItem itemLabel="Normal" itemValue="Normal" />
+					<f:selectItem itemLabel="Extinção" itemValue="Extinção" />
+					<f:selectItem itemLabel="Fusão" itemValue="Fusão" />
+					<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
+					<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-				<p:growl id="msg" showDetail="true" />
-
-
-
-				<p:selectOneMenu id="PJ" value="#{dropdownView.country}"
-					style="width:150px" >
-					<p:ajax listener="#{dropdownView.onCountryChange}"  height="50"/>
-
-					<f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
-					<f:selectItem itemLabel="Situação" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Normal" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Extinção" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Fusão" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Cisão" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Incorporação" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItems value="#{dropdownView.countries}" />
 				</p:selectOneMenu>
+				
 
 				<br />
 				<br />
@@ -462,11 +451,13 @@
 
 				</center>
 			</p:fieldset>
-
-			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+            
+        <p:button style="background-color:#E0EEF6; font-size:10px"
+				id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
+		
+		
 
 		</p:layoutUnit>
 
