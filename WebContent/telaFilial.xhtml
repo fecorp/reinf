@@ -13,30 +13,19 @@
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Filial</h5>
-		</center>
-	</div>
 
-	<h:form>
+   <h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:submenu label="New" icon="ui-icon-contact">
-					<p:menuitem value="Project" url="#" />
-					<p:menuitem value="Other" url="#" />
-				</p:submenu>
-				<p:menuitem value="Open" url="#" />
-				<p:separator />
-				<p:menuitem value="Quit" url="#" />
+				
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />	
 			</p:submenu>
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml" icon="ui-icon-folder-open" />
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -71,6 +60,15 @@
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Filial</h1>
+		</center>
+	</div>
+
+	
 	<br />
 
 
@@ -174,7 +172,7 @@
 
                 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
-				<p:inputText style="width: 12%" value="{#{Filial.nomeFantasia}" />
+				<p:inputText style="width: 12%" value="#{Filial.nomeFantasia}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
@@ -189,18 +187,18 @@
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
 				<p:inputText style="width: 4%; background-color: #F2F2F2"
-					value="{#{Filial.categoriaPFPJ}" />
+					value="#{Filial.categoriaPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
 				<p:inputText style="width: 10%; background-color: #F2F2F2"
-					value="{#{Filial.codigoPFPJ}" />
+					value="#{Filial.codigoPFPJ}" />
 
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="    Inscrição Estadual: " />
-				<p:inputText style="width: 8%" value="{#{Filial.insEstadual}" />
+				<p:inputText style="width: 8%" value="#{Filial.insEstadual}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
@@ -223,53 +221,53 @@
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Endereço">
 				<h:outputText style="font-size: 10px" value="  Endereço: " />
-				<p:inputText style="width: 28%" value="{#{Filial.endereco}" />
+				<p:inputText style="width: 28%" value="#{Filial.endereco}" />
  
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número: " />
-				<p:inputText style="width: 4%" value="{#{Filial.numero}" />
+				<p:inputText style="width: 4%" value="#{Filial.numero}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Complemento do endereço:   " />
-				<p:inputText style="width: 18%" value="{#{Filial.complementoEnd}" />
+				<p:inputText style="width: 18%" value="#{Filial.complementoEnd}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 13%" value="{#{Filial.bairro}" />
+				<p:inputText style="width: 13%" value="#{Filial.bairro}" />
 				<br />
 				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Município: " />
-				<p:inputText style="width: 8%" value="{#{Filial.municipio}" />
+				<p:inputText style="width: 8%" value="#{Filial.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
-				<p:inputText style="width: 2%" value="{#{Filial.unidadeFederativa}" />
+				<p:inputText style="width: 2%" value="#{Filial.unidadeFederativa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask id="cep" style="width: 6%" value="{#{Filial.cep}"
+				<p:inputMask id="cep" style="width: 6%" value="#{Filial.cep}"
 					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
-				<p:inputText style="width: 8%" value="{#{Filial.caixaPostal}" />
+				<p:inputText style="width: 8%" value="#{Filial.caixaPostal}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 6%" value="{#{Filial.cepCaixaPostal}"
+				<p:inputMask style="width: 6%" value="#{Filial.cepCaixaPostal}"
 					mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				<p:inputText style="width: 8" value="{#{Filial.pais}" />
+				<p:inputText style="width: 8" value="#{Filial.pais}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 3%" value="{#{Filial.dddTelefone}"
+				<p:inputMask style="width: 3%" value="#{Filial.dddTelefone}"
 					mask="(999)" />
 
 				<br />
@@ -277,28 +275,28 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
 				<p:inputMask id="telefone" style="width: 6%"
-					value="{#{Filial.numeroTelefone}" mask="99999-9999" />
+					value="#{Filial.numeroTelefone}" mask="99999-9999" />
 
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 3%" value="{#{Filial.dddFax}"
+				<p:inputMask style="width: 3%" value="#{Filial.dddFax}"
 					mask="(999)" />
                 
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
-				<p:inputMask style="width: 9%" value="{#{Filial.numeroFax}"
+				<p:inputMask style="width: 9%" value="#{Filial.numeroFax}"
 					mask="9999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
-				<p:inputText style="width: 2%" value="{#{Filial.tipoLocalidade}" />
+				<p:inputText style="width: 2%" value="#{Filial.tipoLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Código Município IBGE: " />
-				<p:inputText style="width: 17%" value="{#{Filial.codMunIBGE}" />
+				<p:inputText style="width: 17%" value="#{Filial.codMunIBGE}" />
 
 
 
@@ -314,36 +312,58 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
-				<p:inputText style="width: 8%" value="{#{Filial.insSuframa}" />
+				<p:inputText style="width: 8%" value="#{Filial.insSuframa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Cadastro Específico do INSS: " />
-				<p:inputText style="width: 8%" value="{#{Filial.cadInss}" />
+				<p:inputText style="width: 8%" value="#{Filial.cadInss}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 10%" value="{#{Filial.classFical}" />
+				<p:inputText style="width: 10%" value="#{Filial.classFical}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
-				<p:inputText style="width: 12%" value="{#{Filial.nit}" />
+				<p:inputText style="width: 12%" value="#{Filial.nit}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. PJ: " />
-				<p:inputText style="width: 2%" value="{#{Filial.indicativoPJ}" />
+				<p:inputText style="width: 2%" value="#{Filial.indicativoPJ}" />
 
 				<br />
 				<br />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Situação da PJ: " />
-				<p:inputText style="width: 10%" value="{#{Filial.situacaoPJ}" />
+				<p:growl id="msg" showDetail="true" />
+
+
+
+				<p:selectOneMenu id="PJ" value="#{dropdownView.country}"
+					style="width:150px" >
+					<p:ajax listener="#{dropdownView.onCountryChange}"  height="50"/>
+
+					<f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
+					<f:selectItem itemLabel="Situação" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Normal" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Extinção" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Fusão" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Cisão" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItem itemLabel="Incorporação" itemValue=""
+						noSelectionOption="true" />
+					<f:selectItems value="#{dropdownView.countries}" />
+				</p:selectOneMenu>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 4%" value="{#{Filial.numeroCNO}" />
+				<p:inputText style="width: 4%" value="#{Filial.numeroCNO}" />
 
 				<script>
             PrimeFaces.locales['pt'] = {
@@ -388,15 +408,15 @@
 			</p:fieldset>
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Openflex">
+				legend="Open Flex">
 
 				<center>
-					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 20%" value="{#{Filial.openflex01}" />
+					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+					<p:inputText style="width: 20%" value="#{Filial.openflex01}" />
 
 					&nbsp;
-					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 20%" value="{#{Filial.openflex02}" />
+					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+					<p:inputText style="width: 20%" value="#{Filial.openflex02}" />
 				</center>
 			</p:fieldset>
 			<br />
@@ -449,6 +469,11 @@
 
 				</center>
 			</p:fieldset>
+			
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
 
 		</p:layoutUnit>
 	</p:layout>

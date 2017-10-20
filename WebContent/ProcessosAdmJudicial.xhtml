@@ -19,31 +19,21 @@ p.ident {
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Processos
-				Administrativos Judiciais</h5>
-		</center>
-	</div>
 
 	<h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:submenu label="New" icon="ui-icon-contact">
-					<p:menuitem value="Project" url="#" />
-					<p:menuitem value="Other" url="#" />
-				</p:submenu>
-				<p:menuitem value="Open" url="#" />
-				<p:separator />
-				<p:menuitem value="Quit" url="#" />
+				
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
+				
 			</p:submenu>
 
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -69,8 +59,7 @@ p.ident {
 				</p:submenu>
 			</p:submenu>
 
-			<p:menuitem value="Lotes" url="#"
-				icon="ui-icon-close" />
+			<p:menuitem value="Lotes" url="#" icon="ui-icon-close" />
 
 			<f:facet name="options">
 				<p:inputText style="margin-right:10px" placeholder="Search" />
@@ -78,6 +67,16 @@ p.ident {
 			</f:facet>
 		</p:menubar>
 	</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Processos
+				Administrativos Judiciais</h1>
+		</center>
+	</div>
+
+
 	<br />
 	<p:layout>
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
@@ -137,8 +136,8 @@ p.ident {
 							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
 					</p:submenu>
 					<p:submenu label="Interface " style="font-size:12px">
-						<p:menuitem value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-home" />
+						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
+							icon="ui-icon-home" />
 
 					</p:submenu>
 
@@ -158,14 +157,21 @@ p.ident {
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ProcessosAdmJud.empresa}" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2"
+					value="#{ProcessosAdmJud.empresa}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px" value="      Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ProcessosAdmJud.filial}" />
+				<p:inputText style="width: 7%; background-color: #F2F2F2"
+					value="#{ProcessosAdmJud.filial}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Número do processo Adm/Jud:  * " />
-				<p:inputText style="width: 18%; background-color: #F2F2F2" value="#{ProcessosAdmJud.numProcAdmJud}" />
+				<p:inputText style="width: 18%; background-color: #F2F2F2"
+					value="#{ProcessosAdmJud.numProcAdmJud}" />
+					&nbsp;
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Data de Decisão/Sentença: " />
@@ -212,6 +218,7 @@ p.ident {
 						value="#{checkboxView.selectedConsoles}" style="font-size: 10px">
 						<f:selectItem itemLabel="Administrativo "
 							itemValue=" Administrativo do Tomador" />
+							&nbsp;
 						<f:selectItem itemLabel="Judicial "
 							itemValue=" Judicial do Tomador" />
 					</p:selectManyCheckbox>
@@ -219,26 +226,36 @@ p.ident {
 			</p:fieldset>
 
 			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px "
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Processos">
 
 				<h:outputText style="font-size: 10px" value="  Cód.Ind. Suspensão: " />
-				<p:inputText style="width: 7%" value="#{ProcessosAdmJud.codIndicativoSuspe}" />
+				<p:inputText style="width: 7%"
+					value="#{ProcessosAdmJud.codIndicativoSuspe}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value=" Ind. Susp. Exigibilidade :   " />
-				<p:inputText style="width: 15%" value="#{ProcessosAdmJud.indiSuspeExigi}" />
+				<p:inputText style="width: 15%"
+					value="#{ProcessosAdmJud.indiSuspeExigi}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Ind. Depósito Montante Integral: " />
-				<p:inputText style="width: 15%" value="#{ProcessosAdmJud.indiDepMonteIntegral}" />
+				<p:inputText style="width: 15%"
+					value="#{ProcessosAdmJud.indiDepMonteIntegral}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  UF da Sessão Judiciária: " />
-				<p:inputText style="width: 2%" value="#{ProcessosAdmJud.UFSessaoJud}" />
+				<p:inputText style="width: 2%"
+					value="#{ProcessosAdmJud.UFSessaoJud}" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Cód. Município: " />
-				<p:inputText style="width: 5%" value="#{ProcessosAdmJud.codMunicipio}" />
+				<p:inputText style="width: 5%"
+					value="#{ProcessosAdmJud.codMunicipio}" />
+					&nbsp;
 
 				<br />
 				<br />
@@ -261,20 +278,24 @@ p.ident {
 			</p:fieldset>
 			<br />
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 12px"
-				legend="Openflex">
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+				legend="Open Flex">
 				<center>
-					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="#{ProcessosAdmJud.openFlex01}" />
+					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+					<p:inputText style="width: 15%"
+						value="#{ProcessosAdmJud.openFlex01}" />
+						&nbsp;
 
-					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
-					<p:inputText style="width: 15%" value="#{ProcessosAdmJud.openFlex02}" />
+					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+					<p:inputText style="width: 15%"
+						value="#{ProcessosAdmJud.openFlex02}" />
 				</center>
 			</p:fieldset>
 
 			<br />
 
-			<center>
+			<p:fieldset style="background-color: #F2F2F2">
+				<center>
 
 
 					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
@@ -319,7 +340,15 @@ p.ident {
 
 					<br />
 
-				</center>		</p:layoutUnit>
+				</center>
+			</p:fieldset>
+			
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+			
+		</p:layoutUnit>
 	</p:layout>
 
 </h:body>

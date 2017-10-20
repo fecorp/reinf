@@ -10,9 +10,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
+@ManagedBean(name = "Software")
+@ViewScoped
+
 @Entity
 public class Software implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -25,11 +30,14 @@ public class Software implements Serializable {
 	private String nomeFantasia;
 	private String qualificacao;
 	private String bairro;
+	private String cidade;
 	private String municipio;
 	private String uf;
 	private String cep;
 	private String cpf;
 	private String cnpj;
+	private String observacoes;
+	private String estado;
 	private String endereco;
 	private String openflex01;
 	private String openflex02;
@@ -39,6 +47,44 @@ public class Software implements Serializable {
 		return null;
 
 	}
+	
+	
+
+	public String getObservacoes() {
+		return observacoes;
+	}
+
+
+
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
+	}
+
+
+
+	public String getEstado() {
+		return estado;
+	}
+
+
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+
+
+	public String getCidade() {
+		return cidade;
+	}
+
+
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+
 
 	public String getRazaoSocial() {
 		return razaoSocial;

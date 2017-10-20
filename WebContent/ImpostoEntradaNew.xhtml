@@ -7,35 +7,26 @@
 
 <h:head>
 	<style>
-p.ident {
+p.ident 
 	padding-left: 10.0em
-}
+
 
 </style>
 
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos de Entrada</h5>
-		</center>
-	</div>
-	
-	<h:form>
+   <h:form>
 				<p:growl id="messages" />
 
 				<p:menubar style="font-size:12px; color: #d15">
 					<p:submenu label="Parametrização" icon="ui-icon-script">
-						<p:menuitem value="Param." icon="ui-icon-contact" url="Parametrizacao.xhtml">
-						</p:menuitem>
+					<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
 						</p:submenu>
 					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Undo" url="#"
-							icon="ui-icon-arrowreturnthick-1-w" />
-						<p:menuitem value="Redo" url="#"
-							icon="ui-icon-arrowreturnthick-1-e" />
+						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
 					</p:submenu>
 
 					<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -71,6 +62,15 @@ p.ident {
 					</f:facet>
 				</p:menubar>
 				</h:form>
+
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos de Entrada</h1>
+		</center>
+	</div>
+	
+	
 <br/>
 
 
@@ -93,7 +93,7 @@ p.ident {
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" actionListener="#{menuView.update}"
+						<p:menuitem value="Serviços" url="Servicos.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 					</p:submenu>
 
@@ -240,22 +240,22 @@ p.ident {
 <center>
 				<h:outputText style="font-size: 10px"
 					value="  VL Serviço :   " />
-				<p:inputMask style="width: 6%" value="#{ImpostoEntrada.valorServico}" />
+				<p:inputMask style="width: 7%" value="#{ImpostoEntrada.valorServico}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Material Aplicado: " />
-				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorMaterialApp}" />
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorMaterialApp}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Desconto:   " />
-				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorDesconto}" />
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorDesconto}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  VL Documento: " />
-				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorTotalDocumento}" />
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorTotalDocumento}" />
 &nbsp;		
 				<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-				<p:inputText style="width: 6%" value="#{ImpostoEntrada.valorIssRetido}" />
+				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorIssRetido}" />
 					</center>
 				
 				<br />
@@ -280,12 +280,12 @@ p.ident {
 					
 					<h:outputText style="font-size: 10px; font-weight: bold;"
 						value=" VALORES RETIDOS " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					&nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+				
 					
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
-						value=" CÓDIGO " />
+						value=" CÓDIGO DE RETENÇÃO " />
 					<br /> <br />
 					<h:outputText style="font-size: 10px" value=" IRRF: " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -325,12 +325,12 @@ p.ident {
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 5%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" CONFIS: " />
-					&nbsp; &nbsp;
+					<h:outputText style="font-size: 10px" value=" COFINS :  " />
 
+					&nbsp; &nbsp;
 
 					<p:inputText style="font-size: 9px" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -356,23 +356,23 @@ p.ident {
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" ISS: " />
+					<h:outputText style="font-size: 10px" value=" ISS :  " />
 
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="font-size: 9px" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
 					&nbsp;
 
 					<p:inputText style="width: 2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 5%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
 
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					 &nbsp; &nbsp; &nbsp; 
 
 
 
@@ -383,11 +383,7 @@ p.ident {
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Dados Complementares">
 
-				<h:outputText style="font-size: 10px"
-					value="  Código da Retenção IRRF p/ DIRF : " />
-				<p:inputText id="codigoretencao" style="width: 18%" value="#{ImpostoEntrada.codRetencaoIrrfDirf}" />
 				
-				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Texto Complementar :  " />
@@ -398,13 +394,15 @@ p.ident {
 			</p:fieldset>
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Openflex">
+				legend="Open Flex">
 				<center>
-				<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+				<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
 				<p:inputText style="width: 15%" value="#{ImpostoEntrada.openFlex01}" />
 				&nbsp;
+				
+				
 
-				<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+				<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
 				<p:inputText style="width: 15%" value="#{ImpostoEntrada.openFlex02}" />
 			</center>
 			</p:fieldset>
@@ -412,6 +410,10 @@ p.ident {
 			<br />
 			
 			<center>
+
+
+					<p:fieldset style="background-color: #F2F2F2">
+				<center>
 
 
 					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
@@ -442,18 +444,32 @@ p.ident {
 						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
-					
-					<br/>
-					<br/>
-					
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-first" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-prev" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-next" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-end" />
+
+					<br /> <br />
+
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
 
 					<br />
 
 				</center>
+			</p:fieldset>
+
+				</center>
+				
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+			<br></br>
+			<br></br>  
+			  	
 		</p:layoutUnit>
 	</p:layout>
 

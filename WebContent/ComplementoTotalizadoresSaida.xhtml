@@ -212,21 +212,21 @@ p.ident {
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor  do desconto :   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorDesconto}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor da Retenção Principal :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorRetencaoPrincipal}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="     Valor da Retenção Adicional :  * " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorRetencaoAdicional}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Soma das Retenções :  * " />
 
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.somaRetencoes}" />
 
 				<h:outputText style="font-size: 10px"
 					value="      Soma adicional :  * " />
@@ -239,7 +239,7 @@ p.ident {
 				legend="Openflex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorSaida.openFlex01}" />
 						&nsbp;
 					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
 					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorSaida.openFlex02}" />
