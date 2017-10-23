@@ -16,12 +16,12 @@
 						
 				<center>
 					<b>
-						<h:outputText style="font-size: 12px" value=" Usuário:   " />
+						<h:outputText style="font-size: 12px" value=" Login :   " />
 						<p:inputText style="width: 15%; " value=""/>
 						<br></br>
 						<br></br>
 						
-						<h:outputText style="font-size: 12px" value="  Senha:      " />
+						<h:outputText style="font-size: 12px" value=" Senha:     " />
 						<p:password id="senha" style="width: 15%; value=" required="true"/>
 						<br></br>
 						<br></br> 
@@ -35,13 +35,16 @@
 					
 					
 						<p:button style="background-color:#FFFFE0; font-size:10px"
-							 value="  Logar #{LoginMB.envia}" icon="ui-icon-star">
+							outcome="acoesBotao" value="  Logar " icon="ui-icon-star">
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 					</b>
 				</center>
 				
 			</p:fieldset>	
-		</p:layoutUnit>    
+		</p:layoutUnit>
+  
+        	
+      
   </h:body>
   </h:html>

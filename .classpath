@@ -34,10 +34,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/all-themes-1.0.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/asm-all-5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/bootstrap-1.0.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/cglib-3.2.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/dot-luv-1.0.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/ehcache-3.4.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/hibernate3-3.2.r14201-2.jar"/>
@@ -54,7 +50,6 @@
 			<attribute name="owner.project.facets" value="jst.jsf;jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/hibernate-search-5.8.0.Final-dist/hibernate-search-5.8.0.Final/dist/lib/required/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/hibernate-search-5.8.0.Final-dist/hibernate-search-5.8.0.Final/dist/lib/required/lucene-core-5.5.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/hibernate-search-5.8.0.Final-dist/hibernate-search-5.8.0.Final/dist/lib/required/lucene-queryparser-5.5.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/hibernate-search-5.8.0.Final-dist/hibernate-search-5.8.0.Final/dist/lib/required/xml-apis-1.3.03.jar"/>
