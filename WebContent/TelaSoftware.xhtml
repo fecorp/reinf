@@ -35,17 +35,9 @@
 				</p:submenu>
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
@@ -209,11 +201,11 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cidade: " />
-				<p:inputText style="width: 9%" value="" />
+				<p:inputText style="width: 9%" value="#{Software.cidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Estado: " />
-				<p:inputText style="width: 2%" value="" />
+				<p:inputText style="width: 2%" value="#{Software.estado}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
@@ -227,7 +219,7 @@
 				<br />
 				
 				<h:outputText style="font-size: 10px" value=" Observações: *     " />
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{Software.observacoes}" />
 
 
 

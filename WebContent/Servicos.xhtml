@@ -44,17 +44,9 @@ p.ident {
 				</p:submenu>
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
@@ -164,35 +156,35 @@ p.ident {
 				legend="Dados Fiscais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{TelaServicos.empresa}" />
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Código da Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="" />
+				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{TelaServicos.filial}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px" value="   Código do Serviço " />
-				<p:inputText style="width: 12%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 12%; background-color: #FFFFFFF" value="#{TelaServicos.codServico}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="   Data de Atualização: " />
-				<p:inputMask style="width: 6%; background-color: #FFFFFFF" value=""
+				<p:inputMask style="width: 6%; background-color: #FFFFFFF" value="#{TelaServicos.dataAtualizacao}"
 					mask="99/99/9999" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="   Descrição do Serviço: " />
-				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 20%; background-color: #FFFFFFF" value="#{TelaServicos.descServico}" />
 
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="   Complemento: " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 10%; background-color: #FFFFFFF" value="#{TelaServicos.complemento}" />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="   Código LC 116/03: " />
-				<p:inputText style="width: 4%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 4%; background-color: #FFFFFFF" value="#{TelaServicos.codLC}" />
 					&nbsp;
 
 
@@ -226,11 +218,11 @@ p.ident {
 				legend="Open Flex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{TelaServicos.openFlex01}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-					<p:inputText style="width: 15%" value="" />
+					<p:inputText style="width: 15%" value="#{TelaServicos.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />

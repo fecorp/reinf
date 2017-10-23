@@ -47,18 +47,10 @@
 						</p:submenu>
 					</p:submenu>
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
+					<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
 
 					<p:menuitem value="Lotes" url="http://www.primefaces.org"
 						icon="ui-icon-close" />

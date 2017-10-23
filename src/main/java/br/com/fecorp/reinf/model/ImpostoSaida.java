@@ -9,14 +9,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import br.com.fecorp.reinf.DAO.EntidadeBase;
 
-	@Entity
-	public class ImpostoSaida implements Serializable{
-		private static final long serialVersionUID = 1L;
+@ManagedBean(name = "ImpostoSaida")
+@ViewScoped
 
+@Entity
+public class ImpostoSaida implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
+	
+	
 
-		@Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private double valorIrrf;
 		private double baseCalculoRetencaoInss;
