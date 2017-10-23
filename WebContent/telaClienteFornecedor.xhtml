@@ -83,6 +83,8 @@
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-disk" />
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -363,30 +365,21 @@
 
 
 
-				<p:selectOneMenu id="PJ" value="#{dropdownView.country}"
-					style="width:150px">
-					<p:ajax listener="#{dropdownView.onCountryChange}" height="50" />
+				<p:selectOneMenu style="font-size:10px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="Situação" itemValue="Situação" />
+					<f:selectItem itemLabel="Normal" itemValue="Normal" />
+					<f:selectItem itemLabel="Extinção" itemValue="Extinção" />
+					<f:selectItem itemLabel="Fusão" itemValue="Fusão" />
+					<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
+					<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-					<f:selectItem itemLabel="" itemValue="" noSelectionOption="false" />
-					<f:selectItem itemLabel="Situação" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Normal" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Extinção" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Fusão" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Cisão" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItem itemLabel="Incorporação" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItems value="#{dropdownView.countries}" />
 				</p:selectOneMenu>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 4%"
+				<p:inputText style="width: 8%"
 					value="#{ClientesFornecedores.numeroCNO}" />
 
 				<script>
@@ -488,7 +481,7 @@
 
 
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
 		</p:layoutUnit>

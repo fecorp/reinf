@@ -9,82 +9,82 @@
 <h:body style="background-color:#EFF2F6;border:0px;">
 
 
-<h:form>
-				<p:growl id="messages" />
+	<h:form>
+		<p:growl id="messages" />
 
-				<p:menubar style="font-size:12px; color: #d15">
-					<p:submenu label="Parametrização" icon="ui-icon-document">
-						
-						<p:menuitem value="Tela de Parametrização"
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+
+				<p:menuitem value="Tela de Parametrização"
 					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
-						
-					</p:submenu>
 
-					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
 					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+				<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
 					</p:submenu>
+					<p:menuitem value="File" url="#" />
+				</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Relatórios" icon="ui-icon-help">
-						<p:menuitem value="Contents" url="#" />
-						<p:submenu label="Search" icon="ui-icon-search">
-							<p:submenu label="Text">
-								<p:menuitem value="Workspace" url="#" />
-							</p:submenu>
-							<p:menuitem value="File" url="#" />
-						</p:submenu>
-					</p:submenu>
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
 
-					<p:menuitem value="Lotes" url="http://www.primefaces.org"
-						icon="ui-icon-close" />
-
-					<f:facet name="options">
-						<p:inputText style="margin-right:10px" placeholder="Search" />
-						<p:commandButton type="button" value="Logout"
-							icon="ui-icon-extlink" />
-					</f:facet>
-				</p:menubar>
-				</h:form>
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
 
 	<div>
 		<center>
 			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos de Saída</h1>
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos
+				de Saída</h1>
 		</center>
 	</div>
-	
-	
-<br/>
+
+
+	<br />
 
 
 	<p:layout>
-		
+
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Cadastro de Login"
+							url="TelaCadastroLogin.xhtml" icon="ui-icon-disk" />
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável"
-							url="telaResponsavel.xhtml"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
 						<p:menuitem value="Software" url="TelaSoftware.xhtml"
 							icon="ui-icon-arrowrefresh-1-w" />
@@ -93,20 +93,16 @@
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada"
-							url="MestreEntradaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada"
-							url="ImpostoEntradaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
 
-						
+
 					</p:submenu>
 					<p:separator />
 					<p:submenu label="Reinf" style="font-size:12px">
@@ -136,12 +132,12 @@
 
 					</p:submenu>
 					<p:submenu label="Interface " style="font-size:12px">
-						<p:menuitem value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-home" />
+						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
+							icon="ui-icon-home" />
 
 					</p:submenu>
 
-					<p:submenu label="Lotes" style="font-size:12px" >
+					<p:submenu label="Lotes" style="font-size:12px">
 						<p:menuitem value="Gerenciamento de Lotes"
 							url="http://www.primefaces.org" icon="ui-icon-home" />
 					</p:submenu>
@@ -151,74 +147,82 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit style="background-color:#F2f2f2; height:200px" position="center">
+		<p:layoutUnit style="background-color:#F2f2f2; height:200px"
+			position="center">
 
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
-				<h:outputText style="font-size: 10px"
-					value=" Cod. Empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ImpostoSaida.codEmpresa}" />
+				<h:outputText style="font-size: 10px" value=" Cod. Empresa: *     " />
+				<p:inputText style="width: 6%; background-color: #F2F2F2"
+					value="#{ImpostoSaida.codEmpresa}" />
 				&nbsp;
 
-				<h:outputText style="font-size: 10px"
-					value="      Cod. Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{ImpostoSaida.codFilial}" />
+				<h:outputText style="font-size: 10px" value="      Cod. Filial:  * " />
+				<p:inputText style="width: 6%; background-color: #F2F2F2"
+					value="#{ImpostoSaida.codFilial}" />
 				&nbsp;
 
-				<h:outputText style="font-size: 10px"
-					value="      Número NF:  " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2 " value="#{ImpostoSaida.numNotaFiscal}" />
+				<h:outputText style="font-size: 10px" value="      Número NF:  " />
+				<p:inputText style="width: 8%; background-color: #F2F2F2 "
+					value="#{ImpostoSaida.numNotaFiscal}" />
 				&nbsp;
 
-				<h:outputText style="font-size: 10px"
-					value="  Série NF: 	 " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ImpostoSaida.serieNotaFiscal}" />
+				<h:outputText style="font-size: 10px" value="  Série NF: 	 " />
+				<p:inputText style="width: 4%; background-color: #F2F2F2"
+					value="#{ImpostoSaida.serieNotaFiscal}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ImpostoSaida.categoriaPfPj}" />
+				<p:inputText style="width: 4%; background-color: #F2F2F2"
+					value="#{ImpostoSaida.categoriaPfPj}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value=" Cod PF/PJ: * " />
-				<p:inputText style="font-size:8px; background-color: #F2F2F2" value="#{ImpostoSaida.codigoPfPj}" />
+				<p:inputText style="font-size:8px; background-color: #F2F2F2"
+					value="#{ImpostoSaida.codigoPfPj}" />
 				&nbsp;
 			
 				<h:outputText style="font-size: 10px"
 					value="    Sequência de itens: " />
-				<p:inputText style="width: 4%" value="#{ImpostoSaida.sequenciaItens}" />
+				<p:inputText style="width: 4%"
+					value="#{ImpostoSaida.sequenciaItens}" />
 
 
 			</p:fieldset>
+			<br></br>
+			<br></br>
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Valores e Alíquotas">
-<center>
-				<h:outputText style="font-size: 10px"
-					value="  VL Serviço :   " />
-				<p:inputMask style="width: 7%" value="#{ImpostoEntrada.valorServico}" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  VL Material Aplicado: " />
-				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorMaterialApp}" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  VL Desconto:   " />
-				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorDesconto}" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  VL Documento: " />
-				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorTotalDocumento}" />
-&nbsp;		
-				<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
-				<p:inputText style="width: 7%" value="#{ImpostoEntrada.valorIssRetido}" />
-					</center>
-				
+				<center>
+					<h:outputText style="font-size: 10px" value="  VL Serviço :   " />
+					<p:inputMask style="width: 7%"
+						value="#{ImpostoEntrada.valorServico}" />
+					&nbsp;
+					<h:outputText style="font-size: 10px"
+						value="  VL Material Aplicado: " />
+					<p:inputText style="width: 7%"
+						value="#{ImpostoEntrada.valorMaterialApp}" />
+					&nbsp;
+					<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
+					<p:inputText style="width: 7%"
+						value="#{ImpostoEntrada.valorDesconto}" />
+					&nbsp;
+					<h:outputText style="font-size: 10px" value="  VL Documento: " />
+					<p:inputText style="width: 7%"
+						value="#{ImpostoEntrada.valorTotalDocumento}" />
+					&nbsp;
+					<h:outputText style="font-size: 10px" value="  VL ISS Devido: " />
+					<p:inputText style="width: 7%"
+						value="#{ImpostoEntrada.valorIssRetido}" />
+				</center>
+
 				<br />
 				<br />
-				<br/>
+				<br />
 				<div>
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -227,20 +231,20 @@
 					<h:outputText style="font-size: 10px; font-weight: bold;"
 						value=" BASE " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-					
-					
-			
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
 						value=" ALÍQUOTA " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-					
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
 					<h:outputText style="font-size: 10px; font-weight: bold;"
 						value=" VALORES RETIDOS " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-				
-					
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
 
 					<h:outputText style="font-size: 10px; font-weight: bold;"
 						value=" CÓDIGO DE RETENÇÃO " />
@@ -256,7 +260,7 @@
 
 					<p:inputText style="width: 5%" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-					
+
 					<p:inputText style="font-size: 10px" value=" " />
 					<br /> <br />
 					<h:outputText style="font-size: 10px" value=" INSS: " />
@@ -274,7 +278,7 @@
 					<p class="ident" />
 					<h:outputText style="font-size: 10px" value=" PIS :  " />
 
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="font-size: 9px" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -283,7 +287,7 @@
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 5%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
 					<h:outputText style="font-size: 10px" value=" COFINS :  " />
@@ -314,28 +318,24 @@
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<p:inputText style="font-size: 10px" value=" " />
 					<p class="ident" />
-					<h:outputText style="font-size: 10px" value=" ISS :  " />
+					<h:outputText style="font-size: 10px" value=" &nbsp;ISS: " />
 
-					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="font-size: 9px" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
-					&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 2%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 					<p:inputText style="width: 5%" value=" " />
-					&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<p:inputText style="font-size: 10px" value=" " />
-					<p class="ident" />
-
-					 &nbsp; &nbsp; &nbsp; 
 
 
 
 				</div>
-			
+
 			</p:fieldset>
 
 
@@ -345,11 +345,14 @@
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Dados Complementares">
 
-				
 
-				<h:outputText style="font-size: 10px"
-					value="  Texto Complementar :  " />
-				<p:inputText id="textocomplementar" style="width: 24%" value="#{ImpostoSaida.textoComplementar}" />
+
+				<h:form>
+				&nbsp; &nbsp;
+				<p style="font-size: 10px">Texto Complementar</p>
+					<p:inputTextarea rows="6" cols="80" value="" />
+
+				</h:form>
 
 
 
@@ -358,17 +361,18 @@
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Open Flex">
 				<center>
-				<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
-				&nbsp;
+					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
+					&nbsp;
 
-				<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-				<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
+					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />
 			<br />
-				<p:fieldset style="background-color: #F2F2F2">
+			
+			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
 
@@ -416,12 +420,13 @@
 
 				</center>
 			</p:fieldset>
-			
+
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				id="backLink" action="#{loginController.back}" value="  Voltar "
+				icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-			
+
 		</p:layoutUnit>
 	</p:layout>
 

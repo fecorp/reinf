@@ -61,6 +61,8 @@
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-disk" />
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -422,7 +424,7 @@
 			</p:fieldset>
 
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
 
