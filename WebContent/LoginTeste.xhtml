@@ -10,42 +10,41 @@
   <h:body style="background-color:#EFF2F6;border:0px; height: 600px">
   		<br></br>
   			<p:layoutUnit position="center" style="height: 600px" fullPage="true">
-				<p:fieldset style=" background: linear-gradient(to bottom right, #D2691E, #F5DEB3)">
+				<p:fieldset style=" background-color:#FFA54F; font-size: 12px">
 				
 				<br></br><br></br>
-				<b>		
-				<h:form><center>
-				
-						<h:outputText style="font-size: 15px" value=" Login:   " />
+						
+				<center>
+					<b>
+						<h:outputText style="font-size: 12px" value=" Login :   " />
 						<p:inputText style="width: 15%; " value=""/>
 						<br></br>
 						<br></br>
 						
-						<h:outputText style="font-size: 15px" value="  Senha:      " />
+						<h:outputText style="font-size: 12px" value=" Senha:     " />
 						<p:password id="senha" style="width: 15%; value=" required="true"/>
 						<br></br>
 						<br></br> 
-				</center></h:form>
-					
-				<h:form><center>		
-						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 45px"
+						
+						
+						<p:button style="background-color:#FFFFE0; font-size:10px"
 							type="reset" value="  Limpar " icon="ui-icon-trash">
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 					
-						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 10px"
-							 value="  Acessar " icon="ui-icon-star" href="index.xhtml">
-							<f:param name="productId"  />
+					
+					
+						<p:button style="background-color:#FFFFE0; font-size:10px"
+							outcome="acoesBotao" value="  Logar " icon="ui-icon-star">
+							<f:param name="productId" value="turubom?" />
 						</p:button>
+					</b>
+				</center>
 				
-				</center></h:form>
-			</b>	
-			</p:fieldset>
-			<br></br>
-			<img src="Imagens/FECORP_REINF.jpg"></img> 	
-		</p:layoutUnit> 
-		  
+			</p:fieldset>	
+		</p:layoutUnit>
+  
+        	
+      
   </h:body>
-  
-  
   </h:html>
