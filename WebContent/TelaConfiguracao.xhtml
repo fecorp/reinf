@@ -58,6 +58,7 @@
 
 	<br />
 	<p:layout>
+	<h:form>
 		<p:layoutUnit position="west" style="height: 80px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
@@ -150,14 +151,15 @@
 				<h:outputText style="font-size: 10px" value="  Data : " />
 				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="rockup" value="#{calendarView.date2}"  />
+					id="rockup" value="#{calendarView.date2}" />
 				<br></br>
 				<br></br>
 
 				<h:outputText style="font-size: 10px"
 					value="      Solicitante :&nbsp;   " />
 					&nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="#{TelaConfiguracao.solicitante}" />
+				<p:inputText style="width: 20%"
+					value="#{TelaConfiguracao.solicitante}" />
 				<br></br>
 				<br></br>
 
@@ -195,8 +197,7 @@
 						itemValue="Aplicação" />
 					<f:selectItem itemLabel="Esclarecimentos Gerais" itemValue="Gerais" />
 					<f:selectItem itemLabel="Outros" itemValue="Outros" />
-					<f:selectItem itemLabel="--"
-						itemValue="null" />
+					<f:selectItem itemLabel="--" itemValue="null" />
 				</p:selectOneMenu>
 				<br></br>
 				<br></br>
@@ -252,7 +253,8 @@
 				<h:outputText style="font-size: 10px"
 					value="      Código da Abertura de Chamada :&nbsp;   " />
 					&nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="#{TelaConfiguracao.codAberturaChamada}" />
+				<p:inputText style="width: 20%"
+					value="#{TelaConfiguracao.codAberturaChamada}" />
 			    
 			    &nbsp; &nbsp;
 			<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -261,15 +263,16 @@
 				</p:button>
 
 			</p:fieldset>
-			
+
 			<br />
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
 
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-					</p:commandButton>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -278,11 +281,6 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
@@ -313,7 +311,8 @@
 			</p:fieldset>
 
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				id="backLink" action="#{loginController.back}" value="  Voltar "
+				id="backLink" onClick="history.go(-1)"
+				href="javascript:window.history.go(-1)" value="Voltar"
 				icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
@@ -321,7 +320,7 @@
 
 
 		</p:layoutUnit>
-
+        </h:form>
 	</p:layout>
 
 

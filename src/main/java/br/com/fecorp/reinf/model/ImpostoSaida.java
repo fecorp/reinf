@@ -23,8 +23,15 @@ public class ImpostoSaida implements Serializable{
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
 		private double valorIrrf;
+	    private String codEmpresa;
 		private double baseCalculoRetencaoInss;
 		private double aliquotaInss;
+		private String codFilial;
+		private String serieNotaFiscal;
+		private String catPfPj;
+		private String codPfPj;
+		private String sequenciaItens;
+		private double numNotaFiscal;
 		private double valorRetencaoInss;
 		private double valorBaseCalcIss;
 		private double aliquotaIss;
@@ -34,6 +41,49 @@ public class ImpostoSaida implements Serializable{
 		private String openFlex01;
 		private String openFlex02;
 		
+		
+		public String getCodFilial() {
+			return codFilial;
+		}
+		public void setCodFilial(String codFilial) {
+			this.codFilial = codFilial;
+		}
+		public String getSerieNotaFiscal() {
+			return serieNotaFiscal;
+		}
+		public void setSerieNotaFiscal(String serieNotaFiscal) {
+			this.serieNotaFiscal = serieNotaFiscal;
+		}
+		public String getCatPfPj() {
+			return catPfPj;
+		}
+		public void setCatPfPj(String catPfPj) {
+			this.catPfPj = catPfPj;
+		}
+		public String getCodPfPj() {
+			return codPfPj;
+		}
+		public void setCodPfPj(String codPfPj) {
+			this.codPfPj = codPfPj;
+		}
+		public String getSequenciaItens() {
+			return sequenciaItens;
+		}
+		public void setSequenciaItens(String sequenciaItens) {
+			this.sequenciaItens = sequenciaItens;
+		}
+		public double getNumNotaFiscal() {
+			return numNotaFiscal;
+		}
+		public void setNumNotaFiscal(double numNotaFiscal) {
+			this.numNotaFiscal = numNotaFiscal;
+		}
+		public String getCodEmpresa() {
+			return codEmpresa;
+		}
+		public void setCodEmpresa(String codEmpresa) {
+			this.codEmpresa = codEmpresa;
+		}
 		public double getValorIrrf() {
 			return valorIrrf;
 		}

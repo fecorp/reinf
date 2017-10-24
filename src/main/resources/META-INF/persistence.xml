@@ -14,6 +14,32 @@
 		<!-- entidade mapeada -->
 		<class>br.com.fecorp.reinf.control.Usuario</class>
 		<class>br.com.fecorp.reinf.model.Pessoa</class>
+		<class>br.com.fecorp.reinf.model.Cprb</class>
+		<class>br.com.fecorp.reinf.model.comercializacaoAgro</class>
+		<class>br.com.fecorp.reinf.model.ComplementoAlimeEntrada</class>
+		<class>br.com.fecorp.reinf.model.ClientesFornecedores</class>
+		<class>br.com.fecorp.reinf.model.ComplementoAlimeSaida</class>
+		<class>br.com.fecorp.reinf.model.ComplementoMestreEntrada</class>
+		<class>br.com.fecorp.reinf.model.ComplementoMestreSaida</class>
+		<class>br.com.fecorp.reinf.model.ComplementoTotalizadorEntrada</class>
+		<class>br.com.fecorp.reinf.model.ComplementoTotalizadorSaida</class>
+		<class>br.com.fecorp.reinf.model.Empresa</class>
+		<class>br.com.fecorp.reinf.model.Filial</class>
+		<class>br.com.fecorp.reinf.model.ImpostoEntrada</class>
+		<class>br.com.fecorp.reinf.model.ImpostoSaida</class>
+		<class>br.com.fecorp.reinf.model.MestreEntrada</class>
+		<class>br.com.fecorp.reinf.model.MestreSaida</class>
+		<class>br.com.fecorp.reinf.model.ProcessosADMJud</class>
+		<class>br.com.fecorp.reinf.model.ReceitaEspetaculoDesp</class>
+		<class>br.com.fecorp.reinf.model.RecursosRecbAssDep</class>
+		<class>br.com.fecorp.reinf.model.RecursosRepAssDesp</class>
+		<class>br.com.fecorp.reinf.model.Responsavel</class>
+		<class>br.com.fecorp.reinf.model.Software</class>
+		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
+		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
+		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
+		<class>br.com.fecorp.reinf.model.TelaServicos</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 		<properties>
 			<!-- dados da conexao -->

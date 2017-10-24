@@ -64,6 +64,7 @@
 
 
 	<p:layout>
+	<h:form>
 		<p:layoutUnit position="west" style=" height:400px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
@@ -283,9 +284,10 @@
 					<center>
 
 
-						<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-							value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-						</p:commandButton>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
 							outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -294,11 +296,6 @@
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
 							outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-							<f:param name="productId" value="turubom?" />
-						</p:button>
-
-						<p:button style="background-color:#E0EEF6; font-size:10px"
-							outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 
@@ -330,12 +327,13 @@
                 </center>
 
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-					id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
 
 			
 		</p:layoutUnit>
+		</h:form>
 	</p:layout>
 
 
