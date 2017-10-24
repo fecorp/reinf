@@ -24,9 +24,9 @@ public class LoginBean {
 	                               null,
 	                               new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuário não encontrado!",
 	                                           "Erro no Login!"));
-	                    return null;
+	                   return null;
 	              } else {
-	                    return "/main";
+	                    return "/index.xhtml";
 	              }
 	              
 	              

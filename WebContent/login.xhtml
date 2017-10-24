@@ -14,7 +14,7 @@
 				
 				<br></br><br></br>
 				<b>		
-				<center>
+				<h:form><center>
 				
 						<h:outputText style="font-size: 15px" value=" Login:   " />
 						<p:inputText style="width: 15%; " value=""/>
@@ -25,20 +25,20 @@
 						<p:password id="senha" style="width: 15%; value=" required="true"/>
 						<br></br>
 						<br></br> 
-				</center>
+				</center></h:form>
 					
-				<center>		
-						<p:button style="background-color:#FFFFE0; font-size:12px; margin-left: 45px"
+				<h:form><center>		
+						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 45px"
 							type="reset" value="  Limpar " icon="ui-icon-trash">
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 					
-						<p:button style="background-color:#FFFFE0; font-size:12px; margin-left: 10px"
-							 value="  Acessar #{LoginMB.envia}" icon="ui-icon-star">
-							<f:param name="productId" value="turubom?" />
+						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 10px"
+							 value="  Acessar " icon="ui-icon-star" href="index.xhtml">
+							<f:param name="productId"  />
 						</p:button>
 				
-				</center>
+				</center></h:form>
 			</b>	
 			</p:fieldset>
 			<br></br>
