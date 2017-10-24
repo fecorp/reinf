@@ -11,7 +11,7 @@
 
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-<h:form>
+	<h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -33,12 +33,10 @@
 			</p:submenu>
 
 			<p:submenu label="Configurações" icon="ui-icon-wrench">
-			<p:menuitem value="Suporte" url="#"
-					icon="ui-icon-wrench" />
+				<p:menuitem value="Suporte" url="#" icon="ui-icon-wrench" />
 			</p:submenu>
 
-			<p:menuitem value="Lotes" url="http://www.primefaces.org"
-				icon="" />
+			<p:menuitem value="Lotes" url="http://www.primefaces.org" icon="" />
 
 			<f:facet name="options">
 				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
@@ -51,21 +49,23 @@
 	<div>
 		<center>
 			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Configurações</h1>
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Abertura
+				de Chamada</h1>
 		</center>
 	</div>
 
-	
+
 
 	<br />
 	<p:layout>
+	<h:form>
 		<p:layoutUnit position="west" style="height: 80px" fullPage="true">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
-					<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
-							icon="ui-icon-disk" />
-					
+						<p:menuitem value="Cadastro de Login"
+							url="TelaCadastroLogin.xhtml" icon="ui-icon-disk" />
+
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -141,10 +141,10 @@
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Dados cadastrais ">
 
-            <h:outputText style="font-size: 10px"
+				<h:outputText style="font-size: 10px"
 					value="      Empresa :&nbsp;   " />
 					&nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%" value="#{TelaConfiguracao.empresa}" />
 				&nbsp;
 				&nbsp;
 				
@@ -152,67 +152,127 @@
 				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="rockup" value="#{calendarView.date2}" />
-                <br></br>
-                <br></br>
+				<br></br>
+				<br></br>
 
-                <h:outputText style="font-size: 10px"
+				<h:outputText style="font-size: 10px"
 					value="      Solicitante :&nbsp;   " />
 					&nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="" />
-				 <br></br>
-                <br></br>
-				
-				 <h:outputText style="font-size: 10px"
-					value="      Telefone :   " />
-					&nbsp; &nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="" />
+				<p:inputText style="width: 20%"
+					value="#{TelaConfiguracao.solicitante}" />
 				<br></br>
-                <br></br>
-				
+				<br></br>
+
+				<h:outputText style="font-size: 10px" value="      Telefone :   " />
+					&nbsp; &nbsp; &nbsp; &nbsp;
+				<p:inputText style="width: 20%" value="#{TelaConfiguracao.telefone}" />
+				<br></br>
+				<br></br>
+
 				<h:outputText style="font-size: 10px"
 					value="      E-mail :&nbsp;   " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-				<p:inputText style="width: 20%" value="" />
-				 <br></br>
-                <br></br>
-				
+				<p:inputText style="width: 20%" value="#{TelaConfiguracao.email}" />
+				<br></br>
+				<br></br>
+
 			</p:fieldset>
 			<br></br>
 			<br></br>
-			
-			
+
+
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Solicitação ">
-			
-			<h:outputText style="font-size: 9x" value="  Tipo : " />
-				
+
+				<h:outputText style="font-size: 9x" value="  Tipo : " />
+				&nbsp; &nbsp; &nbsp; &nbsp;
                 <p:selectOneMenu style="font-size:10px" value="#"
 					itemLabel="#">
 					&nbsp; &nbsp;
-					<f:selectItem itemLabel="Solicitação de Treinamento" itemValue="Solicitação" />
-					<f:selectItem itemLabel="Dúvidas de Funcionalidade" itemValue="Funcionalidade" />
-					<f:selectItem itemLabel="Problemas na Aplicação" itemValue="Aplicação" />
+					<f:selectItem itemLabel="Solicitação de Treinamento"
+						itemValue="Solicitação" />
+					<f:selectItem itemLabel="Dúvidas de Funcionalidade"
+						itemValue="Funcionalidade" />
+					<f:selectItem itemLabel="Problemas na Aplicação"
+						itemValue="Aplicação" />
 					<f:selectItem itemLabel="Esclarecimentos Gerais" itemValue="Gerais" />
 					<f:selectItem itemLabel="Outros" itemValue="Outros" />
+					<f:selectItem itemLabel="--" itemValue="null" />
 				</p:selectOneMenu>
 				<br></br>
 				<br></br>
-				
-				 <h:outputText style="font-size: 10px"
+
+				<h:outputText style="font-size: 10px"
 					value="      Assunto :&nbsp;   " />
-					&nbsp; &nbsp; &nbsp; &nbsp;
-				<p:inputText style="width: 20%" value="" />
-			
-			
+
+				<p:inputText style="width: 20%" value="#{TelaConfiguracao.assunto}" />
+
+				<h:form>
+				&nbsp; &nbsp;
+				<p style="font-size: 10px">Descrição</p>
+					<p:inputTextarea rows="4" cols="60" value="" />
+
+				</h:form>
+				<br></br>
+				<br></br>
+
+				<p:panelGrid columns="3" layout="grid">
+					<h:outputText style="font-size: 12px "
+						value=" &nbsp; Escolher Anexo       " />
+
+					<h:form enctype="multipart/form-data">
+						<p:growl id="messages" showDetail="true" />
+
+
+					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
+							style="font-size:10px" mode="simple" skinSimple="true" />
+						<p:commandButton value="Importar Arquivo" style="font-size:10px"
+							ajax="false" actionListener="#{fileUploadView.upload}"
+							disabled="true" />
+					</h:form>
+
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						value="  Abrir Solicitação  ">
+						<f:param name="productId" value="telaClienteFornecedor.xhtml" />
+					</p:button>
+				</p:panelGrid>
+				<br></br>
+				<br></br>
+
+
+
+
 			</p:fieldset>
+			<br></br>
+			<br></br>
+
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Protocolo do Chamado ">
+
+
+				<h:outputText style="font-size: 10px"
+					value="      Código da Abertura de Chamada :&nbsp;   " />
+					&nbsp; &nbsp;
+				<p:inputText style="width: 20%"
+					value="#{TelaConfiguracao.codAberturaChamada}" />
+			    
+			    &nbsp; &nbsp;
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+					value="  Copiar Código  ">
+					<f:param name="productId" value="telaClienteFornecedor.xhtml" />
+				</p:button>
+
+			</p:fieldset>
+
 			<br />
 			<p:fieldset style="background-color: #F2F2F2">
 				<center>
 
 
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-					</p:commandButton>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -221,11 +281,6 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
@@ -254,16 +309,18 @@
 
 				</center>
 			</p:fieldset>
-            
-        <p:button style="background-color:#E0EEF6; font-size:10px"
-				id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
+
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				id="backLink" onClick="history.go(-1)"
+				href="javascript:window.history.go(-1)" value="Voltar"
+				icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-		
-		
+
+
 
 		</p:layoutUnit>
-
+        </h:form>
 	</p:layout>
 
 

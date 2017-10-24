@@ -40,18 +40,10 @@
 						</p:submenu>
 					</p:submenu>
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
+					<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
 
 					<p:menuitem value="Lotes" url="http://www.primefaces.org"
 						icon="ui-icon-close" />
@@ -82,8 +74,9 @@
 
 	<p:layout>
 	
-
+        
 		<p:layoutUnit position="west">
+			<h:form>
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 				<p:submenu label="Cadastros" style="font-size:12px">
@@ -104,11 +97,11 @@
 				</p:submenu>
 
 				<p:submenu label="Movimentação - NF" style="font-size:12px">
-					<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+					<p:menuitem value="Entrada Nota Fiscal" url="MestreEntradaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
 					<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
-					<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+					<p:menuitem value="Saída Nots Fiscal" url="MestreSaidaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
 					<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
@@ -155,12 +148,14 @@
 				</p:submenu>
 
 			</p:panelMenu>
-
+             
+			</h:form>
 			</h:form>
 		</p:layoutUnit>
 
-
+        
 		<p:layoutUnit position="center">
+		<h:form>
 			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 				legend=" Dados Cadastrais ">
 
@@ -214,7 +209,7 @@
 					
 					<h:outputText style="font-size: 10px"
 					value="     Número Processo Adm/Judicial :    " />
-				<p:inputText style="width: 14%; background-color: #FFFFFFF" value="" />
+				<p:inputText style="width: 14%; background-color: #FFFFFFF" value="#{comercializacaoAgro.numProcessoAdm}" />
 			   <br/> <br/>
 				<h:outputText style="font-size:10px" value="Retificação: " />
 				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
@@ -296,7 +291,7 @@
 				<h:outputText style="font-size: 10px"
 					value="     VL Contribuição Prev. Suspensa:   " />
 				<p:inputText style="width: 10%; background-color: #FFFFFFF"
-					value="#{comercializacaoAgro.valorContribSenarPrevExigiSusp}" />
+					value="#{comercializacaoAgro.valorContribPrevExigiSusp}" />
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
@@ -341,10 +336,10 @@
            <p:fieldset style="background-color: #F2F2F2">
 				<center>
 
-
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-					</p:commandButton>
+                   <p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -353,11 +348,6 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
@@ -389,12 +379,12 @@
 			
 			
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				id="backLink" action="#{loginController.back}" value="  Voltar " icon="fa-backward">
+				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-
+        </h:form>
 		</p:layoutUnit>
-
+       
 	</p:layout>
 
 
