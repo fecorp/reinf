@@ -9,8 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import br.com.fecorp.reinf.DAO.EntidadeBase;
-
 @ManagedBean(name = "MestreEntrada")
 @ViewScoped
 

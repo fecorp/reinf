@@ -1,13 +1,13 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import br.com.fecorp.reinf.DAO.EntidadeBase;
 
 @ManagedBean(name = "RecursosRecbAssDep")
 @ViewScoped

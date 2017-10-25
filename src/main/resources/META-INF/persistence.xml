@@ -13,6 +13,8 @@
 		 <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
 
 		<!-- entidade mapeada -->
+		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
+		<class>br.com.fecorp.reinf.model.Aluno</class>
 		<class>br.com.fecorp.reinf.control.Usuario</class>
 		<class>br.com.fecorp.reinf.model.Pessoa</class>
 		<class>br.com.fecorp.reinf.model.Cprb</class>
@@ -36,10 +38,10 @@
 		<class>br.com.fecorp.reinf.model.RecursosRepAssDesp</class>
 		<class>br.com.fecorp.reinf.model.Responsavel</class>
 		<class>br.com.fecorp.reinf.model.Software</class>
-		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
-		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
-		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
-		<class>br.com.fecorp.reinf.model.TelaServicos</class>
+		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 		

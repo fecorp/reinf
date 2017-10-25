@@ -11,7 +11,8 @@ import javax.persistence.Table;
 @Table(name = "aluno")
 @Entity
 public class Aluno implements Serializable {
-
+	private static final long serialVersionUID = -3889965461279622993L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
