@@ -13,4 +13,17 @@ public class AcoesBotao {
 	    public void setProductId(String productId) {
 	        this.productId = productId;
 	    }
+	    
+	    
+		
 }
+
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,7 @@
 
 		<!-- entidade mapeada -->
 		<class>br.com.fecorp.reinf.control.Usuario</class>
+		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 	
 		
 

@@ -8,7 +8,7 @@
 <h:head>
 
 </h:head>
-<h:body style="background-color:#EFF2F6;border:0px;">
+<h:body style="background-color:#EFF2F6;border:0px;" >
 
 
 <h:form>
@@ -54,7 +54,6 @@
 						icon="ui-icon-close" />
 
 					<f:facet name="options">
-						<p:inputText style="margin-right:10px" placeholder="Search" />
 						<p:commandButton type="button" value="Logout"
 							icon="ui-icon-extlink" />
 					</f:facet>
@@ -64,7 +63,7 @@
 	<div>
 		<center>
 			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Nota Fiscal de Serviço de Entrada</h1>
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h1>
 		</center>
 	</div>
 	
@@ -144,26 +143,40 @@
 			</h:form>
 		</p:layoutUnit>
 
-
+		<h:form>
 		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
 			fullPage="true" position="center">
 
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Dados para pesquisa ">
-			<center>
+				legend="Dados para Pesquisa ">
+			
 			<br />
 			<br />
-			<br />
+	
 			<h:outputText style="font-size: 10px" value="  Nota Fiscal: " />
+			<p:inputText style="width: 10%" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size: 10px" value="  Empresa: " />
+			<p:inputText style="width: 20%" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size: 10px" value="  Filial: " />
 			<p:inputText style="width: 12%" />
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			
+			<h:outputText style="font-size:10px" value="Valor: " />
+				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
+					<f:selectItem itemLabel="--" itemValue="nseaplica" />
+					<f:selectItem itemLabel="Até R$1.000,00" itemValue="" />
+					<f:selectItem itemLabel="De R$1.000,00 a R$5.000,00" itemValue="" />
+					<f:selectItem itemLabel="A partir de R$5.000,00" itemValue="" />
+				</p:selectOneMenu>	
 
 			<br />
 			<br />
-			<br />
+
 			<h:outputText style="font-size: 10px"
 					value="  Data Inicio : " />
 			<p:calendar style=" font-size:10px; background-color: #F2F2F2;"
@@ -179,51 +192,95 @@
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
 				
 			<br />
 			<br />
-			<br />
-			
-			
-	
-			<br />
-			<br />
-			</center>
+		
 			</p:fieldset>
-
+			
+		
 				<br />
 				<br />
-				<br />
+				
 			
 			<center>
 					<p:fieldset style="background-color: #F2F2F2">
 			<center>
 
 
-					<p:button style="background-color:#E0EEF6; font-size:12px"
-						outcome="acoesBotao" value="Buscar Notas" icon="ui-icon-extlink">
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Buscar Notas" icon="ui-icon-search">
+						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
+					</p:button>
+					&nbsp;&nbsp;&nbsp;
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Voltar" icon="ui-icon-extlink">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
-
-				<br />
-
-				</center>
-				
-				
-			</p:fieldset>
+						</center>
+				</p:fieldset>
+			</center>
+			<br />
+			<br />
+			<h:form>
 			
-			
-		</center>	
-		
-		 <p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
-				<f:param name="productId" value="turubom?" />
-			</p:button>
-		
-       </p:layoutUnit>
-     
+			<div style="font-size: 11px; font-family: Lucida Bright; background-color:#F4F0F0">	
+		<p:dataTable id="basicDT" var="car" value="#{dtSelectionView.cars1}">
+        
+        
+        <br />
+        <br />
+       
+        <p:column headerText="Numero da Nota">
+            <h:outputText value="#{pesquisa.numeroDaNota}" />
+        </p:column>
+        <p:column headerText="Nome da Empresa">
+            <h:outputText value="#{DadosTelaPesquisa.empresa}" />
+        </p:column>
+        <p:column headerText="Data">
+            <h:outputText value="#{car.brand}" />
+        </p:column>
+        <p:column headerText="Valor">
+            <h:outputText value="#{car.color}" />
+        </p:column>
+        <p:column style="width:25px;text-align: center">
+             <p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
+                <f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
+            </p:commandButton>
+        </p:column>
+    </p:dataTable>
+    </div>
+             
+    <p:overlayPanel widgetVar="carOP" showEffect="fade" hideEffect="fade" dismissable="false" showCloseIcon="true">
+        <p:outputPanel id="carDetail" style="text-align:center;">
+            <p:panelGrid  columns="2" rendered="#{not empty dtSelectionView.selectedCar}" columnClasses="label,value">
+                <f:facet name="header">
+                    <p:graphicImage name="demo/images/car/#{dtSelectionView.selectedCar.brand}-big.gif"/> 
+                </f:facet>
+ 
+                <h:outputText value="Número da Nota" />
+                <h:outputText value="#{dtSelectionView.selectedCar.id}" />
+ 
+                <h:outputText value="Nome da Empresa" />
+                <h:outputText value="#{dtSelectionView.selectedCar.year}" />
+ 
+                <h:outputText value="Data" />
+                <h:outputText value="#{dtSelectionView.selectedCar.color}" style="color:#{dtSelectionView.selectedCar.color}"/>
+ 
+                <h:outputText value="Valor" />
+                <h:outputText value="$#{dtSelectionView.selectedCar.price}" />
+            </p:panelGrid>
+        </p:outputPanel>
+    </p:overlayPanel>
+    </h:form>			
+       </p:layoutUnit> 
+       </h:form>
 	</p:layout>
-
+				<br />
+				<br />
+		
+				
 </h:body>
 </html>
