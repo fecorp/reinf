@@ -17,15 +17,7 @@ p.ident {
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">EFD-
-				Reinf</h5>
-		</center>
-	</div>
-
-	<h:form>
+    <h:form>
 		<p:growl id="messages" />
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -45,8 +37,10 @@ p.ident {
 				<p:menuitem value="Tela de Relatórios" url="#" icon="ui-icon-folder-open" />
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear" url="">
-							</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
 				icon="ui-icon-close" />
@@ -57,17 +51,29 @@ p.ident {
 			</f:facet>
 		</p:menubar>
 	</h:form>
+   
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">EFD-
+				Reinf</h1>
+		</center>
+	</div>
+
+	
 	<br />
 	<p:layout>
 
 
 
-
+        <h:form>
 		<p:layoutUnit position="west" height="80px"
 			style="background-color:#FFFFFFF">
 
 			<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 				<p:submenu label="Cadastros" style="font-size:12px">
+				<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-disk" />
 					<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 						icon="ui-icon-disk" />
 					<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -83,11 +89,11 @@ p.ident {
 				</p:submenu>
 
 				<p:submenu label="Movimentação - NF" style="font-size:12px">
-					<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+					<p:menuitem value="Entrada Nota Fiscal" url="MestreEntradaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
 					<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
-					<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+					<p:menuitem value="Saída Nota Fiscal" url="MestreSaidaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
 					<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 						ajax="false" icon="ui-icon-close" />
@@ -135,6 +141,7 @@ p.ident {
 
 		</p:layoutUnit>
 
+        </h:form>
 		<br />
 		<p:layoutUnit style="backgroud-color:  #555; height:580px "
 			class="ui-layout-center" position="center" fullPage="true">
@@ -142,6 +149,7 @@ p.ident {
 			
 		</p:layoutUnit>
 	</p:layout>
+	
 
 
 

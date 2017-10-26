@@ -1,36 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
-<persistence version="2.0"
-	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	
+	<persistence-unit name="PersistenciaPU">
 
-	<persistence-unit name="PersistenciaPU" transaction-type="RESOURCE_LOCAL">
 
 		<!-- provedor/implementacao do JPA -->
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		 <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		 <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
 
 		<!-- entidade mapeada -->
+		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
+		<class>br.com.fecorp.reinf.model.Aluno</class>
 		<class>br.com.fecorp.reinf.control.Usuario</class>
-		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
-	
-		
+		<class>br.com.fecorp.reinf.model.Pessoa</class>
+		<class>br.com.fecorp.reinf.model.Cprb</class>
+		<class>br.com.fecorp.reinf.model.comercializacaoAgro</class>
+		<class>br.com.fecorp.reinf.model.ComplementoAlimeEntrada</class>
+		<class>br.com.fecorp.reinf.model.ClientesFornecedores</class>
+		<class>br.com.fecorp.reinf.model.ComplementoAlimeSaida</class>
+		<class>br.com.fecorp.reinf.model.ComplementoMestreEntrada</class>
+		<class>br.com.fecorp.reinf.model.ComplementoMestreSaida</class>
+		<class>br.com.fecorp.reinf.model.ComplementoTotalizadorEntrada</class>
+		<class>br.com.fecorp.reinf.model.ComplementoTotalizadorSaida</class>
+		<class>br.com.fecorp.reinf.model.Empresa</class>
+		<class>br.com.fecorp.reinf.model.Filial</class>
+		<class>br.com.fecorp.reinf.model.ImpostoEntrada</class>
+		<class>br.com.fecorp.reinf.model.ImpostoSaida</class>
+		<class>br.com.fecorp.reinf.model.MestreEntrada</class>
+		<class>br.com.fecorp.reinf.model.MestreSaida</class>
+		<class>br.com.fecorp.reinf.model.ProcessosADMJud</class>
+		<class>br.com.fecorp.reinf.model.ReceitaEspetaculoDesp</class>
+		<class>br.com.fecorp.reinf.model.RecursosRecbAssDep</class>
+		<class>br.com.fecorp.reinf.model.RecursosRepAssDesp</class>
+		<class>br.com.fecorp.reinf.model.Responsavel</class>
+		<class>br.com.fecorp.reinf.model.Software</class>
+		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->
+		<!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
+		
 		<properties>
+
 			<!-- dados da conexao -->
-				<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-				<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/dbReinf" />
-				<property name="javax.persistence.jdbc.user" value="postgres" />
-				<property name="javax.persistence.jdbc.password" value="fecorp" />
-				
-			 <!-- propriedades do hibernate -->
-				<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
-				<property name="hibernate.hbm2ddl.auto" value="update" />
-				<property name="hibernate.show_sql" value="true" />
-				<property name="hibernate.format_sql" value="true" />
-						
-			 <!-- atualiza o banco, gera as tabelas se for preciso -->
-			  <property name="hibernate.hbm2ddl.auto" value="update" />
-			  	
+
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/dbReinf" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="fecorp" />
+
+			<!-- propriedades do hibernate -->
+
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+			<!-- atualiza o banco, gera as tabelas se for preciso -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
 		</properties>
+
 	</persistence-unit>
+
 </persistence>

@@ -46,17 +46,9 @@ p.ident {
 				</p:submenu>
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="#" icon="ui-icon-close" />
@@ -79,10 +71,13 @@ p.ident {
 
 	<br />
 	<p:layout>
+	    <h:form>
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-disk" />
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -298,9 +293,10 @@ p.ident {
 				<center>
 
 
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-					</p:commandButton>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -309,11 +305,6 @@ p.ident {
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
@@ -344,11 +335,12 @@ p.ident {
 			</p:fieldset>
 			
 			<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
 			
 		</p:layoutUnit>
+		</h:form>
 	</p:layout>
 
 </h:body>

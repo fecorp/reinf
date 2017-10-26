@@ -168,7 +168,7 @@
 			
 			<h:outputText style="font-size:10px" value="Valor: " />
 				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
-					<f:selectItem itemLabel="--" itemValue="nseaplica" />
+					<f:selectItem itemLabel="--" itemValue="--" />
 					<f:selectItem itemLabel="Até R$1.000,00" itemValue="" />
 					<f:selectItem itemLabel="De R$1.000,00 a R$5.000,00" itemValue="" />
 					<f:selectItem itemLabel="A partir de R$5.000,00" itemValue="" />
@@ -192,17 +192,15 @@
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 					pattern="dd/MM/yyyy" />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				
-				
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
 			<br />
 			<br />
 		
 			</p:fieldset>
 			
 		
-				<br />
-				<br />
+			<br />
+			<br />
 				
 			
 			<center>
@@ -271,13 +269,13 @@
  
                 <h:outputText value="Valor" />
                 <h:outputText value="$#{dtSelectionView.selectedCar.price}" />
-            </p:panelGrid>
-        </p:outputPanel>
-    </p:overlayPanel>
-    </h:form>			
-       </p:layoutUnit> 
-       </h:form>
-	</p:layout>
+           	 </p:panelGrid>
+        	</p:outputPanel>
+    		</p:overlayPanel>
+    	</h:form>			
+      </p:layoutUnit> 
+   </h:form>
+</p:layout>
 				<br />
 				<br />
 		

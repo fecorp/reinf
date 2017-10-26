@@ -8,7 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import br.com.fecorp.reinf.DAO.EntidadeBase;
 
 @ManagedBean(name = "Software")
 @ViewScoped
@@ -30,7 +29,6 @@ public class Software implements Serializable {
 	private String nomeFantasia;
 	private String qualificacao;
 	private String bairro;
-	private String cidade;
 	private String municipio;
 	private String uf;
 	private String cep;
@@ -74,15 +72,7 @@ public class Software implements Serializable {
 
 
 
-	public String getCidade() {
-		return cidade;
-	}
-
-
-
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
+	
 
 
 
@@ -217,4 +207,5 @@ public class Software implements Serializable {
 	public long getSerialversionuid() {
 		return serialVersionUID;
 	}
+	
 }

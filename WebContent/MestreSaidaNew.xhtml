@@ -35,18 +35,10 @@
 						</p:submenu>
 					</p:submenu>
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
+					<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
 
 					<p:menuitem value="Lotes" url="http://www.primefaces.org"
 						icon="ui-icon-close" />
@@ -73,11 +65,13 @@
 	<p:layout>
 	
 
-
+        <h:form>
 		<p:layoutUnit position="west" style="background-color:#F2f2f2">
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
 					<p:submenu label="Cadastros" style="font-size:12px">
+					<p:menuitem value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-disk" />
 						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
 							icon="ui-icon-disk" />
 						<p:menuitem value="Filial" url="telaFilial.xhtml"
@@ -222,27 +216,27 @@
 
 				<center>
 					<h:outputText style="font-size: 10px" value="  VL do serviço :   " />
-					<p:inputText style="width: 7%" value="#{MestreEntrada.valorServico}" />
+					<p:inputText style="width: 7%" value="#{MestreSaida.valorServico}" />
 					&nbsp;
 
 
 					<h:outputText style="font-size: 10px"
 						value="  VL Material Aplicado: " />
-					<p:inputText style="width: 7%" value="#{MestreEntrada.valorMaterialApply}" />
+					<p:inputText style="width: 7%" value="#{MestreSaida.valorMaterialApply}" />
 
 					&nbsp;
 					<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
 					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreEntrada.valorDesconto}" />
+					<p:inputText style="width: 7%" value="#{MestreSaida.valorDesconto}" />
                     &nbsp; 
 
 					<h:outputText style="font-size: 10px" value="  VL documento: " />
 					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreEntrada.valorTotalDocumento}" />
+					<p:inputText style="width: 7%" value="#{MestreSaida.valorTotalDocumento}" />
 					&nbsp;
 					<h:outputText style="font-size: 10px" value="  VL Subempreitada: " />
 					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreEntrada.valorSubempreitada}" />
+					<p:inputText style="width: 7%" value="#{MestreSaida.valorSubempreitada}" />
 					&nbsp;
 					<br></br>
 
@@ -344,33 +338,33 @@
 
 				<h:outputText style="font-size: 10px"
 					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 3%" value="#{MestreEntrada.numContratoServicos}" />
+				<p:inputText style="width: 3%" value="#{MestreSaida.numContratoServicos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Localidade : " />
-				<p:inputText id="telefone02" style="width: 2%" value="#{MestreEntrada.tipoLocalidade}" />
+				<p:inputText id="telefone02" style="width: 2%" value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Localidade : " />
-				<p:inputText style="width: 6%" value="#{MestreEntrada.localidade}" />
+				<p:inputText style="width: 6%" value="#{MestreSaida.localidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Tipo Doc p/ Município: " />
-				<p:inputText style="width: 3%" value="#{MestreEntrada.tipoDocMunicipio}" />
+				<p:inputText style="width: 3%" value="#{MestreSaida.tipoDocMunicipio}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
-				<p:inputText style="width: 2%" value="#{MestreEntrada.indicadorTipoPagamento}" />
+				<p:inputText style="width: 2%" value="#{MestreSaida.indicadorTipoPagamento}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Serviço: " />
-				<p:inputText style="width: 2%" value="#{MestreEntrada.tipoServicoReinf}" />
+				<p:inputText style="width: 2%" value="#{MestreSaida.tipoServicoReinf}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="#{MestreEntrada.contaContabil}" />
+				<p:inputText style="width: 13%" value="#{MestreSaida.contaContabil}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 14%" value="#{MestreEntrada.centroCustos}" />
+				<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NFS-e: " />
-				<p:inputText style="width: 26%" value="#{MestreEntrada.chaveNfs}" />
+				<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
 
 
 
@@ -407,7 +401,7 @@
 &nbsp;				
 				
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="" />
+				<p:inputText style="width: 13%" value="#{MestreSaida.contaContabil}" />
 &nbsp;
 <br />
 				<br />
@@ -439,9 +433,10 @@
 				<center>
 
 
-					<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-						value="Incluir" icon="ui-icon-arrowthick-1-n" type="button">
-					</p:commandButton>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
@@ -450,11 +445,6 @@
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
 						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
@@ -483,11 +473,12 @@
 
 		
 		<p:button style="background-color:#E0EEF6; font-size:10px"
-				outcome="acoesBotao" value="  Voltar " icon="fa-backward">
+				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
-			</p:button>	
+			</p:button>
         
 		</p:layoutUnit>
+		</h:form>
 	</p:layout>
 </h:body>
 </html>
