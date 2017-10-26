@@ -8,70 +8,70 @@
 <h:head>
 
 </h:head>
+
 <h:body style="background-color:#EFF2F6;border:0px;" >
 
+	<!-- Menu de navegação superior -->
+	<h:form>
+		<p:growl id="messages" />
 
-<h:form>
-				<p:growl id="messages" />
-
-				<p:menubar style="font-size:12px; color: #d15">
-					<p:submenu label="Parametrização" icon="ui-icon-document">
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
 						
-						<p:menuitem value="Tela de Parametrização"
+				<p:menuitem value="Tela de Parametrização"
 					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
 						
-					</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
 					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+					<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
 					</p:submenu>
+				<p:menuitem value="File" url="#" />
+			</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Relatórios" icon="ui-icon-help">
-						<p:menuitem value="Contents" url="#" />
-						<p:submenu label="Search" icon="ui-icon-search">
-							<p:submenu label="Text">
-								<p:menuitem value="Workspace" url="#" />
-							</p:submenu>
-							<p:menuitem value="File" url="#" />
-						</p:submenu>
-					</p:submenu>
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+				</p:submenu>
 
-					<p:submenu label="Reinf" icon="ui-icon-gear">
-						<p:submenu label="Ajax" icon="ui-icon-refresh">
-							<p:menuitem value="Save" actionListener="#{menuView.save}"
-								icon="ui-icon-disk" update="messages" />
-							<p:menuitem value="Update" actionListener="#{menuView.update}"
-								icon="ui-icon-arrowrefresh-1-w" update="messages" />
-						</p:submenu>
-						<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-							<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-								icon="ui-icon-close" update="messages" ajax="false" />
-						</p:submenu>
-					</p:submenu>
+				<p:menuitem value="Lotes" url="http://www.primefaces.org"
+					icon="ui-icon-close" />
 
-					<p:menuitem value="Lotes" url="http://www.primefaces.org"
-						icon="ui-icon-close" />
-
-					<f:facet name="options">
-						<p:commandButton type="button" value="Logout"
-							icon="ui-icon-extlink" />
-					</f:facet>
-				</p:menubar>
-				</h:form>
-
+				<f:facet name="options">
+					<p:commandButton type="button" value="Logout"
+						icon="ui-icon-extlink" />
+				</f:facet>
+		</p:menubar>
+	</h:form>
+	
+	<!-- Legenda superior -->
 	<div>
 		<center>
 			<h1
 				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h1>
 		</center>
 	</div>
+	<br/>
 	
-	
-<br/>
+	<!-- Menu Lateral -->
 	<p:layout>
-
-
 		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
 			<h:form>
 				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
@@ -142,33 +142,30 @@
 				</p:panelMenu>
 			</h:form>
 		</p:layoutUnit>
-
+		<!-- Campos do Sistema -->
 		<h:form>
 		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
 			fullPage="true" position="center">
 
-
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Dados para Pesquisa ">
-			
+		<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+			legend="Dados para Pesquisa ">
 			<br />
 			<br />
-	
-			<h:outputText style="font-size: 10px" value="  Nota Fiscal: " />
+			<h:outputText style="font-size: 10px" value="  Nota Fiscal: #{DadosTelaPesquisa.notaFiscal}" />
 			<p:inputText style="width: 10%" />
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			<h:outputText style="font-size: 10px" value="  Empresa: " />
+			<h:outputText style="font-size: 10px" value="  Empresa: #{DadosTelaPesquisa.empresa}" />
 			<p:inputText style="width: 20%" />
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			<h:outputText style="font-size: 10px" value="  Filial: " />
+			<h:outputText style="font-size: 10px" value="  Filial: #{DadosTelaPesquisa.filial}" />
 			<p:inputText style="width: 12%" />
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			<h:outputText style="font-size:10px" value="Valor: " />
+			<h:outputText style="font-size:10px" value="Valor: #{DadosTelaPesquisa.valor}" />
 				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
-					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="--" itemValue="null" />
 					<f:selectItem itemLabel="Até R$1.000,00" itemValue="" />
 					<f:selectItem itemLabel="De R$1.000,00 a R$5.000,00" itemValue="" />
 					<f:selectItem itemLabel="A partir de R$5.000,00" itemValue="" />
@@ -177,8 +174,8 @@
 			<br />
 			<br />
 
-			<h:outputText style="font-size: 10px"
-					value="  Data Inicio : " />
+			<h:outputText style="font-size: 10px "
+					value=" Data Inicio: #{DadosTelaPesquisa.dataInicio}" />
 			<p:calendar style=" font-size:10px; background-color: #F2F2F2;"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao02" value="#{calendarView.date2}" locale="pt"
@@ -187,7 +184,7 @@
 			
 			
 			<h:outputText style="font-size: 10px"
-					value="  Data Fim: " />
+					value="  Data Fim: #{DadosTelaPesquisa.dataFim}" />
 			<p:calendar style=" font-size:10px; background-color: #F2F2F2;"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
@@ -195,90 +192,85 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
 			<br />
 			<br />
-		
-			</p:fieldset>
+		</p:fieldset>
 			
-		
 			<br />
 			<br />
 				
+		<!-- Espaço para pular -->
+		<center>
+			<p:fieldset style="background-color: #F2F2F2">
+					
+		<!-- Botão de Pesquisa -->		
 			
-			<center>
-					<p:fieldset style="background-color: #F2F2F2">
-			<center>
-
-
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Buscar Notas" icon="ui-icon-search">
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Buscar Notas" icon="ui-icon-search">
 						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
-					</p:button>
+				</p:button>
 					&nbsp;&nbsp;&nbsp;
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Voltar" icon="ui-icon-extlink">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-						</center>
-				</p:fieldset>
-			</center>
-			<br />
-			<br />
-			<h:form>
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</p:fieldset>
+		</center>
 			
+		<br />
+		<br />
+		
+		<!-- Menu de Pesquisa -->
+		<h:form>
 			<div style="font-size: 11px; font-family: Lucida Bright; background-color:#F4F0F0">	
-		<p:dataTable id="basicDT" var="car" value="#{dtSelectionView.cars1}">
-        
-        
-        <br />
-        <br />
-       
-        <p:column headerText="Numero da Nota">
-            <h:outputText value="#{pesquisa.numeroDaNota}" />
-        </p:column>
-        <p:column headerText="Nome da Empresa">
-            <h:outputText value="#{DadosTelaPesquisa.empresa}" />
-        </p:column>
-        <p:column headerText="Data">
-            <h:outputText value="#{car.brand}" />
-        </p:column>
-        <p:column headerText="Valor">
-            <h:outputText value="#{car.color}" />
-        </p:column>
-        <p:column style="width:25px;text-align: center">
-             <p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
-                <f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
-            </p:commandButton>
-        </p:column>
-    </p:dataTable>
-    </div>
-             
-    <p:overlayPanel widgetVar="carOP" showEffect="fade" hideEffect="fade" dismissable="false" showCloseIcon="true">
-        <p:outputPanel id="carDetail" style="text-align:center;">
-            <p:panelGrid  columns="2" rendered="#{not empty dtSelectionView.selectedCar}" columnClasses="label,value">
-                <f:facet name="header">
-                    <p:graphicImage name="demo/images/car/#{dtSelectionView.selectedCar.brand}-big.gif"/> 
-                </f:facet>
- 
-                <h:outputText value="Número da Nota" />
-                <h:outputText value="#{dtSelectionView.selectedCar.id}" />
- 
-                <h:outputText value="Nome da Empresa" />
-                <h:outputText value="#{dtSelectionView.selectedCar.year}" />
- 
-                <h:outputText value="Data" />
-                <h:outputText value="#{dtSelectionView.selectedCar.color}" style="color:#{dtSelectionView.selectedCar.color}"/>
- 
-                <h:outputText value="Valor" />
-                <h:outputText value="$#{dtSelectionView.selectedCar.price}" />
-           	 </p:panelGrid>
-        	</p:outputPanel>
-    		</p:overlayPanel>
+				<p:dataTable id="basicDT" var="car" value="#{dtSelectionView.cars1}">
+	        		<br />
+	        		<br />
+	       
+	        	<p:column headerText="Numero da Nota">
+	            	<h:outputText value="#{DadosTelaPesquisa.notaFiscal}" />
+	        	</p:column>
+	       		<p:column headerText="Nome da Empresa">
+	           		<h:outputText value="#{DadosTelaPesquisa.empresa}" />
+	       		</p:column>
+	        	<p:column headerText="Data">
+	            	<h:outputText value="#{DadosTelaPesquisa.dataEntrada}" />
+	        	</p:column>
+	        	<p:column headerText="Valor">
+	            	<h:outputText value="#{DadosTelaPesquisa.valor}" />
+	        	</p:column>
+	        	<p:column style="width:25px;text-align: center">
+	             	<p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
+	                	<f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
+	            	</p:commandButton>
+	        	</p:column>
+	    		</p:dataTable>
+	    	</div>
+           <!-- Painel de Dados -->
+	    	<p:overlayPanel widgetVar="carOP" showEffect="fade" hideEffect="fade" dismissable="false" showCloseIcon="true">
+	        	<p:outputPanel id="carDetail" style="text-align:center;">
+	            	<p:panelGrid  columns="2" rendered="#{not empty dtSelectionView.selectedCar}" columnClasses="label,value">
+	                	<f:facet name="header">
+	                    	<p:graphicImage name="demo/images/car/#{dtSelectionView.selectedCar.brand}-big.gif"/> 
+	                	</f:facet>
+	 
+		                <h:outputText value="Número da Nota" />
+		                <h:outputText value="#{dtSelectionView.selectedCar.id}" />
+		 
+		                <h:outputText value="Nome da Empresa" />
+		                <h:outputText value="#{dtSelectionView.selectedCar.year}" />
+		 
+		                <h:outputText value="Data" />
+		                <h:outputText value="#{dtSelectionView.selectedCar.color}" style="color:#{dtSelectionView.selectedCar.color}"/>
+		 
+		                <h:outputText value="Valor" />
+		                <h:outputText value="$#{dtSelectionView.selectedCar.price}" />
+	           	 	</p:panelGrid>
+	         	</p:outputPanel>
+	      	</p:overlayPanel>
     	</h:form>			
       </p:layoutUnit> 
    </h:form>
 </p:layout>
 				<br />
-				<br />
-		
-				
+				<br />			
 </h:body>
 </html>

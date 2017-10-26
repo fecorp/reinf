@@ -22,17 +22,18 @@ public class DadosTelaPesquisa implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
-	private String NotaFiscal;
+	private int NotaFiscal;
 	private String Empresa;
 	private String Filial;
 	private double Valor;
+	private double DataEntrada;
 	private double DataInicio;
 	private double DataFim;
 	
-	public String getNotaFiscal() {
+	public int getNotaFiscal() {
 		return NotaFiscal;
 	}
-	public void setNotaFiscal(String notaFiscal) {
+	public void setNotaFiscal(int notaFiscal) {
 		NotaFiscal = notaFiscal;
 	}
 	public String getEmpresa() {
@@ -65,4 +66,14 @@ public class DadosTelaPesquisa implements Serializable{
 	public void setDataFim(double dataFim) {
 		DataFim = dataFim;
 	}
+	public double getDataEntrada() {
+		return DataEntrada;
+	}
+	public void setDataEntrada(double dataEntrada) {
+		DataEntrada = dataEntrada;
+	}
 }
+
+/*
+ * karin 26/10/2017
+ */
