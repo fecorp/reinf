@@ -10,8 +10,7 @@
 
 		<!-- provedor/implementacao do JPA -->
 		 <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		 <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
-
+		
 		<!-- entidade mapeada -->
 		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
 		<class>br.com.fecorp.reinf.model.Aluno</class>
@@ -41,7 +40,7 @@
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->
-		<!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
+		 <!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 		
@@ -55,7 +54,8 @@
 			<property name="javax.persistence.jdbc.password" value="fecorp" />
 
 			<!-- propriedades do hibernate -->
-
+			 <property name="hibernate.id.new_generator_mappings" value="false"/>
+			 <property name="hibernate.id.new_generator_mappings" value="false"/>
 
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
@@ -64,6 +64,7 @@
 
 			<!-- atualiza o banco, gera as tabelas se for preciso -->
 			 <property name="hibernate.hbm2ddl.auto" value="update"/>
+		
 			
 			</properties>
 
