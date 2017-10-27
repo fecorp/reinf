@@ -27,9 +27,9 @@ public class AcoesBotao {
 			this.botaoPesquisa = botaoPesquisa;
 		}
 	    
-		public void acaoBotao() {
-		      FacesContext.getCurrentInstance().getExternalContext().redirect(botaoPesquisa);
-		}
+		
+		
+}
 
 
 

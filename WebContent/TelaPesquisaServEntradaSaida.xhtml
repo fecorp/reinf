@@ -148,50 +148,35 @@
 			fullPage="true" position="center">
 
 		<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-			legend="Dados para Pesquisa ">
+			legend="Pesquisa ">
 			<br />
 			<br />
-			<h:outputText style="font-size: 10px" value="  Nota Fiscal: #{DadosTelaPesquisa.notaFiscal}" />
-			<p:inputText style="width: 10%" />
+			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="" itemValue="" />
+					<f:selectItem itemLabel="" itemValue="" />
+					<f:selectItem itemLabel="" itemValue="" />
+				</p:selectOneMenu>	
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			<h:outputText style="font-size: 10px" value="  Empresa: #{DadosTelaPesquisa.empresa}" />
+			<h:outputText style="font-size:10px" value="Criterio: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="Igual a" itemValue="Igual a" />
+					<f:selectItem itemLabel="Maior que" itemValue="Maior que" />
+					<f:selectItem itemLabel="Menor que" itemValue="Menor que" />
+					<f:selectItem itemLabel="Contem" itemValue="Contem" />
+					<f:selectItem itemLabel="Começa com" itemValue="Começa com" />
+				</p:selectOneMenu>	
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: #{DadosTelaPesquisa.empresa}" />
 			<p:inputText style="width: 20%" />
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			
-			<h:outputText style="font-size: 10px" value="  Filial: #{DadosTelaPesquisa.filial}" />
-			<p:inputText style="width: 12%" />
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			
-			<h:outputText style="font-size:10px" value="Valor: #{DadosTelaPesquisa.valor}" />
-				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
-					<f:selectItem itemLabel="--" itemValue="null" />
-					<f:selectItem itemLabel="Até R$1.000,00" itemValue="" />
-					<f:selectItem itemLabel="De R$1.000,00 a R$5.000,00" itemValue="" />
-					<f:selectItem itemLabel="A partir de R$5.000,00" itemValue="" />
-				</p:selectOneMenu>	
-
 			<br />
 			<br />
 
-			<h:outputText style="font-size: 10px "
-					value=" Data Inicio: #{DadosTelaPesquisa.dataInicio}" />
-			<p:calendar style=" font-size:10px; background-color: #F2F2F2;"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="dataexecucao02" value="#{calendarView.date2}" locale="pt"
-					pattern="dd/MM/yyyy" />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-			
-			
-			<h:outputText style="font-size: 10px"
-					value="  Data Fim: #{DadosTelaPesquisa.dataFim}" />
-			<p:calendar style=" font-size:10px; background-color: #F2F2F2;"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
-					pattern="dd/MM/yyyy" />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-			<br />
-			<br />
 		</p:fieldset>
 			
 			<br />
@@ -204,7 +189,7 @@
 		<!-- Botão de Pesquisa -->		
 			
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Buscar Notas" icon="ui-icon-search">
+					outcome="acoesBotao" value="Buscar" icon="ui-icon-search">
 						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
 				</p:button>
 					&nbsp;&nbsp;&nbsp;
