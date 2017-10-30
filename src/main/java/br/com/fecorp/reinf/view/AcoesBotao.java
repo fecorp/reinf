@@ -7,7 +7,7 @@ public class AcoesBotao {
 
 	
 	    private String productId;
-	    private String botaoPesquisa;
+	    private String botaoPesquisar;
 	 
 	    public String getProductId() {
 	        return productId;
@@ -19,12 +19,12 @@ public class AcoesBotao {
 /*
  * karin 26/10/2017
  */
-		public String getBotaoPesquisa() {
-			return botaoPesquisa;
+		public String getBotaoPesquisar() {
+			return "TelaPesquisaServEntradaSaida.xhtml";
 		}
 
-		public void setBotaoPesquisa(String botaoPesquisa) {
-			this.botaoPesquisa = botaoPesquisa;
+		public void setBotaoPesquisar(String botaoPesquisa) {
+			this.botaoPesquisar = botaoPesquisa;
 		}
 	    
 		

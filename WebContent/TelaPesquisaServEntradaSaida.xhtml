@@ -147,21 +147,55 @@
 		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
 			fullPage="true" position="center">
 
-		<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
 			legend="Pesquisa ">
 			<br />
 			<br />
 			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
-				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
+				<p:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
 					<f:selectItem itemLabel="--" itemValue="--" />
-					<f:selectItem itemLabel="" itemValue="" />
-					<f:selectItem itemLabel="" itemValue="" />
-					<f:selectItem itemLabel="" itemValue="" />
+					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" />
+					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" />
+					<f:selectItem itemLabel="Categoria PF/PJ" itemValue="Categoria PF/PJ" />
+					<f:selectItem itemLabel="Código PF/PJ" itemValue="Código PF/PJ" />
+					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" />
+					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" />
+					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" />
+					<f:selectItem itemLabel="Data de Entrada" itemValue="Data de Entrada" />
+					<f:selectItem itemLabel="Data da Execução/Conclusão" itemValue="Data da Execução/Conclusão" />
+					<f:selectItem itemLabel="Quantidade de itens" itemValue="Quantidade de itens" />
+					<f:selectItem itemLabel="Tipo de Documento" itemValue="Tipo de Documento" />
+					<f:selectItem itemLabel="Código do Serviço" itemValue="Código do Serviço" />
+					<f:selectItem itemLabel="Descrição do Serviço" itemValue="Descrição do Serviço" />
+					<f:selectItem itemLabel="VL do Serviço" itemValue="VL do Serviço" />
+					<f:selectItem itemLabel="VL Material aplicado" itemValue="VL Material aplicado" />
+					<f:selectItem itemLabel="VL Desconto" itemValue="VL Desconto" />
+					<f:selectItem itemLabel="VL Documento" itemValue="VL Documento" />
+					<f:selectItem itemLabel="VL Subempreitada" itemValue="VL Subempreitada" />
+					<f:selectItem itemLabel="ISS - VL Totais Retidos" itemValue="ISS - VL Totais Retidos" />
+					<f:selectItem itemLabel="ISS - Cód.Fiscal de Retenção" itemValue="ISS - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="INSS - VL Totais Retidos" itemValue="INSS - VL Totais Retidos" />
+					<f:selectItem itemLabel="INSS - Cód.Fiscal de Retenção" itemValue="INSS - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="IRRF - VL Totais Retidos" itemValue="IRRF - VL Totais Retidos" />
+					<f:selectItem itemLabel="IRRF - Cód.Fiscal de Retenção" itemValue="IRRF - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="PCC - VL Totais Retidos" itemValue="PCC - VL Totais Retidos" />
+					<f:selectItem itemLabel="PCC - Cód.Fiscal de Retenção" itemValue="PCC - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="Número do Contrato Serviço" itemValue="Número do Contrato Serviço" />
+					<f:selectItem itemLabel="Tipo Localidade" itemValue="Tipo Localidade" />
+					<f:selectItem itemLabel="Localidade" itemValue="Localidade" />
+					<f:selectItem itemLabel="Tipo de Doc. p/ Município" itemValue="Tipo de Doc. p/ Município" />
+					<f:selectItem itemLabel="Ind Pagamento" itemValue="Ind Pagamento" />
+					<f:selectItem itemLabel="Tipo Serviço" itemValue="Tipo Serviço" />
+					<f:selectItem itemLabel="Conta Contábil" itemValue="Conta Contábil" />
+					<f:selectItem itemLabel="Centro de Custos" itemValue="Centro de Custos" />
+					<f:selectItem itemLabel="NFS-e " itemValue="NFS-e " />
+					<f:selectItem itemLabel="Open Felx 01" itemValue="Open Felx 01" />
+					<f:selectItem itemLabel="Open Felx 02" itemValue="Open Felx 02" />
 				</p:selectOneMenu>	
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
 			<h:outputText style="font-size:10px" value="Criterio: #{DadosTelaPesquisa.valor}" />
-				<p:selectOneMenu  style="font-size:10px" value="valor" itemLabel="valor">
+				<p:selectOneMenu  style="font-size:11px" value="valor" itemLabel="valor">
 					<f:selectItem itemLabel="--" itemValue="--" />
 					<f:selectItem itemLabel="Igual a" itemValue="Igual a" />
 					<f:selectItem itemLabel="Maior que" itemValue="Maior que" />
@@ -205,23 +239,40 @@
 		
 		<!-- Menu de Pesquisa -->
 		<h:form>
-			<div style="font-size: 11px; font-family: Lucida Bright; background-color:#F4F0F0">	
-				<p:dataTable id="basicDT" var="car" value="#{dtSelectionView.cars1}">
+			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
+				<p:dataTable value="#{testaPesquisa.testalist}" rows= "5" paginator="true">
 	        		<br />
 	        		<br />
 	       
-	        	<p:column headerText="Numero da Nota">
-	            	<h:outputText value="#{DadosTelaPesquisa.notaFiscal}" />
+	        	<p:column headerText="Cod. Empresa"> 
+                <f:selectItems value="#{pesquisa.empresa}" />  
+  
 	        	</p:column>
-	       		<p:column headerText="Nome da Empresa">
-	           		<h:outputText value="#{DadosTelaPesquisa.empresa}" />
+	        	<p:column headerText="Cod. Filial">
+	            	<h:outputText value="#{testaPesquisa.filial}" />
+	        	</p:column>
+	        	<p:column headerText="Série da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.serie}" />
+	        	</p:column>
+	        	<p:column headerText="Numero da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.numero}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Emissão">
+	            	<h:outputText value="#{testaPesquisa.emissao}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Entrada">
+	            	<h:outputText value="#{testaPesquisa.entrada}" />
+	        	</p:column>
+	        	<p:column headerText="Tipo de Documento">
+	            	<h:outputText value="#{testaPesquisa.tipo}" />
+	        	</p:column>
+	       		<p:column headerText="Descrição do Serviço">
+	           		<h:outputText value="#{testaPesquisa.descrição}" />
 	       		</p:column>
-	        	<p:column headerText="Data">
-	            	<h:outputText value="#{DadosTelaPesquisa.dataEntrada}" />
+	        	<p:column headerText="Valor do Serviço">
+	            	<h:outputText value="#{testaPesquisa.valor}" />
 	        	</p:column>
-	        	<p:column headerText="Valor">
-	            	<h:outputText value="#{DadosTelaPesquisa.valor}" />
-	        	</p:column>
+	        	
 	        	<p:column style="width:25px;text-align: center">
 	             	<p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
 	                	<f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
@@ -229,29 +280,34 @@
 	        	</p:column>
 	    		</p:dataTable>
 	    	</div>
-           <!-- Painel de Dados -->
-	    	<p:overlayPanel widgetVar="carOP" showEffect="fade" hideEffect="fade" dismissable="false" showCloseIcon="true">
-	        	<p:outputPanel id="carDetail" style="text-align:center;">
-	            	<p:panelGrid  columns="2" rendered="#{not empty dtSelectionView.selectedCar}" columnClasses="label,value">
-	                	<f:facet name="header">
-	                    	<p:graphicImage name="demo/images/car/#{dtSelectionView.selectedCar.brand}-big.gif"/> 
-	                	</f:facet>
+    
+	    	
+	      
+    	</h:form>	
+    	
+    	<!--  <h:form>
+    	<p:commandButton id="movieBtn" type="button" value="Buscar" icon="ui-icon-search" />
+    	<p:overlayPanel id="moviePanel" for="movieBtn" hideEffect="fade" dynamic="true" style="width:1000px">
+	        <p:dataTable var="movies" value="#{movieView.movieList}" rows="5" paginator="true">
+	            <p:column headerText="Movie">
+	                <h:outputText value="#{movies.movie}" />
+	            </p:column>
 	 
-		                <h:outputText value="Número da Nota" />
-		                <h:outputText value="#{dtSelectionView.selectedCar.id}" />
-		 
-		                <h:outputText value="Nome da Empresa" />
-		                <h:outputText value="#{dtSelectionView.selectedCar.year}" />
-		 
-		                <h:outputText value="Data" />
-		                <h:outputText value="#{dtSelectionView.selectedCar.color}" style="color:#{dtSelectionView.selectedCar.color}"/>
-		 
-		                <h:outputText value="Valor" />
-		                <h:outputText value="$#{dtSelectionView.selectedCar.price}" />
-	           	 	</p:panelGrid>
-	         	</p:outputPanel>
-	      	</p:overlayPanel>
-    	</h:form>			
+	            <p:column headerText="Directed By">
+	                <h:outputText value="#{movies.directedBy}" />
+	            </p:column>
+	 
+	            <p:column headerText="Genres">
+	                <h:outputText value="#{movies.genres}" />
+	            </p:column>
+	 
+	            <p:column headerText="Run Time(min.)">
+	                <h:outputText value="#{movies.runTime}" />
+	            </p:column>
+	        </p:dataTable>
+    	</p:overlayPanel>
+    	
+    	</h:form>-->	
       </p:layoutUnit> 
    </h:form>
 </p:layout>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body style="background-color:#EFF2F6;border:0px;">
+
+<h:form>
+
+			<h:dataTable value="#{comentarioBean.lista}" var="com" rules="rows">
+                <f:facet name="caption">Comentários relativos aos temas desenvolvidos
+                </f:facet>
+                <f:facet name="header">Listagem dos comentários</f:facet>
+                <f:facet name="footer">Fim da listagem</f:facet>
+                <h:column>
+                    <f:facet name="header">Cód. do Tema</f:facet>#{com.idTemaCom}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Cód. do Participante</f:facet>#{com.idCodPartCom}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Comentários</f:facet>#{com.textoCom}
+                </h:column>
+            </h:dataTable>
+         </h:form>
+
+</h:body>
+</html>
