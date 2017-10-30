@@ -20,8 +20,7 @@ public class ComplementoMestreSaida implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	
-	
+
 		
 		private String codEmpresa;
         private String codFilial;
@@ -162,7 +161,6 @@ public class ComplementoMestreSaida implements Serializable {
 
 
 		public Serializable getId() {
-			// TODO Auto-generated method stub
 			return null;
 		}
 		

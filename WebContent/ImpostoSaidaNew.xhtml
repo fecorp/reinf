@@ -93,6 +93,13 @@
 							ajax="false" icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
+							
+						<p:menuitem value="Complemento Entrada"
+							url="ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
+							url="ComplementoMestreSaida.xhtml" ajax="false"
+							icon="ui-icon-close" />	
 
 
 					</p:submenu>
@@ -354,11 +361,11 @@
 				legend="Open Flex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
+					<p:inputText style="width: 20%" value="#{ImpostoSaida.openFlex01}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
+					<p:inputText style="width: 20%" value="#{ImpostoSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />

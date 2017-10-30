@@ -12,7 +12,7 @@
 <h:body style="background-color:#EFF2F6;border:0px;">
 
 <h:form>
-		<p:growl id="messages" />
+		<p:growl id="messages"/>
 
 		<p:menubar style="font-size:12px; color: #d15">
 			<p:submenu label="Parametrização" icon="ui-icon-contact">
@@ -83,14 +83,20 @@
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Entrada NF" url="MestreEntradaNew.xhtml"
+						<p:menuitem value="Entrada Nota Fiscal" url="MestreEntradaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
 						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Saída NF" url="MestreSaidaNew.xhtml"
+						<p:menuitem value="Saída Nota Fiscal" url="MestreSaidaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
 						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
 							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Complemento Entrada"
+							url="ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
+							url="ComplementoMestreSaida.xhtml" ajax="false"
+							icon="ui-icon-close" />	
 
 
 					</p:submenu>
@@ -143,8 +149,8 @@
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" required="true"
-					requiredMessage="Campo Obrigatório!"  value="#{Empresa.empresa}"/>
+				<p:inputText style="width: 5%; background-color: #F2F2F2" required="true" requiredMessage="Campo Obrigatório !!!"
+					   value="#{Empresa.empresa}" />
 				
 
                 &nbsp;
@@ -254,7 +260,253 @@
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				<p:inputText style="width: 8%" value="#{Empresa.pais}" />
+				
+				<p:selectOneMenu style="font-size:10px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
+					<f:selectItem itemLabel="013 - Afeganistão" itemValue="Afeganistão" />
+					<f:selectItem itemLabel="017 - Albânia República" itemValue="Albânia" />
+					<f:selectItem itemLabel="023 - Alemanha" itemValue="Alemanha" />
+					<f:selectItem itemLabel="031 - Burkina Faso" itemValue="Burkina Faso" />
+					<f:selectItem itemLabel="037 - Andorra" itemValue="Andorra" />
+					<f:selectItem itemLabel="040 - Angola" itemValue="Angola" />
+					<f:selectItem itemLabel="041 - Anguilla" itemValue="Anguilla" />
+					<f:selectItem itemLabel="043 - Antigua E Barbuda" itemValue="Antigua E Barbuda" />
+					<f:selectItem itemLabel="047 - Antilhas Holandesas" itemValue="Holandesas" />
+					<f:selectItem itemLabel="053 - Àrabia Saudita" itemValue="Àrabia Saudita" />
+					<f:selectItem itemLabel="059 - Argélia" itemValue="Argélia" />
+					<f:selectItem itemLabel="063 - Argentina" itemValue="Argentina" />
+					<f:selectItem itemLabel="064 - Amênia, República" itemValue="Amênia, República" />
+					<f:selectItem itemLabel="065 - Aruba" itemValue="Aruba" />
+					<f:selectItem itemLabel="069 - Austrália" itemValue="Áustralia" />
+					<f:selectItem itemLabel="072 - Áustria" itemValue="Áustria" />
+					<f:selectItem itemLabel="073 - Azerbaijão, República" itemValue="Azerbaijão, República" />
+					<f:selectItem itemLabel="077 - Bahamas, Ilhas" itemValue="Bahamas" />
+					<f:selectItem itemLabel="080 - Bahrein, Ilhas" itemValue="Bahrein, Ilhas" />
+					<f:selectItem itemLabel="081 - Banladesh" itemValue="Banladesh" />
+					<f:selectItem itemLabel="083 - Barbados" itemValue="Barbados" />
+					<f:selectItem itemLabel="085 - Belarus República" itemValue="Belarus" />
+					<f:selectItem itemLabel="087 - Bélgica" itemValue="Bélgica" />
+					<f:selectItem itemLabel="088 - Belize" itemValue="Belize" />
+					<f:selectItem itemLabel="090 - Bermudas" itemValue="Bermudas" />
+					<f:selectItem itemLabel="093 - Mianmar(Birmânia)" itemValue="Mianmar" />
+					<f:selectItem itemLabel="097 - Bolívia" itemValue="Bolívia" />
+					<f:selectItem itemLabel="098 - Bósnia - Herzegovina" itemValue="Bósnia - Herzegovina" />
+					<f:selectItem itemLabel="101 - Botsoana" itemValue="Botsoana" />
+					<f:selectItem itemLabel="108 - Brunei" itemValue="Brunei" />
+                    <f:selectItem itemLabel="111 - Bulgária, República" itemValue="Bulgária, República" />
+                    <f:selectItem itemLabel="115 - Burundi" itemValue="Burundi" />
+                    <f:selectItem itemLabel="119 - Butão" itemValue="Butão" />
+                    <f:selectItem itemLabel="127 - Cabo Verde, República" itemValue="Cabo Verde, República" />
+                    <f:selectItem itemLabel="137 - Cayman, Ilhas" itemValue="Cayman" />
+                    <f:selectItem itemLabel="141 - Canboja" itemValue="Canboja" />
+                    <f:selectItem itemLabel="145 - Camarões" itemValue="Camarões" />
+                    <f:selectItem itemLabel="149 - Canadá" itemValue="Canadá" />
+                    <f:selectItem itemLabel="150 - Jersey, Ilhas" itemValue="Jersey, Ilhas" />
+                    <f:selectItem itemLabel="151 - Canariás" itemValue="Canariás" />
+                    <f:selectItem itemLabel="153 - Cazaquistão, República" itemValue="Cazaquistão, República" />
+                    <f:selectItem itemLabel="154 - Catar" itemValue="Catar" />
+                    <f:selectItem itemLabel="293 - Gibarltar" itemValue="Gibarltar" />
+                    <f:selectItem itemLabel="297 - Granada" itemValue="Granada" />
+                    <f:selectItem itemLabel="301 - Grécia" itemValue="Grécia" />
+                    <f:selectItem itemLabel="305 - Groenlândia" itemValue="Groenlândia" />
+                    <f:selectItem itemLabel="309 - Guadalupe" itemValue="Guadalupe" />
+                    <f:selectItem itemLabel="313 - Guam" itemValue="Guam" />
+                    <f:selectItem itemLabel="317 - Guatemala" itemValue="Guatemala" />
+                    <f:selectItem itemLabel="325 - Guiana Francesa" itemValue="Guiana Francesa" />
+                    <f:selectItem itemLabel="329 - Guiné" itemValue="Guiné" />
+                    <f:selectItem itemLabel="331 - Guiné - Equatorial" itemValue="Guiné - Equatorial" />
+                    <f:selectItem itemLabel="334 - Bissau" itemValue="Bissau" />
+                    <f:selectItem itemLabel="337 - Guiana" itemValue="Guiana" />
+                    <f:selectItem itemLabel="341 - Haiti" itemValue="Haiti" />
+                    <f:selectItem itemLabel="345 - Honduras" itemValue="Honduras" />
+                    <f:selectItem itemLabel="351 - Hong Kong" itemValue="Hong Kong" />
+                    <f:selectItem itemLabel="355 - Hungria, República" itemValue="Hungria" />
+                    <f:selectItem itemLabel="357 - Iemeen" itemValue="Iemeen" />
+                    <f:selectItem itemLabel="359 - Man, Ilha" itemValue="Man, Ilha" />
+                    <f:selectItem itemLabel="361 - Índia" itemValue="Índia" />
+                    <f:selectItem itemLabel="365 - Indonésia" itemValue="Indonésia" />
+                    <f:selectItem itemLabel="369 - Iraque" itemValue="Iraque" />
+                    <f:selectItem itemLabel="372 - Irã" itemValue="Irã" />
+                    <f:selectItem itemLabel="375 - Irlanda" itemValue="Irlanda" />
+                    <f:selectItem itemLabel="379 - Inslândia" itemValue="Inslândia" />
+                    <f:selectItem itemLabel="383 - Israel" itemValue="Israel" />
+                    <f:selectItem itemLabel="386 - Itália" itemValue="Itália" />
+                    <f:selectItem itemLabel="391 - Jamaica" itemValue="Jamaica" />
+                    <f:selectItem itemLabel="396 - Johnston, Ilhas" itemValue="Johnston, Ilhas" />
+                    <f:selectItem itemLabel="399 - Japão" itemValue="Japão" />
+                    <f:selectItem itemLabel="403 - Jordânia" itemValue="Jordânia" />
+                    <f:selectItem itemLabel="411 - Kiripeti" itemValue="Kiripeti" />
+                    <f:selectItem itemLabel="420 - Laos" itemValue="Laos" />
+                    <f:selectItem itemLabel="423 - Lebuan" itemValue="Lebuan" />
+                    <f:selectItem itemLabel="426 - Lesoto" itemValue="Lesoto" />
+                    <f:selectItem itemLabel="427 - Letônia" itemValue="Letônia" />
+                    <f:selectItem itemLabel="431 - Líbano" itemValue="Líbano" />
+                    <f:selectItem itemLabel="434 - Libéria" itemValue="Libéria" />
+                    <f:selectItem itemLabel="438 - Líbia" itemValue="Líbia" />
+                    <f:selectItem itemLabel="440 - Liechtenstein" itemValue="Liechtenstein" />
+                    <f:selectItem itemLabel="442 - Lituânia" itemValue="Lituânia" />
+                    <f:selectItem itemLabel="445 - Luxerburgo" itemValue="Luxerburgo" />
+                    <f:selectItem itemLabel="447 - Macao" itemValue="Macao" />
+                    <f:selectItem itemLabel="449 - Macedônia" itemValue="Macedônia" />
+                    <f:selectItem itemLabel="573 - Holanda" itemValue="Holanda" />
+                    <f:selectItem itemLabel="575 - Palau" itemValue="Palau" />
+                    <f:selectItem itemLabel="576 - Paquestão" itemValue="Paquestão" />
+                    <f:selectItem itemLabel="580 - Panamá" itemValue="Panamá" />
+                    <f:selectItem itemLabel="586 - Paraguai" itemValue="Paraguai" />
+                    <f:selectItem itemLabel="589 - Peru" itemValue="Peru" />
+                    <f:selectItem itemLabel="593 - Pitcairn, Ilha" itemValue="Pitcairn, Ilha" />
+                    <f:selectItem itemLabel="599 - Polinésia, Francesa" itemValue="Polinésia, Francesa" />
+                    <f:selectItem itemLabel="603 - Polônia" itemValue="Polônia" />
+                    <f:selectItem itemLabel="607 - Portugal" itemValue="Portugal" />
+                    <f:selectItem itemLabel="611 - Porto Rico" itemValue="Porto Rico" />
+                    <f:selectItem itemLabel="623 - Quênia" itemValue="Quênia" />
+                    <f:selectItem itemLabel="625 - Quirguiz" itemValue="Quirguiz" />
+                    <f:selectItem itemLabel="628 - Reino Unido" itemValue="Reino Unido" />
+                    <f:selectItem itemLabel="640 - República Centro - Africana" itemValue="República Centro - Africana" />
+                    <f:selectItem itemLabel="647 - República Dominicana" itemValue="República Dominicana" />
+                    <f:selectItem itemLabel="660 - Reunião, Ilha" itemValue="Reunião, Ilha" />
+                    <f:selectItem itemLabel="665 - Zinbabue" itemValue="Zinbabue" />
+                    <f:selectItem itemLabel="670 - Romênia" itemValue="Romênia" />
+                    <f:selectItem itemLabel="675 - Ruanda" itemValue="Ruanda" />
+                    <f:selectItem itemLabel="676 - Rússia" itemValue="Rússia" />
+                    <f:selectItem itemLabel="677 - Salomão, Ilhas" itemValue="Salomão" />
+                    <f:selectItem itemLabel="678 - Saint Kitts" itemValue="Saint Kitts" />
+                    <f:selectItem itemLabel="685 - Saara" itemValue="Saara" />
+                    <f:selectItem itemLabel="687 - El Salvador" itemValue="El Salvador" />
+                    <f:selectItem itemLabel="690 - Samoa" itemValue="Samoa" />
+                    <f:selectItem itemLabel="691 - Samoa Americana" itemValue="Samoa Americana" />
+                    <f:selectItem itemLabel="695 - São Critovão e Neves" itemValue="São Critovão e Neves" />
+                    <f:selectItem itemLabel="697 - San Marino" itemValue="San Marino" />
+                    <f:selectItem itemLabel="700 - São Pedro e Mikoelom" itemValue="São Pedro e Mikoelom" />
+                    <f:selectItem itemLabel="705 - São Vicente e Granadinas" itemValue="São Vicente e Granadinas" />
+                    <f:selectItem itemLabel="710 - Santa Helena" itemValue="Santa Helena" />
+                    <f:selectItem itemLabel="715 - Santa Lúcia" itemValue="Santa Lúcia" />
+                    <f:selectItem itemLabel="720 - Santomé e Pricípe" itemValue="Santomé e Pricípe" />
+                    <f:selectItem itemLabel="728 - Senegal" itemValue="Senegal" />
+                    <f:selectItem itemLabel="731 - Seychelles" itemValue="Seychelles" />
+                    <f:selectItem itemLabel="735 - Serra Leoa" itemValue="Serra Leoa" />
+                    <f:selectItem itemLabel="737 - Servia" itemValue="Servia" />
+                    <f:selectItem itemLabel="741 - Cingapura" itemValue="Cingapura" />
+                    <f:selectItem itemLabel="744 - Síria" itemValue="Síria" />
+                    <f:selectItem itemLabel="748 - Somália" itemValue="Somália" />
+                    <f:selectItem itemLabel="750 - Sri lanka" itemValue="Srilanka" />
+                    <f:selectItem itemLabel="754 - Suazilândia" itemValue="Suazilândia" />
+                    <f:selectItem itemLabel="158 - Chile" itemValue="Chile" />
+                    <f:selectItem itemLabel="160 - China" itemValue="China" />
+                    <f:selectItem itemLabel="161 - Formosa" itemValue="Formosa" />
+                    <f:selectItem itemLabel="163 - Chipre" itemValue="Chipre" />
+                    <f:selectItem itemLabel="165 - Cocos-Keeling" itemValue="Cocos-Keeling" />
+                    <f:selectItem itemLabel="169 - Colômbia" itemValue="Colômbia" />
+                    <f:selectItem itemLabel="173 - Comores" itemValue="Comores" />
+                    <f:selectItem itemLabel="177 - Congos" itemValue="Congos" />
+                    <f:selectItem itemLabel="!83 - Cok" itemValue="Cok" />
+                    <f:selectItem itemLabel="187 - Coréia República Rep.pop.demo" itemValue="Coréia" />
+                    <f:selectItem itemLabel="190 - Coréia República" itemValue="Coréia República" />
+                    <f:selectItem itemLabel="193 - Costa do Marfim" itemValue="Costa do Marfim" />
+                    <f:selectItem itemLabel="195 - Croácia" itemValue="Croácia" />
+                    <f:selectItem itemLabel="196 - Costa Rica" itemValue="Costa Rica" />
+                    <f:selectItem itemLabel="198 - Coveit" itemValue="Coveit" />
+                    <f:selectItem itemLabel="199 - Cuba" itemValue="Cuba" />
+                    <f:selectItem itemLabel="229 - Benin" itemValue="Benin" />
+                    <f:selectItem itemLabel="232 - Dinamarca" itemValue="Dinamarca" />
+                    <f:selectItem itemLabel="235 - Dominica" itemValue="Dominica" />
+                    <f:selectItem itemLabel="239 - Equador" itemValue="Equador" />
+                    <f:selectItem itemLabel="240 - Egito" itemValue="Egito" />
+                    <f:selectItem itemLabel="243 - Eritreia" itemValue="Eritreia" />
+                    <f:selectItem itemLabel="244 - Emirados Árabes Unidos" itemValue="Emirados Árabes Unidos" />
+                    <f:selectItem itemLabel="245 - Espanha" itemValue="Espanha" />
+                    <f:selectItem itemLabel="246 - Eslovênia" itemValue="Eslovênia" />
+                    <f:selectItem itemLabel="247 - Eslovaca" itemValue="Eslovaca" />
+                    <f:selectItem itemLabel="249 - Estados Unidos" itemValue="Estados Unidos" />
+                    <f:selectItem itemLabel="251 - Estônia" itemValue="Estônia" />
+                    <f:selectItem itemLabel="253 - Etiópia" itemValue="Etiópia" />
+                    <f:selectItem itemLabel="255 - Falklandi" itemValue="Falklandi" />
+                    <f:selectItem itemLabel="259 - Feroe" itemValue="Feroe" />
+                    <f:selectItem itemLabel="267 - Filipinas" itemValue="Filipinas" />
+                    <f:selectItem itemLabel="271 - Finlândia" itemValue="Finlândia" />
+                    <f:selectItem itemLabel="275 - França" itemValue="França" />
+                    <f:selectItem itemLabel="281 - Gabão" itemValue="Gabão" />
+                    <f:selectItem itemLabel="285 - Gambea" itemValue="Gambea" />
+                    <f:selectItem itemLabel="289 - Gana" itemValue="Gana" />
+                    <f:selectItem itemLabel="291 - Geórgia" itemValue="Geórgia" />
+                    <f:selectItem itemLabel="450 - Madagascar" itemValue="Madagascar" />
+                    <f:selectItem itemLabel="452 - Madeira" itemValue="Madeira" />
+                    <f:selectItem itemLabel="455 - Malásia" itemValue="Malásia" />
+                    <f:selectItem itemLabel="458 - Malavi" itemValue="Malavi" />
+                    <f:selectItem itemLabel="461 - Maldivas" itemValue="Maldivas" />
+                    <f:selectItem itemLabel="464 - Mali" itemValue="Mali" />
+                    <f:selectItem itemLabel="467 - Malta" itemValue="Malta" />
+                    <f:selectItem itemLabel="472 - Marianas do Norte" itemValue="Marianas do Norte" />
+                    <f:selectItem itemLabel="474 - Marrocos" itemValue="Marrocos" />
+                    <f:selectItem itemLabel="476 - Marshall, Ilhas" itemValue="Marshall, Ilhas" />
+                    <f:selectItem itemLabel="477 - Martinica" itemValue="Martinica" />
+                    <f:selectItem itemLabel="485 - Maurício" itemValue="Maurício" />
+                    <f:selectItem itemLabel="488 - Mauritânia" itemValue="Mauritânia" />
+                    <f:selectItem itemLabel="490 - Midway" itemValue="Midway" />
+                    <f:selectItem itemLabel="493 - México" itemValue="México" />
+                    <f:selectItem itemLabel="494 - Moldavia" itemValue="Moldavia" />
+                    <f:selectItem itemLabel="495 - Mônaco" itemValue="Mônaco" />
+                    <f:selectItem itemLabel="497 - Mongólia" itemValue="Mongólia" />
+                    <f:selectItem itemLabel="498 - Montenegro" itemValue="Montenegro" />
+                    <f:selectItem itemLabel="499 - Micronésia" itemValue="Micronésia" />
+                    <f:selectItem itemLabel="501 - Montserrat" itemValue="Montserrat" />
+                    <f:selectItem itemLabel="505 - Moçambique" itemValue="Moçambique" />
+                    <f:selectItem itemLabel="507 - Namíbia" itemValue="Namíbia" />
+                    <f:selectItem itemLabel="508 - Nauru" itemValue="Nauru" />
+                    <f:selectItem itemLabel="511 - Christmas, Ilhas" itemValue="Christmas, Ilhas" />
+                    <f:selectItem itemLabel="517 - Nepau" itemValue="Nepau" />
+                    <f:selectItem itemLabel="521 - Nicarágua" itemValue="Nicaraguá" /> 
+                    <f:selectItem itemLabel="524 - Niger" itemValue="Niger" />
+                    <f:selectItem itemLabel="528 - Nigéria" itemValue="Nigéria" />
+                    <f:selectItem itemLabel="531 - Niue, Ilha" itemValue="Niue, Ilha" />  
+                    <f:selectItem itemLabel="535 - Norfolk" itemValue="Norfolk" />
+                    <f:selectItem itemLabel="538 - Noruega" itemValue="Noruega" />
+                    <f:selectItem itemLabel="542 - Nova Caledônia" itemValue="Nova Caledônia" /> 
+                    <f:selectItem itemLabel="545 - Papua Nova Ginué" itemValue="Papua Nova Giné" />
+                    <f:selectItem itemLabel="548 - Nova Zelândia" itemValue="Nova Zelândia" />
+                    <f:selectItem itemLabel="551 - Vanuatu" itemValue="Vanuatu" /> 
+                    <f:selectItem itemLabel="556 - Omã" itemValue="Omã" />
+                    <f:selectItem itemLabel="566 - Pacífico, Ilhas" itemValue="Pacífico, Ilhas" />
+                    <f:selectItem itemLabel="756 - África do Sul" itemValue="África do Sul" /> 
+                    <f:selectItem itemLabel="759 - Sudão" itemValue="Sudão" />
+                    <f:selectItem itemLabel="764 - Suécia" itemValue="Suécia" />
+                    <f:selectItem itemLabel="767 - Suíça" itemValue="Suíça" /> 
+                    <f:selectItem itemLabel="770 - Surinema" itemValue="Surinema" />
+                    <f:selectItem itemLabel="772 - Tadjikuistão" itemValue="Tadjikuistão" />
+                    <f:selectItem itemLabel="776 - Tailândia" itemValue="Tailândia" /> 
+                    <f:selectItem itemLabel="780 - Tanzania" itemValue="Tanzania" />
+                    <f:selectItem itemLabel="782 - Território Britãnico no Oceano Índico" itemValue="Território Britãnico no Oceano Índico" />
+                    <f:selectItem itemLabel="783 - Djibuti" itemValue="Djibuti" /> 
+                    <f:selectItem itemLabel="788 - Chade" itemValue="Chade" />
+                    <f:selectItem itemLabel="791 - Tcheca República" itemValue="Tcheca República" />
+                    <f:selectItem itemLabel="795 - Timorlest" itemValue="Timorlest" /> 
+                    <f:selectItem itemLabel="800 - Togo" itemValue="Togo" />
+                    <f:selectItem itemLabel="805 - Toquelau, Ilhas" itemValue="Toquelau" />
+                    <f:selectItem itemLabel="810 - Tonga" itemValue="Tonga" /> 
+                    <f:selectItem itemLabel="815 - Trindade e Tobago" itemValue="Trindade e Tobago" />
+                    <f:selectItem itemLabel="820 - Tunísia" itemValue="Tunísia" />
+                    <f:selectItem itemLabel="823 - Turcas e Caicos, Ilhas" itemValue="Turcas e Caicos, Ilhas" /> 
+                    <f:selectItem itemLabel="824 - Turcomenistão" itemValue="Turcomenistão" />
+                    <f:selectItem itemLabel="827 - Túrquia" itemValue="Túrquia" />
+                    <f:selectItem itemLabel="828 - Tuvalu" itemValue="Tuvalu" /> 
+                    <f:selectItem itemLabel="831 - Ucrânia" itemValue="Ucrânia" />
+                    <f:selectItem itemLabel="833 - Uganda" itemValue="Uganda" />
+                    <f:selectItem itemLabel="845 - Uruguai" itemValue="Uruguai" />
+                    <f:selectItem itemLabel="847 - Usbequistão" itemValue="Usbequistão" />
+                    <f:selectItem itemLabel="848 - Vaticano" itemValue="Vaticano" />
+                    <f:selectItem itemLabel="850 - Venezuela" itemValue="Venezuela" />
+                    <f:selectItem itemLabel="858 - Viatnã" itemValue="Viatnã" />
+                    <f:selectItem itemLabel="863 - Virgens, Ilhas(Britânicas)" itemValue="Virgens, Ilhas" />
+                    <f:selectItem itemLabel="866 - Virgens, Ilhas(EUA)" itemValue="Ilhas(EUA)" />
+                    <f:selectItem itemLabel="870 - Fiji" itemValue="Fiji" />
+                    <f:selectItem itemLabel="873 - Wake,Ilha" itemValue="Wake,Ilha" />
+                    <f:selectItem itemLabel="875 - Wallis e Futuna, Ilhas" itemValue="Wallis e Futuna, Ilhas" />
+                    <f:selectItem itemLabel="888 - Kongo" itemValue="Kongo" />
+                    <f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
+                    <f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
+                     <f:selectItem itemLabel="Outros" itemValue="Outros" />
+				</p:selectOneMenu>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
@@ -410,8 +662,8 @@
 				<center>
 
                     <p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
-						<f:param name="productId" value="turubom?" />
+						outcome="acoesBotao"  value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="" />
 					</p:button>
 					
 
@@ -449,6 +701,8 @@
 						icon="ui-icon-seek-end" />
 
 					<br />
+					
+					
 
 				</center>
 			</p:fieldset>
