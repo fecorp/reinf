@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body style="background-color:#EFF2F6;border:0px;" >
+
+	<!-- Menu de navegação superior -->
+	<h:form>
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+						
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
+						
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+					<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
+					</p:submenu>
+				<p:menuitem value="File" url="#" />
+			</p:submenu>
+			</p:submenu>
+
+			<p:submenu label="Reinf" icon="ui-icon-gear">
+				<p:submenu label="Ajax" icon="ui-icon-refresh">
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						icon="ui-icon-disk" update="messages" />
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						icon="ui-icon-arrowrefresh-1-w" update="messages" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						icon="ui-icon-close" update="messages" ajax="false" />
+				</p:submenu>
+				</p:submenu>
+
+				<p:menuitem value="Lotes" url="http://www.primefaces.org"
+					icon="ui-icon-close" />
+
+				<f:facet name="options">
+					<p:commandButton type="button" value="Logout"
+						icon="ui-icon-extlink" />
+				</f:facet>
+		</p:menubar>
+	</h:form>
+	
+	<!-- Legenda superior -->
+	<div>
+		<center>
+			<h1
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h1>
+		</center>
+	</div>
+	<br/>
+	
+	<!-- Menu Lateral -->
+	<p:layout>
+		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
+			<h:form>
+				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
+					<p:submenu label="Cadastros" style="font-size:12px">
+						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem value="Filial" url="telaFilial.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Cliente Fornecedor"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Software" url="TelaSoftware.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+						<p:menuitem value="Serviços" url="Servicos.xhtml"
+							icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Complemento Entrada"
+							url="ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
+							url="ComplementoMestreSaida.xhtml" ajax="false"
+							icon="ui-icon-close" />	
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf" style="font-size:12px">
+
+						<p:menuitem
+							value="R-1070 Tabela de Processos Administrativos - Judiciais"
+							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+
+						<p:menuitem value="" url="http://www.primefaces.org" />
+						<p:menuitem
+							value="R-2030 Recursos Recebidos Por Associação Desportiva"
+							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+						<p:menuitem
+							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem value="R-2050 Comercialização Agroindústria"
+							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem
+							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+							url="cprb.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+							url="dirf.xhtml" icon="ui-icon-wrench" />
+
+
+						<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
+							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+
+					</p:submenu>
+					<p:submenu label="Interface " style="font-size:12px">
+						<p:menuitem value="Importação de Arquivos"
+						url="Interface.xhtml" icon="ui-icon-home" />
+
+					</p:submenu>
+
+					<p:submenu label="Lotes" style="font-size:12px">
+						<p:menuitem value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-home" />
+					</p:submenu>
+
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+		<!-- Campos do Sistema -->
+		<h:form>
+		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
+			fullPage="true" position="center">
+
+		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
+			legend="Pesquisa ">
+			<br />
+			<br />
+			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" />
+					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" />
+					<f:selectItem itemLabel="Categoria PF/PJ" itemValue="Categoria PF/PJ" />
+					<f:selectItem itemLabel="Código PF/PJ" itemValue="Código PF/PJ" />
+					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" />
+					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" />
+					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" />
+					<f:selectItem itemLabel="Data de Entrada" itemValue="Data de Entrada" />
+					<f:selectItem itemLabel="Data da Execução/Conclusão" itemValue="Data da Execução/Conclusão" />
+					<f:selectItem itemLabel="Quantidade de itens" itemValue="Quantidade de itens" />
+					<f:selectItem itemLabel="Tipo de Documento" itemValue="Tipo de Documento" />
+					<f:selectItem itemLabel="Código do Serviço" itemValue="Código do Serviço" />
+					<f:selectItem itemLabel="Descrição do Serviço" itemValue="Descrição do Serviço" />
+					<f:selectItem itemLabel="VL do Serviço" itemValue="VL do Serviço" />
+					<f:selectItem itemLabel="VL Material aplicado" itemValue="VL Material aplicado" />
+					<f:selectItem itemLabel="VL Desconto" itemValue="VL Desconto" />
+					<f:selectItem itemLabel="VL Documento" itemValue="VL Documento" />
+					<f:selectItem itemLabel="VL Subempreitada" itemValue="VL Subempreitada" />
+					<f:selectItem itemLabel="ISS - VL Totais Retidos" itemValue="ISS - VL Totais Retidos" />
+					<f:selectItem itemLabel="ISS - Cód.Fiscal de Retenção" itemValue="ISS - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="INSS - VL Totais Retidos" itemValue="INSS - VL Totais Retidos" />
+					<f:selectItem itemLabel="INSS - Cód.Fiscal de Retenção" itemValue="INSS - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="IRRF - VL Totais Retidos" itemValue="IRRF - VL Totais Retidos" />
+					<f:selectItem itemLabel="IRRF - Cód.Fiscal de Retenção" itemValue="IRRF - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="PCC - VL Totais Retidos" itemValue="PCC - VL Totais Retidos" />
+					<f:selectItem itemLabel="PCC - Cód.Fiscal de Retenção" itemValue="PCC - Cód.Fiscal de Retenção" />
+					<f:selectItem itemLabel="Número do Contrato Serviço" itemValue="Número do Contrato Serviço" />
+					<f:selectItem itemLabel="Tipo Localidade" itemValue="Tipo Localidade" />
+					<f:selectItem itemLabel="Localidade" itemValue="Localidade" />
+					<f:selectItem itemLabel="Tipo de Doc. p/ Município" itemValue="Tipo de Doc. p/ Município" />
+					<f:selectItem itemLabel="Ind Pagamento" itemValue="Ind Pagamento" />
+					<f:selectItem itemLabel="Tipo Serviço" itemValue="Tipo Serviço" />
+					<f:selectItem itemLabel="Conta Contábil" itemValue="Conta Contábil" />
+					<f:selectItem itemLabel="Centro de Custos" itemValue="Centro de Custos" />
+					<f:selectItem itemLabel="NFS-e " itemValue="NFS-e " />
+					<f:selectItem itemLabel="Open Felx 01" itemValue="Open Felx 01" />
+					<f:selectItem itemLabel="Open Felx 02" itemValue="Open Felx 02" />
+				</p:selectOneMenu>	
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size:10px" value="Criterio: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:11px" value="valor" itemLabel="valor">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="Igual a" itemValue="Igual a" />
+					<f:selectItem itemLabel="Maior que" itemValue="Maior que" />
+					<f:selectItem itemLabel="Menor que" itemValue="Menor que" />
+					<f:selectItem itemLabel="Contem" itemValue="Contem" />
+					<f:selectItem itemLabel="Começa com" itemValue="Começa com" />
+				</p:selectOneMenu>	
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: #{DadosTelaPesquisa.empresa}" />
+			<p:inputText style="width: 20%" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<br />
+			<br />
+
+		</p:fieldset>
+			
+			<br />
+			<br />
+				
+		<!-- Espaço para pular -->
+		<center>
+			<p:fieldset style="background-color: #F2F2F2">
+					
+		<!-- Botão de Pesquisa -->		
+			
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Buscar" icon="ui-icon-search">
+						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
+				</p:button>
+					&nbsp;&nbsp;&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</p:fieldset>
+		</center>
+			
+		<br />
+		<br />
+		
+		<!-- Menu de Pesquisa -->
+		<h:form>
+			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
+				<p:dataTable value="#{testaPesquisa.testalist}" rows= "5" paginator="true">
+	        		<br />
+	        		<br />
+	       
+	        	<p:column headerText="Cod. Empresa"> 
+                <f:selectItems value="#{pesquisa.empresa}" />  
+  
+	        	</p:column>
+	        	<p:column headerText="Cod. Filial">
+	            	<h:outputText value="#{testaPesquisa.filial}" />
+	        	</p:column>
+	        	<p:column headerText="Série da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.serie}" />
+	        	</p:column>
+	        	<p:column headerText="Numero da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.numero}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Emissão">
+	            	<h:outputText value="#{testaPesquisa.emissao}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Entrada">
+	            	<h:outputText value="#{testaPesquisa.entrada}" />
+	        	</p:column>
+	        	<p:column headerText="Tipo de Documento">
+	            	<h:outputText value="#{testaPesquisa.tipo}" />
+	        	</p:column>
+	       		<p:column headerText="Descrição do Serviço">
+	           		<h:outputText value="#{testaPesquisa.descrição}" />
+	       		</p:column>
+	        	<p:column headerText="Valor do Serviço">
+	            	<h:outputText value="#{testaPesquisa.valor}" />
+	        	</p:column>
+	        	
+	        	<p:column style="width:25px;text-align: center">
+	             	<p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
+	                	<f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
+	            	</p:commandButton>
+	        	</p:column>
+	    		</p:dataTable>
+	    	</div>
+    
+	    	
+	      
+    	</h:form>	
+    	
+    	<!--  <h:form>
+    	<p:commandButton id="movieBtn" type="button" value="Buscar" icon="ui-icon-search" />
+    	<p:overlayPanel id="moviePanel" for="movieBtn" hideEffect="fade" dynamic="true" style="width:1000px">
+	        <p:dataTable var="movies" value="#{movieView.movieList}" rows="5" paginator="true">
+	            <p:column headerText="Movie">
+	                <h:outputText value="#{movies.movie}" />
+	            </p:column>
+	 
+	            <p:column headerText="Directed By">
+	                <h:outputText value="#{movies.directedBy}" />
+	            </p:column>
+	 
+	            <p:column headerText="Genres">
+	                <h:outputText value="#{movies.genres}" />
+	            </p:column>
+	 
+	            <p:column headerText="Run Time(min.)">
+	                <h:outputText value="#{movies.runTime}" />
+	            </p:column>
+	        </p:dataTable>
+    	</p:overlayPanel>
+    	
+    	</h:form>-->	
+      </p:layoutUnit> 
+   </h:form>
+</p:layout>
+				<br />
+				<br />			
+</h:body>
+</html>
