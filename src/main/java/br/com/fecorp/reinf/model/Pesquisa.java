@@ -1,18 +1,15 @@
 package br.com.fecorp.reinf.model;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedBean;
- 
- 
-@ManagedBean
-	
-	
-	 
-	
-	public class Pesquisa {
-	
+@ManagedBean(name = "Pesquisa")
+@ViewScoped
+
+@Entity
+public class Pesquisa implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private String Empresa;
 	private String Filial;
 	private String Serie;
@@ -23,106 +20,101 @@ import javax.faces.bean.ManagedBean;
 	private String Descrição;
 	private float valor;
 	private List<Pesquisa> testaList;
-	     
-	    public Pesquisa(String Empresa, String Filial, String Serie, String Numero, String Emissao, String Entrada, String Tipo, String Descrição, int valor ){
-			// TODO Auto-generated constructor stub
-		}
 
-		public List<Pesquisa> getTestalist() {
-	        return testaList;
-	    }
-	     
-	    @PostConstruct
-	    public void init() {
-	        testaList = new ArrayList<Pesquisa>();
-	         
-	       
-			
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			testaList.add(new Pesquisa("a ","b", "c", "d", "e", "f", "7", "8", 1));
-			
-	    }
-	    
-	    
-	    
-	    
+	public Pesquisa(String Empresa, String Filial, String Serie, String Numero, String Emissao, String Entrada,
+			String Tipo, String Descrição, int valor) {
+		// TODO Auto-generated constructor stub
+	}
 
-		public String getEmpresa() {
-			return Empresa;
-		}
+	public List<Pesquisa> getTestalist() {
+		return testaList;
+	}
 
-		public void setEmpresa(String empresa) {
-			Empresa = empresa;
-		}
+	@PostConstruct
+	public void init() {
+		testaList = new ArrayList<Pesquisa>();
 
-		public String getFilial() {
-			return Filial;
-		}
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
+		testaList.add(new Pesquisa("a ", "b", "c", "d", "e", "f", "7", "8", 1));
 
-		public void setFilial(String filial) {
-			Filial = filial;
-		}
+	}
 
-		public String getSerie() {
-			return Serie;
-		}
+	public String getEmpresa() {
+		return Empresa;
+	}
 
-		public void setSerie(String serie) {
-			Serie = serie;
-		}
+	public void setEmpresa(String empresa) {
+		Empresa = empresa;
+	}
 
-		public String getNumero() {
-			return Numero;
-		}
+	public String getFilial() {
+		return Filial;
+	}
 
-		public void setNumero(String numero) {
-			Numero = numero;
-		}
+	public void setFilial(String filial) {
+		Filial = filial;
+	}
 
-		public String getEmissao() {
-			return Emissao;
-		}
+	public String getSerie() {
+		return Serie;
+	}
 
-		public void setEmissao(String emissao) {
-			Emissao = emissao;
-		}
+	public void setSerie(String serie) {
+		Serie = serie;
+	}
 
-		public String getEntrada() {
-			return Entrada;
-		}
+	public String getNumero() {
+		return Numero;
+	}
 
-		public void setEntrada(String entrada) {
-			Entrada = entrada;
-		}
+	public void setNumero(String numero) {
+		Numero = numero;
+	}
 
-		public String getTipo() {
-			return Tipo;
-		}
+	public String getEmissao() {
+		return Emissao;
+	}
 
-		public void setTipo(String tipo) {
-			Tipo = tipo;
-		}
+	public void setEmissao(String emissao) {
+		Emissao = emissao;
+	}
 
-		public String getDescrição() {
-			return Descrição;
-		}
+	public String getEntrada() {
+		return Entrada;
+	}
 
-		public void setDescrição(String descrição) {
-			Descrição = descrição;
-		}
+	public void setEntrada(String entrada) {
+		Entrada = entrada;
+	}
 
-		public float getValor() {
-			return valor;
-		}
+	public String getTipo() {
+		return Tipo;
+	}
 
-		public void setValor(float valor) {
-			this.valor = valor;
-		}
+	public void setTipo(String tipo) {
+		Tipo = tipo;
+	}
+
+	public String getDescrição() {
+		return Descrição;
+	}
+
+	public void setDescrição(String descrição) {
+		Descrição = descrição;
+	}
+
+	public float getValor() {
+		return valor;
+	}
+
+	public void setValor(float valor) {
+		this.valor = valor;
+	}
 }
