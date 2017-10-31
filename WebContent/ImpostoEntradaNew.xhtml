@@ -26,7 +26,7 @@ p.ident
 						</p:submenu>
 					<p:submenu label="Geração" icon="ui-icon-pencil">
 						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
-					icon="ui-icon-folder-open" />
+					icon="ui-icon-newwin"/>
 					</p:submenu>
 
 					<p:submenu label="Relatórios" icon="ui-icon-help">
@@ -94,23 +94,22 @@ p.ident
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
 						<p:menuitem value="Serviços Entrada"
 							url="MestreEntradaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
+							icon="ui-icon-gear" />
 						<p:menuitem value="Impostos Entrada"
 							url="ImpostoEntradaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída"
-							url="MestreSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída"
-							url="ImpostoSaidaNew.xhtml" ajax="false"
-							icon="ui-icon-close" />
-							
+							icon="ui-icon-script" />
 						<p:menuitem value="Complemento Entrada"
 							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
+							icon="ui-icon-lightbulb" />	
+						<p:menuitem value="Serviços Saída"
+							url="MestreSaidaNew.xhtml" ajax="false"
+							icon="ui-icon-gear" />
+						<p:menuitem value="Impostos Saída"
+							url="ImpostoSaidaNew.xhtml" ajax="false"
+							icon="ui-icon-script" />
 						<p:menuitem value="Complemento Saída"
 							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />	
+							icon="ui-icon-lightbulb" />	
 
 
 					</p:submenu>
@@ -219,9 +218,9 @@ p.ident
             };
         </script>
 				&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{ImpostoEntrada.categoriaPfPj}" />
+				<br></br>
+				
+				
 <br/>
 <br/>
 				<h:outputText style="font-size: 10px" value=" Cod. PF/PJ: * " />
@@ -231,6 +230,11 @@ p.ident
 				<h:outputText style="font-size: 10px"
 					value="    Sequência de itens: " />
 				<p:inputText style="width: 4%" value="#{ImpostoEntrada.sequenciaItens}" />
+				&nbsp;
+				
+				<h:outputText style="font-size: 10px"
+					value="               Categoria PF/PJ: * " />
+				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{ImpostoEntrada.categoriaPfPj}" />
 
 
 			</p:fieldset>
@@ -345,7 +349,7 @@ p.ident
 					<p class="ident" />
 					<h:outputText style="font-size: 10px" value=" CSLL: " />
 
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
 					<p:inputText style="font-size: 9px" value=" " />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
