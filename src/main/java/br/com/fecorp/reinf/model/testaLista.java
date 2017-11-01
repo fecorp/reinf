@@ -3,7 +3,22 @@ package br.com.fecorp.reinf.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testaLista {
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@ManagedBean(name = "TesteLista")
+@ViewScoped
+
+@Entity
+public class testeLista implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+		
     private int idCom;
     private int idTemaCom;
     private int idCodPartCom;
