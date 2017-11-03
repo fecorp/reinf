@@ -11,7 +11,7 @@
 
 
 </h:head>
-<h:body style="background-color:#D3D3D3;border:0px;">
+<h:body style="background-color:#D3D3D3; margin: 0%; padding: 0%; border: 0%;">
 
 
 	<h:form>
@@ -56,8 +56,7 @@
 
 	<div>
 		<center>
-			<h3
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Filial</h3>
+			 <img  src="Imagens/IMAGEM.jpg" height="105px" width="1350px"/>
 		</center>
 	</div>
 
@@ -87,20 +86,21 @@
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Complemento Entrada"
+						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-gear" />
+						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-script" />
+						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
 							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Complemento Saída"
+							icon="ui-icon-lightbulb" />
+						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-gear" />
+						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-script" />
+						
+						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
 							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />	
+							icon="ui-icon-lightbulb" />
 
 					</p:submenu>
 					<p:separator />

@@ -14,7 +14,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 </h:head>
 
-<h:body style="background-color:#D3D3D3;border:0px;" >
+<h:body style="background-color:#D3D3D3;margin: 0%; padding: 0%; border: 0%" >
 
 	<!-- Menu de navegação superior -->
 	<h:form>
@@ -43,18 +43,10 @@ xmlns="http://www.w3.org/1999/xhtml"
 			</p:submenu>
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
-				</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
 
 				<p:menuitem value="Lotes" url="http://www.primefaces.org"
 					icon="ui-icon-close" />
@@ -67,12 +59,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</h:form>
 	
 	<!-- Legenda superior -->
-	<div>
-		<center>
-			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h1>
-		</center>
-	</div>
+	
+	<img  src="Imagens/IMAGEM.jpg" height="105px" width="1350px"/>
 	<br/>
 	
 	<!-- Menu Lateral -->
@@ -108,13 +96,11 @@ xmlns="http://www.w3.org/1999/xhtml"
 						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
 							ajax="false" icon="ui-icon-gear" />
 						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-close" />
-						<p:menuitem value="Complemento Saída"
+							ajax="false" icon="ui-icon-script" />
+						
+						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
 							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-close" />	
+							icon="ui-icon-lightbulb" />
 
 					</p:submenu>
 					<p:separator />
@@ -168,9 +154,15 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
 			fullPage="true" position="center">
 		
+		
+		
 		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
 			legend="Pesquisa ">
-			<br />
+			
+				
+		
+		<br></br>
+			
 			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
 				<p:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
 					<f:selectItem itemLabel="--" itemValue="--" />
@@ -231,8 +223,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 			<br />
 			<br />
 
-		</p:fieldset>
-			
+		
+			</p:fieldset>
 			<br />
 			<br />
 				
