@@ -1,39 +1,39 @@
 package br.com.fecorp.reinf.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ViewScoped;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@ManagedBean(name = "TesteLista")
 @ViewScoped
 
 @Entity
-public class testeLista implements Serializable {
+public class TestaLista implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-		
-    private int idCom;
-    private int idTemaCom;
-    private int idCodPartCom;
-    private String textoCom;
-    private int statusCom;
-    private List<testaLista> lista = new ArrayList<testaLista>();
-    
-    public List<testaLista> listar() {
-        return this.lista;
-    }
-    
-    public String insereComentario() {
-        lista.add(this);
-        return "sucesso";
-    }
+
+	private int idCom;
+	private int idTemaCom;
+	private int idCodPartCom;
+	private String textoCom;
+	private int statusCom;
+	private List<TestaLista> lista = new ArrayList<TestaLista>();
+
+	public List<TestaLista> listar() {
+		return this.lista;
+	}
+
+	public String insereComentario() {
+		lista.add(this);
+		return "sucesso";
+	}
 
 	public int getIdCom() {
 		return idCom;
@@ -74,5 +74,5 @@ public class testeLista implements Serializable {
 	public void setStatusCom(int statusCom) {
 		this.statusCom = statusCom;
 	}
-    
+
 }
