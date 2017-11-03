@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Table(name = "aluno")
@@ -14,8 +15,9 @@ public class Aluno implements Serializable {
 	private static final long serialVersionUID = -3889965461279622993L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO )
+	//@SequenceGenerator(name="id", sequenceName="id", allocationSize=1)
+	private long id;
 	private String name;
 	private String curso;
 	private String periodo;

@@ -41,6 +41,13 @@
 				<p:panel id="panel" header="Adicionar aluno">
 
 					<h:panelGrid columns="3" cellpadding="5">
+					
+					<p:outputLabel value="ID" />
+						<p:inputText id="id" value="#{alunoMBean.aluno.id}"
+							label="id">
+						</p:inputText>
+						<br />
+					
 						<p:outputLabel value="Name" />
 						<p:inputText id="name" value="#{alunoMBean.aluno.name}"
 							label="name">

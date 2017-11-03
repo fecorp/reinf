@@ -50,16 +50,9 @@
 		</p:menubar>
 	</h:form>
 
-	<div>
-		<center>
-			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Impostos
-				de Saída</h1>
-		</center>
-	</div>
 
 
-	<br />
+	<img src="Imagens/IMAGEM.jpg" />
 
 
 	<p:layout>
@@ -85,21 +78,21 @@
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+							
+						<p:menuitem value="Complemento Entrada"
 							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#D3D3D3" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
 							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
+							icon="ui-icon-close" />	
 
 					</p:submenu>
 					<p:separator />
@@ -152,7 +145,19 @@
 
 		<p:layoutUnit style="background-color:#F2f2f2; height:200px"
 			position="center">
-
+			
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+				
+				<div>
+		<center>
+			<h3
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Imposto Saída</h3>
+		</center>
+	</div>
+				
+				
+		</p:fieldset>
+        <br></br>
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
@@ -196,7 +201,7 @@
 
 			</p:fieldset>
 			<br></br>
-			<br></br>
+			
 
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
 				legend="Valores e Alíquotas">
@@ -365,11 +370,11 @@
 				legend="Open Flex">
 				<center>
 					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex01}" />
+					<p:inputText style="width: 20%" value="#{ImpostoSaida.openFlex01}" />
 					&nbsp;
 
 					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-					<p:inputText style="width: 15%" value="#{ImpostoSaida.openFlex02}" />
+					<p:inputText style="width: 20%" value="#{ImpostoSaida.openFlex02}" />
 				</center>
 			</p:fieldset>
 			<br />

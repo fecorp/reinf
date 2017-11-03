@@ -13,8 +13,7 @@ public class HibernateUtil {
 	public static EntityManagerFactory geteEntityManagerFactory() {
 		if (emf == null) {
 			try {
-				emf = Persistence
-						.createEntityManagerFactory("PersistenciaPU");
+				emf = Persistence.createEntityManagerFactory("PersistenciaPU");
 			} catch (Exception ex) {
 				System.err.println("Initial SessionFactory creation failed."
 						+ ex);

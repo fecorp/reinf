@@ -60,16 +60,10 @@ p.ident {
 		</p:menubar>
 	</h:form>
 
-	<div>
-		<center>
-			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Processos
-				Administrativos Judiciais</h1>
-		</center>
-	</div>
+	
 
 
-	<br />
+	<img src="Imagens/IMAGEM.jpg" />
 	<p:layout>
 	    <h:form>
 		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
@@ -93,21 +87,21 @@ p.ident {
 					</p:submenu>
 
 					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
+						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-close" />
+							
+						<p:menuitem value="Complemento Entrada"
 							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
+							icon="ui-icon-close" />
+						<p:menuitem value="Complemento Saída"
 							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
+							icon="ui-icon-close" />	
 
 					</p:submenu>
 					<p:separator />
@@ -159,6 +153,20 @@ p.ident {
 
 		<p:layoutUnit style="background-color:#F2f2f2; height:400px"
 			fullPage="true" position="center">
+			
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+				
+				<div>
+		<center>
+			<h3
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Processos Administrativos Judiciais</h3>
+		</center>
+	</div>
+				
+		</p:fieldset>
+		
+		<br></br>
+			
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
