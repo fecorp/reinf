@@ -67,13 +67,9 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</h:form>
 	
 	<!-- Legenda superior -->
-	<div>
-		<center>
-			<h1
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h1>
-		</center>
-	</div>
-	<br/>
+	
+	
+	<img src="Imagens/IMAGEM.jpg" />
 	
 	<!-- Menu Lateral -->
 	<p:layout>
@@ -166,9 +162,20 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
 			fullPage="true" position="center">
 		
-		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
-			legend="Pesquisa ">
-			<br />
+		
+		 <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+				
+				<div>
+		<center>
+			<h3
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Pesquisa</h3>
+		</center>
+	</div>
+				
+		</p:fieldset>
+		
+		<br></br>
+		
 			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
 				<p:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
 					<f:selectItem itemLabel="--" itemValue="--" />
@@ -229,7 +236,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 			<br />
 			<br />
 
-		</p:fieldset>
+		
 			
 			<br />
 			<br />
@@ -259,8 +266,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<h:form>
 			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
 				<p:dataTable value="#{testaPesquisa.testalist}" rows= "5" paginator="true">
-	        		<br />
-	        		<br />
+	        		<br></br>
+	        		<br></br>
 	       
 	        	<p:column headerText="Cod. Empresa"> 
                 <f:selectItems value="#{pesquisa.empresa}" />  
