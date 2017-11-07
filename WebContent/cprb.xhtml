@@ -192,11 +192,17 @@
 					mask="99/99/9999" />
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="   VL NF: " />
-				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorBrutoNotaFiscal}" />
+				<p:inputText style="width: 6%; background-color: #FFFFFFF" value="#{CPRB.valorBrutoNotaFiscal}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Tipo de Ajustes: " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{CPRB.tipoReajuste}" />
+				
+				<p:selectOneMenu style="font-size:9px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="01 - Ajuste de Redução" itemValue="01 - Ajuste de Redução" />
+					<f:selectItem itemLabel="02 - Ajuste de Acréscimo" itemValue="02 - Ajuste de Acréscimo" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Cod. Ajuste : " />
@@ -242,7 +248,13 @@
 
 
 				<h:outputText style="font-size: 10px" value="    Cod. Processo : " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF" value="#{CPRB.codCorrespondenteProcesso}" />
+				
+				<p:selectOneMenu style="font-size:9px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="Administrativo" itemValue="Administrativo" />
+					<f:selectItem itemLabel="Judicial" itemValue="Judicial" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Num Processo : " />

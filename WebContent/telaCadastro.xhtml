@@ -266,7 +266,7 @@
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="  Município: " />
-				<p:inputText style="width: 15%" value="#{Empresa.municipio}" />
+				<p:inputText style="width: 12%" value="#{Empresa.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
@@ -534,12 +534,13 @@
                     <f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
                      <f:selectItem itemLabel="Outros" itemValue="Outros" />
 				</p:selectOneMenu>
+				<br></br>
+				<br></br>
 
-                &nbsp;
+                
+				&nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
 				<p:inputMask style="width: 2%" value="#{Empresa.dddTelefone}" mask="(999)" />
-				<br />
-				<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
@@ -596,11 +597,36 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 2%" value="#{Empresa.classFical}" />
+				
+				<p:selectOneMenu style="font-size:7px" value="cod03"
+					itemLabel="cod03">
+					<f:selectItem itemLabel="01 - Empresa Enquadrada Substituída" itemValue="01 - Empresa Enquadrada Substituída" />
+					<f:selectItem itemLabel="02 - Empresa Enquadrada Não Substituída" itemValue="02 - Empresa Enquadrada Não Substituída" />
+					<f:selectItem itemLabel="03 - Empresa Enquadrada Substituída e Não Substituída" itemValue="03 - Empresa Enquadrada Substituída e Não Substituída" />
+					<f:selectItem itemLabel="04 - Micro Empreendedor Individual" itemValue="04 - Micro Empreendedor Individual" />
+					<f:selectItem itemLabel="06 - Agroindústria" itemValue="06 - Agroindústria" />
+					<f:selectItem itemLabel="07 - Produtor Rural / Pessoa Juridica" itemValue="07 - Produtor Rural / Pessoa Juridica" />
+					<f:selectItem itemLabel="08 - Consórcio de Produtores Rurais" itemValue="08 - Consórcio de Produtores Rurais" />
+					<f:selectItem itemLabel="09 - Gestor de Mão de Obra" itemValue="09 - Gestor de Mão de Obra" />
+					<f:selectItem itemLabel="10 - Entidade Sindical" itemValue="10 - Entidade Sindical" />
+					<f:selectItem itemLabel="11 - Associação Desportiva" itemValue="11 - Associação Desportiva" />
+					<f:selectItem itemLabel="13 - Banco" itemValue="13 - Banco" />
+					<f:selectItem itemLabel="14 - Sindicato em Geral" itemValue="14 - Sindicato em Geral" />
+					<f:selectItem itemLabel="21 - Pessoa Física, Exceto Segurado Especial" itemValue="21 - Pessoa Física, Exceto Segurado Especial" />
+					<f:selectItem itemLabel="22 - Segurado Especial" itemValue="22 - Segurado Especial" />
+					<f:selectItem itemLabel="60 - Missão Diplomática" itemValue="60 - Missão Diplomática" />
+					<f:selectItem itemLabel="70 - Empresa que Trata o Decreto" itemValue="70 - Empresa que Trata o Decreto" />
+					<f:selectItem itemLabel="80 - Entidade Imune ou Isenta" itemValue="80 - Entidade Imune ou Isenta" />
+					<f:selectItem itemLabel="85 - Ente Federativo" itemValue="85 - Ente Federativo" />
+					<f:selectItem itemLabel="99 - Pessoas Juridicas em Geral" itemValue="99 - Pessoas Juridicas em Geral" />
+
+				</p:selectOneMenu>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
 				<p:inputText style="width: 8%" value="#{Empresa.nit}" />
+				<br></br>
+				<br></br>
 
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
@@ -623,7 +649,15 @@
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 8%" value="#{Empresa.numeroCNO}" />
+				
+				<p:selectOneMenu style="font-size:7px" value="cod02"
+					itemLabel="cod02">
+					<f:selectItem itemLabel="01 - Situação Normal" itemValue="01 - Situação Normal" />
+					<f:selectItem itemLabel="02 - Extinção" itemValue="02 - Extinção" />
+					<f:selectItem itemLabel="03 - Fusão" itemValue="03 - Fusão" />
+					<f:selectItem itemLabel="04 - Cisão" itemValue="04 - Cisão" />
+					<f:selectItem itemLabel="05 - Incorporação" itemValue="05 - Incorporação" />
+				</p:selectOneMenu>
 
                 &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />
