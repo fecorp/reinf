@@ -197,18 +197,20 @@
 
 				<h:outputText style="font-size: 10px" value="   Tipo de Ajustes: " />
 				
-				<p:selectOneMenu style="font-size:9px" value="retificacao"
+				<h:selectOneMenu style="font-size:9px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="01 - Ajuste de Redução" itemValue="01 - Ajuste de Redução" />
 					<f:selectItem itemLabel="02 - Ajuste de Acréscimo" itemValue="02 - Ajuste de Acréscimo" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
+				<br></br>
+				<br></br>
 				
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Cod. Ajuste : " />
 				<p:inputText style="width: 3%; background-color: #FFFFFFF" value="#{CPRB.codAjuste}" />
-				<br/>
-				<br/>
+				
+			
 				<h:outputText style="font-size: 10px" value="   VL Ajuste: " />
 				<p:inputText style="width: 8%; background-color: #FFFFFFF" value="#{CPRB.valorAjuste}" />
 				&nbsp;
@@ -217,12 +219,12 @@
 				
 				&nbsp;
 				<h:outputText style="font-size:10px" value="Retificação: " />
-				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
+				<h:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
 					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
 					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
 					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
 					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 
 			</p:fieldset>
 
@@ -249,11 +251,11 @@
 
 				<h:outputText style="font-size: 10px" value="    Cod. Processo : " />
 				
-				<p:selectOneMenu style="font-size:9px" value="retificacao"
+				<h:selectOneMenu style="font-size:9px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="Administrativo" itemValue="Administrativo" />
 					<f:selectItem itemLabel="Judicial" itemValue="Judicial" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 				&nbsp;
 

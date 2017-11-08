@@ -268,11 +268,11 @@
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Competição:   " />
 				
-				<p:selectOneMenu style="font-size:7px" value="retificacao"
+				<h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="01 - Oficial" itemValue="01 - Oficial" />
 					<f:selectItem itemLabel="02 - Não Oficial" itemValue="02 - Não Oficial" />				
-					</p:selectOneMenu>
+					</h:selectOneMenu>
 				
 				
 				&nbsp;
@@ -280,13 +280,13 @@
 				<h:outputText style="font-size: 10px"
 					value="      Categoria do Evento:   " />
 				
-				<p:selectOneMenu style="font-size:7px" value="retificacao"
+				<h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="01 - Internacional" itemValue="01 - Internacional" />
 					<f:selectItem itemLabel="02 - Interestadual" itemValue="02 - Interestadual" />
 					<f:selectItem itemLabel="03 - Estadual" itemValue="03 - Estadual" />
 					<f:selectItem itemLabel="04 - Local" itemValue="04 - Local" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 				&nbsp;
 			
@@ -301,6 +301,8 @@
 				<p:inputText style="width: 5%; background-color: #FFFFFFF"
 					value="#{ReceitaEspetaculoDesp.qtdEspecPagantesEvento}" />
 				&nbsp;
+				<br></br>
+				<br></br>
 				
 				<h:outputText style="font-size: 10px"
 					value="      Quantidade de Espectadores Não Pagantes:   " />
@@ -312,17 +314,16 @@
 					value="      Tipo de Ingresso:   " />
 				
 				
-				<p:selectOneMenu style="font-size:7px" value="retificacao"
+				<h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="01 - Arquibancada" itemValue="01 - Arquibancada" />
 					<f:selectItem itemLabel="02 - Geral" itemValue="02 - Geral" />
 					<f:selectItem itemLabel="03 - Cadeira" itemValue="03 - Cadeira" />
 					<f:selectItem itemLabel="04 - Camarote" itemValue="04 - Camarote" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 				&nbsp;
-				<br></br>
-				<br></br>
+				
 
 				<h:outputText style="font-size: 10px"
 					value="      Número de Ingressos Colocados à Venda:   " />
@@ -335,6 +336,8 @@
 				<p:inputText style="width: 5%; background-color: #FFFFFFF"
 					value="#{ReceitaEspetaculoDesp.numIngressosVendidos}" />
 				&nbsp;
+				<br></br>
+				<br></br>
 				
 				<h:outputText style="font-size: 10px"
 					value="      Número de Ingressos Devolvidos:   " />
@@ -377,7 +380,7 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL da Contribuição Prev.:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{ReceitaEspetaculoDesp.valorContribPrev}" />
 				&nbsp;
 				<br></br>

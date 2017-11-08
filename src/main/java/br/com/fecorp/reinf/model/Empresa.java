@@ -5,6 +5,7 @@ package br.com.fecorp.reinf.model;
 import java.io.Serializable;
 
 
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;

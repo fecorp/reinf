@@ -288,7 +288,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
 				
-				<p:selectOneMenu style="font-size:10px" value="retificacao"
+				<h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
 					<f:selectItem itemLabel="013 - Afeganistão" itemValue="Afeganistão" />
@@ -533,7 +533,7 @@
                     <f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
                     <f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
                      <f:selectItem itemLabel="Outros" itemValue="Outros" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				<br></br>
 				<br></br>
 
@@ -577,14 +577,10 @@
 
 				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
 				&nsbp;
-				<p:selectOneMenu id="country" style="width:150px">
-					/>
-					<f:selectItem itemLabel="Selecione" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-				</p:selectOneMenu>
+				<h:selectOneMenu id="country" style="width:100px; height: 8%">
+					
+					<f:selectItem itemLabel="Selecione" itemValue="Selecione" />
+				</h:selectOneMenu>
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
 				<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
@@ -598,7 +594,7 @@
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
 				
-				<p:selectOneMenu style="font-size:7px" value="cod03"
+				<h:selectOneMenu style="font-size:9px" value="cod03"
 					itemLabel="cod03">
 					<f:selectItem itemLabel="01 - Empresa Enquadrada Substituída" itemValue="01 - Empresa Enquadrada Substituída" />
 					<f:selectItem itemLabel="02 - Empresa Enquadrada Não Substituída" itemValue="02 - Empresa Enquadrada Não Substituída" />
@@ -620,18 +616,19 @@
 					<f:selectItem itemLabel="85 - Ente Federativo" itemValue="85 - Ente Federativo" />
 					<f:selectItem itemLabel="99 - Pessoas Juridicas em Geral" itemValue="99 - Pessoas Juridicas em Geral" />
 
-				</p:selectOneMenu>
+				</h:selectOneMenu>
+				<br></br>
+				<br></br>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
 				<p:inputText style="width: 8%" value="#{Empresa.nit}" />
-				<br></br>
-				<br></br>
+				
 
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
 				
-                <p:selectOneMenu style="font-size:10px" value="retificacao"
+                <h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="Situação" itemValue="Situação" />
 					<f:selectItem itemLabel="Normal" itemValue="Normal" />
@@ -640,24 +637,25 @@
 					<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
 					<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 
-				<br />
-				<br />
+				
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
 				
-				<p:selectOneMenu style="font-size:7px" value="cod02"
+				<h:selectOneMenu style="font-size:9px" value="cod02"
 					itemLabel="cod02">
 					<f:selectItem itemLabel="01 - Situação Normal" itemValue="01 - Situação Normal" />
 					<f:selectItem itemLabel="02 - Extinção" itemValue="02 - Extinção" />
 					<f:selectItem itemLabel="03 - Fusão" itemValue="03 - Fusão" />
 					<f:selectItem itemLabel="04 - Cisão" itemValue="04 - Cisão" />
 					<f:selectItem itemLabel="05 - Incorporação" itemValue="05 - Incorporação" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
+				<br></br>
+				<br></br>
 
                 &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />

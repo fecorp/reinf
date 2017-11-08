@@ -200,12 +200,12 @@
 				
 				&nbsp;
 				<h:outputText style="font-size:10px" value="Retificação: " />
-				<p:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
+				<h:selectOneMenu  style="font-size:10px" value="retificacao" itemLabel="retificacao">
 					<f:selectItem itemLabel="Não se Aplica" itemValue="nseaplica" />
 					<f:selectItem itemLabel="Exclusão" itemValue="exclusao" />
 					<f:selectItem itemLabel="Inclusão" itemValue="inclusao" />
 					<f:selectItem itemLabel="Alteraçao" itemValue="alteracao" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 
 			</p:fieldset>
 			<br></br>
@@ -234,11 +234,11 @@
 				<h:outputText style="font-size: 10px"
 					value="      Código Correspondente Tipo Processo:   " />
 				
-				<p:selectOneMenu style="font-size:9px" value="cod06"
+				<h:selectOneMenu style="font-size:9px" value="cod06"
 					itemLabel="cod06">
 					<f:selectItem itemLabel="Administrativo" itemValue="Administrativo" />
 					<f:selectItem itemLabel="Judicial" itemValue="Judicial" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 				&nbsp;
 				<br></br>
@@ -253,14 +253,14 @@
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Repasse:   " />
 				
-				<p:selectOneMenu style="font-size:9px" value="cod07"
+				<h:selectOneMenu style="font-size:10px" value="cod07"
 					itemLabel="cod07">
 					<f:selectItem itemLabel="01 - Patrocínio" itemValue="01 - Patrocínio" />
 					<f:selectItem itemLabel="02 - Licenciamento de Marcas e Símbolos" itemValue="02 - Licenciamento de Marcas e Símbolos" />
 					<f:selectItem itemLabel="03 - Publicidade" itemValue="03 - Publicidade" />
 					<f:selectItem itemLabel="04 - Propaganda" itemValue="04 - Propaganda" />
 					<f:selectItem itemLabel="05 - Transmissão de Espetáculos" itemValue="05 - Transmissão de Espetáculos" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 				&nbsp;
 				
@@ -277,8 +277,7 @@
 				<p:inputText style="width: 10%; background-color: #FFFFFFF"
 					value="#{RecursosRepAssDesp.valorApuracaoRetencaoSofrerAssociacao}" />
 				&nbsp;
-				<br></br>
-				<br></br>
+				
 
 				<h:outputText style="font-size: 10px"
 					value="      VL Retenção Deixou ser Feita pela Empresa:   " />
