@@ -151,7 +151,7 @@
 		</p:layoutUnit>
 
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" style="height:130px">
 
        <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -215,7 +215,7 @@
 			    
 			    <h:outputText style="font-size: 10px"
 					value="      Nome do Clube Visitante:    " />
-				<p:inputText style="width: 15%; background-color: #FFFFFFF"
+				<p:inputText style="width: 12%; background-color: #FFFFFFF"
 					value="#{ReceitaEspetaculoDesp.nomeClubeVisitante}" /> 
 			    &nbsp;
 			    <br></br>
@@ -267,14 +267,27 @@
 
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Competição:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{ReceitaEspetaculoDesp.tipoCompeticao}" />
+				
+				<p:selectOneMenu style="font-size:7px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="01 - Oficial" itemValue="01 - Oficial" />
+					<f:selectItem itemLabel="02 - Não Oficial" itemValue="02 - Não Oficial" />				
+					</p:selectOneMenu>
+				
+				
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
 					value="      Categoria do Evento:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{ReceitaEspetaculoDesp.categoriaEvento}" />
+				
+				<p:selectOneMenu style="font-size:7px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="01 - Internacional" itemValue="01 - Internacional" />
+					<f:selectItem itemLabel="02 - Interestadual" itemValue="02 - Interestadual" />
+					<f:selectItem itemLabel="03 - Estadual" itemValue="03 - Estadual" />
+					<f:selectItem itemLabel="04 - Local" itemValue="04 - Local" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 			
 			    <h:outputText style="font-size: 10px"
@@ -297,8 +310,16 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Ingresso:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{ReceitaEspetaculoDesp.tipoIngresso}" />
+				
+				
+				<p:selectOneMenu style="font-size:7px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="01 - Arquibancada" itemValue="01 - Arquibancada" />
+					<f:selectItem itemLabel="02 - Geral" itemValue="02 - Geral" />
+					<f:selectItem itemLabel="03 - Cadeira" itemValue="03 - Cadeira" />
+					<f:selectItem itemLabel="04 - Camarote" itemValue="04 - Camarote" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 				<br></br>
 				<br></br>
@@ -401,7 +422,7 @@
 
 			<p:fieldset style=" background-color:#F2F2F2;  font-size: 10px; "
 				legend=" Open Flex ">
-
+               <center>
 
 
 				<h:outputText style="font-size: 10px" value="      Open Flex 01:   " />
@@ -413,13 +434,13 @@
 					value="      Open Flex 02:   " />
 				<p:inputText style="width: 20%; background-color: #FFFFFFF"
 					value="#{ReceitaEspetaculoDesp.openFlex02}" />
-					&nbsp;
-				
+					&nbsp; 
+				</center>
 
 
 			</p:fieldset>
 
-			<br> </br>
+			<br></br>
 		
 
 			<p:fieldset style="background-color: #F2F2F2">
@@ -447,11 +468,11 @@
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+                    <p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar " icon="ui-icon-search" >
 						<f:param name="productId" value="turubom?" />
 					</p:button>
-
+					
 					<br /> <br />
 
 					<p:commandButton type="button" style="width:25px; height:25px"

@@ -152,7 +152,7 @@
 		</h:form>
 
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" style="height:150px">
 			<h:form>
 
 				<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
@@ -274,8 +274,14 @@
 				
 				<h:outputText style="font-size: 10px"
 						value="     Indicativo de Comercialização:   " />
-					<p:inputText style="width: 3%; background-color: #FFFFFFF"
-						value="#{comercializacaoAgro.indicativoComercializacao}" />
+					
+					<p:selectOneMenu style="font-size:9px" value="cod09"
+					itemLabel="cod09">
+					<f:selectItem itemLabel="01 - Comercialização Prod. Rural" itemValue="01 - Comercialização Prod. Rural" />
+					<f:selectItem itemLabel="08 - Programa de Aquisiçãp de Alimentos" itemValue="08 - Programa de Aquisiçãp de Alimentos" />
+					<f:selectItem itemLabel="09 - Comercialização Direta da Produção" itemValue="09 - Comercialização Direta da Produção" />
+				</p:selectOneMenu>
+					
 				&nbsp;
 			
 			    <h:outputText style="font-size: 10px"
@@ -288,11 +294,18 @@
 					<p:inputText style="width: 10%; background-color: #FFFFFFF"
 						value="#{comercializacaoAgro.valorBrutoNotaFiscal}" />
 				&nbsp;
+				<br></br>
+				<br></br>
 				
 				<h:outputText style="font-size: 10px"
 						value="     Código Tipo Processo:   " />
-					<p:inputText style="width: 3%; background-color: #FFFFFFF"
-						value="#{comercializacaoAgro.codTipoProcesso}" />
+					
+					
+					<p:selectOneMenu style="font-size:9px" value="cod10"
+					itemLabel="cod10">
+					<f:selectItem itemLabel="Administrativo" itemValue="Administrativo" />
+					<f:selectItem itemLabel="Judicial" itemValue="Judicial" />
+				</p:selectOneMenu>
 				&nbsp;
 				<br></br>
 					<br></br>
@@ -374,9 +387,9 @@
 						</p:button>
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
-							outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
-							<f:param name="productId" value="turubom?" />
-						</p:button>
+						outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar " icon="ui-icon-search" >
+						<f:param name="productId" value="turubom?" />
+					     </p:button>
 
 						<br /> <br />
 

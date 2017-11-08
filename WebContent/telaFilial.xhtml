@@ -54,12 +54,7 @@
 		</p:menubar>
 	</h:form>
 
-	<div>
-		<center>
-			<h3
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Filial</h3>
-		</center>
-	</div>
+	<img src="Imagens/IMAGEM.jpg" />
 
 
 	<p:layout>
@@ -151,7 +146,7 @@
 			</h:form>
 		</p:layoutUnit>
 
-		<p:layoutUnit position="center" style="height: 380px" fullPage="true">
+		<p:layoutUnit position="center" style="height: 350px" fullPage="true">
 
        <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -334,7 +329,33 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 10%" value="#{Filial.classFical}" />
+				
+				
+				<p:selectOneMenu style="font-size:7px" value="cod04"
+					itemLabel="cod04">
+					<f:selectItem itemLabel="01 - Empresa Enquadrada Substituída" itemValue="01 - Empresa Enquadrada Substituída" />
+					<f:selectItem itemLabel="02 - Empresa Enquadrada Não Substituída" itemValue="02 - Empresa Enquadrada Não Substituída" />
+					<f:selectItem itemLabel="03 - Empresa Enquadrada Substituída e Não Substituída" itemValue="03 - Empresa Enquadrada Substituída e Não Substituída" />
+					<f:selectItem itemLabel="04 - Micro Empreendedor Individual" itemValue="04 - Micro Empreendedor Individual" />
+					<f:selectItem itemLabel="06 - Agroindústria" itemValue="06 - Agroindústria" />
+					<f:selectItem itemLabel="07 - Produtor Rural / Pessoa Juridica" itemValue="07 - Produtor Rural / Pessoa Juridica" />
+					<f:selectItem itemLabel="08 - Consórcio de Produtores Rurais" itemValue="08 - Consórcio de Produtores Rurais" />
+					<f:selectItem itemLabel="09 - Gestor de Mão de Obra" itemValue="09 - Gestor de Mão de Obra" />
+					<f:selectItem itemLabel="10 - Entidade Sindical" itemValue="10 - Entidade Sindical" />
+					<f:selectItem itemLabel="11 - Associação Desportiva" itemValue="11 - Associação Desportiva" />
+					<f:selectItem itemLabel="13 - Banco" itemValue="13 - Banco" />
+					<f:selectItem itemLabel="14 - Sindicato em Geral" itemValue="14 - Sindicato em Geral" />
+					<f:selectItem itemLabel="21 - Pessoa Física, Exceto Segurado Especial" itemValue="21 - Pessoa Física, Exceto Segurado Especial" />
+					<f:selectItem itemLabel="22 - Segurado Especial" itemValue="22 - Segurado Especial" />
+					<f:selectItem itemLabel="60 - Missão Diplomática" itemValue="60 - Missão Diplomática" />
+					<f:selectItem itemLabel="70 - Empresa que Trata o Decreto" itemValue="70 - Empresa que Trata o Decreto" />
+					<f:selectItem itemLabel="80 - Entidade Imune ou Isenta" itemValue="80 - Entidade Imune ou Isenta" />
+					<f:selectItem itemLabel="85 - Ente Federativo" itemValue="85 - Ente Federativo" />
+					<f:selectItem itemLabel="99 - Pessoas Juridicas em Geral" itemValue="99 - Pessoas Juridicas em Geral" />
+
+				</p:selectOneMenu>
+				<br></br>
+				<br></br>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
@@ -451,7 +472,7 @@
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+						outcome="telaFilial.xhtml" value="  Pesquisar " icon="ui-icon-search">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 

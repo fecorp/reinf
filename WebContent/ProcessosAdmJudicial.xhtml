@@ -151,7 +151,7 @@ p.ident {
 			</h:form>
 		</p:layoutUnit>
 
-		<p:layoutUnit style="background-color:#F2f2f2; height:400px"
+		<p:layoutUnit style="background-color:#F2f2f2; height:150px"
 			fullPage="true" position="center">
 			
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
@@ -244,19 +244,35 @@ p.ident {
 				legend="Processos">
 
 				<h:outputText style="font-size: 10px" value="  Cód.Ind. Suspensão: " />
-				<p:inputText style="width: 7%"
+				<p:inputText style="width: 15%"
 					value="#{ProcessosAdmJud.codIndicativoSuspe}" />
+				
+					
+					
 					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value=" Ind. Susp. Exigibilidade :   " />
-				<p:inputText style="width: 15%"
-					value="#{ProcessosAdmJud.indiSuspeExigi}" />
+				<p:selectOneMenu style="font-size:7px" value="retificacao"
+					itemLabel="indservico">
+					<f:selectItem itemLabel="01 - Liminar em Mandato de Segurança" itemValue="01 - Liminar em Mandato de Segurança" />
+					<f:selectItem itemLabel="04 - Antecipação de Tutela" itemValue="04 - Antecipação de Tutela" />
+					<f:selectItem itemLabel="05 - Liminar em Medida Tutelar" itemValue="05 - Liminar em Medida Tutelar" />
+					<f:selectItem itemLabel="08 - Sentença em Mandato de Segurança" itemValue="08 - Sentença em Mandato de Segurança" />
+					<f:selectItem itemLabel="09 - Sentença em Ação Ordinária" itemValue="09 - Sentença em Ação Ordinária" />
+					<f:selectItem itemLabel="10 - Acórdão do TRF" itemValue="10 - Acórdão do TRF" />
+					<f:selectItem itemLabel="11 - Acórdão do STJ" itemValue="11 - Acórdão do STJ" />
+					<f:selectItem itemLabel="12 - Acórdão do STF" itemValue="12 - Acórdão do STF" />
+					<f:selectItem itemLabel="13 - Sentença da 1º Instância" itemValue="13 - Sentença da 1º Instância" />
+					<f:selectItem itemLabel="90 - Decisão Definitiva Contribuinte" itemValue="90 - Decisão Definitiva Contribuinte" />
+					<f:selectItem itemLabel="92 - Sem Suspensão de Exigibilidade" itemValue="92 - Sem Suspensão de Exigibilidade" />
+				</p:selectOneMenu>
+				
 					&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="  Ind. Depósito Montante Integral: " />
-				<p:inputText style="width: 15%"
+				<p:inputText style="width: 12%"
 					value="#{ProcessosAdmJud.indiDepMonteIntegral}" />
 					&nbsp;
 
@@ -265,14 +281,14 @@ p.ident {
 				<p:inputText style="width: 2%"
 					value="#{ProcessosAdmJud.UFSessaoJud}" />
 					&nbsp;
-
+                <br></br>
+                <br></br> 
+                 
 				<h:outputText style="font-size: 10px" value="  Cód. Município: " />
 				<p:inputText style="width: 5%"
 					value="#{ProcessosAdmJud.codMunicipio}" />
 					&nbsp;
 
-				<br />
-				<br />
 				<h:outputText style="font-size: 10px"
 					value="  Código de identificação da Vara : " />
 				<p:inputText style="width: 2%" value="#{ProcessosAdmJud.codIdVara}" />
@@ -333,7 +349,7 @@ p.ident {
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+						outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar " icon="ui-icon-search" >
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 

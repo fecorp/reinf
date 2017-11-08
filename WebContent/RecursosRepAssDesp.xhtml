@@ -151,7 +151,7 @@
 			</h:form>
 		</p:layoutUnit>
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" style="height:130px">
 		
 		<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -221,7 +221,7 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL Retenção Recursos Recebidos:   " />
-				<p:inputText style="width: 10%; background-color: #FFFFFFF"
+				<p:inputText style="width: 8%; background-color: #FFFFFFF"
 					value="#{RecursosRepAssDesp.valorRetencaoRecursosRecb}" />
 				&nbsp;
 				
@@ -233,8 +233,13 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      Código Correspondente Tipo Processo:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{RecursosRepAssDesp.codCorrespTipoProc}" />
+				
+				<p:selectOneMenu style="font-size:9px" value="cod06"
+					itemLabel="cod06">
+					<f:selectItem itemLabel="Administrativo" itemValue="Administrativo" />
+					<f:selectItem itemLabel="Judicial" itemValue="Judicial" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 				<br></br>
 				<br></br>
@@ -247,8 +252,16 @@
 				
 				<h:outputText style="font-size: 10px"
 					value="      Tipo de Repasse:   " />
-				<p:inputText style="width: 2%; background-color: #FFFFFFF"
-					value="#{RecursosRepAssDesp.tipoRepasse}" />
+				
+				<p:selectOneMenu style="font-size:9px" value="cod07"
+					itemLabel="cod07">
+					<f:selectItem itemLabel="01 - Patrocínio" itemValue="01 - Patrocínio" />
+					<f:selectItem itemLabel="02 - Licenciamento de Marcas e Símbolos" itemValue="02 - Licenciamento de Marcas e Símbolos" />
+					<f:selectItem itemLabel="03 - Publicidade" itemValue="03 - Publicidade" />
+					<f:selectItem itemLabel="04 - Propaganda" itemValue="04 - Propaganda" />
+					<f:selectItem itemLabel="05 - Transmissão de Espetáculos" itemValue="05 - Transmissão de Espetáculos" />
+				</p:selectOneMenu>
+				
 				&nbsp;
 				
 				<h:outputText style="font-size: 10px"
@@ -256,6 +269,8 @@
 				<p:inputText style="width: 10%; background-color: #FFFFFFF"
 					value="#{RecursosRepAssDesp.valorBrutoRepasseEfetuado}" />
 				&nbsp;
+				<br></br>
+				<br></br>
 				
 				<h:outputText style="font-size: 10px"
 					value="      VL Apuração a Sofrer Associação Desportiva:   " />
@@ -321,7 +336,7 @@
 					</p:button>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-search">
+						outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar " icon="ui-icon-search" >
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 
