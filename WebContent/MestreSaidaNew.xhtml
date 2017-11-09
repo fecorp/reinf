@@ -8,249 +8,282 @@
 <h:head></h:head>
 <h:body style="background-color:#D3D3D3;border:0px;">
 
-    <h:form>
-   
-				<p:growl id="messages" />
+	<h:form>
 
-				<p:menubar style="font-size:12px; color: #d15">
-					<p:submenu label="Parametrização" icon="ui-icon-document">
-						
-						<p:menuitem value="Tela de Parametrização"
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+
+				<p:menuitem value="Tela de Parametrização"
 					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
-						
-					</p:submenu>
 
-					<p:submenu label="Geração" icon="ui-icon-pencil">
-						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
 					icon="ui-icon-folder-open" />
-					</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Relatórios" icon="ui-icon-help">
-						<p:menuitem value="Contents" url="#" />
-						<p:submenu label="Search" icon="ui-icon-search">
-							<p:submenu label="Text">
-								<p:menuitem value="Workspace" url="#" />
-							</p:submenu>
-							<p:menuitem value="File" url="#" />
-						</p:submenu>
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+				<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
 					</p:submenu>
+					<p:menuitem value="File" url="#" />
+				</p:submenu>
+			</p:submenu>
 
-					<p:submenu label="Configurações" icon="ui-icon-wrench">
-			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+				<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
 					icon="ui-icon-wrench" />
 			</p:submenu>
 
-					<p:menuitem value="Lotes" url="http://www.primefaces.org"
-						icon="ui-icon-close" />
+			<p:menuitem value="Lotes" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
 
-					<f:facet name="options">
-						<p:inputText style="margin-right:10px" placeholder="Search" />
-						<p:commandButton type="button" value="Logout"
-							icon="ui-icon-extlink" />
-					</f:facet>
-				</p:menubar>
-				</h:form>
+			<f:facet name="options">
+				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+			</f:facet>
+		</p:menubar>
+	</h:form>
 
-	
-	
-     <img src="Imagens/IMAGEM.jpg" />
+
+
+	<img src="Imagens/IMAGEM.jpg" />
 
 
 	<p:layout>
-	
-
-        <h:form>
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
-			<h:form>
-				<p:panelMenu style="width:165px">
-					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
-						<p:menuitem style="background-color:#F4F0F0" value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
-							icon="ui-icon-note" />
-						<p:menuitem style="background-color:#F4F0F0" value="Empresa" url="telaCadastro.xhtml"
-							icon="ui-icon-home" />
-						<p:menuitem style="background-color:#F4F0F0" value="Filial" url="telaFilial.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem style="background-color:#F4F0F0" value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml" icon="ui-icon-contact" />
-						<p:menuitem style="background-color:#F4F0F0" value="Responsável" url="telaResponsavel.xhtml"
-							icon="ui-icon-person" />
-						<p:menuitem style="background-color:#F4F0F0" value="Software" url="TelaSoftware.xhtml"
-							icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços" url="Servicos.xhtml"
-							icon="ui-icon-suitcase" />
-					</p:submenu>
-
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#D3D3D3" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
-							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf" style="font-size:12px">
-
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-1070 Tabela de Processos Administrativos - Judiciais"
-							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="" url="http://www.primefaces.org" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
-							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2050 Comercialização Agroindústria"
-							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
-							url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
-							url="dirf.xhtml" icon="ui-icon-wrench" />
 
 
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-3010 Receitas de Espetáculos Desportivos"
-							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+		<h:form>
+			<p:layoutUnit position="west"
+				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<h:form>
+					<p:panelMenu style="width:165px">
+						<p:submenu label="Cadastros"
+							style="font-size:12px;background-color:#D3D3D3 ">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								icon="ui-icon-note" />
+							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
+								url="telaCadastro.xhtml" icon="ui-icon-home" />
+							<p:menuitem style="background-color:#F4F0F0" value="Filial"
+								url="telaFilial.xhtml" icon="ui-icon-disk" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cliente Fornecedor" url="telaClienteFornecedor.xhtml"
+								icon="ui-icon-contact" />
+							<p:menuitem style="background-color:#F4F0F0" value="Responsável"
+								url="telaResponsavel.xhtml" icon="ui-icon-person" />
+							<p:menuitem style="background-color:#F4F0F0" value="Software"
+								url="TelaSoftware.xhtml" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0" value="Serviços"
+								url="Servicos.xhtml" icon="ui-icon-suitcase" />
+						</p:submenu>
 
-					</p:submenu>
-					<p:submenu 
-						label="Interface " style="font-size:12px;">
-						<p:menuitem style="background-color:#F4F0F0" value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-arrowthickstop-1-s" />
+						<p:submenu label="Movimentação - NF" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Entrada" url="ComplementoMestreEntrada.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Entrada" url="ComplementoAlimeEntrada.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Entrada" url="ComplementoTotalizadoresEntrada.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
+							<p:menuitem style="background-color: #F4F0F0"
+								value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Saída" url="ImpostoSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Saída" url="ComplementoAlimeSaida.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Saída" url="ComplementoTotalizadoresSaida.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
 
-					</p:submenu>
+						</p:submenu>
+						<p:separator />
+						<p:submenu label="Reinf" style="font-size:12px">
 
-					<p:submenu 
-						label="Lotes" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-shuffle" />
-					</p:submenu>
-
-				</p:panelMenu>
-			</h:form>
-		</p:layoutUnit>
-
-
-		<p:layoutUnit style="background-color:#F2f2f2; height:450px" fullPage="true" position="center">
-	
-         <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
-				
-				<div>
-		<center>
-			<h3
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Notas Fiscais de Saída de Serviços</h3>
-		</center>
-	</div>
-				
-		</p:fieldset>
-		<br></br>		
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-1070 Tabela de Processos Administrativos - Judiciais"
+								url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0" value=""
+								url="http://www.primefaces.org" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2030 Recursos Recebidos Por Associação Desportiva"
+								url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+								url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2050 Comercialização Agroindústria"
+								url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+								url="cprb.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+								url="dirf.xhtml" icon="ui-icon-wrench" />
 
 
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Dados cadastrais ">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-3010 Receitas de Espetáculos Desportivos"
+								url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
 
-				<h:outputText style="font-size: 10px"
-					value=" Código da empresa: *     " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{MestreSaida.codEmpresa}" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="      Código da Filial:  * " />
-				<p:inputText style="width: 6%; background-color: #F2F2F2" value="#{MestreSaida.codFilial}" />
-&nbsp;
-				<h:outputLabel style="font-size: 10px"
-					value="  Número da Nota Fiscal: " />
-				<p:inputText style="width: 10%" value="#{MestreSaida.numNotaFiscal}" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="      Série da Nota Fiscal:   " />
-				<p:inputText style="width: 3%" value="#{MestreSaida.serieNotaFiscal}" />
-&nbsp;
+						</p:submenu>
+						<p:submenu label="Interface " style="font-size:12px;">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Importação de Arquivos" url="Interface.xhtml"
+								icon="ui-icon-arrowthickstop-1-s" />
 
-				<h:outputText style="font-size: 10px"
-					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{MestreSaida.catPfPj}" />
-&nbsp;
-				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{MestreSaida.codPfPj}" />
-				<br />
-				<br />
+						</p:submenu>
 
-				<p:outputLabel style="width: 12%" width="10px"
-					value="    Data de Emissão: * " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="dataemissao" value="#{calendarView.date2}" locale="pt"
-					pattern="dd/MM/yyyy" />
-&nbsp;
-				<h:outputText style="font-size: 10px" value="     Data de Entrada: " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="dataentrada" value="#{calendarView.date2}" locale="pt"
-					pattern="dd/MM/yyyy" />
-&nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  Data de Execução/Conclusão: " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="dataexecucao" value="#{calendarView.date2}" locale="pt"
-					pattern="dd/MM/yyyy" />
-&nbsp;
-				<h:outputText style="font-size: 10px" value="  Quantidade de Itens:   " />
-				<p:inputMask style="width: 4%" value="#{MestreSaida.qtdItens}" />
+						<p:submenu label="Lotes" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Gerenciamento de Lotes" url="http://www.primefaces.org"
+								icon="ui-icon-shuffle" />
+						</p:submenu>
 
-				<br />
-				<br />
+					</p:panelMenu>
+				</h:form>
+			</p:layoutUnit>
 
-			</p:fieldset>
 
-			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
-				legend="Valores">
+			<p:layoutUnit style="background-color:#F2f2f2; height:450px"
+				fullPage="true" position="center">
 
-				<center>
-					<h:outputText style="font-size: 10px" value="  VL do serviço :   " />
-					<p:inputText style="width: 7%" value="#{MestreSaida.valorServico}" />
-					&nbsp;
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 
+					<div>
+						<center>
+							<h3
+								style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Notas
+								Fiscais de Saída de Serviços</h3>
+						</center>
+					</div>
+
+				</p:fieldset>
+				<br></br>
+
+
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+					legend="Dados cadastrais ">
 
 					<h:outputText style="font-size: 10px"
-						value="  VL Material Aplicado: " />
-					<p:inputText style="width: 7%" value="#{MestreSaida.valorMaterialApply}" />
+						value=" Código da empresa: *     " />
+					<p:inputText style="width: 6%; background-color: #F2F2F2"
+						value="#{MestreSaida.codEmpresa}" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
+						value="      Código da Filial:  * " />
+					<p:inputText style="width: 6%; background-color: #F2F2F2"
+						value="#{MestreSaida.codFilial}" />
+&nbsp;
+				<h:outputLabel style="font-size: 10px"
+						value="  Número da Nota Fiscal: " />
+					<p:inputText style="width: 10%"
+						value="#{MestreSaida.numNotaFiscal}" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
+						value="      Série da Nota Fiscal:   " />
+					<p:inputText style="width: 3%"
+						value="#{MestreSaida.serieNotaFiscal}" />
+&nbsp;
 
-					&nbsp;
-					<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
-					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreSaida.valorDesconto}" />
-                    &nbsp; 
+				<h:outputText style="font-size: 10px"
+						value="               Categoria PF/PJ: * " />
+					<p:inputText style="width: 2%; background-color: #F2F2F2"
+						value="#{MestreSaida.catPfPj}" />
+&nbsp;
+				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
+					<p:inputText style="width: 12%; background-color: #F2F2F2"
+						value="#{MestreSaida.codPfPj}" />
+					<br />
+					<br />
 
-					<h:outputText style="font-size: 10px" value="  VL documento: " />
-					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreSaida.valorTotalDocumento}" />
-					&nbsp;
-					<h:outputText style="font-size: 10px" value="  VL Subempreitada: " />
-					&nbsp;
-					<p:inputText style="width: 7%" value="#{MestreSaida.valorSubempreitada}" />
-					&nbsp;
-					<br></br>
+					<p:outputLabel style="width: 12%" width="10px"
+						value="    Data de Emissão: * " />
+					<p:calendar style="font-size:10px; background-color: #F2F2F2"
+						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+						id="dataemissao" value="#{calendarView.date2}" locale="pt"
+						pattern="dd/MM/yyyy" />
+&nbsp;
+				<h:outputText style="font-size: 10px" value="     Data de Entrada: " />
+					<p:calendar style="font-size:10px; background-color: #F2F2F2"
+						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+						id="dataentrada" value="#{calendarView.date2}" locale="pt"
+						pattern="dd/MM/yyyy" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
+						value="  Data de Execução/Conclusão: " />
+					<p:calendar style="font-size:10px; background-color: #F2F2F2"
+						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+						id="dataexecucao" value="#{calendarView.date2}" locale="pt"
+						pattern="dd/MM/yyyy" />
+&nbsp;
+				<h:outputText style="font-size: 10px"
+						value="  Quantidade de Itens:   " />
+					<p:inputMask style="width: 4%" value="#{MestreSaida.qtdItens}" />
 
-				</center>
+					<br />
+					<br />
+
+				</p:fieldset>
+
+				
+
+
 				<br />
-				<br />
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
+					legend="Valores">
+
+					<center>
+						<h:outputText style="font-size: 10px" value="  VL do serviço :   " />
+						<p:inputText style="width: 7%" value="#{MestreSaida.valorServico}" />
+						&nbsp;
+
+
+						<h:outputText style="font-size: 10px"
+							value="  VL Material Aplicado: " />
+						<p:inputText style="width: 7%"
+							value="#{MestreSaida.valorMaterialApply}" />
+
+						&nbsp;
+						<h:outputText style="font-size: 10px" value="  VL Desconto:   " />
+						&nbsp;
+						<p:inputText style="width: 7%"
+							value="#{MestreSaida.valorDesconto}" />
+						&nbsp;
+
+						<h:outputText style="font-size: 10px" value="  VL documento: " />
+						&nbsp;
+						<p:inputText style="width: 7%"
+							value="#{MestreSaida.valorTotalDocumento}" />
+						&nbsp;
+						<h:outputText style="font-size: 10px" value="  VL Subempreitada: " />
+						&nbsp;
+						<p:inputText style="width: 7%"
+							value="#{MestreSaida.valorSubempreitada}" />
+						&nbsp; <br></br>
+
+					</center>
+					<br />
+					<br />
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
 
@@ -265,7 +298,7 @@
 
 
 					<h:outputText style="font-size: 10px; font-weight:bold "
-					value="  VL TOTAIS RETIDOS  " />
+						value="  VL TOTAIS RETIDOS  " />
 					
 &nbsp;  
 &nbsp; &nbsp; &nbsp;
@@ -273,11 +306,11 @@
 
 
 					<h:outputText style="font-size: 10px; font-weight:bold "
-					value="  COD. FISCAL DE RETENÇÃO   " />
-				<br />
-				<br />
+						value="  COD. FISCAL DE RETENÇÃO   " />
+					<br />
+					<br />
 
-				<h:outputText style="font-size: 10px" value=" &nbsp;ISS: " />
+					<h:outputText style="font-size: 10px" value=" &nbsp;ISS: " />
 				&nbsp; &nbsp; &nbsp;
 					
 				
@@ -291,9 +324,9 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				<p:inputText style="width: 4%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 10px" value="  INSS: " />
+					<br />
+					<br />
+					<h:outputText style="font-size: 10px" value="  INSS: " />
 				&nbsp;
 				&nbsp;
 				
@@ -307,9 +340,9 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				<p:inputText style="width: 4%" value="" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 10px" value="  IRRF: " />
+					<br />
+					<br />
+					<h:outputText style="font-size: 10px" value="  IRRF: " />
 &nbsp;
 &nbsp;
 
@@ -322,10 +355,10 @@
 				&nbsp; &nbsp; &nbsp;
 				<p:inputText style="width: 4%" value="" />
 
-				<br />
-				<br />
+					<br />
+					<br />
 
-				<h:outputText style="font-size: 10px" value="  PCC : " />
+					<h:outputText style="font-size: 10px" value="  PCC : " />
 				&nbsp;
 				&nbsp;
 				
@@ -339,153 +372,209 @@
 				&nbsp; &nbsp; &nbsp;
 				&nbsp; &nbsp; &nbsp;
 				<p:inputText style="width: 4%" value="" />
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
-				legend="Dados Complementares">
+				</p:fieldset>
+				<br />
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
+					legend="Dados Complementares">
 
-				<h:outputText style="font-size: 10px"
-					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 3%" value="#{MestreSaida.numContratoServicos}" />
+					<h:outputText style="font-size: 10px"
+						value="  Número  do Contrato Serviço: " />
+					<p:inputText style="width: 3%"
+						value="#{MestreSaida.numContratoServicos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Localidade : " />
-				<p:inputText id="telefone02" style="width: 2%" value="#{MestreSaida.tipoLocalidade}" />
+					<p:inputText id="telefone02" style="width: 2%"
+						value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Localidade : " />
-				<p:inputText style="width: 6%" value="#{MestreSaida.localidade}" />
+					<p:inputText style="width: 6%" value="#{MestreSaida.localidade}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Tipo Doc p/ Município: " />
-				<p:inputText style="width: 3%" value="#{MestreSaida.tipoDocMunicipio}" />
+						value="  Tipo Doc p/ Município: " />
+					<p:inputText style="width: 3%"
+						value="#{MestreSaida.tipoDocMunicipio}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
-				<p:inputText style="width: 2%" value="#{MestreSaida.indicadorTipoPagamento}" />
+					<p:inputText style="width: 2%"
+						value="#{MestreSaida.indicadorTipoPagamento}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo Serviço: " />
-				<p:inputText style="width: 2%" value="#{MestreSaida.tipoServicoReinf}" />
+					<p:inputText style="width: 2%"
+						value="#{MestreSaida.tipoServicoReinf}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="#{MestreSaida.contaContabil}" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
+					<p:inputText style="width: 13%"
+						value="#{MestreSaida.contaContabil}" />
+					<br />
+					<br />
+					<h:outputText style="font-size: 10px"
+						value="  Centro de Custos :  " />
+					<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NFS-e: " />
-				<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
+					<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
 
 
 
 
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
-				legend="Dados Complementares">
-				
-				<h:outputText style="font-size: 10px"
-					value="  Número  do Contrato Serviço: " />
-				<p:inputText style="width: 3%" value="#{MestreSaida.numContratoServicos}" />
+				</p:fieldset>
+				<br />
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
+					legend="Dados Complementares">
+
+					<h:outputText style="font-size: 10px"
+						value="  Número  do Contrato Serviço: " />
+					<p:inputText style="width: 3%"
+						value="#{MestreSaida.numContratoServicos}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Tipo da localidade : " />
-				<p:inputText id="telefone" style="width: 2%" value="#{MestreSaida.tipoLocalidade}" />
+						value="  Tipo da localidade : " />
+					<p:inputText id="telefone" style="width: 2%"
+						value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Localidade : " />
-				<p:inputText style="width: 6%" value="#{MestreSaida.tipoLocalidade}" />
+					<p:inputText style="width: 6%"
+						value="#{MestreSaida.tipoLocalidade}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px"
-					value="  Tipo Doc p/ Município: " />
-				<p:inputText style="width: 3%" value="#{MestreSaida.tipoDocMunicipio}" />
+						value="  Tipo Doc p/ Município: " />
+					<p:inputText style="width: 3%"
+						value="#{MestreSaida.tipoDocMunicipio}" />
 				
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Ind. Pagamento: " />
-				<p:inputText style="width: 2%" value="#{MestreSaida.indicadorTipoPagamento}" />
+					<p:inputText style="width: 2%"
+						value="#{MestreSaida.indicadorTipoPagamento}" />
 &nbsp;
 
 				<h:outputText style="font-size: 10px" value="  Tipo de Serviço: " />
-				<p:inputText style="width: 2%" value="#{MestreSaida.tipoServicoReinf}" />
+					<p:inputText style="width: 2%"
+						value="#{MestreSaida.tipoServicoReinf}" />
 &nbsp;				
 				
 				<h:outputText style="font-size: 10px" value="  Conta contábil : " />
-				<p:inputText style="width: 13%" value="#{MestreSaida.contaContabil}" />
+					<p:inputText style="width: 13%"
+						value="#{MestreSaida.contaContabil}" />
 &nbsp;
 <br />
-				<br />
-				<h:outputText style="font-size: 10px" value="  Centro de Custos :  " />
-				<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
+					<br />
+					<h:outputText style="font-size: 10px"
+						value="  Centro de Custos :  " />
+					<p:inputText style="width: 14%" value="#{MestreSaida.centroCustos}" />
 
 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NFS-e: " />
-				<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
+					<p:inputText style="width: 26%" value="#{MestreSaida.chaveNfs}" />
 
 
 
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
-				legend="Open Flex">
-				<center>
-				<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-				<p:inputText style="width: 15%" value="#{MestreSaida.openFlex01}" />
-				&nbsp;
+				</p:fieldset>
+				<br />
+				
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+					legend="Reinf">
+					<center>
 
-				<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-				<p:inputText style="width: 15%" value="#{MestreSaida.openFlex02}" />
-				</center>
-			</p:fieldset>
-			<br />
-			<br />
-			<p:fieldset style="background-color: #F2F2F2">
-				<center>
+						<p:button outcome="ComplementoMestreSaida.xhtml"
+							value="Complemento Saída" icon="ui-icon-lightbulb">
+							<f:param name="productId" value="10" />
+						</p:button>
+						&nbsp;
+
+						<p:button outcome="ComplementoAlimeSaida.xhtml"
+							value="Complemento Alimenticio Saída" icon="ui-icon-battery-3">
+							<f:param name="productId" value="10" />
+						</p:button>
+						&nbsp;
+
+						<p:button outcome="ComplementoTotalizadoresSaida.xhtml"
+							value="Complemento Totalizador Saída"
+							icon="ui-icon-arrowreturn-1-n">
+							<f:param name="productId" value="10" />
+						</p:button>
+						&nbsp; 
+						
+						<p:button outcome="ImpostoSaidaNew.xhtml" value="Impostos Saída"
+							icon="ui-icon-script">
+							<f:param name="productId" value="10" />
+						</p:button>
+						&nbsp;
+						<br></br>
+						<br></br>
+					</center>
+				</p:fieldset>
+				<br></br>
+				
+				<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
+					legend="Open Flex">
+					<center>
+						<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+						<p:inputText style="width: 15%" value="#{MestreSaida.openFlex01}" />
+						&nbsp;
+
+						<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+						<p:inputText style="width: 15%" value="#{MestreSaida.openFlex02}" />
+					</center>
+				</p:fieldset>
+				<br />
+				<br />
+				<p:fieldset style="background-color: #F2F2F2">
+					<center>
 
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+							outcome="acoesBotao" value="Salvar" icon="ui-icon-folder-open">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar " icon="ui-icon-search">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-					
-					<br/>
-					<br/>
-					
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-first" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-prev" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-next" />
-					<p:commandButton type="button" style="width:25px; height:25px" icon="ui-icon-seek-end" />
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							outcome="TelaPesquisaServEntradaSaida.xhtml" value="  Pesquisar "
+							icon="ui-icon-search">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
 
-					<br />
+						<br /> <br />
 
-				</center>
-			</p:fieldset>
+						<p:commandButton type="button" style="width:25px; height:25px"
+							icon="ui-icon-seek-first" />
+						<p:commandButton type="button" style="width:25px; height:25px"
+							icon="ui-icon-seek-prev" />
+						<p:commandButton type="button" style="width:25px; height:25px"
+							icon="ui-icon-seek-next" />
+						<p:commandButton type="button" style="width:25px; height:25px"
+							icon="ui-icon-seek-end" />
 
-		
-		<p:button style="background-color:#E0EEF6; font-size:10px"
-				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
-				<f:param name="productId" value="turubom?" />
-			</p:button>
-        
-		</p:layoutUnit>
+						<br />
+
+					</center>
+				</p:fieldset>
+
+
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					id="backLink" onClick="history.go(-1)"
+					href="javascript:window.history.go(-1)" value="Voltar"
+					icon="fa-backward">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+
+			</p:layoutUnit>
 		</h:form>
 	</p:layout>
 </h:body>

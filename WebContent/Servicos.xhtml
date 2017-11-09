@@ -69,90 +69,109 @@ p.ident {
 
 
         <h:form>
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
-			<h:form>
-				<p:panelMenu style="width:165px">
-					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
-						<p:menuitem style="background-color:#F4F0F0" value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
-							icon="ui-icon-note" />
-						<p:menuitem style="background-color:#F4F0F0" value="Empresa" url="telaCadastro.xhtml"
-							icon="ui-icon-home" />
-						<p:menuitem style="background-color:#F4F0F0" value="Filial" url="telaFilial.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem style="background-color:#F4F0F0" value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml" icon="ui-icon-contact" />
-						<p:menuitem style="background-color:#F4F0F0" value="Responsável" url="telaResponsavel.xhtml"
-							icon="ui-icon-person" />
-						<p:menuitem style="background-color:#F4F0F0" value="Software" url="TelaSoftware.xhtml"
-							icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#D3D3D3" value="Serviços" url="Servicos.xhtml"
-							icon="ui-icon-suitcase" />
-					</p:submenu>
+			<p:layoutUnit position="west"
+				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<h:form>
+					<p:panelMenu style="width:165px">
+						<p:submenu label="Cadastros"
+							style="font-size:12px;background-color:#D3D3D3 ">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								icon="ui-icon-note" />
+							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
+								url="telaCadastro.xhtml" icon="ui-icon-home" />
+							<p:menuitem style="background-color:#F4F0F0" value="Filial"
+								url="telaFilial.xhtml" icon="ui-icon-disk" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cliente Fornecedor" url="telaClienteFornecedor.xhtml"
+								icon="ui-icon-contact" />
+							<p:menuitem style="background-color:#F4F0F0" value="Responsável"
+								url="telaResponsavel.xhtml" icon="ui-icon-person" />
+							<p:menuitem style="background-color:#F4F0F0" value="Software"
+								url="TelaSoftware.xhtml" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0" value="Serviços"
+								url="Servicos.xhtml" icon="ui-icon-suitcase" />
+						</p:submenu>
 
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
-							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
+						<p:submenu label="Movimentação - NF" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Entrada" url="ComplementoMestreEntrada.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Entrada" url="ComplementoAlimeEntrada.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Entrada" url="ComplementoTotalizadoresEntrada.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
+							<p:menuitem style="background-color: #F4F0F0"
+								value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Saída" url="ImpostoSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Saída" url="ComplementoAlimeSaida.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Saída" url="ComplementoTotalizadoresSaida.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
 
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf" style="font-size:12px">
+						</p:submenu>
+						<p:separator />
+						<p:submenu label="Reinf" style="font-size:12px">
 
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-1070 Tabela de Processos Administrativos - Judiciais"
-							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="" url="http://www.primefaces.org" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
-							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2050 Comercialização Agroindústria"
-							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
-							url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
-							url="dirf.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-1070 Tabela de Processos Administrativos - Judiciais"
+								url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0" value=""
+								url="http://www.primefaces.org" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2030 Recursos Recebidos Por Associação Desportiva"
+								url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+								url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2050 Comercialização Agroindústria"
+								url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+								url="cprb.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+								url="dirf.xhtml" icon="ui-icon-wrench" />
 
 
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-3010 Receitas de Espetáculos Desportivos"
-							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-3010 Receitas de Espetáculos Desportivos"
+								url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
 
-					</p:submenu>
-					<p:submenu 
-						label="Interface " style="font-size:12px;">
-						<p:menuitem style="background-color:#F4F0F0" value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-arrowthickstop-1-s" />
+						</p:submenu>
+						<p:submenu label="Interface " style="font-size:12px;">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Importação de Arquivos" url="Interface.xhtml"
+								icon="ui-icon-arrowthickstop-1-s" />
 
-					</p:submenu>
+						</p:submenu>
 
-					<p:submenu 
-						label="Lotes" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-shuffle" />
-					</p:submenu>
+						<p:submenu label="Lotes" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Gerenciamento de Lotes" url="http://www.primefaces.org"
+								icon="ui-icon-shuffle" />
+						</p:submenu>
 
-				</p:panelMenu>
-			</h:form>
-		</p:layoutUnit>
+					</p:panelMenu>
+				</h:form>
+			</p:layoutUnit>
 
 		<br />
 		<p:layoutUnit style="backgroud-color:  #555; height:130px "
