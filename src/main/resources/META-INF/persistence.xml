@@ -40,6 +40,7 @@
 		<class>br.com.fecorp.reinf.DAO.UsuarioDAO</class>
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.Pesquisa</class>
+		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->

@@ -186,12 +186,12 @@
 
 					<h:outputText style="font-size: 10px"
 						value=" Código da empresa: *     " />
-					<p:inputText style="width: 6%; background-color: #F2F2F2"
+					<p:inputText style="width: 6%; background-color: #FFFFFF"
 						value="#{MestreSaida.codEmpresa}" />
 &nbsp;
 				<h:outputText style="font-size: 10px"
 						value="      Código da Filial:  * " />
-					<p:inputText style="width: 6%; background-color: #F2F2F2"
+					<p:inputText style="width: 6%; background-color: #FFFFFF"
 						value="#{MestreSaida.codFilial}" />
 &nbsp;
 				<h:outputLabel style="font-size: 10px"
@@ -207,14 +207,15 @@
 
 				<h:outputText style="font-size: 10px"
 						value="               Categoria PF/PJ: * " />
-					<p:inputText style="width: 2%; background-color: #F2F2F2"
+					<p:inputText style="width: 12%; background-color: #FFFFFF"
 						value="#{MestreSaida.catPfPj}" />
-&nbsp;
+						<br></br>
+                        <br></br>
+
+				&nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-					<p:inputText style="width: 12%; background-color: #F2F2F2"
+					<p:inputText style="width: 12%; background-color: #FFFFFF"
 						value="#{MestreSaida.codPfPj}" />
-					<br />
-					<br />
 
 					<p:outputLabel style="width: 12%" width="10px"
 						value="    Data de Emissão: * " />
@@ -235,6 +236,7 @@
 						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 						id="dataexecucao" value="#{calendarView.date2}" locale="pt"
 						pattern="dd/MM/yyyy" />
+						<br></br><br></br>
 &nbsp;
 				<h:outputText style="font-size: 10px"
 						value="  Quantidade de Itens:   " />
