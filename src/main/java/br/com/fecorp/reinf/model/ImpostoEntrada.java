@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -25,19 +27,19 @@ public class ImpostoEntrada implements Serializable {
 	private String codFilial;
 	private String serieNotaFiscal;
 	private String numNotaFiscal;
-	private double dataEmissao;
+	private Date dataEmissao;
 	private String categoriaPfPj;
 	private String codigoPfPj;
 	private String sequenciaItens;
-	private double valorServico;
-	private double valorMaterialApp;
-	private double valorDesconto;
-	private double valorTotalDocumento;
-	private double valorBaseIrrf;
+	private BigDecimal valorServico;
+	private BigDecimal valorMaterialApp;
+	private BigDecimal valorDesconto;
+	private BigDecimal valorTotalDocumento;
+	private BigDecimal valorBaseIrrf;
 	private String codRetencaoIrrfDirf;
 	private double aliquotaIrrf;
-	private double valorIrrf;
-	private double baseCalculoRetInss;
+	private BigDecimal valorIrrf;
+	private BigDecimal baseCalculoRetInss;
 	private double aliquotaInss;
 	private double valorRetancaoInss;
 	private double valorBaseCalcIss;
@@ -48,6 +50,10 @@ public class ImpostoEntrada implements Serializable {
 	private String openFlex01;
 	private String openFlex02;
 
+	
+
+	
+	
 	
 	public String getCodEmpresa() {
 		return codEmpresa;
@@ -73,10 +79,10 @@ public class ImpostoEntrada implements Serializable {
 	public void setNumNotaFiscal(String numNotaFiscal) {
 		this.numNotaFiscal = numNotaFiscal;
 	}
-	public double getDataEmissao() {
+	public Date getDataEmissao() {
 		return dataEmissao;
 	}
-	public void setDataEmissao(double dataEmissao) {
+	public void setDataEmissao(Date dataEmissao) {
 		this.dataEmissao = dataEmissao;
 	}
 	public String getCategoriaPfPj() {
@@ -97,34 +103,34 @@ public class ImpostoEntrada implements Serializable {
 	public void setSequenciaItens(String sequenciaItens) {
 		this.sequenciaItens = sequenciaItens;
 	}
-	public double getValorServico() {
+	public BigDecimal getValorServico() {
 		return valorServico;
 	}
-	public void setValorServico(double valorServico) {
+	public void setValorServico(BigDecimal valorServico) {
 		this.valorServico = valorServico;
 	}
-	public double getValorMaterialApp() {
+	public BigDecimal getValorMaterialApp() {
 		return valorMaterialApp;
 	}
-	public void setValorMaterialApp(double valorMaterialApp) {
+	public void setValorMaterialApp(BigDecimal valorMaterialApp) {
 		this.valorMaterialApp = valorMaterialApp;
 	}
-	public double getValorDesconto() {
+	public BigDecimal getValorDesconto() {
 		return valorDesconto;
 	}
-	public void setValorDesconto(double valorDesconto) {
+	public void setValorDesconto(BigDecimal valorDesconto) {
 		this.valorDesconto = valorDesconto;
 	}
-	public double getValorTotalDocumento() {
+	public BigDecimal getValorTotalDocumento() {
 		return valorTotalDocumento;
 	}
-	public void setValorTotalDocumento(double valorTotalDocumento) {
+	public void setValorTotalDocumento(BigDecimal valorTotalDocumento) {
 		this.valorTotalDocumento = valorTotalDocumento;
 	}
-	public double getValorBaseIrrf() {
+	public BigDecimal getValorBaseIrrf() {
 		return valorBaseIrrf;
 	}
-	public void setValorBaseIrrf(double valorBaseIrrf) {
+	public void setValorBaseIrrf(BigDecimal valorBaseIrrf) {
 		this.valorBaseIrrf = valorBaseIrrf;
 	}
 	public String getCodRetencaoIrrfDirf() {
@@ -139,16 +145,16 @@ public class ImpostoEntrada implements Serializable {
 	public void setAliquotaIrrf(double aliquotaIrrf) {
 		this.aliquotaIrrf = aliquotaIrrf;
 	}
-	public double getValorIrrf() {
+	public BigDecimal getValorIrrf() {
 		return valorIrrf;
 	}
-	public void setValorIrrf(double valorIrrf) {
+	public void setValorIrrf(BigDecimal valorIrrf) {
 		this.valorIrrf = valorIrrf;
 	}
-	public double getBaseCalculoRetInss() {
+	public BigDecimal getBaseCalculoRetInss() {
 		return baseCalculoRetInss;
 	}
-	public void setBaseCalculoRetInss(double baseCalculoRetInss) {
+	public void setBaseCalculoRetInss(BigDecimal baseCalculoRetInss) {
 		this.baseCalculoRetInss = baseCalculoRetInss;
 	}
 	public double getAliquotaInss() {

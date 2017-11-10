@@ -1,15 +1,32 @@
 package br.com.fecorp.reinf.model;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+
 @ManagedBean(name = "Pesquisa")
 @ViewScoped
 
 @Entity
-public class Pesquisa implements Serializable {
-
+public class Pesquisa implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+
+
 	private String Empresa;
 	private String Filial;
 	private String Serie;
@@ -18,12 +35,11 @@ public class Pesquisa implements Serializable {
 	private String Entrada;
 	private String Tipo;
 	private String Descrição;
-	private float valor;
+	private double valor;
 	private List<Pesquisa> testaList;
 
 	public Pesquisa(String Empresa, String Filial, String Serie, String Numero, String Emissao, String Entrada,
-			String Tipo, String Descrição, int valor) {
-		// TODO Auto-generated constructor stub
+			String Tipo, String Descrição, double valor) {
 	}
 
 	public List<Pesquisa> getTestalist() {
@@ -110,11 +126,11 @@ public class Pesquisa implements Serializable {
 		Descrição = descrição;
 	}
 
-	public float getValor() {
+	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(float valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 }

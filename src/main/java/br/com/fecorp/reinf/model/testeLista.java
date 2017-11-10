@@ -1,8 +1,12 @@
 package br.com.fecorp.reinf.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,9 +28,9 @@ public class testeLista implements Serializable {
     private int idCodPartCom;
     private String textoCom;
     private int statusCom;
-    private List<testaLista> lista = new ArrayList<testaLista>();
+    private List<testeLista> lista = new ArrayList<testaLista>();
     
-    public List<testaLista> listar() {
+    public List<testeLista> listar() {
         return this.lista;
     }
     

@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -23,7 +25,7 @@ public class Filial implements Serializable {
 	private String empresa;
 	private String complementoEnd;
 	private String filial;
-	private String dataAtualizacao;
+	private Date dataAtualizacao;
 	private String categoriaPFPJ;
 	private String codigoPFPJ;
 	private String cnpj;
@@ -55,10 +57,10 @@ public class Filial implements Serializable {
 	private String codMunIBGE;
 	private String classFical;
 	private String situacaoPJ;
-	private String numeroCNO;
+	private BigDecimal numeroCNO;
 	private String dataCriacao;
 	private String indicativoPJ;
-	private String dataEncerramento;
+	private Date dataEncerramento;
 	private String openflex01; 
 	private String openflex02;
 
@@ -102,14 +104,14 @@ public class Filial implements Serializable {
 
 
 
-	public String getDataAtualizacao() {
+	public Date getDataAtualizacao() {
 		return dataAtualizacao;
 	}
 
 
 
 
-	public void setDataAtualizacao(String dataAtualizacao) {
+	public void setDataAtualizacao(Date dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
 	}
 
@@ -550,14 +552,14 @@ public class Filial implements Serializable {
 
 
 
-	public String getNumeroCNO() {
+	public BigDecimal getNumeroCNO() {
 		return numeroCNO;
 	}
 
 
 
 
-	public void setNumeroCNO(String numeroCNO) {
+	public void setNumeroCNO(BigDecimal numeroCNO) {
 		this.numeroCNO = numeroCNO;
 	}
 
@@ -592,14 +594,14 @@ public class Filial implements Serializable {
 
 
 
-	public String getDataEncerramento() {
+	public Date getDataEncerramento() {
 		return dataEncerramento;
 	}
 
 
 
 
-	public void setDataEncerramento(String dataEncerramento) {
+	public void setDataEncerramento(Date dataEncerramento) {
 		this.dataEncerramento = dataEncerramento;
 	}
 

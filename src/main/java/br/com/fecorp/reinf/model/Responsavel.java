@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -26,8 +27,8 @@ public class Responsavel implements Serializable {
 	private String numeroTelefone;
 	private String telefoneCelular;
 	private String email;
-	private String dataInicioVigencia;
-	private String dataNascimento;
+	private Date dataInicioVigencia;
+	private Date dataNascimento;
 	private String sexo;
 	private String rg;
 	private String empresa;
@@ -108,25 +109,25 @@ public class Responsavel implements Serializable {
 
 
 
-	public String getDataInicioVigencia() {
+	public Date getDataInicioVigencia() {
 		return dataInicioVigencia;
 	}
 
 
 
-	public void setDataInicioVigencia(String dataInicioVigencia) {
+	public void setDataInicioVigencia(Date dataInicioVigencia) {
 		this.dataInicioVigencia = dataInicioVigencia;
 	}
 
 
 
-	public String getDataNascimento() {
+	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
 
 
-	public void setDataNascimento(String dataNascimento) {
+	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 

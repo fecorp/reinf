@@ -3,8 +3,8 @@ package br.com.fecorp.reinf.model;
 
 
 import java.io.Serializable;
-
-
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -28,7 +28,7 @@ public class Empresa implements Serializable{
 	
 	private String empresa;
 	private String filial;
-	private String dataAtualizacao;
+	private Date dataAtualizacao;
 	private String categoriaPFPJ;
 	private String codigoPFPJ;
 	private String cnpj;
@@ -69,7 +69,7 @@ public class Empresa implements Serializable{
 	private String dataEncerramento;
 	private String openflex01;
 	private String openflex02;
-	private double numInscriCno;
+	private BigDecimal numInscriCno;
 	
 	
 	public String getEmpresa() {
@@ -84,10 +84,10 @@ public class Empresa implements Serializable{
 	public void setFilial(String filial) {
 		this.filial = filial;
 	}
-	public String getDataAtualizacao() {
+	public Date getDataAtualizacao() {
 		return dataAtualizacao;
 	}
-	public void setDataAtualizacao(String dataAtualizacao) {
+	public void setDataAtualizacao(Date dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
 	}
 	public String getCategoriaPFPJ() {
@@ -96,10 +96,10 @@ public class Empresa implements Serializable{
 	public void setCategoriaPFPJ(String categoriaPFPJ) {
 		this.categoriaPFPJ = categoriaPFPJ;
 	}
-	public double getNumInscriCno() {
+	public BigDecimal getNumInscriCno() {
 		return numInscriCno;
 	}
-	public void setNumInscriCno(double numInscriCno) {
+	public void setNumInscriCno(BigDecimal numInscriCno) {
 		this.numInscriCno = numInscriCno;
 	}
 	public String getCodigoPFPJ() {

@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -22,18 +23,17 @@ public class DadosTelaPesquisa implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 
-	private int NotaFiscal;
+	private double NotaFiscal;
 	private String Empresa;
 	private String Filial;
-	private double Valor;
-	private double DataEntrada;
-	private double DataInicio;
-	private double DataFim;
-	
-	public int getNotaFiscal() {
+	private BigDecimal Valor;
+	private BigDecimal DataEntrada;
+	private BigDecimal DataInicio;
+	private BigDecimal DataFim;
+	public double getNotaFiscal() {
 		return NotaFiscal;
 	}
-	public void setNotaFiscal(int notaFiscal) {
+	public void setNotaFiscal(double notaFiscal) {
 		NotaFiscal = notaFiscal;
 	}
 	public String getEmpresa() {
@@ -48,32 +48,34 @@ public class DadosTelaPesquisa implements Serializable{
 	public void setFilial(String filial) {
 		Filial = filial;
 	}
-	public double getValor() {
+	public BigDecimal getValor() {
 		return Valor;
 	}
-	public void setValor(double valor) {
+	public void setValor(BigDecimal valor) {
 		Valor = valor;
 	}
-	public double getDataInicio() {
-		return DataInicio;
-	}
-	public void setDataInicio(double dataInicio) {
-		DataInicio = dataInicio;
-	}
-	public double getDataFim() {
-		return DataFim;
-	}
-	public void setDataFim(double dataFim) {
-		DataFim = dataFim;
-	}
-	public double getDataEntrada() {
+	public BigDecimal getDataEntrada() {
 		return DataEntrada;
 	}
-	public void setDataEntrada(double dataEntrada) {
+	public void setDataEntrada(BigDecimal dataEntrada) {
 		DataEntrada = dataEntrada;
 	}
+	public BigDecimal getDataInicio() {
+		return DataInicio;
+	}
+	public void setDataInicio(BigDecimal dataInicio) {
+		DataInicio = dataInicio;
+	}
+	public BigDecimal getDataFim() {
+		return DataFim;
+	}
+	public void setDataFim(BigDecimal dataFim) {
+		DataFim = dataFim;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
 }
 
-/*
- * karin 26/10/2017
- */
