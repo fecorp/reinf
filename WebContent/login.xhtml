@@ -4,12 +4,18 @@
         xmlns:p="http://primefaces.org/ui">
    
   <h:head>
+  
+  <meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
    
   </h:head>
   
   <h:body style="background-color:#EFF2F6;border:0px; height: 600px">
   		<br></br>
   			<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+  			<div class="responsividade">
 				<p:fieldset style=" background: linear-gradient(to bottom right, #D2691E, #F5DEB3)">
 				
 				<br></br><br></br>
@@ -45,6 +51,7 @@
 			<br></br>
 			<img src="Imagens/LOGO.jpg"></img> 	
 			<br></br>
+			</div>
 		</p:layoutUnit> 
 		  
   </h:body>

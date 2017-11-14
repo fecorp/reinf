@@ -8,7 +8,10 @@
 
 <h:head>
 
-
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
 
 
 
@@ -16,7 +19,7 @@
 
 <h:body style="background-color:#D3D3D3;border:0px;">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
 
 
 	<h:form>
@@ -63,7 +66,7 @@
 	</h:form>
 
 
-	<img src="Imagens/IMAGEM.jpg" />
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 
 
 
@@ -75,6 +78,7 @@
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
 				<h:form>
+				<div class="menu">
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
 							style="font-size:12px;background-color:#D3D3D3 ">
@@ -173,6 +177,7 @@
 						</p:submenu>
 
 					</p:panelMenu>
+					</div>
 				</h:form>
 			</p:layoutUnit>
 		</h:form>
@@ -180,6 +185,7 @@
 
 		<p:layoutUnit position="center" style="height:150px">
 			<h:form>
+			<div class="responsividade">
 
 				<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 
@@ -440,6 +446,7 @@
 					icon="fa-backward">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
+				</div>
 			</h:form>
 		</p:layoutUnit>
 

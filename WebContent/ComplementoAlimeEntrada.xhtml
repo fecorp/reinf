@@ -11,6 +11,12 @@ p.ident {
 	padding-left: 10.0em
 }
 </style>
+
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
 
@@ -52,7 +58,8 @@ p.ident {
 		</p:menubar>
 	</h:form>
 
-	<img src="Imagens/IMAGEM.jpg" />
+	
+<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 	
 	
 <br/>
@@ -63,6 +70,8 @@ p.ident {
 		
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<div class="menu">
+				
 				<h:form>
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
@@ -163,11 +172,12 @@ p.ident {
 
 					</p:panelMenu>
 				</h:form>
+				</div>
 			</p:layoutUnit>
 
 	     <h:form> 
 		<p:layoutUnit style="background-color:#F2f2f2; height: 30px" position="center">
-		
+		<div class="responsividade">
 	
 	    <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -350,7 +360,7 @@ p.ident {
 				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-				
+		</div>		
 		</p:layoutUnit>
 	 	</h:form>
 	</p:layout>

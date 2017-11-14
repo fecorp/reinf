@@ -11,7 +11,10 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 
 <h:head>
-
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
 </h:head>
 
 <h:body style="background-color:#D3D3D3;border:0px;" >
@@ -60,12 +63,14 @@ xmlns="http://www.w3.org/1999/xhtml"
 	
 	<!-- Legenda superior -->
 	
-	<img src="Imagens/IMAGEM.jpg" />
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 	
 	<!-- Menu Lateral -->
 	<p:layout>
 		<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				
+<div class="menu">
 				<h:form>
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
@@ -166,11 +171,13 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 					</p:panelMenu>
 				</h:form>
+				</div>
 			</p:layoutUnit>
 		<!-- Campos do Sistema -->
 		<h:form>
 		<p:layoutUnit style="background-color:#F2f2f2; height: 30px"
 			fullPage="true" position="center">
+			<div class="responsividade">
 		
 		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
 			legend="Pesquisa ">
@@ -309,7 +316,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 	    	</div>   	
 	      
     	</h:form>	
-    	
+    	</div>
       </p:layoutUnit> 
    </h:form>
 </p:layout>

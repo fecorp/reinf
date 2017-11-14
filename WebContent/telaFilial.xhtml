@@ -7,7 +7,10 @@
 
 <h:head>
 
-
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
 
 
 </h:head>
@@ -54,7 +57,7 @@
 		</p:menubar>
 	</h:form>
 
-	<img src="Imagens/IMAGEM.jpg" />
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 
 
 	<p:layout>
@@ -63,6 +66,7 @@
         <h:form>
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<div class="menu">
 				<h:form>
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
@@ -163,9 +167,11 @@
 
 					</p:panelMenu>
 				</h:form>
+				</div>
 			</p:layoutUnit>
 
 		<p:layoutUnit position="center" style="height: 350px" fullPage="true">
+		<div class="responsividade">
 
        <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -514,7 +520,7 @@
 				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
 				<f:param name="productId" value="turubom?" />
 			</p:button>
-
+         </div>
 		</p:layoutUnit>
 		</h:form>
 	</p:layout>

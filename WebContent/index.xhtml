@@ -13,6 +13,10 @@ p.ident {
 }
 </style>
 
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
 
 </h:head>
 <h:body style="background-color:#EFF2F6;border:0px;">
@@ -52,7 +56,7 @@ p.ident {
 		</p:menubar>
 	</h:form>
    
-	<img src="Imagens/IMAGEM.jpg" />
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 
 	
 	<br />
@@ -62,6 +66,7 @@ p.ident {
 
         <h:form>
 		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
+		<div class="menu">
 			<h:form>
 				<p:panelMenu style="width:165px">
 					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
@@ -144,12 +149,14 @@ p.ident {
 
 				</p:panelMenu>
 			</h:form>
+			</div>
 		</p:layoutUnit>
 
         </h:form>
 		<br />
 		<p:layoutUnit style="backgroud-color:  #555; height:580px "
 			class="ui-layout-center" position="center" fullPage="true">
+			<div class="responsividade">
 			
 			 <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -162,7 +169,7 @@ p.ident {
 				
 		</p:fieldset>
 
-			
+			</div>
 		</p:layoutUnit>
 	</p:layout>
 

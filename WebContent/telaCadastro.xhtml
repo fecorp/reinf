@@ -12,7 +12,11 @@
 
 
 <h:head>
- 
+
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
 
 
 </h:head>
@@ -70,6 +74,8 @@
 	   <h:form>
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				
+				<div class="menu">
 				<h:form>
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
@@ -170,11 +176,12 @@
 
 					</p:panelMenu>
 				</h:form>
+				</div>
 			</p:layoutUnit>
 
 
 		<p:layoutUnit position="center" style="height: 350px " fullPage="true">
-        
+		<div class="responsividade">
         
    <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
@@ -792,11 +799,12 @@
 			</p:button>
 		
 		
-      
+        </div>
 		</p:layoutUnit>
         </h:form>
         
 	</p:layout>
 	</h:form>
+	
 </h:body>
 </html>
