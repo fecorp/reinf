@@ -716,17 +716,18 @@
             };
         </script>
         
-                &nbsp;
-				<h:outputText style="font-size: 10px" value="  Data de criação: " />
-				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="rockup" value="#{calendarView.date2}" />
+              &nbsp;
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de criação: * " />
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup2"
+					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 
                 &nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  Data de Encerramento: " />
-				<p:calendar style="font-size:13px" maxlength="10"
-					mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de encerramento: * " />
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup3"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 			</p:fieldset>
 			<br />
