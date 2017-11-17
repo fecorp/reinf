@@ -1,0 +1,23 @@
+/* Documento CSS */
+
+*{
+   margin: 0px;
+   padding: 0px;
+   outline: 0;
+}
+
+.responsividade{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: 400px;
+
+
+}
+.menu{
+	
+	position: relative;
+	width: 170px;
+	margin: 0 auto;
+	height: 153px;
+}
