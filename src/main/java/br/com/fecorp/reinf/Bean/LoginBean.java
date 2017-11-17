@@ -6,7 +6,7 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 
 import br.com.fecorp.reinf.DAO.UsuarioDAO;
-import br.com.fecorp.reinf.control.Usuario;
+import br.com.fecorp.reinf.model.Usuario;
 
 @ManagedBean(name = "LoginMB")
 @ViewScoped
@@ -36,4 +36,5 @@ public class LoginBean {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
 }
