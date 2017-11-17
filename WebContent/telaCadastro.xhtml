@@ -10,22 +10,25 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:fa="http://java.sun.com/jsf/facelets">
 
-	
-	
-	
-    
 
 <h:head>
 
-<f:facet name="null">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-</f:facet>
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 
 </h:head>
 
+
+
 <h:body style="background-color:#D3D3D3;border:0px;">
 
+
+
 <h:form>
+
 		<p:growl id="messages"/>
 
 		<p:menubar style="font-size:12px; color: #d15">
@@ -60,106 +63,127 @@
 					icon="ui-icon-extlink" />
 			</f:facet>
 		</p:menubar>
-	</h:form>
-
 	
 
 	
-   <img src="Imagens/IMAGEM.jpg" />
+
+	
+   <img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 	
 	<p:layout>
-	    <h:form> 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
-			<h:form>
-				<p:panelMenu style="width:165px">
-					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
-						<p:menuitem style="background-color:#F4F0F0" value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
-							icon="ui-icon-note" />
-						<p:menuitem style="background-color:#D3D3D3" value="Empresa" url="telaCadastro.xhtml"
-							icon="ui-icon-home" />
-						<p:menuitem style="background-color:#F4F0F0" value="Filial" url="telaFilial.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem style="background-color:#F4F0F0" value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml" icon="ui-icon-contact" />
-						<p:menuitem style="background-color:#F4F0F0" value="Responsável" url="telaResponsavel.xhtml"
-							icon="ui-icon-person" />
-						<p:menuitem style="background-color:#F4F0F0" value="Software" url="TelaSoftware.xhtml"
-							icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços" url="Servicos.xhtml"
-							icon="ui-icon-suitcase" />
-					</p:submenu>
+	   <h:form>
+			<p:layoutUnit position="west"
+				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				
+				<div class="menu">
+				<h:form>
+					<p:panelMenu style="width:165px">
+						<p:submenu label="Cadastros"
+							style="font-size:12px;background-color:#D3D3D3 ">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								icon="ui-icon-note" />
+							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
+								url="telaCadastro.xhtml" icon="ui-icon-home" />
+							<p:menuitem style="background-color:#F4F0F0" value="Filial"
+								url="telaFilial.xhtml" icon="ui-icon-disk" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cliente Fornecedor" url="telaClienteFornecedor.xhtml"
+								icon="ui-icon-contact" />
+							<p:menuitem style="background-color:#F4F0F0" value="Responsável"
+								url="telaResponsavel.xhtml" icon="ui-icon-person" />
+							<p:menuitem style="background-color:#F4F0F0" value="Software"
+								url="TelaSoftware.xhtml" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0" value="Serviços"
+								url="Servicos.xhtml" icon="ui-icon-suitcase" />
+						</p:submenu>
 
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
-							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
+						<p:submenu label="Movimentação - NF" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Entrada" url="ComplementoMestreEntrada.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Entrada" url="ComplementoAlimeEntrada.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Entrada" url="ComplementoTotalizadoresEntrada.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Saída" url="ImpostoSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Saída" url="ComplementoAlimeSaida.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Saída" url="ComplementoTotalizadoresSaida.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
 
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf" style="font-size:12px">
+						</p:submenu>
+						<p:separator />
+						<p:submenu label="Reinf" style="font-size:12px">
 
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-1070 Tabela de Processos Administrativos - Judiciais"
-							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="" url="http://www.primefaces.org" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
-							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2050 Comercialização Agroindústria"
-							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
-							url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
-							url="dirf.xhtml" icon="ui-icon-wrench" />
-
-
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-3010 Receitas de Espetáculos Desportivos"
-							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
-
-					</p:submenu>
-					<p:submenu 
-						label="Interface " style="font-size:12px;">
-						<p:menuitem style="background-color:#F4F0F0" value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-arrowthickstop-1-s" />
-
-					</p:submenu>
-
-					<p:submenu 
-						label="Lotes" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-shuffle" />
-					</p:submenu>
-
-				</p:panelMenu>
-			</h:form>
-		</p:layoutUnit>
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-1070 Tabela de Processos Administrativos - Judiciais"
+								url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0" value=""
+								url="http://www.primefaces.org" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2030 Recursos Recebidos Por Associação Desportiva"
+								url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+								url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2050 Comercialização Agroindústria"
+								url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+								url="cprb.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+								url="dirf.xhtml" icon="ui-icon-wrench" />
 
 
-		<p:layoutUnit position="center" style="height: 350px" fullPage="true">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-3010 Receitas de Espetáculos Desportivos"
+								url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+
+						</p:submenu>
+						<p:submenu label="Interface " style="font-size:12px;">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Importação de Arquivos" url="Interface.xhtml"
+								icon="ui-icon-arrowthickstop-1-s" />
+
+						</p:submenu>
+
+						<p:submenu label="Lotes" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Gerenciamento de Lotes" url="http://www.primefaces.org"
+								icon="ui-icon-shuffle" />
+						</p:submenu>
+
+					</p:panelMenu>
+				</h:form>
+				</div>
+			</p:layoutUnit>
 
 
+		<p:layoutUnit position="center" style="height: 350px " fullPage="true">
+		<div class="responsividade">
         
-<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+   <p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 				
 				<div>
 		<center>
@@ -172,17 +196,18 @@
 		
 		<br></br>
 
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+
+			<p:fieldset  style=" background-color:#F2F2F2; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2"
+				<p:inputText style="width: 5%; background-color: #FFFFFF"
 				   value="#{Empresa.empresa}"/>
 				
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{Empresa.filial}" />
+				<p:inputText style="width: 5%; background-color: #FFFFFF" value="#{Empresa.filial}" />
 
                 &nbsp; 
  				<h:outputText style="font-size: 10px"
@@ -194,7 +219,7 @@
                 &nbsp;
 				<p:outputLabel style="font-size: 10px"
 					value="    Data de atualização: * " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 				
@@ -203,7 +228,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{Empresa.categoriaPFPJ}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFF" value="#{Empresa.categoriaPFPJ}" />
 				<br />
 				<br />
 				
@@ -212,7 +237,7 @@
 				<p:inputText style="width: 17%" value="#{Empresa.nomeFantasia}" />	
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="#{Empresa.codigoPFPJ}" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{Empresa.codigoPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
@@ -246,7 +271,7 @@
 				</center>
 			</p:fieldset>
 			&nbsp;
-			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
+			<p:fieldset style="background-color:#F2F2F2; font-size: 10px "
 				legend="Endereço">
 				<h:outputText style="font-size: 10px" value="  Endereço: " />
 				<p:inputText style="width: 28%" value="#{Empresa.endereco}" />
@@ -288,7 +313,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
 				
-				<p:selectOneMenu style="font-size:10px" value="retificacao"
+				<h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
 					<f:selectItem itemLabel="013 - Afeganistão" itemValue="Afeganistão" />
@@ -533,7 +558,7 @@
                     <f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
                     <f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
                      <f:selectItem itemLabel="Outros" itemValue="Outros" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				<br></br>
 				<br></br>
 
@@ -577,14 +602,10 @@
 
 				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
 				&nsbp;
-				<p:selectOneMenu id="country" style="width:150px">
-					/>
-					<f:selectItem itemLabel="Selecione" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-				</p:selectOneMenu>
+				<h:selectOneMenu id="country" style="width:100px; height: 8%">
+					
+					<f:selectItem itemLabel="Selecione" itemValue="Selecione" />
+				</h:selectOneMenu>
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
 				<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
@@ -598,7 +619,7 @@
 				<h:outputText style="font-size: 10px"
 					value="  Classificação Fiscal: " />
 				
-				<p:selectOneMenu style="font-size:7px" value="cod03"
+				<h:selectOneMenu style="font-size:9px" value="cod03"
 					itemLabel="cod03">
 					<f:selectItem itemLabel="01 - Empresa Enquadrada Substituída" itemValue="01 - Empresa Enquadrada Substituída" />
 					<f:selectItem itemLabel="02 - Empresa Enquadrada Não Substituída" itemValue="02 - Empresa Enquadrada Não Substituída" />
@@ -620,18 +641,19 @@
 					<f:selectItem itemLabel="85 - Ente Federativo" itemValue="85 - Ente Federativo" />
 					<f:selectItem itemLabel="99 - Pessoas Juridicas em Geral" itemValue="99 - Pessoas Juridicas em Geral" />
 
-				</p:selectOneMenu>
+				</h:selectOneMenu>
+				<br></br>
+				<br></br>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
 				<p:inputText style="width: 8%" value="#{Empresa.nit}" />
-				<br></br>
-				<br></br>
+				
 
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
 				
-                <p:selectOneMenu style="font-size:10px" value="retificacao"
+                <h:selectOneMenu style="font-size:10px" value="retificacao"
 					itemLabel="indservico">
 					<f:selectItem itemLabel="Situação" itemValue="Situação" />
 					<f:selectItem itemLabel="Normal" itemValue="Normal" />
@@ -640,24 +662,25 @@
 					<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
 					<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-				</p:selectOneMenu>
+				</h:selectOneMenu>
 				
 
-				<br />
-				<br />
+				
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="  Número de Inscrição CNO: " />
 				
-				<p:selectOneMenu style="font-size:7px" value="cod02"
+				<h:selectOneMenu style="font-size:9px" value="cod02"
 					itemLabel="cod02">
 					<f:selectItem itemLabel="01 - Situação Normal" itemValue="01 - Situação Normal" />
 					<f:selectItem itemLabel="02 - Extinção" itemValue="02 - Extinção" />
 					<f:selectItem itemLabel="03 - Fusão" itemValue="03 - Fusão" />
 					<f:selectItem itemLabel="04 - Cisão" itemValue="04 - Cisão" />
 					<f:selectItem itemLabel="05 - Incorporação" itemValue="05 - Incorporação" />
-				</p:selectOneMenu>
+				</h:selectOneMenu>
+				<br></br>
+				<br></br>
 
                 &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />
@@ -693,17 +716,18 @@
             };
         </script>
         
-                &nbsp;
-				<h:outputText style="font-size: 10px" value="  Data de criação: " />
-				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="rockup" value="#{calendarView.date2}" />
+              &nbsp;
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de criação: * " />
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup2"
+					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 
                 &nbsp;
-				<h:outputText style="font-size: 10px"
-					value="  Data de Encerramento: " />
-				<p:calendar style="font-size:13px" maxlength="10"
-					mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
+				<p:outputLabel style="font-size: 10px"
+					value="    Data de encerramento: * " />
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
+					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup3"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
 			</p:fieldset>
 			<br />
@@ -776,9 +800,12 @@
 			</p:button>
 		
 		
-
+        </div>
 		</p:layoutUnit>
         </h:form>
+        
 	</p:layout>
+	</h:form>
+	
 </h:body>
 </html>

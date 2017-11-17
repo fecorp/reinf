@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -24,43 +26,25 @@ public class ComplementoTotalizadorEntrada implements Serializable{
 		private String codEmpresa;
 		private String codFilial;
 		private String serieNotaFiscal;
-		private double dataEmissao;
+		private Date dataEmissao;
 		private String categoriaPfPj;
 		private String codigoPfPj;
 		private String sequenciaItens;
-		private double valorTotalDoc;
-		private double valorServicos;
-		private double valorMaterialApply;
-		private double valorDesconto;
-		private double somaRetencoes;
-		private double somaAdicional;
-		private double valorRetencaoPrincipal;
-		private double valorRetencaoAdicional;
+		private BigDecimal valorTotalDoc;
+		private BigDecimal valorServicos;
+		private BigDecimal valorMaterialApply;
+		private BigDecimal valorDesconto;
+		private BigDecimal somaRetencoes;
+		private BigDecimal somaAdicional;
+		private BigDecimal valorRetencaoPrincipal;
+		private BigDecimal valorRetencaoAdicional;
 		private String openFlex01;
 		private String openFlex02;
 		private double numNotaFiscal;
 
-		public String getOpenFlex01() {
-			return openFlex01;
-		}
-		public void setOpenFlex01(String openFlex01) {
-			this.openFlex01 = openFlex01;
-		}
-		public String getOpenFlex02() {
-			return openFlex02;
-		}
-		public void setOpenFlex02(String openFlex02) {
-			this.openFlex02 = openFlex02;
-		}
-		public double getNumNotaFiscal() {
-			return numNotaFiscal;
-		}
-		public void setNumNotaFiscal(double numNotaFiscal) {
-			this.numNotaFiscal = numNotaFiscal;
-		}
-		public static long getSerialversionuid() {
-			return serialVersionUID;
-		}
+		
+		
+		
 		public String getCodEmpresa() {
 			return codEmpresa;
 		}
@@ -79,10 +63,10 @@ public class ComplementoTotalizadorEntrada implements Serializable{
 		public void setSerieNotaFiscal(String serieNotaFiscal) {
 			this.serieNotaFiscal = serieNotaFiscal;
 		}
-		public double getDataEmissao() {
+		public Date getDataEmissao() {
 			return dataEmissao;
 		}
-		public void setDataEmissao(double dataEmissao) {
+		public void setDataEmissao(Date dataEmissao) {
 			this.dataEmissao = dataEmissao;
 		}
 		public String getCategoriaPfPj() {
@@ -103,53 +87,74 @@ public class ComplementoTotalizadorEntrada implements Serializable{
 		public void setSequenciaItens(String sequenciaItens) {
 			this.sequenciaItens = sequenciaItens;
 		}
-		public double getValorTotalDoc() {
+		public BigDecimal getValorTotalDoc() {
 			return valorTotalDoc;
 		}
-		public void setValorTotalDoc(double valorTotalDoc) {
+		public void setValorTotalDoc(BigDecimal valorTotalDoc) {
 			this.valorTotalDoc = valorTotalDoc;
 		}
-		public double getValorServicos() {
+		public BigDecimal getValorServicos() {
 			return valorServicos;
 		}
-		public void setValorServicos(double valorServicos) {
+		public void setValorServicos(BigDecimal valorServicos) {
 			this.valorServicos = valorServicos;
 		}
-		public double getValorMaterialApply() {
+		public BigDecimal getValorMaterialApply() {
 			return valorMaterialApply;
 		}
-		public void setValorMaterialApply(double valorMaterialApply) {
+		public void setValorMaterialApply(BigDecimal valorMaterialApply) {
 			this.valorMaterialApply = valorMaterialApply;
 		}
-		public double getValorDesconto() {
+		public BigDecimal getValorDesconto() {
 			return valorDesconto;
 		}
-		public void setValorDesconto(double valorDesconto) {
+		public void setValorDesconto(BigDecimal valorDesconto) {
 			this.valorDesconto = valorDesconto;
 		}
-		public double getSomaRetencoes() {
+		public BigDecimal getSomaRetencoes() {
 			return somaRetencoes;
 		}
-		public void setSomaRetencoes(double somaRetencoes) {
+		public void setSomaRetencoes(BigDecimal somaRetencoes) {
 			this.somaRetencoes = somaRetencoes;
 		}
-		public double getSomaAdicional() {
+		public BigDecimal getSomaAdicional() {
 			return somaAdicional;
 		}
-		public void setSomaAdicional(double somaAdicional) {
+		public void setSomaAdicional(BigDecimal somaAdicional) {
 			this.somaAdicional = somaAdicional;
 		}
-		public double getValorRetencaoPrincipal() {
+		public BigDecimal getValorRetencaoPrincipal() {
 			return valorRetencaoPrincipal;
 		}
-		public void setValorRetencaoPrincipal(double valorRetencaoPrincipal) {
+		public void setValorRetencaoPrincipal(BigDecimal valorRetencaoPrincipal) {
 			this.valorRetencaoPrincipal = valorRetencaoPrincipal;
 		}
-		public double getValorRetencaoAdicional() {
+		public BigDecimal getValorRetencaoAdicional() {
 			return valorRetencaoAdicional;
 		}
-		public void setValorRetencaoAdicional(double valorRetencaoAdicional) {
+		public void setValorRetencaoAdicional(BigDecimal valorRetencaoAdicional) {
 			this.valorRetencaoAdicional = valorRetencaoAdicional;
+		}
+		public String getOpenFlex01() {
+			return openFlex01;
+		}
+		public void setOpenFlex01(String openFlex01) {
+			this.openFlex01 = openFlex01;
+		}
+		public String getOpenFlex02() {
+			return openFlex02;
+		}
+		public void setOpenFlex02(String openFlex02) {
+			this.openFlex02 = openFlex02;
+		}
+		public double getNumNotaFiscal() {
+			return numNotaFiscal;
+		}
+		public void setNumNotaFiscal(double numNotaFiscal) {
+			this.numNotaFiscal = numNotaFiscal;
+		}
+		public static long getSerialversionuid() {
+			return serialVersionUID;
 		}
 		public static long getSiderialversionu() {
 			return serialVersionUID;

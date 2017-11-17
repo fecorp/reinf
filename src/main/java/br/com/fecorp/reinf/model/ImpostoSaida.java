@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -22,26 +23,50 @@ public class ImpostoSaida implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 		
-		private double valorIrrf;
+		private BigDecimal valorIrrf;
 	    private String codEmpresa;
-		private double baseCalculoRetencaoInss;
-		private double aliquotaInss;
+		private BigDecimal baseCalculoRetencaoInss;
+		private BigDecimal aliquotaInss;
 		private String codFilial;
 		private String serieNotaFiscal;
 		private String catPfPj;
 		private String codPfPj;
 		private String sequenciaItens;
-		private double numNotaFiscal;
-		private double valorRetencaoInss;
-		private double valorBaseCalcIss;
-		private double aliquotaIss;
-		private double valorIss;
-		private double valorIssRetido;
+		private BigDecimal numNotaFiscal;
+		private BigDecimal valorRetencaoInss;
+		private BigDecimal valorBaseCalcIss;
+		private BigDecimal aliquotaIss;
+		private BigDecimal valorIss;
+		private BigDecimal valorIssRetido;
 		private String textoComplementar;
 		private String openFlex01;
 		private String openFlex02;
 		
-		
+
+		public BigDecimal getValorIrrf() {
+			return valorIrrf;
+		}
+		public void setValorIrrf(BigDecimal valorIrrf) {
+			this.valorIrrf = valorIrrf;
+		}
+		public String getCodEmpresa() {
+			return codEmpresa;
+		}
+		public void setCodEmpresa(String codEmpresa) {
+			this.codEmpresa = codEmpresa;
+		}
+		public BigDecimal getBaseCalculoRetencaoInss() {
+			return baseCalculoRetencaoInss;
+		}
+		public void setBaseCalculoRetencaoInss(BigDecimal baseCalculoRetencaoInss) {
+			this.baseCalculoRetencaoInss = baseCalculoRetencaoInss;
+		}
+		public BigDecimal getAliquotaInss() {
+			return aliquotaInss;
+		}
+		public void setAliquotaInss(BigDecimal aliquotaInss) {
+			this.aliquotaInss = aliquotaInss;
+		}
 		public String getCodFilial() {
 			return codFilial;
 		}
@@ -72,64 +97,40 @@ public class ImpostoSaida implements Serializable{
 		public void setSequenciaItens(String sequenciaItens) {
 			this.sequenciaItens = sequenciaItens;
 		}
-		public double getNumNotaFiscal() {
+		public BigDecimal getNumNotaFiscal() {
 			return numNotaFiscal;
 		}
-		public void setNumNotaFiscal(double numNotaFiscal) {
+		public void setNumNotaFiscal(BigDecimal numNotaFiscal) {
 			this.numNotaFiscal = numNotaFiscal;
 		}
-		public String getCodEmpresa() {
-			return codEmpresa;
-		}
-		public void setCodEmpresa(String codEmpresa) {
-			this.codEmpresa = codEmpresa;
-		}
-		public double getValorIrrf() {
-			return valorIrrf;
-		}
-		public void setValorIrrf(double valorIrrf) {
-			this.valorIrrf = valorIrrf;
-		}
-		public double getBaseCalculoRetencaoInss() {
-			return baseCalculoRetencaoInss;
-		}
-		public void setBaseCalculoRetencaoInss(double baseCalculoRetencaoInss) {
-			this.baseCalculoRetencaoInss = baseCalculoRetencaoInss;
-		}
-		public double getAliquotaInss() {
-			return aliquotaInss;
-		}
-		public void setAliquotaInss(double aliquotaInss) {
-			this.aliquotaInss = aliquotaInss;
-		}
-		public double getValorRetencaoInss() {
+		public BigDecimal getValorRetencaoInss() {
 			return valorRetencaoInss;
 		}
-		public void setValorRetencaoInss(double valorRetencaoInss) {
+		public void setValorRetencaoInss(BigDecimal valorRetencaoInss) {
 			this.valorRetencaoInss = valorRetencaoInss;
 		}
-		public double getValorBaseCalcIss() {
+		public BigDecimal getValorBaseCalcIss() {
 			return valorBaseCalcIss;
 		}
-		public void setValorBaseCalcIss(double valorBaseCalcIss) {
+		public void setValorBaseCalcIss(BigDecimal valorBaseCalcIss) {
 			this.valorBaseCalcIss = valorBaseCalcIss;
 		}
-		public double getAliquotaIss() {
+		public BigDecimal getAliquotaIss() {
 			return aliquotaIss;
 		}
-		public void setAliquotaIss(double aliquotaIss) {
+		public void setAliquotaIss(BigDecimal aliquotaIss) {
 			this.aliquotaIss = aliquotaIss;
 		}
-		public double getValorIss() {
+		public BigDecimal getValorIss() {
 			return valorIss;
 		}
-		public void setValorIss(double valorIss) {
+		public void setValorIss(BigDecimal valorIss) {
 			this.valorIss = valorIss;
 		}
-		public double getValorIssRetido() {
+		public BigDecimal getValorIssRetido() {
 			return valorIssRetido;
 		}
-		public void setValorIssRetido(double valorIssRetido) {
+		public void setValorIssRetido(BigDecimal valorIssRetido) {
 			this.valorIssRetido = valorIssRetido;
 		}
 		public String getTextoComplementar() {

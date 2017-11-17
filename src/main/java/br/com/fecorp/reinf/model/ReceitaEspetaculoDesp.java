@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -25,40 +26,42 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		private String codEmpresa;
 		private String codFilial;
 		private String numBoletim;
-		private double tipoCompeticao;
-		private double categoriaEvento;
+		private BigDecimal tipoCompeticao;
+		private BigDecimal categoriaEvento;
 		private String modalidadeEventoDesp;
 		private String entreOutras;
 		private String cnpjClubeMandante;
 		private String cnpjClubeVisitante;
 		private String nomeClubeVisitante;
 		private String pracaDespLocalEvento;
-		private double codMunicipio;
+		private BigDecimal codMunicipio;
 		private String siglaUniFederacao;
-		private double qtdEspecPagantesEvento;
-		private double qtdEspecNaoPagantesEvento;
-		private double tipoIngresso;
+		private BigDecimal qtdEspecPagantesEvento;
+		private BigDecimal qtdEspecNaoPagantesEvento;
+		private BigDecimal tipoIngresso;
 		private String descTipoIngresso;
-		private double numIngressosColocVenda;
-		private double numIngressosVendidos;
-		private double numIngressosDevolvidos;
-		private double precoIngresso;
-		private double valorTotalArrecadado;
-		private double tipoReceita;
-		private double valorReceitaAuferida;
+		private BigDecimal numIngressosColocVenda;
+		private BigDecimal numIngressosVendidos;
+		private BigDecimal numIngressosDevolvidos;
+		private BigDecimal precoIngresso;
+		private BigDecimal valorTotalArrecadado;
+		private BigDecimal tipoReceita;
+		private BigDecimal valorReceitaAuferida;
 		private String descReceita;
-		private double valorReceitaBruta;
-		private double valorContribPrev;
-		private double valorContribPrevExigiSusp;
-		private double tipoProcesso;
+		private BigDecimal valorReceitaBruta;
+		private BigDecimal valorContribPrev;
+		private BigDecimal valorContribPrevExigiSusp;
+		private BigDecimal tipoProcesso;
 		private String numProcAdm;
-		private double codIndiSusp;
-		private double valorTotalClubesParticipantes;
-		private double valorRetido;
+		private BigDecimal codIndiSusp;
+		private BigDecimal valorTotalClubesParticipantes;
+		private BigDecimal valorRetido;
 		private String codContaAnaliticaContabil;
 		private String openFlex01;
 		private String openFlex02;
 
+		
+		
 		
 		public String getCodEmpresa() {
 			return codEmpresa;
@@ -78,16 +81,16 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setNumBoletim(String numBoletim) {
 			this.numBoletim = numBoletim;
 		}
-		public double getTipoCompeticao() {
+		public BigDecimal getTipoCompeticao() {
 			return tipoCompeticao;
 		}
-		public void setTipoCompeticao(double tipoCompeticao) {
+		public void setTipoCompeticao(BigDecimal tipoCompeticao) {
 			this.tipoCompeticao = tipoCompeticao;
 		}
-		public double getCategoriaEvento() {
+		public BigDecimal getCategoriaEvento() {
 			return categoriaEvento;
 		}
-		public void setCategoriaEvento(double categoriaEvento) {
+		public void setCategoriaEvento(BigDecimal categoriaEvento) {
 			this.categoriaEvento = categoriaEvento;
 		}
 		public String getModalidadeEventoDesp() {
@@ -126,10 +129,10 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setPracaDespLocalEvento(String pracaDespLocalEvento) {
 			this.pracaDespLocalEvento = pracaDespLocalEvento;
 		}
-		public double getCodMunicipio() {
+		public BigDecimal getCodMunicipio() {
 			return codMunicipio;
 		}
-		public void setCodMunicipio(double codMunicipio) {
+		public void setCodMunicipio(BigDecimal codMunicipio) {
 			this.codMunicipio = codMunicipio;
 		}
 		public String getSiglaUniFederacao() {
@@ -138,22 +141,22 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setSiglaUniFederacao(String siglaUniFederacao) {
 			this.siglaUniFederacao = siglaUniFederacao;
 		}
-		public double getQtdEspecPagantesEvento() {
+		public BigDecimal getQtdEspecPagantesEvento() {
 			return qtdEspecPagantesEvento;
 		}
-		public void setQtdEspecPagantesEvento(double qtdEspecPagantesEvento) {
+		public void setQtdEspecPagantesEvento(BigDecimal qtdEspecPagantesEvento) {
 			this.qtdEspecPagantesEvento = qtdEspecPagantesEvento;
 		}
-		public double getQtdEspecNaoPagantesEvento() {
+		public BigDecimal getQtdEspecNaoPagantesEvento() {
 			return qtdEspecNaoPagantesEvento;
 		}
-		public void setQtdEspecNaoPagantesEvento(double qtdEspecNaoPagantesEvento) {
+		public void setQtdEspecNaoPagantesEvento(BigDecimal qtdEspecNaoPagantesEvento) {
 			this.qtdEspecNaoPagantesEvento = qtdEspecNaoPagantesEvento;
 		}
-		public double getTipoIngresso() {
+		public BigDecimal getTipoIngresso() {
 			return tipoIngresso;
 		}
-		public void setTipoIngresso(double tipoIngresso) {
+		public void setTipoIngresso(BigDecimal tipoIngresso) {
 			this.tipoIngresso = tipoIngresso;
 		}
 		public String getDescTipoIngresso() {
@@ -162,46 +165,46 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setDescTipoIngresso(String descTipoIngresso) {
 			this.descTipoIngresso = descTipoIngresso;
 		}
-		public double getNumIngressosColocVenda() {
+		public BigDecimal getNumIngressosColocVenda() {
 			return numIngressosColocVenda;
 		}
-		public void setNumIngressosColocVenda(double numIngressosColocVenda) {
+		public void setNumIngressosColocVenda(BigDecimal numIngressosColocVenda) {
 			this.numIngressosColocVenda = numIngressosColocVenda;
 		}
-		public double getNumIngressosVendidos() {
+		public BigDecimal getNumIngressosVendidos() {
 			return numIngressosVendidos;
 		}
-		public void setNumIngressosVendidos(double numIngressosVendidos) {
+		public void setNumIngressosVendidos(BigDecimal numIngressosVendidos) {
 			this.numIngressosVendidos = numIngressosVendidos;
 		}
-		public double getNumIngressosDevolvidos() {
+		public BigDecimal getNumIngressosDevolvidos() {
 			return numIngressosDevolvidos;
 		}
-		public void setNumIngressosDevolvidos(double numIngressosDevolvidos) {
+		public void setNumIngressosDevolvidos(BigDecimal numIngressosDevolvidos) {
 			this.numIngressosDevolvidos = numIngressosDevolvidos;
 		}
-		public double getPrecoIngresso() {
+		public BigDecimal getPrecoIngresso() {
 			return precoIngresso;
 		}
-		public void setPrecoIngresso(double precoIngresso) {
+		public void setPrecoIngresso(BigDecimal precoIngresso) {
 			this.precoIngresso = precoIngresso;
 		}
-		public double getValorTotalArrecadado() {
+		public BigDecimal getValorTotalArrecadado() {
 			return valorTotalArrecadado;
 		}
-		public void setValorTotalArrecadado(double valorTotalArrecadado) {
+		public void setValorTotalArrecadado(BigDecimal valorTotalArrecadado) {
 			this.valorTotalArrecadado = valorTotalArrecadado;
 		}
-		public double getTipoReceita() {
+		public BigDecimal getTipoReceita() {
 			return tipoReceita;
 		}
-		public void setTipoReceita(double tipoReceita) {
+		public void setTipoReceita(BigDecimal tipoReceita) {
 			this.tipoReceita = tipoReceita;
 		}
-		public double getValorReceitaAuferida() {
+		public BigDecimal getValorReceitaAuferida() {
 			return valorReceitaAuferida;
 		}
-		public void setValorReceitaAuferida(double valorReceitaAuferida) {
+		public void setValorReceitaAuferida(BigDecimal valorReceitaAuferida) {
 			this.valorReceitaAuferida = valorReceitaAuferida;
 		}
 		public String getDescReceita() {
@@ -210,28 +213,28 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setDescReceita(String descReceita) {
 			this.descReceita = descReceita;
 		}
-		public double getValorReceitaBruta() {
+		public BigDecimal getValorReceitaBruta() {
 			return valorReceitaBruta;
 		}
-		public void setValorReceitaBruta(double valorReceitaBruta) {
+		public void setValorReceitaBruta(BigDecimal valorReceitaBruta) {
 			this.valorReceitaBruta = valorReceitaBruta;
 		}
-		public double getValorContribPrev() {
+		public BigDecimal getValorContribPrev() {
 			return valorContribPrev;
 		}
-		public void setValorContribPrev(double valorContribPrev) {
+		public void setValorContribPrev(BigDecimal valorContribPrev) {
 			this.valorContribPrev = valorContribPrev;
 		}
-		public double getValorContribPrevExigiSusp() {
+		public BigDecimal getValorContribPrevExigiSusp() {
 			return valorContribPrevExigiSusp;
 		}
-		public void setValorContribPrevExigiSusp(double valorContribPrevExigiSusp) {
+		public void setValorContribPrevExigiSusp(BigDecimal valorContribPrevExigiSusp) {
 			this.valorContribPrevExigiSusp = valorContribPrevExigiSusp;
 		}
-		public double getTipoProcesso() {
+		public BigDecimal getTipoProcesso() {
 			return tipoProcesso;
 		}
-		public void setTipoProcesso(double tipoProcesso) {
+		public void setTipoProcesso(BigDecimal tipoProcesso) {
 			this.tipoProcesso = tipoProcesso;
 		}
 		public String getNumProcAdm() {
@@ -240,22 +243,22 @@ public class ReceitaEspetaculoDesp implements Serializable {
 		public void setNumProcAdm(String numProcAdm) {
 			this.numProcAdm = numProcAdm;
 		}
-		public double getCodIndiSusp() {
+		public BigDecimal getCodIndiSusp() {
 			return codIndiSusp;
 		}
-		public void setCodIndiSusp(double codIndiSusp) {
+		public void setCodIndiSusp(BigDecimal codIndiSusp) {
 			this.codIndiSusp = codIndiSusp;
 		}
-		public double getValorTotalClubesParticipantes() {
+		public BigDecimal getValorTotalClubesParticipantes() {
 			return valorTotalClubesParticipantes;
 		}
-		public void setValorTotalClubesParticipantes(double valorTotalClubesParticipantes) {
+		public void setValorTotalClubesParticipantes(BigDecimal valorTotalClubesParticipantes) {
 			this.valorTotalClubesParticipantes = valorTotalClubesParticipantes;
 		}
-		public double getValorRetido() {
+		public BigDecimal getValorRetido() {
 			return valorRetido;
 		}
-		public void setValorRetido(double valorRetido) {
+		public void setValorRetido(BigDecimal valorRetido) {
 			this.valorRetido = valorRetido;
 		}
 		public String getCodContaAnaliticaContabil() {

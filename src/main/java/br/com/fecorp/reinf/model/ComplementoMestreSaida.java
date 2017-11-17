@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -27,11 +28,11 @@ public class ComplementoMestreSaida implements Serializable {
         private String tipoProcesso;
         private String numProcessoAdm;
         private String indicativoSusp;
-        private double valorRetencaoPrincipal;
+        private BigDecimal valorRetencaoPrincipal;
         private String tipoProcesso01;
         private String numProcessoAdm02;
         private String indicativoSusp02;
-        private double valorRetencaoAdicional;
+        private BigDecimal valorRetencaoAdicional;
         
         
 		public String getCodEmpresa() {
@@ -94,13 +95,13 @@ public class ComplementoMestreSaida implements Serializable {
 
 
 
-		public double getValorRetencaoPrincipal() {
+		public BigDecimal getValorRetencaoPrincipal() {
 			return valorRetencaoPrincipal;
 		}
 
 
 
-		public void setValorRetencaoPrincipal(double valorRetencaoPrincipal) {
+		public void setValorRetencaoPrincipal(BigDecimal valorRetencaoPrincipal) {
 			this.valorRetencaoPrincipal = valorRetencaoPrincipal;
 		}
 
@@ -142,13 +143,13 @@ public class ComplementoMestreSaida implements Serializable {
 
 
 
-		public double getValorRetencaoAdicional() {
+		public BigDecimal getValorRetencaoAdicional() {
 			return valorRetencaoAdicional;
 		}
 
 
 
-		public void setValorRetencaoAdicional(double valorRetencaoAdicional) {
+		public void setValorRetencaoAdicional(BigDecimal valorRetencaoAdicional) {
 			this.valorRetencaoAdicional = valorRetencaoAdicional;
 		}
 

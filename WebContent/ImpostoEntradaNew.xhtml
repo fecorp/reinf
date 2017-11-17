@@ -26,6 +26,12 @@ padding-left
 .0em
 </style>
 
+
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 </h:head>
 <h:body style="background-color:#D3D3D3;border:0px;">
 
@@ -67,13 +73,14 @@ padding-left
 		</p:menubar>
 	</h:form>
 
-	<img src="Imagens/IMAGEM.jpg" />
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
 
 
 	<p:layout>
 		<h:form>
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<div class="menu">
 				<h:form>
 					<p:panelMenu style="width:165px">
 						<p:submenu label="Cadastros"
@@ -107,15 +114,26 @@ padding-left
 								value="Complemento Entrada" url="ComplementoMestreEntrada.xhtml"
 								ajax="false" icon="ui-icon-lightbulb" />
 							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Entrada" url="ComplementoAlimeEntrada.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Entrada" url="ComplementoTotalizadoresEntrada.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
+							<p:menuitem style="background-color: #F4F0F0"
 								value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
 								icon="ui-icon-gear" />
-							<p:menuitem style="background-color:#D3D3D3"
+							<p:menuitem style="background-color:#F4F0F0"
 								value="Impostos Saída" url="ImpostoSaidaNew.xhtml" ajax="false"
 								icon="ui-icon-script" />
-
 							<p:menuitem style="background-color:#F4F0F0"
 								value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
 								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Saída" url="ComplementoAlimeSaida.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Saída" url="ComplementoTotalizadoresSaida.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
 
 						</p:submenu>
 						<p:separator />
@@ -163,12 +181,14 @@ padding-left
 
 					</p:panelMenu>
 				</h:form>
+				</div>
 			</p:layoutUnit>
 
 
 
 			<p:layoutUnit style="background-color:#F2f2f2; height:320px"
 				fullPage="true" position="center">
+				<div class="responsividade">
 
 				<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
 
@@ -195,32 +215,32 @@ padding-left
 					<h:outputText style="font-size: 10px"
 						value=" Código da empresa: *     " />
 					<p:inputText id="codEmpresa"
-						style="width: 8%; background-color: #F2F2F2"
+						style="width: 8%; background-color: #FFFFFF"
 						value="#{ImpostoEntrada.codEmpresa}" />
 				&nbsp;
 
 
 				<h:outputText style="font-size: 10px"
 						value="      Código da Filial:  * " />
-					<p:inputText style="width: 8%; background-color: #F2F2F2"
+					<p:inputText style="width: 8%; background-color: #FFFFFF"
 						value="#{ImpostoEntrada.codFilial}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="   Número da NF:      " />
-					<p:inputText style="width: 10%; background-color: #F2F2F2 "
+					<p:inputText style="width: 10%; background-color: #FFFFFF "
 						value="#{ImpostoEntrada.numNotaFiscal}" />
 				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 						value=" 	Série da Nota Fiscal: " />
-					<p:inputText style="width: 4%; background-color: #F2F2F2"
+					<p:inputText style="width: 4%; background-color: #FFFFFF"
 						value="#{ImpostoEntrada.serieNotaFiscal}" />
 				&nbsp;
 			
 
 				<h:outputText style="font-size: 10px"
 						value="     Data de Emissão :  * " />
-					<p:calendar style="font-size:10px; background-color: #F2F2F2"
+					<p:calendar style="font-size:10px; background-color: #FFFFFF"
 						maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
 						id="popup" value="#{calendarView.date2}" locale="pt"
 						pattern="dd/MM/yyyy" />
@@ -260,7 +280,7 @@ padding-left
 					<br />
 					<br />
 					<h:outputText style="font-size: 10px" value=" Cod. PF/PJ: * " />
-					<p:inputText style="width: 12%; background-color: #F2F2F2"
+					<p:inputText style="width: 12%; background-color: #FFFFFF"
 						value="#{ImpostoEntrada.codigoPfPj}" />
 				&nbsp;
 
@@ -272,7 +292,7 @@ padding-left
 				
 				<h:outputText style="font-size: 10px"
 						value="               Categoria PF/PJ: * " />
-					<p:inputText style="width: 2%; background-color: #F2F2F2"
+					<p:inputText style="width: 2%; background-color: #FFFFFF"
 						value="#{ImpostoEntrada.categoriaPfPj}" />
 
 
@@ -436,6 +456,13 @@ padding-left
 						<p:inputTextarea rows="6" cols="80"
 							value="#{ImpostoEntrada.textoComplementar}" />
 					</h:form>
+					<br></br>
+					
+				<p:button outcome="MestreEntradaNew.xhtml" value="Mestre Entrada"
+							icon="ui-icon-lightbulb">
+							<f:param name="productId" value="10" />
+						</p:button>
+						&nbsp;	
 
 
 
@@ -521,7 +548,7 @@ padding-left
 				</p:button>
 				<br></br>
 				<br></br>
-
+              </div>
 			</p:layoutUnit>
 		</h:form>
 	</p:layout>

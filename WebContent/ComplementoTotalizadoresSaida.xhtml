@@ -11,178 +11,220 @@ p.ident {
 	padding-left: 10.0em
 }
 </style>
+<meta name="viewport" content="width:device-width"/>
+<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
+<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 </h:head>
-<h:body style="background-color:#EFF2F6;border:0px;">
+<h:body style="background-color:#D3D3D3;border:0px;">
 
-	<div>
-		<center>
-			<h5
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Complementos
-				Totalizadores Saída</h5>
-		</center>
-	</div>
-
-	<h:form>
-		<p:growl id="messages" />
+     <h:form>
+		<p:growl id="messages"/>
 
 		<p:menubar style="font-size:12px; color: #d15">
-			<p:submenu label="Parametrização" icon="ui-icon-document">
-				<p:submenu label="New" icon="ui-icon-contact">
-					<p:menuitem value="Project" url="#" />
-					<p:menuitem value="Other" url="#" />
-				</p:submenu>
-				<p:menuitem value="Open" url="#" />
-				<p:separator />
-				<p:menuitem value="Quit" url="#" />
+			<p:submenu label="Parametrização" icon="ui-icon-contact">
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
 			</p:submenu>
 
+
 			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
+
 			</p:submenu>
 
 			<p:submenu label="Relatórios" icon="ui-icon-help">
-				<p:menuitem value="Contents" url="#" />
-				<p:submenu label="Search" icon="ui-icon-search">
-					<p:submenu label="Text">
-						<p:menuitem value="Workspace" url="#" />
-					</p:submenu>
-					<p:menuitem value="File" url="#" />
-				</p:submenu>
+				<p:menuitem value="Tela de Relatórios" url="#"
+					icon="ui-icon-folder-open" />
 			</p:submenu>
 
-			<p:submenu label="Reinf" icon="ui-icon-gear">
-				<p:submenu label="Ajax" icon="ui-icon-refresh">
-					<p:menuitem value="Save" actionListener="#{menuView.save}"
-						icon="ui-icon-disk" update="messages" />
-					<p:menuitem value="Update" actionListener="#{menuView.update}"
-						icon="ui-icon-arrowrefresh-1-w" update="messages" />
-				</p:submenu>
-				<p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
-						icon="ui-icon-close" update="messages" ajax="false" />
-				</p:submenu>
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
 			</p:submenu>
 
 			<p:menuitem value="Lotes" url="http://www.primefaces.org"
-				icon="ui-icon-close" />
+				icon="" />
 
 			<f:facet name="options">
-				<p:inputText style="margin-right:10px" placeholder="Search" />
-				<p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
+				<p:commandButton type="button" value="Sair do Sistema"
+					icon="ui-icon-extlink" />
 			</f:facet>
 		</p:menubar>
 	</h:form>
-	<br />
+
+	<img src="Imagens/IMAGEM.jpg"  style="width:100%"/>
+	
+	
+<br/>
 
 
 	<p:layout>
-
-		<p:layoutUnit position="west" style="background-color:#F2f2f2">
-			<h:form>
-				<p:panelMenu style="width:165px ; background-color:#E0EEF6">
-					<p:submenu label="Cadastros" style="font-size:12px">
-						<p:menuitem value="Empresa" url="telaCadastro.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem value="Filial" url="telaFilial.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml" icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Responsável" url="telaResponsavel.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Software" url="TelaSoftware.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-						<p:menuitem value="Serviços" url="telaServico.xhtml"
-							icon="ui-icon-arrowrefresh-1-w" />
-					</p:submenu>
-
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Serviços Saída" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-close" />
-						<p:menuitem value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-close" />
-						
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf" style="font-size:12px">
-
-						<p:menuitem
-							value="R-1070 Tabela de Processos Administrativos - Judiciais"
-							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
-
-						<p:menuitem value="" url="http://www.primefaces.org" />
-						<p:menuitem
-							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
-						<p:menuitem
-							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
-							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem value="R-2050 Comercialização Agroindústria"
-							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem
-							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
-							url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
-							url="dirf.xhtml" icon="ui-icon-wrench" />
+		
 
 
-						<p:menuitem value="R-3010 Receitas de Espetáculos Desportivos"
-							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
-					</p:submenu>
+	
+			<p:layoutUnit position="west"
+				style="background-color:#F2f2f2; height:450px" fullPage="true">
+				<div class="menu">
+				<h:form>
+					<p:panelMenu style="width:165px">
+						<p:submenu label="Cadastros"
+							style="font-size:12px;background-color:#D3D3D3 ">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								icon="ui-icon-note" />
+							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
+								url="telaCadastro.xhtml" icon="ui-icon-home" />
+							<p:menuitem style="background-color:#F4F0F0" value="Filial"
+								url="telaFilial.xhtml" icon="ui-icon-disk" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Cliente Fornecedor" url="telaClienteFornecedor.xhtml"
+								icon="ui-icon-contact" />
+							<p:menuitem style="background-color:#F4F0F0" value="Responsável"
+								url="telaResponsavel.xhtml" icon="ui-icon-person" />
+							<p:menuitem style="background-color:#F4F0F0" value="Software"
+								url="TelaSoftware.xhtml" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0" value="Serviços"
+								url="Servicos.xhtml" icon="ui-icon-suitcase" />
+						</p:submenu>
 
-					<p:submenu label="Interface " style="font-size:12px">
-						<p:menuitem value="Importação de Arquivos" url="Interface.xhtml"
-							icon="ui-icon-home" />
+						<p:submenu label="Movimentação - NF" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+								ajax="false" icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Entrada" url="ComplementoMestreEntrada.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Entrada" url="ComplementoAlimeEntrada.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Entrada" url="ComplementoTotalizadoresEntrada.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
+							<p:menuitem style="background-color: #F4F0F0"
+								value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-gear" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Impostos Saída" url="ImpostoSaidaNew.xhtml" ajax="false"
+								icon="ui-icon-script" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
+								ajax="false" icon="ui-icon-lightbulb" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Alimenticio Saída" url="ComplementoAlimeSaida.xhtml"
+								ajax="false" icon="ui-icon-battery-3" />	
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Complemento Totalizador Saída" url="ComplementoTotalizadoresSaida.xhtml"
+								ajax="false" icon="ui-icon-arrowreturn-1-n" />	
 
-					</p:submenu>
+						</p:submenu>
+						<p:separator />
+						<p:submenu label="Reinf" style="font-size:12px">
 
-					<p:submenu label="Lotes" style="font-size:12px">
-						<p:menuitem value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-home" />
-					</p:submenu>
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-1070 Tabela de Processos Administrativos - Judiciais"
+								url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0" value=""
+								url="http://www.primefaces.org" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2030 Recursos Recebidos Por Associação Desportiva"
+								url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+								url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2050 Comercialização Agroindústria"
+								url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+								url="cprb.xhtml" icon="ui-icon-wrench" />
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+								url="dirf.xhtml" icon="ui-icon-wrench" />
 
-				</p:panelMenu>
-			</h:form>
-		</p:layoutUnit>
 
+							<p:menuitem style="background-color:#F4F0F0"
+								value="R-3010 Receitas de Espetáculos Desportivos"
+								url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
 
-		<p:layoutUnit style="background-color:#F2f2f2" position="center">
+						</p:submenu>
+						<p:submenu label="Interface " style="font-size:12px;">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Importação de Arquivos" url="Interface.xhtml"
+								icon="ui-icon-arrowthickstop-1-s" />
 
+						</p:submenu>
 
+						<p:submenu label="Lotes" style="font-size:12px">
+							<p:menuitem style="background-color:#F4F0F0"
+								value="Gerenciamento de Lotes" url="http://www.primefaces.org"
+								icon="ui-icon-shuffle" />
+						</p:submenu>
+
+					</p:panelMenu>
+				</h:form>
+				</div>
+			</p:layoutUnit>
+
+        <h:form>
+		<p:layoutUnit style="background-color:#F2f2f2; height: 40px" position="center">
+		<div class="responsividade">
+		
+		<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+				
+				<div>
+		<center>
+			<h3
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Complementos Totalizadores Saída</h3>
+		</center>
+	</div>
+				
+		</p:fieldset>
+		<br></br>
+	
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px"
 				legend="Dados cadastrais ">
 
 				<h:outputText style="font-size: 10px" value=" Cód. Empresa: *     " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.codEmpresa}" />
+				<p:inputText style="width: 7%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.codEmpresa}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px" value="      Cód. Filial:  * " />
-				<p:inputText style="width: 7%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.codFilial}" />
+				<p:inputText style="width: 7%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.codFilial}" />
+				&nbsp;
 
 
 				<h:outputText style="font-size: 10px"
 					value="      Série da Nota Fiscal:  * " />
-				<p:inputText style="width: 4%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.serieNotaFiscal}" />
+				<p:inputText style="width: 4%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.serieNotaFiscal}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Número da Nota Fiscal:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.numNotaFiscal}" />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.numNotaFiscal}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="     Data de Emissão :  * " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
+				<p:calendar style="font-size:10px; background-color: #FFFFFF"
 					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
 					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+					&nbsp;
 
 				<h:outputText style="font-size: 10px" value="      PF/PJ:  * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.categoriaPfPj}" />
+				<p:inputText style="width: 2%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.categoriaPfPj}" />
 				<br />
 				<br />
 				<h:outputText style="font-size: 10px" value="      Cód. PF/PJ:  * " />
-				<p:inputText style="width: 12%; background-color: #F2F2F2" value="#{ComplementoTotalizadorSaida.codigoPfPj}" />
+				<p:inputText style="width: 12%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.codigoPfPj}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Sequência de Itens:   " />
@@ -205,28 +247,32 @@ p.ident {
 				<h:outputText style="font-size: 10px"
 					value="      Valor do Serviço:   " />
 				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorServicos}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="     Valor do Material Aplicado :   " />
 				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorMaterialApply}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor  do desconto :   " />
-				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorDesconto}" />
+				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadoSaida.valorDesconto}" />
+				&nbsp;
+			
 
 				<h:outputText style="font-size: 10px"
 					value="      Valor da Retenção Principal :  * " />
 				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorRetencaoPrincipal}" />
-				<br />
+	<br />
 				<br />
 				<h:outputText style="font-size: 10px"
 					value="     Valor da Retenção Adicional :  * " />
 				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.valorRetencaoAdicional}" />
-
+				&nbsp;
 				<h:outputText style="font-size: 10px"
 					value="      Soma das Retenções :  * " />
-
 				<p:inputText style="width: 8%; background-color: #FFFFFF" value="#{ComplementoTotalizadorSaida.somaRetencoes}" />
+				&nbsp;
 
 				<h:outputText style="font-size: 10px"
 					value="      Soma adicional :  * " />
@@ -236,53 +282,77 @@ p.ident {
 
 			<br />
 			<p:fieldset style="background-color:#F4F0F0; font-size: 10px "
-				legend="Openflex">
+				legend="Open Flex">
 				<center>
-					<h:outputText style="font-size: 10px" value="  Openflex 01: " />
+					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
 					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorSaida.openFlex01}" />
-						&nsbp;
-					<h:outputText style="font-size: 10px" value="  Openflex 02: " />
+					&nbsp;
+
+					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
 					<p:inputText style="width: 15%" value="#{ComplementoTotalizadorSaida.openFlex02}" />
 
 				</center>
 			</p:fieldset>
 			<br />
-			<center>
+				
+				<p:fieldset style="background-color: #F2F2F2">
+				<center>
 
+                    <p:button style="background-color:#E0EEF6; font-size:10px"
+						 value="Salvar" icon="ui-icon-folder-open">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+					
 
-				<p:commandButton style="background-color:#E0EEF6; font-size:10px"
-					value="Incluir" icon="fa-backward" type="button">
-				</p:commandButton>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
-				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Excluir" icon="fa-backward">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
 
-				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Editar " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+					
 
-				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Salvar" icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+					
 
-				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Exportar" icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+						outcome="TelaPesquisaImpostoEntradaSaida.xhtm" value="  Pesquisar " url="#{acoesBotao.DadosTelaPesquisa}" icon="ui-icon-search">
+						<f:param name="productId" value="turubom?" />
+					</p:button>
+					
+					
 
-				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="  Pesquisar " icon="ui-icon-star">
-					<f:param name="productId" value="turubom?" />
-				</p:button>
+					<br /> <br />
 
-				<br />
-
-			</center>
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-first" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-prev" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-next" />
+					<p:commandButton type="button" style="width:25px; height:25px"
+						icon="ui-icon-seek-end" />
+                    &nbsp;
+                    
+					
+                 
+				</center>
+			</p:fieldset>
+			<p:button style="background-color:#E0EEF6; font-size:10px"
+				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+				
+		</div>		
 		</p:layoutUnit>
+		</h:form>
 	</p:layout>
 
 </h:body>

@@ -2,6 +2,9 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.Entity;
@@ -26,27 +29,27 @@ public class MestreEntrada implements Serializable {
 		private String codFilial;
 		private String serieNotaFiscal;
 		private String numNotaFiscal;
-		private double dataEmissao;
+		private Date dataEmissao;
 		private String catPfPj;
 		private String codPfPj;
 		private String qtdItens;
-		private double dataEntrada;
-		private double dataExecucao;
+		private Date dataEntrada;
+		private Date dataExecucao;
 		private String tipoDocumento;
 		private String codServico;
 		private String descServico;
-		private double valorServico;
-		private double valorMaterialApply;
-		private double valorDesconto;
-		private double valorTotalDocumento;
-		private double valorTotalIss;
-		private double valorTotalIrrf;
-		private double valorTotalPcc;
-		private double valorTotalInss;
+		private BigDecimal valorServico;
+		private BigDecimal valorMaterialApply;
+		private BigDecimal valorDesconto;
+		private BigDecimal valorTotalDocumento;
+		private BigDecimal valorTotalIss;
+		private BigDecimal valorTotalIrrf;
+		private BigDecimal valorTotalPcc;
+		private BigDecimal valorTotalInss;
 		private String numContratoServicos;
 		private String codFiscalServicos;
 		private String codFiscalDeServicos;
-		private double valorSubempreitada;
+		private BigDecimal valorSubempreitada;
 		private String tipoLocalidade;
 		private String localidade;
 		private String tipoDocMunicipio;
@@ -57,6 +60,9 @@ public class MestreEntrada implements Serializable {
 		private String tipoServicoReinf;
 		private String openFlex01;
 		private String openFlex02;
+		
+		
+		
 		
 		public String getCodEmpresa() {
 			return codEmpresa;
@@ -82,10 +88,10 @@ public class MestreEntrada implements Serializable {
 		public void setNumNotaFiscal(String numNotaFiscal) {
 			this.numNotaFiscal = numNotaFiscal;
 		}
-		public double getDataEmissao() {
+		public Date getDataEmissao() {
 			return dataEmissao;
 		}
-		public void setDataEmissao(double dataEmissao) {
+		public void setDataEmissao(Date dataEmissao) {
 			this.dataEmissao = dataEmissao;
 		}
 		public String getCatPfPj() {
@@ -106,16 +112,16 @@ public class MestreEntrada implements Serializable {
 		public void setQtdItens(String qtdItens) {
 			this.qtdItens = qtdItens;
 		}
-		public double getDataEntrada() {
+		public Date getDataEntrada() {
 			return dataEntrada;
 		}
-		public void setDataEntrada(double dataEntrada) {
+		public void setDataEntrada(Date dataEntrada) {
 			this.dataEntrada = dataEntrada;
 		}
-		public double getDataExecucao() {
+		public Date getDataExecucao() {
 			return dataExecucao;
 		}
-		public void setDataExecucao(double dataExecucao) {
+		public void setDataExecucao(Date dataExecucao) {
 			this.dataExecucao = dataExecucao;
 		}
 		public String getTipoDocumento() {
@@ -136,52 +142,52 @@ public class MestreEntrada implements Serializable {
 		public void setDescServico(String descServico) {
 			this.descServico = descServico;
 		}
-		public double getValorServico() {
+		public BigDecimal getValorServico() {
 			return valorServico;
 		}
-		public void setValorServico(double valorServico) {
+		public void setValorServico(BigDecimal valorServico) {
 			this.valorServico = valorServico;
 		}
-		public double getValorMaterialApply() {
+		public BigDecimal getValorMaterialApply() {
 			return valorMaterialApply;
 		}
-		public void setValorMaterialApply(double valorMaterialApply) {
+		public void setValorMaterialApply(BigDecimal valorMaterialApply) {
 			this.valorMaterialApply = valorMaterialApply;
 		}
-		public double getValorDesconto() {
+		public BigDecimal getValorDesconto() {
 			return valorDesconto;
 		}
-		public void setValorDesconto(double valorDesconto) {
+		public void setValorDesconto(BigDecimal valorDesconto) {
 			this.valorDesconto = valorDesconto;
 		}
-		public double getValorTotalDocumento() {
+		public BigDecimal getValorTotalDocumento() {
 			return valorTotalDocumento;
 		}
-		public void setValorTotalDocumento(double valorTotalDocumento) {
+		public void setValorTotalDocumento(BigDecimal valorTotalDocumento) {
 			this.valorTotalDocumento = valorTotalDocumento;
 		}
-		public double getValorTotalIss() {
+		public BigDecimal getValorTotalIss() {
 			return valorTotalIss;
 		}
-		public void setValorTotalIss(double valorTotalIss) {
+		public void setValorTotalIss(BigDecimal valorTotalIss) {
 			this.valorTotalIss = valorTotalIss;
 		}
-		public double getValorTotalIrrf() {
+		public BigDecimal getValorTotalIrrf() {
 			return valorTotalIrrf;
 		}
-		public void setValorTotalIrrf(double valorTotalIrrf) {
+		public void setValorTotalIrrf(BigDecimal valorTotalIrrf) {
 			this.valorTotalIrrf = valorTotalIrrf;
 		}
-		public double getValorTotalPcc() {
+		public BigDecimal getValorTotalPcc() {
 			return valorTotalPcc;
 		}
-		public void setValorTotalPcc(double valorTotalPcc) {
+		public void setValorTotalPcc(BigDecimal valorTotalPcc) {
 			this.valorTotalPcc = valorTotalPcc;
 		}
-		public double getValorTotalInss() {
+		public BigDecimal getValorTotalInss() {
 			return valorTotalInss;
 		}
-		public void setValorTotalInss(double valorTotalInss) {
+		public void setValorTotalInss(BigDecimal valorTotalInss) {
 			this.valorTotalInss = valorTotalInss;
 		}
 		public String getNumContratoServicos() {
@@ -202,10 +208,10 @@ public class MestreEntrada implements Serializable {
 		public void setCodFiscalDeServicos(String codFiscalDeServicos) {
 			this.codFiscalDeServicos = codFiscalDeServicos;
 		}
-		public double getValorSubempreitada() {
+		public BigDecimal getValorSubempreitada() {
 			return valorSubempreitada;
 		}
-		public void setValorSubempreitada(double valorSubempreitada) {
+		public void setValorSubempreitada(BigDecimal valorSubempreitada) {
 			this.valorSubempreitada = valorSubempreitada;
 		}
 		public String getTipoLocalidade() {

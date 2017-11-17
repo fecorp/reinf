@@ -1,6 +1,7 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -25,20 +26,23 @@ public class RecursosRecbAssDep implements Serializable{
 		private String codEmpresa;
 		private String codFilial;
 		private String cnpjEmpresaRepasRecursos;
-		private double valorBrutoRecursosRecebidos;
-		private double valorRetencaoRecursosRecebidos;
-		private double valorRetencaoDeixouDeSerFeita;
-		private double codCorrespondenteTipoProc;
+		private BigDecimal valorBrutoRecursosRecebidos;
+		private BigDecimal valorRetencaoRecursosRecebidos;
+		private BigDecimal valorRetencaoDeixouDeSerFeita;
+		private BigDecimal codCorrespondenteTipoProc;
 		private String numProcessoAdm;
-		private double codIndicativoSusp;
+		private BigDecimal codIndicativoSusp;
 		private String codContaAnaliticaContabil;
-		private double tipoRepasse;
-		private double valorBrutoRepasseEfetuado;
-		private double valorApuracaoRetencaoSofrerAssociacao;
-		private double valorRetDeixouSerFeitaEmpresa;
+		private BigDecimal tipoRepasse;
+		private BigDecimal valorBrutoRepasseEfetuado;
+		private BigDecimal valorApuracaoRetencaoSofrerAssociacao;
+		private BigDecimal valorRetDeixouSerFeitaEmpresa;
 		private String openFlex01;
 		private String openFlex02;
 
+		
+		
+		
 		public String getCodEmpresa() {
 			return codEmpresa;
 		}
@@ -57,28 +61,28 @@ public class RecursosRecbAssDep implements Serializable{
 		public void setCnpjEmpresaRepasRecursos(String cnpjEmpresaRepasRecursos) {
 			this.cnpjEmpresaRepasRecursos = cnpjEmpresaRepasRecursos;
 		}
-		public double getValorBrutoRecursosRecebidos() {
+		public BigDecimal getValorBrutoRecursosRecebidos() {
 			return valorBrutoRecursosRecebidos;
 		}
-		public void setValorBrutoRecursosRecebidos(double valorBrutoRecursosRecebidos) {
+		public void setValorBrutoRecursosRecebidos(BigDecimal valorBrutoRecursosRecebidos) {
 			this.valorBrutoRecursosRecebidos = valorBrutoRecursosRecebidos;
 		}
-		public double getValorRetencaoRecursosRecebidos() {
+		public BigDecimal getValorRetencaoRecursosRecebidos() {
 			return valorRetencaoRecursosRecebidos;
 		}
-		public void setValorRetencaoRecursosRecebidos(double valorRetencaoRecursosRecebidos) {
+		public void setValorRetencaoRecursosRecebidos(BigDecimal valorRetencaoRecursosRecebidos) {
 			this.valorRetencaoRecursosRecebidos = valorRetencaoRecursosRecebidos;
 		}
-		public double getValorRetencaoDeixouDeSerFeita() {
+		public BigDecimal getValorRetencaoDeixouDeSerFeita() {
 			return valorRetencaoDeixouDeSerFeita;
 		}
-		public void setValorRetencaoDeixouDeSerFeita(double valorRetencaoDeixouDeSerFeita) {
+		public void setValorRetencaoDeixouDeSerFeita(BigDecimal valorRetencaoDeixouDeSerFeita) {
 			this.valorRetencaoDeixouDeSerFeita = valorRetencaoDeixouDeSerFeita;
 		}
-		public double getCodCorrespondenteTipoProc() {
+		public BigDecimal getCodCorrespondenteTipoProc() {
 			return codCorrespondenteTipoProc;
 		}
-		public void setCodCorrespondenteTipoProc(double codCorrespondenteTipoProc) {
+		public void setCodCorrespondenteTipoProc(BigDecimal codCorrespondenteTipoProc) {
 			this.codCorrespondenteTipoProc = codCorrespondenteTipoProc;
 		}
 		public String getNumProcessoAdm() {
@@ -87,10 +91,10 @@ public class RecursosRecbAssDep implements Serializable{
 		public void setNumProcessoAdm(String numProcessoAdm) {
 			this.numProcessoAdm = numProcessoAdm;
 		}
-		public double getCodIndicativoSusp() {
+		public BigDecimal getCodIndicativoSusp() {
 			return codIndicativoSusp;
 		}
-		public void setCodIndicativoSusp(double codIndicativoSusp) {
+		public void setCodIndicativoSusp(BigDecimal codIndicativoSusp) {
 			this.codIndicativoSusp = codIndicativoSusp;
 		}
 		public String getCodContaAnaliticaContabil() {
@@ -99,28 +103,28 @@ public class RecursosRecbAssDep implements Serializable{
 		public void setCodContaAnaliticaContabil(String codContaAnaliticaContabil) {
 			this.codContaAnaliticaContabil = codContaAnaliticaContabil;
 		}
-		public double getTipoRepasse() {
+		public BigDecimal getTipoRepasse() {
 			return tipoRepasse;
 		}
-		public void setTipoRepasse(double tipoRepasse) {
+		public void setTipoRepasse(BigDecimal tipoRepasse) {
 			this.tipoRepasse = tipoRepasse;
 		}
-		public double getValorBrutoRepasseEfetuado() {
+		public BigDecimal getValorBrutoRepasseEfetuado() {
 			return valorBrutoRepasseEfetuado;
 		}
-		public void setValorBrutoRepasseEfetuado(double valorBrutoRepasseEfetuado) {
+		public void setValorBrutoRepasseEfetuado(BigDecimal valorBrutoRepasseEfetuado) {
 			this.valorBrutoRepasseEfetuado = valorBrutoRepasseEfetuado;
 		}
-		public double getValorApuracaoRetencaoSofrerAssociacao() {
+		public BigDecimal getValorApuracaoRetencaoSofrerAssociacao() {
 			return valorApuracaoRetencaoSofrerAssociacao;
 		}
-		public void setValorApuracaoRetencaoSofrerAssociacao(double valorApuracaoRetencaoSofrerAssociacao) {
+		public void setValorApuracaoRetencaoSofrerAssociacao(BigDecimal valorApuracaoRetencaoSofrerAssociacao) {
 			this.valorApuracaoRetencaoSofrerAssociacao = valorApuracaoRetencaoSofrerAssociacao;
 		}
-		public double getValorRetDeixouSerFeitaEmpresa() {
+		public BigDecimal getValorRetDeixouSerFeitaEmpresa() {
 			return valorRetDeixouSerFeitaEmpresa;
 		}
-		public void setValorRetDeixouSerFeitaEmpresa(double valorRetDeixouSerFeitaEmpresa) {
+		public void setValorRetDeixouSerFeitaEmpresa(BigDecimal valorRetDeixouSerFeitaEmpresa) {
 			this.valorRetDeixouSerFeitaEmpresa = valorRetDeixouSerFeitaEmpresa;
 		}
 		public String getOpenFlex01() {

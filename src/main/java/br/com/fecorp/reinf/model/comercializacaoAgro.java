@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -23,27 +25,29 @@ public class comercializacaoAgro implements Serializable{
 		
 		private String codEmpresa;
 		private String codFilial;
-		private double codTipoInscricao;
+		private BigDecimal codTipoInscricao;
 		private String numInscricaoEstabelecimento;
-		private double valorReceitaBrutaTotal;
-		private double valorContribuicaoPrev;
-		private double valorContribPrevGilrat;
-		private double valorContribSenar;
-		private double indicativoComercializacao;
-		private double valorComercializacao;
+		private BigDecimal valorReceitaBrutaTotal;
+		private BigDecimal valorContribuicaoPrev;
+		private BigDecimal valorContribPrevGilrat;
+		private BigDecimal valorContribSenar;
+		private BigDecimal indicativoComercializacao;
+		private BigDecimal valorComercializacao;
 		private String codContaAnaliticaContabil;
 		private String numSerieNotaFiscal;
 		private String numNotaFiscal;
-		private double dataEmissaoNotaFiscal;
-		private double valorBrutoNotaFiscal;
-		private double codTipoProcesso;
+		private Date dataEmissaoNotaFiscal;
+		private BigDecimal valorBrutoNotaFiscal;
+		private BigDecimal codTipoProcesso;
 		private String numProcessoAdm;
-		private double codIndicativoSusp;
-		private double valorContribPrevExigiSusp;
-		private double valorContribGilratPrevExigiSusp;
-		private double valorContribSenarPrevExigiSusp;
+		private BigDecimal codIndicativoSusp;
+		private BigDecimal valorContribPrevExigiSusp;
+		private BigDecimal valorContribGilratPrevExigiSusp;
+		private BigDecimal valorContribSenarPrevExigiSusp;
 		private String openFlex01;
 		private String openFlex02;
+		
+		
 		
 		public String getCodEmpresa() {
 			return codEmpresa;
@@ -57,10 +61,10 @@ public class comercializacaoAgro implements Serializable{
 		public void setCodFilial(String codFilial) {
 			this.codFilial = codFilial;
 		}
-		public double getCodTipoInscricao() {
+		public BigDecimal getCodTipoInscricao() {
 			return codTipoInscricao;
 		}
-		public void setCodTipoInscricao(double codTipoInscricao) {
+		public void setCodTipoInscricao(BigDecimal codTipoInscricao) {
 			this.codTipoInscricao = codTipoInscricao;
 		}
 		public String getNumInscricaoEstabelecimento() {
@@ -69,40 +73,40 @@ public class comercializacaoAgro implements Serializable{
 		public void setNumInscricaoEstabelecimento(String numInscricaoEstabelecimento) {
 			this.numInscricaoEstabelecimento = numInscricaoEstabelecimento;
 		}
-		public double getValorReceitaBrutaTotal() {
+		public BigDecimal getValorReceitaBrutaTotal() {
 			return valorReceitaBrutaTotal;
 		}
-		public void setValorReceitaBrutaTotal(double valorReceitaBrutaTotal) {
+		public void setValorReceitaBrutaTotal(BigDecimal valorReceitaBrutaTotal) {
 			this.valorReceitaBrutaTotal = valorReceitaBrutaTotal;
 		}
-		public double getValorContribuicaoPrev() {
+		public BigDecimal getValorContribuicaoPrev() {
 			return valorContribuicaoPrev;
 		}
-		public void setValorContribuicaoPrev(double valorContribuicaoPrev) {
+		public void setValorContribuicaoPrev(BigDecimal valorContribuicaoPrev) {
 			this.valorContribuicaoPrev = valorContribuicaoPrev;
 		}
-		public double getValorContribPrevGilrat() {
+		public BigDecimal getValorContribPrevGilrat() {
 			return valorContribPrevGilrat;
 		}
-		public void setValorContribPrevGilrat(double valorContribPrevGilrat) {
+		public void setValorContribPrevGilrat(BigDecimal valorContribPrevGilrat) {
 			this.valorContribPrevGilrat = valorContribPrevGilrat;
 		}
-		public double getValorContribSenar() {
+		public BigDecimal getValorContribSenar() {
 			return valorContribSenar;
 		}
-		public void setValorContribSenar(double valorContribSenar) {
+		public void setValorContribSenar(BigDecimal valorContribSenar) {
 			this.valorContribSenar = valorContribSenar;
 		}
-		public double getIndicativoComercializacao() {
+		public BigDecimal getIndicativoComercializacao() {
 			return indicativoComercializacao;
 		}
-		public void setIndicativoComercializacao(double indicativoComercializacao) {
+		public void setIndicativoComercializacao(BigDecimal indicativoComercializacao) {
 			this.indicativoComercializacao = indicativoComercializacao;
 		}
-		public double getValorComercializacao() {
+		public BigDecimal getValorComercializacao() {
 			return valorComercializacao;
 		}
-		public void setValorComercializacao(double valorComercializacao) {
+		public void setValorComercializacao(BigDecimal valorComercializacao) {
 			this.valorComercializacao = valorComercializacao;
 		}
 		public String getCodContaAnaliticaContabil() {
@@ -123,22 +127,22 @@ public class comercializacaoAgro implements Serializable{
 		public void setNumNotaFiscal(String numNotaFiscal) {
 			this.numNotaFiscal = numNotaFiscal;
 		}
-		public double getDataEmissaoNotaFiscal() {
+		public Date getDataEmissaoNotaFiscal() {
 			return dataEmissaoNotaFiscal;
 		}
-		public void setDataEmissaoNotaFiscal(double dataEmissaoNotaFiscal) {
+		public void setDataEmissaoNotaFiscal(Date dataEmissaoNotaFiscal) {
 			this.dataEmissaoNotaFiscal = dataEmissaoNotaFiscal;
 		}
-		public double getValorBrutoNotaFiscal() {
+		public BigDecimal getValorBrutoNotaFiscal() {
 			return valorBrutoNotaFiscal;
 		}
-		public void setValorBrutoNotaFiscal(double valorBrutoNotaFiscal) {
+		public void setValorBrutoNotaFiscal(BigDecimal valorBrutoNotaFiscal) {
 			this.valorBrutoNotaFiscal = valorBrutoNotaFiscal;
 		}
-		public double getCodTipoProcesso() {
+		public BigDecimal getCodTipoProcesso() {
 			return codTipoProcesso;
 		}
-		public void setCodTipoProcesso(double codTipoProcesso) {
+		public void setCodTipoProcesso(BigDecimal codTipoProcesso) {
 			this.codTipoProcesso = codTipoProcesso;
 		}
 		public String getNumProcessoAdm() {
@@ -147,28 +151,28 @@ public class comercializacaoAgro implements Serializable{
 		public void setNumProcessoAdm(String numProcessoAdm) {
 			this.numProcessoAdm = numProcessoAdm;
 		}
-		public double getCodIndicativoSusp() {
+		public BigDecimal getCodIndicativoSusp() {
 			return codIndicativoSusp;
 		}
-		public void setCodIndicativoSusp(double codIndicativoSusp) {
+		public void setCodIndicativoSusp(BigDecimal codIndicativoSusp) {
 			this.codIndicativoSusp = codIndicativoSusp;
 		}
-		public double getValorContribPrevExigiSusp() {
+		public BigDecimal getValorContribPrevExigiSusp() {
 			return valorContribPrevExigiSusp;
 		}
-		public void setValorContribPrevExigiSusp(double valorContribPrevExigiSusp) {
+		public void setValorContribPrevExigiSusp(BigDecimal valorContribPrevExigiSusp) {
 			this.valorContribPrevExigiSusp = valorContribPrevExigiSusp;
 		}
-		public double getValorContribGilratPrevExigiSusp() {
+		public BigDecimal getValorContribGilratPrevExigiSusp() {
 			return valorContribGilratPrevExigiSusp;
 		}
-		public void setValorContribGilratPrevExigiSusp(double valorContribGilratPrevExigiSusp) {
+		public void setValorContribGilratPrevExigiSusp(BigDecimal valorContribGilratPrevExigiSusp) {
 			this.valorContribGilratPrevExigiSusp = valorContribGilratPrevExigiSusp;
 		}
-		public double getValorContribSenarPrevExigiSusp() {
+		public BigDecimal getValorContribSenarPrevExigiSusp() {
 			return valorContribSenarPrevExigiSusp;
 		}
-		public void setValorContribSenarPrevExigiSusp(double valorContribSenarPrevExigiSusp) {
+		public void setValorContribSenarPrevExigiSusp(BigDecimal valorContribSenarPrevExigiSusp) {
 			this.valorContribSenarPrevExigiSusp = valorContribSenarPrevExigiSusp;
 		}
 		public String getOpenFlex01() {

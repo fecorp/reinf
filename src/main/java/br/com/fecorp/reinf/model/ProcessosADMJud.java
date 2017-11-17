@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -26,20 +28,24 @@ public class ProcessosADMJud implements Serializable {
 		private String filial;
 		private String tipoProcesso;
 		private String numProcAdmJud;
-		private double dataDecisaoSent_DespAdm;
-		private double codIndicativoSuspe;
+		private Date dataDecisaoSent_DespAdm;
+		private BigDecimal codIndicativoSuspe;
 		private String indiSuspeExigi;
 		private String indiDepMonteIntegral;
 		private String idUniFederacao_UFJud;
-		private double codMunicipio;
+		private BigDecimal codMunicipio;
 		private String codIdVara;
 		private String UFSessaoJud;
-		private double indiAutoriaJud;
+		private BigDecimal indiAutoriaJud;
 		private String openFlex01;
 		private String openFlex02;
 		
 		
 		
+		
+
+
+
 		public String getEmpresa() {
 			return empresa;
 		}
@@ -48,19 +54,6 @@ public class ProcessosADMJud implements Serializable {
 
 		public void setEmpresa(String empresa) {
 			this.empresa = empresa;
-		}
-
-
-		
-
-		public String getUFSessaoJud() {
-			return UFSessaoJud;
-		}
-
-
-
-		public void setUFSessaoJud(String uFSessaoJud) {
-			UFSessaoJud = uFSessaoJud;
 		}
 
 
@@ -101,25 +94,25 @@ public class ProcessosADMJud implements Serializable {
 
 
 
-		public double getDataDecisaoSent_DespAdm() {
+		public Date getDataDecisaoSent_DespAdm() {
 			return dataDecisaoSent_DespAdm;
 		}
 
 
 
-		public void setDataDecisaoSent_DespAdm(double dataDecisaoSent_DespAdm) {
+		public void setDataDecisaoSent_DespAdm(Date dataDecisaoSent_DespAdm) {
 			this.dataDecisaoSent_DespAdm = dataDecisaoSent_DespAdm;
 		}
 
 
 
-		public double getCodIndicativoSuspe() {
+		public BigDecimal getCodIndicativoSuspe() {
 			return codIndicativoSuspe;
 		}
 
 
 
-		public void setCodIndicativoSuspe(double codIndicativoSuspe) {
+		public void setCodIndicativoSuspe(BigDecimal codIndicativoSuspe) {
 			this.codIndicativoSuspe = codIndicativoSuspe;
 		}
 
@@ -161,13 +154,13 @@ public class ProcessosADMJud implements Serializable {
 
 
 
-		public double getCodMunicipio() {
+		public BigDecimal getCodMunicipio() {
 			return codMunicipio;
 		}
 
 
 
-		public void setCodMunicipio(double codMunicipio) {
+		public void setCodMunicipio(BigDecimal codMunicipio) {
 			this.codMunicipio = codMunicipio;
 		}
 
@@ -185,13 +178,25 @@ public class ProcessosADMJud implements Serializable {
 
 
 
-		public double getIndiAutoriaJud() {
+		public String getUFSessaoJud() {
+			return UFSessaoJud;
+		}
+
+
+
+		public void setUFSessaoJud(String uFSessaoJud) {
+			UFSessaoJud = uFSessaoJud;
+		}
+
+
+
+		public BigDecimal getIndiAutoriaJud() {
 			return indiAutoriaJud;
 		}
 
 
 
-		public void setIndiAutoriaJud(double indiAutoriaJud) {
+		public void setIndiAutoriaJud(BigDecimal indiAutoriaJud) {
 			this.indiAutoriaJud = indiAutoriaJud;
 		}
 

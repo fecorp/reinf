@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -25,149 +27,194 @@ public class ComplementoAlimeSaida implements Serializable{
 		
 
 	private String codEmpresa;
-	public String getCodEmpresa() {
-		return codEmpresa;
-	}
-	public void setCodEmpresa(String codEmpresa) {
-		this.codEmpresa = codEmpresa;
-	}
-	public String getCodFilial() {
-		return codFilial;
-	}
-	public void setCodFilial(String codFilial) {
-		this.codFilial = codFilial;
-	}
-	public String getSerieNotaFiscal() {
-		return serieNotaFiscal;
-	}
-	public void setSerieNotaFiscal(String serieNotaFiscal) {
-		this.serieNotaFiscal = serieNotaFiscal;
-	}
-	public String getNumNotaFiscal() {
-		return numNotaFiscal;
-	}
-	public void setNumNotaFiscal(String numNotaFiscal) {
-		this.numNotaFiscal = numNotaFiscal;
-	}
-	public double getDataEmissao() {
-		return dataEmissao;
-	}
-	public void setDataEmissao(double dataEmissao) {
-		this.dataEmissao = dataEmissao;
-	}
-	public String getCategoriaPfPj() {
-		return categoriaPfPj;
-	}
-	public void setCategoriaPfPj(String categoriaPfPj) {
-		this.categoriaPfPj = categoriaPfPj;
-	}
-	public String getRetencaoCondEspeciais() {
-		return retencaoCondEspeciais;
-	}
-	public void setRetencaoCondEspeciais(String retencaoCondEspeciais) {
-		this.retencaoCondEspeciais = retencaoCondEspeciais;
-	}
-	public String getCodPfPj() {
-		return codPfPj;
-	}
-	public void setCodPfPj(String codPfPj) {
-		this.codPfPj = codPfPj;
-	}
-	public double getCodAtividadeEconomica() {
-		return codAtividadeEconomica;
-	}
-	public void setCodAtividadeEconomica(double codAtividadeEconomica) {
-		this.codAtividadeEconomica = codAtividadeEconomica;
-	}
-	public double getCustoAlimeForncContratada() {
-		return custoAlimeForncContratada;
-	}
-	public void setCustoAlimeForncContratada(double custoAlimeForncContratada) {
-		this.custoAlimeForncContratada = custoAlimeForncContratada;
-	}
-	public double getCustoForncTransp() {
-		return custoForncTransp;
-	}
-	public void setCustoForncTransp(double custoForncTransp) {
-		this.custoForncTransp = custoForncTransp;
-	}
-	public double getValorRetencaoServicos() {
-		return valorRetencaoServicos;
-	}
-	public void setValorRetencaoServicos(double valorRetencaoServicos) {
-		this.valorRetencaoServicos = valorRetencaoServicos;
-	}
-	public double getAdicionalSobreRetencao() {
-		return adicionalSobreRetencao;
-	}
-	public void setAdicionalSobreRetencao(double adicionalSobreRetencao) {
-		this.adicionalSobreRetencao = adicionalSobreRetencao;
-	}
-	public double getContribuicao01() {
-		return contribuicao01;
-	}
-	public void setContribuicao01(double contribuicao01) {
-		this.contribuicao01 = contribuicao01;
-	}
-	public double getContribuicao02() {
-		return contribuicao02;
-	}
-	public void setContribuicao02(double contribuicao02) {
-		this.contribuicao02 = contribuicao02;
-	}
-	public double getContribuicao03() {
-		return contribuicao03;
-	}
-	public void setContribuicao03(double contribuicao03) {
-		this.contribuicao03 = contribuicao03;
-	}
-	public String getOpenFlex01() {
-		return openFlex01;
-	}
-	public void setOpenFlex01(String openFlex01) {
-		this.openFlex01 = openFlex01;
-	}
-	public String getOpenFlex02() {
-		return openFlex02;
-	}
-	public void setOpenFlex02(String openFlex02) {
-		this.openFlex02 = openFlex02;
-	}
-	public double getValorRetencaoPrincipal() {
-		return valorRetencaoPrincipal;
-	}
-	public void setValorRetencaoPrincipal(double valorRetencaoPrincipal) {
-		this.valorRetencaoPrincipal = valorRetencaoPrincipal;
-	}
-	public double getValorRetencaoAdicional() {
-		return valorRetencaoAdicional;
-	}
-	public void setValorRetencaoAdicional(double valorRetencaoAdicional) {
-		this.valorRetencaoAdicional = valorRetencaoAdicional;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
 	private String codFilial;
 	private String serieNotaFiscal;
 	private String numNotaFiscal;
-	private double dataEmissao;
+	private Date dataEmissao;
 	private String categoriaPfPj;
 	private String retencaoCondEspeciais;
 	private String codPfPj;
-	private double codAtividadeEconomica;
-	private double custoAlimeForncContratada;
-	private double custoForncTransp;
-	private double valorRetencaoServicos;
-	private double adicionalSobreRetencao;
-	private double contribuicao01;
-	private double contribuicao02;
-	private double contribuicao03;
+	private BigDecimal codAtividadeEconomica;
+	private BigDecimal custoAlimeForncContratada;
+	private BigDecimal custoForncTransp;
+	private BigDecimal valorRetencaoServicos;
+	private BigDecimal adicionalSobreRetencao;
+	private String contribuicao01;
+	private String contribuicao02;
+	private String contribuicao03;
 	private String openFlex01;
 	private String openFlex02;
-	private double valorRetencaoPrincipal;
-	private double valorRetencaoAdicional;
+	private BigDecimal valorRetencaoPrincipal;
+	private BigDecimal valorRetencaoAdicional;
 	
+	
+	
+	
+	
+	public String getCodEmpresa() {
+		return codEmpresa;
+	}
+
+	public void setCodEmpresa(String codEmpresa) {
+		this.codEmpresa = codEmpresa;
+	}
+
+	public String getCodFilial() {
+		return codFilial;
+	}
+
+	public void setCodFilial(String codFilial) {
+		this.codFilial = codFilial;
+	}
+
+	public String getSerieNotaFiscal() {
+		return serieNotaFiscal;
+	}
+
+	public void setSerieNotaFiscal(String serieNotaFiscal) {
+		this.serieNotaFiscal = serieNotaFiscal;
+	}
+
+	public String getNumNotaFiscal() {
+		return numNotaFiscal;
+	}
+
+	public void setNumNotaFiscal(String numNotaFiscal) {
+		this.numNotaFiscal = numNotaFiscal;
+	}
+
+	public Date getDataEmissao() {
+		return dataEmissao;
+	}
+
+	public void setDataEmissao(Date dataEmissao) {
+		this.dataEmissao = dataEmissao;
+	}
+
+	public String getCategoriaPfPj() {
+		return categoriaPfPj;
+	}
+
+	public void setCategoriaPfPj(String categoriaPfPj) {
+		this.categoriaPfPj = categoriaPfPj;
+	}
+
+	public String getRetencaoCondEspeciais() {
+		return retencaoCondEspeciais;
+	}
+
+	public void setRetencaoCondEspeciais(String retencaoCondEspeciais) {
+		this.retencaoCondEspeciais = retencaoCondEspeciais;
+	}
+
+	public String getCodPfPj() {
+		return codPfPj;
+	}
+
+	public void setCodPfPj(String codPfPj) {
+		this.codPfPj = codPfPj;
+	}
+
+	public BigDecimal getCodAtividadeEconomica() {
+		return codAtividadeEconomica;
+	}
+
+	public void setCodAtividadeEconomica(BigDecimal codAtividadeEconomica) {
+		this.codAtividadeEconomica = codAtividadeEconomica;
+	}
+
+	public BigDecimal getCustoAlimeForncContratada() {
+		return custoAlimeForncContratada;
+	}
+
+	public void setCustoAlimeForncContratada(BigDecimal custoAlimeForncContratada) {
+		this.custoAlimeForncContratada = custoAlimeForncContratada;
+	}
+
+	public BigDecimal getCustoForncTransp() {
+		return custoForncTransp;
+	}
+
+	public void setCustoForncTransp(BigDecimal custoForncTransp) {
+		this.custoForncTransp = custoForncTransp;
+	}
+
+	public BigDecimal getValorRetencaoServicos() {
+		return valorRetencaoServicos;
+	}
+
+	public void setValorRetencaoServicos(BigDecimal valorRetencaoServicos) {
+		this.valorRetencaoServicos = valorRetencaoServicos;
+	}
+
+	public BigDecimal getAdicionalSobreRetencao() {
+		return adicionalSobreRetencao;
+	}
+
+	public void setAdicionalSobreRetencao(BigDecimal adicionalSobreRetencao) {
+		this.adicionalSobreRetencao = adicionalSobreRetencao;
+	}
+
+	public String getContribuicao01() {
+		return contribuicao01;
+	}
+
+	public void setContribuicao01(String contribuicao01) {
+		this.contribuicao01 = contribuicao01;
+	}
+
+	public String getContribuicao02() {
+		return contribuicao02;
+	}
+
+	public void setContribuicao02(String contribuicao02) {
+		this.contribuicao02 = contribuicao02;
+	}
+
+	public String getContribuicao03() {
+		return contribuicao03;
+	}
+
+	public void setContribuicao03(String contribuicao03) {
+		this.contribuicao03 = contribuicao03;
+	}
+
+	public String getOpenFlex01() {
+		return openFlex01;
+	}
+
+	public void setOpenFlex01(String openFlex01) {
+		this.openFlex01 = openFlex01;
+	}
+
+	public String getOpenFlex02() {
+		return openFlex02;
+	}
+
+	public void setOpenFlex02(String openFlex02) {
+		this.openFlex02 = openFlex02;
+	}
+
+	public BigDecimal getValorRetencaoPrincipal() {
+		return valorRetencaoPrincipal;
+	}
+
+	public void setValorRetencaoPrincipal(BigDecimal valorRetencaoPrincipal) {
+		this.valorRetencaoPrincipal = valorRetencaoPrincipal;
+	}
+
+	public BigDecimal getValorRetencaoAdicional() {
+		return valorRetencaoAdicional;
+	}
+
+	public void setValorRetencaoAdicional(BigDecimal valorRetencaoAdicional) {
+		this.valorRetencaoAdicional = valorRetencaoAdicional;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 	public Serializable getId() {
 		// TODO Auto-generated method stub
 		return null;
