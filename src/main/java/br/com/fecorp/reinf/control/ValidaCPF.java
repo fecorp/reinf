@@ -2,9 +2,14 @@ package br.com.fecorp.reinf.control;
 
 import java.util.InputMismatchException;
 
-public class ValidaCPF {
+public class ValidaCPF  {
+	
+	
  
   public static boolean isCPF(String CPF) {
+	  
+	  
+	  
 // considera-se erro CPF's formados por uma sequencia de numeros iguais
     if (CPF.equals("00000000000") || CPF.equals("11111111111") ||
         CPF.equals("22222222222") || CPF.equals("33333333333") ||
@@ -62,5 +67,6 @@ public class ValidaCPF {
   public static String imprimeCPF(String CPF) {
     return(CPF.substring(0, 3) + "." + CPF.substring(3, 6) + "." +
       CPF.substring(6, 9) + "-" + CPF.substring(9, 11));
+  
   }
 }

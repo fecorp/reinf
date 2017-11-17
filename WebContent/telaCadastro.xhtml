@@ -5,626 +5,767 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:fa="http://java.sun.com/jsf/facelets">
-	
-    
+
+
+
 
 <h:head>
-
 </h:head>
+
 
 <h:body style="background-color:#D3D3D3;border:0px;">
 
-<h:form>
-		<p:growl id="messages"/>
+	<h:form>
 
-		<p:menubar style="font-size:12px; color: #d15">
-			<p:submenu label="Parametrização" icon="ui-icon-contact">
-				<p:menuitem value="Tela de Parametrização"
-					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
-			</p:submenu>
+		<!-- objetivo, fazer o command Button (SALVAR) acessar o <h:outputText value=" Empresa : *   " /> -->
 
 
-			<p:submenu label="Geração" icon="ui-icon-pencil">
-				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
-					icon="ui-icon-folder-open" />
+		<h:form>
+			<p:tooltip />
+				<p:messages update="growl	" id="messages" type="submit"
+				showDetail="true" closable="true" />
 
-			</p:submenu>
+			<h:panelGrid id="grid" columns="3" cellpadding="5">
 
-			<p:submenu label="Relatórios" icon="ui-icon-help">
-				<p:menuitem value="Tela de Relatórios" url="#"
-					icon="ui-icon-folder-open" />
-			</p:submenu>
+			<!-- 	<p:inputText id="tt" required="true"
+					requiredMessage="Campo obrigatório! Inválido ! " />  -->
 
-			<p:submenu label="Configurações" icon="ui-icon-wrench">
-			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
-					icon="ui-icon-wrench" />
-			</p:submenu>
+			</h:panelGrid>
+		<h:form>
+				
 
-			<p:menuitem value="Lotes" url="http://www.primefaces.org"
-				icon="" />
-
-			<f:facet name="options">
-				<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
-				<p:commandButton type="button" value="Sair do Sistema"
-					icon="ui-icon-extlink" />
-			</f:facet>
-		</p:menubar>
-	</h:form>
-
-	<div>
-		<center>
-			<h1
-				style="font-size: 18px; font-family: arial; color: #000000">Empresa</h1>
-		</center>
-	</div>
-
-	
-   <img src="Imagens/IMAGEM.jpg" />
-	
-	<p:layout>
-	    <h:form> 
-		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
-			<h:form>
-				<p:panelMenu style="width:165px">
-					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
-						<p:menuitem style="background-color:#F4F0F0" value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
-							icon="ui-icon-note" />
-						<p:menuitem style="background-color:#D3D3D3" value="Empresa" url="telaCadastro.xhtml"
-							icon="ui-icon-home" />
-						<p:menuitem style="background-color:#F4F0F0" value="Filial" url="telaFilial.xhtml"
-							icon="ui-icon-disk" />
-						<p:menuitem style="background-color:#F4F0F0" value="Cliente Fornecedor"
-							url="telaClienteFornecedor.xhtml" icon="ui-icon-contact" />
-						<p:menuitem style="background-color:#F4F0F0" value="Responsável" url="telaResponsavel.xhtml"
-							icon="ui-icon-person" />
-						<p:menuitem style="background-color:#F4F0F0" value="Software" url="TelaSoftware.xhtml"
-							icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços" url="Servicos.xhtml"
-							icon="ui-icon-suitcase" />
+				<p:menubar style="font-size:12px; color: #d15">
+					<p:submenu label="Parametrização" icon="ui-icon-contact">
+						<p:menuitem value="Tela de Parametrização"
+							url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
 					</p:submenu>
 
-					<p:submenu label="Movimentação - NF" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
-							url="ComplementoMestreEntrada.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
-						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-gear" />
-						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
-							ajax="false" icon="ui-icon-script" />
-						
-						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
-							url="ComplementoMestreSaida.xhtml" ajax="false"
-							icon="ui-icon-lightbulb" />
 
-					</p:submenu>
-					<p:separator />
-					<p:submenu label="Reinf" style="font-size:12px">
-
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-1070 Tabela de Processos Administrativos - Judiciais"
-							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="" url="http://www.primefaces.org" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2030 Recursos Recebidos Por Associação Desportiva"
-							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
-							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2050 Comercialização Agroindústria"
-							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
-							url="cprb.xhtml" icon="ui-icon-wrench" />
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
-							url="dirf.xhtml" icon="ui-icon-wrench" />
-
-
-						<p:menuitem style="background-color:#F4F0F0"
-							value="R-3010 Receitas de Espetáculos Desportivos"
-							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
-
-					</p:submenu>
-					<p:submenu 
-						label="Interface " style="font-size:12px;">
-						<p:menuitem style="background-color:#F4F0F0" value="Importação de Arquivos"
-						url="Interface.xhtml" icon="ui-icon-arrowthickstop-1-s" />
+					<p:submenu label="Geração" icon="ui-icon-pencil">
+						<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+							icon="ui-icon-folder-open" />
 
 					</p:submenu>
 
-					<p:submenu 
-						label="Lotes" style="font-size:12px">
-						<p:menuitem style="background-color:#F4F0F0" value="Gerenciamento de Lotes"
-							url="http://www.primefaces.org" icon="ui-icon-shuffle" />
+					<p:submenu label="Relatórios" icon="ui-icon-help">
+						<p:menuitem value="Tela de Relatórios" url="#"
+							icon="ui-icon-folder-open" />
 					</p:submenu>
 
-				</p:panelMenu>
+					<p:submenu label="Configurações" icon="ui-icon-wrench">
+						<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+							icon="ui-icon-wrench" />
+					</p:submenu>
+
+					<p:menuitem value="Lotes" url="http://www.primefaces.org" icon="" />
+
+					<f:facet name="options">
+						<p:inputText style="margin-right:10px" placeholder="Pesquisar" />
+						<p:commandButton type="button" value="Sair do Sistema"
+							icon="ui-icon-extlink" />
+					</f:facet>
+				</p:menubar>
 			</h:form>
-		</p:layoutUnit>
+
+			<div>
+				<center>
+					<h1 style="font-size: 18px; font-family: arial; color: #000000">
+					</h1>
+				</center>
+			</div>
 
 
-		<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+			<img src="Imagens/IMAGEM.jpg" />
+
+			<p:layout>
+				<h:form>
+					<p:layoutUnit position="west"
+						style="background-color:#F2f2f2; height:450px" fullPage="true">
+						<h:form>
+							<p:panelMenu style="width:165px">
+								<p:submenu label="Cadastros"
+									style="font-size:12px;background-color:#D3D3D3 ">
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+										icon="ui-icon-note" />
+									<p:menuitem style="background-color:#D3D3D3" value="Empresa"
+										url="telaCadastro.xhtml" icon="ui-icon-home" />
+									<p:menuitem style="background-color:#F4F0F0" value="Filial"
+										url="telaFilial.xhtml" icon="ui-icon-disk" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Cliente Fornecedor" url="telaClienteFornecedor.xhtml"
+										icon="ui-icon-contact" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Responsável" url="telaResponsavel.xhtml"
+										icon="ui-icon-person" />
+									<p:menuitem style="background-color:#F4F0F0" value="Software"
+										url="TelaSoftware.xhtml" icon="ui-icon-gear" />
+									<p:menuitem style="background-color:#F4F0F0" value="Serviços"
+										url="Servicos.xhtml" icon="ui-icon-suitcase" />
+								</p:submenu>
+
+								<p:submenu label="Movimentação - NF" style="font-size:12px">
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+										ajax="false" icon="ui-icon-gear" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+										ajax="false" icon="ui-icon-script" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Complemento Entrada"
+										url="ComplementoMestreEntrada.xhtml" ajax="false"
+										icon="ui-icon-lightbulb" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Serviços Saída" url="MestreSaidaNew.xhtml" ajax="false"
+										icon="ui-icon-gear" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+										ajax="false" icon="ui-icon-script" />
+
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Complemento Saída" url="ComplementoMestreSaida.xhtml"
+										ajax="false" icon="ui-icon-lightbulb" />
+
+								</p:submenu>
+								<p:separator />
+								<p:submenu label="Reinf" style="font-size:12px">
+
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-1070 Tabela de Processos Administrativos - Judiciais"
+										url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+									<p:menuitem style="background-color:#F4F0F0" value=""
+										url="http://www.primefaces.org" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-2030 Recursos Recebidos Por Associação Desportiva"
+										url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+										url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-2050 Comercialização Agroindústria"
+										url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+										url="cprb.xhtml" icon="ui-icon-wrench" />
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+										url="dirf.xhtml" icon="ui-icon-wrench" />
 
 
-        
-<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+									<p:menuitem style="background-color:#F4F0F0"
+										value="R-3010 Receitas de Espetáculos Desportivos"
+										url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+
+								</p:submenu>
+								<p:submenu label="Interface " style="font-size:12px;">
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Importação de Arquivos" url="Interface.xhtml"
+										icon="ui-icon-arrowthickstop-1-s" />
+
+								</p:submenu>
+
+								<p:submenu label="Lotes" style="font-size:12px">
+									<p:menuitem style="background-color:#F4F0F0"
+										value="Gerenciamento de Lotes" url="http://www.primefaces.org"
+										icon="ui-icon-shuffle" />
+								</p:submenu>
+
+							</p:panelMenu>
+						</h:form>
+					</p:layoutUnit>
+
+
+					<p:layoutUnit position="center" style="height: 600px"
+						fullPage="true">
+
+
+
+						<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+
+							<div>
+								<center>
+									<h3
+										style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">
+										Empresa</h3>
+								</center>
+							</div>
+
+						</p:fieldset>
+
+						<br></br>
+
+						<p:messages id="messages" required="true" showDetail="true"
+							autoUpdate="true" display="save" />
+
+
+
+						<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+							legend="Dados cadastrais ">
+
+
+
+
+
+							<h:outputText value=" Empresa : *   " />
+							<input type="text" value="#{Empresa.empresa}" required="true"
+								width=" 5% ; background-color: #F2F2F2" />
+
+		<!-- <form>	
+		<fieldset>
+			legend> pessoa </legend>
+			Nome: <input type="text" required="true" />
+		</fieldset>
+			<button type="submit" value="clicar"  > </button>
+		</form> -->
 				
-				<div>
-		<center>
-			<h3
-				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Empresa</h3>
-		</center>
-	</div>
-				
-		</p:fieldset>
 		
-		<br></br>
-
-			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-				legend="Dados cadastrais ">
-
-				<h:outputText style="font-size: 10px" value=" Empresa : *     " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2"
-				   value="#{Empresa.empresa}"/>
-				
-
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
-				<p:inputText style="width: 5%; background-color: #F2F2F2" value="#{Empresa.filial}" />
+							<p:inputText style="width: 5%; background-color: #F2F2F2"
+								value="#{Empresa.filial}" />
 
                 &nbsp; 
  				<h:outputText style="font-size: 10px"
-					value="      Razão Social :   " />
-				<p:inputText style="width: 26%" value="#{Empresa.nomeRazaoSocial}" />
+								value="      Razão Social :   " />
+							<p:inputText style="width: 26%"
+								value="#{Empresa.nomeRazaoSocial}" />
                
                
 
                 &nbsp;
 				<p:outputLabel style="font-size: 10px"
-					value="    Data de atualização: * " />
-				<p:calendar style="font-size:10px; background-color: #F2F2F2"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099" id="popup"
-					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+								value="    Data de atualização: * " />
+							<p:calendar style="font-size:10px; background-color: #F2F2F2"
+								maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+								id="popup" value="#{calendarView.date2}" locale="pt"
+								pattern="dd/MM/yyyy" />
 				
 				
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="               Categoria PF/PJ: * " />
-				<p:inputText style="width: 2%; background-color: #F2F2F2" value="#{Empresa.categoriaPFPJ}" />
-				<br />
-				<br />
+								value="               Categoria PF/PJ: * " />
+							<p:inputText style="width: 2%; background-color: #F2F2F2"
+								value="#{Empresa.categoriaPFPJ}" />
+							<br />
+							<br />
 				
 				 &nbsp;
 				<h:outputLabel style="font-size: 10px" value="  Nome Fantasia: " />
-				<p:inputText style="width: 17%" value="#{Empresa.nomeFantasia}" />	
+							<p:inputText style="width: 17%" value="#{Empresa.nomeFantasia}" />	
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-				<p:inputText style="width: 8%; background-color: #F2F2F2" value="#{Empresa.codigoPFPJ}" />
+							<p:inputText style="width: 8%; background-color: #F2F2F2"
+								value="#{Empresa.codigoPFPJ}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="    Inscrição Estadual: " />
-				<p:inputText style="width: 7%" value="#{Empresa.insEstadual}" />
+								value="    Inscrição Estadual: " />
+							<p:inputText style="width: 7%" value="#{Empresa.insEstadual}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="     Inscrição Estadual Centralizadora: " />
-				<p:inputText style="width: 7%" value="#{Empresa.insEstadualC}" />
+								value="     Inscrição Estadual Centralizadora: " />
+							<p:inputText style="width: 7%" value="#{Empresa.insEstadualC}" />
 
                 &nbsp;
  
 				<h:outputText style="font-size: 10px"
-					value="  Inscrição Municipal: " />
-				<p:inputText style="width: 8%" value="#{Empresa.insMunicipal}" />
+								value="  Inscrição Municipal: " />
+							<p:inputText style="width: 8%" value="#{Empresa.insMunicipal}" />
 
-				<center>
+							<center>
 
 
-					<h3 style="margin-top: 0"></h3>
-					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
-						<p:selectOneRadio id="console" value="#{radioView.console}">
-							<f:selectItem itemLabel="Nacional" itemValue="Nacional" />
-							<f:selectItem itemLabel="Estrangeiro" itemValue="Estrangeiro" />
-							<f:selectItem itemLabel="Isento" itemValue="Isento" />
-						</p:selectOneRadio>
-					</h:panelGrid>
+								<h3 style="margin-top: 0"></h3>
+								<h:panelGrid columns="2" style="margin-bottom:10px"
+									cellpadding="5">
+									<p:selectOneRadio id="console" value="#{radioView.console}">
+										<f:selectItem itemLabel="Nacional" itemValue="Nacional" />
+										<f:selectItem itemLabel="Estrangeiro" itemValue="Estrangeiro" />
+										<f:selectItem itemLabel="Isento" itemValue="Isento" />
+									</p:selectOneRadio>
+								</h:panelGrid>
 
-					<br />
-				</center>
-			</p:fieldset>
-			&nbsp;
+								<br />
+							</center>
+						</p:fieldset>   
+ 			&nbsp;
 			<p:fieldset style="background-color:#F2f2f2; font-size: 10px "
-				legend="Endereço">
-				<h:outputText style="font-size: 10px" value="  Endereço: " />
-				<p:inputText style="width: 28%" value="#{Empresa.endereco}" />
+							legend="Endereço">
+							<h:outputText style="font-size: 10px" value="  Endereço: " />
+							<p:inputText style="width: 28%" value="#{Empresa.endereco}" />
                 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número: " />
-				<p:inputText style="width: 4%" value="#{Empresa.numero}" />
+							<p:inputText style="width: 4%" value="#{Empresa.numero}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Complemento do Endereço:   " />
-				<p:inputText style="width: 18%" value="#{Empresa.complemento}" />
+								value="  Complemento do Endereço:   " />
+							<p:inputText style="width: 18%" value="#{Empresa.complemento}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Bairro: " />
-				<p:inputText style="width: 15%" value="#{Empresa.bairro}" />
-				<br />
-				<br />
-				<h:outputText style="font-size: 10px" value="  Município: " />
-				<p:inputText style="width: 15%" value="#{Empresa.municipio}" />
+							<p:inputText style="width: 15%" value="#{Empresa.bairro}" />
+							<br />
+							<br />
+							<h:outputText style="font-size: 10px" value="  Município: " />
+							<p:inputText style="width: 15%" value="#{Empresa.municipio}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  UF: " />
-				<p:inputText style="width: 2%" value="#{Empresa.unidadeFederativa}" />
+							<p:inputText style="width: 2%"
+								value="#{Empresa.unidadeFederativa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  CEP: " />
-				<p:inputMask id="cep" style="width: 5%" value="#{Empresa.cep}" mask="99999-999" />
+							<p:inputMask id="cep" style="width: 5%" value="#{Empresa.cep}"
+								mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Caixa Postal: " />
-				<p:inputText style="width: 10%" value="#{Empresa.caixaPostal}" />
+							<p:inputText style="width: 10%" value="#{Empresa.caixaPostal}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  CEP da Caixa Postal: " />
-				<p:inputMask style="width: 5%" value="#{Empresa.cepCaixaPostal}" mask="99999-999" />
+								value="  CEP da Caixa Postal: " />
+							<p:inputMask style="width: 5%" value="#{Empresa.cepCaixaPostal}"
+								mask="99999-999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
-				
-				<p:selectOneMenu style="font-size:10px" value="retificacao"
-					itemLabel="indservico">
-					<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
-					<f:selectItem itemLabel="013 - Afeganistão" itemValue="Afeganistão" />
-					<f:selectItem itemLabel="017 - Albânia República" itemValue="Albânia" />
-					<f:selectItem itemLabel="023 - Alemanha" itemValue="Alemanha" />
-					<f:selectItem itemLabel="031 - Burkina Faso" itemValue="Burkina Faso" />
-					<f:selectItem itemLabel="037 - Andorra" itemValue="Andorra" />
-					<f:selectItem itemLabel="040 - Angola" itemValue="Angola" />
-					<f:selectItem itemLabel="041 - Anguilla" itemValue="Anguilla" />
-					<f:selectItem itemLabel="043 - Antigua E Barbuda" itemValue="Antigua E Barbuda" />
-					<f:selectItem itemLabel="047 - Antilhas Holandesas" itemValue="Holandesas" />
-					<f:selectItem itemLabel="053 - Àrabia Saudita" itemValue="Àrabia Saudita" />
-					<f:selectItem itemLabel="059 - Argélia" itemValue="Argélia" />
-					<f:selectItem itemLabel="063 - Argentina" itemValue="Argentina" />
-					<f:selectItem itemLabel="064 - Amênia, República" itemValue="Amênia, República" />
-					<f:selectItem itemLabel="065 - Aruba" itemValue="Aruba" />
-					<f:selectItem itemLabel="069 - Austrália" itemValue="Áustralia" />
-					<f:selectItem itemLabel="072 - Áustria" itemValue="Áustria" />
-					<f:selectItem itemLabel="073 - Azerbaijão, República" itemValue="Azerbaijão, República" />
-					<f:selectItem itemLabel="077 - Bahamas, Ilhas" itemValue="Bahamas" />
-					<f:selectItem itemLabel="080 - Bahrein, Ilhas" itemValue="Bahrein, Ilhas" />
-					<f:selectItem itemLabel="081 - Banladesh" itemValue="Banladesh" />
-					<f:selectItem itemLabel="083 - Barbados" itemValue="Barbados" />
-					<f:selectItem itemLabel="085 - Belarus República" itemValue="Belarus" />
-					<f:selectItem itemLabel="087 - Bélgica" itemValue="Bélgica" />
-					<f:selectItem itemLabel="088 - Belize" itemValue="Belize" />
-					<f:selectItem itemLabel="090 - Bermudas" itemValue="Bermudas" />
-					<f:selectItem itemLabel="093 - Mianmar(Birmânia)" itemValue="Mianmar" />
-					<f:selectItem itemLabel="097 - Bolívia" itemValue="Bolívia" />
-					<f:selectItem itemLabel="098 - Bósnia - Herzegovina" itemValue="Bósnia - Herzegovina" />
-					<f:selectItem itemLabel="101 - Botsoana" itemValue="Botsoana" />
-					<f:selectItem itemLabel="108 - Brunei" itemValue="Brunei" />
-                    <f:selectItem itemLabel="111 - Bulgária, República" itemValue="Bulgária, República" />
-                    <f:selectItem itemLabel="115 - Burundi" itemValue="Burundi" />
-                    <f:selectItem itemLabel="119 - Butão" itemValue="Butão" />
-                    <f:selectItem itemLabel="127 - Cabo Verde, República" itemValue="Cabo Verde, República" />
-                    <f:selectItem itemLabel="137 - Cayman, Ilhas" itemValue="Cayman" />
-                    <f:selectItem itemLabel="141 - Canboja" itemValue="Canboja" />
-                    <f:selectItem itemLabel="145 - Camarões" itemValue="Camarões" />
-                    <f:selectItem itemLabel="149 - Canadá" itemValue="Canadá" />
-                    <f:selectItem itemLabel="150 - Jersey, Ilhas" itemValue="Jersey, Ilhas" />
-                    <f:selectItem itemLabel="151 - Canariás" itemValue="Canariás" />
-                    <f:selectItem itemLabel="153 - Cazaquistão, República" itemValue="Cazaquistão, República" />
-                    <f:selectItem itemLabel="154 - Catar" itemValue="Catar" />
-                    <f:selectItem itemLabel="293 - Gibarltar" itemValue="Gibarltar" />
-                    <f:selectItem itemLabel="297 - Granada" itemValue="Granada" />
-                    <f:selectItem itemLabel="301 - Grécia" itemValue="Grécia" />
-                    <f:selectItem itemLabel="305 - Groenlândia" itemValue="Groenlândia" />
-                    <f:selectItem itemLabel="309 - Guadalupe" itemValue="Guadalupe" />
-                    <f:selectItem itemLabel="313 - Guam" itemValue="Guam" />
-                    <f:selectItem itemLabel="317 - Guatemala" itemValue="Guatemala" />
-                    <f:selectItem itemLabel="325 - Guiana Francesa" itemValue="Guiana Francesa" />
-                    <f:selectItem itemLabel="329 - Guiné" itemValue="Guiné" />
-                    <f:selectItem itemLabel="331 - Guiné - Equatorial" itemValue="Guiné - Equatorial" />
-                    <f:selectItem itemLabel="334 - Bissau" itemValue="Bissau" />
-                    <f:selectItem itemLabel="337 - Guiana" itemValue="Guiana" />
-                    <f:selectItem itemLabel="341 - Haiti" itemValue="Haiti" />
-                    <f:selectItem itemLabel="345 - Honduras" itemValue="Honduras" />
-                    <f:selectItem itemLabel="351 - Hong Kong" itemValue="Hong Kong" />
-                    <f:selectItem itemLabel="355 - Hungria, República" itemValue="Hungria" />
-                    <f:selectItem itemLabel="357 - Iemeen" itemValue="Iemeen" />
-                    <f:selectItem itemLabel="359 - Man, Ilha" itemValue="Man, Ilha" />
-                    <f:selectItem itemLabel="361 - Índia" itemValue="Índia" />
-                    <f:selectItem itemLabel="365 - Indonésia" itemValue="Indonésia" />
-                    <f:selectItem itemLabel="369 - Iraque" itemValue="Iraque" />
-                    <f:selectItem itemLabel="372 - Irã" itemValue="Irã" />
-                    <f:selectItem itemLabel="375 - Irlanda" itemValue="Irlanda" />
-                    <f:selectItem itemLabel="379 - Inslândia" itemValue="Inslândia" />
-                    <f:selectItem itemLabel="383 - Israel" itemValue="Israel" />
-                    <f:selectItem itemLabel="386 - Itália" itemValue="Itália" />
-                    <f:selectItem itemLabel="391 - Jamaica" itemValue="Jamaica" />
-                    <f:selectItem itemLabel="396 - Johnston, Ilhas" itemValue="Johnston, Ilhas" />
-                    <f:selectItem itemLabel="399 - Japão" itemValue="Japão" />
-                    <f:selectItem itemLabel="403 - Jordânia" itemValue="Jordânia" />
-                    <f:selectItem itemLabel="411 - Kiripeti" itemValue="Kiripeti" />
-                    <f:selectItem itemLabel="420 - Laos" itemValue="Laos" />
-                    <f:selectItem itemLabel="423 - Lebuan" itemValue="Lebuan" />
-                    <f:selectItem itemLabel="426 - Lesoto" itemValue="Lesoto" />
-                    <f:selectItem itemLabel="427 - Letônia" itemValue="Letônia" />
-                    <f:selectItem itemLabel="431 - Líbano" itemValue="Líbano" />
-                    <f:selectItem itemLabel="434 - Libéria" itemValue="Libéria" />
-                    <f:selectItem itemLabel="438 - Líbia" itemValue="Líbia" />
-                    <f:selectItem itemLabel="440 - Liechtenstein" itemValue="Liechtenstein" />
-                    <f:selectItem itemLabel="442 - Lituânia" itemValue="Lituânia" />
-                    <f:selectItem itemLabel="445 - Luxerburgo" itemValue="Luxerburgo" />
-                    <f:selectItem itemLabel="447 - Macao" itemValue="Macao" />
-                    <f:selectItem itemLabel="449 - Macedônia" itemValue="Macedônia" />
-                    <f:selectItem itemLabel="573 - Holanda" itemValue="Holanda" />
-                    <f:selectItem itemLabel="575 - Palau" itemValue="Palau" />
-                    <f:selectItem itemLabel="576 - Paquestão" itemValue="Paquestão" />
-                    <f:selectItem itemLabel="580 - Panamá" itemValue="Panamá" />
-                    <f:selectItem itemLabel="586 - Paraguai" itemValue="Paraguai" />
-                    <f:selectItem itemLabel="589 - Peru" itemValue="Peru" />
-                    <f:selectItem itemLabel="593 - Pitcairn, Ilha" itemValue="Pitcairn, Ilha" />
-                    <f:selectItem itemLabel="599 - Polinésia, Francesa" itemValue="Polinésia, Francesa" />
-                    <f:selectItem itemLabel="603 - Polônia" itemValue="Polônia" />
-                    <f:selectItem itemLabel="607 - Portugal" itemValue="Portugal" />
-                    <f:selectItem itemLabel="611 - Porto Rico" itemValue="Porto Rico" />
-                    <f:selectItem itemLabel="623 - Quênia" itemValue="Quênia" />
-                    <f:selectItem itemLabel="625 - Quirguiz" itemValue="Quirguiz" />
-                    <f:selectItem itemLabel="628 - Reino Unido" itemValue="Reino Unido" />
-                    <f:selectItem itemLabel="640 - República Centro - Africana" itemValue="República Centro - Africana" />
-                    <f:selectItem itemLabel="647 - República Dominicana" itemValue="República Dominicana" />
-                    <f:selectItem itemLabel="660 - Reunião, Ilha" itemValue="Reunião, Ilha" />
-                    <f:selectItem itemLabel="665 - Zinbabue" itemValue="Zinbabue" />
-                    <f:selectItem itemLabel="670 - Romênia" itemValue="Romênia" />
-                    <f:selectItem itemLabel="675 - Ruanda" itemValue="Ruanda" />
-                    <f:selectItem itemLabel="676 - Rússia" itemValue="Rússia" />
-                    <f:selectItem itemLabel="677 - Salomão, Ilhas" itemValue="Salomão" />
-                    <f:selectItem itemLabel="678 - Saint Kitts" itemValue="Saint Kitts" />
-                    <f:selectItem itemLabel="685 - Saara" itemValue="Saara" />
-                    <f:selectItem itemLabel="687 - El Salvador" itemValue="El Salvador" />
-                    <f:selectItem itemLabel="690 - Samoa" itemValue="Samoa" />
-                    <f:selectItem itemLabel="691 - Samoa Americana" itemValue="Samoa Americana" />
-                    <f:selectItem itemLabel="695 - São Critovão e Neves" itemValue="São Critovão e Neves" />
-                    <f:selectItem itemLabel="697 - San Marino" itemValue="San Marino" />
-                    <f:selectItem itemLabel="700 - São Pedro e Mikoelom" itemValue="São Pedro e Mikoelom" />
-                    <f:selectItem itemLabel="705 - São Vicente e Granadinas" itemValue="São Vicente e Granadinas" />
-                    <f:selectItem itemLabel="710 - Santa Helena" itemValue="Santa Helena" />
-                    <f:selectItem itemLabel="715 - Santa Lúcia" itemValue="Santa Lúcia" />
-                    <f:selectItem itemLabel="720 - Santomé e Pricípe" itemValue="Santomé e Pricípe" />
-                    <f:selectItem itemLabel="728 - Senegal" itemValue="Senegal" />
-                    <f:selectItem itemLabel="731 - Seychelles" itemValue="Seychelles" />
-                    <f:selectItem itemLabel="735 - Serra Leoa" itemValue="Serra Leoa" />
-                    <f:selectItem itemLabel="737 - Servia" itemValue="Servia" />
-                    <f:selectItem itemLabel="741 - Cingapura" itemValue="Cingapura" />
-                    <f:selectItem itemLabel="744 - Síria" itemValue="Síria" />
-                    <f:selectItem itemLabel="748 - Somália" itemValue="Somália" />
-                    <f:selectItem itemLabel="750 - Sri lanka" itemValue="Srilanka" />
-                    <f:selectItem itemLabel="754 - Suazilândia" itemValue="Suazilândia" />
-                    <f:selectItem itemLabel="158 - Chile" itemValue="Chile" />
-                    <f:selectItem itemLabel="160 - China" itemValue="China" />
-                    <f:selectItem itemLabel="161 - Formosa" itemValue="Formosa" />
-                    <f:selectItem itemLabel="163 - Chipre" itemValue="Chipre" />
-                    <f:selectItem itemLabel="165 - Cocos-Keeling" itemValue="Cocos-Keeling" />
-                    <f:selectItem itemLabel="169 - Colômbia" itemValue="Colômbia" />
-                    <f:selectItem itemLabel="173 - Comores" itemValue="Comores" />
-                    <f:selectItem itemLabel="177 - Congos" itemValue="Congos" />
-                    <f:selectItem itemLabel="!83 - Cok" itemValue="Cok" />
-                    <f:selectItem itemLabel="187 - Coréia República Rep.pop.demo" itemValue="Coréia" />
-                    <f:selectItem itemLabel="190 - Coréia República" itemValue="Coréia República" />
-                    <f:selectItem itemLabel="193 - Costa do Marfim" itemValue="Costa do Marfim" />
-                    <f:selectItem itemLabel="195 - Croácia" itemValue="Croácia" />
-                    <f:selectItem itemLabel="196 - Costa Rica" itemValue="Costa Rica" />
-                    <f:selectItem itemLabel="198 - Coveit" itemValue="Coveit" />
-                    <f:selectItem itemLabel="199 - Cuba" itemValue="Cuba" />
-                    <f:selectItem itemLabel="229 - Benin" itemValue="Benin" />
-                    <f:selectItem itemLabel="232 - Dinamarca" itemValue="Dinamarca" />
-                    <f:selectItem itemLabel="235 - Dominica" itemValue="Dominica" />
-                    <f:selectItem itemLabel="239 - Equador" itemValue="Equador" />
-                    <f:selectItem itemLabel="240 - Egito" itemValue="Egito" />
-                    <f:selectItem itemLabel="243 - Eritreia" itemValue="Eritreia" />
-                    <f:selectItem itemLabel="244 - Emirados Árabes Unidos" itemValue="Emirados Árabes Unidos" />
-                    <f:selectItem itemLabel="245 - Espanha" itemValue="Espanha" />
-                    <f:selectItem itemLabel="246 - Eslovênia" itemValue="Eslovênia" />
-                    <f:selectItem itemLabel="247 - Eslovaca" itemValue="Eslovaca" />
-                    <f:selectItem itemLabel="249 - Estados Unidos" itemValue="Estados Unidos" />
-                    <f:selectItem itemLabel="251 - Estônia" itemValue="Estônia" />
-                    <f:selectItem itemLabel="253 - Etiópia" itemValue="Etiópia" />
-                    <f:selectItem itemLabel="255 - Falklandi" itemValue="Falklandi" />
-                    <f:selectItem itemLabel="259 - Feroe" itemValue="Feroe" />
-                    <f:selectItem itemLabel="267 - Filipinas" itemValue="Filipinas" />
-                    <f:selectItem itemLabel="271 - Finlândia" itemValue="Finlândia" />
-                    <f:selectItem itemLabel="275 - França" itemValue="França" />
-                    <f:selectItem itemLabel="281 - Gabão" itemValue="Gabão" />
-                    <f:selectItem itemLabel="285 - Gambea" itemValue="Gambea" />
-                    <f:selectItem itemLabel="289 - Gana" itemValue="Gana" />
-                    <f:selectItem itemLabel="291 - Geórgia" itemValue="Geórgia" />
-                    <f:selectItem itemLabel="450 - Madagascar" itemValue="Madagascar" />
-                    <f:selectItem itemLabel="452 - Madeira" itemValue="Madeira" />
-                    <f:selectItem itemLabel="455 - Malásia" itemValue="Malásia" />
-                    <f:selectItem itemLabel="458 - Malavi" itemValue="Malavi" />
-                    <f:selectItem itemLabel="461 - Maldivas" itemValue="Maldivas" />
-                    <f:selectItem itemLabel="464 - Mali" itemValue="Mali" />
-                    <f:selectItem itemLabel="467 - Malta" itemValue="Malta" />
-                    <f:selectItem itemLabel="472 - Marianas do Norte" itemValue="Marianas do Norte" />
-                    <f:selectItem itemLabel="474 - Marrocos" itemValue="Marrocos" />
-                    <f:selectItem itemLabel="476 - Marshall, Ilhas" itemValue="Marshall, Ilhas" />
-                    <f:selectItem itemLabel="477 - Martinica" itemValue="Martinica" />
-                    <f:selectItem itemLabel="485 - Maurício" itemValue="Maurício" />
-                    <f:selectItem itemLabel="488 - Mauritânia" itemValue="Mauritânia" />
-                    <f:selectItem itemLabel="490 - Midway" itemValue="Midway" />
-                    <f:selectItem itemLabel="493 - México" itemValue="México" />
-                    <f:selectItem itemLabel="494 - Moldavia" itemValue="Moldavia" />
-                    <f:selectItem itemLabel="495 - Mônaco" itemValue="Mônaco" />
-                    <f:selectItem itemLabel="497 - Mongólia" itemValue="Mongólia" />
-                    <f:selectItem itemLabel="498 - Montenegro" itemValue="Montenegro" />
-                    <f:selectItem itemLabel="499 - Micronésia" itemValue="Micronésia" />
-                    <f:selectItem itemLabel="501 - Montserrat" itemValue="Montserrat" />
-                    <f:selectItem itemLabel="505 - Moçambique" itemValue="Moçambique" />
-                    <f:selectItem itemLabel="507 - Namíbia" itemValue="Namíbia" />
-                    <f:selectItem itemLabel="508 - Nauru" itemValue="Nauru" />
-                    <f:selectItem itemLabel="511 - Christmas, Ilhas" itemValue="Christmas, Ilhas" />
-                    <f:selectItem itemLabel="517 - Nepau" itemValue="Nepau" />
-                    <f:selectItem itemLabel="521 - Nicarágua" itemValue="Nicaraguá" /> 
-                    <f:selectItem itemLabel="524 - Niger" itemValue="Niger" />
-                    <f:selectItem itemLabel="528 - Nigéria" itemValue="Nigéria" />
-                    <f:selectItem itemLabel="531 - Niue, Ilha" itemValue="Niue, Ilha" />  
-                    <f:selectItem itemLabel="535 - Norfolk" itemValue="Norfolk" />
-                    <f:selectItem itemLabel="538 - Noruega" itemValue="Noruega" />
-                    <f:selectItem itemLabel="542 - Nova Caledônia" itemValue="Nova Caledônia" /> 
-                    <f:selectItem itemLabel="545 - Papua Nova Ginué" itemValue="Papua Nova Giné" />
-                    <f:selectItem itemLabel="548 - Nova Zelândia" itemValue="Nova Zelândia" />
-                    <f:selectItem itemLabel="551 - Vanuatu" itemValue="Vanuatu" /> 
-                    <f:selectItem itemLabel="556 - Omã" itemValue="Omã" />
-                    <f:selectItem itemLabel="566 - Pacífico, Ilhas" itemValue="Pacífico, Ilhas" />
-                    <f:selectItem itemLabel="756 - África do Sul" itemValue="África do Sul" /> 
-                    <f:selectItem itemLabel="759 - Sudão" itemValue="Sudão" />
-                    <f:selectItem itemLabel="764 - Suécia" itemValue="Suécia" />
-                    <f:selectItem itemLabel="767 - Suíça" itemValue="Suíça" /> 
-                    <f:selectItem itemLabel="770 - Surinema" itemValue="Surinema" />
-                    <f:selectItem itemLabel="772 - Tadjikuistão" itemValue="Tadjikuistão" />
-                    <f:selectItem itemLabel="776 - Tailândia" itemValue="Tailândia" /> 
-                    <f:selectItem itemLabel="780 - Tanzania" itemValue="Tanzania" />
-                    <f:selectItem itemLabel="782 - Território Britãnico no Oceano Índico" itemValue="Território Britãnico no Oceano Índico" />
-                    <f:selectItem itemLabel="783 - Djibuti" itemValue="Djibuti" /> 
-                    <f:selectItem itemLabel="788 - Chade" itemValue="Chade" />
-                    <f:selectItem itemLabel="791 - Tcheca República" itemValue="Tcheca República" />
-                    <f:selectItem itemLabel="795 - Timorlest" itemValue="Timorlest" /> 
-                    <f:selectItem itemLabel="800 - Togo" itemValue="Togo" />
-                    <f:selectItem itemLabel="805 - Toquelau, Ilhas" itemValue="Toquelau" />
-                    <f:selectItem itemLabel="810 - Tonga" itemValue="Tonga" /> 
-                    <f:selectItem itemLabel="815 - Trindade e Tobago" itemValue="Trindade e Tobago" />
-                    <f:selectItem itemLabel="820 - Tunísia" itemValue="Tunísia" />
-                    <f:selectItem itemLabel="823 - Turcas e Caicos, Ilhas" itemValue="Turcas e Caicos, Ilhas" /> 
-                    <f:selectItem itemLabel="824 - Turcomenistão" itemValue="Turcomenistão" />
-                    <f:selectItem itemLabel="827 - Túrquia" itemValue="Túrquia" />
-                    <f:selectItem itemLabel="828 - Tuvalu" itemValue="Tuvalu" /> 
-                    <f:selectItem itemLabel="831 - Ucrânia" itemValue="Ucrânia" />
-                    <f:selectItem itemLabel="833 - Uganda" itemValue="Uganda" />
-                    <f:selectItem itemLabel="845 - Uruguai" itemValue="Uruguai" />
-                    <f:selectItem itemLabel="847 - Usbequistão" itemValue="Usbequistão" />
-                    <f:selectItem itemLabel="848 - Vaticano" itemValue="Vaticano" />
-                    <f:selectItem itemLabel="850 - Venezuela" itemValue="Venezuela" />
-                    <f:selectItem itemLabel="858 - Viatnã" itemValue="Viatnã" />
-                    <f:selectItem itemLabel="863 - Virgens, Ilhas(Britânicas)" itemValue="Virgens, Ilhas" />
-                    <f:selectItem itemLabel="866 - Virgens, Ilhas(EUA)" itemValue="Ilhas(EUA)" />
-                    <f:selectItem itemLabel="870 - Fiji" itemValue="Fiji" />
-                    <f:selectItem itemLabel="873 - Wake,Ilha" itemValue="Wake,Ilha" />
-                    <f:selectItem itemLabel="875 - Wallis e Futuna, Ilhas" itemValue="Wallis e Futuna, Ilhas" />
-                    <f:selectItem itemLabel="888 - Kongo" itemValue="Kongo" />
-                    <f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
-                    <f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
-                     <f:selectItem itemLabel="Outros" itemValue="Outros" />
-				</p:selectOneMenu>
+
+							<p:selectOneMenu style="font-size:10px" value="retificacao"
+								itemLabel="indservico">
+								<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
+								<f:selectItem itemLabel="013 - Afeganistão"
+									itemValue="Afeganistão" />
+								<f:selectItem itemLabel="017 - Albânia República"
+									itemValue="Albânia" />
+								<f:selectItem itemLabel="023 - Alemanha" itemValue="Alemanha" />
+								<f:selectItem itemLabel="031 - Burkina Faso"
+									itemValue="Burkina Faso" />
+								<f:selectItem itemLabel="037 - Andorra" itemValue="Andorra" />
+								<f:selectItem itemLabel="040 - Angola" itemValue="Angola" />
+								<f:selectItem itemLabel="041 - Anguilla" itemValue="Anguilla" />
+								<f:selectItem itemLabel="043 - Antigua E Barbuda"
+									itemValue="Antigua E Barbuda" />
+								<f:selectItem itemLabel="047 - Antilhas Holandesas"
+									itemValue="Holandesas" />
+								<f:selectItem itemLabel="053 - Àrabia Saudita"
+									itemValue="Àrabia Saudita" />
+								<f:selectItem itemLabel="059 - Argélia" itemValue="Argélia" />
+								<f:selectItem itemLabel="063 - Argentina" itemValue="Argentina" />
+								<f:selectItem itemLabel="064 - Amênia, República"
+									itemValue="Amênia, República" />
+								<f:selectItem itemLabel="065 - Aruba" itemValue="Aruba" />
+								<f:selectItem itemLabel="069 - Austrália" itemValue="Áustralia" />
+								<f:selectItem itemLabel="072 - Áustria" itemValue="Áustria" />
+								<f:selectItem itemLabel="073 - Azerbaijão, República"
+									itemValue="Azerbaijão, República" />
+								<f:selectItem itemLabel="077 - Bahamas, Ilhas"
+									itemValue="Bahamas" />
+								<f:selectItem itemLabel="080 - Bahrein, Ilhas"
+									itemValue="Bahrein, Ilhas" />
+								<f:selectItem itemLabel="081 - Banladesh" itemValue="Banladesh" />
+								<f:selectItem itemLabel="083 - Barbados" itemValue="Barbados" />
+								<f:selectItem itemLabel="085 - Belarus República"
+									itemValue="Belarus" />
+								<f:selectItem itemLabel="087 - Bélgica" itemValue="Bélgica" />
+								<f:selectItem itemLabel="088 - Belize" itemValue="Belize" />
+								<f:selectItem itemLabel="090 - Bermudas" itemValue="Bermudas" />
+								<f:selectItem itemLabel="093 - Mianmar(Birmânia)"
+									itemValue="Mianmar" />
+								<f:selectItem itemLabel="097 - Bolívia" itemValue="Bolívia" />
+								<f:selectItem itemLabel="098 - Bósnia - Herzegovina"
+									itemValue="Bósnia - Herzegovina" />
+								<f:selectItem itemLabel="101 - Botsoana" itemValue="Botsoana" />
+								<f:selectItem itemLabel="108 - Brunei" itemValue="Brunei" />
+								<f:selectItem itemLabel="111 - Bulgária, República"
+									itemValue="Bulgária, República" />
+								<f:selectItem itemLabel="115 - Burundi" itemValue="Burundi" />
+								<f:selectItem itemLabel="119 - Butão" itemValue="Butão" />
+								<f:selectItem itemLabel="127 - Cabo Verde, República"
+									itemValue="Cabo Verde, República" />
+								<f:selectItem itemLabel="137 - Cayman, Ilhas" itemValue="Cayman" />
+								<f:selectItem itemLabel="141 - Canboja" itemValue="Canboja" />
+								<f:selectItem itemLabel="145 - Camarões" itemValue="Camarões" />
+								<f:selectItem itemLabel="149 - Canadá" itemValue="Canadá" />
+								<f:selectItem itemLabel="150 - Jersey, Ilhas"
+									itemValue="Jersey, Ilhas" />
+								<f:selectItem itemLabel="151 - Canariás" itemValue="Canariás" />
+								<f:selectItem itemLabel="153 - Cazaquistão, República"
+									itemValue="Cazaquistão, República" />
+								<f:selectItem itemLabel="154 - Catar" itemValue="Catar" />
+								<f:selectItem itemLabel="293 - Gibarltar" itemValue="Gibarltar" />
+								<f:selectItem itemLabel="297 - Granada" itemValue="Granada" />
+								<f:selectItem itemLabel="301 - Grécia" itemValue="Grécia" />
+								<f:selectItem itemLabel="305 - Groenlândia"
+									itemValue="Groenlândia" />
+								<f:selectItem itemLabel="309 - Guadalupe" itemValue="Guadalupe" />
+								<f:selectItem itemLabel="313 - Guam" itemValue="Guam" />
+								<f:selectItem itemLabel="317 - Guatemala" itemValue="Guatemala" />
+								<f:selectItem itemLabel="325 - Guiana Francesa"
+									itemValue="Guiana Francesa" />
+								<f:selectItem itemLabel="329 - Guiné" itemValue="Guiné" />
+								<f:selectItem itemLabel="331 - Guiné - Equatorial"
+									itemValue="Guiné - Equatorial" />
+								<f:selectItem itemLabel="334 - Bissau" itemValue="Bissau" />
+								<f:selectItem itemLabel="337 - Guiana" itemValue="Guiana" />
+								<f:selectItem itemLabel="341 - Haiti" itemValue="Haiti" />
+								<f:selectItem itemLabel="345 - Honduras" itemValue="Honduras" />
+								<f:selectItem itemLabel="351 - Hong Kong" itemValue="Hong Kong" />
+								<f:selectItem itemLabel="355 - Hungria, República"
+									itemValue="Hungria" />
+								<f:selectItem itemLabel="357 - Iemeen" itemValue="Iemeen" />
+								<f:selectItem itemLabel="359 - Man, Ilha" itemValue="Man, Ilha" />
+								<f:selectItem itemLabel="361 - Índia" itemValue="Índia" />
+								<f:selectItem itemLabel="365 - Indonésia" itemValue="Indonésia" />
+								<f:selectItem itemLabel="369 - Iraque" itemValue="Iraque" />
+								<f:selectItem itemLabel="372 - Irã" itemValue="Irã" />
+								<f:selectItem itemLabel="375 - Irlanda" itemValue="Irlanda" />
+								<f:selectItem itemLabel="379 - Inslândia" itemValue="Inslândia" />
+								<f:selectItem itemLabel="383 - Israel" itemValue="Israel" />
+								<f:selectItem itemLabel="386 - Itália" itemValue="Itália" />
+								<f:selectItem itemLabel="391 - Jamaica" itemValue="Jamaica" />
+								<f:selectItem itemLabel="396 - Johnston, Ilhas"
+									itemValue="Johnston, Ilhas" />
+								<f:selectItem itemLabel="399 - Japão" itemValue="Japão" />
+								<f:selectItem itemLabel="403 - Jordânia" itemValue="Jordânia" />
+								<f:selectItem itemLabel="411 - Kiripeti" itemValue="Kiripeti" />
+								<f:selectItem itemLabel="420 - Laos" itemValue="Laos" />
+								<f:selectItem itemLabel="423 - Lebuan" itemValue="Lebuan" />
+								<f:selectItem itemLabel="426 - Lesoto" itemValue="Lesoto" />
+								<f:selectItem itemLabel="427 - Letônia" itemValue="Letônia" />
+								<f:selectItem itemLabel="431 - Líbano" itemValue="Líbano" />
+								<f:selectItem itemLabel="434 - Libéria" itemValue="Libéria" />
+								<f:selectItem itemLabel="438 - Líbia" itemValue="Líbia" />
+								<f:selectItem itemLabel="440 - Liechtenstein"
+									itemValue="Liechtenstein" />
+								<f:selectItem itemLabel="442 - Lituânia" itemValue="Lituânia" />
+								<f:selectItem itemLabel="445 - Luxerburgo"
+									itemValue="Luxerburgo" />
+								<f:selectItem itemLabel="447 - Macao" itemValue="Macao" />
+								<f:selectItem itemLabel="449 - Macedônia" itemValue="Macedônia" />
+								<f:selectItem itemLabel="573 - Holanda" itemValue="Holanda" />
+								<f:selectItem itemLabel="575 - Palau" itemValue="Palau" />
+								<f:selectItem itemLabel="576 - Paquestão" itemValue="Paquestão" />
+								<f:selectItem itemLabel="580 - Panamá" itemValue="Panamá" />
+								<f:selectItem itemLabel="586 - Paraguai" itemValue="Paraguai" />
+								<f:selectItem itemLabel="589 - Peru" itemValue="Peru" />
+								<f:selectItem itemLabel="593 - Pitcairn, Ilha"
+									itemValue="Pitcairn, Ilha" />
+								<f:selectItem itemLabel="599 - Polinésia, Francesa"
+									itemValue="Polinésia, Francesa" />
+								<f:selectItem itemLabel="603 - Polônia" itemValue="Polônia" />
+								<f:selectItem itemLabel="607 - Portugal" itemValue="Portugal" />
+								<f:selectItem itemLabel="611 - Porto Rico"
+									itemValue="Porto Rico" />
+								<f:selectItem itemLabel="623 - Quênia" itemValue="Quênia" />
+								<f:selectItem itemLabel="625 - Quirguiz" itemValue="Quirguiz" />
+								<f:selectItem itemLabel="628 - Reino Unido"
+									itemValue="Reino Unido" />
+								<f:selectItem itemLabel="640 - República Centro - Africana"
+									itemValue="República Centro - Africana" />
+								<f:selectItem itemLabel="647 - República Dominicana"
+									itemValue="República Dominicana" />
+								<f:selectItem itemLabel="660 - Reunião, Ilha"
+									itemValue="Reunião, Ilha" />
+								<f:selectItem itemLabel="665 - Zinbabue" itemValue="Zinbabue" />
+								<f:selectItem itemLabel="670 - Romênia" itemValue="Romênia" />
+								<f:selectItem itemLabel="675 - Ruanda" itemValue="Ruanda" />
+								<f:selectItem itemLabel="676 - Rússia" itemValue="Rússia" />
+								<f:selectItem itemLabel="677 - Salomão, Ilhas"
+									itemValue="Salomão" />
+								<f:selectItem itemLabel="678 - Saint Kitts"
+									itemValue="Saint Kitts" />
+								<f:selectItem itemLabel="685 - Saara" itemValue="Saara" />
+								<f:selectItem itemLabel="687 - El Salvador"
+									itemValue="El Salvador" />
+								<f:selectItem itemLabel="690 - Samoa" itemValue="Samoa" />
+								<f:selectItem itemLabel="691 - Samoa Americana"
+									itemValue="Samoa Americana" />
+								<f:selectItem itemLabel="695 - São Critovão e Neves"
+									itemValue="São Critovão e Neves" />
+								<f:selectItem itemLabel="697 - San Marino"
+									itemValue="San Marino" />
+								<f:selectItem itemLabel="700 - São Pedro e Mikoelom"
+									itemValue="São Pedro e Mikoelom" />
+								<f:selectItem itemLabel="705 - São Vicente e Granadinas"
+									itemValue="São Vicente e Granadinas" />
+								<f:selectItem itemLabel="710 - Santa Helena"
+									itemValue="Santa Helena" />
+								<f:selectItem itemLabel="715 - Santa Lúcia"
+									itemValue="Santa Lúcia" />
+								<f:selectItem itemLabel="720 - Santomé e Pricípe"
+									itemValue="Santomé e Pricípe" />
+								<f:selectItem itemLabel="728 - Senegal" itemValue="Senegal" />
+								<f:selectItem itemLabel="731 - Seychelles"
+									itemValue="Seychelles" />
+								<f:selectItem itemLabel="735 - Serra Leoa"
+									itemValue="Serra Leoa" />
+								<f:selectItem itemLabel="737 - Servia" itemValue="Servia" />
+								<f:selectItem itemLabel="741 - Cingapura" itemValue="Cingapura" />
+								<f:selectItem itemLabel="744 - Síria" itemValue="Síria" />
+								<f:selectItem itemLabel="748 - Somália" itemValue="Somália" />
+								<f:selectItem itemLabel="750 - Sri lanka" itemValue="Srilanka" />
+								<f:selectItem itemLabel="754 - Suazilândia"
+									itemValue="Suazilândia" />
+								<f:selectItem itemLabel="158 - Chile" itemValue="Chile" />
+								<f:selectItem itemLabel="160 - China" itemValue="China" />
+								<f:selectItem itemLabel="161 - Formosa" itemValue="Formosa" />
+								<f:selectItem itemLabel="163 - Chipre" itemValue="Chipre" />
+								<f:selectItem itemLabel="165 - Cocos-Keeling"
+									itemValue="Cocos-Keeling" />
+								<f:selectItem itemLabel="169 - Colômbia" itemValue="Colômbia" />
+								<f:selectItem itemLabel="173 - Comores" itemValue="Comores" />
+								<f:selectItem itemLabel="177 - Congos" itemValue="Congos" />
+								<f:selectItem itemLabel="!83 - Cok" itemValue="Cok" />
+								<f:selectItem itemLabel="187 - Coréia República Rep.pop.demo"
+									itemValue="Coréia" />
+								<f:selectItem itemLabel="190 - Coréia República"
+									itemValue="Coréia República" />
+								<f:selectItem itemLabel="193 - Costa do Marfim"
+									itemValue="Costa do Marfim" />
+								<f:selectItem itemLabel="195 - Croácia" itemValue="Croácia" />
+								<f:selectItem itemLabel="196 - Costa Rica"
+									itemValue="Costa Rica" />
+								<f:selectItem itemLabel="198 - Coveit" itemValue="Coveit" />
+								<f:selectItem itemLabel="199 - Cuba" itemValue="Cuba" />
+								<f:selectItem itemLabel="229 - Benin" itemValue="Benin" />
+								<f:selectItem itemLabel="232 - Dinamarca" itemValue="Dinamarca" />
+								<f:selectItem itemLabel="235 - Dominica" itemValue="Dominica" />
+								<f:selectItem itemLabel="239 - Equador" itemValue="Equador" />
+								<f:selectItem itemLabel="240 - Egito" itemValue="Egito" />
+								<f:selectItem itemLabel="243 - Eritreia" itemValue="Eritreia" />
+								<f:selectItem itemLabel="244 - Emirados Árabes Unidos"
+									itemValue="Emirados Árabes Unidos" />
+								<f:selectItem itemLabel="245 - Espanha" itemValue="Espanha" />
+								<f:selectItem itemLabel="246 - Eslovênia" itemValue="Eslovênia" />
+								<f:selectItem itemLabel="247 - Eslovaca" itemValue="Eslovaca" />
+								<f:selectItem itemLabel="249 - Estados Unidos"
+									itemValue="Estados Unidos" />
+								<f:selectItem itemLabel="251 - Estônia" itemValue="Estônia" />
+								<f:selectItem itemLabel="253 - Etiópia" itemValue="Etiópia" />
+								<f:selectItem itemLabel="255 - Falklandi" itemValue="Falklandi" />
+								<f:selectItem itemLabel="259 - Feroe" itemValue="Feroe" />
+								<f:selectItem itemLabel="267 - Filipinas" itemValue="Filipinas" />
+								<f:selectItem itemLabel="271 - Finlândia" itemValue="Finlândia" />
+								<f:selectItem itemLabel="275 - França" itemValue="França" />
+								<f:selectItem itemLabel="281 - Gabão" itemValue="Gabão" />
+								<f:selectItem itemLabel="285 - Gambea" itemValue="Gambea" />
+								<f:selectItem itemLabel="289 - Gana" itemValue="Gana" />
+								<f:selectItem itemLabel="291 - Geórgia" itemValue="Geórgia" />
+								<f:selectItem itemLabel="450 - Madagascar"
+									itemValue="Madagascar" />
+								<f:selectItem itemLabel="452 - Madeira" itemValue="Madeira" />
+								<f:selectItem itemLabel="455 - Malásia" itemValue="Malásia" />
+								<f:selectItem itemLabel="458 - Malavi" itemValue="Malavi" />
+								<f:selectItem itemLabel="461 - Maldivas" itemValue="Maldivas" />
+								<f:selectItem itemLabel="464 - Mali" itemValue="Mali" />
+								<f:selectItem itemLabel="467 - Malta" itemValue="Malta" />
+								<f:selectItem itemLabel="472 - Marianas do Norte"
+									itemValue="Marianas do Norte" />
+								<f:selectItem itemLabel="474 - Marrocos" itemValue="Marrocos" />
+								<f:selectItem itemLabel="476 - Marshall, Ilhas"
+									itemValue="Marshall, Ilhas" />
+								<f:selectItem itemLabel="477 - Martinica" itemValue="Martinica" />
+								<f:selectItem itemLabel="485 - Maurício" itemValue="Maurício" />
+								<f:selectItem itemLabel="488 - Mauritânia"
+									itemValue="Mauritânia" />
+								<f:selectItem itemLabel="490 - Midway" itemValue="Midway" />
+								<f:selectItem itemLabel="493 - México" itemValue="México" />
+								<f:selectItem itemLabel="494 - Moldavia" itemValue="Moldavia" />
+								<f:selectItem itemLabel="495 - Mônaco" itemValue="Mônaco" />
+								<f:selectItem itemLabel="497 - Mongólia" itemValue="Mongólia" />
+								<f:selectItem itemLabel="498 - Montenegro"
+									itemValue="Montenegro" />
+								<f:selectItem itemLabel="499 - Micronésia"
+									itemValue="Micronésia" />
+								<f:selectItem itemLabel="501 - Montserrat"
+									itemValue="Montserrat" />
+								<f:selectItem itemLabel="505 - Moçambique"
+									itemValue="Moçambique" />
+								<f:selectItem itemLabel="507 - Namíbia" itemValue="Namíbia" />
+								<f:selectItem itemLabel="508 - Nauru" itemValue="Nauru" />
+								<f:selectItem itemLabel="511 - Christmas, Ilhas"
+									itemValue="Christmas, Ilhas" />
+								<f:selectItem itemLabel="517 - Nepau" itemValue="Nepau" />
+								<f:selectItem itemLabel="521 - Nicarágua" itemValue="Nicaraguá" />
+								<f:selectItem itemLabel="524 - Niger" itemValue="Niger" />
+								<f:selectItem itemLabel="528 - Nigéria" itemValue="Nigéria" />
+								<f:selectItem itemLabel="531 - Niue, Ilha"
+									itemValue="Niue, Ilha" />
+								<f:selectItem itemLabel="535 - Norfolk" itemValue="Norfolk" />
+								<f:selectItem itemLabel="538 - Noruega" itemValue="Noruega" />
+								<f:selectItem itemLabel="542 - Nova Caledônia"
+									itemValue="Nova Caledônia" />
+								<f:selectItem itemLabel="545 - Papua Nova Ginué"
+									itemValue="Papua Nova Giné" />
+								<f:selectItem itemLabel="548 - Nova Zelândia"
+									itemValue="Nova Zelândia" />
+								<f:selectItem itemLabel="551 - Vanuatu" itemValue="Vanuatu" />
+								<f:selectItem itemLabel="556 - Omã" itemValue="Omã" />
+								<f:selectItem itemLabel="566 - Pacífico, Ilhas"
+									itemValue="Pacífico, Ilhas" />
+								<f:selectItem itemLabel="756 - África do Sul"
+									itemValue="África do Sul" />
+								<f:selectItem itemLabel="759 - Sudão" itemValue="Sudão" />
+								<f:selectItem itemLabel="764 - Suécia" itemValue="Suécia" />
+								<f:selectItem itemLabel="767 - Suíça" itemValue="Suíça" />
+								<f:selectItem itemLabel="770 - Surinema" itemValue="Surinema" />
+								<f:selectItem itemLabel="772 - Tadjikuistão"
+									itemValue="Tadjikuistão" />
+								<f:selectItem itemLabel="776 - Tailândia" itemValue="Tailândia" />
+								<f:selectItem itemLabel="780 - Tanzania" itemValue="Tanzania" />
+								<f:selectItem
+									itemLabel="782 - Território Britãnico no Oceano Índico"
+									itemValue="Território Britãnico no Oceano Índico" />
+								<f:selectItem itemLabel="783 - Djibuti" itemValue="Djibuti" />
+								<f:selectItem itemLabel="788 - Chade" itemValue="Chade" />
+								<f:selectItem itemLabel="791 - Tcheca República"
+									itemValue="Tcheca República" />
+								<f:selectItem itemLabel="795 - Timorlest" itemValue="Timorlest" />
+								<f:selectItem itemLabel="800 - Togo" itemValue="Togo" />
+								<f:selectItem itemLabel="805 - Toquelau, Ilhas"
+									itemValue="Toquelau" />
+								<f:selectItem itemLabel="810 - Tonga" itemValue="Tonga" />
+								<f:selectItem itemLabel="815 - Trindade e Tobago"
+									itemValue="Trindade e Tobago" />
+								<f:selectItem itemLabel="820 - Tunísia" itemValue="Tunísia" />
+								<f:selectItem itemLabel="823 - Turcas e Caicos, Ilhas"
+									itemValue="Turcas e Caicos, Ilhas" />
+								<f:selectItem itemLabel="824 - Turcomenistão"
+									itemValue="Turcomenistão" />
+								<f:selectItem itemLabel="827 - Túrquia" itemValue="Túrquia" />
+								<f:selectItem itemLabel="828 - Tuvalu" itemValue="Tuvalu" />
+								<f:selectItem itemLabel="831 - Ucrânia" itemValue="Ucrânia" />
+								<f:selectItem itemLabel="833 - Uganda" itemValue="Uganda" />
+								<f:selectItem itemLabel="845 - Uruguai" itemValue="Uruguai" />
+								<f:selectItem itemLabel="847 - Usbequistão"
+									itemValue="Usbequistão" />
+								<f:selectItem itemLabel="848 - Vaticano" itemValue="Vaticano" />
+								<f:selectItem itemLabel="850 - Venezuela" itemValue="Venezuela" />
+								<f:selectItem itemLabel="858 - Viatnã" itemValue="Viatnã" />
+								<f:selectItem itemLabel="863 - Virgens, Ilhas(Britânicas)"
+									itemValue="Virgens, Ilhas" />
+								<f:selectItem itemLabel="866 - Virgens, Ilhas(EUA)"
+									itemValue="Ilhas(EUA)" />
+								<f:selectItem itemLabel="870 - Fiji" itemValue="Fiji" />
+								<f:selectItem itemLabel="873 - Wake,Ilha" itemValue="Wake,Ilha" />
+								<f:selectItem itemLabel="875 - Wallis e Futuna, Ilhas"
+									itemValue="Wallis e Futuna, Ilhas" />
+								<f:selectItem itemLabel="888 - Kongo" itemValue="Kongo" />
+								<f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
+								<f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
+								<f:selectItem itemLabel="Outros" itemValue="Outros" />
+							</p:selectOneMenu>
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
-				<p:inputMask style="width: 2%" value="#{Empresa.dddTelefone}" mask="(999)" />
-				<br />
-				<br />
+							<p:inputMask style="width: 2%" value="#{Empresa.dddTelefone}"
+								mask="(999)" />
+							<br />
+							<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
-				<p:inputMask id="telefone" style="width: 6%" value="#{Empresa.numeroTelefone}"
-					mask="99999-9999" />
+							<p:inputMask id="telefone" style="width: 6%"
+								value="#{Empresa.numeroTelefone}" mask="99999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Fax: " />
-				<p:inputMask style="width: 2%" value="#{Empresa.dddFax}" mask="(999)" />
+							<p:inputMask style="width: 2%" value="#{Empresa.dddFax}"
+								mask="(999)" />
              
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Fax: " />
-				<p:inputMask style="width: 6%" value="#{Empresa.numeroFax}" mask="99999-9999" />
+							<p:inputMask style="width: 6%" value="#{Empresa.numeroFax}"
+								mask="99999-9999" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Tipo de Localidade: " />
-				<p:inputText style="width: 2%" value="#{Empresa.tipoLocalidade}" />
+							<p:inputText style="width: 2%" value="#{Empresa.tipoLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod Localidade: " />
-				<p:inputText style="width: 6%" value="#{Empresa.codLocalidade}" />
+							<p:inputText style="width: 6%" value="#{Empresa.codLocalidade}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Cod IBGE: " />
-				<p:inputText style="width: 5%" value="#{Empresa.codMunIBGE}" />
+							<p:inputText style="width: 5%" value="#{Empresa.codMunIBGE}" />
 
 
 
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
-				legend="Dados complementares">
+
+						</p:fieldset>
 
 
-				<h:outputText style="font-size: 10px" value="  Ind. Prod Rural:  " />
-				&nsbp;
-				<p:selectOneMenu id="country" style="width:150px">
+						<br />
+						<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
+							legend="Dados complementares">
+
+
+							<h:outputText style="font-size: 10px"
+								value="  Ind. Prod Rural:  " />
+							&nsbp;
+							<p:selectOneMenu id="country" style="width:150px">
 					/>
 					<f:selectItem itemLabel="Selecione" itemValue=""
-						noSelectionOption="true" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-					<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-				</p:selectOneMenu>
+									noSelectionOption="true" />
+								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
+							</p:selectOneMenu>
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
-				<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
+							<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Cadastro Específico do INSS: " />
-				<p:inputText style="width: 8%" value="#{Empresa.cadInss}" />
+								value="  Cadastro Específico do INSS: " />
+							<p:inputText style="width: 8%" value="#{Empresa.cadInss}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Classificação Fiscal: " />
-				<p:inputText style="width: 2%" value="#{Empresa.classFical}" />
+								value="  Classificação Fiscal: " />
+							<p:inputText style="width: 2%" value="#{Empresa.classFical}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  NIT: " />
-				<p:inputText style="width: 8%" value="#{Empresa.nit}" />
+							<p:inputText style="width: 8%" value="#{Empresa.nit}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
-				
-                <p:selectOneMenu style="font-size:10px" value="retificacao"
-					itemLabel="indservico">
-					<f:selectItem itemLabel="Situação" itemValue="Situação" />
-					<f:selectItem itemLabel="Normal" itemValue="Normal" />
-					<f:selectItem itemLabel="Extinção" itemValue="Extinção" />
-					<f:selectItem itemLabel="Fusão" itemValue="Fusão" />
-					<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
-					<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-				</p:selectOneMenu>
-				
+							<p:selectOneMenu style="font-size:10px" value="retificacao"
+								itemLabel="indservico">
+								<f:selectItem itemLabel="Situação" itemValue="Situação" />
+								<f:selectItem itemLabel="Normal" itemValue="Normal" />
+								<f:selectItem itemLabel="Extinção" itemValue="Extinção" />
+								<f:selectItem itemLabel="Fusão" itemValue="Fusão" />
+								<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
+								<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-				<br />
-				<br />
+							</p:selectOneMenu>
+
+
+							<br />
+							<br />
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Número de Inscrição CNO: " />
-				<p:inputText style="width: 8%" value="#{Empresa.numeroCNO}" />
+								value="  Número de Inscrição CNO: " />
+							<p:inputText style="width: 8%" value="#{Empresa.numeroCNO}" />
 
                 &nbsp; 
 				<h:outputText style="font-size: 10px" value="  CNAE: " />
-				<p:inputMask style="width: 5%" value="#{Empresa.cnae}" mask="9999-9/99" />
+							<p:inputMask style="width: 5%" value="#{Empresa.cnae}"
+								mask="9999-9/99" />
 
 
-				<script>
+							<script>
             PrimeFaces.locales['pt'] = {
                 closeText: 'Fechar',
                 prevText: 'Anterior',
@@ -655,91 +796,116 @@
         
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  Data de criação: " />
-				<p:calendar locale="pt" pattern="dd/MM/yyyy" style="font-size:13px"
-					maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
-					id="rockup" value="#{calendarView.date2}" />
+							<p:calendar locale="pt" pattern="dd/MM/yyyy"
+								style="font-size:13px" maxlength="10" mindate="01/01/1970"
+								maxdate="31/12/2099" id="rockup" value="#{calendarView.date2}" />
 
                 &nbsp;
 				<h:outputText style="font-size: 10px"
-					value="  Data de Encerramento: " />
-				<p:calendar style="font-size:13px" maxlength="10"
-					mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
-					value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
-				legend="Open Flex">
-				<center>
-					<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
-					<p:inputText style="width: 20%" value="#{Empresa.openflex01}" />
+								value="  Data de Encerramento: " />
+							<p:calendar style="font-size:13px" maxlength="10"
+								mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
+								value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+						</p:fieldset>
+						<br />
+						<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
+							legend="Open Flex">
+							<center>
+								<h:outputText style="font-size: 10px" value="  Open Flex 01: " />
+								<p:inputText style="width: 20%" value="#{Empresa.openflex01}" />
 
-					&nbsp;
-					<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
-					<p:inputText style="width: 20%" value="#{Empresa.openflex02}" />
-				</center>
-			</p:fieldset>
-			<br />
-			<p:fieldset style="background-color: #F2F2F2">
-				<center>
+								&nbsp;
+								<h:outputText style="font-size: 10px" value="  Open Flex 02: " />
+								<p:inputText style="width: 20%" value="#{Empresa.openflex02}" />
+							</center>
+						</p:fieldset>
 
-                    <p:button style="background-color:#E0EEF6; font-size:10px"
-						 value="Salvar" icon="ui-icon-folder-open">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-					
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
 
-					
+						<br />
+						<p:fieldset style="background-color: #F2F2F2">
+							<center>
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-					
 
-					<p:button style="background-color:#E0EEF6; font-size:10px"
-						outcome="acoesBotao" value="  Pesquisar " url="#{acoesBotao.DadosTelaPesquisa}" icon="ui-icon-search">
-						<f:param name="productId" value="turubom?" />
-					</p:button>
-					
-					
 
-					<br /> <br />
 
-					<p:commandButton type="button" style="width:25px; height:25px"
-						icon="ui-icon-seek-first" />
-					<p:commandButton type="button" style="width:25px; height:25px"
-						icon="ui-icon-seek-prev" />
-					<p:commandButton type="button" style="width:25px; height:25px"
-						icon="ui-icon-seek-next" />
-					<p:commandButton type="button" style="width:25px; height:25px"
-						icon="ui-icon-seek-end" />
-                    &nbsp;
-                    
-					
+								<p:commandButton value="Salvar" type="submit"
+									style="background-color:#E0EEF6; font-size:10px"
+									icon="ui-icon-folder-open">
+									<f:param name="productId" value="turubom?" />
+								</p:commandButton>
 
-				</center>
-			</p:fieldset>
-            
-        <p:button style="background-color:#E0EEF6; font-size:10px"
-				id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
-				<f:param name="productId" value="turubom?" />
-			</p:button>
-		
-		
 
-		</p:layoutUnit>
-        </h:form>
-	</p:layout>
+
+
+
+								<p:button style="background-color:#E0EEF6; font-size:10px"
+									outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
+									<f:param name="productId" value="turubom?" />
+								</p:button>
+
+								<p:button style="background-color:#E0EEF6; font-size:10px"
+									outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
+									<f:param name="productId" value="turubom?" />
+								</p:button>
+
+
+
+								<p:button style="background-color:#E0EEF6; font-size:10px"
+									outcome="acoesBotao" value="Exportar" icon="ui-icon-extlink">
+									<f:param name="productId" value="turubom?" />
+								</p:button>
+
+
+								<p:button style="background-color:#E0EEF6; font-size:10px"
+									outcome="acoesBotao" value="  Pesquisar "
+									url="#{acoesBotao.DadosTelaPesquisa}" icon="ui-icon-search">
+									<f:param name="productId" value="turubom?" />
+								</p:button>
+
+
+
+								<br /> <br />
+
+								<p:commandButton type="button" style="width:25px; height:25px"
+									icon="ui-icon-seek-first" />
+								<p:commandButton type="button" style="width:25px; height:25px"
+									icon="ui-icon-seek-prev" />
+								<p:commandButton type="button" style="width:25px; height:25px"
+									icon="ui-icon-seek-next" />
+								<p:commandButton type="button" style="width:25px; height:25px"
+									icon="ui-icon-seek-end" />
+								&nbsp;
+
+
+
+							</center>
+						</p:fieldset>
+
+						<p:button style="background-color:#E0EEF6; font-size:10px"
+							id="backLink" onClick="history.go(-1)"
+							href="javascript:window.history.go(-1)" value="Voltar"
+							icon="fa-backward">
+							<f:param name="productId" value="turubom?" />
+						</p:button>
+
+
+
+
+					</p:layoutUnit>
+				</h:form>
+
+
+			</p:layout>
+
+
+
+		</h:form>
+
+
+	</h:form>
+
 
 
 </h:body>
