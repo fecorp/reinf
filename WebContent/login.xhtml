@@ -7,22 +7,35 @@
 
 </h:head>
 
-<h:body>
-	<h:form>
+<h:body style="background-color:#EFF2F6; margin:0% ; padding:0% ; border:0%" >
+<br></br>
+<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+<p:fieldset	
+			style=" background: linear-gradient(to bottom right, #D2691E, #F5DEB3)">
+	 <h:form>
 		<p:messages id="messages" />
-		<p:panelGrid columns="2">
-			<p:outputLabel for="nomeUsuario" value="Nome Usuário:" />
+		<br></br>
+		
+	<!-- 	<p:panelGrid columns="2">  -->
+		<center>
+			<p:outputLabel for="nomeUsuario" value="Nome:" />
 			<p:inputText id="nomeUsuario" value="#{LoginMB.usuario.nomeUsuario}" required="true" 
-			requiredMessage="Campo Obrigatório!!!"/>
-
+			requiredMessage="Campo Obrigatório!!!"/> 	
+		
 			<p:outputLabel for="senha" value="Senha:" />
 			<p:password id="senha" value="#{LoginMB.usuario.senha}" required="true"
 			requiredMessage="Campo Obrigatório"/>
-
+		</center>
+		<center>
+		<br></br>
 			<h:commandButton action="#{LoginMB.envia}"  value="Enviar" icon="ui-icon-star" ajax="false">
 			</h:commandButton>
-			
-			</p:panelGrid>
+		</center>
+			<!-- </p:panelGrid>  -->
+		
 	</h:form>
+	</p:fieldset>
+	<img src="Imagens/FECORP_REINF.jpg"></img>
+	</p:layoutUnit>
 </h:body>
 </h:html>
