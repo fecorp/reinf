@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
+org.jboss.ide.eclipse.as.ui.defaultWebServer=WildFly  9.x 1505480600611
 org.jboss.ide.eclipse.as.ui.preferences.disabled.automatic.server.view=true
 org.jboss.ide.eclipse.as.ui.preferences.enabledDecorators.1=true

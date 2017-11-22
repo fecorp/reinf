@@ -1,60 +1,41 @@
 <h:html xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:h="http://java.sun.com/jsf/html"
-        xmlns:f="http://java.sun.com/jsf/core"
-        xmlns:p="http://primefaces.org/ui">
-   
-  <h:head>
-  
-  <meta name="viewport" content="width:device-width"/>
-<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
-   
-  </h:head>
-  
-  <h:body style="background-color:#EFF2F6;border:0px; height: 600px">
-  		<br></br>
-  			<p:layoutUnit position="center" style="height: 600px" fullPage="true">
-  			<div class="responsividade">
-				<p:fieldset style=" background: linear-gradient(to bottom right, #D2691E, #F5DEB3)">
-				
-				<br></br><br></br>
-				<b>		
-				<h:form><center>
-				
-						<h:outputText style="font-size: 15px" value=" Login:   " />
-						<p:inputText style="width: 15%; " value="" />
-						<br></br>
-						<br></br>
-						
-						<h:outputText style="font-size: 15px"   value="  Senha:      "/>
-						<p:password id="senha" style="width: 15%; value=" />
-						
-						<br></br>
-						<br></br> 
-				</center></h:form>
-					
-				<h:form><center>		
-						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 45px"
-							type="reset" value="  Limpar " icon="ui-icon-trash">
-							<f:param name="productId" value="turubom?" />
-						</p:button>
-					
-						<p:button style="background-color:#EFF2F6; font-size:12px; margin-left: 10px"
-							 value="  Acessar " icon="ui-icon-star">
-							<f:param name="productId"/>
-						</p:button>
-				
-				</center></h:form>
-			</b>	
-			</p:fieldset>
-			<br></br>
-			<img src="Imagens/LOGO.jpg"></img> 	
-			<br></br>
-			</div>
-		</p:layoutUnit> 
-		  
-  </h:body>
-  
-  
-  </h:html>
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body style="background-color:#EFF2F6; margin:0% ; padding:0% ; border:0%" >
+<br></br>
+<p:layoutUnit position="center" style="height: 600px" fullPage="true">
+<p:fieldset	
+			style=" background: linear-gradient(to bottom right, #D2691E, #F5DEB3)">
+	 <h:form>
+		<p:messages id="messages" />
+		<br></br>
+		
+	<!-- 	<p:panelGrid columns="2">  -->
+		<center>
+			<p:outputLabel for="nomeUsuario" value="Nome:" />
+			<p:inputText id="nomeUsuario" value="#{LoginMB.usuario.nomeUsuario}" required="true" 
+			requiredMessage="Campo Obrigatório!!!"/> 	
+		
+			<p:outputLabel for="senha" value="Senha:" />
+			<p:password id="senha" value="#{LoginMB.usuario.senha}" required="true"
+			requiredMessage="Campo Obrigatório"/>
+		</center>
+		<center>
+		<br></br>
+			<h:commandButton action="#{LoginMB.envia}"  value="Enviar" icon="ui-icon-star" ajax="false">
+			</h:commandButton>
+		</center>
+			<!-- </p:panelGrid>  -->
+		
+	</h:form>
+	</p:fieldset>
+	<img src="Imagens/FECORP_REINF.jpg"></img>
+	</p:layoutUnit>
+</h:body>
+</h:html>

@@ -229,6 +229,51 @@
 								<f:param name="productId" value="turubom?" />
 							</p:button>
 			
+			<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
+				
+				<div>
+		<center>
+			<h3
+				style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">Cadastro de login</h3>
+		</center>
+	</div>
+				
+		</p:fieldset>
+			
+            <br></br> 
+			<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
+				legend="Usuário  ">
+				
+                
+				<h:outputText style="font-size: 10px" value="  Nome :      " />
+				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				<p:inputText required="true" requiredMessage="Csmpo Obrigatório" style="width: 15%; " value="#{TelaCadastroLogin.nome}"/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Departamento :&nbsp;     " />
+				<p:inputText style="width: 15%; " value="#{TelaCadastroLogin.departamento}"/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Login :&nbsp;     " />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				<p:inputText style="width: 15%; " value="#{TelaCadastroLogin.login}"/>
+				<br></br>
+				<br></br>
+				
+				<h:outputText style="font-size: 10px" value=" Senha:&nbsp;     " />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
+				 <p:password id="senha" style="width: 15%; value=" required="true" value="#{TelaCadastroLogin.senha}"/>
+				<br></br>
+				<br></br> 
+				
+				
+					<p:button style="background-color:#E0EEF6; font-size:10px"
+				type="reset" value="  Limpar " icon="ui-icon-trash">
+				<f:param name="productId" value="turubom?" />
+			</p:button>
+			
 			&nbsp; &nbsp;
 			
 				<p:button style=" background-color:#E0EEF6; font-size:10px"
@@ -238,8 +283,8 @@
 							</p:button>
 
 						</p:fieldset>
-					</h:form>
-
+					</p:fieldset>
+			</h:form>
 
 					<br></br> <br></br>
 
