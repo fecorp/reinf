@@ -42,6 +42,7 @@
 		<class>br.com.fecorp.reinf.model.Software</class>
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
+		<class>br.com.fecorp.reinf.model.TelaPesquisa</class>
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
