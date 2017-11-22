@@ -13,11 +13,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+ 
 @ManagedBean(name = "Empresa")
 @ViewScoped
 
 @Entity
 public class Empresa implements Serializable{
+	
+	
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -70,6 +73,7 @@ public class Empresa implements Serializable{
 	private String openflex01;
 	private String openflex02;
 	private BigDecimal numInscriCno;
+	
 	
 	
 	public String getEmpresa() {
@@ -342,5 +346,5 @@ public class Empresa implements Serializable{
 	public Serializable getId() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-}
+	} 
+} 
