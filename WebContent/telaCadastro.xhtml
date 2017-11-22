@@ -182,25 +182,10 @@
 		<div class="responsividade">
         
    <img src="Imagens/CADASTRO_DE_EMPRESA.jpg" width="100%"/>
+   
+   
+             
 
-					<p:layoutUnit position="center" style="height: 600px"
-						fullPage="true">
-
-
-
-						<p:fieldset style="background-color:#F4F0F0; font-size: 10px">
-
-							<div>
-								<center>
-									<h3
-										style="font-size: 15px; font-family: Lucida Bright; color: #0087CA">
-										Empresa</h3>
-								</center>
-							</div>
-
-						</p:fieldset>
-
-						<br></br>
 
 						<p:messages id="messages" required="true" showDetail="true"
 							autoUpdate="true" display="save" />
@@ -214,9 +199,9 @@
 
 
 
-							<h:outputText value=" Empresa : *   " />
-							<input type="text" value="#{Empresa.empresa}" required="true"
-								width=" 5% ; background-color: #F2F2F2" />
+							<h:outputText style="font-size: 10px" value=" Empresa : *     " />
+				<p:inputText style="width: 7%; background-color: #FFFFFF"
+					value="#{Empresa.empresa}" />
 
 		<!-- <form>	
 		<fieldset>
@@ -229,7 +214,7 @@
 		
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="      Filial  :  * " />
-							<p:inputText style="width: 5%; background-color: #F2F2F2"
+							<p:inputText style="width: 5%; background-color: #FFFFFF"
 								value="#{Empresa.filial}" />
 
                 &nbsp; 
@@ -253,7 +238,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 								value="               Categoria PF/PJ: * " />
-							<p:inputText style="width: 2%; background-color: #F2F2F2"
+							<p:inputText style="width: 2%; background-color: #FFFFFF"
 								value="#{Empresa.categoriaPFPJ}" />
 							<br />
 							<br />
@@ -263,7 +248,7 @@
 							<p:inputText style="width: 17%" value="#{Empresa.nomeFantasia}" />	
                 &nbsp;
 				<h:outputText style="font-size: 10px" value=" Código PF/PJ: * " />
-							<p:inputText style="width: 8%; background-color: #F2F2F2"
+							<p:inputText style="width: 8%; background-color:#FFFFFF"
 								value="#{Empresa.codigoPFPJ}" />
 
                 &nbsp;
@@ -344,7 +329,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  País de Origem : " />
 
-							<p:selectOneMenu style="font-size:10px" value="retificacao"
+							<h:selectOneMenu style="font-size:10px" value="retificacao"
 								itemLabel="indservico">
 								<f:selectItem itemLabel="001 - Brasil" itemValue="Brasil" />
 								<f:selectItem itemLabel="013 - Afeganistão"
@@ -668,14 +653,14 @@
 								<f:selectItem itemLabel="890 - Zâmbia" itemValue="Zâmbia" />
 								<f:selectItem itemLabel="997 - Palestina" itemValue="Palestina" />
 								<f:selectItem itemLabel="Outros" itemValue="Outros" />
-							</p:selectOneMenu>
-
+							</h:selectOneMenu>
+               <br></br>
+               <br></br>
                 &nbsp;
 				<h:outputText style="font-size: 10px" value="  DDD do Telefone: " />
 							<p:inputMask style="width: 2%" value="#{Empresa.dddTelefone}"
 								mask="(999)" />
-							<br />
-							<br />
+							
 				
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  Número do Telefone: " />
@@ -715,17 +700,13 @@
 							legend="Dados complementares">
 
 
-							<h:outputText style="font-size: 10px"
-								value="  Ind. Prod Rural:  " />
-							&nsbp;
-							<p:selectOneMenu id="country" style="width:150px">
-					/>
-					<f:selectItem itemLabel="Selecione" itemValue=""
-									noSelectionOption="true" />
-								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-								<f:selectItems value="AAAAAAA" itemLabel="Situação Normal" />
-							</p:selectOneMenu>
+							<h:outputText style="font-size: 9x" value="  Ind. Prod. Rural: " />
+
+							<h:selectOneMenu style="font-size:10px" value="retificacao"
+								itemLabel="indservico">
+								<f:selectItem itemLabel="Selecione" itemValue="Selecione" />
+								
+							</h:selectOneMenu>
 				&nbsp;
 				<h:outputText style="font-size: 10px" value="  SUFRAMA: " />
 							<p:inputText style="width: 7%" value="#{Empresa.insSuframa}" />
@@ -738,7 +719,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 10px"
 								value="  Classificação Fiscal: " />
-							<p:inputText style="width: 2%" value="#{Empresa.classFical}" />
+							<p:inputText style="width: 8%" value="#{Empresa.classFical}" />
                 
 				
 				
@@ -752,7 +733,7 @@
                 &nbsp;
 				<h:outputText style="font-size: 9x" value="  Situação PJ: " />
 
-							<p:selectOneMenu style="font-size:10px" value="retificacao"
+							<h:selectOneMenu style="font-size:10px" value="retificacao"
 								itemLabel="indservico">
 								<f:selectItem itemLabel="Situação" itemValue="Situação" />
 								<f:selectItem itemLabel="Normal" itemValue="Normal" />
@@ -761,11 +742,9 @@
 								<f:selectItem itemLabel="Cisão" itemValue="Cisão" />
 								<f:selectItem itemLabel="Incorporação" itemValue="Incorporação" />
 
-							</p:selectOneMenu>
+							</h:selectOneMenu>
 
 
-							<br />
-							<br />
 				
 				
 				&nbsp;
@@ -808,18 +787,21 @@
             };
         </script>
         
-                &nbsp;
-				<h:outputText style="font-size: 10px" value="  Data de criação: " />
-							<p:calendar locale="pt" pattern="dd/MM/yyyy"
-								style="font-size:13px" maxlength="10" mindate="01/01/1970"
-								maxdate="31/12/2099" id="rockup" value="#{calendarView.date2}" />
+           &nbsp;
+				<p:outputLabel style="font-size: 10px"
+								value="    Data de criação: * " />
+							<p:calendar style="font-size:10px; background-color: #F2F2F2"
+								maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+								id="um" value="#{calendarView.date2}" locale="pt"
+								pattern="dd/MM/yyyy" />
 
-                &nbsp;
-				<h:outputText style="font-size: 10px"
-								value="  Data de Encerramento: " />
-							<p:calendar style="font-size:13px" maxlength="10"
-								mindate="01/01/1970" maxdate="31/12/2099" id="jazzup"
-								value="#{calendarView.date2}" locale="pt" pattern="dd/MM/yyyy" />
+              &nbsp;
+				<p:outputLabel style="font-size: 10px"
+								value="    Data de encerramento: * " />
+							<p:calendar style="font-size:10px; background-color: #F2F2F2"
+								maxlength="10" mindate="01/01/1970" maxdate="31/12/2099"
+								id="dois" value="#{calendarView.date2}" locale="pt"
+								pattern="dd/MM/yyyy" />
 						</p:fieldset>
 						<br />
 						<p:fieldset style="background-color:#F2f2f2; font-size: 10px"
@@ -896,6 +878,7 @@
 
 							</center>
 						</p:fieldset>
+						 
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
 							id="backLink" onClick="history.go(-1)"
@@ -903,18 +886,21 @@
 							icon="fa-backward">
 							<f:param name="productId" value="turubom?" />
 						</p:button>
+</div>
+</p:layoutUnit>
 
-
-
-
-					</p:layoutUnit>
+                    
+                     
+					
 				</h:form>
+				
+				
 
 
 			</p:layout>
 
 
-
+       
 		</h:form>
 
 

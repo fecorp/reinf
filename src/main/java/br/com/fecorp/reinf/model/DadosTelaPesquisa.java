@@ -30,6 +30,7 @@ public class DadosTelaPesquisa implements Serializable{
 	private BigDecimal DataEntrada;
 	private BigDecimal DataInicio;
 	private BigDecimal DataFim;
+	
 	public double getNotaFiscal() {
 		return NotaFiscal;
 	}
