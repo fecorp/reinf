@@ -2,6 +2,7 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -76,7 +77,5 @@ public class DadosTelaPesquisa implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
 }
 
