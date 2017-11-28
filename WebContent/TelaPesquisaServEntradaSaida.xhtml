@@ -9,10 +9,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 
 <h:head>
-<meta name="viewport" content="width:device-width"/>
-<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 </h:head>
 
 <h:body style="background-color:#D3D3D3;border:0px;" >
@@ -185,13 +182,13 @@ xmlns="http://www.w3.org/1999/xhtml"
 			<h:outputText style="font-size:10px" value=" Item: " />
 				<h:selectOneMenu  style="font-size:11px" value="#{TelaPesquisa}" itemLabel="item" >
 					<f:selectItem itemLabel="--" itemValue="--" />
-					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" value="#{TelaPesquisaBean.empresa}"/>
-					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" value="#{TelaPesquisaBean.filial}"/>
+					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" value="#{TelaPesquisaModel.empresa}"/>
+					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" value="#{TelaPesquisaModel.filial}"/>
 					<f:selectItem itemLabel="Categoria PF/PJ" itemValue="Categoria PF/PJ" value="#{TelaPesquisa.categoriaPfPj}"/>
 					<f:selectItem itemLabel="Código PF/PJ" itemValue="Código PF/PJ" value="#{TelaPesquisa.codPfPj}"/>
-					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" value="#{TelaPesquisaBean.serieNotaFiscal}"/>
-					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" value="#{TelaPesquisaBean.numNotaFiscal}"/>
-					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" value="#{TelaPesquisaBean.dataEmissao}"/>
+					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" value="#{TelaPesquisaModel.serieNotaFiscal}"/>
+					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" value="#{TelaPesquisaModel.numNotaFiscal}"/>
+					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" value="#{TelaPesquisaModel.dataEmissao}"/>
 					<f:selectItem itemLabel="Sequência de Itens" itemValue="Sequência de Itens" value="#{TelaPesquisa.sequenciaItens}"/>
 					<f:selectItem itemLabel="VL do Serviço" itemValue="VL do Serviço" value="#{TelaPesquisa.valorServico}"/>
 					<f:selectItem itemLabel="VL Material aplicado" itemValue="VL Material aplicado" value="#{TelaPesquisa.valorMaterialAplicado}"/>
@@ -226,16 +223,16 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<f:selectItem itemLabel="Open Flex 02" itemValue="Open Flex 02" value="#{TelaPesquisa.openFlex02}"/>
 				</h:selectOneMenu>	
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			
+
 			<h:outputText style="font-size:10px" value="Criterio:" />
 				<h:selectOneMenu  style="font-size:11px" value="#{TelaPesquisa}" itemLabel="valor">
 					<f:selectItem itemLabel="--" itemValue="--" />
-					<f:selectItem itemLabel="Igual a" itemValue="Igual a" value="#{TelaPesquisaBean.igual}"/>
-					<f:selectItem itemLabel="Maior que" itemValue="Maior que" value="#{TelaPesquisaBean.maior}"/>
-					<f:selectItem itemLabel="Menor que" itemValue="Menor que" value="#{TelaPesquisaBean.menor}"/>
-					<f:selectItem itemLabel="Contem" itemValue="Contem" value="#{TelaPesquisaBean.contem}"/>
-					<f:selectItem itemLabel="Começa com" itemValue="Começa com" value="#{TelaPesquisaBean.comecaCom}"/>
-				</h:selectOneMenu>	
+					<f:selectItem itemLabel="Igual a" itemValue="Igual a" value="#{TelaPesquisaBean.pesquisa.igual}"/>
+					<f:selectItem itemLabel="Maior que" itemValue="Maior que" value="#{TelaPesquisaBean.pesquisa.maior}"/>
+					<f:selectItem itemLabel="Menor que" itemValue="Menor que" value="#{TelaPesquisaBean.pesquisa.menor}"/>
+					<f:selectItem itemLabel="Contem" itemValue="Contem" value="#{TelaPesquisaBean.pesquisa.contem}"/>
+					<f:selectItem itemLabel="Começa com" itemValue="Começa com" value="#{TelaPesquisaBean.pesquisa.comecaCom}"/>
+				</h:selectOneMenu>  
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
 			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: " />
@@ -257,7 +254,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 			
 				<p:button style="background-color:#E0EEF6; font-size:10px"
 					 value="Buscar" icon="ui-icon-search" >
-						<f:param name="productId" value="#{TelaPesquisaBean}" />
+						<f:param name="productId" value="#{TelaPesquisaModel}" />
 				</p:button>
 					&nbsp;&nbsp;&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -273,37 +270,37 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<!-- Menu de Pesquisa -->
 		<h:form>
 			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
-				<p:dataTable value="#{TelaPesquisaBean}" rows= "5" paginator="true">
+				<p:dataTable value="#{TelaPesquisaBean.pesquisa.add}" rows= "5" paginator="true" var="TelaPesquisaModel"  border="1">
 	        		<br />
 	        		<br />
 	       
 	        	<p:column headerText="Cod. Empresa"> 
-                <f:selectItems value="#{TelaPesquisaBean.empresa}" />  
+                <f:selectItems value="#{TelaPesquisaBean.pesquisa.empresa}" />  
   
 	        	</p:column>
 	        	<p:column headerText="Cod. Filial">
-	            	<h:outputText value="#{TelaPesquisaBean.filial}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.filial}" />
 	        	</p:column>
 	        	<p:column headerText="Série da Nota Fiscal">
-	            	<h:outputText value="#{TelaPesquisaBean.serieNotaFiscal}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.serieNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Numero da Nota Fiscal">
-	            	<h:outputText value="#{TelaPesquisaBean.numNotaFiscal}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.numNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Emissão">
-	            	<h:outputText value="#{TelaPesquisaBean.dataEmissao}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEmissao}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Entrada">
-	            	<h:outputText value="#{TelaPesquisaBean.dataEntrada}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEntrada}" />
 	        	</p:column>
 	        	<p:column headerText="Tipo de Documento">
-	            	<h:outputText value="#{TelaPesquisaBean.tipoDocumento}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.tipoDocumento}" />
 	        	</p:column>
 	       		<p:column headerText="Descrição do Serviço">
-	           		<h:outputText value="#{TelaPesquisaBean.inscricaoServ}" />
+	           		<h:outputText value="#{TelaPesquisaBean.pesquisa.inscricaoServ}" />
 	       		</p:column>
 	        	<p:column headerText="Valor do Serviço">
-	            	<h:outputText value="#{TelaPesquisaBean.valorServ}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.valorServ}" />
 	        	</p:column>
 	        	
 	        	<p:column style="width:25px;text-align: center">
