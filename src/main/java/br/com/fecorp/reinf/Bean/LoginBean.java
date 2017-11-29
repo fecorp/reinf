@@ -4,7 +4,6 @@ import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
-
 import br.com.fecorp.reinf.DAO.UsuarioDAO;
 import br.com.fecorp.reinf.model.Usuario;
 
