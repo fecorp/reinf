@@ -8,12 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tb_pessoa")
-public class Pessoa implements EntidadeBase {
+@Table(name="tb_carro")
+public class Carro implements EntidadeBase {
 	
 	private Long id;
-	private String nome;
-	private int idade;
+	private String modelo;
+	private int anoFabricacao;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -26,22 +26,22 @@ public class Pessoa implements EntidadeBase {
 		this.id = id;
 	}
 	
-	@Column(name="nome")
-	public String getNome() {
-		return nome;
+	@Column(name="modelo")
+	public String getModelo() {
+		return modelo;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	@Column(name="ano_fabricacao")
+	public int getAnoFabricacao() {
+		return anoFabricacao;
 	}
 
-	@Column(name="idade")
-	public int getIdade() {
-		return idade;
+	public void setAnoFabricacao(int anoFabricacao) {
+		this.anoFabricacao = anoFabricacao;
 	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-
+	
 }

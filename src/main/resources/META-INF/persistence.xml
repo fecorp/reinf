@@ -42,6 +42,7 @@
 		<class>br.com.fecorp.reinf.model.Software</class>
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
+		<class>br.com.fecorp.reinf.model.Carro</class>
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
@@ -57,6 +58,11 @@
 
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/dbReinf" />
+			
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://node522-env-2323387.br1.saphir.global/dbReinf"/>-->
+			<!-- <property name="javax.persistence.jdbc.user" value="webadmin" />-->
+			<!-- <property name="javax.persistence.jdbc.password" value="DFMcfc57175" />-->
+			
 			<property name="javax.persistence.jdbc.user" value="postgres" />
 			<property name="javax.persistence.jdbc.password" value="fecorp" />
 
