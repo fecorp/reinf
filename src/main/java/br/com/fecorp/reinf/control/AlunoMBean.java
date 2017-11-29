@@ -2,10 +2,10 @@ package br.com.fecorp.reinf.control;
 
 import java.util.List;
 
+
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-
 import br.com.fecorp.reinf.DAO.AlunoDao;
 import br.com.fecorp.reinf.model.Aluno;
 

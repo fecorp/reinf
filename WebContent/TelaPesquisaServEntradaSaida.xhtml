@@ -5,16 +5,11 @@ xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	
-	>
+	xmlns:p="http://primefaces.org/ui">
 
 
 <h:head>
-<meta name="viewport" content="width:device-width"/>
-<link rel="stylesheet" type="text/css" media="all and(max-width:320px)" href="pequeno.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width:321px) and (max-width:960px)" href="medio.css"/>
-<link rel="stylesheet" type="text/css" media="all and(min-width: 961px)" href="grande.css"/>
+
 </h:head>
 
 <h:body style="background-color:#D3D3D3;border:0px;" >
@@ -178,69 +173,70 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<p:layoutUnit style="background-color:#F2f2f2; height: 30px"
 			fullPage="true" position="center">
 			<div class="responsividade">
+			
+			<img src="Imagens/PESQUISA .jpg" style="width: 100%"/>
 		
 		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
 			legend="Pesquisa ">
 			<br />
-			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
-				<h:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
+			<h:outputText style="font-size:10px" value=" Item: " />
+				<h:selectOneMenu  style="font-size:11px" value="#{TelaPesquisa}" itemLabel="item" >
 					<f:selectItem itemLabel="--" itemValue="--" />
-					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" />
-					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" />
-					<f:selectItem itemLabel="Categoria PF/PJ" itemValue="Categoria PF/PJ" />
-					<f:selectItem itemLabel="Código PF/PJ" itemValue="Código PF/PJ" />
-					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" />
-					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" />
-					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" />
-					<f:selectItem itemLabel="Sequência de Itens" itemValue="Sequência de Itens" />
-					<f:selectItem itemLabel="VL do Serviço" itemValue="VL do Serviço" />
-					<f:selectItem itemLabel="VL Material aplicado" itemValue="VL Material aplicado" />
-					<f:selectItem itemLabel="VL Desconto" itemValue="VL Desconto" />
-					<f:selectItem itemLabel="VL Documento" itemValue="VL Documento" />
-					<f:selectItem itemLabel="VL ISS Devido" itemValue="VL ISS Devido" />
-					<f:selectItem itemLabel="IRRF - Base" itemValue="IRRF - Base" />
-					<f:selectItem itemLabel="IRRF - Alíquota" itemValue="IRRF - Alíquota" />
-					<f:selectItem itemLabel="IRRF - Valores Retidos" itemValue="IRRF - Valores Retidos" />
-					<f:selectItem itemLabel="IRRF - Cód. de Retenção" itemValue="IRRF - Cód. de Retenção" />
-					<f:selectItem itemLabel="INSS - Base" itemValue="INSS - Base" />
-					<f:selectItem itemLabel="INSS - Alíquota" itemValue="INSS - Alíquota" />
-					<f:selectItem itemLabel="INSS - Valores Retidos" itemValue="INSS - Valores Retidos" />
-					<f:selectItem itemLabel="INSS - Cód. de Retenção" itemValue="INSS - Cód. de Retenção" />
-					<f:selectItem itemLabel="PIS - Base" itemValue="PIS - Base" />
-					<f:selectItem itemLabel="PIS - Alíquota" itemValue="PIS - Alíquota" />
-					<f:selectItem itemLabel="PIS - Valores Retidos" itemValue="PIS - Valores Retidos" />
-					<f:selectItem itemLabel="PIS - Cód. de Retenção" itemValue="PIS - Cód. de Retenção" />
-					<f:selectItem itemLabel="COFINS - Base" itemValue="COFINS - Base" />
-					<f:selectItem itemLabel="COFINS - Alíquota" itemValue="COFINS - Alíquota" />
-					<f:selectItem itemLabel="COFINS - Valores Retidos" itemValue="COFINS - Valores Retidos" />
-					<f:selectItem itemLabel="COFINS - Cód. de Retenção" itemValue="COFINS - Cód. de Retenção" />
-					<f:selectItem itemLabel="SSL - Base" itemValue="SSL - Base" />
-					<f:selectItem itemLabel="SSL - Alíquota" itemValue="SSL - Alíquota" />
-					<f:selectItem itemLabel="SSL - Valores Retidos" itemValue="SSL - Valores Retidos" />
-					<f:selectItem itemLabel="SSL - Cód. de Retenção" itemValue="SSL - Cód. de Retenção" />
-					<f:selectItem itemLabel="ISS - Base" itemValue="ISS - Base" />
-					<f:selectItem itemLabel="ISS - Alíquota" itemValue="ISS - Alíquota" />
-					<f:selectItem itemLabel="ISS - Valores Retidos" itemValue="ISS - Valores Retidos" />
-					<f:selectItem itemLabel="ISS - Cód. de Retenção" itemValue="ISS - Cód. de Retenção" />
-					
-					<f:selectItem itemLabel="Open Flex 01" itemValue="Open Flex 01" />
-					<f:selectItem itemLabel="Open Flex 02" itemValue="Open Flex 02" />
+					<f:selectItem itemLabel="Cod. Empresa" itemValue="Cod.Empresa" value="#{TelaPesquisaModel.empresa}"/>
+					<f:selectItem itemLabel="Cod. Filial" itemValue="Cod. Filial" value="#{TelaPesquisaModel.filial}"/>
+					<f:selectItem itemLabel="Categoria PF/PJ" itemValue="Categoria PF/PJ" value="#{TelaPesquisa.categoriaPfPj}"/>
+					<f:selectItem itemLabel="Código PF/PJ" itemValue="Código PF/PJ" value="#{TelaPesquisa.codPfPj}"/>
+					<f:selectItem itemLabel="Série Nota Fiscal" itemValue="Série Nota Fiscal" value="#{TelaPesquisaModel.serieNotaFiscal}"/>
+					<f:selectItem itemLabel="Número Nota Fiscal" itemValue="Número Nota Fiscal" value="#{TelaPesquisaModel.numNotaFiscal}"/>
+					<f:selectItem itemLabel="Data de Emissão" itemValue="Data de Emissão" value="#{TelaPesquisaModel.dataEmissao}"/>
+					<f:selectItem itemLabel="Sequência de Itens" itemValue="Sequência de Itens" value="#{TelaPesquisa.sequenciaItens}"/>
+					<f:selectItem itemLabel="VL do Serviço" itemValue="VL do Serviço" value="#{TelaPesquisa.valorServico}"/>
+					<f:selectItem itemLabel="VL Material aplicado" itemValue="VL Material aplicado" value="#{TelaPesquisa.valorMaterialAplicado}"/>
+					<f:selectItem itemLabel="VL Desconto" itemValue="VL Desconto" value="#{TelaPesquisa.valorDesconto}"/>
+					<f:selectItem itemLabel="VL Documento" itemValue="VL Documento" value="#{TelaPesquisa.valorDocumento}"/>
+					<f:selectItem itemLabel="VL ISS Devido" itemValue="VL ISS Devido" value="#{TelaPesquisa.valorIssDevido}"/>
+					<f:selectItem itemLabel="IRRF - Base" itemValue="IRRF - Base" value="#{TelaPesquisa.irrfBase}"/>
+					<f:selectItem itemLabel="IRRF - Alíquota" itemValue="IRRF - Alíquota" value="#{TelaPesquisa.irrfAliquota}"/>
+					<f:selectItem itemLabel="IRRF - Valores Retidos" itemValue="IRRF - Valores Retidos" value="#{TelaPesquisa.irrfValoresRetidos}"/>
+					<f:selectItem itemLabel="IRRF - Cód. de Retenção" itemValue="IRRF - Cód. de Retenção" value="#{TelaPesquisa.irrfCodRetencao}"/>
+					<f:selectItem itemLabel="INSS - Base" itemValue="INSS - Base" value="#{TelaPesquisa.inssbase}"/>
+					<f:selectItem itemLabel="INSS - Alíquota" itemValue="INSS - Alíquota" value="#{TelaPesquisa.inssAliquota}"/>
+					<f:selectItem itemLabel="INSS - Valores Retidos" itemValue="INSS - Valores Retidos" value="#{TelaPesquisa.inssValoresRetidos}"/>
+					<f:selectItem itemLabel="INSS - Cód. de Retenção" itemValue="INSS - Cód. de Retenção" value="#{TelaPesquisa.inssCodRetencao}"/>
+					<f:selectItem itemLabel="PIS - Base" itemValue="PIS - Base" value="#{TelaPesquisa.pisBase}"/>
+					<f:selectItem itemLabel="PIS - Alíquota" itemValue="PIS - Alíquota" value="#{TelaPesquisa.pisAliquota}"/>
+					<f:selectItem itemLabel="PIS - Valores Retidos" itemValue="PIS - Valores Retidos" value="#{TelaPesquisa.pisValoresRetidos}"/>
+					<f:selectItem itemLabel="PIS - Cód. de Retenção" itemValue="PIS - Cód. de Retenção" value="#{TelaPesquisa.pisCodRetencao}"/>
+					<f:selectItem itemLabel="COFINS - Base" itemValue="COFINS - Base" value="#{TelaPesquisa.cofinsBase}"/>
+					<f:selectItem itemLabel="COFINS - Alíquota" itemValue="COFINS - Alíquota" value="#{TelaPesquisa.cofinsBase}"/>
+					<f:selectItem itemLabel="COFINS - Valores Retidos" itemValue="COFINS - Valores Retidos" value="#{TelaPesquisa.cofinsValoresRetidos}"/>
+					<f:selectItem itemLabel="COFINS - Cód. de Retenção" itemValue="COFINS - Cód. de Retenção" value="#{TelaPesquisa.cofinsCodRetencao}"/>
+					<f:selectItem itemLabel="SSL - Base" itemValue="SSL - Base" value="#{TelaPesquisa.sslBase}"/>
+					<f:selectItem itemLabel="SSL - Alíquota" itemValue="SSL - Alíquota" value="#{TelaPesquisa.sslAliquota}"/>
+					<f:selectItem itemLabel="SSL - Valores Retidos" itemValue="SSL - Valores Retidos" value="#{TelaPesquisa.sslValoresRetidos}" />
+					<f:selectItem itemLabel="SSL - Cód. de Retenção" itemValue="SSL - Cód. de Retenção" value="#{TelaPesquisa.sslCodRetencao}"/>
+					<f:selectItem itemLabel="ISS - Base" itemValue="ISS - Base" value="#{TelaPesquisa.issBase}"/>
+					<f:selectItem itemLabel="ISS - Alíquota" itemValue="ISS - Alíquota" value="#{TelaPesquisa.issAliquota}"/>
+					<f:selectItem itemLabel="ISS - Valores Retidos" itemValue="ISS - Valores Retidos" value="#{TelaPesquisa.issValoresRetidos}"/>
+					<f:selectItem itemLabel="ISS - Cód. de Retenção" itemValue="ISS - Cód. de Retenção" value="#{TelaPesquisa.issCodRetencao}"/>
+					<f:selectItem itemLabel="Open Flex 01" itemValue="Open Flex 01" value="#{TelaPesquisa.openFlex01}"/>
+					<f:selectItem itemLabel="Open Flex 02" itemValue="Open Flex 02" value="#{TelaPesquisa.openFlex02}"/>
 				</h:selectOneMenu>	
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			
-			<h:outputText style="font-size:10px" value="Criterio: #{DadosTelaPesquisa.valor}" />
-				<h:selectOneMenu  style="font-size:11px" value="valor" itemLabel="valor">
+
+			<h:outputText style="font-size:10px" value="Criterio:" />
+				<h:selectOneMenu  style="font-size:11px" value="#{TelaPesquisa}" itemLabel="valor">
 					<f:selectItem itemLabel="--" itemValue="--" />
-					<f:selectItem itemLabel="Igual a" itemValue="Igual a" />
-					<f:selectItem itemLabel="Maior que" itemValue="Maior que" />
-					<f:selectItem itemLabel="Menor que" itemValue="Menor que" />
-					<f:selectItem itemLabel="Contem" itemValue="Contem" />
-					<f:selectItem itemLabel="Começa com" itemValue="Começa com" />
-				</h:selectOneMenu>	
+					<f:selectItem itemLabel="Igual a" itemValue="Igual a" value="#{TelaPesquisaBean.pesquisa.igual}"/>
+					<f:selectItem itemLabel="Maior que" itemValue="Maior que" value="#{TelaPesquisaBean.pesquisa.maior}"/>
+					<f:selectItem itemLabel="Menor que" itemValue="Menor que" value="#{TelaPesquisaBean.pesquisa.menor}"/>
+					<f:selectItem itemLabel="Contem" itemValue="Contem" value="#{TelaPesquisaBean.pesquisa.contem}"/>
+					<f:selectItem itemLabel="Começa com" itemValue="Começa com" value="#{TelaPesquisaBean.pesquisa.comecaCom}"/>
+				</h:selectOneMenu>  
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			
-			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: #{DadosTelaPesquisa.empresa}" />
-			<p:inputText style="width: 20%" />
+			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: " />
+			<p:inputText style="width: 20%"/>
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			<br />
 			<br />
@@ -257,8 +253,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<!-- Botão de Pesquisa -->		
 			
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-					outcome="acoesBotao" value="Buscar" icon="ui-icon-search">
-						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
+					 value="Buscar" icon="ui-icon-search" >
+						<f:param name="productId" value="#{TelaPesquisaModel}" />
 				</p:button>
 					&nbsp;&nbsp;&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -274,37 +270,37 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<!-- Menu de Pesquisa -->
 		<h:form>
 			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
-				<p:dataTable value="#{testaPesquisa.testalist}" rows= "5" paginator="true">
+				<p:dataTable value="#{TelaPesquisaBean.pesquisa.add}" rows= "5" paginator="true" var="TelaPesquisaModel"  border="1">
 	        		<br />
 	        		<br />
 	       
 	        	<p:column headerText="Cod. Empresa"> 
-                <f:selectItems value="#{pesquisa.empresa}" />  
+                <f:selectItems value="#{TelaPesquisaBean.pesquisa.empresa}" />  
   
 	        	</p:column>
 	        	<p:column headerText="Cod. Filial">
-	            	<h:outputText value="#{testaPesquisa.filial}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.filial}" />
 	        	</p:column>
 	        	<p:column headerText="Série da Nota Fiscal">
-	            	<h:outputText value="#{testaPesquisa.serie}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.serieNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Numero da Nota Fiscal">
-	            	<h:outputText value="#{testaPesquisa.numero}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.numNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Emissão">
-	            	<h:outputText value="#{testaPesquisa.emissao}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEmissao}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Entrada">
-	            	<h:outputText value="#{testaPesquisa.entrada}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEntrada}" />
 	        	</p:column>
 	        	<p:column headerText="Tipo de Documento">
-	            	<h:outputText value="#{testaPesquisa.tipo}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.tipoDocumento}" />
 	        	</p:column>
 	       		<p:column headerText="Descrição do Serviço">
-	           		<h:outputText value="#{testaPesquisa.descrição}" />
+	           		<h:outputText value="#{TelaPesquisaBean.pesquisa.inscricaoServ}" />
 	       		</p:column>
 	        	<p:column headerText="Valor do Serviço">
-	            	<h:outputText value="#{testaPesquisa.valor}" />
+	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.valorServ}" />
 	        	</p:column>
 	        	
 	        	<p:column style="width:25px;text-align: center">

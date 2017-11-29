@@ -36,7 +36,4 @@ public class TelaCadastroLogin {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
-
 }

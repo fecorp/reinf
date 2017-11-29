@@ -9,13 +9,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.CollectionId;
+
 @ManagedBean(name = "ClientesFornecedores")
 @ViewScoped
 
 @Entity
 public class ClientesFornecedores implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	
 
 	@Id
