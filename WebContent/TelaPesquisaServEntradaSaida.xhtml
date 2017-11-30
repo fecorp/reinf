@@ -253,8 +253,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<!-- Botão de Pesquisa -->		
 			
 				<p:button style="background-color:#E0EEF6; font-size:10px"
-					 value="Buscar" icon="ui-icon-search" >
-						<f:param name="productId" value="#{TelaPesquisaModel}" />
+					  value="Buscar" icon="ui-icon-search" >
+						<f:param name="productId" action="#{telaPesquisaBean.pesquisaList}" />
 				</p:button>
 					&nbsp;&nbsp;&nbsp;
 				<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -270,37 +270,37 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<!-- Menu de Pesquisa -->
 		<h:form>
 			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
-				<p:dataTable value="#{TelaPesquisaBean.pesquisa.add}" rows= "5" paginator="true" var="TelaPesquisaModel"  border="1">
+				<p:dataTable value="#{telaPesquisaBean.pesquisaList}" rows= "5" paginator="true" var="pesquisaModel"  border="1">
 	        		<br />
 	        		<br />
 	       
 	        	<p:column headerText="Cod. Empresa"> 
-                <f:selectItems value="#{TelaPesquisaBean.pesquisa.empresa}" />  
+                <f:selectItems value="#{telaPesquisaBean.pesquisaModel.empresa}" />  
   
 	        	</p:column>
 	        	<p:column headerText="Cod. Filial">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.filial}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.filial}" />
 	        	</p:column>
 	        	<p:column headerText="Série da Nota Fiscal">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.serieNotaFiscal}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.serieNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Numero da Nota Fiscal">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.numNotaFiscal}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.numNotaFiscal}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Emissão">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEmissao}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.dataEmissao}" />
 	        	</p:column>
 	        	<p:column headerText="Data de Entrada">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.dataEntrada}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.dataEntrada}" />
 	        	</p:column>
 	        	<p:column headerText="Tipo de Documento">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.tipoDocumento}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.tipoDocumento}" />
 	        	</p:column>
 	       		<p:column headerText="Descrição do Serviço">
-	           		<h:outputText value="#{TelaPesquisaBean.pesquisa.inscricaoServ}" />
+	           		<h:outputText value="#{telaPesquisaBean.pesquisaModel.descricaoServico}" />
 	       		</p:column>
 	        	<p:column headerText="Valor do Serviço">
-	            	<h:outputText value="#{TelaPesquisaBean.pesquisa.valorServ}" />
+	            	<h:outputText value="#{telaPesquisaBean.pesquisaModel.valorServico}" />
 	        	</p:column>
 	        	
 	        	<p:column style="width:25px;text-align: center">
