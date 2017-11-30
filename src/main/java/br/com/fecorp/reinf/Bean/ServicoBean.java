@@ -11,25 +11,23 @@ import javax.persistence.Persistence;
 import br.com.fecorp.reinf.DAO.TelaServicosDAO;
 import br.com.fecorp.reinf.model.TelaServicos;
 
-@ManagedBean(name="ServicosMB")
+@ManagedBean(name = "ServicosMB")
 @ViewScoped
 public class ServicoBean {
 	private TelaServicosDAO telaServicosDAO = new TelaServicosDAO();
 	private TelaServicos telaServicos = new TelaServicos();
-	
-	public String envia(){
-		telaServicos = telaServicosDAO.getTelaServicos(telaServicos.getEmpresa(),telaServicos.getCodFilial());
-		if(telaServicos.getEmpresa() == null){
+
+	public String envia() {
+		telaServicos = telaServicosDAO.getTelaServicos(telaServicos.getEmpresa(), telaServicos.getCodFilial());
+		if (telaServicos.getEmpresa() == null) {
 			FacesContext.getCurrentInstance().addMessage(null,
-					new FacesMessage(FacesMessage.SEVERITY_ERROR,"Campo Obrigatório", null));
+					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Campo Obrigatório", null));
 			return null;
-		}else{
-			
+		} else {
+
 		}
 		return null;
-		 
-		
-		
+
 	}
 
 	public TelaServicosDAO getTelaServicosDAO() {
@@ -47,6 +45,5 @@ public class ServicoBean {
 	public void setTelaServicos(TelaServicos telaServicos) {
 		this.telaServicos = telaServicos;
 	}
-	
-	
+
 }
