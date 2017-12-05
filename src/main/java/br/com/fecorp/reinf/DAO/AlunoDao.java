@@ -23,6 +23,7 @@ public class AlunoDao {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 		}
+		//return aluno;
 	}
 	
 	public void delete(Aluno aluno) {
