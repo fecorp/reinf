@@ -9,8 +9,8 @@
 
 
 		<!-- provedor/implementacao do JPA -->
-		 <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+		 <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+		 <provider>org.hibernate.ejb.HibernatePersistence</provider>
 		  
 		 
 		
@@ -43,6 +43,8 @@
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
 		<class>br.com.fecorp.reinf.model.Carro</class>
+		<class>br.com.fecorp.reinf.model.TelaServicos</class>
+		<class>br.com.fecorp.reinf.model.TelaPesquisa</class>
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
@@ -76,7 +78,7 @@
 			<property name="hibernate.format_sql" value="true" />
 
 			<!-- atualiza o banco, gera as tabelas se for preciso -->
-			 <property name="hibernate.hbm2ddl.auto" value="update"/>
+			 <property name="hibernate.hbm2ddl.auto" value="create"/>
 		
 			
 			</properties>

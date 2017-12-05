@@ -1,7 +1,5 @@
 package br.com.fecorp.reinf.GeraTabela;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -11,7 +9,7 @@ public class GeraTabelas {
 		    EntityManagerFactory factory = Persistence.
 		          createEntityManagerFactory("PersistenciaPU");
 
-		    factory.close();
+	    factory.close();
 		  }
 		}
 
