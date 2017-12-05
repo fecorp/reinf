@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+
+xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	
+	>
+
+
+<h:head>
+
+</h:head>
+
+<h:body style="background-color:#D3D3D3;margin: 0%; padding: 0%; border: 0%" >
+
+	<!-- Menu de navegação superior -->
+	<h:form>
+		<p:growl id="messages" />
+
+		<p:menubar style="font-size:12px; color: #d15">
+			<p:submenu label="Parametrização" icon="ui-icon-document">
+						
+				<p:menuitem value="Tela de Parametrização"
+					url="Parametrizacao.xhtml" icon="ui-icon-folder-open" />
+						
+			</p:submenu>
+
+			<p:submenu label="Geração" icon="ui-icon-pencil">
+				<p:menuitem value="Tela de Geração" url="TelaGeracao.xhtml"
+					icon="ui-icon-folder-open" />
+			</p:submenu>
+
+			<p:submenu label="Relatórios" icon="ui-icon-help">
+				<p:menuitem value="Contents" url="#" />
+					<p:submenu label="Search" icon="ui-icon-search">
+					<p:submenu label="Text">
+						<p:menuitem value="Workspace" url="#" />
+					</p:submenu>
+				<p:menuitem value="File" url="#" />
+			</p:submenu>
+			</p:submenu>
+
+			<p:submenu label="Configurações" icon="ui-icon-wrench">
+			<p:menuitem value="Suporte" url="TelaConfiguracao.xhtml"
+					icon="ui-icon-wrench" />
+			</p:submenu>
+
+				<p:menuitem value="Lotes" url="http://www.primefaces.org"
+					icon="ui-icon-close" />
+
+				<f:facet name="options">
+					<p:commandButton type="button" value="Logout"
+						icon="ui-icon-extlink" />
+				</f:facet>
+		</p:menubar>
+	</h:form>
+	
+	<!-- Legenda superior -->
+	
+	<img  src="Imagens/IMAGEM.jpg" height="105px" width="1350px"/>
+	<br/>
+	
+	<!-- Menu Lateral -->
+	<p:layout>
+		<p:layoutUnit position="west" style="background-color:#F2f2f2; height:450px" fullPage="true" >
+			<h:form>
+				<p:panelMenu style="width:165px">
+					<p:submenu label="Cadastros" style="font-size:12px;background-color:#D3D3D3 ">
+						<p:menuitem style="background-color:#F4F0F0" value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+							icon="ui-icon-note" />
+						<p:menuitem style="background-color:#F4F0F0" value="Empresa" url="telaCadastro.xhtml"
+							icon="ui-icon-home" />
+						<p:menuitem style="background-color:#F4F0F0" value="Filial" url="telaFilial.xhtml"
+							icon="ui-icon-disk" />
+						<p:menuitem style="background-color:#F4F0F0" value="Cliente Fornecedor"
+							url="telaClienteFornecedor.xhtml" icon="ui-icon-contact" />
+						<p:menuitem style="background-color:#F4F0F0" value="Responsável" url="telaResponsavel.xhtml"
+							icon="ui-icon-person" />
+						<p:menuitem style="background-color:#F4F0F0" value="Software" url="TelaSoftware.xhtml"
+							icon="ui-icon-gear" />
+						<p:menuitem style="background-color:#F4F0F0" value="Serviços" url="Servicos.xhtml"
+							icon="ui-icon-suitcase" />
+					</p:submenu>
+
+					<p:submenu label="Movimentação - NF" style="font-size:12px">
+						<p:menuitem style="background-color:#F4F0F0" value="Serviços Entrada" url="MestreEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-gear" />
+						<p:menuitem style="background-color:#F4F0F0" value="Impostos Entrada" url="ImpostoEntradaNew.xhtml"
+							ajax="false" icon="ui-icon-script" />
+						<p:menuitem style="background-color:#F4F0F0" value="Complemento Entrada"
+							url="ComplementoMestreEntrada.xhtml" ajax="false"
+							icon="ui-icon-lightbulb" />
+						<p:menuitem style="background-color:#F4F0F0" value="Serviços Saída" url="MestreSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-gear" />
+						<p:menuitem style="background-color:#F4F0F0" value="Impostos Saída" url="ImpostoSaidaNew.xhtml"
+							ajax="false" icon="ui-icon-script" />
+						
+						<p:menuitem style="background-color:#F4F0F0" value="Complemento Saída"
+							url="ComplementoMestreSaida.xhtml" ajax="false"
+							icon="ui-icon-lightbulb" />
+
+					</p:submenu>
+					<p:separator />
+					<p:submenu label="Reinf" style="font-size:12px">
+
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-1070 Tabela de Processos Administrativos - Judiciais"
+							url="ProcessosAdmJudicial.xhtml" icon="ui-icon-document" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="" url="http://www.primefaces.org" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-2030 Recursos Recebidos Por Associação Desportiva"
+							url="RecursosRecbAssDep.xhtml" icon="ui-icon-document" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-2040 Retenções - Recursos Repassados para Associação Desportiva"
+							url="RecursosRepAssDesp.xhtml" icon="ui-icon-arrowthick-1-s" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-2050 Comercialização Agroindústria"
+							url="ComercializacaoAgro.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-2060 CPRB - Contribuição Prividenciária Sobre a Receita Bruta"
+							url="cprb.xhtml" icon="ui-icon-wrench" />
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-2070 Retenções -  Pagamentos Diversos - DIRF"
+							url="dirf.xhtml" icon="ui-icon-wrench" />
+
+
+						<p:menuitem style="background-color:#F4F0F0"
+							value="R-3010 Receitas de Espetáculos Desportivos"
+							url="ReceitasEspetaculoDesp.xhtml" icon="ui-icon-document" />
+
+					</p:submenu>
+					<p:submenu 
+						label="Interface " style="font-size:12px;">
+						<p:menuitem style="background-color:#F4F0F0" value="Importação de Arquivos"
+						url="Interface.xhtml" icon="ui-icon-arrowthickstop-1-s" />
+
+					</p:submenu>
+
+					<p:submenu 
+						label="Lotes" style="font-size:12px">
+						<p:menuitem style="background-color:#F4F0F0" value="Gerenciamento de Lotes"
+							url="http://www.primefaces.org" icon="ui-icon-shuffle" />
+					</p:submenu>
+
+				</p:panelMenu>
+			</h:form>
+		</p:layoutUnit>
+		<!-- Campos do Sistema -->
+		<h:form>
+		<p:layoutUnit style="background-color:#F2f2f2; height: 350px"
+			fullPage="true" position="center">
+		
+		
+		
+		<p:fieldset style="background-color:#F4F0F0; font-size: 11px"
+			legend="Pesquisa ">
+			
+				
+		
+		<br></br>
+			
+			<h:outputText style="font-size:10px" value=" Item: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:11px" value="item" itemLabel="item">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="Empresa" itemValue="Empresa" />
+					<f:selectItem itemLabel="Filial" itemValue="Filial" />
+					<f:selectItem itemLabel="Número do processo Adm/Jud" itemValue="Número do processo Adm/Jud" />
+					<f:selectItem itemLabel="Data de Decisão/Sentença" itemValue="Data de Decisão/Sentença" />
+					<f:selectItem itemLabel="Cód.Ind. Suspensão" itemValue="Cód.Ind. Suspensão" />
+					<f:selectItem itemLabel="Ind. Susp. Exigibilidade" itemValue="Ind. Susp. Exigibilidade" />
+					<f:selectItem itemLabel="Ind. Depósito Montante Integral" itemValue="Ind. Depósito Montante Integral" />
+					<f:selectItem itemLabel="UF da Sessão Judiciária" itemValue="UF da Sessão Judiciária" />
+					<f:selectItem itemLabel="Cód. Município" itemValue="Cód. Município" />
+					<f:selectItem itemLabel="Código de identificação da Vara" itemValue="Código de identificação da Vara" />
+					
+					
+					<f:selectItem itemLabel="Open Felx 01" itemValue="Open Felx 01" />
+					<f:selectItem itemLabel="Open Felx 02" itemValue="Open Felx 02" />
+				</p:selectOneMenu>	
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size:10px" value="Criterio: #{DadosTelaPesquisa.valor}" />
+				<p:selectOneMenu  style="font-size:11px" value="valor" itemLabel="valor">
+					<f:selectItem itemLabel="--" itemValue="--" />
+					<f:selectItem itemLabel="Igual a" itemValue="Igual a" />
+					<f:selectItem itemLabel="Maior que" itemValue="Maior que" />
+					<f:selectItem itemLabel="Menor que" itemValue="Menor que" />
+					<f:selectItem itemLabel="Contem" itemValue="Contem" />
+					<f:selectItem itemLabel="Começa com" itemValue="Começa com" />
+				</p:selectOneMenu>	
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<h:outputText style="font-size: 10px" value="  Valor ou palavra chave: #{DadosTelaPesquisa.empresa}" />
+			<p:inputText style="width: 20%" />
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<br />
+			<br />
+
+		
+			</p:fieldset>
+			<br />
+			<br />
+				
+		<!-- Espaço para pular -->
+		<center>
+			<p:fieldset style="background-color: #F2F2F2">
+					
+		<!-- Botão de Pesquisa -->		
+			
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					outcome="acoesBotao" value="Buscar" icon="ui-icon-search">
+						<f:param name="productId" value="#{acoesBotao.pesquisarTelaPesquisa}" />
+				</p:button>
+					&nbsp;&nbsp;&nbsp;
+				<p:button style="background-color:#E0EEF6; font-size:10px"
+					id="backLink" onClick="history.go(-1)" href="javascript:window.history.go(-1)" value="Voltar"  icon="fa-backward">
+					<f:param name="productId" value="turubom?" />
+				</p:button>
+			</p:fieldset>
+		</center>
+			
+		<br />
+		<br />
+		
+		<!-- Menu de Pesquisa -->
+		<h:form>
+			  <div style="font-size: 10px; font-family: Lucida Bright; background-color:#F4F0F0">	
+				<p:dataTable value="#{testaPesquisa.testalist}" rows= "5" paginator="true">
+	        		<br />
+	        		<br />
+	       
+	        	<p:column headerText="Cod. Empresa"> 
+                <f:selectItems value="#{pesquisa.empresa}" />  
+  
+	        	</p:column>
+	        	<p:column headerText="Cod. Filial">
+	            	<h:outputText value="#{testaPesquisa.filial}" />
+	        	</p:column>
+	        	<p:column headerText="Série da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.serie}" />
+	        	</p:column>
+	        	<p:column headerText="Numero da Nota Fiscal">
+	            	<h:outputText value="#{testaPesquisa.numero}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Emissão">
+	            	<h:outputText value="#{testaPesquisa.emissao}" />
+	        	</p:column>
+	        	<p:column headerText="Data de Entrada">
+	            	<h:outputText value="#{testaPesquisa.entrada}" />
+	        	</p:column>
+	        	<p:column headerText="Tipo de Documento">
+	            	<h:outputText value="#{testaPesquisa.tipo}" />
+	        	</p:column>
+	       		<p:column headerText="Descrição do Serviço">
+	           		<h:outputText value="#{testaPesquisa.descrição}" />
+	       		</p:column>
+	        	<p:column headerText="Valor do Serviço">
+	            	<h:outputText value="#{testaPesquisa.valor}" />
+	        	</p:column>
+	        	
+	        	<p:column style="width:25px;text-align: center">
+	             	<p:commandButton update=":form:carDetail" oncomplete="PF('carOP').show('#{component.clientId}')" icon="ui-icon-search" title="View">
+	                	<f:setPropertyActionListener value="#{car}" target="#{dtSelectionView.selectedCar}" />
+	            	</p:commandButton>
+	        	</p:column>
+	    		</p:dataTable>
+	    	</div>   	
+	      
+    	</h:form>	
+    	
+      </p:layoutUnit> 
+   </h:form>
+</p:layout>
+				<br />
+				<br />			
+</h:body>
+</html>

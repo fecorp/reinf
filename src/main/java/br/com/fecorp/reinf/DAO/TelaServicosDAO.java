@@ -57,4 +57,9 @@ public class TelaServicosDAO {
 			return false;
 		}
 	}
+
+	public TelaServicos getTelaServicos(String empresa, String codFilial) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
