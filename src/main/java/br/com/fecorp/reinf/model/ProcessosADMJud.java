@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "ProcessosAdmJud")
 @ViewScoped
@@ -28,6 +30,8 @@ public class ProcessosADMJud implements Serializable {
 		private String filial;
 		private String tipoProcesso;
 		private String numProcAdmJud;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataDecisaoSent_DespAdm;
 		private BigDecimal codIndicativoSuspe;
 		private String indiSuspeExigi;

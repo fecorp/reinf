@@ -67,4 +67,9 @@ public class Aluno implements Serializable {
 		this.periodo = periodo;
 	}
 
+	public void getId(double d, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

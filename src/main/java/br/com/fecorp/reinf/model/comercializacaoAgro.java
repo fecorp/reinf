@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "comercializacaoAgro")
 @ViewScoped
@@ -36,6 +38,8 @@ public class comercializacaoAgro implements Serializable{
 		private String codContaAnaliticaContabil;
 		private String numSerieNotaFiscal;
 		private String numNotaFiscal;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataEmissaoNotaFiscal;
 		private BigDecimal valorBrutoNotaFiscal;
 		private BigDecimal codTipoProcesso;

@@ -1,6 +1,8 @@
 package br.com.fecorp.reinf.DAO;
 
 import java.util.List;
+
+import javax.annotation.ManagedBean;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import br.com.fecorp.reinf.model.Aluno;
