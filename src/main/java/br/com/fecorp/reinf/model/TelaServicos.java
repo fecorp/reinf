@@ -27,23 +27,15 @@ public class TelaServicos implements Serializable {
 	private String empresa;
 	@Column(name="codFilial", nullable= false)
 	private String codFilial;
-	@Column 
 	private int codServicos;
 	@Temporal(TemporalType.DATE)
 	private Calendar dataAtualizacao;
-	@Column
 	private String descServico;
-	@Column
 	private String complemento;
-	@Column
 	private String codLc;
-	@Column
 	private String indTipServico;
-	@Column
 	private String indTipReceita;
-	@Column
 	private String openFlex01;
-	@Column
 	private String openFlex02;
 	
 	

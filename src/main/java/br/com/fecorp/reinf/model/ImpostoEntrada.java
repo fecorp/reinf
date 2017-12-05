@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "ImpostoEntrada")
 @ViewScoped
@@ -27,6 +29,8 @@ public class ImpostoEntrada implements Serializable {
 	private String codFilial;
 	private String serieNotaFiscal;
 	private String numNotaFiscal;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataEmissao;
 	private String categoriaPfPj;
 	private String codigoPfPj;

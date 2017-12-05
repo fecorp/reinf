@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "MestreSaida")
 @ViewScoped
@@ -28,12 +30,18 @@ public class MestreSaida implements Serializable {
 		private String codFilial;
 		private String serieNotaFiscal;
 		private String numNotaFiscal;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataEmissao;
 		private String catPfPj;
 		private String codPfPj;
 		private String qtdItens;
-		private BigDecimal dataEntrada;
-		private BigDecimal dataExecucao;
+		
+		@Temporal(TemporalType.DATE)
+		private Date dataEntrada;
+		
+		@Temporal(TemporalType.DATE)
+		private Date dataExecucao;
 		private BigDecimal valorLiquido;
 		private String tipoDocumento;
 		private String codServico;
@@ -110,16 +118,16 @@ public class MestreSaida implements Serializable {
 		public void setQtdItens(String qtdItens) {
 			this.qtdItens = qtdItens;
 		}
-		public BigDecimal getDataEntrada() {
+		public Date getDataEntrada() {
 			return dataEntrada;
 		}
-		public void setDataEntrada(BigDecimal dataEntrada) {
+		public void setDataEntrada(Date dataEntrada) {
 			this.dataEntrada = dataEntrada;
 		}
-		public BigDecimal getDataExecucao() {
+		public Date getDataExecucao() {
 			return dataExecucao;
 		}
-		public void setDataExecucao(BigDecimal dataExecucao) {
+		public void setDataExecucao(Date dataExecucao) {
 			this.dataExecucao = dataExecucao;
 		}
 		public BigDecimal getValorLiquido() {

@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "Responsavel")
 @ViewScoped
@@ -27,7 +29,11 @@ public class Responsavel implements Serializable {
 	private String numeroTelefone;
 	private String telefoneCelular;
 	private String email;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataInicioVigencia;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
 	private String sexo;
 	private String rg;
@@ -43,7 +49,9 @@ public class Responsavel implements Serializable {
 	private String observacoes;
 	private String qualificacao;
 	private String crc;
-	private String dataFinalVigencia;
+	
+	@Temporal(TemporalType.DATE)
+	private Date dataFinalVigencia;
 	private String openflex01;
 	private String openflex02;
 	
@@ -301,13 +309,13 @@ public class Responsavel implements Serializable {
 
 
 
-	public String getDataFinalVigencia() {
+	public Date getDataFinalVigencia() {
 		return dataFinalVigencia;
 	}
 
 
 
-	public void setDataFinalVigencia(String dataFinalVigencia) {
+	public void setDataFinalVigencia(Date dataFinalVigencia) {
 		this.dataFinalVigencia = dataFinalVigencia;
 	}
 

@@ -2,6 +2,7 @@ package br.com.fecorp.reinf.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -9,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "DadosTelaPesquisa")
 @ViewScoped
@@ -27,9 +30,15 @@ public class DadosTelaPesquisa implements Serializable{
 	private String Empresa;
 	private String Filial;
 	private BigDecimal Valor;
-	private BigDecimal DataEntrada;
-	private BigDecimal DataInicio;
-	private BigDecimal DataFim;
+	
+	@Temporal(TemporalType.DATE)
+	private Date DataEntrada;
+	
+	@Temporal(TemporalType.DATE)
+	private Date DataInicio;
+	
+	@Temporal(TemporalType.DATE)
+	private Date DataFim;
 	
 	public double getNotaFiscal() {
 		return NotaFiscal;
@@ -55,22 +64,22 @@ public class DadosTelaPesquisa implements Serializable{
 	public void setValor(BigDecimal valor) {
 		Valor = valor;
 	}
-	public BigDecimal getDataEntrada() {
+	public Date getDataEntrada() {
 		return DataEntrada;
 	}
-	public void setDataEntrada(BigDecimal dataEntrada) {
+	public void setDataEntrada(Date dataEntrada) {
 		DataEntrada = dataEntrada;
 	}
-	public BigDecimal getDataInicio() {
+	public Date getDataInicio() {
 		return DataInicio;
 	}
-	public void setDataInicio(BigDecimal dataInicio) {
+	public void setDataInicio(Date dataInicio) {
 		DataInicio = dataInicio;
 	}
-	public BigDecimal getDataFim() {
+	public Date getDataFim() {
 		return DataFim;
 	}
-	public void setDataFim(BigDecimal dataFim) {
+	public void setDataFim(Date dataFim) {
 		DataFim = dataFim;
 	}
 	public static long getSerialversionuid() {

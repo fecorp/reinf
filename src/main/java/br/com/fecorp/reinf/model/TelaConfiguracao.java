@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "TelaConfiguracao")
 @ViewScoped
@@ -29,6 +31,8 @@ public class TelaConfiguracao implements Serializable{
 	private String descricao;
 	private double telefone;
 	private String codAberturaChamada;
+	
+	@Temporal(TemporalType.DATE)
 	private Date data;
 	
 	
