@@ -9,7 +9,7 @@ import br.com.fecorp.reinf.model.Aluno;
 
 public class AlunoDao {
 
-	public void saveOrUpdate(Aluno aluno) {
+	public Aluno saveOrUpdate(Aluno aluno) {
 		EntityManager em = util.HibernateUtil.geteEntityManagerFactory().createEntityManager();
 		try {
 			em.getTransaction().begin();
@@ -24,6 +24,7 @@ public class AlunoDao {
 			em.getTransaction().rollback();
 		}
 		//return aluno;
+		return aluno;
 	}
 	
 	public void delete(Aluno aluno) {
