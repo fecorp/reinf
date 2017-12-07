@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "ComplementoTotalizadorSaida")
 @ViewScoped
@@ -26,6 +28,8 @@ public class ComplementoTotalizadorSaida implements Serializable {
 		private String codEmpresa;
 		private String codFilial;
 		private String serieNotaFiscal;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataEmissao;
 		private String categoriaPfPj;
 		private String codigoPfPj;

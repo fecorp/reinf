@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "MestreEntrada")
 @ViewScoped
@@ -29,11 +31,17 @@ public class MestreEntrada implements Serializable {
 		private String codFilial;
 		private String serieNotaFiscal;
 		private String numNotaFiscal;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataEmissao;
 		private String catPfPj;
 		private String codPfPj;
 		private String qtdItens;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataEntrada;
+		
+		@Temporal(TemporalType.DATE)
 		private Date dataExecucao;
 		private String tipoDocumento;
 		private String codServico;

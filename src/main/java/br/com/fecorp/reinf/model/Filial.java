@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @ManagedBean(name = "Filial")
 @ViewScoped
@@ -25,6 +27,8 @@ public class Filial implements Serializable {
 	private String empresa;
 	private String complementoEnd;
 	private String filial;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataAtualizacao;
 	private String categoriaPFPJ;
 	private String codigoPFPJ;
@@ -58,8 +62,12 @@ public class Filial implements Serializable {
 	private String classFical;
 	private String situacaoPJ;
 	private BigDecimal numeroCNO;
-	private String dataCriacao;
+	
+	@Temporal(TemporalType.DATE)
+	private Date dataCriacao;
 	private String indicativoPJ;
+	
+	@Temporal(TemporalType.DATE)
 	private Date dataEncerramento;
 	private String openflex01; 
 	private String openflex02;
@@ -566,14 +574,14 @@ public class Filial implements Serializable {
 
 
 
-	public String getDataCriacao() {
+	public Date getDataCriacao() {
 		return dataCriacao;
 	}
 
 
 
 
-	public void setDataCriacao(String dataCriacao) {
+	public void setDataCriacao(Date dataCriacao) {
 		this.dataCriacao = dataCriacao;
 	}
 

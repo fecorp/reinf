@@ -9,8 +9,8 @@
 
 
 		<!-- provedor/implementacao do JPA -->
-		 <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+		 <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+		 <provider>org.hibernate.ejb.HibernatePersistence</provider>
 		  
 		 
 		
@@ -42,8 +42,11 @@
 		<class>br.com.fecorp.reinf.model.Software</class>
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
+<<<<<<< HEAD
 		<class>br.com.fecorp.reinf.model.Carro</class>
 		<class>br.com.fecorp.reinf.model.TelaServicos</class>
+=======
+>>>>>>> master
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->

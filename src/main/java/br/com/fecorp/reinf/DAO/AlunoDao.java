@@ -1,13 +1,15 @@
 package br.com.fecorp.reinf.DAO;
 
 import java.util.List;
+
+import javax.annotation.ManagedBean;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import br.com.fecorp.reinf.model.Aluno;
 
 public class AlunoDao {
 
-	public void saveOrUpdate(Aluno aluno) {
+	public Aluno saveOrUpdate(Aluno aluno) {
 		EntityManager em = util.HibernateUtil.geteEntityManagerFactory().createEntityManager();
 		try {
 			em.getTransaction().begin();
@@ -21,6 +23,8 @@ public class AlunoDao {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 		}
+		//return aluno;
+		return aluno;
 	}
 	
 	public void delete(Aluno aluno) {

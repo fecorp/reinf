@@ -22,10 +22,11 @@ public class LoginManagedBean {
 	                    usuario = new Usuario();
 	                    FacesContext.getCurrentInstance().addMessage(
 	                               null,
-	                               new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuário não encontrado!",
+	                               new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuário não encontrado!" ,
 	                                           "Erro no Login!"));
 	                    return null;
 	              } else {
+	            	    //return"faces-redirect=true";
 	                    return "/main";
 	              }
 	              
