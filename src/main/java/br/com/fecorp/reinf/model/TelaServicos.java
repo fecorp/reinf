@@ -12,9 +12,9 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@ManagedBean
+@ManagedBean(name = "Serviços")
 @Entity
-@Table(name="Servicos")
+@Table(name= "Servicos")
 
 
 public class TelaServicos implements Serializable {
