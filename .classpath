@@ -55,5 +55,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/lucene-queryparser-5.5.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-context-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-test-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-tx-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
