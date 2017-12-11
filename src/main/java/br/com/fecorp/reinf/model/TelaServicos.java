@@ -14,7 +14,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 
- @Table
+
  @Entity
  public class TelaServicos  {
 

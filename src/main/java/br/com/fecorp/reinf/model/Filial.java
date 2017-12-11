@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -21,15 +22,26 @@ public class Filial implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-
-	
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String empresa;
+	
+	
 	private String complementoEnd;
+	
+	
 	private String filial;
 	
 	@Temporal(TemporalType.DATE)
 	private Date dataAtualizacao;
+	
+	
+	@Lob
+	private byte[] arquivo;
+	
+	
+
+
+
 	private String categoriaPFPJ;
 	private String codigoPFPJ;
 	private String cnpj;
@@ -65,10 +77,14 @@ public class Filial implements Serializable {
 	
 	@Temporal(TemporalType.DATE)
 	private Date dataCriacao;
+	
+	
 	private String indicativoPJ;
 	
 	@Temporal(TemporalType.DATE)
 	private Date dataEncerramento;
+	
+	
 	private String openflex01; 
 	private String openflex02;
 
@@ -124,6 +140,14 @@ public class Filial implements Serializable {
 	}
 
 
+	public byte[] getArquivo() {
+		return arquivo;
+	}
+
+
+	public void setArquivo(byte[] arquivo) {
+		this.arquivo = arquivo;
+	}
 
 
 	public String getCategoriaPFPJ() {

@@ -58,5 +58,8 @@
 	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-context-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-test-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-tx-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-context-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-test-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-tx-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
