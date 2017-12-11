@@ -170,7 +170,7 @@
 				</h:form>
 				</div>
 			</p:layoutUnit>
-
+        <h:form enctype="multipart/form-data">     
 		<p:layoutUnit position="center" style="height:150px">
 		<div class="responsividade">
 		
@@ -191,8 +191,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="true" actionListener="#{Filial}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -215,8 +215,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="true" actionListener="#{ClientesFornecedores}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -239,8 +239,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{Serviços}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -271,8 +271,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{MestreEntrada}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -293,8 +293,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{ImpostoEntrada}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -315,8 +315,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{MestreSaida}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -338,8 +338,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{ImpostoSaida}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -369,8 +369,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{ProcessosAdmJud}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -392,8 +392,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{RecursosRecbAssDep}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -415,8 +415,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{RecursosRepAssDesp}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -438,8 +438,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{comercializacaoAgro}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -461,8 +461,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{CPRB}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -484,8 +484,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{NULL}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -507,8 +507,8 @@
 					  &nbsp; <p:fileUpload value="#{fileUploadView.file}"
 							style="font-size:10px" mode="simple" skinSimple="true" />
 						<p:commandButton value="Importar arquivo" style="font-size:10px"
-							ajax="false" actionListener="#{fileUploadView.upload}"
-							disabled="true" />
+							ajax="false" actionListener="#{ReceitaEspetaculoDesp}"
+							disabled="false" />
 					</h:form>
 
 					<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -575,7 +575,7 @@
          </div>
 		</p:layoutUnit>
         </h:form>
-
+    </h:form>
 	</p:layout>
 
 

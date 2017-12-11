@@ -8,25 +8,35 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
-@Table(name = "Servicos")
 
- public class TelaServicos implements Serializable {
- private static final long serialVersionUID = 1L;
-//public class TelaServicos {
+ @Table
+ @Entity
+ public class TelaServicos  {
+
+
+	 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-
-	@Column(name = "empresa", nullable = false, unique = true)
 	private String empresa;
-	@Column(name = "codFilial", nullable = false)
+	
+	
+	@GeneratedValue
 	private String codFilial;
-	@Column
+
+	
+	@GeneratedValue
 	private int codServicos;
+	
+	@Lob
+	private byte[] arquivo;
+	
+	
+
 	@Temporal(TemporalType.DATE)
 	private Calendar dataAtualizacao;
 	private String descServico;
@@ -37,6 +47,15 @@ import javax.persistence.TemporalType;
 	private String openFlex01;
 	private String openFlex02;
 
+	
+	public byte[] getArquivo() {
+		return arquivo;
+	}
+
+	public void setArquivo(byte[] arquivo) {
+		this.arquivo = arquivo;
+	}
+	
 	public String getEmpresa() {
 		return empresa;
 	}
@@ -125,8 +144,5 @@ import javax.persistence.TemporalType;
 		this.openFlex02 = openFlex02;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
 
 }
