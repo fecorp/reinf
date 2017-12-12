@@ -185,7 +185,11 @@
 				<div class="responsividade">
 					<!--Cógigo geração central  -->
 
+
+                    
 					<h:form>
+					<p:messages id="messages" />
+					
 		
 						<img src="Imagens/CADASTRO_DE_LOGIN.jpg" style="width: 100%" />
 
@@ -197,26 +201,26 @@
 							
 				
                 
-				<h:outputText style="font-size: 10px" value="  Nome :      " />
+				<h:outputLabel style="font-size: 10px" for="nome" value="  Nome :      " />
 				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText required="true" requiredMessage="Csmpo Obrigatório" style="width: 15%; " value="#{TelaCadastroLogin.nome}"/>
+				<p:inputText required="true" requiredMessage="Csmpo Obrigatório" style="width: 15%; " id="nome" value="#{CadastroLoginBean.cadastroLogin.nome}"/>
 				<br></br>
 				<br></br>
 				
-				<h:outputText style="font-size: 10px" value=" Departamento :&nbsp;     " />
-				<p:inputText style="width: 15%; " value="#{TelaCadastroLogin.departamento}"/>
+				<h:outputLabel style="font-size: 10px" for="departamento" value=" Departamento :&nbsp;     " />
+				<p:inputText style="width: 15%; " id="departamento" value="#{CadastroLoginBean.cadastroLogin.departamento}"/>
 				<br></br>
 				<br></br>
 				
-				<h:outputText style="font-size: 10px" value=" Login :&nbsp;     " />
+				<h:outputLabel style="font-size: 10px" for="login" value=" Login :&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText style="width: 15%; " value="#{TelaCadastroLogin.login}"/>
+				<p:inputText style="width: 15%; " id="login" value="#{CadastroLoginBean.cadastroLogin.login}"/>
 				<br></br>
 				<br></br>
 				
-				<h:outputText style="font-size: 10px" value=" Senha:&nbsp;     " />
+				<h:outputLabel style="font-size: 10px" for="senha" value=" Senha:&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				 <p:password id="senha" style="width: 15%; value=" required="true" value="#{TelaCadastroLogin.senha}"/>
+				 <p:password  style="width: 15%; value=" required="true"  id="senha" value="#{CadastroLoginBean.cadastroLogin.senha}"/>
 				<br></br>
 				<br></br> 
 
@@ -226,17 +230,18 @@
 								<f:param name="productId" value="turubom?" />
 							</p:button>
 							&nbsp; &nbsp;
-							<p:button style=" background-color:#E0EEF6; font-size:10px"
-								outcome="telaCadastro.xhtml" value="  Cadastrar "
-								icon="ui-icon-arrowthick-1-n">
-								<f:param name="productId" value="turubom?" />
-							</p:button>
+							
+							<h:message for="telaCadastro"/>
+							
+							 <p:commandButton value="Cadastrar" icon="ui-icon-star" action="#{TelaCadastroMetodos.saveOrUpdate()}" ajax="false" rendered="true">
+                    </p:commandButton>
 			
 		
 			
             <br></br> 
 			
 					</p:fieldset>
+					
 			</h:form>
 
 					<br></br> <br></br>

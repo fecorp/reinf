@@ -9,8 +9,7 @@
 
 
 		<!-- provedor/implementacao do JPA -->
-		 <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
-		 <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		  
 		 
 		
@@ -44,6 +43,7 @@
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
 
 		<class>br.com.fecorp.reinf.model.TelaServicos</class>
+		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
 
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
@@ -69,10 +69,10 @@
 			<property name="javax.persistence.jdbc.password" value="fecorp" />
 
 			<!-- propriedades do hibernate -->
-			 <property name="hibernate.id.new_generator_mappings" value="false"/>
+			 <property name="hibernate.id.new_generator_mappings" value="true"/>
 			 
 
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 

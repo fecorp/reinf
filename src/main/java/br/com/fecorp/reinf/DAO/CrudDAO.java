@@ -4,11 +4,13 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;
 
-public interface DAO<T, I extends Serializable> {
+public interface CrudDAO<T, I extends Serializable> {
 
-	public T save(T entity);
+	public T salvar(T entity);
 
-	public void remove(T entity);
+	public void deletar(T entity);
+	
+	public List<T> buscar();
 
 	public T getById(Class<T> classe, I pk);
 
