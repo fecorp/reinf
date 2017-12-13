@@ -9,27 +9,39 @@ import javax.persistence.Table;
 
 
 
-@Table(name = "cadastrologin")
+
 
 @Entity
 public class TelaCadastroLogin {
 	
 	
 
-
 	@Id
-	@GeneratedValue
-	@Column(name="nome")
+    @Column(name="id", nullable=false, unique=true)
+	private int id;
+	
+	
+	@Column(name="nome", nullable=false, unique=true)
 	private String nome;
 
-	@Column(name="departamento")
+	@Column(name="departamento", nullable=false, unique=true)
 	private String departamento;
 
-	@Column(name="login")
+	@Column(name="login", nullable=false, unique=true)
 	private String login;
 
-	@Column(name="senha")
+	@Column(name="senha", nullable=false, unique=false)
 	private String senha;
+	
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;

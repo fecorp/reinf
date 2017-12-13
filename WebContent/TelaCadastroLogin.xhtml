@@ -194,6 +194,8 @@
 						<img src="Imagens/CADASTRO_DE_LOGIN.jpg" style="width: 100%" />
 
 						<br></br>
+						
+						<h:form>
 						<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 							legend="Usuário  ">
 
@@ -201,7 +203,7 @@
 							
 				
                 
-				<h:outputLabel style="font-size: 10px" for="nome" value="  Nome :      " />
+				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
 				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
 				<p:inputText required="true" requiredMessage="Csmpo Obrigatório" style="width: 15%; " id="nome" value="#{CadastroLoginBean.cadastroLogin.nome}"/>
 				<br></br>
@@ -225,22 +227,24 @@
 				<br></br> 
 
 
-							<p:button style="background-color:#E0EEF6; font-size:10px"
+							<p:commandButton style="background-color:#E0EEF6; font-size:10px"
 								type="reset" value="  Limpar " icon="ui-icon-trash">
 								<f:param name="productId" value="turubom?" />
-							</p:button>
+							</p:commandButton>
 							&nbsp; &nbsp;
 							
 							<h:message for="telaCadastro"/>
 							
-							 <p:commandButton value="Cadastrar" icon="ui-icon-star" action="#{TelaCadastroMetodos.saveOrUpdate()}" ajax="false" rendered="true">
+							 <p:commandButton value="Enviar" icon="ui-icon-star" action="#{CadastroLoginBean.envia()}" ajax="false"> 
+							
                     </p:commandButton>
-			
+		     
 		
 			
             <br></br> 
 			
 					</p:fieldset>
+					</h:form>
 					
 			</h:form>
 
