@@ -17,8 +17,9 @@ public class TelaCadastroLogin {
 	
 
 	@Id
+	@GeneratedValue
     @Column(name="id", nullable=false, unique=true)
-	private int id;
+	private long id;
 	
 	
 	@Column(name="nome", nullable=false, unique=true)
@@ -35,11 +36,11 @@ public class TelaCadastroLogin {
 	
 	
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

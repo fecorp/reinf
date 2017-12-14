@@ -53,13 +53,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/lucene-queryparser-5.5.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/jxl-2.6.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-context-5.0.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-test-5.0.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/fecor/Desktop/RDV_BANCO/spring-tx-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-context-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-test-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/biblioteca libs/spring-tx-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/classmate-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/LIBs/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

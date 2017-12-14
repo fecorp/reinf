@@ -50,7 +50,7 @@ public class UploadArquivoBean {
 		
 		byte[] arquivoByte = toByteArrayUsingJava(arquivo.getInputStream());
 		
-		telaServicos.setArquivo(arquivoByte);
+		//telaServicos.setArquivo(arquivoByte);
 		
 		uploadArquivo.salvar(telaServicos);
 		

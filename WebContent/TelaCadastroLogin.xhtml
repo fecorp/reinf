@@ -200,7 +200,7 @@
 							legend="Usuário  ">
 
 
-							
+						<h:message for="nome" rendered="true"/>
 				
                 
 				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
@@ -235,7 +235,9 @@
 							
 							<h:message for="telaCadastro"/>
 							
-							 <p:commandButton value="Enviar" icon="ui-icon-star" action="#{CadastroLoginBean.envia()}" ajax="false"> 
+							
+							<!-- CODIGO JSF AQUI -->
+							 <p:commandButton value="Enviar" icon="ui-icon-star" action="" ajax="false"> 
 							
                     </p:commandButton>
 		     

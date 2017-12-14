@@ -15,47 +15,51 @@ import javax.persistence.TemporalType;
 
 
 
- @Entity
- public class TelaServicos  {
+@Entity
+public class TelaServicos  {
 
 
-	 
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String empresa;
-	
-	
-	@GeneratedValue
+
+
+	@Column
 	private String codFilial;
 
-	
-	@GeneratedValue
+
+	@Column
 	private int codServicos;
-	
-	@Lob
-	private byte[] arquivo;
-	
-	
+
+
+
+
 
 	@Temporal(TemporalType.DATE)
 	private Calendar dataAtualizacao;
+
+	@Column
 	private String descServico;
+
+	@Column
 	private String complemento;
+
+	@Column
 	private String codLc;
+
+	@Column
 	private String indTipServico;
+
+	@Column
 	private String indTipReceita;
+
+	@Column
 	private String openFlex01;
+
+	@Column
 	private String openFlex02;
 
-	
-	public byte[] getArquivo() {
-		return arquivo;
-	}
-
-	public void setArquivo(byte[] arquivo) {
-		this.arquivo = arquivo;
-	}
-	
 	public String getEmpresa() {
 		return empresa;
 	}
@@ -143,6 +147,10 @@ import javax.persistence.TemporalType;
 	public void setOpenFlex02(String openFlex02) {
 		this.openFlex02 = openFlex02;
 	}
+
+   
+	
+
 
 
 }
