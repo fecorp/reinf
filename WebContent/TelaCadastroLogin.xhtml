@@ -200,29 +200,30 @@
 							legend="Usuário  ">
 
 
-						<h:message for="nome" rendered="true"/>
+					
 				
                 
 				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
 				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText required="true" requiredMessage="Csmpo Obrigatório" style="width: 15%; " id="nome" value="#{CadastroLoginBean.cadastroLogin.nome}"/>
+				<p:inputText style="width: 15%; " id="nome" value="#{TelaCadastroBean.cadastroLogin.nome}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="departamento" value=" Departamento :&nbsp;     " />
-				<p:inputText style="width: 15%; " id="departamento" value="#{CadastroLoginBean.cadastroLogin.departamento}"/>
+				<p:inputText style="width: 15%; " id="departamento" value="#{TelaCadastroBean.cadastroLogin.departamento}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="login" value=" Login :&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText style="width: 15%; " id="login" value="#{CadastroLoginBean.cadastroLogin.login}"/>
+				<p:inputText style="width: 15%; " id="login" value="#{TelaCadastroBean.cadastroLogin.login}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="senha" value=" Senha:&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				 <p:password  style="width: 15%; value=" required="true"  id="senha" value="#{CadastroLoginBean.cadastroLogin.senha}"/>
+				 <p:password  style="width: 15%; value=" id="senha" value="#{TelaCadastroBean.cadastroLogin.senha}"/>
+				
 				<br></br>
 				<br></br> 
 
@@ -237,7 +238,7 @@
 							
 							
 							<!-- CODIGO JSF AQUI -->
-							 <p:commandButton value="Enviar" icon="ui-icon-star" action="" ajax="false"> 
+							 <p:commandButton value="Enviar" icon="ui-icon-star" action="#{TelaCadastroBean.inserirCadastro()}" ajax="false"> 
 							
                     </p:commandButton>
 		     
