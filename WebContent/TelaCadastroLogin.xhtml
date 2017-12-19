@@ -200,7 +200,7 @@
 							legend="Usuário  ">
 
 
-					
+				
 				
                 
 				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
@@ -238,7 +238,7 @@
 							
 							
 							<!-- CODIGO JSF AQUI -->
-							 <p:commandButton value="Enviar" icon="ui-icon-star" action="#{TelaCadastroBean.inserirCadastro()}" ajax="false"> 
+							 <p:commandButton value="Enviar" icon="ui-icon-star" action="#{TelaCadastroBean.cadastroLoginDAO.salvar()}" ajax="false"> 
 							
                     </p:commandButton>
 		     

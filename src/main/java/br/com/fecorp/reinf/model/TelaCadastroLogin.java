@@ -4,10 +4,9 @@ import javax.faces.bean.ManagedBean;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-
 
 
 
@@ -15,34 +14,19 @@ import javax.persistence.Table;
 public class TelaCadastroLogin {
 	
 	
-
 	@Id
-	@GeneratedValue
-    @Column(name="id", nullable=false, unique=true)
-	private long id;
-	
-	
-	@Column(name="nome", nullable=false, unique=true)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "nome", nullable = false, unique = true)
 	private String nome;
 
-	@Column(name="departamento", nullable=false, unique=true)
+	@Column(name="departamento")
 	private String departamento;
 
-	@Column(name="login", nullable=false, unique=true)
+	@Column(name="login")
 	private String login;
 
-	@Column(name="senha", nullable=false, unique=false)
+	@Column(name="senha")
 	private String senha;
-	
-	
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
 
 	public String getNome() {
 		return nome;
@@ -75,4 +59,5 @@ public class TelaCadastroLogin {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
 }
