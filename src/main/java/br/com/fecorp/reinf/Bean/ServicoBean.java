@@ -1,4 +1,4 @@
-package br.com.fecorp.reinf.Bean;
+/*package br.com.fecorp.reinf.Bean;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -47,3 +47,4 @@ public class ServicoBean {
 	}
 
 }
+*/
