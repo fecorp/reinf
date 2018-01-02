@@ -1,9 +1,17 @@
-package br.com.fecorp.reinf.Bean;
+/*
+		package br.com.fecorp.reinf.Bean;
 
 
 import java.io.Serializable;
 
 
+<<<<<<< Updated upstream
+
+import java.io.Serializable;
+
+
+=======
+>>>>>>> Stashed changes
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
@@ -33,6 +41,7 @@ public class TelaCadastroBean implements Serializable{
 
 	public TelaCadastroLoginDAO getCadastrologinDAO() {
 		return cadastrologinDAO;
+<<<<<<< Updated upstream
 	}
 
 	public void setCadastrologinDAO(TelaCadastroLoginDAO cadastrologinDAO) {
@@ -42,6 +51,19 @@ public class TelaCadastroBean implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+=======
+	}
+
+	public void setCadastrologinDAO(TelaCadastroLoginDAO cadastrologinDAO) {
+		this.cadastrologinDAO = cadastrologinDAO;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	 
+>>>>>>> Stashed changes
 	 
 	 
 	
@@ -50,3 +72,4 @@ public class TelaCadastroBean implements Serializable{
 
 	
 }
+*/

@@ -44,7 +44,10 @@
 		<class>br.com.fecorp.reinf.model.TelaServicos</class>
 		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
 		<class>br.com.fecorp.reinf.Bean.TelaCadastroBean</class>
+<<<<<<< Updated upstream
 		<class>br.com.fecorp.reinf.DAO.TelaCadastroLoginDAO</class>
+=======
+>>>>>>> Stashed changes
 
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
@@ -72,7 +75,7 @@
 			
 
 			<!-- propriedades do hibernate -->
-			 <property name="hibernate.id.new_generator_mappings" value="true"/>
+			 <property name="hibernate.id.new_generator_mappings" value="false"/>
 			 
 
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>

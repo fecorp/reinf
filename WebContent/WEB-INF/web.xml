@@ -3,7 +3,7 @@
         <display-name>com.devmedia.primefaces</display-name>
       <servlet>
           <servlet-name>Faces Servlet</servlet-name>
-          <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+          <!-- <servlet-class>javax.faces.webapp.FacesServlet</servlet-class> -->
           <load-on-startup>1</load-on-startup>
       </servlet>
       <servlet-mapping>
@@ -14,7 +14,7 @@
           <welcome-file>/index.xhtml</welcome-file>
       </welcome-file-list>
       <error-page>
-          <exception-type>javax.faces.application.ViewExpiredException</exception-type>
+      <!-- <exception-type>javax.faces.application.ViewExpiredException</exception-type> -->    
           <location>/index.xhtml</location>
       </error-page>
   </web-app>
