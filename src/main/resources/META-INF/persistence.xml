@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
 	
-	<persistence-unit name="PersistenciaPU">
+	<persistence-unit name="PersistenciaPU" >
 
 
 		<!-- provedor/implementacao do JPA -->
@@ -43,6 +43,8 @@
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
 		<class>br.com.fecorp.reinf.model.TelaServicos</class>
 		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
+		<class>br.com.fecorp.reinf.Bean.TelaCadastroBean</class>
+		<class>br.com.fecorp.reinf.DAO.TelaCadastroLoginDAO</class>
 
 		
 		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
@@ -50,7 +52,7 @@
 		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->
 		<!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
 		
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 
 		
 		<properties>
@@ -82,6 +84,7 @@
 
 			<!-- atualiza o banco, gera as tabelas se for preciso -->
 			 <property name="hibernate.hbm2ddl.auto" value="create"/>
+			 
 			 <!-- <property name="hibernate.hbm2ddl.auto" value="update"/> --> 
 		
 			

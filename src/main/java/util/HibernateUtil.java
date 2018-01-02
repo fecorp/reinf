@@ -3,6 +3,8 @@ package util;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import org.hibernate.SessionFactory;
+
 public class HibernateUtil {
 
 	private static EntityManagerFactory emf;
@@ -21,4 +23,7 @@ public class HibernateUtil {
 		}
 		return emf;
 	}
+
+	
+	
 }

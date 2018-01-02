@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-entitymanager-4.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-entitymanager-4.3.0.Final.jar" sourcepath="C:/Users/CALVES/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.0.Final/hibernate-entitymanager-4.3.0.Final-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/primefaces-5.2.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/bluesky-1.0.10.jar"/>
@@ -9,7 +9,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/font-awesome-4.7.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-core-4.3.5.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" sourcepath="C:/Users/CALVES/.m2/repository/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jandex-1.1.0.Final.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/poi-3.9.jar"/>
@@ -58,5 +58,8 @@
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/biblioteca libs/spring-test-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/LIBs/classmate-1.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/LIBs/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-core-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-jdbc-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-beans-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

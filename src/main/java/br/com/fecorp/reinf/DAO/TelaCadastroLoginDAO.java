@@ -9,87 +9,86 @@ import br.com.fecorp.reinf.model.TelaCadastroLogin;
 
 public class TelaCadastroLoginDAO {
 
-	public static TelaCadastroLoginDAO instance;
-	public EntityManager entityManager;
-	
-	
-
-	public static TelaCadastroLoginDAO getInstance(){
-
-		if(instance == null){
-			instance = new TelaCadastroLoginDAO();
-		}
-
-		return instance;
-	}
-
-	public TelaCadastroLoginDAO(){
-		entityManager = getEntityManager();
-	}
-
 	private EntityManager getEntityManager() {
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("PersistenciaPU");
-		if (entityManager == null) {
-			entityManager = factory.createEntityManager();
-		}
+	    EntityManagerFactory factory = null;
+	    EntityManager entityManager = null;
+	    try {
+	      //Obtém o factory a partir da unidade de persistência.
+	      factory = Persistence.createEntityManagerFactory("PersistenciaPU");
+	      //Cria um entity manager.
+	      entityManager = factory.createEntityManager();
+	      //Fecha o factory para liberar os recursos utilizado.
+	    } finally {
+	      factory.close();
+	    }
+	    return entityManager;
+	  }
 
-		return entityManager;
-	}
+	  /**
+	   * Método utilizado para salvar ou atualizar as informações de uma pessoa.
+	   * @param pessoa
+	   * @return
+	   * @throws java.lang.Exception
+	   */
+	  public TelaCadastroLogin salvar(TelaCadastroLogin cadastroLogin) throws Exception {
+	    EntityManager entityManager = getEntityManager();
+	    try {
+	      // Inicia uma transação com o banco de dados.
+	      entityManager.getTransaction().begin();
+	      System.out.println("Salvando o cadastro.");
+	      // Verifica se a pessoa ainda não está salva no banco de dados.
+	      if(cadastroLogin.getDepartamento() == null) {
+	        //Salva os dados da pessoa.
+	        entityManager.persist(cadastroLogin);
+	      } else {
+	        //Atualiza os dados da pessoa.
+	        cadastroLogin = entityManager.merge(cadastroLogin);
+	      }
+	      // Finaliza a transação.
+	      entityManager.getTransaction().commit();
+	    } finally {
+	      entityManager.close();
+	    }
+	    return cadastroLogin;
+	  }
 
-	public TelaCadastroLogin getById(final String nome) {
-		return entityManager.find(TelaCadastroLogin.class, nome);
-	}
-	
-	@SuppressWarnings("unchecked")
-    public List<TelaCadastroLogin> findAll() {
-              return entityManager.createQuery("FROM " + TelaCadastroLogin.class.getName()).getResultList();
-    }
-	
-	 public void salvar(TelaCadastroLogin cadastroLogin) {
-         try {
-                  entityManager.getTransaction().begin();
-                  entityManager.persist(cadastroLogin);
-                  entityManager.getTransaction().commit();
-         } catch (Exception ex) {
-                  ex.printStackTrace();
-                 // System.out.println("Erro na persistencia");
-                  entityManager.getTransaction().rollback();
-         }
-       }
-          
-          public void alterar(TelaCadastroLogin cadastroLogin) {
-              try {
-                       entityManager.getTransaction().begin();
-                       entityManager.merge(cadastroLogin);
-                       entityManager.getTransaction().commit();
-              } catch (Exception ex) {
-                       ex.printStackTrace();
-                       entityManager.getTransaction().rollback();
-              }
-          
-	  }     
-          
-          public void deletar(TelaCadastroLogin cadastroLogin) {
-              try {
-                       entityManager.getTransaction().begin();
-                       cadastroLogin = entityManager.find(TelaCadastroLogin.class, cadastroLogin.getNome());
-                       entityManager.remove(cadastroLogin);
-                       entityManager.getTransaction().commit();
-              } catch (Exception ex) {
-                       ex.printStackTrace();
-                       entityManager.getTransaction().rollback();
-              }
-              
-          }     
-          
-          public void removeById(final String nome) {
-              try {
-                       TelaCadastroLogin cadastroLogin = getById(nome);
-                       deletar(cadastroLogin);
-              } catch (Exception ex) {
-                       ex.printStackTrace();
-              }
-    }
+	  /**
+	   * Método que apaga a pessoa do banco de dados.
+	   * @param id
+	   */
+	  public void excluir(String departamento) {
+	    EntityManager entityManager = getEntityManager();
+	    try {
+	      // Inicia uma transação com o banco de dados.
+	      entityManager.getTransaction().begin();
+	      // Consulta a pessoa na base de dados através do seu ID.
+	      TelaCadastroLogin cadastroLogin = entityManager.find(TelaCadastroLogin.class, departamento);
+	      System.out.println("Excluindo os dados de: " + cadastroLogin.getNome());
+	      // Remove a pessoa da base de dados.
+	      entityManager.remove(cadastroLogin);
+	      // Finaliza a transação.
+	      entityManager.getTransaction().commit();
+	    } finally {
+	      entityManager.close();
+	    }
+	  }
+
+	  /**
+	   * Consulta o pessoa pelo ID.
+	   * @param id
+	   * @return o objeto Pessoa.
+	   */
+	  public TelaCadastroLogin consultarPorId(String departamento) {
+	    EntityManager entityManager = getEntityManager();
+	    TelaCadastroLogin cadastroLogin = null;
+	    try {
+	      //Consulta uma pessoa pelo seu ID.
+	      cadastroLogin = entityManager.find(TelaCadastroLogin.class, departamento);
+	    } finally {
+	      entityManager.close();
+	    }
+	    return cadastroLogin;
+	  }
           
           
 }

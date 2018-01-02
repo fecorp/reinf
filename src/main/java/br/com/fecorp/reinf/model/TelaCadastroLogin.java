@@ -1,7 +1,6 @@
 package br.com.fecorp.reinf.model;
 
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,13 +19,13 @@ public class TelaCadastroLogin {
 	@Column(name = "nome", nullable = false, unique = true)
 	private String nome;
 
-	@Column(name="departamento")
+	@Column(name="departamento", nullable=false)
 	private String departamento;
 
-	@Column(name="login")
+	@Column(name="login", nullable=false)
 	private String login;
 
-	@Column(name="senha")
+	@Column(name="senha", nullable=false)
 	private String senha;
 
 	public String getNome() {

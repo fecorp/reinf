@@ -1,24 +1,27 @@
 package br.com.fecorp.reinf.Bean;
 
-import javax.annotation.PostConstruct;
+
+import java.io.Serializable;
+
+
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
-import javax.faces.bean.ViewScoped;
+
 import br.com.fecorp.reinf.DAO.TelaCadastroLoginDAO;
 import br.com.fecorp.reinf.model.TelaCadastroLogin;
 
-@ManagedBean(name = "TelaCadastroBean")
 @SessionScoped
-public class TelaCadastroBean {
+@ManagedBean(name = "TelaCadastroBean")
 
-	private TelaCadastroLogin cadastroLogin;
-	private TelaCadastroLoginDAO cadastroLoginDAO;
+public class TelaCadastroBean implements Serializable{
+
 	
-	public TelaCadastroBean(){}
+	private static final long serialVersionUID = 1L;
 	
-	  public TelaCadastroBean(TelaCadastroLogin cadastroLogin) {
-	        this.cadastroLogin = cadastroLogin;
-	    }
+	 TelaCadastroLogin cadastroLogin = new TelaCadastroLogin();
+	
+	 TelaCadastroLoginDAO cadastrologinDAO = new TelaCadastroLoginDAO();
 
 	public TelaCadastroLogin getCadastroLogin() {
 		return cadastroLogin;
@@ -28,16 +31,22 @@ public class TelaCadastroBean {
 		this.cadastroLogin = cadastroLogin;
 	}
 
-	public TelaCadastroLoginDAO getCadastroLoginDAO() {
-		return cadastroLoginDAO;
+	public TelaCadastroLoginDAO getCadastrologinDAO() {
+		return cadastrologinDAO;
 	}
 
-	public void setCadastroLoginDAO(TelaCadastroLoginDAO cadastroLoginDAO) {
-		this.cadastroLoginDAO = cadastroLoginDAO;
+	public void setCadastrologinDAO(TelaCadastroLoginDAO cadastrologinDAO) {
+		this.cadastrologinDAO = cadastrologinDAO;
 	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	 
+	 
 	
 	
 
-	  
 
+	
 }
