@@ -1,38 +1,45 @@
 package br.com.fecorp.reinf.model;
 
 
+import javax.faces.bean.ManagedBean;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 
-
+@ManagedBean(name="TelaCadastroLogin")
 @Entity
+@Table(name = "telacadastrologin")
 public class TelaCadastroLogin {
-	
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "nome", nullable = false, unique = true)
+	@Column(name="nome")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private String nome;
 
-	@Column(name="departamento", nullable=false)
+
+	@Column
 	private String departamento;
 
-	@Column(name="login", nullable=false)
+
+	@Column
 	private String login;
 
-	@Column(name="senha", nullable=false)
-	private String senha;
 
-	public String getNome() {
+	@Column
+	private String senha;
+	
+	
+
+	public String getNome(){
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNome(String nome){
 		this.nome = nome;
 	}
 
@@ -59,5 +66,13 @@ public class TelaCadastroLogin {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	@Override
+	public String toString() {
+		return "TelaCadastroLogin [nome=" + nome + ", departamento=" + departamento + ", login=" + login + ", senha="
+				+ senha + "]";
+	}
+
+    
 
 }
