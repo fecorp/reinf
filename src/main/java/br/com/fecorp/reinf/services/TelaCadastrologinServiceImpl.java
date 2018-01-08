@@ -1,6 +1,8 @@
-package br.com.fecorp.reinf.servicos;
+package br.com.fecorp.reinf.services;
 
 import java.io.Serializable;
+
+
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
@@ -18,6 +20,26 @@ import br.com.fecorp.reinf.model.TelaCadastroLogin;
 public class TelaCadastrologinServiceImpl implements TelaCadastroLoginService, Serializable{
 
 	private static final long serialVersionUID = 1L;
+
+	TelaCadastroLogin cadastroLogin = new TelaCadastroLogin();
+
+
+
+	public TelaCadastroLogin getCadastroLogin() {
+		return cadastroLogin;
+	}
+
+
+
+
+
+	public void setCadastroLogin(TelaCadastroLogin cadastroLogin) {
+		this.cadastroLogin = cadastroLogin;
+	}
+
+
+
+
 
 	private TelaCadastroLoginDAO cadastroLoginDAO;
 

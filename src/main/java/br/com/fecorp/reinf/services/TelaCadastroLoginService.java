@@ -1,4 +1,4 @@
-package br.com.fecorp.reinf.servicos;
+package br.com.fecorp.reinf.services;
 
 import java.util.List;
 

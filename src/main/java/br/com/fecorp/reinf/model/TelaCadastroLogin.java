@@ -18,7 +18,7 @@ public class TelaCadastroLogin {
 
 	@Id
 	@Column(name="nome")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private String nome;
 
 

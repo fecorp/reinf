@@ -76,7 +76,7 @@ p.ident {
 						<p:submenu label="Cadastros"
 							style="font-size:12px;background-color:#D3D3D3 ">
 							<p:menuitem style="background-color:#F4F0F0"
-								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								value="Cadastro de Login" url="TelaCadastroLogin.jsf"
 								icon="ui-icon-note" />
 							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
 								url="telaCadastro.xhtml" icon="ui-icon-home" />
@@ -182,6 +182,7 @@ p.ident {
 			<p:layoutUnit style="background-color:#F2f2f2; height: 100px"
 				position="center">
 				<div class="responsividade">
+				<h:form>
 
 				<img src="Imagens/COMPLEMENTO_DE_SAIDA.jpg" width="100%"/>
 				
@@ -284,10 +285,8 @@ p.ident {
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 
-						<p:button style="background-color:#E0EEF6; font-size:10px"
-							outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-							<f:param name="productId" value="turubom?" />
-						</p:button>
+						<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						type="reset" value="Excluir" icon="ui-icon-trash"/>
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
 							outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
@@ -319,7 +318,7 @@ p.ident {
 							icon="ui-icon-seek-end" />
 
 						<br />
-
+                    
 					</center>
 				</p:fieldset>
 				<p:button style="background-color:#E0EEF6; font-size:10px"
@@ -328,7 +327,9 @@ p.ident {
 					icon="fa-backward">
 					<f:param name="productId" value="turubom?" />
 				</p:button>
+				</h:form>
             </div>
+            
 			</p:layoutUnit>
 		</h:form>
 	</p:layout>

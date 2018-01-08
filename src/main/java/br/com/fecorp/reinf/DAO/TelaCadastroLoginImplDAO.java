@@ -76,10 +76,6 @@ public class TelaCadastroLoginImplDAO implements TelaCadastroLoginDAO, Serializa
 		logger.info("Sucesso ao buscar cadastro por ID!!! =" + cadastroLogin);
 		return cadastroLogin;
 	}
-
-	
-
-	
 		
 }
 

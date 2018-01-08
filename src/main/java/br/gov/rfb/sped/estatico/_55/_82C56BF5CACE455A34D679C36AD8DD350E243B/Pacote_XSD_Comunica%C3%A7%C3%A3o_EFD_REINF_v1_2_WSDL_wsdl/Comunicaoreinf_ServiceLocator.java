@@ -1,3 +1,6 @@
+/*
+
+
 /**
  * Comunicaoreinf_ServiceLocator.java
  *
@@ -60,3 +63,4 @@ public class Comunicaoreinf_ServiceLocator extends org.apache.axis.client.Servic
     }
 
 }
+*/

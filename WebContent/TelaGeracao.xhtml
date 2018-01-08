@@ -178,6 +178,7 @@
 
 
 			<p:layoutUnit position="center" style="height: 300px" fullPage="true">
+			<h:form>
 				<div class="responsividade">
 					<!--Cógigo geração central  -->
 
@@ -207,7 +208,7 @@
 					<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
 						legend="Opções ">
 
-
+          
 						<h:panelGrid columns="2" style="margin-bottom:10px"
 							cellpadding="5">
 							<p:selectOneRadio id="console" value="#{radioView.console}">
@@ -428,10 +429,8 @@
 								<f:param name="productId" value="turubom?" />
 							</p:button>
 
-							<p:button style="background-color:#E0EEF6; font-size:10px"
-								outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-								<f:param name="productId" value="turubom?" />
-							</p:button>
+							<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						type="reset" value="Excluir" icon="ui-icon-trash"/>
 
 							<p:button style="background-color:#E0EEF6; font-size:10px"
 								outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
@@ -473,6 +472,7 @@
 						<f:param name="productId" value="turubom?" />
 					</p:button>
 				</div>
+				</h:form>
 			</p:layoutUnit>
 
 		</p:layout>

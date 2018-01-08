@@ -86,7 +86,7 @@ padding-left
 						<p:submenu label="Cadastros"
 							style="font-size:12px;background-color:#D3D3D3 ">
 							<p:menuitem style="background-color:#F4F0F0"
-								value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+								value="Cadastro de Login" url="TelaCadastroLogin.jsf"
 								icon="ui-icon-note" />
 							<p:menuitem style="background-color:#F4F0F0" value="Empresa"
 								url="telaCadastro.xhtml" icon="ui-icon-home" />
@@ -188,8 +188,9 @@ padding-left
 
 			<p:layoutUnit style="background-color:#F2f2f2; height:320px"
 				fullPage="true" position="center">
+				<h:form>
 				<div class="responsividade">
-
+                
 				<img src="Imagens/IMPOSTOS_DE_ENTRADA.jpg" width="100%"/>
 
 
@@ -487,10 +488,8 @@ padding-left
 								<f:param name="productId" value="turubom?" />
 							</p:button>
 
-							<p:button style="background-color:#E0EEF6; font-size:10px"
-								outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-								<f:param name="productId" value="turubom?" />
-							</p:button>
+							<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						type="reset" value="Excluir" icon="ui-icon-trash"/>
 
 							<p:button style="background-color:#E0EEF6; font-size:10px"
 								outcome="TelaPesquisaImpostoEntradaSaida.xhtml"
@@ -537,6 +536,7 @@ padding-left
 				<br></br>
 				<br></br>
               </div>
+              </h:form>
 			</p:layoutUnit>
 		</h:form>
 	</p:layout>

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.fecorp.reinf.model.TelaCadastroLogin;
-import br.com.fecorp.reinf.servicos.TelaCadastroLoginService;
+import br.com.fecorp.reinf.services.TelaCadastroLoginService;
 
 @Controller
 public class TelaCadastroLoginController {

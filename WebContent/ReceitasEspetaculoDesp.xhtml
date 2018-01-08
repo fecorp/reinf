@@ -75,12 +75,13 @@
 			<p:layoutUnit position="west"
 				style="background-color:#F2f2f2; height:450px" fullPage="true">
 				<div class="menu">
+				<h:form>
 					<h:form>
 						<p:panelMenu style="width:165px">
 							<p:submenu label="Cadastros"
 								style="font-size:12px;background-color:#D3D3D3 ">
 								<p:menuitem style="background-color:#F4F0F0"
-									value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+									value="Cadastro de Login" url="TelaCadastroLogin.jsf"
 									icon="ui-icon-note" />
 								<p:menuitem style="background-color:#F4F0F0" value="Empresa"
 									url="telaCadastro.xhtml" icon="ui-icon-home" />
@@ -180,14 +181,15 @@
 
 						</p:panelMenu>
 					</h:form>
+				</h:form>
 				</div>
 			</p:layoutUnit>
 
 
 			<p:layoutUnit position="center" style="height:130px">
-
+                 <h:form>
 				<div class="responsividade">
-
+               
 					<img src="Imagens/RECEITAS_DE_ESPETACULOS_DESPORTIVOS.jpg" width="100%"/>
 
 					<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
@@ -484,10 +486,8 @@
 								<f:param name="productId" value="turubom?" />
 							</p:button>
 
-							<p:button style="background-color:#E0EEF6; font-size:10px"
-								outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-								<f:param name="productId" value="turubom?" />
-							</p:button>
+							<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						type="reset" value="Excluir" icon="ui-icon-trash"/>
 
 							<p:button style="background-color:#E0EEF6; font-size:10px"
 								outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
@@ -528,10 +528,15 @@
 						icon="fa-backward">
 						<f:param name="productId" value="turubom?" />
 					</p:button>
+					
 					</div>
-			</p:layoutUnit>
-
-		</h:form>
+					</h:form>
+					</p:layoutUnit>
+					</h:form>
+			
+        
+	
+		
 
 	</p:layout>
 

@@ -58,10 +58,10 @@
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/biblioteca libs/spring-test-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/LIBs/classmate-1.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/LIBs/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-core-5.0.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-jdbc-5.0.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Novo Cronograma/spring-beans-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/biblioteca libs/spring-beans-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/ALEX/biblioteca libs/spring-web-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Roger/LIBs/Libs/spring-core-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CALVES/Desktop/Roger/LIBs/Libs/spring-jdbc-5.0.2.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

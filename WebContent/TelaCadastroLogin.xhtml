@@ -76,7 +76,7 @@
 							<p:submenu label="Cadastros"
 								style="font-size:12px;background-color:#D3D3D3 ">
 								<p:menuitem style="background-color:#F4F0F0"
-									value="Cadastro de Login" url="TelaCadastroLogin.xhtml"
+									value="Cadastro de Login" url="TelaCadastroLogin.jsf"
 									icon="ui-icon-note" />
 								<p:menuitem style="background-color:#F4F0F0" value="Empresa"
 									url="telaCadastro.xhtml" icon="ui-icon-home" />
@@ -187,7 +187,7 @@
 
 
                     
-					<h:form>
+					<h:form id="form">
 					
 					
 		
@@ -195,55 +195,46 @@
 
 						<br></br>
 						
+						
+						
+						
 						<h:form>
 						<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-							legend="Usuário  ">
- 
-    
-
-				
-				
+							id="cadastroLogin" legend="Usuário  ">
+				<h:form>
                 
 				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
 				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText style="width: 15%; " id="nome" value="#{TelaCadastroLogin.nome}"/>
+				<p:inputText style="width: 15%; " id="nome" label="nome" value="#{cadastroLoginBean.cadastroLogin.nome}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="departamento" value=" Departamento :&nbsp;     " />
-				<p:inputText style="width: 15%; " id="departamento" value="#{TelaCadastroLogin.departamento}"/>
+				<p:inputText style="width: 15%; " id="departamento" label="departamento" value="#{cadastroLoginBean.cadastroLogin.departamento}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="log" value=" Login :&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				<p:inputText style="width: 15%; " id="log"  value="#{TelaCadastroLogin.login}"/>
+				<p:inputText style="width: 15%; " id="log"  label="log" value="#{cadastroLoginBean.cadastroLogin.login}"/>
 				<br></br>
 				<br></br>
 				
 				<h:outputLabel style="font-size: 10px" for="senha" value=" Senha:&nbsp;     " />
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
-				 <p:password  style="width: 15%; value=" id="senha" value="#{TelaCadastroLogin.senha}"/>
+				 <p:inputText type="password" style="width: 15%; value=" id="senha" label="senha" value="#{cadastroLoginBean.cadastroLogin.senha}"/>
 				
 				<br></br>
 				<br></br> 
 
 
-							<h:commandButton style="background-color:#E0EEF6; font-size:10px"
-								type="reset" value="  Limpar " icon="ui-icon-trash">
-								<f:param name="productId" value="turubom?" />
-							</h:commandButton>
-							&nbsp; &nbsp;
-							
-							
-							
-							
-							
-							 <p:commandButton  value="Enviar" icon="ui-icon-star" action="#{TelaCadastrologinServiceImpl.salvar()}" ajax="false"/> 
+							<p:commandButton value="Limpar" type="reset" />
+                             &nbsp; &nbsp;
+							 <p:commandButton  value="Enviar" icon="ui-icon-star" action="#{cadastroLoginBean.salvar()}" update="form" ajax="false" /> 
 							
                     
                     
-		    
+		    </h:form>
 		
 			
             <br></br> 
@@ -282,7 +273,7 @@
 							</p:button>
 
 							<p:button style="background-color:#E0EEF6; font-size:10px"
-								outcome="TelaCadastroLogin.xhtml" value="  Pesquisar "
+								outcome="TelaCadastroLogin.jsf" value="  Pesquisar "
 								icon="ui-icon-search">
 								<f:param name="productId" value="turubom?" />
 							</p:button>

@@ -166,6 +166,7 @@
 
 
 		<p:layoutUnit position="center" style="height: 50px" fullPage="true">
+		<h:form>
 		<div class="responsividade">
 		
 		<img src="Imagens/ABERTURA DE CHAMADAS.jpg" width="100%"/>
@@ -310,10 +311,8 @@
 							<f:param name="productId" value="turubom?" />
 						</p:button>
 
-						<p:button style="background-color:#E0EEF6; font-size:10px"
-							outcome="acoesBotao" value="Excluir" icon="ui-icon-trash">
-							<f:param name="productId" value="turubom?" />
-						</p:button>
+						<p:commandButton style="background-color:#E0EEF6; font-size:10px"
+						type="reset" value="Excluir" icon="ui-icon-trash"/>
 
 						<p:button style="background-color:#E0EEF6; font-size:10px"
 							outcome="acoesBotao" value="Editar " icon="ui-icon-pencil">
@@ -355,6 +354,7 @@
 
 
            </div>
+           </h:form>
 			</p:layoutUnit>
 		</h:form>
 	</p:layout>
