@@ -1,7 +1,11 @@
 package br.com.fecorp.reinf.model;
 
 
-import javax.faces.bean.ManagedBean;
+
+
+
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,44 +15,31 @@ import javax.persistence.Table;
 
 
 
-@ManagedBean(name="TelaCadastroLogin")
+@Table(name = "cadastrologin")
 @Entity
-@Table(name = "telacadastrologin")
-public class TelaCadastroLogin {
+public class TelaCadastroLogin implements Serializable{
+
 
 	@Id
-	@Column(name="nome")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "nome", unique = true)
 	private String nome;
 
-
-	@Column
-	private String departamento;
-
-
-	@Column
+	@Column(name = "login", nullable = false)
 	private String login;
 
-
-	@Column
+	@Column(name = "senha", nullable = false)
 	private String senha;
-	
-	
 
-	public String getNome(){
+	@Column(name = "departamento", nullable = false)
+	private String departamento;
+
+	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome){
+	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getDepartamento() {
-		return departamento;
-	}
-
-	public void setDepartamento(String departamento) {
-		this.departamento = departamento;
 	}
 
 	public String getLogin() {
@@ -67,12 +58,14 @@ public class TelaCadastroLogin {
 		this.senha = senha;
 	}
 
-	@Override
-	public String toString() {
-		return "TelaCadastroLogin [nome=" + nome + ", departamento=" + departamento + ", login=" + login + ", senha="
-				+ senha + "]";
+	public String getDepartamento() {
+		return departamento;
 	}
 
-    
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+	
+	
 
 }

@@ -187,7 +187,7 @@
 
 
                     
-					<h:form id="form">
+					<h:form>
 					
 					
 		
@@ -200,8 +200,8 @@
 						
 						<h:form>
 						<p:fieldset style=" background-color:#F2F2F2; font-size: 10px"
-							id="cadastroLogin" legend="Usuário  ">
-				<h:form>
+							 legend="Usuário  ">
+				<h:form id="form">
                 
 				<h:outputLabel style="font-size: 10px"  for="nome" value="  Nome :      " />
 				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;
@@ -230,7 +230,7 @@
 
 							<p:commandButton value="Limpar" type="reset" />
                              &nbsp; &nbsp;
-							 <p:commandButton  value="Enviar" icon="ui-icon-star" action="#{cadastroLoginBean.salvar()}" update="form" ajax="false" /> 
+							 <h:commandButton rendered="true"  value="Enviar" icon="ui-icon-star" action="#{cadastroBean.salvar()}" update="form"  /> 
 							
                     
                     

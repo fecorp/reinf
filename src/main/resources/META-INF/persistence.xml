@@ -6,18 +6,19 @@
 	version="2.0">
 	
 	<persistence-unit name="PersistenciaPU" transaction-type="JTA">
-
-
-		<!-- provedor/implementacao do JPA -->
+	
+	<!-- provedor/implementacao do JPA -->
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>java:jboss/datasources/ReinfDS</jta-data-source>
-		  
-		 
-		
-		<!-- entidade mapeada -->
+	
+		<jta-data-source>java:jboss/datasource/ReinfDS</jta-data-source>	
+			
+	    
+	
+	
+
+
 		<class>br.com.fecorp.reinf.model.TelaGeracao</class>
 		<class>br.com.fecorp.reinf.model.Usuario</class>
-		<class>br.com.fecorp.reinf.model.Pessoa</class>
 		<class>br.com.fecorp.reinf.model.Cprb</class>
 		<class>br.com.fecorp.reinf.model.comercializacaoAgro</class>
 		<class>br.com.fecorp.reinf.model.ComplementoAlimeEntrada</class>
@@ -42,39 +43,16 @@
 		<class>br.com.fecorp.reinf.model.DadosTelaPesquisa</class>
 		<class>br.com.fecorp.reinf.model.TelaConfiguracao</class>
 		<class>br.com.fecorp.reinf.model.TelaServicos</class>
-		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
 		<class>br.com.fecorp.reinf.model.Login</class>
+		<class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>
 
-
-		
-		<!-- <class>br.com.fecorp.reinf.model.TelaCadastroLogin</class>-->
-		<!-- <class>br.com.fecorp.reinf.model.TelaConfiguracao</class>-->
-		<!-- <class>br.com.fecorp.reinf.model.TelaGeracao</class>-->
-		<!-- <class>br.com.fecorp.reinf.model.TelaServicos</class>-->
-		
-
-	
 
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 	<!-- <validation-mode>NONE</validation-mode> -->	
 
-
-		
 		<properties>
 
-			<!-- dados da conexao -->
-
-			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/dbReinf" />
-			<property name="javax.persistence.jdbc.user" value="postgres" />
-			<property name="javax.persistence.jdbc.password" value="fecorp" />
-			
-			
-			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://node522-env-2323387.br1.saphir.global/dbReinf"/>-->
-			<!-- <property name="javax.persistence.jdbc.user" value="webadmin" />-->
-			<!-- <property name="javax.persistence.jdbc.password" value="DFMcfc57175" />-->
-			
-			
+        
 
 			<!-- propriedades do hibernate -->
 			 <property name="hibernate.id.new_generator_mappings" value="false"/>
@@ -83,16 +61,11 @@
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
-			<!-- <property name="hibernate.hibernate.cache.use_query_cache" value="true" />
-			  <property name="hibernate.jdbc.wrap_result_sets" value="false" />
-			   <property name="hibernate.use_sql_comments" value="false" /> --> 
-
+		
+		
 			<!-- atualiza o banco, gera as tabelas se for preciso -->
 			 <property name="hibernate.hbm2ddl.auto" value="update"/>
 
-			 <!-- <property name="hibernate.hbm2ddl.auto" value="update"/> --> 
-		
-			
 			</properties>
 
 	</persistence-unit>
